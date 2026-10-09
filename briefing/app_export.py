@@ -51,13 +51,8 @@ def app_segments(manifest, items, voice):
         return dict(section=section, title=title, detail=detail, url=url, dday=None, postId=post_id)
 
     weather = items['weather']
-    personal = [s for s in source if s['kind'] == 'greeting' and s.get('personal_template')]
-    intro = [s for s in source if s['kind'] == 'weather' or (s['kind'] == 'greeting' and not personal)] + [s for s in source if s['kind'] == 'events' and s.get('events')]
+    intro = [s for s in source if s['kind'] in {'greeting', 'weather'}] + [s for s in source if s['kind'] == 'events' and s.get('events')]
     result = []
-    if personal:
-        greeting = merged('greeting', '아침 인사', personal, [])
-        greeting['personal_template'] = personal[0]['personal_template']
-        result.append(greeting)
     if intro:
         result += [merged('intro', '인사·날씨', intro, [] if weather['summary'] is None else [card(
         '날씨', weather['summary'], f"최저 {weather['temp_min']}° / 최고 {weather['temp_max']}° · 비 올 확률 {weather['rain_prob']}%")])]

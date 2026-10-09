@@ -9,6 +9,18 @@ from briefing.review import PHONE
 from collector.deadlines import extract_deadline
 
 
+NOTICE_STYLES = (
+    '차분한 설명형 말투로 핵심을 먼저 알리고, 문장을 단정한 해요체로 마무리해 주세요.',
+    '친근한 안내형 말투로 학생에게 편안하게 건네듯, 완결된 해요체로 말해 주세요.',
+    '맑고 생기 있는 아침 라디오 말투로 동사를 또렷하게 살리고, 들뜨지 않는 해요체로 말해 주세요.',
+)
+
+
+def daily_variant(value):
+    """날짜마다 1→2→3 순서로 돌고, 같은 날 다시 만들면 같은 말투를 쓴다."""
+    return (date.fromisoformat(value).toordinal() - 1) % len(NOTICE_STYLES)
+
+
 def digest(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
 
@@ -138,8 +150,8 @@ def weather_script(weather, config, variant=0):
 
 def create_segments(data, catalog, config, events, *, variant=None):
     day = date.fromisoformat(data['date'])
-    # 날짜별로 말투를 바꾸되 같은 날 재실행에서는 캐시를 재사용한다.
-    variant = int(digest(data['date'])[:8], 16) % 3 if variant is None else variant % 3
+    # 날짜별로 1→2→3 순환하며 같은 날 재실행에서는 같은 말투를 쓴다.
+    variant = daily_variant(data['date']) if variant is None else variant % len(NOTICE_STYLES)
     segments = []
     warnings = list(data['errors'])
 
@@ -155,11 +167,8 @@ def create_segments(data, catalog, config, events, *, variant=None):
         segments.append(row)
         return row
 
-    templates = config.get('greeting_templates', [])
-    greeting = templates[variant % len(templates)] if templates else None
-    row = add('greeting', '아침 인사', greeting.replace('{name}님. ', '') if greeting else config['greeting'])
-    if greeting:
-        row['personal_template'] = greeting
+    # 이름 인사는 기기 음성 대신 다른 구간과 같은 Sohee 음성의 고정 인사로 통일한다.
+    add('greeting', '아침 인사', config['greeting'])
     row = add('weather', '날씨와 등교 안내', weather_script(data['weather'], config, variant))
     row['constraints'] = dict(max_chars=240, feedback_only=True)
     seen = {}
@@ -244,6 +253,7 @@ def create_segments(data, catalog, config, events, *, variant=None):
             terms = [t for t in re.findall(r'[가-힣A-Za-z]{2,}', notice['title']) if t not in common]
             if not deadline:
                 terms = [t for t in terms if not any(w in t for w in ('마감', '기한', '임박'))]
+            segment['style_instruction'] = NOTICE_STYLES[variant]
             segment['constraints'] = dict(max_chars=140, one_sentence=True, topic_terms=terms,
                                           no_contacts=True, title_only=not bool(notice['body']),
                                           deadline_unverified=not bool(deadline),

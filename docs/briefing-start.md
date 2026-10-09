@@ -30,7 +30,7 @@ python -m briefing.voice_samples
 Ollama 앱을 실행하고 대본 모델을 준비합니다.
 
 ```bash
-ollama pull qwen3:4b
+ollama pull qwen3:4b-instruct-2507-q4_K_M
 python -m briefing.build --input data/raw/2026-10-03/items.json --allow-archive
 python -m http.server 8766 --directory dist --bind 127.0.0.1
 ```

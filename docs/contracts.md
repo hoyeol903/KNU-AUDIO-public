@@ -235,7 +235,7 @@ collector.run의 최종 보고서는 기존 channels와 request_count에 started
 
 ### 개인화 인사 확장 (2026-10-06)
 
-앱용 `segments`에 선택적인 `greeting` 구간을 추가한다. `channel_id`도 `greeting`이며, 기존 필드에 `personal_template: "안녕하세요, {name}님. ..."`을 제공한다. 실제 학생 이름은 JSON에 포함하지 않는다. `audio`는 이름 없는 기본 인사 MP3로 필수 제공한다. `intro`는 날씨와 확인된 학교 이벤트를 제공한다. `greeting`이 없는 이전 파일은 기존 `intro`를 그대로 재생한다. 공지 카드의 원문 제목·링크는 요약으로 바꾸지 않는다.
+(2026-10-09 변경: 새 출력에는 `greeting` 구간과 `personal_template`이 없고 인사는 `intro`의 고정 Sohee 음성에 들어간다. 앱은 예전 자료의 `personal_template`을 무시한다. 아래는 이전 형식 설명이다.) 앱용 `segments`에 선택적인 `greeting` 구간을 추가한다. `channel_id`도 `greeting`이며, 기존 필드에 `personal_template: "안녕하세요, {name}님. ..."`을 제공한다. 실제 학생 이름은 JSON에 포함하지 않는다. `audio`는 이름 없는 기본 인사 MP3로 필수 제공한다. `intro`는 날씨와 확인된 학교 이벤트를 제공한다. `greeting`이 없는 이전 파일은 기존 `intro`를 그대로 재생한다. 공지 카드의 원문 제목·링크는 요약으로 바꾸지 않는다.
 
 ## 게시판 간 같은 공지의 공유
 

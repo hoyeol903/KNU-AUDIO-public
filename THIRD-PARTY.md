@@ -2,7 +2,7 @@
 
 모델 가중치는 이 프로젝트에 포함하지 않습니다. 설치할 때 공식 저장소에서 받습니다.
 
-- Qwen3 4B: Apache-2.0. https://huggingface.co/Qwen/Qwen3-4B 및 https://ollama.com/library/qwen3:4b
+- Qwen3 4B Instruct 2507(`qwen3:4b-instruct-2507-q4_K_M`): Apache-2.0. https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507 및 https://ollama.com/library/qwen3
 - Ollama: 로컬 실행 엔진. https://github.com/ollama/ollama
 - 이전 버전 MeloTTS 소스 및 Korean 모델: MIT 표기. https://github.com/myshell-ai/MeloTTS 및 https://huggingface.co/myshell-ai/MeloTTS-Korean
 - MeloTTS 설치 안내: https://github.com/myshell-ai/MeloTTS/blob/main/docs/install.md

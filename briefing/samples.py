@@ -31,10 +31,7 @@ def sample_material(data, channel=None, max_notices=2):
     return result
 
 
-def create_samples(data, catalog, config, events, *, name='김경민', channel=None, provider=None, report_dir=None):
-    name = name.strip()[:20]
-    if not name:
-        raise ValueError('미리보기 이름을 입력하세요.')
+def create_samples(data, catalog, config, events, *, channel=None, provider=None, report_dir=None):
     material = sample_material(data, channel)
     report_dir = Path(report_dir or ROOT / 'preview/morning-reviews')
     variants = list(range(3))
@@ -60,10 +57,10 @@ def create_samples(data, catalog, config, events, *, name='김경민', channel=N
                     skipped = segment['_skip_notice']
                     skipped_notices[skipped['notice_id']] = dict(skipped)
             segments = [s for s in segments if not s.get('_skip_notice')]
-            rows = [dict(kind=s['kind'], script=s.get('personal_template', s['script']).replace('{name}', name),
+            rows = [dict(kind=s['kind'], script=s['script'],
                          title=s['title'], url=s.get('url')) for s in segments]
             drafts.append(dict(number=index, variant=variant, segments=rows, script='\n'.join(r['script'] for r in rows)))
-    return dict(date=data['date'], name=name, scope='미리보기: 공지 최대 2개, 식당별 메뉴 최대 1개',
+    return dict(date=data['date'], scope='미리보기: 공지 최대 2개, 식당별 메뉴 최대 1개',
                 channel=channel, status='partial' if skipped_notices else 'passed',
                 skipped_notices=list(skipped_notices.values()), samples=drafts)
 
@@ -71,14 +68,13 @@ def create_samples(data, catalog, config, events, *, name='김경민', channel=N
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', type=Path, required=True)
-    parser.add_argument('--name', default='김경민')
     parser.add_argument('--channel', help='한 게시판만 미리보기 (생략하면 공지 최대 2개)')
     parser.add_argument('--output', type=Path, default=ROOT / 'preview/morning-samples.json')
     args = parser.parse_args()
     config, events = read_yaml(ROOT / 'config/briefing.yaml'), read_yaml(ROOT / 'config/events.yaml')
     validate_config(config, events)
     result = create_samples(load_collection_report(args.input), read_yaml(ROOT / 'data/channels.yaml'),
-                            config, events, name=args.name, channel=args.channel,
+                            config, events, channel=args.channel,
                             report_dir=ROOT / 'preview/morning-reviews')
     save_json(result, args.output)
     markdown = f"# {result['date']} 아침 대본 미리보기\n\n{result['scope']}\n"
