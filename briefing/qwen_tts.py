@@ -16,14 +16,17 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v1'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v2-24k'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
                          trim_start_duration_sec=.05, trim_end_duration_sec=.1,
                          trim_start_threshold_db=-55, trim_end_threshold_db=-50,
                          preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
-                         added_tail_silence_sec=.18)
+                         added_tail_silence_sec=.18,
+                         # loudnorm은 처리 방식에 따라 출력 표본화율이 달라진다(24kHz 또는 48kHz).
+                         # 구간마다 달라지면 이어 붙인 MP3가 브라우저에서 경계에서 끊기므로 모델 출력과 같은 값으로 고정한다.
+                         sample_rate=24000)
 CACHE_PROFILE = dict(sampling=GENERATION, seed=SEED, postprocess=AUDIO_POSTPROCESS)
 
 
@@ -95,7 +98,7 @@ def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
         ('I', 'input_i'), ('TP', 'input_tp'), ('LRA', 'input_lra'), ('thresh', 'input_thresh')))
     second_pass = f'{base},loudnorm={target}:{measured}:offset={stats["target_offset"]}:linear=true:print_format=summary'
     runner(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(wav), '-af', second_pass,
-            '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
+            '-ar', str(AUDIO_POSTPROCESS['sample_rate']), '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
            check=True, timeout=180, capture_output=True)
 
 

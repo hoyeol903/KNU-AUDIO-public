@@ -12,6 +12,7 @@ import subprocess
 import tempfile
 
 from collector.store import load_collection_report, save_json
+from mutagen.mp3 import MP3
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,8 +24,11 @@ def ffmpeg_concat(sources, target):
     with tempfile.TemporaryDirectory() as folder:
         listing = Path(folder) / 'parts.txt'
         listing.write_text(''.join(f"file '{Path(source).resolve()}'\n" for source in sources), encoding='utf-8')
+        # 표본화율이 섞인 MP3를 그대로 이으면 브라우저가 경계에서 재생을 끝낸다. 같을 때만 재인코딩 없이 잇는다.
+        rates = {MP3(str(source)).info.sample_rate for source in sources}
+        codec = ['-c', 'copy'] if len(rates) == 1 else ['-ar', '24000', '-c:a', 'libmp3lame', '-b:a', '96k']
         subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', str(listing),
-                        '-c', 'copy', str(target)], check=True)
+                        *codec, str(target)], check=True)
 
 
 def app_segments(manifest, items, voice):
