@@ -360,6 +360,9 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .sheet{position:absolute;left:0;right:0;bottom:0;top:56px;background:var(--bg);border-radius:30px 30px 0 0;z-index:21;display:flex;flex-direction:column;animation:up .5s cubic-bezier(.2,.9,.2,1) both;box-shadow:0 -10px 40px -10px rgba(0,0,0,.25)}
 .sheet .body{flex:1;overflow-y:auto;padding:10px 20px 24px;display:flex;flex-direction:column;gap:18px;scrollbar-width:none}
 .sheet .body::-webkit-scrollbar{display:none}
+.sheet .body > .btn-pri{flex-shrink:0}
+#meetSave{height:62px;font-size:17.5px}
+#meetSave.off{background:var(--tile2);color:var(--dis-ink);box-shadow:none}
 @keyframes nudge2{0%,100%{transform:translate(0,0)}50%{transform:translate(2px,-2px)}}
 .arrow{animation:nudge2 1.6s ease-in-out infinite}
 
@@ -1545,10 +1548,16 @@ function openMeeting(id){
   COMMUNITY.status = 'loading'; render(false);
   communityRequest('meetings/' + encodeURIComponent(id)).then(function(data){ if (S.meetId !== id) return; COMMUNITY.detail = data.item; COMMUNITY.status = 'ready'; render(false); }).catch(function(e){ if (S.meetId !== id) return; COMMUNITY.detail = null; COMMUNITY.status = 'error'; COMMUNITY.error = e.message; render(false); });
 }
-function validMeetContact(value){
-  try { var u = new URL(value); return u.protocol === 'https:' && !u.username && !u.password && !u.port && ['instagram.com','www.instagram.com','open.kakao.com'].indexOf(u.hostname) >= 0 && u.pathname !== '/'; } catch(e){ return false; }
+/* 주소를 복사하며 https://가 빠지거나 http://로 붙여 넣어도 받아 준다. 그 밖의 주소는 서버와 같은 규칙으로 막는다. */
+function meetContactUrl(value){
+  var v = String(value || '').trim();
+  if (/^http:\/\//i.test(v)) return 'https://' + v.slice(7);
+  return /^(www\.)?(instagram\.com|open\.kakao\.com)\//i.test(v) ? 'https://' + v : v;
 }
-function contactButton(value, label){ return validMeetContact(value) ? '<a class="btn-pri" style="text-decoration:none;text-align:center" href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + label + ' · ' + (new URL(value).hostname === 'open.kakao.com' ? '오픈카톡' : '인스타그램') + '</a>' : ''; }
+function validMeetContact(value){
+  try { var u = new URL(meetContactUrl(value)); return u.protocol === 'https:' && !u.username && !u.password && !u.port && ['instagram.com','www.instagram.com','open.kakao.com'].indexOf(u.hostname) >= 0 && u.pathname !== '/'; } catch(e){ return false; }
+}
+function contactButton(value, label){ value = meetContactUrl(value); return validMeetContact(value) ? '<a class="btn-pri" style="text-decoration:none;text-align:center" href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + label + ' · ' + (new URL(value).hostname === 'open.kakao.com' ? '오픈카톡' : '인스타그램') + '</a>' : ''; }
 function communityNotice(){
   if (COMMUNITY.status === 'error') return '<div class="mt-note" role="status"><span>' + esc(COMMUNITY.error) + ' 기존 예시는 둘러볼 수 있어요.</span></div>';
   return '<div class="mt-note" role="note"><span>공유 모집글은 다른 사용자도 볼 수 있어요. 작성·신청 내역 관리는 이 브라우저에서 할 수 있어요.</span></div>';
@@ -1610,10 +1619,31 @@ function vMeetDetail(){
   return h + '</div></div>';
 }
 function meetField(id,label,v,max,ph,area){ return '<label class="col" style="gap:6px"><span class="row lab-s" style="justify-content:space-between">' + label + '<span id="' + id + 'N" class="num">' + (v || '').length + '/' + max + '</span></span>' + (area ? '<textarea rows="5" style="resize:vertical"' : '<input type="text"') + ' id="' + id + '" class="field" maxlength="' + max + '" placeholder="' + esc(ph) + '"' + (area ? '>' + esc(v || '') + '</textarea>' : ' value="' + esc(v || '') + '">') + '</label>'; }
-function meetReady(M){
-  if (COMMUNITY.busy) return false;
-  if (M.mode === 'apply') return !!(M.name || '').trim() && validMeetContact(M.contact) && (M.category !== 'dating' || !!M.team);
-  return !!(M.title || '').trim() && !!(M.intro || '').trim() && !!(M.when || '').trim() && validMeetContact(M.contact) && (M.category === 'dating' ? !!M.team : Number.isInteger(Number(M.capacity)) && Number(M.capacity) >= 2 && Number(M.capacity) <= 100 && !!(M.category === 'study' ? M.goal || '' : M.activity || '').trim());
+/* 저장에 필요한데 비었거나 받을 수 없는 항목. 저장 버튼이 꺼진 이유를 화면에 알려 줄 때도 쓴다. */
+function meetMissing(M){
+  var miss = [], dating = M.category === 'dating', capacity = Number(M.capacity), need = function(t, id){ miss.push({ t: t, id: id }); };
+  if (M.mode === 'apply') {
+    if (!(M.name || '').trim()) need(dating ? '팀 대표 이름' : '이름', 'meetName');
+    if (dating && !M.team) need('우리 팀', '');
+  } else {
+    if (!(M.title || '').trim()) need('제목', 'meetTitle');
+    if (dating && !M.team) need('우리 팀', '');
+    if (!dating && !(Number.isInteger(capacity) && capacity >= 2 && capacity <= 100)) need('모집 인원(2~100명)', 'meetCapacity');
+    if (!dating && !((M.category === 'study' ? M.goal : M.activity) || '').trim()) need(M.category === 'study' ? '공부 주제·목표' : '주요 활동', M.category === 'study' ? 'meetGoal' : 'meetActivity');
+    if (!(M.intro || '').trim()) need('설명', 'meetIntro');
+    if (!(M.when || '').trim()) need(dating ? '희망 날짜·시간' : '모임 요일·시간', 'meetWhen');
+  }
+  if ((M.mode === 'apply' || (M.contact || '').trim()) && !validMeetContact(M.contact)) need('인스타그램·오픈카톡 링크', 'meetContact');
+  return miss;
+}
+function meetReady(M){ return !COMMUNITY.busy && !meetMissing(M).length; }
+function meetContactHint(M){ return (M.contact || '').trim() && !validMeetContact(M.contact) ? '인스타그램(instagram.com)이나 오픈카톡(open.kakao.com) 링크만 올릴 수 있어요.' : ''; }
+function meetHint(M){ var miss = meetMissing(M); return COMMUNITY.busy || !miss.length ? '' : '저장하려면 확인해 주세요: ' + miss.map(function(x){ return x.t; }).join(' · '); }
+/* 입력할 때마다 화면 전체를 다시 그리지 않고 버튼과 안내만 맞춘다(입력 중 커서 유지). */
+function meetSync(){
+  var M = S.meetSheet; if (!M) return;
+  var ms = $('meetSave'); if (ms) ms.classList.toggle('off', !meetReady(M));
+  [['meetContactHint', meetContactHint(M)], ['meetHint', meetHint(M)]].forEach(function(x){ var el = $(x[0]); if (el) { el.textContent = x[1]; el.hidden = !x[1]; } });
 }
 function vMeetSheet(){
   var M = S.meetSheet, apply = M.mode === 'apply', dating = M.category === 'dating', kind = MEET_CATEGORIES[M.category];
@@ -1633,12 +1663,22 @@ function vMeetSheet(){
     h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시') + meetField('meetWhere','장소·온라인 여부 (선택)',M.where,100,'예: 중앙도서관 스터디룸');
     h += meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물 (선택)' : dating ? '참가 조건 (선택)' : '참가 조건·준비물 (선택)',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true) + meetField('meetCost','참가 비용 (선택)',M.cost,100,'예: 무료 / 음료 각자 부담');
   }
-  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크' : '참가 문의 인스타그램·오픈카톡 링크',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
-  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0">' + esc(M.error || '') + '</p><button class="btn-pri" id="meetSave" data-act="meetSave"' + (meetReady(M) ? '' : ' disabled') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
+  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크' : '참가 문의 인스타그램·오픈카톡 링크 (선택)',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
+  var contactHint = meetContactHint(M), hint = meetHint(M);
+  h += '<p id="meetContactHint" role="status" style="color:var(--wine-ink);font-size:13px;margin:-6px 0 0"' + (contactHint ? '' : ' hidden') + '>' + esc(contactHint) + '</p>';
+  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p><p id="meetHint" class="muted" style="font-size:13px;line-height:19px;margin:0"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
   return h;
 }
 function saveSharedMeeting(){
-  var M = S.meetSheet; if (!M || !meetReady(M)) return;
+  var M = S.meetSheet; if (!M || COMMUNITY.busy) return;
+  var miss = meetMissing(M);
+  if (miss.length) {
+    toastMsg(miss[0].t + ' 칸을 확인해 주세요.');
+    var el = miss[0].id ? $(miss[0].id) : document.querySelector('[data-act="meetTm"]');
+    if (el) { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); el.focus({ preventScroll: true }); }
+    return;
+  }
+  M.contact = (M.contact || '').trim() ? meetContactUrl(M.contact) : '';
   var body = M.mode === 'apply' ? {name:M.name,team:M.team || '',message:M.msg || '',contact:M.contact} : Object.assign({},M,{dept:M.mode === 'edit' ? M.dept : W.pf.dept.dept,college:M.mode === 'edit' ? M.college : W.pf.dept.college,closed:!!M.closed});
   if (!body.id && M.mode !== 'apply') { M.id = crypto.randomUUID(); body.id = M.id; }
   var path = 'meetings' + (M.mode === 'apply' ? '/' + M.id + '/applications' : M.mode === 'edit' ? '/' + M.id : ''), method = M.mode === 'edit' ? 'PUT' : 'POST';
@@ -1940,7 +1980,7 @@ document.addEventListener('click', function(e){
     case 'meetMineOnly': S.meetMineOnly = !S.meetMineOnly; return loadCommunity(false);
     case 'meetSize': S.meetSize = el.getAttribute('data-s'); return render(false);
     case 'meetTeam': S.meetTeam = el.getAttribute('data-t'); return render(false);
-    case 'meetTm': { if (!S.meetSheet) return; S.meetSheet.team = el.getAttribute('data-t'); document.querySelectorAll('[data-act="meetTm"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); var mb = $('meetSave'); if (mb) mb.disabled = !meetReady(S.meetSheet); return; }
+    case 'meetTm': { if (!S.meetSheet) return; S.meetSheet.team = el.getAttribute('data-t'); document.querySelectorAll('[data-act="meetTm"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); meetSync(); return; }
     case 'meetNew': { S.meetSheet = { mode: 'new', category: S.meetCategory || 'dating', team: null, size: '3:3', when: '', where: '', want: '', title: '', intro: '', capacity: '', goal: '', activity: '', requirements: '', cost: '', contact: '' }; render(false); var mf = $('meetTitle'); if (mf) mf.focus(); return; }
     case 'meetEdit': if (COMMUNITY.detail && COMMUNITY.detail.mine) { S.meetSheet = Object.assign({},COMMUNITY.detail,{mode:'edit'}); render(false); } return;
     case 'meetApply': { var mp = meetFind(el.getAttribute('data-id')); if (!mp || !mp.shared || mp.mine || mp.closed) return; S.meetSheet = Object.assign({mode:'apply',id:mp.id,category:meetCategory(mp),name:W.pf.name || '',msg:'',contact:'',team:null},(store.communityApplied || {})[mp.id] || {}); return render(false); }
@@ -1998,7 +2038,7 @@ document.addEventListener('input', function(e){
   if (S.meetSheet && /^meet(When|Where|Want|Note|Msg|Title|Intro|Capacity|Goal|Activity|Requirements|Cost|Contact|Name)$/.test(t.id)) {
     S.meetSheet[t.id.slice(4).toLowerCase()] = t.value;
     var count = $(t.id + 'N'); if (count) count.textContent = t.value.length + '/' + t.maxLength;
-    var ms = $('meetSave'); if (ms) ms.disabled = !meetReady(S.meetSheet);
+    meetSync();
   }
   if (t.id === 'inPick') { S.pickQuery = t.value; var q = t.value.trim(); $('pickFound').innerHTML = pickFound(pickCandidates(q), q); }
 });

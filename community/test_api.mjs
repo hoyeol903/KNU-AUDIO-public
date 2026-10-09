@@ -16,12 +16,15 @@ r=await call('','GET',undefined,other); assert.equal(r.body.items.length,1);asse
 assert.equal((await call('/'+post.id,'PUT',{...post,closed:false},other)).status,403);
 assert.equal((await call('/'+post.id,'DELETE',undefined,other)).status,403);
 assert.equal((await call('','POST',{...post,id:crypto.randomUUID(),contact:'javascript:alert(1)'})).status,400);
+// 모집글 참가 문의 링크는 선택이다. 비워도 저장되고 빈 값으로 남는다.
+{const id=crypto.randomUUID(),r=await call('','POST',{...post,id,contact:''});assert.equal(r.status,201);assert.equal(r.body.item.contact,'');assert.equal((await call('/'+id,'DELETE')).status,200);}
 assert.equal((await call('','POST',{...post,id:crypto.randomUUID(),contact:'https://open.kakao.com.evil.example/o/test'})).status,400);
 assert.equal((await call('','POST',{...post,id:crypto.randomUUID(),contact:'https://user:pass@instagram.com/example'})).status,400);
 assert.equal((await call('','POST',{...post,id:crypto.randomUUID(),capacity:2.5})).status,400);
 assert.equal((await call('','POST',post,null)).status,401);
 assert.equal((await call('','POST',post,owner,{headers:{Origin:'https://evil.example'}})).status,403);
 const application={name:'참가자',message:'화요일 가능해요',contact:'https://www.instagram.com/testparticipant/',team:''};
+assert.equal((await call('/'+post.id+'/applications','POST',{...application,contact:''},other)).status,400); // 신청은 모집자가 연락할 링크가 필수.
 assert.equal((await call('/'+post.id+'/applications','POST',application,other)).status,200);
 assert.equal((await call('/'+post.id+'/applications','POST',application,other)).status,200);
 assert.equal((await call('/'+post.id,'GET',undefined,other)).body.item.applicationCount,1);

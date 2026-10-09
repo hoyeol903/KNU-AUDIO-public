@@ -20,7 +20,7 @@ export function contactLink(value) {
 export function validatePost(body) {
   const category = text(body, 'category', 10, true);
   if (!categories.includes(category)) throw new Problem(400, '모임 분류를 확인해 주세요.');
-  const p = {category, title: text(body, 'title', 60, true), intro: text(body, 'intro', 2000, true), when: text(body, 'when', 100, true), where: text(body, 'where', 100), dept: text(body, 'dept', 80), college: text(body, 'college', 80), contact: contactLink(text(body, 'contact', 500, true)), requirements: text(body, 'requirements', 500), cost: text(body, 'cost', 100), goal: text(body, 'goal', 200), activity: text(body, 'activity', 200), want: text(body, 'want', 100), size: '', team: '', capacity: 0};
+  const p = {category, title: text(body, 'title', 60, true), intro: text(body, 'intro', 2000, true), when: text(body, 'when', 100, true), where: text(body, 'where', 100), dept: text(body, 'dept', 80), college: text(body, 'college', 80), contact: contactLink(text(body, 'contact', 500)), requirements: text(body, 'requirements', 500), cost: text(body, 'cost', 100), goal: text(body, 'goal', 200), activity: text(body, 'activity', 200), want: text(body, 'want', 100), size: '', team: '', capacity: 0};
   if (category === 'dating') {
     p.team = text(body, 'team', 1, true); p.size = text(body, 'size', 3, true);
     if (!['m', 'f'].includes(p.team) || !['2:2', '3:3', '4:4'].includes(p.size)) throw new Problem(400, '팀과 인원을 선택해 주세요.');
