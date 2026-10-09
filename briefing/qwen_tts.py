@@ -16,14 +16,15 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v2-24k'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v4-uniform-gain-pause'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
                          trim_start_duration_sec=.05, trim_end_duration_sec=.1,
                          trim_start_threshold_db=-55, trim_end_threshold_db=-50,
                          preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
-                         added_tail_silence_sec=.18,
+                         # 구간 끝에 붙이는 쉼. 인사→날씨→공지가 붙어서 들려 0.18초에서 0.25초 늘렸다(남겨 둔 0.08초와 합쳐 약 0.5초).
+                         added_tail_silence_sec=.43,
                          # loudnorm은 처리 방식에 따라 출력 표본화율이 달라진다(24kHz 또는 48kHz).
                          # 구간마다 달라지면 이어 붙인 MP3가 브라우저에서 경계에서 끊기므로 모델 출력과 같은 값으로 고정한다.
                          sample_rate=24000)
@@ -81,7 +82,7 @@ def seeded_rng(torch, runtime_device):
 
 
 def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
-    """Two-pass EBU R128 normalization with a uniform, conservative segment tail."""
+    """음량을 측정한 뒤 모든 구간에 같은 방식(고정 증폭 + 피크 리미터)으로 목표 음량에 맞춘다."""
     base = _audio_filters(tempo)
     target = 'I=-19:TP=-2:LRA=7'
     measurement = runner(
@@ -91,14 +92,18 @@ def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
     if not matches:
         raise RuntimeError('FFmpeg 음량 측정 결과를 읽지 못했습니다.')
     stats = json.loads(matches[-1])
-    required = ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')
+    required = ('input_i', 'input_tp')
     if any(stats.get(key) in (None, '-inf', 'inf', 'nan') for key in required):
         raise RuntimeError('음성 구간의 음량을 안정적으로 측정하지 못했습니다.')
-    measured = ':'.join(f'measured_{key}={stats[source]}' for key, source in (
-        ('I', 'input_i'), ('TP', 'input_tp'), ('LRA', 'input_lra'), ('thresh', 'input_thresh')))
-    second_pass = f'{base},loudnorm={target}:{measured}:offset={stats["target_offset"]}:linear=true:print_format=summary'
+    # loudnorm 2차 처리는 구간에 따라 전체 음량만 올리거나(선형) 음량을 실시간으로 조절해(동적)
+    # 구간마다 소리 느낌과 표본화율이 달라졌다. 모든 구간에 같은 처리를 한다:
+    # 목표 음량까지 한 번에 올리고, 목표 최대치를 넘는 순간 피크만 리미터로 누른다.
+    profile = AUDIO_POSTPROCESS
+    gain = max(-20.0, min(20.0, profile['target_lufs'] - float(stats['input_i'])))
+    ceiling = 10 ** (profile['true_peak_db'] / 20)
+    second_pass = f'{base},volume={gain:.2f}dB,alimiter=limit={ceiling:.4f}:level=0'
     runner(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(wav), '-af', second_pass,
-            '-ar', str(AUDIO_POSTPROCESS['sample_rate']), '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
+            '-ar', str(profile['sample_rate']), '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
            check=True, timeout=180, capture_output=True)
 
 

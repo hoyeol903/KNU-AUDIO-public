@@ -25,3 +25,20 @@ def test_concat_reencodes_only_when_sample_rates_differ(tmp_path, monkeypatch):
     app_export.ffmpeg_concat([tmp_path / 'a.mp3', tmp_path / 'c.mp3'], tmp_path / 'mixed.mp3')
     assert commands[0][-3:-1] == ['-c', 'copy']
     assert 'libmp3lame' in commands[1] and commands[1][commands[1].index('-ar') + 1] == '24000'
+
+
+def test_every_clip_gets_the_same_kind_of_loudness_processing(tmp_path):
+    def chain(input_i):
+        calls = []
+        def runner(command, **kwargs):
+            calls.append(command)
+            return SimpleNamespace(stderr='{"input_i": "%s", "input_tp": "-1.0", "input_lra": "12", "input_thresh": "-30", "target_offset": "0.1"}' % input_i)
+        normalize_audio(tmp_path / 'in.wav', tmp_path / 'out.mp3', 1.0, runner=runner)
+        return calls[-1][calls[-1].index('-af') + 1]
+    quiet, loud = chain('-27.5'), chain('-14.0')
+    # 음량 폭(LRA)이 크거나 피크가 높은 구간도 loudnorm 동적 처리로 빠지지 않고 같은 사슬을 탄다.
+    for filters in (quiet, loud):
+        assert 'loudnorm' not in filters and filters.endswith('alimiter=limit=0.7943:level=0')
+    assert 'volume=8.50dB' in quiet and 'volume=-5.00dB' in loud
+    assert 'volume=20.00dB' in chain('-70')  # 거의 무음인 구간을 과하게 키우지 않는다
+
