@@ -15,7 +15,7 @@ export function selectPlaylist(manifest, selectedIds, excludedNotices = []) {
   const meals = manifest.segments.filter(s => s.kind === 'meal' && s.channel_ids.some(id => selected.has(id)));
   return [
     ...manifest.segments.filter(s => ['greeting', 'weather'].includes(s.kind)),
-    ...(notices.length ? notices : manifest.segments.filter(s => s.kind === 'empty_notices')),
+    ...notices,
     ...(meals.length ? meals : manifest.segments.filter(s => s.kind === 'empty_meals')),
     ...manifest.segments.filter(s => ['events', 'outro'].includes(s.kind)),
   ];
