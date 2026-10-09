@@ -86,3 +86,9 @@ npx wrangler@4 deploy --config community/wrangler.local.toml
 ## 현재 GitHub Pages 연결
 
 GitHub Pages 기본 API 주소는 `https://knua-community-api.knua-public-pr73.workers.dev/api/community/`이다. `tools/knua-app.html`과 `output/app/index.html`에 함께 설정되어 있으며 `window.KNUA_COMMUNITY_API_BASE`로 재정의할 수 있다. 로컬·같은 출처의 Cloudflare Pages 기본 경로는 `/api/community/`이다.
+
+## 신청 목록 페이지
+
+모집자의 신청 내역은 최근 신청부터 30건씩 반환하며 `nextCursor`가 있으면 `cursor`로 다음 페이지를 요청합니다. 같은 시각의 신청은 DB 행 순서로 구분합니다. 응답에 포함된 신청만 읽음 처리하며, 조회 후 다시 제출되어 시각이 바뀐 신청은 읽음 처리하지 않습니다. 앱은 ‘신청 내역 더 보기’로 누적 표시합니다.
+
+이 변경은 DB 스키마 변경이 없습니다. 운영 반영 시 Worker API를 먼저 배포한 뒤 홈페이지를 배포합니다. 기존 화면도 새 API의 첫 페이지를 읽을 수 있지만 전체 신청을 보려면 새 화면의 더 보기 버튼이 필요합니다.

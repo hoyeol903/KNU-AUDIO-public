@@ -1645,7 +1645,7 @@ function loadCommunity(more){
 }
 function meetFind(id){ return COMMUNITY.detail && COMMUNITY.detail.id === id ? COMMUNITY.detail : COMMUNITY.rows.concat(myMeets()).filter(function(p){ return p.id === id; })[0]; }
 function openMeeting(id){
-  var p = meetFind(id); COMMUNITY.detail = p || null; COMMUNITY.applicants = null; S.meetId = id; S.decide = null;
+  var p = meetFind(id); COMMUNITY.detail = p || null; COMMUNITY.applicants = null; COMMUNITY.applicantsCursor = null; COMMUNITY.applicantsBusy = false; S.meetId = id; S.decide = null;
   if (S.route !== 'meeting-detail') S.meetBack = S.route === 'meeting-inbox' ? 'meeting-inbox' : 'meeting-list';
   nav('meeting-detail');
   if (p && !p.shared) return;
@@ -1777,9 +1777,17 @@ function vDecideSheet(){
     '<p class="cm-help">결과와 ' + (ok ? '메모' : '사유') + '는 신청자에게 알림으로 전달돼요. 나중에 결정을 바꿀 수 있어요.</p>' +
     '<button class="btn-pri cm-save" id="decideSave" data-act="decideSave"' + (D.busy ? ' disabled' : '') + '>' + (D.busy ? '저장 중…' : ok ? '수락하기' : '거절하기') + '</button></div></div>';
 }
-function loadApplicants(){
-  var ap = COMMUNITY.detail; if (!ap || !ap.mine) return;
-  return communityRequest('meetings/' + ap.id + '/applications').then(function(data){ if (S.meetId === ap.id) { COMMUNITY.applicants = data.items; NOTE.items = NOTE.items.filter(function(n){ return !(n.kind === 'applied' && n.postId === ap.id); }); render(false); } }).catch(function(e){ toastMsg(e.message); });
+function loadApplicants(more){
+  var ap = COMMUNITY.detail; if (!ap || !ap.mine || COMMUNITY.applicantsBusy || (more && !COMMUNITY.applicantsCursor)) return;
+  COMMUNITY.applicantsBusy = true; render(false);
+  var path = 'meetings/' + ap.id + '/applications' + (more ? '?cursor=' + encodeURIComponent(COMMUNITY.applicantsCursor) : '');
+  return communityRequest(path).then(function(data){
+    if (S.meetId !== ap.id) return;
+    var rows = more ? (COMMUNITY.applicants || []).slice() : [];
+    data.items.forEach(function(a){ var i = rows.findIndex(function(r){ return r.ref === a.ref; }); if (i < 0) rows.push(a); else rows[i] = a; });
+    COMMUNITY.applicants = rows; COMMUNITY.applicantsCursor = data.nextCursor || null;
+    NOTE.items = NOTE.items.filter(function(n){ return !(n.kind === 'applied' && n.postId === ap.id && data.items.some(function(a){ return a.created_at === n.at && a.name === n.name && a.team === n.team; })); });
+  }).catch(function(e){ if (S.meetId === ap.id) toastMsg(e.message); }).finally(function(){ if (S.meetId === ap.id) { COMMUNITY.applicantsBusy = false; render(false); checkNotes(); } });
 }
 function saveDecision(){
   var D = S.decide, ap = COMMUNITY.detail; if (!D || D.busy || !ap) return;
@@ -1810,14 +1818,15 @@ function vMeetDetail(){
   else if (p.mine) {
     if (contact) h += '<div class="cm-textlink">' + contact + '</div>';
     h += '<div class="cm-acts"><button data-act="meetEdit">' + CM_IC.edit + '수정</button><button data-act="meetToggleClosed">' + CM_IC.lock + (p.closed ? '모집 다시 열기' : '모집 마감') + '</button><button class="del" data-act="meetDeleteShared">' + CM_IC.trash + '삭제</button></div><p class="cm-help">작성자 권한은 이 브라우저에 저장돼요. 브라우저 데이터를 지우면 관리할 수 없어요.</p>';
-    h += '<section class="col"><div class="row" style="justify-content:space-between;align-items:baseline;padding-bottom:8px"><b class="cm-sec">신청 내역 <span class="num">' + (p.applicationCount || 0) + '</span></b><span class="cm-fr">최근 100개</span></div>';
-    if (!COMMUNITY.applicants) h += '<button class="cm-more" data-act="meetApplicants">신청 내역 보기</button>';
+    h += '<section class="col"><div class="row" style="justify-content:space-between;align-items:baseline;padding-bottom:8px"><b class="cm-sec">신청 내역 <span class="num">' + (p.applicationCount || 0) + '</span></b><span class="cm-fr">최근 신청부터 표시</span></div>';
+    if (!COMMUNITY.applicants) h += '<button class="cm-more" data-act="meetApplicants"' + (COMMUNITY.applicantsBusy ? ' disabled' : '') + '>' + (COMMUNITY.applicantsBusy ? '불러오는 중…' : '신청 내역 보기') + '</button>';
     else h += COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){
       var pending = a.status === 'pending' || !a.status, link = contactButton(a.contact,'신청자에게 연락');
       return '<div class="cm-app"><span class="row" style="gap:8px"><b>' + esc(a.name) + '</b>' + (a.team ? '<span class="tm">' + MEET_TEAMS[a.team] + '</span>' : '') + '<span style="margin-left:auto">' + appStatusBadge(a.status) + '</span></span>' + (a.message ? '<span class="msg">' + esc(a.message) + '</span>' : '') +
         '<div class="row" style="gap:8px"><span class="cm-textlink" style="flex:1;min-width:0">' + (link || '<span class="cm-fr">연락 링크를 남기지 않았어요.</span>') + '</span>' + (pending ? '<button class="no" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="rejected">거절</button><button class="ok" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="accepted">수락</button>' : '<button class="chg" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="' + (a.status === 'accepted' ? 'rejected' : 'accepted') + '">결정 바꾸기</button>') + '</div>' +
         (a.reason ? '<span class="rs">' + (a.status === 'rejected' ? '거절 사유: ' : '메모: ') + esc(a.reason) + '</span>' : '') + '</div>';
     }).join('') : '<p class="cm-empty">아직 신청이 없어요.</p>';
+    if (COMMUNITY.applicantsCursor) h += '<button class="cm-more" data-act="meetApplicantsMore"' + (COMMUNITY.applicantsBusy ? ' disabled' : '') + '>' + (COMMUNITY.applicantsBusy ? '불러오는 중…' : '신청 내역 더 보기') + '</button>';
     h += '</section>';
   }
   h += '</div></div>';
@@ -2205,6 +2214,7 @@ document.addEventListener('click', function(e){
     case 'decideSave': return saveDecision();
     case 'meetSave': return saveSharedMeeting();
     case 'meetApplicants': return loadApplicants();
+    case 'meetApplicantsMore': return loadApplicants(true);
     case 'meetToggleClosed': { var cp = COMMUNITY.detail; if (!cp || !cp.mine || COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + cp.id,'PUT',Object.assign({},cp,{closed:!cp.closed})).then(function(data){ COMMUNITY.detail = data.item; toastMsg(data.item.closed ? '모집을 마감했어요.' : '모집을 다시 열었어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetDeleteShared': { var dp = COMMUNITY.detail; if (!dp || !dp.mine || COMMUNITY.busy || !confirm('이 모집글과 접수된 신청을 삭제할까요?')) return; COMMUNITY.busy = true; return communityRequest('meetings/' + dp.id,'DELETE').then(function(){ COMMUNITY.detail = null; nav('meeting-list'); toastMsg('모집글을 삭제했어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetCancel': { var ci = el.getAttribute('data-id'); if (COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + ci + '/applications','DELETE').then(function(){ store.communityApplied = Object.assign({},store.communityApplied); delete store.communityApplied[ci]; save(); toastMsg('신청을 취소했어요.'); openMeeting(ci); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }

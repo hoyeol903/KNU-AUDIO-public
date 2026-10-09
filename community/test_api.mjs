@@ -103,3 +103,35 @@ r=await api('applications','GET',undefined,other);assert.equal(r.body.items[0].s
 assert.equal((await call('/'+p2.id,'DELETE')).status,200);
 assert.equal((await api('applications','GET',undefined,other)).body.items.length,0); // 글이 지워지면 신청과 알림도 사라진다.
 console.log('Community API: sharing, private applications, decisions and notifications, ownership, validation, idempotency, pagination, rate limits and deletion passed.');
+
+// 101건과 같은 시각의 신청도 누락 없이 넘기고, 보여 주지 않은 신청은 읽음 처리하지 않는다.
+{
+ const id=crypto.randomUUID(); assert.equal((await call('', 'POST', {...post,id})).status,201);
+ for(let i=0;i<101;i++) sqlite.prepare('INSERT INTO community_applications (post_id,applicant_hash,name,team,message,contact,created_at) VALUES (?,?,?,?,?,?,?)').run(id,'page-'+i,'신청'+i,'','','',1000);
+ let cursor='',refs=[];
+ do {
+  const page=await call('/'+id+'/applications'+(cursor?'?cursor='+encodeURIComponent(cursor):''));
+  assert.equal(page.status,200); assert(page.body.items.length<=30);
+  refs.push(...page.body.items.map(a=>a.ref));
+  assert.equal(sqlite.prepare('SELECT COUNT(*) n FROM community_applications WHERE post_id=? AND owner_seen=1').get(id).n,refs.length);
+  cursor=page.body.nextCursor;
+ }while(cursor);
+ assert.equal(refs.length,101);assert.equal(new Set(refs).size,101);
+ assert.equal((await call('/'+id+'/applications?cursor=invalid')).status,400);
+ assert.equal((await call('/'+id+'/applications?cursor=1000:0')).status,400);
+ assert.equal((await call('/'+id+'/applications?cursor=1000:1','GET',undefined,other)).status,403);
+ // 조회 뒤 다시 제출된 신청은 옛 응답으로 읽음 처리하지 않는다.
+ sqlite.prepare('UPDATE community_applications SET owner_seen=0 WHERE post_id=?').run(id);
+ const prepare=db.prepare;let changed;
+ db.prepare=function(query){
+  const statement=prepare.call(this,query);
+  if(query.startsWith('SELECT rowid AS position')){
+   const all=statement.all;
+   statement.all=async function(){const result=await all.call(this);changed=result.results[0].applicant_hash;sqlite.prepare('UPDATE community_applications SET created_at=2000 WHERE post_id=? AND applicant_hash=?').run(id,changed);return result;};
+  }
+  return statement;
+ };
+ try{assert.equal((await call('/'+id+'/applications')).status,200);}finally{db.prepare=prepare;}
+ assert.equal(sqlite.prepare('SELECT owner_seen FROM community_applications WHERE post_id=? AND applicant_hash=?').get(id,changed).owner_seen,0);
+ await call('/'+id,'DELETE');
+}
