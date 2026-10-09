@@ -35,3 +35,5 @@ jobs:
         run: python docs/check_channels.py
       - name: 화면 테스트
         run: node --test tests/*.test.mjs collector/tests/*.mjs community/test_api.mjs community/test_worker.mjs community/oracle/test_server.mjs
+      - name: 이름 인사 재생 검사
+        run: node tools/tests/personal-greeting.cjs

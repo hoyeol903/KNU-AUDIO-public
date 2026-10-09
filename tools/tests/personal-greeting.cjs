@@ -8,6 +8,7 @@ new vm.Script(script); // 앱 전체 문법
 assert.equal(html, fs.readFileSync(path.join(__dirname, '../../output/app/index.html'), 'utf8'));
 const chapters = script.slice(script.indexOf('function chapters(W)'), script.indexOf('var W = null, CH = []'));
 const engine = script.slice(script.indexOf('var A = new Audio()'), script.indexOf('/* ---------- 화면 ---------- */'));
+const cues = script.slice(script.indexOf('function sentences(t)'), script.indexOf('/* 말풍선 상태:'));
 function setup(korean = true) {
   const spoken = [];
   const audio = { duration: 2, currentTime: 0, playCount: 0, pauseCount: 0, attrs: {},
@@ -16,13 +17,13 @@ function setup(korean = true) {
   const speech = { getVoices(){return korean ? [{lang:'ko-KR'}] : [];}, cancel(){}, speak(u){spoken.push(u);} };
   const context = { Audio: function(){return audio;}, window: {speechSynthesis:speech}, speechSynthesis:speech,
     SpeechSynthesisUtterance:function(text){this.text=text;}, performance:{now:()=>1000},
-    setInterval(fn){context.tick=fn;}, navigator:{}, render(){}, media(){}, paintProgress(){}, toastMsg(){},
-    store:{name:'김경민'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false},
+    setTimeout(){}, setInterval(fn){context.tick=fn;}, navigator:{}, render(){}, media(){}, paintProgress(){}, toastMsg(){},
+    store:{name:'김경민'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false,playToken:0}, BGM_TRACK:null, BRIEF_OLD:false,
     BRIEF:{segments:[{id:'greeting',script:'안녕하세요.',personal_template:'안녕하세요, {name}님. 좋은 아침이에요!',audio:'hello.mp3',duration_sec:2},
       {id:'intro',script:'겉옷을 챙겨 주세요.',audio:'weather.mp3',duration_sec:3},
       {id:'outro',script:'힘내세요.',audio:'bye.mp3',duration_sec:2}]}};
   vm.createContext(context);vm.runInContext(chapters,context);
-  context.CH=context.chapters({boards:[],cafes:[]});vm.runInContext(engine,context);
+  context.CH=context.chapters({boards:[],cafes:[]});vm.runInContext(engine,context);vm.runInContext(cues,context);
   return {context,spoken,audio};
 }
 {
