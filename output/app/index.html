@@ -472,6 +472,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .dept-avatar{width:44px;height:44px;object-fit:contain;flex-shrink:0;border-radius:50%;background:var(--wine-soft)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.meet-open{display:block;width:100%;background:none;border:0;color:inherit;text-align:left;padding:0;font:inherit;cursor:pointer}.meet-open:focus-visible{outline:3px solid var(--wine);outline-offset:5px;border-radius:12px}.meet-open .mt-ft{display:flex}.meet-open .mt-t{overflow-wrap:anywhere}.sheet textarea.field{min-height:120px;height:auto;line-height:1.6}.sheet .field{max-width:100%;box-sizing:border-box}
 </style>
 
 <div class="stage">
@@ -1018,12 +1019,12 @@ function paintSeek(ch, t){
 
 /* ---------- 화면 ---------- */
 var lastRoute = null;
-function nav(route, opts){ S.route = route; if (opts) for (var k in opts) S[k] = opts[k]; render(true); var sc = document.querySelector('.scr'); if (sc) sc.scrollTop = 0; }
+function nav(route, opts){ S.route = route; if (opts) for (var k in opts) S[k] = opts[k]; render(true); var sc = document.querySelector('.scr'); if (sc) sc.scrollTop = 0; if (route === 'meeting' || route === 'meeting-list') loadCommunity(false); }
 function render(animate){
   var route = S.loadPhase === 'loading' ? 'loading' : S.loadPhase === 'error' ? 'error' : S.route;
   if (animate === undefined) animate = route !== lastRoute;
   lastRoute = route;
-  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, feedback: vFeedback, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList }[route];
+  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, feedback: vFeedback, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList, 'meeting-detail': vMeetDetail }[route];
   var view = $('view'), y = 0, sc = view.querySelector('.scr');
   if (sc && !animate) y = sc.scrollTop;
   view.innerHTML = fn();
@@ -1033,7 +1034,7 @@ function render(animate){
   if (W && P.started && DOCK_ROUTES[route] && W.hasBrief) ov += vDock();
   if (W && S.sheet) ov += vSheet();
   if (W && S.evSheet && (S.route === 'home' || S.route === 'calendar')) ov += vEvSheet();
-  if (W && S.meetSheet && (S.route === 'meeting' || S.route === 'meeting-list')) ov += vMeetSheet();
+  if (W && S.meetSheet && (S.route === 'meeting' || S.route === 'meeting-list' || S.route === 'meeting-detail')) ov += vMeetSheet();
   if (W && S.mealSheet && S.route === 'home') ov += vMealSheet();
   if (!SPLASH.active && W && route === 'home' && !S.tour && !store.tour && !S.mealSheet && !S.evSheet && !S.sheet) S.tour = { i: 0 };
   if (S.tour && route !== 'home') S.tour = null;
@@ -1473,87 +1474,172 @@ var MEET_SAMPLES = [
   {"id": "club-9", "category": "club", "title": "전시 구경하는 주말", "capacity": 6, "when": "매월 둘째 주 토요일 오후", "where": "대구 시내 전시장", "intro": "관심 있는 전시를 함께 고르고 둘러봐요. 입장료가 있는 전시는 금액을 먼저 확인하고 정해요.", "college": "전공 무관"},
   {"id": "club-10", "category": "club", "title": "어쿠스틱 기타 같이 연습해요", "capacity": 5, "when": "매주 금요일 오후 5시", "where": "이용 가능한 교내 연습 공간", "intro": "기초 코드와 쉬운 곡을 같이 연습해요. 기타는 개인 지참이며 연습 장소는 사전에 확인해요.", "college": "전공 무관"}
 ];
+/* 예시에도 실제 작성 양식의 항목을 제공한다. 연락 링크는 비워 두며 실제 계정으로 연결하지 않는다. */
+var MEET_STUDY_GOALS = ['토익 800점 목표 · 단어 시험과 LC·RC 풀이', '파이썬 기초와 작은 프로그램 만들기', '입문 알고리즘 문제 풀이와 풀이 설명', '일상 영어 회화 연습', '한국사 개념 정리와 기출문제 풀이', '극한·미분·적분 기초 복습', '경험 정리와 자기소개서 초안 피드백', '중국어 성조와 기초 회화', '공모전 아이디어와 기획안 작성', '각자 정한 학습 목표 달성과 공부 인증'];
+var MEET_STUDY_REQUIREMENTS = ['꾸준히 참여할 분 · 현재 점수 무관', '코딩 입문자 환영 · 개인 노트북', '입문자 환영 · 풀이를 공유할 분', '영어 회화 초보 환영', '시험 준비를 꾸준히 함께할 분', '기초를 복습하고 싶은 분 · 질문할 문제 지참', '자기소개서 초안 준비 · 개인정보는 가려서 공유', '중국어 입문자 환영', '관심 공모전과 아이디어를 함께 정할 분', '서로의 집중 시간을 존중할 분'];
+var MEET_CLUB_ACTIVITIES = ['캠퍼스 산책과 대화', '쉬운 보드게임 배우고 함께 즐기기', '휴대폰·카메라 사진 촬영과 감상', '한 달 한 권 읽고 독서 이야기 나누기', '배드민턴 기초 자세와 연습', '영화 관람과 감상 나누기', '걷기와 가벼운 달리기', '공강 시간에 함께 학식 먹기', '관심 전시 관람', '기타 기초 코드와 쉬운 곡 연습'];
+var MEET_CLUB_REQUIREMENTS = ['편한 신발 · 우천 시 쉬어요', '보드게임 초보 환영', '휴대폰 또는 카메라 · 인물 촬영 전 동의', '함께 고른 책 읽고 참여', '개인 라켓 지참 · 장소 이용 여부 사전 확인', '함께 볼 영화는 모임 전에 정해요', '체력에 맞춰 참여 · 비가 오면 쉬어요', '해당 점심시간에 참여할 수 있는 분', '전시와 입장료는 사전에 확인', '개인 기타 지참 · 연습 장소 사전 확인'];
+var MEET_CLUB_COSTS = ['참가비 없음', '카페 이용료 각자 부담', '참가비 없음 · 이동 비용 각자 부담', '책·음료 비용 각자 부담', '장소 이용료 발생 시 사전 안내', '영화표·음료 비용 각자 부담', '참가비 없음', '식사 비용 각자 부담', '입장료 발생 시 사전 안내 · 각자 부담', '장소 이용료 발생 시 사전 안내'];
+MEET_SAMPLES.forEach(function(p){
+  var k = meetCategory(p), i = parseInt(p.id.split('-')[1], 10) - 1;
+  p.contact = ''; p.kakaoLink = ''; p.instagramLink = '';
+  if (k === 'study') { p.goal = MEET_STUDY_GOALS[i]; p.requirements = MEET_STUDY_REQUIREMENTS[i]; p.cost = p.id === 'study-4' || p.id === 'study-7' ? '카페 음료 각자 부담' : '참가비 없음 · 개인 교재 등은 각자 준비'; }
+  else if (k === 'club') { p.activity = MEET_CLUB_ACTIVITIES[i]; p.requirements = MEET_CLUB_REQUIREMENTS[i]; p.cost = MEET_CLUB_COSTS[i]; }
+  else { p.title = p.dept + ' ' + (p.team === 'm' ? '남자팀' : '여자팀') + ' ' + p.size + ' 과팅'; p.intro = p.note; p.requirements = p.size + ' 인원으로 참여할 팀 · 상세 일정은 함께 조율'; p.cost = '식사·활동 비용 각자 부담'; }
+});
+
 var MEET_SIZES = ['전체', '2:2', '3:3', '4:4'];
 /* 모집한 팀과 신청한 팀이 남자팀인지 여자팀인지 표시한다. */
 var MEET_TEAMS = { m: '남자팀', f: '여자팀' };
 function teamBadge(t){ return MEET_TEAMS[t] ? '<span class="badge ' + (t === 'm' ? 'b-sky' : 'b-new') + '">' + MEET_TEAMS[t] + '</span>' : ''; }
 function teamChips(sel, act){ return '<div class="chips" role="group" aria-label="우리 팀">' + ['m', 'f'].map(function(t){ return '<button class="chip-btn" data-act="' + act + '" data-t="' + t + '" aria-pressed="' + (sel === t) + '">' + MEET_TEAMS[t] + '</button>'; }).join('') + '</div>'; }
 function myMeets(){ return Array.isArray(store.meetMine) ? store.meetMine : []; }
+/* 공유 교류. 인증 토큰은 브라우저에만 보관하고 공개 응답에는 포함하지 않는다. */
+/* GitHub Pages에서는 별도 API를 연결하기 전까지 공유 기능을 준비 중으로 표시한다. */
+var COMMUNITY_API_BASE = window.KNUA_COMMUNITY_API_BASE || (/\.github\.io$/.test(location.hostname) ? '' : '/api/community/');
+var COMMUNITY = { rows: [], counts: {}, cursor: null, status: 'idle', error: '', category: '', mine: false, gen: 0, busy: false, detail: null, applicants: null };
+function communityToken(){
+  var key = 'knua-community-device-v1', token;
+  try {
+    token = localStorage.getItem(key);
+    if (!/^[a-f0-9]{64}$/.test(token || '')) { var bytes = new Uint8Array(32); crypto.getRandomValues(bytes); token = Array.from(bytes).map(function(x){ return x.toString(16).padStart(2, '0'); }).join(''); localStorage.setItem(key, token); }
+    return token;
+  } catch(e){ throw new Error('작성자 인증을 저장하지 못했어요. 브라우저 저장 설정을 확인해 주세요.'); }
+}
+function communityRequest(path, method, body){
+  if (!COMMUNITY_API_BASE) return Promise.reject(new Error('모집글 공유 API 연결을 준비 중이에요. 예시 상세는 볼 수 있어요.'));
+  var headers = { 'Content-Type': 'application/json' };
+  try { headers.Authorization = 'Bearer ' + communityToken(); } catch(e){ if (method && method !== 'GET') return Promise.reject(e); }
+  var controller = new AbortController(), timer = setTimeout(function(){ controller.abort(); }, 15000);
+  return fetch(COMMUNITY_API_BASE.replace(/\/?$/, '/') + path, { method: method || 'GET', headers: headers, body: body ? JSON.stringify(body) : undefined, signal: controller.signal, cache: 'no-store' }).then(function(r){
+    return r.json().catch(function(){ throw new Error('모집글 공유 연결을 준비 중이에요.'); }).then(function(data){ if (!r.ok) throw new Error(data.error || '요청을 완료하지 못했어요.'); return data; });
+  }).catch(function(e){ if (e.name === 'AbortError') throw new Error('응답이 늦어지고 있어요. 다시 시도해 주세요.'); throw e; }).finally(function(){ clearTimeout(timer); });
+}
+function communityRoute(){ return ['meeting','meeting-list','meeting-detail'].indexOf(S.route) >= 0; }
+function loadCommunity(more){
+  var category = S.route === 'meeting' ? '' : S.meetCategory || 'dating', mine = S.route !== 'meeting' && !!S.meetMineOnly;
+  var gen = ++COMMUNITY.gen, cursor = more ? COMMUNITY.cursor : null;
+  COMMUNITY.status = 'loading'; COMMUNITY.error = ''; COMMUNITY.category = category; COMMUNITY.mine = mine;
+  if (!more) { COMMUNITY.rows = []; COMMUNITY.cursor = null; }
+  if (communityRoute()) render(false);
+  return communityRequest('meetings?category=' + category + (mine ? '&mine=1' : '') + (cursor ? '&cursor=' + encodeURIComponent(cursor) : '')).then(function(data){
+    if (gen !== COMMUNITY.gen) return;
+    COMMUNITY.rows = more ? COMMUNITY.rows.concat(data.items) : data.items; COMMUNITY.counts = data.counts; COMMUNITY.cursor = data.nextCursor; COMMUNITY.status = 'ready';
+  }).catch(function(e){ if (gen !== COMMUNITY.gen) return; COMMUNITY.status = 'error'; COMMUNITY.error = e.message; }).finally(function(){ if (gen === COMMUNITY.gen && communityRoute()) render(false); });
+}
+function meetFind(id){ return COMMUNITY.detail && COMMUNITY.detail.id === id ? COMMUNITY.detail : COMMUNITY.rows.concat(myMeets(), MEET_SAMPLES).filter(function(p){ return p.id === id; })[0]; }
+function openMeeting(id){
+  var p = meetFind(id); COMMUNITY.detail = p || null; COMMUNITY.applicants = null; S.meetId = id;
+  nav('meeting-detail');
+  if (p && !p.shared) return;
+  COMMUNITY.status = 'loading'; render(false);
+  communityRequest('meetings/' + encodeURIComponent(id)).then(function(data){ if (S.meetId !== id) return; COMMUNITY.detail = data.item; COMMUNITY.status = 'ready'; render(false); }).catch(function(e){ if (S.meetId !== id) return; COMMUNITY.detail = null; COMMUNITY.status = 'error'; COMMUNITY.error = e.message; render(false); });
+}
+function validMeetContact(value){
+  try { var u = new URL(value); return u.protocol === 'https:' && !u.username && !u.password && !u.port && ['instagram.com','www.instagram.com','open.kakao.com'].indexOf(u.hostname) >= 0 && u.pathname !== '/'; } catch(e){ return false; }
+}
+function contactButton(value, label){ return validMeetContact(value) ? '<a class="btn-pri" style="text-decoration:none;text-align:center" href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + label + ' · ' + (new URL(value).hostname === 'open.kakao.com' ? '오픈카톡' : '인스타그램') + '</a>' : ''; }
+function communityNotice(){
+  if (COMMUNITY.status === 'error') return '<div class="mt-note" role="status"><span>' + esc(COMMUNITY.error) + ' 기존 예시는 둘러볼 수 있어요.</span></div>';
+  return '<div class="mt-note" role="note"><span>공유 모집글은 다른 사용자도 볼 수 있어요. 작성·신청 내역 관리는 이 브라우저에서 할 수 있어요.</span></div>';
+}
 function meetCard(p, mine){
-  var category = meetCategory(p), dating = category === 'dating';
-  var ap = !mine && dating && (store.meetApplied || {})[p.id], applied = !!ap, myTeam = ap && ap.team;
-  var cnt = { m: (p.apply || {}).m || 0, f: (p.apply || {}).f || 0 }; if (myTeam) cnt[myTeam]++;
-  var totalApply = cnt.m + cnt.f + (applied && !myTeam ? 1 : 0);
-  var who = ['m', 'f'].filter(function(t){ return cnt[t]; }).map(function(t){ return MEET_TEAMS[t] + ' ' + cnt[t]; }).join(' · ');
-  var title = p.title ? esc(p.title) : (esc(p.dept) + ' ' + (p.team === 'm' ? '남자팀 ' : p.team === 'f' ? '여자팀 ' : '') + esc(p.size.split(':')[0]) + '명 모집');
-  var intro = p.intro || p.note || '';
-  var capacity = dating ? '모집 인원 ' + esc(p.size) : '모집 인원 ' + esc(p.capacity) + '명';
-  return '<article class="mt-card' + (mine ? ' mine' : '') + '"><div class="row" style="gap:6px;flex-wrap:wrap">' + (mine ? '<span class="badge" style="background:var(--wine);color:#fff">내 모임</span>' : '<span class="badge b-tile">예시</span>') + '<span class="badge b-tile">' + MEET_CATEGORIES[category] + '</span>' + (dating ? teamBadge(p.team) : '') + '<span class="badge b-tile num">' + capacity + '</span><span class="muted" style="font-size:12.5px;font-weight:600">' + esc(p.college || '') + '</span></div>' +
-    '<b class="mt-t">' + title + '</b>' +
-    (p.when ? '<span class="mt-m">' + esc([p.when, p.where].filter(Boolean).join(' · ')) + '</span>' : '') +
-    (dating && p.want ? '<span class="mt-m">원하는 상대 · ' + esc(p.want) + '</span>' : '') +
-    (intro ? '<p class="mt-p">' + esc(intro) + '</p>' : '') +
-    '<div class="mt-ft"><span class="muted num" style="font-size:13px;font-weight:600">' + (mine ? '이 브라우저에만 보여요' : !dating ? '모임 소개 예시' : '신청 ' + totalApply + '팀' + (who ? ' · ' + who : '')) + '</span>' +
-    (mine ? '<button class="mt-go done" data-act="meetDel" data-id="' + esc(p.id) + '">지우기</button>'
-      : !dating ? '' : applied ? '<button class="mt-go done" data-act="meetCancel" data-id="' + esc(p.id) + '" aria-label="' + esc(p.dept) + ' 신청 취소">' + IC.check + '신청함' + (myTeam ? ' · ' + MEET_TEAMS[myTeam] : '') + '</button>'
-      : '<button class="mt-go" data-act="meetApply" data-id="' + esc(p.id) + '" aria-label="' + esc(p.dept) + ' ' + esc(p.size) + ' 신청하기">신청하기</button>') + '</div></article>';
+  var category = meetCategory(p), dating = category === 'dating', shared = !!p.shared;
+  var title = p.title || p.dept + ' ' + (MEET_TEAMS[p.team] || '') + ' ' + (p.size || '3:3').split(':')[0] + '명 모집';
+  var intro = p.intro || p.note || '', capacity = dating ? '모집 인원 ' + esc(p.size) : '모집 인원 ' + esc(p.capacity) + '명';
+  return '<article class="mt-card' + (mine ? ' mine' : '') + '"><button class="meet-open" data-act="meetDetails" data-id="' + esc(p.id) + '" aria-label="' + esc(title) + ' 상세 보기"><span class="row" style="gap:6px;flex-wrap:wrap"><span class="badge b-tile">' + (shared ? mine ? '내 모집글' : '모집글' : mine ? '기존 개인 기록' : '예시') + '</span><span class="badge b-tile">' + MEET_CATEGORIES[category] + '</span>' + (dating ? teamBadge(p.team) : '') + '<span class="badge b-tile num">' + capacity + '</span><span class="muted" style="font-size:12.5px;font-weight:600">' + esc(p.college || '') + '</span></span><b class="mt-t">' + esc(title) + '</b>' +
+    (p.when ? '<span class="mt-m">' + esc([p.when,p.where].filter(Boolean).join(' · ')) + '</span>' : '') +
+    (intro ? '<span class="mt-p" style="display:block">' + esc(intro.slice(0,120)) + (intro.length > 120 ? '…' : '') + '</span>' : '') +
+    '<span class="mt-ft"><span class="muted" style="font-size:13px">' + (shared ? p.closed ? '모집 마감' : '신청 ' + (p.applicationCount || 0) + (dating ? '팀' : '명') : mine ? '이 브라우저의 개인 기록' : '모임 소개 예시') + '</span><span style="color:var(--wine-ink);font-weight:750">자세히 보기 ' + sz(IC.chev,16) + '</span></span></button></article>';
 }
 function vMeet(){
   var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px">';
-  h += '<section class="fb-hero meet-hero"><div class="col" style="gap:4px;flex:1;min-width:0;position:relative"><span class="fb-k">교류</span><h1 class="fb-h">관심 있는 모임을 찾아요</h1><span class="fb-s">과팅, 스터디, 소모임을 둘러보고 내 모임을 만들어요.</span></div><img class="meet-mascot" src="data/hobanu/community.webp" alt="" width="112" height="140"></section>';
-  h += '<div class="mt-note" role="note"><span style="margin-top:1px">' + IC.warn + '</span><span><b>예시 화면이에요.</b> 아래 모집글은 실제가 아니고, 신청·모집 내용은 아무에게도 전달되지 않아요. 연락처는 적지 마세요.</span></div>';
-  var descriptions = { study: '같이 공부하고 꾸준히 성장해요', dating: '다른 학과 친구들과 만나요', club: '좋아하는 취미를 함께 즐겨요' };
-  ['study', 'dating', 'club'].forEach(function(k){
-    var rows = filterMeetings(MEET_SAMPLES, k), mine = filterMeetings(myMeets(), k);
-    h += '<section class="meet-section" aria-label="' + MEET_CATEGORIES[k] + '"><button class="meet-entry" data-act="meetCategory" data-k="' + k + '" aria-label="' + MEET_CATEGORIES[k] + ' 목록 보기"><span class="row" style="justify-content:space-between;gap:12px"><span class="row" style="gap:8px"><b style="font-size:18px;font-weight:800">' + MEET_CATEGORIES[k] + '</b><span class="badge b-tile num">예시 ' + rows.length + '개</span></span>' + sz(IC.chev, 20) + '</span><span class="muted" style="font-size:13px">' + descriptions[k] + (mine.length ? ' · 내 모임 ' + mine.length + '개' : '') + '</span><span class="col" style="gap:9px;padding-top:10px;border-top:1px solid var(--line)">' + rows.slice(0, 2).map(function(p){ return '<span class="title-wrap" style="font-size:14px;line-height:21px;font-weight:600">' + esc(p.title || p.dept + ' ' + MEET_TEAMS[p.team] + ' ' + p.size.split(':')[0] + '명 모집') + '</span>'; }).join('') + '</span><span style="font-size:13px;font-weight:750;color:var(--wine-ink)">' + MEET_CATEGORIES[k] + ' 전체 보기</span></button></section>';
+  h += '<section class="fb-hero meet-hero"><div class="col" style="gap:4px;flex:1;min-width:0;position:relative"><span class="fb-k">교류</span><h1 class="fb-h">관심 있는 모임을 찾아요</h1><span class="fb-s">과팅, 스터디, 소모임을 둘러보고 내 모임을 만들어요.</span></div><img class="meet-mascot" src="data/hobanu/community.webp" alt="" width="112" height="140"></section>' + communityNotice();
+  h += '<button class="chip-btn" data-act="meetRefresh">' + (COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : '모집글 새로고침') + '</button>';
+  var descriptions = {study:'같이 공부하고 꾸준히 성장해요',dating:'다른 학과 친구들과 만나요',club:'좋아하는 취미를 함께 즐겨요'};
+  ['study','dating','club'].forEach(function(k){
+    var real = filterMeetings(COMMUNITY.rows,k), samples = filterMeetings(MEET_SAMPLES,k), rows = real.length ? real : samples;
+    h += '<section class="meet-section"><button class="meet-entry" data-act="meetCategory" data-k="' + k + '"><span class="row" style="justify-content:space-between"><b style="font-size:18px">' + MEET_CATEGORIES[k] + '</b><span class="badge b-tile">' + (COMMUNITY.counts[k] || 0) + '개 모집 중</span>' + sz(IC.chev,20) + '</span><span class="muted">' + descriptions[k] + '</span><span class="col" style="gap:8px">' + rows.slice(0,2).map(function(p){ return '<span style="font-size:14px">' + (!p.shared ? '[예시] ' : '') + esc(p.title || p.dept + ' ' + MEET_TEAMS[p.team] + ' 모집') + '</span>'; }).join('') + '</span><span style="font-size:13px;color:var(--wine-ink)">전체 보기</span></button></section>';
   });
   return h + '</div></div>';
 }
 function vMeetList(){
-  var f = S.meetSize, tm = S.meetTeam, keep = function(p){ return (f === '전체' || p.size === f) && (tm === '전체' || p.team === tm); };
-  var category = S.meetCategory || 'dating', list = filterMeetings(MEET_SAMPLES, category).filter(keep), my = filterMeetings(myMeets(), category).filter(keep);
-  var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px">';
-  h += '<div class="row" style="gap:8px;min-height:48px"><button class="icon-btn plain" data-act="back" aria-label="교류로 돌아가기">' + IC.back + '</button><h1 style="margin:0;font-size:26px;font-weight:800">' + MEET_CATEGORIES[category] + '</h1></div>';
-  h += '<div class="mt-note" role="note"><span style="margin-top:1px">' + IC.warn + '</span><span><b>예시 화면이에요.</b> 아래 모집글은 실제가 아니고, 신청·모집 내용은 아무에게도 전달되지 않아요. 연락처는 적지 마세요.</span></div>';
-  h += '<div class="chips" role="group" aria-label="모임 분류">' + Object.keys(MEET_CATEGORIES).map(function(k){ return '<button class="chip-btn" data-act="meetCategory" data-k="' + k + '" aria-pressed="' + (category === k) + '">' + MEET_CATEGORIES[k] + '</button>'; }).join('') + '</div>';
-  h += '<button class="btn-pri" data-act="meetNew">' + sz(IC.plus, 18) + '모임 만들기</button>';
-  if (category === 'dating') {
-    h += '<div class="chips" role="group" aria-label="인원으로 거르기">' + MEET_SIZES.map(function(x){ return '<button class="chip-btn num" data-act="meetSize" data-s="' + x + '" aria-pressed="' + (x === f) + '">' + x + '</button>'; }).join('') + '</div>' +
-      '<div class="chips" role="group" aria-label="팀으로 거르기" style="margin-top:-8px">' + [['전체', '남녀 전체'], ['m', '남자팀'], ['f', '여자팀']].map(function(x){ return '<button class="chip-btn" data-act="meetTeam" data-t="' + x[0] + '" aria-pressed="' + (x[0] === tm) + '">' + x[1] + '</button>'; }).join('') + '</div>';
-  }
-  if (my.length) h += '<div class="col" style="gap:10px"><span class="lab-s">내 모임</span>' + my.map(function(p){ return meetCard(p, true); }).join('') + '</div>';
-  h += '<div class="col" style="gap:10px"><span class="lab-s">예시 ' + list.length + '개</span>' + (list.length ? list.map(function(p){ return meetCard(p, false); }).join('') : '<div class="none"><b style="font-size:15.5px">' + MEET_CATEGORIES[category] + ' 예시가 아직 없어요</b><span class="muted" style="font-size:13.5px">모임 만들기로 이 브라우저에 기록할 수 있어요.</span></div>') + '</div>';
+  var category = S.meetCategory || 'dating', f = S.meetSize, tm = S.meetTeam;
+  var keep = function(p){ return (f === '전체' || p.size === f) && (tm === '전체' || p.team === tm); };
+  var list = filterMeetings(COMMUNITY.rows,category).filter(keep), samples = filterMeetings(MEET_SAMPLES,category).filter(keep), drafts = filterMeetings(myMeets(),category).filter(keep);
+  var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px"><div class="row" style="gap:8px"><button class="icon-btn plain" data-act="back" aria-label="교류로 돌아가기">' + IC.back + '</button><h1 style="margin:0;font-size:26px">' + MEET_CATEGORIES[category] + '</h1></div>' + communityNotice();
+  h += '<div class="chips">' + Object.keys(MEET_CATEGORIES).map(function(k){ return '<button class="chip-btn" data-act="meetCategory" data-k="' + k + '" aria-pressed="' + (category === k) + '">' + MEET_CATEGORIES[k] + '</button>'; }).join('') + '</div><button class="btn-pri" data-act="meetNew">' + sz(IC.plus,18) + MEET_CATEGORIES[category] + ' 모집글 만들기</button>';
+  h += '<div class="chips"><button class="chip-btn" data-act="meetMineOnly" aria-pressed="' + !!S.meetMineOnly + '">내 모집글</button><button class="chip-btn" data-act="meetRefresh">새로고침</button></div>';
+  if (category === 'dating') h += '<div class="chips">' + MEET_SIZES.map(function(x){ return '<button class="chip-btn" data-act="meetSize" data-s="' + x + '" aria-pressed="' + (x === f) + '">' + x + '</button>'; }).join('') + '</div><div class="chips">' + [['전체','남녀 전체'],['m','남자팀'],['f','여자팀']].map(function(x){ return '<button class="chip-btn" data-act="meetTeam" data-t="' + x[0] + '" aria-pressed="' + (x[0] === tm) + '">' + x[1] + '</button>'; }).join('') + '</div>';
+  h += '<div class="col" style="gap:10px"><span class="lab-s">' + (S.meetMineOnly ? '내 모집글' : '공유 모집글') + '</span>' + list.map(function(p){ return meetCard(p,p.mine); }).join('') + (COMMUNITY.status === 'loading' ? '<p role="status">불러오는 중…</p>' : !list.length && COMMUNITY.status === 'ready' ? '<p class="muted">아직 모집글이 없어요. 첫 모임을 만들어 보세요.</p>' : '') + (COMMUNITY.cursor ? '<button class="chip-btn" data-act="meetMore">모집글 더 보기</button>' : '') + '</div>';
+  if (drafts.length) h += '<details id="meetDrafts" data-k="' + category + '"' + ((S.meetDraftsOpen || {})[category] ? ' open' : '') + '><summary class="lab-s">기존 개인 기록 ' + drafts.length + '개</summary><div class="col" style="gap:10px;padding-top:12px">' + drafts.map(function(p){ return meetCard(p,true); }).join('') + '</div></details>';
+  if (!S.meetMineOnly) h += '<details id="meetExamples" data-k="' + category + '"' + ((S.meetExamplesOpen || {})[category] === undefined ? !list.length ? ' open' : '' : S.meetExamplesOpen[category] ? ' open' : '') + '><summary class="lab-s">예시 ' + samples.length + '개 · 실제 모집이 아니에요</summary><div class="col" style="gap:10px;padding-top:12px">' + samples.map(function(p){ return meetCard(p,false); }).join('') + '</div></details>';
   return h + '</div></div>';
 }
-function meetField(id, label, v, max, ph){ return '<label class="col" style="gap:6px"><span class="row lab-s" style="justify-content:space-between">' + label + '<span id="' + id + 'N" class="num" style="font-weight:600">' + (v || '').length + '/' + max + '</span></span><input id="' + id + '" class="field" type="text" maxlength="' + max + '" autocomplete="off" placeholder="' + esc(ph) + '" value="' + esc(v || '') + '"></label>'; }
-function meetReady(M){ return M.mode === 'apply' ? !!M.team : M.category === 'dating' ? !!M.team && !!(M.when || '').trim() : !!(M.title || '').trim() && !!(M.intro || '').trim() && Number(M.capacity) >= 2 && Number(M.capacity) <= 100; }
-function vMeetSheet(){
-  var M = S.meetSheet, apply = M.mode === 'apply', p = apply ? MEET_SAMPLES.filter(function(x){ return x.id === M.id; })[0] : null, pf = W.pf;
-  if (apply && !p) return '';
-  var dating = apply || M.category === 'dating', kind = MEET_CATEGORIES[M.category] || '과팅';
-  var h = '<div class="dim" data-act="meetClose"></div><div class="sheet mini" role="dialog" aria-modal="true" aria-label="' + (apply ? '과팅 신청하기' : kind + ' 만들기') + '"><div style="display:flex;justify-content:center;padding-top:10px"><i style="width:40px;height:5px;border-radius:3px;background:var(--line)"></i></div>' +
-    '<div class="row" style="justify-content:space-between;padding:4px 10px 0 20px"><h2 style="margin:0;font-size:19px;font-weight:800">' + (apply ? '과팅 신청하기' : kind + ' 만들기') + '</h2><button class="icon-btn" data-act="meetClose" aria-label="닫기">' + IC.x + '</button></div>' +
-    '<div class="body" style="gap:14px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))">';
-  if (apply) {
-    h += '<div class="tile col" style="gap:4px;border-radius:18px"><b style="font-size:15.5px">' + esc(p.dept) + ' ' + (MEET_TEAMS[p.team] || '') + ' · ' + esc(p.size) + '</b><span class="muted" style="font-size:13px">' + esc([p.when, p.where].join(' · ')) + '</span></div>';
-    h += '<div class="col" style="gap:6px"><span class="lab-s">우리 쪽</span><b style="font-size:15px">' + esc(pf.dept.dept) + ' · ' + esc(p.size.split(':')[1]) + '명</b></div>';
-    h += '<div class="col" style="gap:6px"><span class="lab-s">우리 팀</span>' + teamChips(M.team, 'meetTm') + '</div>';
-    h += meetField('meetMsg', '한마디 (선택)', M.msg, 60, '예: 저희도 보드게임 좋아해요');
-  } else if (dating) {
-    h += '<div class="mt-note" role="note"><span>과팅 모집글은 이 브라우저에만 저장돼요. 실제로 전달되지 않습니다.</span></div>';
-    h += '<div class="col" style="gap:6px"><span class="lab-s">우리 과</span><b style="font-size:15px">' + esc(pf.dept.college + ' · ' + pf.dept.dept) + '</b></div>';
-    h += '<div class="col" style="gap:6px"><span class="lab-s">우리 팀</span>' + teamChips(M.team, 'meetTm') + '</div>';
-    h += '<div class="col" style="gap:6px"><span class="lab-s">인원</span><div class="chips" role="group" aria-label="인원">' + ['2:2', '3:3', '4:4'].map(function(x){ return '<button class="chip-btn num" data-act="meetSz" data-s="' + x + '" aria-pressed="' + (M.size === x) + '">' + x + '</button>'; }).join('') + '</div></div>';
-    h += meetField('meetWhen', '언제', M.when, 30, '예: 다음 주 금요일 저녁') + meetField('meetWhere', '어디서 (선택)', M.where, 20, '예: 북문 근처') + meetField('meetWant', '원하는 상대 (선택)', M.want, 20, '예: 인문대학, 상관없어요') + meetField('meetNote', '소개 (선택)', M.note, 120, '모임을 소개해 주세요');
-  } else {
-    h += '<div class="mt-note" role="note"><span>' + kind + ' 정보는 이 브라우저에만 저장돼요. 실제로 전달되지 않습니다. 연락처는 적지 마세요.</span></div>';
-    h += meetField('meetTitle', '카드 제목', M.title, 40, '어떤 모임인가요?') + meetField('meetIntro', '소개', M.intro, 120, '모임 내용을 소개해 주세요');
-    h += '<label class="col" style="gap:6px"><span class="lab-s">모집 인원 (2~100명)</span><input id="meetCapacity" class="field" type="number" min="2" max="100" step="1" inputmode="numeric" value="' + esc(M.capacity || '') + '" placeholder="예: 6"></label>';
+function vMeetDetail(){
+  var p = COMMUNITY.detail, h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px"><button class="chip-btn" data-act="back">' + sz(IC.back,18) + '목록으로</button>';
+  if (!p) return h + '<p role="status">' + esc(COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : COMMUNITY.error || '모집글을 찾을 수 없어요.') + '</p></div></div>';
+  var category = meetCategory(p), dating = category === 'dating';
+  h += '<span class="lab-s">' + MEET_CATEGORIES[category] + (p.shared ? p.closed ? ' · 모집 마감' : ' · 모집 중' : ' · 예시 또는 개인 기록') + '</span><h1 style="font-size:25px;margin:0;overflow-wrap:anywhere">' + esc(p.title || p.dept + ' ' + (MEET_TEAMS[p.team] || '') + ' 모집') + '</h1><section class="tile col" style="gap:12px">';
+  [['모집 인원',dating ? p.size + ' · ' + (MEET_TEAMS[p.team] || '') : p.capacity + '명'],['일정',p.when],['장소',p.where],['소속',p.dept || p.college],['희망 상대',dating ? p.want : ''],['스터디 목표',p.goal],['주요 활동',p.activity],['참가 조건·준비물',p.requirements],['참가 비용',p.cost]].forEach(function(pair){ if (pair[1]) h += '<div class="col" style="gap:4px"><b class="lab-s">' + pair[0] + '</b><span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(pair[1]) + '</span></div>'; });
+  h += '</section><section class="tile col" style="gap:10px"><h2 style="font-size:18px;margin:0">' + (dating ? '우리 팀 소개' : dating === false && category === 'study' ? '스터디 소개·진행 방식' : '소모임 소개') + '</h2><p style="white-space:pre-wrap;overflow-wrap:anywhere;margin:0;line-height:1.7">' + esc(p.intro || p.note || '소개가 아직 없어요.') + '</p></section>';
+  if (!p.shared) {
+    h += '<section class="tile col" style="gap:12px"><h2 style="font-size:18px;margin:0">참가 문의 링크</h2><label class="col" style="gap:6px"><span class="lab-s">오픈카카오톡 링크</span><input class="field" type="text" value="" placeholder="아직 등록된 링크가 없어요" readonly aria-label="예시 오픈카카오톡 링크 미등록"></label><label class="col" style="gap:6px"><span class="lab-s">인스타그램 링크</span><input class="field" type="text" value="" placeholder="아직 등록된 링크가 없어요" readonly aria-label="예시 인스타그램 링크 미등록"></label></section><div class="mt-note">실제 모집글이 아니라 참가·신청할 수 없어요.</div>';
   }
-  if (apply) h += '<p class="muted" style="margin:0;font-size:12.5px;line-height:18px">예시 화면이라 실제로 전달되지 않아요. 연락처나 개인정보는 적지 마세요.</p>';
-  h += '<button class="btn-pri" id="meetSave" data-act="meetSave"' + (meetReady(M) ? '' : ' disabled') + '>' + (apply ? '신청 표시' : '모임 만들기') + '</button></div></div>';
+  else {
+    if (!p.closed) h += contactButton(p.contact,'참가 문의');
+    if (p.mine) {
+      h += '<p class="muted" style="font-size:13px">작성자 권한은 이 브라우저에 저장돼요. 브라우저 데이터를 지우면 관리할 수 없어요.</p><div class="chips"><button class="chip-btn" data-act="meetEdit">수정</button><button class="chip-btn" data-act="meetToggleClosed">' + (p.closed ? '모집 다시 열기' : '모집 마감') + '</button><button class="chip-btn" data-act="meetApplicants">신청 내역 (' + p.applicationCount + ')</button><button class="chip-btn" data-act="meetDeleteShared">삭제</button></div>';
+      if (COMMUNITY.applicants) h += '<section class="tile col" style="gap:14px"><h2 style="font-size:18px;margin:0">최근 신청 내역 (최대 100개)</h2>' + (COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){ return '<div class="col" style="gap:8px;border-top:1px solid var(--line);padding-top:12px"><b>' + esc(a.name) + (a.team ? ' · ' + MEET_TEAMS[a.team] : '') + '</b><span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(a.message) + '</span>' + contactButton(a.contact,'신청자에게 연락') + '</div>'; }).join('') : '<p>아직 신청이 없어요.</p>') + '</section>';
+    } else {
+      var applied = (store.communityApplied || {})[p.id];
+      if (!p.closed) h += '<button class="btn-pri" data-act="meetApply" data-id="' + esc(p.id) + '">' + (applied ? '신청 내용 수정' : dating ? '우리 팀 신청하기' : '참가 신청하기') + '</button>';
+      if (applied) h += '<button class="chip-btn" data-act="meetCancel" data-id="' + esc(p.id) + '">신청 취소</button><p class="muted">신청을 접수했어요. 확정 여부는 모집자에게 확인해 주세요.</p>';
+    }
+  }
+  return h + '</div></div>';
+}
+function meetField(id,label,v,max,ph,area){ return '<label class="col" style="gap:6px"><span class="row lab-s" style="justify-content:space-between">' + label + '<span id="' + id + 'N" class="num">' + (v || '').length + '/' + max + '</span></span>' + (area ? '<textarea rows="5" style="resize:vertical"' : '<input type="text"') + ' id="' + id + '" class="field" maxlength="' + max + '" placeholder="' + esc(ph) + '"' + (area ? '>' + esc(v || '') + '</textarea>' : ' value="' + esc(v || '') + '">') + '</label>'; }
+function meetReady(M){
+  if (COMMUNITY.busy) return false;
+  if (M.mode === 'apply') return !!(M.name || '').trim() && validMeetContact(M.contact) && (M.category !== 'dating' || !!M.team);
+  return !!(M.title || '').trim() && !!(M.intro || '').trim() && !!(M.when || '').trim() && validMeetContact(M.contact) && (M.category === 'dating' ? !!M.team : Number.isInteger(Number(M.capacity)) && Number(M.capacity) >= 2 && Number(M.capacity) <= 100 && !!(M.category === 'study' ? M.goal || '' : M.activity || '').trim());
+}
+function vMeetSheet(){
+  var M = S.meetSheet, apply = M.mode === 'apply', dating = M.category === 'dating', kind = MEET_CATEGORIES[M.category];
+  var h = '<div class="dim" data-act="meetClose"></div><div class="sheet mini" role="dialog" aria-modal="true" aria-label="' + kind + (apply ? ' 신청' : ' 모집글') + '"><div class="row" style="justify-content:space-between;padding:16px 20px 0"><h2 style="font-size:19px">' + kind + (apply ? ' 신청하기' : M.mode === 'edit' ? ' 모집글 수정' : ' 모집글 만들기') + '</h2><button class="icon-btn" data-act="meetClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:14px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))">';
+  if (apply) {
+    h += meetField('meetName',dating ? '팀 대표 이름·별명' : '이름·별명',M.name,30,'모집자에게 보여줄 이름');
+    if (dating) h += '<span class="lab-s">우리 팀</span>' + teamChips(M.team,'meetTm');
+    h += meetField('meetMsg',dating ? '우리 팀 소개·희망 일정 (선택)' : '참가 이유·가능한 일정 (선택)',M.msg,500,'모집자에게 전할 내용을 적어 주세요',true);
+  } else {
+    h += meetField('meetTitle','모집글 제목',M.title,60,dating ? '예: 전자공학부 3:3 과팅' : kind === '스터디' ? '예: 토익 800점 목표 아침 스터디' : '예: 주말 사진 산책');
+    if (dating) h += '<span class="lab-s">우리 팀</span>' + teamChips(M.team,'meetTm') + '<span class="lab-s">팀별 인원</span><div class="chips">' + ['2:2','3:3','4:4'].map(function(x){ return '<button class="chip-btn" data-act="meetSz" data-s="' + x + '" aria-pressed="' + (M.size === x) + '">' + x + '</button>'; }).join('') + '</div>' + meetField('meetWant','희망 상대·학과 (선택)',M.want,100,'예: 학과 무관');
+    else {
+      h += '<label class="col" style="gap:6px"><span class="lab-s">모집 인원 (2~100명)</span><input id="meetCapacity" class="field" type="number" min="2" max="100" step="1" value="' + esc(M.capacity || '') + '"></label>';
+      h += M.category === 'study' ? meetField('meetGoal','공부 주제·목표',M.goal,200,'예: 토익 800점, 매주 단어 시험') : meetField('meetActivity','주요 활동',M.activity,200,'예: 사진 촬영 후 함께 감상 나누기');
+    }
+    h += meetField('meetIntro',dating ? '우리 팀 소개·만남 계획' : M.category === 'study' ? '스터디 설명·진행 방식' : '소모임 설명·활동 방식',M.intro,2000,'처음 보는 사람도 모임을 이해할 수 있게 자세히 적어 주세요',true);
+    h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시') + meetField('meetWhere','장소·온라인 여부 (선택)',M.where,100,'예: 중앙도서관 스터디룸');
+    h += meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물 (선택)' : dating ? '참가 조건 (선택)' : '참가 조건·준비물 (선택)',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true) + meetField('meetCost','참가 비용 (선택)',M.cost,100,'예: 무료 / 음료 각자 부담');
+  }
+  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크' : '참가 문의 인스타그램·오픈카톡 링크',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
+  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0">' + esc(M.error || '') + '</p><button class="btn-pri" id="meetSave" data-act="meetSave"' + (meetReady(M) ? '' : ' disabled') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
   return h;
 }
+function saveSharedMeeting(){
+  var M = S.meetSheet; if (!M || !meetReady(M)) return;
+  var body = M.mode === 'apply' ? {name:M.name,team:M.team || '',message:M.msg || '',contact:M.contact} : Object.assign({},M,{dept:M.mode === 'edit' ? M.dept : W.pf.dept.dept,college:M.mode === 'edit' ? M.college : W.pf.dept.college,closed:!!M.closed});
+  if (!body.id && M.mode !== 'apply') { M.id = crypto.randomUUID(); body.id = M.id; }
+  var path = 'meetings' + (M.mode === 'apply' ? '/' + M.id + '/applications' : M.mode === 'edit' ? '/' + M.id : ''), method = M.mode === 'edit' ? 'PUT' : 'POST';
+  COMMUNITY.busy = true; M.error = ''; render(false);
+  communityRequest(path,method,body).then(function(data){
+    S.meetSheet = null;
+    if (M.mode === 'apply') { store.communityApplied = Object.assign({},store.communityApplied); store.communityApplied[M.id] = {name:M.name,team:M.team,msg:M.msg,contact:M.contact}; save(); toastMsg('모집자에게 신청을 보냈어요.'); openMeeting(M.id); }
+    else { COMMUNITY.detail = data.item; S.meetId = data.item.id; nav('meeting-detail'); toastMsg('모집글을 공유했어요.'); }
+  }).catch(function(e){ M.error = e.message; S.meetSheet = M; }).finally(function(){ COMMUNITY.busy = false; if (communityRoute()) render(false); });
+}
+
 
 /* 아래 메뉴바: 홈 · 캘린더 · 교류 · 피드백. 브리핑은 홈 재생 카드와 미니 플레이어, 학식은 홈 학식 카드에서 들어간다. */
 var TAB_IC = {
@@ -1564,8 +1650,8 @@ var TAB_IC = {
   calendar: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
   meeting: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19.5c0-3 2.4-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><path d="M15 14.4c.5-.1 1-.2 1.5-.2 2.5 0 4.5 1.9 4.5 4.6"/></svg>'
 };
-var TAB_ROUTES = { saved: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', feedback: 'feedback' };
-var DOCK_ROUTES = { saved: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1 };
+var TAB_ROUTES = { saved: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', 'meeting-detail': 'meeting', feedback: 'feedback' };
+var DOCK_ROUTES = { saved: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1, 'meeting-detail': 1 };
 function vTabs(route){
   var cur = TAB_ROUTES[route];
   return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '교류'], ['feedback', '피드백']].map(function(t){
@@ -1824,7 +1910,7 @@ document.addEventListener('click', function(e){
     case 'pickDone': { var was = S.pickMode; store.extra = S.pickExtra.slice(); store.cafes = Object.assign({}, S.pickCafes); save(); pause(); P.started = false; P.ch = 0; P.chT = 0; P.done = false; refresh(); nav('home'); return toastMsg(was === 'settings' ? '저장했어요.' : W.hasBrief ? '준비 끝! 재생 버튼을 눌러 보세요.' : '준비 끝! 오늘 소식을 확인해 보세요.'); }
     case 'settings': return openSettings();
     case 'collectionStatus': return nav('collection-status');
-    case 'back': S.sheet = null; return nav(S.route === 'meeting-list' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
+    case 'back': S.sheet = null; return nav(S.route === 'meeting-detail' ? 'meeting-list' : S.route === 'meeting-list' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
     case 'heroPlay': if (!P.started) { play(0); return nav('player'); } return toggle();
     case 'openPlayer': return nav('player');
     case 'tab': {
@@ -1858,26 +1944,24 @@ document.addEventListener('click', function(e){
     case 'calYear': { var cy = S.calMonth || seoulToday().slice(0, 7); S.calMonth = (+cy.slice(0, 4) + +el.getAttribute('data-d')) + cy.slice(4); return render(false); }
     case 'calPick': S.calSel = el.getAttribute('data-d'); return render(false);
     case 'calGo': { var gm = el.getAttribute('data-ym'); S.calView = 'month'; S.calMonth = gm; S.calSel = seoulToday().slice(0, 7) === gm ? seoulToday() : gm + '-01'; return render(true); }
-    case 'meetCategory': return nav('meeting-list', { meetCategory: el.getAttribute('data-k'), meetSize: '전체', meetTeam: '전체' });
+    case 'meetCategory': return nav('meeting-list', { meetCategory: el.getAttribute('data-k'), meetSize: '전체', meetTeam: '전체', meetMineOnly: false });
+    case 'meetDetails': return openMeeting(el.getAttribute('data-id'));
+    case 'meetRefresh': return loadCommunity(false);
+    case 'meetMore': if (COMMUNITY.status !== 'loading') return loadCommunity(true); return;
+    case 'meetMineOnly': S.meetMineOnly = !S.meetMineOnly; return loadCommunity(false);
     case 'meetSize': S.meetSize = el.getAttribute('data-s'); return render(false);
     case 'meetTeam': S.meetTeam = el.getAttribute('data-t'); return render(false);
-    case 'meetTm': { S.meetSheet.team = el.getAttribute('data-t'); document.querySelectorAll('[data-act="meetTm"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); var mb = $('meetSave'); if (mb) mb.disabled = !meetReady(S.meetSheet); return; }
-    case 'meetNew': { S.meetSheet = { mode: 'new', category: S.meetCategory || 'dating', team: null, size: '3:3', when: '', where: '', want: '', note: '', title: '', intro: '', capacity: '' }; render(false); var mf = $('meetWhen') || $('meetTitle'); if (mf) mf.focus(); return; }
-    case 'meetApply': { var mp = MEET_SAMPLES.filter(function(x){ return x.id === el.getAttribute('data-id'); })[0]; S.meetSheet = { mode: 'apply', id: el.getAttribute('data-id'), msg: '', team: mp && mp.team === 'm' ? 'f' : mp && mp.team === 'f' ? 'm' : null }; return render(false); }
-    case 'meetSz': { S.meetSheet.size = el.getAttribute('data-s'); document.querySelectorAll('[data-act="meetSz"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); return; }
-    case 'meetClose': S.meetSheet = null; return render(false);
-    case 'meetSave': {
-      var MS = S.meetSheet; if (!MS) return;
-      if (MS.mode === 'apply') { store.meetApplied = Object.assign({}, store.meetApplied); store.meetApplied[MS.id] = { team: MS.team }; save(); S.meetSheet = null; return toastMsg('신청 표시를 남겼어요. 예시 화면이라 실제로 전달되지는 않아요.'); }
-      if (!meetReady(MS)) return;
-      if (MS.category !== 'dating') {
-        store.meetMine = [createLocalGroup(MS, 'm' + Date.now().toString(36), W.pf.dept)].concat(myMeets()).slice(0, 20);
-        save(); S.meetSheet = null; return toastMsg('모임을 만들었어요. 이 브라우저에만 저장돼요.');
-      }
-      store.meetMine = [{ id: 'm' + Date.now().toString(36), team: MS.team, dept: W.pf.dept.dept, college: W.pf.dept.college, size: MS.size, when: MS.when.trim().slice(0, 30), where: (MS.where || '').trim().slice(0, 20), want: (MS.want || '').trim().slice(0, 20), note: (MS.note || '').trim().slice(0, 120) }].concat(myMeets()).slice(0, 5);
-      save(); S.meetSheet = null; S.meetSize = '전체'; return toastMsg('모집글을 올렸어요. 예시 화면이라 이 브라우저에서만 보여요.');
-    }
-    case 'meetCancel': { store.meetApplied = Object.assign({}, store.meetApplied); delete store.meetApplied[el.getAttribute('data-id')]; save(); return render(false); }
+    case 'meetTm': { if (!S.meetSheet) return; S.meetSheet.team = el.getAttribute('data-t'); document.querySelectorAll('[data-act="meetTm"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); var mb = $('meetSave'); if (mb) mb.disabled = !meetReady(S.meetSheet); return; }
+    case 'meetNew': { S.meetSheet = { mode: 'new', category: S.meetCategory || 'dating', team: null, size: '3:3', when: '', where: '', want: '', title: '', intro: '', capacity: '', goal: '', activity: '', requirements: '', cost: '', contact: '' }; render(false); var mf = $('meetTitle'); if (mf) mf.focus(); return; }
+    case 'meetEdit': if (COMMUNITY.detail && COMMUNITY.detail.mine) { S.meetSheet = Object.assign({},COMMUNITY.detail,{mode:'edit'}); render(false); } return;
+    case 'meetApply': { var mp = meetFind(el.getAttribute('data-id')); if (!mp || !mp.shared || mp.mine || mp.closed) return; S.meetSheet = Object.assign({mode:'apply',id:mp.id,category:meetCategory(mp),name:W.pf.name || '',msg:'',contact:'',team:null},(store.communityApplied || {})[mp.id] || {}); return render(false); }
+    case 'meetSz': { if (!S.meetSheet) return; S.meetSheet.size = el.getAttribute('data-s'); document.querySelectorAll('[data-act="meetSz"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); return; }
+    case 'meetClose': if (!COMMUNITY.busy) { S.meetSheet = null; render(false); } return;
+    case 'meetSave': return saveSharedMeeting();
+    case 'meetApplicants': { var ap = COMMUNITY.detail; if (!ap || !ap.mine) return; return communityRequest('meetings/' + ap.id + '/applications').then(function(data){ if (S.meetId === ap.id) { COMMUNITY.applicants = data.items; render(false); } }).catch(function(e){ toastMsg(e.message); }); }
+    case 'meetToggleClosed': { var cp = COMMUNITY.detail; if (!cp || !cp.mine || COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + cp.id,'PUT',Object.assign({},cp,{closed:!cp.closed})).then(function(data){ COMMUNITY.detail = data.item; toastMsg(data.item.closed ? '모집을 마감했어요.' : '모집을 다시 열었어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
+    case 'meetDeleteShared': { var dp = COMMUNITY.detail; if (!dp || !dp.mine || COMMUNITY.busy || !confirm('이 모집글과 접수된 신청을 삭제할까요?')) return; COMMUNITY.busy = true; return communityRequest('meetings/' + dp.id,'DELETE').then(function(){ COMMUNITY.detail = null; nav('meeting-list'); toastMsg('모집글을 삭제했어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
+    case 'meetCancel': { var ci = el.getAttribute('data-id'); if (COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + ci + '/applications','DELETE').then(function(){ store.communityApplied = Object.assign({},store.communityApplied); delete store.communityApplied[ci]; save(); toastMsg('신청을 취소했어요.'); openMeeting(ci); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetDel': store.meetMine = myMeets().filter(function(x){ return x.id !== el.getAttribute('data-id'); }); save(); return render(false);
     case 'speed': S.speed = S.speed === 1 ? 1.25 : S.speed === 1.25 ? 1.5 : 1; A.playbackRate = S.speed; if (P.playing && mode() === 'tts') startChapter(true); return render(false);
     case 'voice': S.voice = !S.voice; P.fallback = false; A.muted = !S.voice; if (P.playing) startChapter(true); else stopVoice(); return render(false);
@@ -1923,14 +2007,14 @@ document.addEventListener('input', function(e){
   if (t.id === 'fbText') { S.fb.text = t.value; $('fbCount').textContent = t.value.length + '/500'; }
   if (t.id === 'evTitle') { S.evTitle = t.value; $('evCount').textContent = t.value.length + '/40'; var sv = document.querySelector('[data-act="evSave"]'); if (sv) sv.disabled = !t.value.trim(); }
   if (t.id === 'evDate') S.evDate = t.value;
-  if (S.meetSheet && /^meet(When|Where|Want|Note|Msg|Title|Intro|Capacity)$/.test(t.id)) {
+  if (S.meetSheet && /^meet(When|Where|Want|Note|Msg|Title|Intro|Capacity|Goal|Activity|Requirements|Cost|Contact|Name)$/.test(t.id)) {
     S.meetSheet[t.id.slice(4).toLowerCase()] = t.value;
     var count = $(t.id + 'N'); if (count) count.textContent = t.value.length + '/' + t.maxLength;
     var ms = $('meetSave'); if (ms) ms.disabled = !meetReady(S.meetSheet);
   }
   if (t.id === 'inPick') { S.pickQuery = t.value; var q = t.value.trim(); $('pickFound').innerHTML = pickFound(pickCandidates(q), q); }
 });
-document.addEventListener('toggle', function(e){ if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
+document.addEventListener('toggle', function(e){ if (e.target.id === 'meetExamples' || e.target.id === 'meetDrafts') { var key = e.target.id === 'meetExamples' ? 'meetExamplesOpen' : 'meetDraftsOpen'; S[key] = S[key] || {}; S[key][e.target.getAttribute('data-k')] = e.target.open; } if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
 document.addEventListener('keydown', function(e){
   if (e.key === 'Enter' && e.target.id === 'evTitle') { var sv = document.querySelector('[data-act="evSave"]'); if (sv && !sv.disabled) sv.click(); }
   if (e.target.id === 'seek' && CH.length) {
@@ -1938,7 +2022,7 @@ document.addEventListener('keydown', function(e){
     if (to != null) { e.preventDefault(); var dd2 = locate(Math.max(0, to)); if (dd2) { S.follow = true; seekTo(dd2.ch, dd2.t); } var kb = $('seek'); if (kb) kb.focus(); }
   }
   if (e.key === 'Escape' && S.tour) return tourEnd();
-  if (e.key === 'Escape') { if (S.meetSheet) { S.meetSheet = null; render(false); } if (S.mealSheet) { S.mealSheet = null; render(false); } if (S.evSheet) { S.evSheet = false; render(false); } if (S.sheet) { S.sheet = null; render(false); } openPanel(false); }
+  if (e.key === 'Escape') { if (S.meetSheet && !COMMUNITY.busy) { S.meetSheet = null; render(false); } if (S.mealSheet) { S.mealSheet = null; render(false); } if (S.evSheet) { S.evSheet = false; render(false); } if (S.sheet) { S.sheet = null; render(false); } openPanel(false); }
 });
 
 /* ---------- 시작 ---------- */
