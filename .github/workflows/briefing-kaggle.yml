@@ -42,8 +42,11 @@ jobs:
     env:
       TZ: Asia/Seoul
       PYTHONUNBUFFERED: '1'
-      KAGGLE_USERNAME: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
-      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      KAGGLE_USERNAME_1: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
+      KAGGLE_TOKEN_1: ${{ secrets.KAGGLE_API_TOKEN }}
+      # 보조 계정은 선택 사항. 등록하지 않으면 기본 계정만 쓴다.
+      KAGGLE_USERNAME_2: ${{ vars.KAGGLE_USERNAME_2 }}
+      KAGGLE_TOKEN_2: ${{ secrets.KAGGLE_API_TOKEN_2 }}
       KERNEL_DIR: .cache/kaggle/kernel
       EXPECTED_CONTEXT: .cache/kaggle/expected.json
       KAGGLE_OUTPUT: .cache/kaggle/output
@@ -59,6 +62,16 @@ jobs:
         run: echo "JOB_STARTED=$(date +%s)" >> "$GITHUB_ENV"
       - name: 고정 버전 Kaggle CLI 설치
         run: python -m pip install --disable-pip-version-check -r requirements.txt 'kaggle==2.2.4' 'mutagen>=1.47,<2'
+      # 기본 계정의 남은 GPU가 기준보다 적으면 보조 계정으로 실행한다. 고른 계정은 이 실행이 끝날 때까지 쓴다.
+      - name: GPU 한도가 남은 Kaggle 계정 선택
+        env:
+          MIN_GPU_HOURS: ${{ vars.KAGGLE_MIN_GPU_HOURS || '3' }}
+          RESUME_KERNEL: ${{ inputs.resume_kernel }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          python -m briefing.kaggle_account --minimum "$MIN_GPU_HOURS" --resume-kernel "$RESUME_KERNEL" \
+            --run-id "$RUN_ID" --run-attempt "$RUN_ATTEMPT"
       - name: 날짜와 최소 코드·자료 스냅샷 준비
         id: package
         env:

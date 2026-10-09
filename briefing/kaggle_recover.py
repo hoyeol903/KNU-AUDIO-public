@@ -6,7 +6,7 @@ from pathlib import Path
 import shutil
 import subprocess
 
-from briefing import kaggle
+from briefing import kaggle, kaggle_account
 from briefing.kaggle_batch import cli
 
 
@@ -41,7 +41,10 @@ def recover(run_id, *, manual=False, root=Path('.cache/kaggle')):
         if expected['run_id'] != run_id or commit['sha'] != expected['github_sha']:
             raise ValueError('원래 실행 정보가 일치하지 않습니다.')
     kernel = expected['kernel_id']
-    if not kernel.startswith(os.environ.get('KAGGLE_USERNAME', 'muyahoyeol') + '/knu-audio-briefing-' + run_id + '-'):
+    owner = kernel.split('/')[0]
+    # 실행을 시작한 계정의 토큰으로 결과를 가져온다. 설정된 계정이 아니면 거부한다.
+    kaggle_account.activate(owner)
+    if not kernel.startswith(owner + '/knu-audio-briefing-' + run_id + '-'):
         raise ValueError('원래 실행의 Kaggle 커널이 아닙니다.')
     version = str(expected.get('kernel_version', 1))
     kaggle.wait_for_kernel(kernel, version=version, interval=60)

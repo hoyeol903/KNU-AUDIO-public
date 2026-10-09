@@ -33,8 +33,11 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
       RUN_ID: ${{ inputs.run_id || github.event.workflow_run.id }}
-      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-      KAGGLE_USERNAME: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
+      KAGGLE_USERNAME_1: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
+      KAGGLE_TOKEN_1: ${{ secrets.KAGGLE_API_TOKEN }}
+      # 보조 계정은 선택 사항. 등록하지 않으면 기본 계정만 쓴다.
+      KAGGLE_USERNAME_2: ${{ vars.KAGGLE_USERNAME_2 }}
+      KAGGLE_TOKEN_2: ${{ secrets.KAGGLE_API_TOKEN_2 }}
     steps:
       - uses: actions/checkout@v7
         with:
