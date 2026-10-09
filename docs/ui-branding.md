@@ -49,6 +49,7 @@ GIF 대신 투명 WebP와 CSS 움직임을 사용한다. 일시정지 때 반복
 - 공식 캠퍼스 PNG: [new_ch_app2_png.zip](https://www.knu.ac.kr/wbbs/wbbs/download/new_ch_app2_png.zip). 복돈이, 본관+센트럴파크를 사용.
 - 비·맑음·마감 3장은 기존 호반우를 참조해 생성한 **프로젝트용 응용 이미지**다. 학교가 제공한 공식 표정으로 표기하지 않는다. 사용한 프롬프트는 `ui-branding/image-prompts.md`.
 - 교류 카드의 `community.webp`와 캘린더 제목의 `calendar.webp`는 사용자 선택·참조 이미지로 만든 프로젝트용 응용 이미지다. 생성·배경 추출 기록은 `ui-branding/image-prompts.md`에 있으며, 학교 공식 배포 이미지로 표기하지 않는다.
+- 피드백 화면의 `feedback.webp`(책상에 앉아 노트북으로 피드백을 읽는 호반우)는 사용자가 이미지 생성 도구로 만든 프로젝트용 응용 이미지다. 투명 배경을 유지한 채 여백을 정리해 480×480 WebP로 저장했다. 학교 공식 배포 이미지로 표기하지 않는다.
 - 로고는 경북대의 붉은 색 계열과 호반우의 형태를 참고한 크누아 자체 심볼이며 학교 엠블럼을 사용하지 않는다.
 - 시작 화면 뒤 원은 경북대 공식 엠블럼(`emblem_jpg.zip`의 원형 엠블럼, [로고 및 UI](https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=intro/about04&menu_idx=194))을 배경 투명 PNG(`tools/branding/knu-emblem.png`)로 바꿔 테마 색 10% 불투명도로 깐다. 학교 안내상 KNU UI는 상표 등록되어 있고 상업적 사용은 금지된다. 교내 비상업 프로젝트 기준으로 쓰며, 상업적 사용이나 외부 배포 시에는 학교 대외협력홍보과(053-950-2826)에 확인한다.
 

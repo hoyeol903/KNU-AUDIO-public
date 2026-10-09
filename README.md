@@ -98,6 +98,10 @@ python -m tools.update_meals
 
 하루 배경음악은 Kevin MacLeod의 Incompetech 공식 원본 MP3 30곡(CC BY 4.0) 중 하루 한 곡을 앱에 포함합니다. 출처 카탈로그와 원본 보관 안내는 [하루 배경음악](docs/daily-bgm.md)을 참고하세요.
 
+## 방문 통계
+
+Google Analytics의 **크누아 홈페이지** 속성에서 방문자 수를 확인합니다. 보고서 → 실시간에서 최근 방문을, 트래픽 보고서에서 날짜별 방문을 봅니다. 향상된 측정과 광고 기능은 끄며 이름·학과·식당 선택·피드백 내용은 전송하지 않습니다. 태그는 `tools/knua-app.html`과 배포본에 들어가고 안내는 `tools/privacy.html`에 있습니다.
+
 ## 협업 문서
 
 | 담당 | 작업 |

@@ -71,3 +71,6 @@ npx wrangler@4 deploy --config community/wrangler.local.toml
 ## 현재 GitHub Pages 연결
 
 GitHub Pages 기본 API 주소는 `https://knua-community-api.knua-public-pr73.workers.dev/api/community/`이다. `tools/knua-app.html`과 `output/app/index.html`에 함께 설정되어 있으며 `window.KNUA_COMMUNITY_API_BASE`로 재정의할 수 있다. 로컬·같은 출처의 Cloudflare Pages 기본 경로는 `/api/community/`이다.
+## Oracle Cloud에서 운영
+
+GitHub Pages와 Oracle 가상 서버를 연결하는 대안은 [Oracle 배포 안내](../community/oracle/README.md)를 참고한다. Node.js API와 SQLite 파일 DB, Caddy HTTPS, 영구 Docker 볼륨을 사용한다. 실제 계정·서버·API 주소를 설정하기 전에는 공유가 활성화되지 않는다.

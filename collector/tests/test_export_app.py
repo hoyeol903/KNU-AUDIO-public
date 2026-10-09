@@ -48,6 +48,7 @@ def test_export_preserves_snapshot_and_exports_channel_recent_union(tmp_path, mo
     assert db.read_bytes() == before
     assert state_path.read_bytes() == state_before
     assert (output / 'index.html').exists()
+    assert (output / 'privacy.html').read_text(encoding='utf-8') == (export_app.ROOT / 'tools/privacy.html').read_text(encoding='utf-8')
 
 
 def _export_app_data(tmp_path, monkeypatch, context, raw=None):
