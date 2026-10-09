@@ -123,7 +123,9 @@ python -m tools.update_meals
 
 - 배경음악(`assets/bgm/`): Kevin MacLeod, CC BY 4.0. 곡별 출처는 `assets/bgm/catalog.json`에 있습니다.
 - 수집한 공지·학식·학사일정 자료와 테스트용 저장 페이지(`data/`, `output/app/data/`, `collector/tests/fixtures/`): 원 게시 기관의 자료입니다.
-- 호반우 캐릭터와 학교 상징 이미지(`tools/hobanu/`, `tools/avatars/`, `tools/branding/`, `output/app/data/` 아래 사본): 별도 권리가 있을 수 있습니다.
+- 경북대학교 상징 이미지(`tools/branding/knu-emblem.png`와 `output/app/data/` 아래 사본): 학교의 상징물입니다.
+
+호반우 그림(`tools/hobanu/`, `tools/avatars/`)은 팀이 생성형 AI로 직접 만든 이미지입니다.
 
 외부 모델과 라이브러리는 [THIRD-PARTY.md](THIRD-PARTY.md)를 참고하세요.
 
