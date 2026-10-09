@@ -1436,14 +1436,13 @@ function vMealCard(x, i, when){
     if (gs.length > 6) go = '<button class="mlc-go" data-act="cafe" data-i="' + i + '">메뉴 ' + (gs.length - 6) + '개 더 보기' + mlChev() + '</button>';
   }
   if (hrs.length === 1) sub.unshift(hrs[0]);
-  if (c.menuFrom && c.menuFrom !== DATA.asOf) sub.push(md(c.menuFrom) + '에 받은 식단표');
   var seg = meals.length > 1 ? '<div class="mlc-seg" role="group" aria-label="끼니 고르기">' + meals.map(function(k, q){ var cnt = by[k].length; return '<button data-act="mealSel" data-c="' + esc(c.id) + '" data-m="' + q + '" aria-pressed="' + (q === mi) + '">' + esc(k || '메뉴') + (cnt > 1 ? ' ' + cnt : '') + '</button>'; }).join('') + '</div>' : '';
   return '<article class="mlc" aria-label="' + esc(c.name) + '"><div class="col" style="gap:4px"><span class="mlc-k">' + esc(meals[mi] || '학식') + '</span><b class="mlc-n">' + esc(c.name) + '</b>' + (sub.length ? '<span class="mlc-s">' + esc(sub.join(' · ')) + '</span>' : '') + '</div>' + seg + body +
     '<div class="mlc-ft">' + go + (price != null ? '<span class="mlc-pr">' + won(price) + '</span>' : '') + '</div></article>';
 }
 function vMeals(){
   var list = W.cafes, when = W.old ? '기준일' : '오늘';
-  var h = '<section class="span2 mealbox" aria-label="' + when + ' 학식"><div class="ml-hd"><h2 style="margin:0;font-size:17px;font-weight:800">' + when + ' 학식</h2><button class="ml-lnk" data-act="mealManage">식당 관리' + mlChev() + '</button></div>';
+  var h = '<section class="span2 mealbox" aria-label="오늘의 학식"><div class="ml-hd"><h2 style="margin:0;font-size:17px;font-weight:800">오늘의 학식</h2><button class="ml-lnk" data-act="mealManage">식당 관리' + mlChev() + '</button></div>';
   if (!list.length) return h + '<div class="none" style="margin-bottom:6px"><b style="font-size:15.5px">켜 둔 식당이 없어요</b><span class="muted" style="font-size:13.5px">식당 관리에서 식당을 켜면 여기에 나와요.</span></div></section>';
   h += '<div class="ml-rail" id="mlRail">' + list.map(function(x, i){ return vMealCard(x, i, when); }).join('') + '</div>';
   if (list.length > 1) h += '<div class="ml-dots" aria-hidden="true">' + list.map(function(x, i){ return '<i' + (i === Math.min(S.mealIdx, list.length - 1) ? ' class="on"' : '') + '></i>'; }).join('') + '</div>';
@@ -1512,7 +1511,7 @@ function mealCard(c, label, list, one){
 function vCafe(){
   var list = W.cafes, i = Math.min(S.cafeTab, Math.max(0, list.length - 1));
   var top = '<div class="scr" style="padding:12px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:18px">' + header(true);
-  function title(date){ return '<div class="row" style="justify-content:space-between;align-items:baseline;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">학식</h1><span class="lab-s num" style="font-weight:600">' + (date === DATA.asOf && W.old ? '기준일 ' : '') + esc(date) + '</span></div>'; }
+  function title(date){ return '<div class="row" style="justify-content:space-between;align-items:baseline;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">오늘의 학식</h1><span class="lab-s num" style="font-weight:600">' + (date === DATA.asOf && W.old ? '기준일 ' : '') + esc(date) + '</span></div>'; }
   if (!list.length) return top + title(DATA.asOf) + '<div class="none"><b style="font-size:16px">켜 둔 식당이 없어요</b><span class="muted" style="font-size:13.5px">게시판 설정에서 식당을 켜면 여기에 나와요.</span><button class="btn-sec" data-act="settings">게시판 설정</button></div></div></div>';
   var x = list[i], c = x.c;
   /* 날짜 고르기: 수집한 주간 표에 있는 날짜만 고를 수 있다. 고르지 않으면 기준일을 보여준다. */
@@ -1524,8 +1523,6 @@ function vCafe(){
   if (list.length > 3) h += '<div class="chips" role="tablist">' + list.map(function(x, k){ return '<button class="chip-btn" role="tab" aria-selected="' + (k === i) + '" aria-pressed="' + (k === i) + '" data-act="cafeTab" data-i="' + k + '">' + esc(x.c.name) + '</button>'; }).join('') + '</div>';
   else if (list.length > 1) h += '<div class="seg" role="tablist"><span class="pill" style="width:calc(' + (100 / list.length) + '% - ' + (8 / list.length) + 'px);transform:translateX(' + (i * 100) + '%)"></span>' + list.map(function(x, k){ return '<button role="tab" aria-selected="' + (k === i) + '" data-act="cafeTab" data-i="' + k + '">' + esc(x.c.name) + '</button>'; }).join('') + '</div>';
   if (days.length > 1) h += '<div class="col" style="gap:8px"><span class="lab-s">날짜</span><div class="chips" role="group" aria-label="날짜 고르기">' + days.map(function(d){ return '<button class="chip-btn num" data-act="cafeDate" data-d="' + esc(d.date) + '" aria-pressed="' + (d.date === v.date) + '">' + md(d.date) + ' ' + '일월화수목금토'.charAt(new Date(d.date).getUTCDay()) + '</button>'; }).join('') + '</div></div>';
-  /* 식단은 가끔만 수집한다. 오늘 받은 표가 아니면 언제 받은 것인지 밝힌다. */
-  if (c.menuFrom && c.menuFrom !== DATA.asOf && v.state !== 'fail') h += '<span class="muted" style="font-size:12.5px;line-height:18px;margin-top:-8px;padding:0 2px">' + md(c.menuFrom) + '에 받은 주간 식단표예요. 바뀐 메뉴는 학교 식단 페이지에서 확인하세요.</span>';
   if (v.state === 'fail') {
     h += '<section class="fail" style="padding:20px;gap:14px"><div class="row" style="gap:12px;align-items:flex-start"><span style="width:40px;height:40px;border-radius:13px;background:var(--bg);display:flex;align-items:center;justify-content:center">' + IC.warn + '</span><div class="col" style="gap:4px"><b style="font-size:16px;line-height:22px">' + when + ' 자료를 가져오지 못했습니다</b><span style="font-size:13.5px;line-height:20px">수집 중에 문제가 있었어요. 메뉴와 운영 시간은 학교 식단 페이지에서 확인해 주세요.</span></div></div>' + ext(c.url, '학교 식단 페이지 열기' + IC.ext(15), '', 'height:48px;border-radius:14px;background:var(--bg);color:var(--ink);display:flex;align-items:center;justify-content:center;gap:6px;font-size:15px;font-weight:800') + '</section>';
   } else {
