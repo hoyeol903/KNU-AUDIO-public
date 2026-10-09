@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>크누아 · 나의 아침 브리핑</title><link rel="stylesheet" href="style.css?v=qwen-speed-1"></head>
+<body>
+<main>
+  <header><a class="brand" href="./">KNU AUDIO <span>크누아</span></a><span class="tag">MORNING BRIEFING</span></header>
+  <section class="hero"><p class="eyebrow">학교 소식, 나의 속도로</p><h1>좋은 아침이에요.<br>오늘의 학교를 들어보세요.</h1>
+  <p>내 학과의 공지부터 따뜻한 한 끼까지, 등굣길에 필요한 소식을 모았어요.</p><p id="date" class="date"></p></section>
+  <p id="banner" role="status" class="banner">브리핑을 불러오는 중이에요.</p>
+  <div class="layout"><section class="panel settings"><h2>나의 브리핑 설정</h2>
+    <label for="department">학과·전공</label><select id="department"><option value="">학과를 선택해 주세요</option></select>
+    <label for="voice">안내 목소리</label><select id="voice"></select>
+    <label for="speed">음성 재생 속도</label><select id="speed"><option value="0.75">0.75배 · 천천히</option><option value="1" selected>1배 · 기본</option><option value="1.25">1.25배</option><option value="1.5">1.5배</option><option value="1.75">1.75배</option><option value="2">2배</option></select>
+    <p class="hint">재생 중에도 속도를 바꿀 수 있어요. 배경음악은 기본 속도로 재생돼요.</p>
+    <details open><summary>공지 채널 선택</summary><input id="filter" placeholder="학과·채널 검색" aria-label="공지 채널 검색"><div id="channels" class="choices"></div></details>
+    <details open><summary>학식 선택</summary><div id="meals" class="choices"></div></details>
+    <details><summary>들을 공지 직접 고르기</summary><div id="notices" class="choices"></div></details>
+    <p class="hint">공통 공지와 소속 학과 채널은 자동으로 선택돼요. 개별 공지는 직접 고를 수 있어요. 설정은 이 브라우저에만 저장돼요.</p>
+  </section>
+  <section class="panel listening"><div class="section-title"><h2>오늘의 브리핑</h2><span id="count"></span></div>
+    <div class="player"><p class="eyebrow">NOW PLAYING</p><h3 id="now">나만의 아침을 준비했어요</h3>
+      <audio id="speech" controls preload="none" aria-label="브리핑 음성"></audio>
+      <div class="controls"><button id="start" disabled>내 브리핑 듣기</button><a id="download" hidden>음성 WAV 저장</a></div>
+      <label class="music"><input id="music" type="checkbox" disabled> 배경음악 <input id="volume" type="range" min="0" max="30" value="10" aria-label="배경음악 음량" disabled></label>
+      <p id="status" class="hint" aria-live="polite"></p></div>
+    <details><summary>전체 대본과 원문 보기</summary><ol id="playlist"></ol></details>
+    <details><summary>수집 상태와 원문 확인</summary><ul id="issues"></ul></details>
+  </section></div>
+  <footer><p id="attribution"></p><p id="music-credit"></p><p>날짜·신청 대상·마감 시각은 학교 원문을 함께 확인해 주세요.</p></footer>
+</main><script type="module" src="app.mjs?v=qwen-speed-1"></script>
+</body></html>

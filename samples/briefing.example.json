@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-03",
+  "segments": [
+    {
+      "id": "intro",
+      "channel_id": "intro",
+      "title": "인사·날씨",
+      "audio": null,
+      "duration_sec": null,
+      "script": "10월 3일 크누아 브리핑입니다. 오늘 대구는 부분적으로 흐림, 최저 11.1도, 최고 22.7도이고 비 올 확률은 1퍼센트입니다.",
+      "items": [
+        {
+          "section": "날씨",
+          "title": "부분적으로 흐림",
+          "detail": "최저 11.1° / 최고 22.7° · 비 올 확률 1%",
+          "url": null,
+          "dday": null
+        }
+      ]
+    },
+    {
+      "id": "knu-academic",
+      "channel_id": "knu-academic",
+      "title": "학교 학사공지 소식",
+      "audio": null,
+      "duration_sec": null,
+      "script": "학교 학사공지 소식입니다. 새 글, 2026학년도 2학기 학사학위취득유예자 수강신청에 따른 등록금 추가 납부 안내. 마감이 10월 6일인 글, 2026학년도 2학기 교직 적성 및 인성검사(1차) 결과 안내.",
+      "items": [
+        {
+          "section": "소식",
+          "title": "2026학년도 2학기 학사학위취득유예자 수강신청에 따른 등록금 추가 납부 안내",
+          "detail": "학교 학사공지 · 2026-10-02",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?menu_idx=42&bbs_cde=stu_812&note_div=top&bltn_no=11790921912463",
+          "dday": null,
+          "postId": "knu-wbbs-stu_812:11790921912463"
+        },
+        {
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(1차) 결과 안내",
+          "detail": "학교 학사공지 · 2026-09-30",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?menu_idx=42&bbs_cde=stu_812&note_div=top&bltn_no=11790744244900",
+          "dday": null,
+          "postId": "knu-wbbs-stu_812:11790744244900"
+        }
+      ]
+    },
+    {
+      "id": "notice-df44dd8507c1",
+      "channel_id": "notice-df44dd8507c1",
+      "title": "전자공학부 · 공지사항 소식",
+      "audio": null,
+      "duration_sec": null,
+      "script": "전자공학부 · 공지사항 소식입니다. 새 글, [인공지능혁신융합대학사업단] AICOSS-UTAS 글로벌 프로그램 공고 (서류접수 ~10/14).",
+      "items": [
+        {
+          "section": "소식",
+          "title": "[인공지능혁신융합대학사업단] AICOSS-UTAS 글로벌 프로그램 공고 (서류접수 ~10/14)",
+          "detail": "전자공학부 · 공지사항 · 2026-10-02",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105668&gtid=notice&opt=&sword=&page=1&f_opt_1=",
+          "dday": null,
+          "postId": "knu-see-notice:105668"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "channel_id": "outro",
+      "title": "마무리",
+      "audio": null,
+      "duration_sec": null,
+      "script": "오늘 브리핑은 여기까지입니다. 좋은 하루 보내세요.",
+      "items": []
+    }
+  ]
+}

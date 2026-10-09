@@ -1,0 +1,23 @@
+{
+  "body_status_counts": {
+    "attachment-only": 128,
+    "empty": 2,
+    "image-only": 246,
+    "text": 3954
+  },
+  "coverage": {
+    "listed": 4330,
+    "stored": 4330,
+    "unresolved": []
+  },
+  "estimate_condition": "목록·정책 대상 변화 없음, 7일 재확인 대상 추가 없음. 실측 아닌 계산값",
+  "initial_duration_sec": 6218.727,
+  "initial_requests": 5206,
+  "recheck_duration_sec": 1134.858,
+  "recheck_requests": 726,
+  "recovered_from_dns_failures": 225,
+  "recovered_truncated_titles": 6,
+  "recovery_probe_requests": 12,
+  "request_reduction_percent": 86.05,
+  "steady_run_requests_estimate": 496
+}

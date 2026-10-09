@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 국어국문학과 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 국어국문학과" />
+<meta property="og:description" content="경북대학교  경북대학교 국어국문학과 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 국어국문학과</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1712285150" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/korean; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+
+
+
+
+
+
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:17%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:#FFFFFF;}
+
+</style>
+</svg>
+	
+	<div id="topwrap">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+							<img src="./data/designImages/logo.png" alt="로고이미지"/>
+						<span class="sub_name">경북대학교 <em>국어국문학과</em></span>
+			</a>
+		</div>
+		<div class="topmn clearfix">		
+			<a href="http://knu.ac.kr/" target="_blank" class="top-dk">경북대학교</a>
+												<a href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071404" class="top-dk top-login">로그인</a>
+													
+																				<a href="https://koreanen.knu.ac.kr/" target='_blank'>EN</a>
+										
+					</div>
+		</div>
+		<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+	</div>
+
+
+	<div id="gnb">	
+	<div id="gnbmn">
+			<nav id="menu">
+			<ul id="top1menu" class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=kor1657070767"  id="top1m1" title ='학과소개 > 학과개요 페이지로 이동합니다.'>학과소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=kor1657070767"  title ='학과개요 페이지로 이동합니다.'>학과개요</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=kor1657070783"  title ='교육목표 페이지로 이동합니다.'>교육목표</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=kor1657070792"  title ='비전 및 인재상 페이지로 이동합니다.'>비전 및 인재상</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=kor1657070824"  title ='학과연혁 페이지로 이동합니다.'>학과연혁</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=kor1657070877"  title ='국어국문학과가 페이지로 이동합니다.'>국어국문학과가</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=kor1657070888"  title ='찾아오시는 길 페이지로 이동합니다.'>찾아오시는 길</a></li>
+										<li id="top2m1m7"><a href="./sub.htm?nav_code=kor1669003448"  title ='학과발전계획 페이지로 이동합니다.'>학과발전계획</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kor1657070901"  id="top1m2" title ='교수소개 > 전임교수 페이지로 이동합니다.'>교수소개</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="./sub.htm?nav_code=kor1657070901"  title ='전임교수 페이지로 이동합니다.'>전임교수</a></li>
+										<li id="top2m2m2"><a href="./sub.htm?nav_code=kor1657070976"  title ='명예교수 페이지로 이동합니다.'>명예교수</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kor1657071105"  id="top1m3" title ='학사안내 > 진로안내 페이지로 이동합니다.'>학사안내</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1101" target='_blank' title ='새창으로 교과과정 페이지가 열립니다.'>교과과정</a></li>
+										<li id="top2m3m2"><a href="https://ipsi1.knu.ac.kr/" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+										<li id="top2m3m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target='_blank' title ='새창으로 학사일정 페이지가 열립니다.'>학사일정</a></li>
+										<li id="top2m3m4"><a href="./sub.htm?nav_code=kor1657071105"  title ='진로안내 페이지로 이동합니다.'>진로안내</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kor1657066869"  id="top1m4" title ='대학원 페이지로 이동합니다.'>대학원</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=21101" target='_blank' title ='새창으로 교과과정 페이지가 열립니다.'>교과과정</a></li>
+										<li id="top2m4m2"><a href="https://ipsi2.knu.ac.kr/" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+										<li id="top2m4m3"><a href="./sub.htm?nav_code=kor1772070514"  title ='대학원 공지 페이지로 이동합니다.'>대학원 공지</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kor1657071227"  id="top1m5" title ='학생활동 > 학회 페이지로 이동합니다.'>학생활동</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+										<li id="top2m5m1"><a href="./sub.htm?nav_code=kor1657071227"  title ='학회 페이지로 이동합니다.'>학회</a></li>
+										<li id="top2m5m2"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=board/community02&menu_idx=80" target='_blank' title ='새창으로 학생활동 페이지가 열립니다.'>학생활동</a></li>
+										<li id="top2m5m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=campus/service02&menu_idx=147" target='_blank' title ='새창으로 학생지원 페이지가 열립니다.'>학생지원</a></li>
+										<li id="top2m5m4"><a href="./sub.htm?nav_code=kor1740384767"  title ='학과 장학금 페이지로 이동합니다.'>학과 장학금</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kor1657071357"  id="top1m6" title ='게시판 > 공지사항(학사) 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="./sub.htm?nav_code=kor1657071357"  title ='공지사항(학사) 페이지로 이동합니다.'>공지사항(학사)</a></li>
+										<li id="top2m6m2"><a href="./sub.htm?nav_code=kor1697593848"  title ='공지사항(장학/활동) 페이지로 이동합니다.'>공지사항(장학/활동)</a></li>
+										<li id="top2m6m3"><a href="./sub.htm?nav_code=kor1697593823"  title ='공지사항(일반) 페이지로 이동합니다.'>공지사항(일반)</a></li>
+										<li id="top2m6m4"><a href="./sub.htm?nav_code=kor1657071260"  title ='정기간행물 페이지로 이동합니다.'>정기간행물</a></li>
+										<li id="top2m6m5"><a href="./sub.htm?nav_code=kor1657071380"  title ='묻고답하기 페이지로 이동합니다.'>묻고답하기</a></li>
+										<li id="top2m6m6"><a href="./sub.htm?nav_code=kor1657071392"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+										<li id="top2m6m7"><a href="./sub.htm?nav_code=kor1657071404"  title ='채용정보 페이지로 이동합니다.'>채용정보</a></li>
+										<li id="top2m6m8"><a href="./sub.htm?nav_code=kor1657071474"  title ='국어국문학과 역사관 페이지로 이동합니다.'>국어국문학과 역사관</a></li>
+										<li id="top2m6m9"><a href="./sub.htm?nav_code=kor1657071520"  title ='관련사이트 페이지로 이동합니다.'>관련사이트</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+
+			<!--sns 추가
+			-->
+
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(6,7);max_2menu=9;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../korean/data/designImages/SUBBG_1657084256');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"></div>
+
+
+<div id="svisual" style="min-height:340px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:904px;height:100px;left: 0px; top: 183px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">국어국문학과</p>
+	<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">글로컬 시대 한국어문학의 새로운 위상을 확보하고,
+바람직한 사회 변화를 주도하며 지역사회에 기여하겠습니다.</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=kor1657071357'>게시판</a></li><li><a href='./sub.htm?nav_code=kor1657071404'>채용정보</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EC%B1%84%EC%9A%A9%EC%A0%95%EB%B3%B4&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 채용정보&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkorean%2Fsub.htm%3Fnav_code%3Dkor1657071404" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:rgb(108, 88, 73);color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=kor1657071357" >공지사항(학사)</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=kor1697593848" >공지사항(장학/활동)</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=kor1697593823" >공지사항(일반)</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=kor1657071260" >정기간행물</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=kor1657071380" >묻고답하기</a>
+							</li>
+						<li id="snb2m6"><a href="./sub.htm?nav_code=kor1657071392" >포토갤러리</a>
+							</li>
+						<li id="snb2m7"><a href="./sub.htm?nav_code=kor1657071404" >채용정보</a>
+							</li>
+						<li id="snb2m8"><a href="./sub.htm?nav_code=kor1657071474" >국어국문학과 역사관</a>
+							</li>
+						<li id="snb2m9"><a href="./sub.htm?nav_code=kor1657071520" >관련사이트</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(7,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>채용정보</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="kor1657071404">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/korean/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			
+								<div class="board_search">
+						<form action="/HOME/korean/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+						<input type='hidden' name='code' value='IbMl7baTG6mn'>
+						<input type='hidden' name='nav_code' value='kor1657071404'>
+						<input type="hidden" name="order_list" value="">
+						<input type="hidden" name="list_scale" value="">
+						<input type="hidden" name="view_cate" value="">
+						<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+						<button type="button" onclick="search01();return false;"><i class="fa fa-search"></i><span>검색</span></button>
+						</form>
+					</div>
+					<!-- <div class="board_info">
+						<div class="left">총 <em>27</em>개의 글이 있습니다. (<em>1</em>/3 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/korean/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='kor1657071404'>
+							<input type='hidden' name='code' value='IbMl7baTG6mn'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+
+
+					<div class="board_list">
+						<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+							<thead>
+								<tr>
+								<th scope="col" abbr="번호" style="width:50px;">번호</th>
+								<th scope="col" abbr="제목">제목</th>
+																<th scope="col" abbr="첨부"style="width:50px;">첨부</th>
+																								<th scope="col" abbr="작성자" style="width:200px">작성자</th>
+								<th scope="col" abbr="작성일" style="width:100px;">작성일</th>
+								<th scope="col" abbr="조회" style="width:80px;">조회</th>
+																</tr>
+							</thead>
+							<tbody>
+
+
+			  
+											<tr>
+								<td class="num">27</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTExOTEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVhbiZuYXZfY29kZT1rb3IxNjU3MDcxNDA0JmNvZGU9SWJNbDdiYVRHNm1uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>경상고등학교 단기 강사 모집 홍보(국어교과 교원자격증 취득자 대상)</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2026-05-08</td>
+								<td class="hit">47</td>
+																</tr>
+												<tr>
+								<td class="num">26</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTExMDAmc3RhcnRQYWdlPTAmbGlzdE5vPTI2JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVhbiZuYXZfY29kZT1rb3IxNjU3MDcxNDA0JmNvZGU9SWJNbDdiYVRHNm1uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>대구광역시 문학진흥시설 직원 채용 공고</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTExMDAmc3RhcnRQYWdlPTAmbGlzdE5vPTI2JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVhbiZuYXZfY29kZT1rb3IxNjU3MDcxNDA0JmNvZGU9SWJNbDdiYVRHNm1uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2026-01-21</td>
+								<td class="hit">100</td>
+																</tr>
+												<tr>
+								<td class="num">25</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEwNjgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVhbiZuYXZfY29kZT1rb3IxNjU3MDcxNDA0JmNvZGU9SWJNbDdiYVRHNm1uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 김천고등학교 계약제 교사 모집 공고 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTEwNjgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVhbiZuYXZfY29kZT1rb3IxNjU3MDcxNDA0JmNvZGU9SWJNbDdiYVRHNm1uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2025-12-17</td>
+								<td class="hit">60</td>
+																</tr>
+												<tr>
+								<td class="num">24</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTg3NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjQmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>대구한의대학교 2025학년도 1, 2학기 한국어교육센터 신규 한국어강사 채용 공고</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2025-02-03</td>
+								<td class="hit">183</td>
+																</tr>
+												<tr>
+								<td class="num">23</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTg3NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjMmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2025 가치 만드는 국립극장 '국립창극단 창극 작가 프로젝트' 홍보</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2025-01-31</td>
+								<td class="hit">75</td>
+																</tr>
+												<tr>
+								<td class="num">22</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTc4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MjImdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>이지화국어학원 강사 채용 공고</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTc4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MjImdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2024-11-13</td>
+								<td class="hit">151</td>
+																</tr>
+												<tr>
+								<td class="num">21</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTY3NyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>(주)노마드에듀 전임/파트강사 모집 공고</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2024-08-09</td>
+								<td class="hit">78</td>
+																</tr>
+												<tr>
+								<td class="num">20</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>﻿2024년 제 1회 경북대학교 언어교육센터 한국어연수과정 강사 채용 공고</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2024-07-10</td>
+								<td class="hit">137</td>
+																</tr>
+												<tr>
+								<td class="num">19</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTU5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTkmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>국어 입시 학원 구인 공고</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTU5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTkmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2024-04-15</td>
+								<td class="hit">150</td>
+																</tr>
+												<tr>
+								<td class="num">18</td>
+								<td class="subject">
+								<a href='/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTQ3OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTgmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>(사)대구작가콜로퀴엄 문화예술 연수단원 및 안내원 모집 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTQ3OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTgmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmY29kZT1JYk1sN2JhVEc2bW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">국어국문학과</td>
+								<td class="date">2024-02-16</td>
+								<td class="hit">84</td>
+																</tr>
+											</tbody>
+						</table>
+					</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">															   
+				
+<strong>1</strong><a href='/HOME/korean/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SWJNbDdiYVRHNm1uJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' title='2 페이지'>2</a>
+<a href='/HOME/korean/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9SWJNbDdiYVRHNm1uJm5hdl9jb2RlPWtvcjE2NTcwNzE0MDQmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' title='3 페이지'>3</a>
+
+						   
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						
+			</div>
+			<!-- //board_info -->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+
+<footer>
+<div class="d_width clearfix">
+	<div class="f_logo"><img src="./data/designImages/logo.png"></div>
+	<div class="f_cont">
+		<ul class="fmn clearfix">
+		<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+		<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li>
+				</ul>
+		<address>41566 대구광역시 북구 대학로 80 (산격동,경북대학교) 인문대학 406호<br>Tel.053-950-5106 Fax.053-950-6106 Mail.kukmoon@hanmail.net		<p class="copyright">Copyright ⓒ 경북대학교 <em>국어국문학과</em>. All rights Reserved.</p></address>		
+	</div>
+
+		<div class="f_link">
+		</div>
+	
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- //footer -->
+
+</body>
+</html>

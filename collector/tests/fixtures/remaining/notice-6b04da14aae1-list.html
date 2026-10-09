@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="true" name="HandheldFriendly"/>
+<meta content="no" http-equiv="imagetoolbar"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<meta content="telephone=no, address=no, email=no" name="format-detection"/>
+<meta content="IE=EmulateIE9" http-equiv="X-UA-Compatible"/>
+<title>학부 공지사항 1 페이지 | KNU 경북대학교 중어중문학과</title>
+<link href="https://chinese.knu.ac.kr/theme/knuch/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="https://chinese.knu.ac.kr/theme/knuch/skin/board/chi/style.css?ver=171222" rel="stylesheet"/>
+<!--[if lte IE 8]>
+<script src="https://chinese.knu.ac.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://chinese.knu.ac.kr";
+var g5_bbs_url   = "https://chinese.knu.ac.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "notice";
+var g5_sca       = "";
+var g5_editor    = "smarteditor2";
+var g5_cookie_domain = "";
+</script>
+<script src="https://chinese.knu.ac.kr/js/jquery-1.8.3.min.js"></script>
+<script src="https://chinese.knu.ac.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="https://chinese.knu.ac.kr/js/common.js?ver=171222"></script>
+<script src="https://chinese.knu.ac.kr/js/wrest.js?ver=171222"></script>
+<script src="https://chinese.knu.ac.kr/js/placeholders.min.js"></script>
+<script src="https://chinese.knu.ac.kr/js/jquery.mCustomScrollbar.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&amp;display=swap" rel="stylesheet"/>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!--[if lt IE 9]><script src="../js/html5shiv.js"></script><![endif]-->
+<script type="text/javascript">
+	(function($, self){
+		if(!$ || !self) {
+			return;
+		}
+	for(var i=0; i<self.properties.length; i++) {
+		var property = self.properties[i],
+			camelCased = StyleFix.camelCase(property),
+			PrefixCamelCased = self.prefixProperty(property, true);
+		
+		$.cssProps[camelCased] = PrefixCamelCased;
+		}
+	})(window.jQuery, window.PrefixFree);
+</script>
+<link href="https://chinese.knu.ac.kr/js/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+<style>
+ #hd_pop > h2 {display:none;}
+ .sound_only {display:none;}
+</style>
+<!-- 상단 시작 { -->
+<div id="login_wrap" style="display:none;">
+<div class="login_bg"></div>
+<form action="https://chinese.knu.ac.kr/bbs/login_check.php" autocomplete="off" method="POST" name="foutlogin" onsubmit="return fhead_submit(this);">
+<fieldset>
+<legend>로그인</legend>
+<div class="login_area">
+<div class="login_title">
+<h1>LOGIN</h1>
+</div>
+<div class="login_box">
+<ul class="ipt_area">
+<li><input name="mb_id" placeholder="아이디" title="아이디" type="text" value=""/></li>
+<li><input name="mb_password" placeholder="비밀번호" title="비밀번호" type="password" value=""/></li>
+</ul>
+</div>
+<button type="submit">로그인</button>
+<!-- <a href="https://chinese.knu.ac.kr/bbs/register.php"><input type="button" value="회원가입"></a> -->
+<a class="btn_login_close bt_close" href="javascript:;">닫기</a>
+</div>
+</fieldset>
+</form>
+<script>
+	function fhead_submit(f){
+		return true;
+	}
+	$(document).ready(function(){
+		$( ".login_show" ).click(function(){
+			$( "#login_wrap" ).show();
+		});
+		$( ".btn_login_close" ).click(function(){
+			$( "#login_wrap" ).hide();
+		});
+	});
+	</script>
+</div>
+<div id="wrap">
+<style type="text/css">
+		/* browser */
+		#browser_msg {width:100%; height:auto; padding:30px 0; background:#393939; overflow:hidden; text-align:center;}
+		#browser_msg .browser_box {width:1200px; margin:0 auto; position:relative;}
+		#browser_msg .msg_tit {width:600px; height:auto; float:left;}
+		#browser_msg h1 {color:#f4bd00; font-size:25px; font-weight:600;}
+		#browser_msg p {color:#fff; font-size:13px; padding:20px 0 0 0; line-height:130%;}
+		#browser_msg ul {width:458px; height:auto; margin:10px auto 0;}
+		#browser_msg li {float:left; padding:3px;}
+		#browser_msg .brower_msg_close {display:block; position:absolute; top:0; right:0;}
+	</style>
+<!--[if lte IE 8]>
+	<div id="browser_msg">
+		<h1>권장 브라우저 안내</h1>
+		<p>해당 사이트에 최적화된 브라우저는 Internet Explorer 10 이상입니다.<br/>편리한 사이트 이용을 위하여 최신 브라우저로 업그레이드를 권장합니다.</p>
+		<ul>
+			<li><a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads" target="_blank"><img src="../image/common/bt_ie.gif" alt="Internet Explorer Upgrade" /></a></li>
+			<li><a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank"><img src="../image/common/bt_chrome.gif" alt="Google Chrome Download" /></a></li>
+			<li><a href="https://www.mozilla.org/ko/" target="_blank"><img src="../image/common/bt_firefox.gif" alt="Firefox Download" /></a></li>
+			<li><a href="http://software.naver.com/software/summary.nhn?softwareId=MFS_104212" target="_blank"><img src="../image/common/bt_safari.gif" alt="Safari Download" /></a></li>
+		</ul>
+	</div>
+	<![endif]-->
+<div id="header">
+<div class="h_wrap">
+<h1 class="logo"><a href="../main/"><img alt="경북대학교 중어중문학과" src="../image/common/logo.png"/></a></h1>
+<h1 class="logo_mob"><a href="../main/">경북대학교 중어중문학과</a></h1>
+<div class="toggle_util">
+<a class="skip bt_util_m" href="#">유틸메뉴</a>
+<div class="gnb">
+<ul>
+<li class="first"><a href="../main/">홈</a></li>
+<li><a class="login_show" href="javascript:;">로그인</a></li>
+<li><a class="bt_knu" href="http://knu.ac.kr/" target="_blank" title="새창으로 열기">경북대학교</a></li>
+<li><a href="../en/main/">English</a></li>
+<li><a href="../ch/main/">Chinese</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p class="bt_nav"><a href="#">모바일 전체메뉴</a></p>
+<p class="bt_util"><a href="#">모바일 유틸메뉴</a></p>
+<div class="toggle_lnb">
+<nav id="lnb">
+<ul class="lnb_menu">
+<li><a class="on" href="/01_about/goals.php">학과소개</a>
+<div class="lnb_sub" style="display: none; overflow: hidden; height: 260px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul>
+<li><a href="/01_about/goals.php" target="_self">교육목표</a></li>
+<li><a href="/01_about/vision.php" target="_self">학과비전</a></li>
+<li><a href="/01_about/career.php" target="_self">졸업후진로</a></li>
+<li><a href="/01_about/faculty.php" target="_self">교수진</a></li>
+<li><a href="/01_about/office.php" target="_self">학과사무실</a></li>
+<li><a href="/01_about/location.php" target="_self">오시는길</a></li>
+</ul>
+</div>
+</li>
+<li><a class="on" href="/02_undergraduate/undercurriculum.php">학부</a>
+<div class="lnb_sub" style="display: none; overflow: hidden; height: 260px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul>
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank">학사일정</a></li>
+<li><a href="/02_undergraduate/undercurriculum.php" target="_self">교과과정</a></li>
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03_01_06&amp;menu_idx=44" target="_blank">복수전공 및 교직안내</a></li>
+<li><a href="/02_undergraduate/activities.php" target="_self">학생활동</a></li>
+<li><a href="/02_undergraduate/undercourse.php" target="_self">교과목소개</a></li>
+<li><a href="/02_undergraduate/underrequire.php" target="_self">졸업요건</a></li>
+</ul>
+</div>
+</li>
+<li><a class="on" href="/03_graduate/curriculum.php">대학원</a>
+<div class="lnb_sub" style="display: none; overflow: hidden; height: 260px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul>
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank">학사일정</a></li>
+<li><a href="/03_graduate/curriculum.php" target="_self">교과과정</a></li>
+<li><a href="/03_graduate/group.php" target="_self">대학원소모임</a></li>
+<li><a href="/03_graduate/course.php" target="_self">교과목소개</a></li>
+<li><a href="/03_graduate/require.php" target="_self">졸업요건</a></li>
+</ul>
+</div>
+</li>
+<li><a class="on" href="/bbs/board.php?bo_table=data1">자료실</a>
+<div class="lnb_sub" style="display: none; overflow: hidden; height: 260px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul>
+<li><a href="/bbs/board.php?bo_table=data1" target="_self">대학수업자료실</a></li>
+<li><a href="/bbs/board.php?bo_table=data2" target="_self">대학원수업자료실</a></li>
+<li><a href="/bbs/board.php?bo_table=data3" target="_self">학과관리자료</a></li>
+<li><a href="/bbs/board.php?bo_table=formatting" target="_self">서식함</a></li>
+<li><a href="/bbs/board.php?bo_table=bk_gallery" target="_self">갤러리</a></li>
+</ul>
+</div>
+</li>
+<li><a class="on" href="/bbs/board.php?bo_table=notice">커뮤니티</a>
+<div class="lnb_sub" style="display: none; overflow: hidden; height: 260px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+<ul>
+<li><a href="/bbs/board.php?bo_table=notice" target="_self">공지사항</a></li>
+<li><a href="/bbs/board.php?bo_table=free" target="_self">행사게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=job" target="_self">취업게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=alumni" target="_self">동창회게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=schedule" target="_self">행사달력</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script>
+		//lnb menu
+		$( "#lnb" ).hover(
+			function(){
+				$(".lnb_sub").stop(true,true).slideDown( 300 );
+			},
+			function(){
+				$(".lnb_sub").stop().slideUp( 300 );
+			}
+		);
+		$(window).resize(function(){
+			var width = $( window ).width();
+			if(width > "768") {
+			$(".mobile_lnb").css({"display" : "none"});
+			}
+		});
+	</script>
+<div class="mobile_lnb">
+<ul>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">학과소개</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="/01_about/goals.php" target="_self">교육목표</a></li>
+<li><a href="/01_about/vision.php" target="_self">학과비전</a></li>
+<li><a href="/01_about/career.php" target="_self">졸업후진로</a></li>
+<li><a href="/01_about/faculty.php" target="_self">교수진</a></li>
+<li><a href="/01_about/office.php" target="_self">학과사무실</a></li>
+<li><a href="/01_about/location.php" target="_self">오시는길</a></li>
+</ul>
+</li>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">학부</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank">학사일정</a></li>
+<li><a href="/02_undergraduate/undercurriculum.php" target="_self">교과과정</a></li>
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03_01_06&amp;menu_idx=44" target="_blank">복수전공 및 교직안내</a></li>
+<li><a href="/02_undergraduate/activities.php" target="_self">학생활동</a></li>
+<li><a href="/02_undergraduate/undercourse.php" target="_self">교과목소개</a></li>
+<li><a href="/02_undergraduate/underrequire.php" target="_self">졸업요건</a></li>
+</ul>
+</li>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">대학원</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="http://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank">학사일정</a></li>
+<li><a href="/03_graduate/curriculum.php" target="_self">교과과정</a></li>
+<li><a href="/03_graduate/group.php" target="_self">대학원소모임</a></li>
+<li><a href="/03_graduate/course.php" target="_self">교과목소개</a></li>
+<li><a href="/03_graduate/require.php" target="_self">졸업요건</a></li>
+</ul>
+</li>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">자료실</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="/bbs/board.php?bo_table=data1" target="_self">대학수업자료실</a></li>
+<li><a href="/bbs/board.php?bo_table=data2" target="_self">대학원수업자료실</a></li>
+<li><a href="/bbs/board.php?bo_table=data3" target="_self">학과관리자료</a></li>
+<li><a href="/bbs/board.php?bo_table=formatting" target="_self">서식함</a></li>
+<li><a href="/bbs/board.php?bo_table=bk_gallery" target="_self">갤러리</a></li>
+</ul>
+</li>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">커뮤니티</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="/bbs/board.php?bo_table=notice" target="_self">공지사항</a></li>
+<li><a href="/bbs/board.php?bo_table=free" target="_self">행사게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=job" target="_self">취업게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=alumni" target="_self">동창회게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=schedule" target="_self">행사달력</a></li>
+</ul>
+</li>
+</ul></div>
+<script type="text/javascript">
+		$(".bt_nav").click(function(){
+			$(".mobile_lnb").slideToggle(300);
+		});
+		//서브메뉴 슬라이드
+		$('.mobile_lnb .depth_one').click(function(){
+			$yn=$(this).attr('data-yn');
+			//$('.s_menu').slideUp();
+			if($yn==='Y'){
+				$('.mobile_lnb .snb_menu').slideUp();
+				$('.mobile_lnb .depth_one').removeClass('on').attr('data-yn','Y');
+				$(this).addClass('on');
+				$(this).next().slideDown();
+				$(this).attr('data-yn','N');
+			}else{
+				$(this).removeClass('on');
+				$(this).next().slideUp();
+				$(this).attr('data-yn','Y');
+			}
+		});
+	</script>
+<hr/>
+<div class="mobile_util">
+<div class="util">
+<a class="bt_mob_home" href="https://chinese.knu.ac.kr/main/">HOME</a>
+<a class="login_show bt_mob_login" href="javascript:;">로그인</a>
+<button class="bt_mob_close" onclick="../main/" type="button">CLOSE</button>
+</div>
+<ul class="lang">
+<li><a class="" href="https://chinese.knu.ac.kr/en/main/">ENGLISH</a></li>
+<li><a class="" href="https://chinese.knu.ac.kr/ch/main/">CHINESE</a></li>
+</ul>
+<ul class="menu">
+<li class="menu"><a class="depth" data-yn="Y" href="http://knu.ac.kr/wbbs/">경북대학교</a></li>
+<li class="menu"><a class="depth" data-yn="Y" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=%2Fstpo%2Fstpo%2Fmain%2Fmain.action">학생포탈시스템</a></li>
+<li class="menu">
+<a class="depth_one off" data-yn="Y" href="#n">중어중문학 소모임</a>
+<ul class="snb_menu" style="display:none">
+<li><a href="https://chinese.knu.ac.kr/02_undergraduate/activities.php">학부학생활동</a></li>
+<li><a href="https://chinese.knu.ac.kr/03_graduate/group.php">대학원소모임</a></li>
+<li><a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=alumni">중문동창회게시판</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="menu_background" style="display:none; position:fixed; left:0px; right:0px; bottom:0px; top:0px; background:rgb(0, 0, 0); z-index:999; opacity:0.7;"></div>
+<script type="text/javascript">
+		$(".bt_mob_close").click(function(){
+/*
+			$(".mobile_util").slideToggle(300);
+			$(".menu_background").slideToggle(300);
+*/
+			$(".mobile_util").hide();
+			$(".menu_background").hide();
+		});
+
+		$(".bt_util").click(function(){
+			$(".mobile_util").slideToggle(300);
+			$(".menu_background").slideToggle(300);
+		});
+		//서브메뉴 슬라이드
+		$('.mobile_util .depth_one').click(function(){
+			$yn=$(this).attr('data-yn');
+			//$('.s_menu').slideUp();
+			if($yn==='Y'){
+				$('.mobile_util .snb_menu').slideUp();
+				$('.mobile_util .depth_one').removeClass('on').attr('data-yn','Y');
+				$(this).addClass('on');
+				$(this).next().slideDown();
+				$(this).attr('data-yn','N');
+			}else{
+				$(this).removeClass('on');
+				$(this).next().slideUp();
+				$(this).attr('data-yn','Y');
+			}
+		});
+	</script>
+<hr/>
+<script>
+	$(function() {
+		$(".loc_layer").closest("li").hover(
+			function () {
+				$(this).children(".loc_layer").stop(true,true).slideToggle( 0 );
+			}
+		)
+	})
+	</script>
+<section id="page_location">
+<ul>
+<li class="ico_home"><a class="ico_home" href="../main/">HOME</a></li>
+<li>
+<a href="/bbs/board.php?bo_table=notice" target="_self">커뮤니티</a>
+<div class="loc_layer">
+<ul>
+<li><a href="/01_about/goals.php">학과소개</a></li>
+<li><a href="/02_undergraduate/undercurriculum.php">학부</a></li>
+<li><a href="/03_graduate/curriculum.php">대학원</a></li>
+<li><a href="/bbs/board.php?bo_table=data1">자료실</a></li>
+<li><a href="/bbs/board.php?bo_table=notice">커뮤니티</a></li>
+<!--
+						<li><a href="../02_undergraduate/under_curriculum.php">학부</a></li>
+						<li><a href="../03_graduate/curriculum.php">대학원</a></li>
+						<li><a href="../04_data/college.php">자료실</a></li>
+						<li><a href="../05_community/notice.php">커뮤니티</a></li>
+						-->
+</ul>
+</div>
+</li>
+<li>
+<a href="/bbs/board.php?bo_table=notice">공지사항</a>
+<div class="loc_layer">
+<ul>
+<li><a href="/bbs/board.php?bo_table=notice" target="_self">공지사항</a></li>
+<li><a href="/bbs/board.php?bo_table=free" target="_self">행사게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=job" target="_self">취업게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=alumni" target="_self">동창회게시판</a></li>
+<li><a href="/bbs/board.php?bo_table=schedule" target="_self">행사달력</a></li>
+<!--
+						<li><a href="../01_about/goals.php">교육목표</a></li>
+						<li><a href="../01_about/vision.php">학과비전</a></li>
+						<li><a href="../01_about/career.php">졸업후진로</a></li>
+						<li><a href="../01_about/faculty.php">교수진</a></li>
+						<li><a href="../01_about/office.php">학과사무실 안내</a></li>
+						<li><a href="../01_about/location.php">오시는길</a></li>
+						-->
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<!-- } 상단 끝 -->
+<!-- 콘텐츠 시작 { -->
+<div id="container">
+<div id="sub_m">HOME &gt; 커뮤니티 &gt; 공지사항</div>
+<div class="sub_page" id="notice">
+<div class="snb">
+<div class="sub_top">
+<h3 class="tit">커뮤니티</h3>
+<div class="navi">
+<ul>
+<li class="home"><a href="#">home</a></li>
+<li class="depth1">&gt;<a href="/bbs/board.php?bo_table=notice" target="_self">커뮤니티</a></li>
+<li class="depth2">&gt;<a href="/bbs/board.php?bo_table=notice" target="_self">공지사항</a></li>
+</ul>
+</div>
+</div>
+<div class="sub_tab">
+<ul>
+<li>
+<a class="active" href="/bbs/board.php?bo_table=notice" target="_self"><span>공지사항</span></a>
+</li>
+<li>
+<a class="" href="/bbs/board.php?bo_table=free" target="_self"><span>행사게시판</span></a>
+</li>
+<li>
+<a class="" href="/bbs/board.php?bo_table=job" target="_self"><span>취업게시판</span></a>
+</li>
+<li>
+<a class="" href="/bbs/board.php?bo_table=alumni" target="_self"><span>동창회게시판</span></a>
+</li>
+<li>
+<a class="" href="/bbs/board.php?bo_table=schedule" target="_self"><span>행사달력</span></a>
+</li>
+</ul>
+</div>
+</div> <div class="page_wrap">
+<div class="sub_visual customer">
+<div class="page_title">학부 공지사항</div>
+</div>
+<nav class="gard_tab">
+<ul class="board_tab_w3">
+<li><a href="./board.php?bo_table=notice" id="bo_cate_on">학부 공지사항</a></li>
+<li><a href="./board.php?bo_table=notice2">대학원 공지사항</a></li>
+</ul>
+</nav>
+<fieldset>
+<legend>게시물 검색</legend>
+<div class="brd_sch">
+<form method="get" name="fsearch">
+<input name="bo_table" type="hidden" value="notice"/>
+<input name="sca" type="hidden" value=""/>
+<input name="sop" type="hidden" value="and"/>
+<input name="sfl" type="hidden" value="wr_subject||wr_content"/>
+<input class="frm_input required" id="keyword" maxlength="20" name="stx" placeholder="검색어 입력" required="" size="15" type="text" value=""/>
+<input class="btn_search" type="submit" value="검색"/>
+</form>
+</div>
+</fieldset>
+<!-- 게시판 카테고리 시작 { -->
+<!-- } 게시판 카테고리 끝 -->
+<input name="bo_table" type="hidden" value="notice"/>
+<input name="sfl" type="hidden" value=""/>
+<input name="stx" type="hidden" value=""/>
+<input name="spt" type="hidden" value=""/>
+<input name="sca" type="hidden" value=""/>
+<input name="sst" type="hidden" value="wr_num, wr_reply"/>
+<input name="sod" type="hidden" value=""/>
+<input name="page" type="hidden" value="1"/>
+<input name="sw" type="hidden" value=""/>
+<p class="max_lst_total">전체(<strong class="red">757</strong>)</p>
+<ol class="max_board brd_lst">
+<!-- // 최근 게시물 5개씩 보여집니다. // -->
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13615">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 교육봉사활동 계획서 사전 제출 지도 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">교육봉사활동 인정 여부에 대한 혼선을 예방하고자, 교육봉사활동 실시 전 학생은 교육봉사활동 계획서를 사전에 제출하기 주시기 바랍니다.     아울러, 교육봉사활동 기관 및 활동 내용이 교육봉사 인정 기준에 적합한지 계획서를 통해 사전에 확인하기 바랍니다.          붙임  교육봉사활동 계획서 1부.  끝.</p></div>
+<p class="date">2026-07-22</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13340">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 2025년 온라인 인권·젠더 교육(구. 폭력예방교육) 신규 개설 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis"> 매년 우리 대학교의 전 구성원은 인권·젠더 교육(구. 폭력예방교육)을 의무적으로 이수하여야 합니다. 인권센터에서는 2025년 온라인 인권․젠더 교육(구. 폭력예방교육)을 다음과 같이 신규 개설하였음을 알려드리니, 학내 전 기관(부서)에서는 소속 구성원이 모두 이수하기 바랍니다.  가. 교육대상: 학내 전 구성원  나. 교육기간: 2025. 12. 31.(수) 까지  다. 교육시간: 교직원 5시간 30분(인권교육, 성희롱․성폭력․성매매․가정폭력 예방교육, 직장 내 괴롭힘 예방교육) 학  생 2시간 30분(인권교육, 성폭력․가정폭력 예방교육)  라. 교육방법: 온라인 교육, [붙임1] 참조    ※ 3월초 동시 접속자 증가로 수강이 원활하지 않을 수 있음  마. 기    타: 직원은 상시학습시간 인정(일괄등록 예정으로 개별등록 불요)     4. 아울러, 향후 이수 부진학과(부) 및 전공*으로 선정 시 자체 이행계획 수립·제출, 관리자 특별교육 등의 조치를 시행할 예정이오니, 이수율 관리에 최선을 다해주시기 바랍니다.    * 교직원 이수율 75% 미만, 학생 이수율 50% 미만 시 부진기관     붙임  1. 수강방법 각 1부.      2. 2024년 학과(부)별, 전공별 이수율(참고용) 1부.  끝.</p></div>
+<p class="date">2025-03-07</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13336">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 대학생 대상 저작권보호 가이드라인 유의사항 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis"> 학생이 무단으로 강의 내용을 녹음·녹화하거나, 수업시간에 공개된 강의자료를 수업이후에 외부에 공유하는 등 저작권법을 위반하는 사례가 발생하고 있습니다. 이에, 저작권 준수를 위한 관련 사항에 대해 각별히 유의하여 위반 사례가 발생하지 않도록 하기 바랍니다.      대학생활 저작권 주요 사례                ❏ 수업 중 교수자의 이용 허락없이 녹음하거나 녹화하는 행위   - 강의내용을 녹음하거나 녹화하려는 경우 사전에 반드시 교수의 허락을 받은 다음 허락받은 이용 방법과 조건의 범위내에서만 사용해야 함 ❏ 수업시간에 공개된 PPT강의자료를 수업 이후에 온라인에 유포하는 행위   - 수업시간에 제공받은 수업 PPT자료는 수업에만 사용할 수있도록 제한된 범위내에서 해당수업 시간에만 활용해야하며, 복제(촬영 또는 다운로드)하여 외부 공유하는 행위는 금지 ❏ ‘족보’라고 불리는 시험 기출문제, 교수 수업내용을 학생이 재가공하여 판매하는 행위   - 흔히 ‘족보’라고 불리는 기출문제를 판매하는 경우, 저작권 침해 될 수 있으며,   - 저작권자인 교수의 이용 허락을 받지 않고 교수가 작성한 기출문제 등을 모아 족보를 만들거나 이를 배포하는 행위는 저작권 침해에 해당함  붙임  대학생이 반드시 지켜야 할 저작권 상식 자료집 1부.  끝.</p></div>
+<p class="date">2025-03-05</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13083">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 차세대 통합정보시스템 도입에 따른 외국대학 파견 교환_복수학위 성적처리 절차 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">차세대 통합정보시스템 도입에 따라 외국대학 파견 교환학생 및 복수학위생에 대한      개정된 성적처리 절차를 다음과 같이 안내드립니다.   가. 안내사항    - 성적표 파일은 학생이 시스템 업로드    - 전공/복수전공으로 학점인정 희망 시, 학점인정 완료 후 ‘증명성적 교과구분 변경        신청’을 통해 처리  나. 세부내용: 붙임 1, 2 참조     붙임  1. 외국대학 파견 교환․복수학위 학점인정 처리 절차 및 차세대 통합정보시스템 사용법 1부      2. 외국대학 파견 교환․복수학위 학점인정 신청 학생 매뉴얼 1부.  끝. </p></div>
+<p class="date">2022-10-19</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13080">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 중어중문학과 복수전공 및 부전공 전공필수 과목 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">중어중문학과 복수전공 및 부전공 전공필수 과목 안내 2018학번 이전 : 복수전공 및 부전공 전공필수 4과목중국고전문학의흐름1(중국고전문학사1), 중국고전문학의흐름2(중국고전문학사2)중국어문법2(현대중국어문법), 중국어학의이해 2018학번부터 : 복수전공 및 부전공 전공필수 6과목중국고전문학의흐름1, 중국고전문학의흐름2, 현대중국의 문학과 사상,중국어문법2, 중국어번역연습, 중국어 주제발표와 토론</p></div>
+<p class="date">2022-09-13</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=20">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 중어중문학과 발전계획서								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">학과발전계획서 입니다. </p></div>
+<p class="date">2012-04-03</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=375">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 복수전공 이수 포기 절차 개선방안 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">
+「복수전공 이수 포기 절차」를 학생들의 편의를 도모하고, 업무 처리의 효율성을 증대하고자 다음과 같이 개선하여 실시한다하오니 참고하시기 바랍니다.
+ 
+□ 개선내용
+
+
+
+
+
+구 분
+
+현 행
+
+개 선
+
+비 고
+
+
+포기절차
+
+학생이 복수전공 포기서를 작성하여 직접 제출
+
+통합정보시스템에서 신청
+
+세부 사항은
+붙임 참조
+
+
+포기신청 기간
+
+수시
+
+정기(3~7월, 9~1월)
+ 
+붙임 복수전공 이수 포기 절차 개선방안 안내 1부. 끝. </p></div>
+<p class="date">2013-04-12</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=7656">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 상담 미실시 학생에 대한 성적열람 제한 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">
+1. 관련
+가. 경북대학교 학생상담지도교수제 운영 규정
+나. 학생과-11547(2014.12.19.) 「학생상담지도교수제 미상담자 성적열람 
+제한 시행 시기 연기」
+다. 학생과-3127(2015.03.19.) 「2015. 1학기 학생상담지도교수 배정 자료 제출 및 개편 프로그램 안내」
+  
+2. 2015. 1학기부터 상담 미실시 학생에 대하여 성적열람을 제한 하오니 상담 미실시 학생은 빠른 시일내 상담을 받을 수 있도록 하세요.</p></div>
+<p class="date">2015-06-11</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=12507">
+<article class="bo_info">
+<h2>
+<span class="category">
+<strong class="notice_icon"><span class="notice_box">공지</span></strong> </span>
+									 중어중문학과 신-구 교과목 동일과목 목록								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">
+
+
+
+
+구교과목                      신교과목중국고전문학사 1   --      중국고전문학의흐름1중국고전문학사 2   --      중국고전문학의흐름2중국현대문선독      --      중국역사철학텍스트읽기와토론1중국문화의이해      --      중국문학과 문화중국어휘의이해      --      중국어문법1현대중국어문법      --      중국어문법2중국고전시의이해   --      중국고전명시읽기중국역대명문읽기   --      중국고전명문읽기경전과제자백가       --     중국역사철학텍스트읽기와토론2중국문자학               --    중국의 언어와 문자중국어실용문읽기     --    중국어번역연습실무중국어               --    중국어 주제발표와 토론
+중국현대문학의이해   --  현대중국의 문학과 사상</p></div>
+<p class="date">2021-01-22</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13654">
+<article class="bo_info">
+<h2>
+<span class="category">
+										748									 </span>
+									 교원자격증 취득 요건(교직 적·인성 검사, 응급처치 실습, 성인지 교육) 이수 현황 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">교원자격증 취득에 필요한 교직 적성 및 인성검사, 응급처치 및 심폐소생술 실습, 성인지 교육 이수 현황을 다음과 같이 안내하오니 교원자격증 취득 요건을 미충족한 학생들은 해당 교육(검사, 실습 등)에 참여하기 바랍니다.  가. 대상자: 2025학번까지 교직과정 이수예정자(사범대학, 교육대학원 포함)  나. 교원자격증 취득 요건      1) 교직 적성 및 인성검사: 2회 적격 판정 ※ 학기 별 1회 인정    2) 응급처치 및 심폐소생술 실습: 2회 이수 ※ 학기 별 1회 인정    3) 성인지 교육: 2회 이상 이수 ※ 연도 별 1회 인정, 사범대학 2021년 이후 입학생 4회 이수  다. 기준일자: 2026. 8. 31.  라. 이수 내역 확인: [통합정보시스템-학적-학적정보관리-학적기본사항관리] ‘학적변동-교직선발정보’ ※ 충족여부가 ‘N’인 경우 위의 ‘나’ 요건을 충족하지 않았음을 나타냄     붙임  교원자격증 취득 요건 이수 현황 1부.  끝.</p></div>
+<p class="date">2026-09-16</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13653">
+<article class="bo_info">
+<h2>
+<span class="category">
+										747									 </span>
+									 2026학년도 2학기 다문화가정 장학금 장학생 선발 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis"> 2026학년도 2학기『다문화가정 장학금』선발 계획을 아래와 같이 알려드리니 대상 학생들은 기한 내 신청하기 바랍니다.  가. 선발대상:「다문화가족지원법」상 다문화 가정의 자녀로 직전학기 성적 1.7이상(4.3기준), 한국장학재단 학자금 지원구간 8구간 이내 학부 재학생  나. 선발인원: 24명 이내  다. 장학금액: 학업장려비 80만원(등록금을 초과하여 수혜 가능)  라. 신청기간: 2026. 9. 21.(월) ∼ 10. 16.(금)  마. 신청방법: 통합정보시스템(knuin.knu.ac.kr)에서 장학금 신청서 및 제출서류 업로드     ※ 통합정보시스템 → 장학 → 학생신청장학 → 장학금신청서   바. 세부 운영계획:【붙임1】안내문 참조       붙임  안내문 1부.  끝.</p></div>
+<p class="date">2026-09-16</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13652">
+<article class="bo_info">
+<h2>
+<span class="category">
+										746									 </span>
+									 코트라 주최 &lt;외투기업 상담회(설명회)&gt; 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">외투기업 채용상담회&amp;설명회 개최(참여학생 배민상품권 1만원권 증정)*상담회-일시/장소: 9. 17(목) 13~17시/GP 경하홀1-참여기업: 총 10개사(아트라스콥코그룹(에드워드코리아), 자이스코리아, 구찌코리아, 비웰코리아, 밥스트코리아, 제주완리카 지노, 대구텍, 클럽메드바캉스, 스트라티오코리아, 한국산업인력공단)*설명회-일시/장소: 9. 17(목) 13~17시/GP 201호-외투기업 취업전략 특강(13:30~14:30) 아트라스콥코그룹(에드워드코리아) 채용설명회(14:30~15:00) 해외취업 설명회(한국산업인력공단) (15:00~15:30)</p></div>
+<p class="date">2026-09-16</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13651">
+<article class="bo_info">
+<h2>
+<span class="category">
+										745									 </span>
+									 2026학년도 「제5회 KNU 자기설계 융합전공 공모전」개최 변경 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">2026학년도「제5회 KNU 자기설계 융합전공 공모전」을 다음과 같이 변경하여 추진하오니 착오없이 신청하기 바랍니다.  가. 변경사항: 연구융합전공 분야 수상팀 및 지원규모 수정구분당초변경수상팀 수대상 1팀, 최우수상 1팀, 우수상 2팀대상 1팀, 최우수상 1팀, 우수상 1팀지원규모대상 4,000천원, 최우수상 3,000천원, 우수상 4,000천원(팀당 2,000천원), 총 11,000천원대상 4,000천원, 최우수상 3,000천원, 우수상 2,000천원, 총 9,000천원  나. 사업개요    1) 공모과제: 일반융합전공과 연구융합전공 중 공모 분야를 선택하여 학생 주도의 새로운 융합전공 설계    2) 공모규모: 공모 분야별 각 4팀    3) 공모기간: ’26. 9. 3.(목)∼9. 30.(수) (4주간)    4) 대    상: 학부 재학생 4명으로 구성된 팀    5) 지원내용: 상장(총장상, 교무처장상) 및 장학금 수여    분  야시  상수상팀 수장학금일반융합전공대상(총장상)1팀팀별 4,000천원최우수상(교무처장상)1팀팀별 3,000천원우수상(교무처장상)2팀팀별 2,000천원연구융합전공대상(총장상)1팀팀별 4,000천원최우수상(교무처장상)1팀팀별 3,000천원</p></div>
+<p class="date">2026-09-10</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13650">
+<article class="bo_info">
+<h2>
+<span class="category">
+										744									 </span>
+									 2026학년도 2학기 학업 성장 챌린지 참여 학생 모집 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">교수학습센터에서는 2026학년도 2학기 학업 성장 챌린지 참여 학생을 다음과 같이 모집하오니 많은 참여 바랍니다.  가. 대    상: 학부 재학생 10명    ※ 휴학생, 졸업 유예 학생 등 장학금 지급이 불가한 학생은 대상에서 제외  나. 활동내용: 운영기간 내 4단계 학습미션 완수 후 최종 학습포트폴리오 제출  다. 신청기간: 2026. 9. 7.(월) ∼ 9. 17.(목)  라. 신청방법: KNUCUBE(knucube.knu.ac.kr)를 통해 신청서 제출QR 코드URL주소(모바일)붙임참조https://숏.한국/262챌린지/  마. 참여혜택: 활동 완수 시 장학금 10만원, 성적 향상자 선정 시 추가 장학금 10만원 지급  바. 협조사항: 각 대학 및 학과 홈페이지 공지사항 등록 및 안내 요청  사. 관련문의: 교수학습센터 담당자(☎053-950-4417)     </p></div>
+<p class="date">2026-09-10</p>
+</article>
+</a>
+</li>
+<li>
+<a href="https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&amp;wr_id=13649">
+<article class="bo_info">
+<h2>
+<span class="category">
+										743									 </span>
+									 군 입대 휴학자에 대한 취득학점 인정 및 학점인정 신청서 제출 안내								 </h2>
+<div><p class="content" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis">군입대 휴학자의 입영 또는 복무 중 아래의 방법으로 취득한 학점을 본교 이수학점으로 인정하고자 하오니 해당 학생들은 신청하기 바랍니다.  가. 인정대상 : 군 교육․훈련과정 중「학점인정 등에 관한 법률」의 규정에 따라 평가인정을 받은 과정을 이수하여 취득한 학점  나. 인정범위: 최대 3학점 이내  다. 접수기간: 2026. 9. 3.(목) ~ 12. 4.(금)  라. 신청방법: 방문 또는 등기우편으로 학사과 제출  마. 제출서류    1) 군 교육훈련 학점인정서 1부(최근 3개월 이내 발급분, 국가평생교육진흥원에서 발급)    2)【붙임2】군 교육훈련 학점인정 신청서 1부3. 아울러, 군 휴학자의 경우 본교에 개설된 온라인 강좌(군이러닝 원격강좌)를 수강하여 취득한 학점은 별도의 신청없이 성적증명서에 등재되오니 참고하시기 바랍니다. 붙임  1. 군 복무 휴학자에 대한 취득학점 인정 안내문 1부.          2. 군 교육훈련 학점인정 신청서 1부.  끝.</p></div>
+<p class="date">2026-09-10</p>
+</article>
+</a>
+</li>
+</ol>
+<div class="bt_wrapper">
+</div>
+<div class="paging">
+<ul class="numbering">
+<nav class="pg_wrap"><span class="pg"><span class="sound_only">열린</span><strong class="pg_current">1</strong><span class="sound_only">페이지</span>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=2">2<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=3">3<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=4">4<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=5">5<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=6">6<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=7">7<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=8">8<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=9">9<span class="sound_only">페이지</span></a>
+<a class="pg_page" href="./board.php?bo_table=notice&amp;page=10">10<span class="sound_only">페이지</span></a>
+<a class="pg_page pg_next" href="./board.php?bo_table=notice&amp;page=11">다음</a>
+<a class="pg_page pg_end" href="./board.php?bo_table=notice&amp;page=51">맨끝</a>
+</span></nav> </ul>
+</div>
+</div>
+</div> </div>
+<!-- } 콘텐츠 끝 -->
+<!-- 하단 시작 { -->
+<hr/>
+<div id="footer">
+<ul class="foot_menu">
+<li class="hours">
+<h3 class="tit">학과 업무시간</h3>
+<a class="tel" href="tel:053-950-5178">053-950-5178</a>
+<span class="open">평일 09:00 ~ 18:00</span>
+<span class="break">점심시간 12:00 ~ 13:00</span>
+</li>
+<li class="location">
+<h3 class="tit">학과 사무실 안내</h3>
+<span>
+<img src="../image/common/ico_location.png"/>대구광역시 북구 대학로 80<br/>경북대학교 대학원동 402호<br/>중어중문학과사무실 (우41566)
+			</span>
+</li>
+<li class="meeting">
+<h3 class="tit">중어중문학과 소모임</h3>
+<div class="meeting_wrap">
+<a class="meet01" href="/02_undergraduate/activities.php"><em></em>학부</a>
+<a class="meet02" href="/03_graduate/group.php"><em></em>대학원</a>
+<a class="meet03" href="/bbs/board.php?bo_table=alumni"><em></em>동창회</a>
+</div>
+</li>
+</ul>
+<div class="foot_link_wrap">
+<div class="foot_link">
+<ul class="inside">
+<li><a class="first" href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank">개인정보처리방침</a></li>
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&amp;menu_idx=95" target="_blank">이메일무단수집거부</a></li>
+<li><a href="/01_about/location.php">오시는 길</a></li>
+</ul>
+<div class="outside">
+<!-- (!) 버튼 누르면 리스트 나타나기 -->
+<div class="depart_quick_box">
+<p><a class="btn_bottom_slide" href="javascript:;">대학/대학원 홈페이지</a></p>
+<div class="quick_layer">
+<ul>
+<li>
+<strong>대학</strong>
+<ul>
+<li><a href="http://humanities.knu.ac.kr/" target="_blank" title="인문대학 홈페이지 새창으로 열기">인문대학</a></li>
+<li><a href="http://social.knu.ac.kr/" target="_blank" title="사회과학대학 홈페이지 새창으로 열기">사회과학대학</a></li>
+<li><a href="http://cns.knu.ac.kr/" target="_blank" title="자연과학대학 홈페이지 새창으로 열기">자연과학대학</a></li>
+<li><a href="http://cec.knu.ac.kr/" target="_blank" title="경상대학 홈페이지 새창으로 열기">경상대학</a></li>
+<li><a href="http://eng.knu.ac.kr/" target="_blank" title="공과대학 홈페이지 새창으로 열기">공과대학</a></li>
+<li><a href="http://cite.knu.ac.kr/" target="_blank" title="IT대학 홈페이지 새창으로 열기">IT대학</a></li>
+<li><a href="http://cals.knu.ac.kr/" target="_blank" title="농업생명과학대학 홈페이지 새창으로 열기">농업생명과학대학</a></li>
+<li><a href="http://mvarts.knu.ac.kr/" target="_blank" title="예술대학 홈페이지 새창으로 열기">예술대학</a></li>
+<li><a href="http://knutc.knu.ac.kr/" target="_blank" title="사범대학 홈페이지 새창으로 열기">사범대학</a></li>
+<li><a href="http://med.knu.ac.kr/" target="_blank" title="의과대학 홈페이지 새창으로 열기">의과대학</a></li>
+<li><a href="http://dent.knu.ac.kr/" target="_blank" title="치과대학 홈페이지 새창으로 열기">치과대학</a></li>
+<li><a href="http://vet.knu.ac.kr/" target="_blank" title="수의과대학 홈페이지 새창으로 열기">수의과대학</a></li>
+<li><a href="http://cohe.knu.ac.kr/" target="_blank" title="생활과학대학 홈페이지 새창으로 열기">생활과학대학</a></li>
+<li><a href="http://nurs.knu.ac.kr/" target="_blank" title="간호대학 홈페이지 새창으로 열기">간호대학</a></li>
+<li><a href="http://pharmacy.knu.ac.kr/" target="_blank" title="약학대학 홈페이지 새창으로 열기">약학대학</a></li>
+<li><a href="http://cee.knu.ac.kr/" target="_blank" title="생태환경대학 홈페이지 새창으로 열기">생태환경대학</a></li>
+<li><a href="http://cst.knu.ac.kr/" target="_blank" title="과학기술대학 홈페이지 새창으로 열기">과학기술대학</a></li>
+<li><a href="http://gls.knu.ac.kr/" target="_blank" title="글로벌인재학부 홈페이지 새창으로 열기">글로벌인재학부</a></li>
+<li><a href="http://puad.knu.ac.kr/" target="_blank" title="행정학부 홈페이지 새창으로 열기">행정학부</a></li>
+<li><a href="http://udm.knu.ac.kr/" target="_blank" title="자율전공부 홈페이지 새창으로 열기">자율전공부</a></li>
+<li><a href="http://tbudm.knu.ac.kr/" target="_blank" title="과학기술생명자원자율학부 홈페이지 새창으로 열기">과학기술생명자원자율학부</a></li>
+<li><a href="http://shw.knu.ac.kr/" target="_blank" title="보건복지학부 홈페이지 새창으로 열기">보건복지학부</a></li>
+</ul>
+</li>
+<li>
+<strong>전문대학</strong>
+<ul>
+<li><a href="http://med.knu.ac.kr/" target="_blank" title="의학전문대학원 홈페이지 새창으로 열기">의학전문대학원</a></li>
+<li><a href="http://dent.knu.ac.kr/" target="_blank" title="치의학전문대학원 홈페이지 새창으로 열기">치의학전문대학원</a></li>
+<li><a href="http://lawschool.knu.ac.kr/" target="_blank" title="법학전문대학원 홈페이지 새창으로 열기">법학전문대학원</a></li>
+</ul>
+</li>
+<li>
+<strong>특수대학원</strong>
+<ul>
+<li><a href="http://gse.knu.ac.kr/" target="_blank" title="교육대학원 홈페이지 새창으로 열기">교육대학원</a></li>
+<li><a href="http://webbuild.knu.ac.kr/~gspa/" target="_blank" title="행정대학원 홈페이지 새창으로 열기">행정대학원</a></li>
+<li><a href="http://cec.knu.ac.kr/HOME/biz/sub.htm?nav_code=biz1467295441" target="_blank" title="경영대학원 홈페이지 새창으로 열기">경영대학원</a></li>
+<li><a href="http://health.knu.ac.kr/" target="_blank" title="보건대학원 홈페이지 새창으로 열기">보건대학원</a></li>
+<li><a href="http://ind.knu.ac.kr/" target="_blank" title="산업대학원 홈페이지 새창으로 열기">산업대학원</a></li>
+<li><a href="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_01&amp;menu_idx=41" title="농업생명융합대학원 홈페이지 새창으로 열기">농업생명융합대학원</a></li>
+<li><a href="http://gsis.knu.ac.kr/" target="_blank" title="국제대학원 홈페이지 새창으로 열기">국제대학원</a></li>
+<li><a href="http://social.knu.ac.kr/HOME/coss/sub.htm?nav_code=cos1466989409" target="_blank" title="정책정보대학원 홈페이지 새창으로 열기">정책정보대학원</a></li>
+<li><a href="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_02&amp;menu_idx=41" title="수사과학대학원 홈페이지 새창으로 열기">수사과학대학원</a></li>
+<li><a href="http://seoksa.knu.ac.kr/" target="_blank" title="과학기술대학원 홈페이지 새창으로 열기">과학기술대학원</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="depart_quick_box">
+<p><a class="btn_bottom_slide" href="javascript:;">학부 관련 홈페이지</a></p>
+<div class="quick_layer">
+<ul>
+<li>
+<strong>文学</strong>
+<ul>
+<li><a href="http://db.cyberseodang.or.kr/front/main/main.do" target="_blank" title="동양고전종합DB 홈페이지 새창으로 열기">동양고전종합DB</a></li>
+<li><a href="https://zh.wikisource.org/wiki/Wikisource:%E9%A6%96%E9%A1%B5" target="_blank" title="위키피디아(维基文库) 홈페이지 새창으로 열기">위키피디아(维基文库)</a></li>
+<li><a href="http://www.poeming.com/web/scindex.htm" target="_blank" title="전당시전송사색인(全唐诗·全宋词搜索) 홈페이지 새창으로 열기">전당시전송사색인(全唐诗·全宋词搜索)</a></li>
+<li><a href="http://m.sbkk88.com/sanwen/mingjiasanwen/" target="_blank" title="随便看看吧[文学] 홈페이지 새창으로 열기">随便看看吧[文学]</a></li>
+</ul>
+</li>
+<li>
+<strong>대학 연구기관</strong>
+<ul>
+<li><a href="https://www.sinica.edu.tw/ch" target="_blank" title="중앙연구원(中央研究院) 홈페이지 새창으로 열기">중앙연구원(中央研究院)</a></li>
+<li><a href="http://translate.itsc.cuhk.edu.hk/uniTS/www.cuhk.edu.hk/chinese/index.html HarvardlibrariesHOLLIScatalog" target="_blank" title="홍콩중문대학(香港中文大学) 홈페이지 새창으로 열기">홍콩중문대학(香港中文大学)</a></li>
+</ul>
+</li>
+<li>
+<strong>철학</strong>
+<ul>
+<li><a href="http://koco.skku.edu/" target="_blank" title="한국경학자료시스템 홈페이지 새창으로 열기">한국경학자료시스템</a></li>
+<li><a href="http://www.cuhk.edu.hk/ics/amm/index.html" target="_blank" title="중국경학전자판(中国经学电子版工程) 홈페이지 새창으로 열기">중국경학전자판(中国经学电子版工程)</a></li>
+<li><a href="http://humanum.arts.cuhk.edu.hk/ConfLex/" target="_blank" title="홍콩중문대학 인문전산센터 유학사전(香港中文大學人文電算中心儒學詞典) 홈페이지 새창으로 열기">홍콩중문대학 인문전산센터 유학사전(香港中文大學人文電算中心儒學詞典)</a></li>
+</ul>
+</li>
+<li>
+<strong>역사</strong>
+<ul>
+<li><a href="http://authority.dila.edu.tw/time/index.php" target="_blank" title="동아시아조대년표(东亚朝代年表) 홈페이지 새창으로 열기">동아시아조대년표(东亚朝代年表)</a></li>
+</ul>
+</li>
+<li>
+<strong>박물관(博物馆)</strong>
+<ul>
+<li><a href="http://www.gogung.go.kr/main.do" target="_blank" title="국립고궁박물관(한국) 홈페이지 새창으로 열기">국립고궁박물관(한국)</a></li>
+<li><a href="http://www.dpm.org.cn/Home.html" target="_blank" title="고궁박물관(故宫博物馆(중국)) 홈페이지 새창으로 열기">고궁박물관(故宫博物馆(중국))</a></li>
+<li><a href="http://www.cuhk.edu.hk/ics/amm/index.html" target="_blank" title="홍콩중문대학문물관(香港中文大學文物館) 홈페이지 새창으로 열기">홍콩중문대학문물관(香港中文大學文物館)</a></li>
+</ul>
+</li>
+<li>
+<strong>词典</strong>
+<ul>
+<li><a href="http://stdweb2.korean.go.kr/search/List_dic.jsp" target="_blank" title="국립국어원 표준국어대사전 홈페이지 새창으로 열기">국립국어원 표준국어대사전</a></li>
+<li><a href="http://www.zhonghuayuwen.org" target="_blank" title="중화어문지식고 양안사전(中华语文知识库·两岸词典) 홈페이지 새창으로 열기">중화어문지식고 양안사전(中华语文知识库·两岸词典)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<script>
+						$( ".quick_layer" ).mCustomScrollbar({
+							scrollButtons:{
+								enable:true
+							}
+						});
+						$( ".btn_bottom_slide" ).click(function(){
+							var idx = $(".btn_bottom_slide").index(this);
+							$( ".quick_layer" ).eq(idx).slideToggle(100);
+						});
+					</script>
+</div>
+<style>
+				.depart_quick_box{float:left; width:227px; height:auto; position:relative;}
+				.depart_quick_box p{width:100%; height:auto;}
+				.depart_quick_box p a{display:block; width:100%; height:auto; padding:21px 0; color:#fff; font-size:14px; background:url("../image/common/bg_arrow_w_ie8.png") 90% 50% no-repeat #202020; background-size:13px 7px; text-indent:30px;}
+				.depart_quick_box .quick_layer{display:none; position:absolute; bottom:57px; left:0; width:227px; height:300px; background:#202020;}
+				.depart_quick_box .quick_layer ul{width:auto; height:auto; background:#202020;}
+				.depart_quick_box .quick_layer li{float:left; width:100%;}
+				.depart_quick_box .quick_layer li strong{font-size:13px; color:#fff; display:block; width:100%; height:auto; padding:10px 0; text-indent:10px; border-bottom:1px solid #434343; background:#000;}
+				.depart_quick_box .quick_layer li ul{float:left; padding:10px 0; border-bottom:1px solid #434343; overflow:hidden;}
+				.depart_quick_box .quick_layer li a{float:left; width:100%; display:block; font-size:11px; color:#a9a9a9; padding:5px 20px;}
+				.depart_quick_box .quick_layer li a:hover{color:#c94d51;}
+				</style>
+<!-- 나타나기-->
+</div>
+</div>
+</div>
+<div class="foot_info">
+<p class="logo"><img alt="KNU 경북대학교 중어중문학과" src="../image/common/f_logo.png"/></p>
+<div class="site_info">
+<address>우)41566 대구광역시 북구 대학로 80 산격동, 경북대학교 인문대학 중어중문학과  </address>
+<span>학과사무실 전화 : 053.950.5178  팩스 : 053.950.6178</span>
+<cite>Copyright © 2018 Kyungpook National University. All rights reserved.</cite>
+</div>
+<div><a class="m_pad" href="#" id="bt_top" style="display: none;"><img alt="위로" src="../image/common/bt_top.jpg"/></a></div>
+<script>
+			// hide #back-top first
+			$("#back-top").hide();
+			// fade in #back-top
+			$(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#bt_top').fadeIn();
+					} else {
+						$('#bt_top').fadeOut();
+					}
+				});
+				// scroll body to 0px on click
+				$('#bt_top a').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		</script>
+</div>
+</div> </div>
+<!-- } 하단 끝 -->
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+</body>
+</html>
+<!-- 사용스킨 : theme/chi -->

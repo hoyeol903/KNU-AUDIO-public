@@ -1,0 +1,722 @@
+{
+  "channels": [
+    {
+      "bootstrap": false,
+      "channel_id": "knu-academic",
+      "channel_ids": [
+        "knu-academic"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "○ 납부기간: 10.13.(화) 09:00 ~ 10.14.(수) 16:00 (납부기간 경과 후 납부 불가)"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11790921912463",
+          "reason": "한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-06",
+          "evidence": [
+            "- 교육 후 이수증 제출: 2026. 10. 6.(화)까지, 학과 사무실로 제출 ※ 기한 내 미 제출 시 차기 검사 참여 불가"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11790744244900",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026년도 제4차 평생교육사 자격증 발급 신청기간을 다음과 같이 공지하오니, 대상자는 기간 내 신청하여주시기 바랍니다.",
+            "2. 신청기간: 2026. 9. 28.(월) ~ 10. 8.(목)"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11790036688409",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "수강신청 기간 2026. 11. 11.(수) 13:00 ~ 11. 12.(목) 17:59"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11790036258344",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2. 신청 기간: 2026. 9. 22.(화)~9.23.(수), 9. 28.(월)~9.30.(수) 매일10:00~17:00(휴일제외, 신청자가 많은 경우 조기 종료될 수 있음)",
+            "※ 대상자 별 신청기간이 다르므로 [붙임1] 필히 참조 후, 해당 날짜에 신청"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11789626757245",
+          "reason": "연도까지 명시된 마감 날짜 없음; 조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 접수기간: 2026. 9. 3.(목) ~ 12. 4.(금)"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11788338616576",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "4. 신청기간: 2026. 11. 24.(화)까지 수시 신청 [기한 엄수]"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11787012990172",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 ○ 복 학 : 2026. 7. 1.(수) ~ 9. 21.(월)"
+          ],
+          "notice_id": "knu-wbbs-stu_812:11782262478503",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 40.418,
+      "errors": [],
+      "finished_at": "2026-10-03T17:52:47+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 41,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-wbbs-stu_812:11790921912463",
+        "knu-wbbs-stu_812:11790036688409",
+        "knu-wbbs-stu_812:11790036258344",
+        "knu-wbbs-stu_812:11789626757245",
+        "knu-wbbs-stu_812:11788338616576",
+        "knu-wbbs-stu_812:11787012990172",
+        "knu-wbbs-stu_812:11782262478503"
+      ],
+      "new": [],
+      "new_candidates": [
+        "knu-wbbs-stu_812:11790921912463"
+      ],
+      "pages": 4,
+      "request_count": 16,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-wbbs-stu_812:11789974286924",
+        "knu-wbbs-stu_812:11789375936295",
+        "knu-wbbs-stu_812:11788857835013",
+        "knu-wbbs-stu_812:11788485307325",
+        "knu-wbbs-stu_812:11788480849417",
+        "knu-wbbs-stu_812:11788223764457",
+        "knu-wbbs-stu_812:11788165320350",
+        "knu-wbbs-stu_812:11787814281098",
+        "knu-wbbs-stu_812:11787189649404",
+        "knu-wbbs-stu_812:11786589938825",
+        "knu-wbbs-stu_812:11786348686961",
+        "knu-wbbs-stu_812:11786327219594",
+        "knu-wbbs-stu_812:11786082015217",
+        "knu-wbbs-stu_812:11786003834262",
+        "knu-wbbs-stu_812:11785737876426",
+        "knu-wbbs-stu_812:11785487873393",
+        "knu-wbbs-stu_812:11785288347194",
+        "knu-wbbs-stu_812:11785111492485",
+        "knu-wbbs-stu_812:11784765006434",
+        "knu-wbbs-stu_812:11784591830956",
+        "knu-wbbs-stu_812:11784102756142",
+        "knu-wbbs-stu_812:11784097259440",
+        "knu-wbbs-stu_812:11784089154028",
+        "knu-wbbs-stu_812:11784078211599",
+        "knu-wbbs-stu_812:11784076323640",
+        "knu-wbbs-stu_812:11783904606215",
+        "knu-wbbs-stu_812:11783662257846",
+        "knu-wbbs-stu_812:11783662104186",
+        "knu-wbbs-stu_812:11783486119841"
+      ],
+      "source_board_id": "knu-wbbs-stu_812",
+      "started_at": "2026-10-03T17:52:08+09:00",
+      "successful": 12,
+      "truncated": false,
+      "unchanged": [
+        "knu-wbbs-stu_812:11782262478503",
+        "knu-wbbs-stu_812:11786698005467",
+        "knu-wbbs-stu_812:11787012990172",
+        "knu-wbbs-stu_812:11788338616576",
+        "knu-wbbs-stu_812:11788418937924",
+        "knu-wbbs-stu_812:11789626757245",
+        "knu-wbbs-stu_812:11790036258344",
+        "knu-wbbs-stu_812:11790036688409",
+        "knu-wbbs-stu_812:11790037102438",
+        "knu-wbbs-stu_812:11790644315187",
+        "knu-wbbs-stu_812:11790744244900",
+        "knu-wbbs-stu_812:11790921912463"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-df44dd8507c1",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 납부기간 붙임 1. 2026학년도 2학기 등록금 수납계획(안) 1부."
+          ],
+          "notice_id": "knu-see-notice:105426",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "❍ 신청기간: 2026. 9. 30.(수) ~ 회차별 모집인원 마감까지(선착순)"
+          ],
+          "notice_id": "knu-see-notice:105663",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-07",
+          "evidence": [
+            "다. 제출기한: 2026. 10. 7.(수) 17:00까지(기한 엄수)"
+          ],
+          "notice_id": "knu-see-notice:105661",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-10-08",
+          "evidence": [
+            "가. 신청마감: 2026. 10.8.(목)까지"
+          ],
+          "notice_id": "knu-see-notice:105633",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2027-01-08",
+          "evidence": [
+            "- 제출기한: 2027. 1. 8.(금)"
+          ],
+          "notice_id": "knu-see-notice:105601",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-10-16",
+          "evidence": [
+            "가. 신청마감: 2026. 10. 16.(금)까지"
+          ],
+          "notice_id": "knu-see-notice:105564",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 34.846,
+      "errors": [],
+      "finished_at": "2026-10-03T17:53:22+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 150,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-see-notice:105426",
+        "knu-see-notice:105663"
+      ],
+      "new": [],
+      "new_candidates": [
+        "knu-see-notice:105668"
+      ],
+      "pages": 5,
+      "request_count": 24,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-see-notice:105640",
+        "knu-see-notice:105639",
+        "knu-see-notice:105636",
+        "knu-see-notice:105635",
+        "knu-see-notice:105632",
+        "knu-see-notice:105631",
+        "knu-see-notice:105630",
+        "knu-see-notice:105634",
+        "knu-see-notice:105625",
+        "knu-see-notice:105624",
+        "knu-see-notice:105623",
+        "knu-see-notice:105622",
+        "knu-see-notice:105621",
+        "knu-see-notice:105615",
+        "knu-see-notice:105612",
+        "knu-see-notice:105611",
+        "knu-see-notice:105608",
+        "knu-see-notice:105607",
+        "knu-see-notice:105602",
+        "knu-see-notice:105600",
+        "knu-see-notice:105599",
+        "knu-see-notice:105598",
+        "knu-see-notice:105597",
+        "knu-see-notice:105596",
+        "knu-see-notice:105595",
+        "knu-see-notice:105593",
+        "knu-see-notice:105592",
+        "knu-see-notice:105591",
+        "knu-see-notice:105588",
+        "knu-see-notice:105587",
+        "knu-see-notice:105581",
+        "knu-see-notice:105577",
+        "knu-see-notice:105586",
+        "knu-see-notice:105579",
+        "knu-see-notice:105575",
+        "knu-see-notice:105573",
+        "knu-see-notice:105567",
+        "knu-see-notice:105566",
+        "knu-see-notice:105565",
+        "knu-see-notice:105563",
+        "knu-see-notice:105561",
+        "knu-see-notice:105558",
+        "knu-see-notice:105557",
+        "knu-see-notice:105555",
+        "knu-see-notice:105554",
+        "knu-see-notice:105553",
+        "knu-see-notice:105551",
+        "knu-see-notice:105547",
+        "knu-see-notice:105543",
+        "knu-see-notice:105548",
+        "knu-see-notice:105544",
+        "knu-see-notice:105541",
+        "knu-see-notice:105532",
+        "knu-see-notice:105530",
+        "knu-see-notice:105527",
+        "knu-see-notice:105529",
+        "knu-see-notice:105528",
+        "knu-see-notice:105524",
+        "knu-see-notice:105522",
+        "knu-see-notice:105521",
+        "knu-see-notice:105525",
+        "knu-see-notice:105519",
+        "knu-see-notice:105518",
+        "knu-see-notice:105517",
+        "knu-see-notice:105516",
+        "knu-see-notice:105515",
+        "knu-see-notice:105509",
+        "knu-see-notice:105508",
+        "knu-see-notice:105505",
+        "knu-see-notice:105503",
+        "knu-see-notice:105502",
+        "knu-see-notice:105500",
+        "knu-see-notice:105499",
+        "knu-see-notice:105498",
+        "knu-see-notice:105495",
+        "knu-see-notice:105494",
+        "knu-see-notice:105493",
+        "knu-see-notice:105492",
+        "knu-see-notice:105491",
+        "knu-see-notice:105485",
+        "knu-see-notice:105484",
+        "knu-see-notice:105482",
+        "knu-see-notice:105481",
+        "knu-see-notice:105480",
+        "knu-see-notice:105478",
+        "knu-see-notice:105477",
+        "knu-see-notice:105476",
+        "knu-see-notice:105479",
+        "knu-see-notice:105474",
+        "knu-see-notice:105473",
+        "knu-see-notice:105472",
+        "knu-see-notice:105471",
+        "knu-see-notice:105470",
+        "knu-see-notice:105467",
+        "knu-see-notice:105466",
+        "knu-see-notice:105465",
+        "knu-see-notice:105464",
+        "knu-see-notice:105463",
+        "knu-see-notice:105462",
+        "knu-see-notice:105461",
+        "knu-see-notice:105460",
+        "knu-see-notice:105459",
+        "knu-see-notice:105458",
+        "knu-see-notice:105457",
+        "knu-see-notice:105456",
+        "knu-see-notice:105452",
+        "knu-see-notice:105450",
+        "knu-see-notice:105454",
+        "knu-see-notice:105447",
+        "knu-see-notice:105446",
+        "knu-see-notice:105445",
+        "knu-see-notice:105444",
+        "knu-see-notice:105443",
+        "knu-see-notice:105441",
+        "knu-see-notice:105439",
+        "knu-see-notice:105434",
+        "knu-see-notice:105430",
+        "knu-see-notice:105429",
+        "knu-see-notice:105428",
+        "knu-see-notice:105427",
+        "knu-see-notice:105420",
+        "knu-see-notice:105417",
+        "knu-see-notice:105416",
+        "knu-see-notice:105415",
+        "knu-see-notice:105414",
+        "knu-see-notice:105413",
+        "knu-see-notice:105410",
+        "knu-see-notice:105409",
+        "knu-see-notice:105408",
+        "knu-see-notice:105407",
+        "knu-see-notice:105406"
+      ],
+      "source_board_id": "knu-see-notice",
+      "started_at": "2026-10-03T17:52:48+09:00",
+      "successful": 19,
+      "truncated": false,
+      "unchanged": [
+        "knu-see-notice:105426",
+        "knu-see-notice:105564",
+        "knu-see-notice:105601",
+        "knu-see-notice:105633",
+        "knu-see-notice:105642",
+        "knu-see-notice:105643",
+        "knu-see-notice:105645",
+        "knu-see-notice:105647",
+        "knu-see-notice:105650",
+        "knu-see-notice:105653",
+        "knu-see-notice:105654",
+        "knu-see-notice:105656",
+        "knu-see-notice:105657",
+        "knu-see-notice:105658",
+        "knu-see-notice:105661",
+        "knu-see-notice:105663",
+        "knu-see-notice:105665",
+        "knu-see-notice:105667",
+        "knu-see-notice:105668"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-6c1f8a512fa4",
+      "channel_ids": [
+        "notice-6c1f8a512fa4"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": "2026-11-24",
+          "evidence": [
+            "바. 신청 기간: 2026. 11. 24.(화)까지 [기한 엄수]"
+          ],
+          "notice_id": "knu-korean-kor1657071357:1273",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 납부기간 구 분",
+            "납부 기간 납부 금액"
+          ],
+          "notice_id": "knu-korean-kor1657071357:1253",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "❍ 신청 기간: 2026. 7. 1.(수) ~ 9. 21.(월)",
+            "❍ 신청 기간 및 제출 서류",
+            "신청 기간 비 고"
+          ],
+          "notice_id": "knu-korean-kor1657071357:1216",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 25.674,
+      "errors": [],
+      "finished_at": "2026-10-03T17:53:48+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 37,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-korean-kor1657071357:1253",
+        "knu-korean-kor1657071357:1216"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 16,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-korean-kor1657071357:1326",
+        "knu-korean-kor1657071357:1309",
+        "knu-korean-kor1657071357:1301",
+        "knu-korean-kor1657071357:1276",
+        "knu-korean-kor1657071357:1266",
+        "knu-korean-kor1657071357:1259",
+        "knu-korean-kor1657071357:1248",
+        "knu-korean-kor1657071357:1245",
+        "knu-korean-kor1657071357:1239",
+        "knu-korean-kor1657071357:1225",
+        "knu-korean-kor1657071357:1224",
+        "knu-korean-kor1657071357:1218",
+        "knu-korean-kor1657071357:1217",
+        "knu-korean-kor1657071357:1213",
+        "knu-korean-kor1657071357:1210",
+        "knu-korean-kor1657071357:1202",
+        "knu-korean-kor1657071357:1200",
+        "knu-korean-kor1657071357:1199",
+        "knu-korean-kor1657071357:1198",
+        "knu-korean-kor1657071357:1192",
+        "knu-korean-kor1657071357:1185",
+        "knu-korean-kor1657071357:1179",
+        "knu-korean-kor1657071357:1172",
+        "knu-korean-kor1657071357:1170"
+      ],
+      "source_board_id": "knu-korean-kor1657071357",
+      "started_at": "2026-10-03T17:53:23+09:00",
+      "successful": 13,
+      "truncated": false,
+      "unchanged": [
+        "knu-korean-kor1657071357:1044",
+        "knu-korean-kor1657071357:1077",
+        "knu-korean-kor1657071357:1216",
+        "knu-korean-kor1657071357:1253",
+        "knu-korean-kor1657071357:1273",
+        "knu-korean-kor1657071357:1274",
+        "knu-korean-kor1657071357:1283",
+        "knu-korean-kor1657071357:1331",
+        "knu-korean-kor1657071357:230",
+        "knu-korean-kor1657071357:320",
+        "knu-korean-kor1657071357:508",
+        "knu-korean-kor1657071357:662",
+        "knu-korean-kor1657071357:87"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-1abc9573202c",
+      "channel_ids": [
+        "notice-1abc9573202c"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "[졸업시험 원서접수기간은 학기초부터 졸업시험일 한 달 전까지임]",
+            "제출시기 : 졸업시험일 또는 졸업자격인정원 제출기한일까지"
+          ],
+          "notice_id": "knu-english-eng1621852173:4037",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-24",
+          "evidence": [
+            "마. 제출 기간: 학 생 → 학 과: 2026. 11. 24.(화)까지"
+          ],
+          "notice_id": "knu-english-eng1621852173:4417",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 12.089,
+      "errors": [],
+      "finished_at": "2026-10-03T17:54:00+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 32,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-english-eng1621852173:4037"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 7,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-english-eng1621852173:4434",
+        "knu-english-eng1621852173:4433",
+        "knu-english-eng1621852173:4432",
+        "knu-english-eng1621852173:4430",
+        "knu-english-eng1621852173:4428",
+        "knu-english-eng1621852173:4427",
+        "knu-english-eng1621852173:4419",
+        "knu-english-eng1621852173:4418",
+        "knu-english-eng1621852173:4414",
+        "knu-english-eng1621852173:4413",
+        "knu-english-eng1621852173:4412",
+        "knu-english-eng1621852173:4408",
+        "knu-english-eng1621852173:4401",
+        "knu-english-eng1621852173:4383",
+        "knu-english-eng1621852173:4382",
+        "knu-english-eng1621852173:4379",
+        "knu-english-eng1621852173:4378",
+        "knu-english-eng1621852173:4376",
+        "knu-english-eng1621852173:4372",
+        "knu-english-eng1621852173:4370",
+        "knu-english-eng1621852173:4369",
+        "knu-english-eng1621852173:4368",
+        "knu-english-eng1621852173:4366",
+        "knu-english-eng1621852173:4365",
+        "knu-english-eng1621852173:4364",
+        "knu-english-eng1621852173:4360",
+        "knu-english-eng1621852173:4358",
+        "knu-english-eng1621852173:4355"
+      ],
+      "source_board_id": "knu-english-eng1621852173",
+      "started_at": "2026-10-03T17:53:48+09:00",
+      "successful": 4,
+      "truncated": false,
+      "unchanged": [
+        "knu-english-eng1621852173:1792",
+        "knu-english-eng1621852173:4037",
+        "knu-english-eng1621852173:4417",
+        "knu-english-eng1621852173:4443"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-472ae4378387",
+      "channel_ids": [
+        "notice-472ae4378387"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": "2026-11-24",
+          "evidence": [
+            "마. 제출 기간: 2026. 11. 24.(화)까지"
+          ],
+          "notice_id": "knu-math-mat1623029308:3378",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 1,
+      "duration_sec": 34.844,
+      "errors": [],
+      "finished_at": "2026-10-03T17:54:35+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 56,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 5,
+      "request_count": 19,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-math-mat1623029308:3424",
+        "knu-math-mat1623029308:3423",
+        "knu-math-mat1623029308:3422",
+        "knu-math-mat1623029308:3421",
+        "knu-math-mat1623029308:3419",
+        "knu-math-mat1623029308:3418",
+        "knu-math-mat1623029308:3417",
+        "knu-math-mat1623029308:3416",
+        "knu-math-mat1623029308:3415",
+        "knu-math-mat1623029308:3414",
+        "knu-math-mat1623029308:3413",
+        "knu-math-mat1623029308:3412",
+        "knu-math-mat1623029308:3411",
+        "knu-math-mat1623029308:3410",
+        "knu-math-mat1623029308:3409",
+        "knu-math-mat1623029308:3408",
+        "knu-math-mat1623029308:3407",
+        "knu-math-mat1623029308:3406",
+        "knu-math-mat1623029308:3405",
+        "knu-math-mat1623029308:3404",
+        "knu-math-mat1623029308:3403",
+        "knu-math-mat1623029308:3402",
+        "knu-math-mat1623029308:3401",
+        "knu-math-mat1623029308:3399",
+        "knu-math-mat1623029308:3398",
+        "knu-math-mat1623029308:3397",
+        "knu-math-mat1623029308:3396",
+        "knu-math-mat1623029308:3395",
+        "knu-math-mat1623029308:3394",
+        "knu-math-mat1623029308:3393",
+        "knu-math-mat1623029308:3392",
+        "knu-math-mat1623029308:3391",
+        "knu-math-mat1623029308:3390",
+        "knu-math-mat1623029308:3389",
+        "knu-math-mat1623029308:3388",
+        "knu-math-mat1623029308:3387",
+        "knu-math-mat1623029308:3386",
+        "knu-math-mat1623029308:3385",
+        "knu-math-mat1623029308:3384",
+        "knu-math-mat1623029308:3383",
+        "knu-math-mat1623029308:3382",
+        "knu-math-mat1623029308:3381",
+        "knu-math-mat1623029308:3379"
+      ],
+      "source_board_id": "knu-math-mat1623029308",
+      "started_at": "2026-10-03T17:54:01+09:00",
+      "successful": 14,
+      "truncated": false,
+      "unchanged": [
+        "knu-math-mat1623029308:1077",
+        "knu-math-mat1623029308:148",
+        "knu-math-mat1623029308:149",
+        "knu-math-mat1623029308:2718",
+        "knu-math-mat1623029308:3360",
+        "knu-math-mat1623029308:3378",
+        "knu-math-mat1623029308:3425",
+        "knu-math-mat1623029308:3426",
+        "knu-math-mat1623029308:3427",
+        "knu-math-mat1623029308:3428",
+        "knu-math-mat1623029308:3430",
+        "knu-math-mat1623029308:3431",
+        "knu-math-mat1623029308:3432",
+        "knu-math-mat1623029308:497"
+      ],
+      "updated": [],
+      "window_complete": true
+    }
+  ],
+  "duration_sec": 149.561,
+  "extras": {
+    "errors": [],
+    "request_count": 2,
+    "sources": [
+      {
+        "checked_at": "2026-10-03T17:54:35.203607+09:00",
+        "source": "weather",
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=35.87028&longitude=128.59111&daily=weather_code%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_probability_max&timezone=Asia%2FSeoul&start_date=2026-10-03&end_date=2026-10-03"
+      },
+      {
+        "checked_at": "2026-10-03T17:54:36.268742+09:00",
+        "source": "schedule",
+        "url": "https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026"
+      }
+    ]
+  },
+  "finished_at": "2026-10-03T17:54:36.769007+09:00",
+  "request_count": 84,
+  "started_at": "2026-10-03T17:52:07.208050+09:00"
+}

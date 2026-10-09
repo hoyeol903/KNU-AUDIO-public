@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-01T13:44:39+09:00",
+  "network_requests": 12,
+  "result": {
+    "new": [
+      "knu-english-eng1621852173:1662",
+      "knu-english-eng1621852173:3439",
+      "knu-math-mat1623029308:1688",
+      "knu-math-mat1623029308:2163",
+      "knu-math-mat1623029308:3320",
+      "knu-math-mat1623029308:815"
+    ],
+    "unchanged": [],
+    "updated": []
+  },
+  "source": "fresh mismatch fixtures"
+}

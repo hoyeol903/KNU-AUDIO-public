@@ -1,0 +1,30 @@
+{
+  "college": "IT대학",
+  "evidence": [
+    "기존 전자공학부 조사/fixture 재사용. 재요청하지 않음",
+    "content/board/notice.html?pg=vv&fidx; BBS/gt_board"
+  ],
+  "files": [
+    {
+      "bytes": 38449,
+      "encoding": "utf-8",
+      "file": "전자공학부_목록.html",
+      "reused": true,
+      "sha256": "093784b090985b90c20c35389b7878ebc2e8bce441702611e6411e4355e1efe0",
+      "status": 200,
+      "url": "https://see.knu.ac.kr/content/board/notice.html"
+    },
+    {
+      "bytes": 33431,
+      "encoding": "utf-8",
+      "file": "전자공학부_상세.html",
+      "reused": true,
+      "sha256": "9c6a14656e59021d4aa7ad3e3eb5fdf470d72de129fceac8ab247eae24fd6ebb",
+      "status": 200,
+      "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105657"
+    }
+  ],
+  "id": "dept-see",
+  "representative": "전자공학부",
+  "template": "gt-board"
+}

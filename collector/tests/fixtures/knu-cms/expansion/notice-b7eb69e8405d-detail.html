@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  금속재료공학과 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="금속재료공학과" property="og:title"/>
+<meta content="경북대학교  금속재료공학과 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>금속재료공학과</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1729497330" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/material; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:20%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(34, 34, 34);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 공과대학 <em>금속재료공학과</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/material/sub.htm?mode=view&amp;mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmY29kZT1pNjRwTnBNdVg0Ukgmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ">로그인</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=mat1623656359" id="top1m1" title="학과소개 &gt; 학과비전,인재상,교육목표 페이지로 이동합니다.">학과소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=mat1623656359" title="학과비전,인재상,교육목표 페이지로 이동합니다.">학과비전,인재상,교육목표</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=mat1623658885" title="학과발전계획 페이지로 이동합니다.">학과발전계획</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=mat1623656368" title="학과개항 페이지로 이동합니다.">학과개항</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=mat1623656373" title="학과연혁 페이지로 이동합니다.">학과연혁</a></li>
+<li id="top2m1m5"><a href="./sub.htm?nav_code=mat1628828635" title="학과구성원 페이지로 이동합니다.">학과구성원</a></li>
+<li id="top2m1m6"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=160903" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m1m7"><a href="./sub.htm?nav_code=mat1623656437" title="장학제도 페이지로 이동합니다.">장학제도</a></li>
+<li id="top2m1m8"><a href="./sub.htm?nav_code=mat1623656448" title="취업현황 페이지로 이동합니다.">취업현황</a></li>
+<li id="top2m1m9"><a href="./sub.htm?nav_code=mat1623656452" title="찾아오시는길 페이지로 이동합니다.">찾아오시는길</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=mat1623656463" id="top1m2" title="학생활동 &gt; 학생회소개 페이지로 이동합니다.">학생활동</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="./sub.htm?nav_code=mat1623656463" title="학생회소개 페이지로 이동합니다.">학생회소개</a></li>
+<li id="top2m2m2"><a href="./sub.htm?nav_code=mat1623656467" title="학생회회칙 페이지로 이동합니다.">학생회회칙</a></li>
+<li id="top2m2m3"><a href="./sub.htm?nav_code=mat1623656471" title="학생회 조직도 페이지로 이동합니다.">학생회 조직도</a></li>
+<li id="top2m2m4"><a href="./sub.htm?nav_code=mat1623656475" title="일정표 페이지로 이동합니다.">일정표</a></li>
+<li id="top2m2m5"><a href="./sub.htm?nav_code=mat1623656480" title="소모임 페이지로 이동합니다.">소모임</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=mat1623632513" id="top1m3" title="커뮤니티 &gt; 공지사항 페이지로 이동합니다.">커뮤니티</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="./sub.htm?nav_code=mat1623632513" title="공지사항 페이지로 이동합니다.">공지사항</a></li>
+<li id="top2m3m2"><a href="./sub.htm?nav_code=mat1623632511" title="자유게시판 페이지로 이동합니다.">자유게시판</a></li>
+<li id="top2m3m3"><a href="./sub.htm?nav_code=mat1623632512" title="취업자료실 페이지로 이동합니다.">취업자료실</a></li>
+<li id="top2m3m4"><a href="./sub.htm?nav_code=mat1623656511" title="수업자료 페이지로 이동합니다.">수업자료</a></li>
+<li id="top2m3m5"><a href="./sub.htm?nav_code=mat1623632510" title="서식함 페이지로 이동합니다.">서식함</a></li>
+<li id="top2m3m6"><a href="./sub.htm?nav_code=mat1623632509" title="갤러리 페이지로 이동합니다.">갤러리</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=mat1623656560" id="top1m4" title="링크 &gt; 학회 페이지로 이동합니다.">링크</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="./sub.htm?nav_code=mat1623656560" title="학회 페이지로 이동합니다.">학회</a></li>
+<li id="top2m4m2"><a href="./sub.htm?nav_code=mat1623656567" title="연구기관 페이지로 이동합니다.">연구기관</a></li>
+<li id="top2m4m3"><a href="./sub.htm?nav_code=mat1623656575" title="정보검색 페이지로 이동합니다.">정보검색</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=mat1623656586" id="top1m5" title="English &gt; Introduce 페이지로 이동합니다.">English</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=mat1623656586" title="Introduce 페이지로 이동합니다.">Introduce</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=mat1623656592" title="Professor 페이지로 이동합니다.">Professor</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(3,1);max_2menu=9;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../material/data/designImages/SUBBG_1628819632');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:200px;width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:200px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:914px;height:100px;left: 0px; top: 52px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">금속재료공학과</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">이론과 실험·실습을 통하여 재료물성 및 설계재료공정, 공정제어 및 계측시스템 등을<br/>교육하여 미래지향적인 리더십을 갖춘 전문엔지니어 및 연구인 양성!</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=mat1623632513">커뮤니티</a></li><li><a href="./sub.htm?nav_code=mat1623632513">공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=커뮤니티 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fmaterial%2Fsub.htm%3Fnav_code%3Dmat1623632513" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:#555555;color:#FFFFFF;">커뮤니티</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=mat1623632513">공지사항</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=mat1623632511">자유게시판</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=mat1623632512">취업자료실</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=mat1623656511">수업자료</a>
+</li>
+<li id="snb2m5"><a href="./sub.htm?nav_code=mat1623632510">서식함</a>
+</li>
+<li id="snb2m6"><a href="./sub.htm?nav_code=mat1623632509">갤러리</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<div class="board_view">
+<div class="title">[학과사무실]2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</div>
+<input id="userid" name="userid" type="hidden" value=""/>
+<div class="desc clearfix">
+<dl>
+<dt>등록일</dt>
+<dd>2026-09-22</dd>
+<dt>작성자</dt>
+<dd>금속재료공학과</dd>
+<dt>조회수</dt>
+<dd>18</dd>
+</dl>
+</div>
+<div class="cont">
+<!-- 내용부 첨부파일이 image 파일이면 view -->
+<p class="0" style="margin-right:5.0pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><br/></p><p class="0" style="margin-left:34.4pt;text-indent:-34.4pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">가</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-weight:bold;font-size:12.0pt;">운영개요</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">: </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:12.0pt;">첨성인 역량</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-size:9.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:9.0pt;">첨단</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-size:9.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:9.0pt;">성찰</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-size:9.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:9.0pt;">인성</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-size:9.0pt;">)</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:12.0pt;">을 갖춘 우수 학생을 선발</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.0pt;mso-text-raise:0pt;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.0pt;font-size:12.0pt;">학위수여식에서 인증서 수여</span></p><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">나</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">선발기준</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">: </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">상세 내용 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">[</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">붙임</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">] </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">참고</span></p><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">아래 요건 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">①</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">~</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">⑥</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">중 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">4</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">가지 이상 충족한 </span><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">’26</span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">학년도 </span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">2</span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">학기 학부과정 졸업예정자</span></u></p><table style="border-collapse:collapse;table-layout:fixed;border-top:none;border-left:none;border-bottom:none;border-right:none;mso-table-overlap:never;"><tbody><tr><td style="width:69.63pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 1.70pt;border-left:none;border-bottom:double #000000 1.98pt;border-right:dotted #000000 0.28pt;background:#fbefd4;" valign="middle"><p class="0" style="line-height:130%;text-align:center;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">역량</span></p></td><td style="width:44.16pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 1.70pt;border-left:dotted #000000 0.28pt;border-bottom:double #000000 1.98pt;border-right:dotted #000000 0.28pt;background:#fbefd4;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">요건</span></p></td><td style="width:378.10pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 1.70pt;border-left:dotted #000000 0.28pt;border-bottom:double #000000 1.98pt;border-right:none;background:#fbefd4;" valign="middle"><p class="0" style="line-height:130%;text-align:center;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">세부 충족요건</span></p></td></tr><tr><td style="width:69.63pt;height:34.70pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:double #000000 1.98pt;border-left:none;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">첨단</span></p><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">창의</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">/</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">융합</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">)</span></p></td><td style="width:44.16pt;height:34.70pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:double #000000 1.98pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">①</span></p></td><td style="width:378.10pt;height:34.70pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:double #000000 1.98pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;margin-left:6.1pt;text-indent:-6.1pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">공모전</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">·</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">경진대회 입상 실적</span><span lang="EN-US"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">또는 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">논문 게재</span><span lang="EN-US"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">또는 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">특허 출원</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">·</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">등록 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">또는 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">전공 관련 공인 자격증 취득 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">중 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;">1</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">가지 이상 충족</span></p></td></tr><tr><td rowspan="2" style="width:69.63pt;height:40.22pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:none;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">성찰</span></p><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">비판</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">/</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">탐색</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">)</span></p></td><td style="width:44.16pt;height:20.41pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">②</span></p></td><td style="width:378.10pt;height:20.41pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">진로취업과에서 운영하는 프로그램 중 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">개 이상 프로그램에 참여</span></p></td></tr><tr><td style="width:44.16pt;height:19.81pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">③</span></p></td><td style="width:378.10pt;height:19.81pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">학습지원센터에서는 운영하는 프로그램 중 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">개 이상 프로그램에 참여</span></p></td></tr><tr><td rowspan="3" style="width:69.63pt;height:58.44pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:none;border-bottom:solid #000000 1.70pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">인성</span></p><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">소통</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">/</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">책임</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">)</span></p></td><td style="width:44.16pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">④</span></p></td><td style="width:378.10pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;margin-left:10.8pt;text-indent:-10.8pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">국내외 봉사활동 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">50</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">시간 이상</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">(</span><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">KNUCUBE</span></u><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">에 등록된 봉사활동 실적만 인정</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;">)</span></p></td></tr><tr><td style="width:44.16pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">⑤</span></p></td><td style="width:378.10pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 0.28pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;margin-left:10.8pt;text-indent:-10.8pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">국제교류과에서 운영하는 국제화프로그램 중 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;font-weight:bold;">개 이상 참여</span></p></td></tr><tr><td style="width:44.16pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 1.70pt;border-right:dotted #000000 0.28pt;" valign="middle"><p class="0" style="line-height:130%;text-align:center;word-break:keep-all;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">⑥</span></p></td><td style="width:378.10pt;height:19.48pt;padding:1.41pt 5.10pt 1.41pt 5.10pt;border-top:solid #000000 0.28pt;border-left:dotted #000000 0.28pt;border-bottom:solid #000000 1.70pt;border-right:none;" valign="middle"><p class="0" style="line-height:130%;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∙ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;letter-spacing:-0.4pt;font-weight:bold;">공인 영어 성적 증명 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;">1</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;letter-spacing:-0.4pt;font-weight:bold;">가지 이상 </span><span lang="EN-US"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;">※ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">공인영어 성적 외 제</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:95%;letter-spacing:0pt;mso-text-raise:0pt;">2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-font-width:95%;">외국어 성적 증명도 가능</span></p></td></tr></tbody></table><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">다</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">신청방법</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">:</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">KNUCUBE </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">시스템을 통한 학생 개별 신청</span></p><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">라</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">추진일정</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">전 기관 안내</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">2026. 9. 18.(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">금</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">) </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;"> </span><u><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">※ </span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">KNUCUBE </span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;">접수기간</span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">: 2027. 1. 4.(</span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;">월</span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">)</span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">∼</span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">1. 11.(</span></u><u><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;">월</span></u><u><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;">)</span></u></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">프로그램 운영부서 실적 확인 조회</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">2027. 1. 13.(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">수</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">~</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">1. 22.(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">금</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">) </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">예정</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">선발자 확정 및 안내</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">2027. 2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">월 초 예정</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">인증서 수여</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">2027. 2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">월 말</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">※ </span><span style="font-family:굴림;mso-fareast-font-family:굴림;">우수 선발자 별도 시상</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">(2027. 2. 19. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;">학위수여식</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">)</span></p><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">마</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">행정사항</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">-</span><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-weight:bold;font-size:12.0pt;">진로취업과</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-weight:bold;font-size:12.0pt;">국제교류과</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-weight:bold;font-size:12.0pt;">교수학습센터</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.1pt;font-size:12.0pt;">운영프로그램 학생 안내 및 참가 여부 확인</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">자원봉사센터</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">봉사활동 시스템 등록 처리 및 봉사 활동 실적 확인</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">학사과</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">총무과</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">학위수여식 행사 시 인증서 전달</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">해당자</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">)</span></p><p class="0" style="margin-left:33.6pt;text-indent:-33.6pt;tab-stops:left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">- </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-weight:bold;font-size:12.0pt;">단과대학 및 학과 행정실</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">게시판</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">․</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">SNS</span><span style="font-family:굴림;mso-fareast-font-family:굴림;mso-hansi-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;font-size:12.0pt;">․</span><span style="font-family:굴림;mso-fareast-font-family:굴림;font-size:12.0pt;">메신저 등 홍보</span></p><p class="0" style="margin-left:98.6pt;text-indent:-98.6pt;margin-top:2.0pt;layout-grid-mode:both;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;font-size:12.0pt;">     <o:p></o:p></p><p class="1" style="margin-left:0pt;layout-grid-mode:both;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:0pt;">붙임  </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">2026</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:0pt;">학년도 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">2</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:0pt;">학기 첨성인 아너스 클럽 운영 계획 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">1</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:0pt;">부</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">.  </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:0pt;">끝</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:0pt;mso-text-raise:0pt;">.</span></p><div class="hwp_editor_board_content" data-hjsonver="1.0" data-jsonlen="59499" id="hwpEditorBoardContent"></div><p class="0" style="layout-grid-mode:both;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;">     <o:p></o:p></p>
+<span class="dot11">첨부파일중 PDF미리보기</span><br/>
+<div class="mbp20">
+<object data="../material/data/bbsData/6306zjtk9hscoy9532136ab1ff33bcd62.0.pdf#scrollbar=1&amp;toolbar=1&amp;statusbar=0&amp;navpanes=0&amp;page=1" height="800" id="pdf_viewer" type="application/pdf" width="100%">
+<p>파일 열람을 위해서는 아크로뱃 리더 설치가 필요합니다. 아래 링크를 클릭하여 리더를 다운로드 받으세요.<br><a href="http://get.adobe.com/kr/reader/" target="_blank"><img alt="Get Acrobat Reader web logo" src="http://www.adobe.com/images/shared/download_buttons/get_adobe_reader.png"/></a></br></p>
+<param name="wmode" value="transparent"/>
+<param name="src" value="../material/data/bbsData/6306zjtk9hscoy9532136ab1ff33bcd62.0.pdf#scrollbar=1&amp;toolbar=1&amp;statusbar=0&amp;navpanes=0&amp;page=1"/>
+</object>
+</div>
+</div>
+<div class="attach">
+<ul>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmc2l0ZV9jb2RlPW1hdGVyaWFsJmNvZGU9aTY0cE5wTXVYNFJIJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9&amp;download=h&amp;seq=0">2026학년도 2학기 첨성인 아너스 클럽 운영 계획(안내용).pdf</a></li>
+</ul>
+</div>
+</div>
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/material/sub.htm?mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmc2l0ZV9jb2RlPW1hdGVyaWFsJmNvZGU9aTY0cE5wTXVYNFJIJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/material/sub.htm?nav_code=mat1623632513&bbs_view_edit=1&mode=edit&mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmc2l0ZV9jb2RlPW1hdGVyaWFsJmNvZGU9aTY0cE5wTXVYNFJIJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+<div class="btnarea">
+<div class="left">
+<a class="btn_d" href="#" onclick="boardPrint(1);return false;">프린트</a>
+</div>
+<div class="right">
+<a class="btn_d" href="/HOME/material/sub.htm?mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmc2l0ZV9jb2RlPW1hdGVyaWFsJmNvZGU9aTY0cE5wTXVYNFJIJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9">목록</a>
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[41566] 
+													대구광역시 북구 대학로 80 경북대학교 공과대학 공대 3호관 509호 금속재료공학과 													 / T.053-950-5559													 / F.053-950-6559													 / E-mail.metal@knu.ac.kr								</p>
+<p class="copyright">Copyright ⓒ 경북대학교 공과대학 <em>금속재료공학과</em>. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 118,890명 / Today : 31명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

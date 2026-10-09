@@ -1,0 +1,33 @@
+{
+  "college": "치과대학",
+  "evidence": [
+    "메뉴: 공지사항",
+    "board.html?bid + mode=cont&bno, table.boardtable, /board/_board_chk.js",
+    "script=/board/_board_chk.js"
+  ],
+  "files": [
+    {
+      "bytes": 64335,
+      "content_type": "text/html; Charset=utf-8",
+      "encoding": "utf-8",
+      "file": "치의학과_목록.html",
+      "final_url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news",
+      "sha256": "614e38463f79e8412531e8df8ec3cff434da3db30f998db157cee5455672e4f6",
+      "status": 200,
+      "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
+    },
+    {
+      "bytes": 124398,
+      "content_type": "text/html; Charset=utf-8",
+      "encoding": "utf-8",
+      "file": "치의학과_상세.html",
+      "final_url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4484&snm=342&gotoPage=&bid=k1news&sflag=&sword=&syear=&bcate=",
+      "sha256": "3a3ab7cfbdd5926d81b174b8b93dcff57eb3b5e120000bce34d3265dffdc10ac",
+      "status": 200,
+      "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4484&snm=342&gotoPage=&bid=k1news&sflag=&sword=&syear=&bcate="
+    }
+  ],
+  "id": "dept-dent",
+  "representative": "치의학과",
+  "template": "custom-bid-board"
+}

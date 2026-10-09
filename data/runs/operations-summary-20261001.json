@@ -1,0 +1,68 @@
+{
+  "channels": [
+    {
+      "duration_sec": 22.566,
+      "name": "knu-academic",
+      "request_count": 21,
+      "successful": 17
+    },
+    {
+      "duration_sec": 77.192,
+      "name": "notice-df44dd8507c1",
+      "request_count": 72,
+      "successful": 67
+    },
+    {
+      "duration_sec": 20.661,
+      "name": "notice-6c1f8a512fa4",
+      "request_count": 19,
+      "successful": 16
+    },
+    {
+      "duration_sec": 13.88,
+      "name": "notice-1abc9573202c",
+      "request_count": 12,
+      "successful": 9
+    },
+    {
+      "duration_sec": 56.011,
+      "name": "notice-472ae4378387",
+      "request_count": 48,
+      "successful": 42
+    }
+  ],
+  "duration_sec": 193.281,
+  "extras_errors": 0,
+  "extras_request_count": 4,
+  "finished_at": "2026-10-01T17:01:05.280737+09:00",
+  "items_errors": [
+    {
+      "message": "knu-math-mat1623029308:3430: 대상 확인 필요 (공지는 유지): 신입생 관련성·참여 대상을 확정하지 못함",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "knu-math-mat1623029308:3431: 대상 확인 필요 (공지는 유지): 본문 미확인: 제목만으로 대상 확정 불가",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "knu-math-mat1623029308:3431: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "knu-math-mat1623029308:3432: 대상 확인 필요 (공지는 유지): 본문 미확인: 제목만으로 대상 확정 불가",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "knu-math-mat1623029308:3432: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-472ae4378387"
+    }
+  ],
+  "measurement": "최초 게시판 시작부터 items 생성 시각까지. 날짜 시각 차이로 계산하며 설치·테스트·검토 화면 생성 제외.",
+  "new": 3,
+  "notice_count": 4882,
+  "notice_errors": 0,
+  "notice_request_count": 172,
+  "request_count": 176,
+  "started_at": "2026-10-01T16:57:52+09:00",
+  "updated": 0
+}

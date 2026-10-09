@@ -1,0 +1,2019 @@
+{
+  "channels": [
+    {
+      "bootstrap": true,
+      "channel_id": "notice-e1ec1bf0eb87",
+      "channel_ids": [
+        "notice-e1ec1bf0eb87"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 기간 및 장소: 2026. 9. 30.(수)~10. 2.(금) 12시, 학과(부)사무실(연수동 104호) ※ 제출기한 엄수, 점심시간 제출 불가",
+            "2) 심사용 학위논문 제출자 중 학과(부)에서 정한 졸업자격 요건으로 외국어시험 면제원을 제출할 학생은 2026. 10. 2.(금)까지 제출한 학생만 논문제출자격이 있는 것으로 인정함",
+            "2) 납부기간:2026. 10. 14.(수) ~ 10. 15.(목) 16:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:795",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 제출기간: 2026. 9. 21.(월) ~ 9. 23.(수) 11시 ※ 제출기한 엄수",
+            "바. 논문심사위원 위촉 미승인: 심사용 논문 제출기간(9.30.~10.2.)에 논문을 제출하지 않거나 논문제출 자격이 미달인 경우"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:781",
+          "reason": "연도까지 명시된 마감 날짜 없음; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "○ 제출기간: 2026. 9. 9.(수) ~ 9. 11(금) 12시까지 ※ 제출기한 엄수, 점심시간 12:00~13:00 제출 불가",
+            "- 연구실적 및 특허실적 제출 기한: 논문심사 시작일 10.19. 전까지 ※ 이후 제출 불가",
+            "- 외국어 성적 제출 기한: 10.2.까지 ※ 이후 제출 불가"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:742",
+          "reason": "상대적인 기한 표현이 섞여 있음; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 납부기간 구 분",
+            "납부 기간 납부 금액"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:702",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 ○ 복 학 : 2026. 7. 1.(수) ~ 9. 21.(월)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:665",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-12",
+          "evidence": [
+            "3. 모집 기간: 2026. 9. 30.(수) ~ 2026. 10. 12.(월)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:819",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "나. 신청기간: 2026. 10. 6.(화) 10:00~10. 8.(목)18:00",
+            "라. 납부기간: 2026. 10. 15.(목) 10:00~16:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:818",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 신청기간: 2026. 11. 23.(월)∼12. 31.(목)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:817",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- 신청기간: ~ 11. 05.(목)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:815",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "❍ 신청기간: 2026. 9. 30.(수) ~ 회차별 모집인원 마감까지(선착순)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:813",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- (전 기관 안내) 2026. 9. 18.(금) ※ KNUCUBE 접수기간: 2027. 1. 4.(월)∼1. 11.(월)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:805",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3) 선발방법과 인원 및 제출서류와 접수기한은 변동 없음([붙임 1]참조)",
+            "바. 접수 기한: 2026. 9. 22.(화) 18:00까지 제출 ※기한엄수/공문 발송기한이 9. 28. 14:00이므로 공문 발송 처리 기한을 고려하여 학과사무실에서는 9. 22.(화) 18:00까지 접수받음"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:801",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-09-22",
+          "evidence": [
+            "4) 제출기한: 2026. 9. 22.(화) 17:00까지 제출"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:800",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2) 지원서 접수기간: 2026. 9. 16.(수)~9. 22.(화) 14:00까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:798",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 납부기간: 2026. 9. 21.(월) 09:00 ~ 9. 22.(화) 18:00까지(2일)",
+            "- (제출기한) 2026. 9. 23.(수) 12:00까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:796",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "라. 신청기간: 2026. 9. 21.(월) ∼ 10. 16.(금)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:789",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 신청기간: 2026. 9. 7.(월) ∼ 9. 17.(목)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:785",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-09-11",
+          "evidence": [
+            "- 제출기한: 2026. 9. 11.(금) 17:00까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:784",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 2차 신청 및 등록 기간 (※ 3차 추가 신청 및 등록 없음)",
+            "1) 신청기간: 2026. 9. 10.(목)~9. 11.(금) 낮 12시",
+            "2) 등록기간: 2026. 9. 21.(월)~9. 22.(화) 오후 4시",
+            "※ 1차 신청자 중 미납자는 2차 신청기간에 재신청하지 않아도 2차 등록기간 중 납부 가능",
+            "○ 1차 신청자 중 미납자는 2차 신청기간 중 재신청하지 않아도 2차 납부기간 중 납부 가능",
+            "○ 납부기간 중 학교 홈페이지 공지사항을 통해 출력 가능, 등록금 환불은 없음에 유의"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:783",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 접수기간: 2026. 9. 3.(목) ~ 12. 4.(금)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:776",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 9. 2.(수) ~ 9. 23.(수) 17:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:775",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 제출기간: 2026. 9. 2.(수) ~ 9. 10.(목) 15:00 ※ 점심시간 제출 불가, 기한 엄수"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:772",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "라. 모집기간 : 2026년 9월 1일(화)~9월 11일(금), 15시까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:769",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 납부기간: 2026. 9. 1.(화) 09:00 ~ 9. 4.(금) 18:00까지(4일)",
+            "- (제출기한) 2026. 9. 7.(월) 18:00까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:768",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 8. 31.(월) ~ 9. 18.(금) 18:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:766",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 9. 1.(화) ~ 9. 30.(수) 24:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:765",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 공모 신청 기간: ’26. 9. 3.(목)∼9. 30.(수), 4주간"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:763",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "라. 신청기간: 2026. 9. 1.(화) ∼ 9. 10.(목)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:759",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-09-03",
+          "evidence": [
+            "나. 제출기한: 2026. 9. 3.(목) 16:00 [기한엄수]"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:754",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-09-18",
+          "evidence": [
+            "3. 접수기간: 2026. 9. 14.(월) ~ 2026. 9. 18.(금) 17:00까지"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:752",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 신청기간: 2026. 9. 1.(화) ~ 9. 17.(목)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:750",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 접수기간: 2026. 11. 2.(월) ~ 11. 27.(금), 평일 10:00~17:00"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:749",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 수료생 등록금 납부기간: 2026. 9. 2.(수)~9. 3.(목) 16:00 까지",
+            "(고지서는 납부기간 중 학교 홈페이지 공지사항에서 출력 가능함)",
+            "수료생 등록 후 심사용 논문을 제출하지 않는 경우라도 등록금을 환불하지 않으니 납부 전 신중히 검토하여 등록하여 주시기 바랍니다. 특히 이번학기 논문심사 여부가 확정되지 않은 경우 추가 납부기간에 납부해주시기 바랍니다.(※추가 납부기간 추후통보)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:747",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음; 조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            " 신청마감: 2026. 9. 11.(금) 까지 선착순 마감"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:745",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026학년도 2학기 대학원 학위논문 제출예정자는 9.11.(금) 12시까지 신청서를 학과사무실로 제출하여 주시기 바랍니다. ※신청 기간 종료 후 추가 신청 불가",
+            "○ 신청기간: 2026. 9. 9.(수) ~ 9. 11.(금) 12:00",
+            "※ 제출기한 엄수, 점심시간 제출 불가",
+            "○ 접수기간: 2026. 9. 9.(수)"
+          ],
+          "notice_id": "knu-bcst2-bcs1611061294:743",
+          "reason": "기간의 종료일인지 불명확; 연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 107.904,
+      "errors": [],
+      "finished_at": "2026-10-02T14:12:03+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 89,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-bcst2-bcs1611061294:795",
+        "knu-bcst2-bcs1611061294:781",
+        "knu-bcst2-bcs1611061294:742",
+        "knu-bcst2-bcs1611061294:702",
+        "knu-bcst2-bcs1611061294:665",
+        "knu-bcst2-bcs1611061294:818",
+        "knu-bcst2-bcs1611061294:817",
+        "knu-bcst2-bcs1611061294:815",
+        "knu-bcst2-bcs1611061294:813",
+        "knu-bcst2-bcs1611061294:805",
+        "knu-bcst2-bcs1611061294:801",
+        "knu-bcst2-bcs1611061294:798",
+        "knu-bcst2-bcs1611061294:796",
+        "knu-bcst2-bcs1611061294:789",
+        "knu-bcst2-bcs1611061294:785",
+        "knu-bcst2-bcs1611061294:783",
+        "knu-bcst2-bcs1611061294:776",
+        "knu-bcst2-bcs1611061294:775",
+        "knu-bcst2-bcs1611061294:772",
+        "knu-bcst2-bcs1611061294:769",
+        "knu-bcst2-bcs1611061294:768",
+        "knu-bcst2-bcs1611061294:766",
+        "knu-bcst2-bcs1611061294:765",
+        "knu-bcst2-bcs1611061294:763",
+        "knu-bcst2-bcs1611061294:759",
+        "knu-bcst2-bcs1611061294:750",
+        "knu-bcst2-bcs1611061294:749",
+        "knu-bcst2-bcs1611061294:747",
+        "knu-bcst2-bcs1611061294:745",
+        "knu-bcst2-bcs1611061294:743"
+      ],
+      "new": [
+        "knu-bcst2-bcs1611061294:784",
+        "knu-bcst2-bcs1611061294:785",
+        "knu-bcst2-bcs1611061294:786",
+        "knu-bcst2-bcs1611061294:787",
+        "knu-bcst2-bcs1611061294:788",
+        "knu-bcst2-bcs1611061294:789",
+        "knu-bcst2-bcs1611061294:790",
+        "knu-bcst2-bcs1611061294:791",
+        "knu-bcst2-bcs1611061294:793",
+        "knu-bcst2-bcs1611061294:794",
+        "knu-bcst2-bcs1611061294:796",
+        "knu-bcst2-bcs1611061294:797",
+        "knu-bcst2-bcs1611061294:798",
+        "knu-bcst2-bcs1611061294:800",
+        "knu-bcst2-bcs1611061294:801",
+        "knu-bcst2-bcs1611061294:803",
+        "knu-bcst2-bcs1611061294:804",
+        "knu-bcst2-bcs1611061294:805",
+        "knu-bcst2-bcs1611061294:806",
+        "knu-bcst2-bcs1611061294:808",
+        "knu-bcst2-bcs1611061294:809",
+        "knu-bcst2-bcs1611061294:755",
+        "knu-bcst2-bcs1611061294:756",
+        "knu-bcst2-bcs1611061294:757",
+        "knu-bcst2-bcs1611061294:758",
+        "knu-bcst2-bcs1611061294:759",
+        "knu-bcst2-bcs1611061294:760",
+        "knu-bcst2-bcs1611061294:761",
+        "knu-bcst2-bcs1611061294:763",
+        "knu-bcst2-bcs1611061294:764",
+        "knu-bcst2-bcs1611061294:765",
+        "knu-bcst2-bcs1611061294:766",
+        "knu-bcst2-bcs1611061294:767",
+        "knu-bcst2-bcs1611061294:768",
+        "knu-bcst2-bcs1611061294:769",
+        "knu-bcst2-bcs1611061294:770",
+        "knu-bcst2-bcs1611061294:772",
+        "knu-bcst2-bcs1611061294:774",
+        "knu-bcst2-bcs1611061294:775",
+        "knu-bcst2-bcs1611061294:776",
+        "knu-bcst2-bcs1611061294:777",
+        "knu-bcst2-bcs1611061294:778",
+        "knu-bcst2-bcs1611061294:779",
+        "knu-bcst2-bcs1611061294:780",
+        "knu-bcst2-bcs1611061294:782",
+        "knu-bcst2-bcs1611061294:783",
+        "knu-bcst2-bcs1611061294:739",
+        "knu-bcst2-bcs1611061294:740",
+        "knu-bcst2-bcs1611061294:741",
+        "knu-bcst2-bcs1611061294:743",
+        "knu-bcst2-bcs1611061294:744",
+        "knu-bcst2-bcs1611061294:745",
+        "knu-bcst2-bcs1611061294:747",
+        "knu-bcst2-bcs1611061294:748",
+        "knu-bcst2-bcs1611061294:749",
+        "knu-bcst2-bcs1611061294:750",
+        "knu-bcst2-bcs1611061294:751",
+        "knu-bcst2-bcs1611061294:752",
+        "knu-bcst2-bcs1611061294:753",
+        "knu-bcst2-bcs1611061294:754"
+      ],
+      "new_candidates": [],
+      "pages": 7,
+      "request_count": 96,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-bcst2-bcs1611061294",
+      "started_at": "2026-10-02T14:10:16+09:00",
+      "successful": 89,
+      "truncated": false,
+      "unchanged": [
+        "knu-bcst2-bcs1611061294:161",
+        "knu-bcst2-bcs1611061294:304",
+        "knu-bcst2-bcs1611061294:414",
+        "knu-bcst2-bcs1611061294:530",
+        "knu-bcst2-bcs1611061294:571",
+        "knu-bcst2-bcs1611061294:665",
+        "knu-bcst2-bcs1611061294:673",
+        "knu-bcst2-bcs1611061294:702",
+        "knu-bcst2-bcs1611061294:719",
+        "knu-bcst2-bcs1611061294:742",
+        "knu-bcst2-bcs1611061294:746",
+        "knu-bcst2-bcs1611061294:762",
+        "knu-bcst2-bcs1611061294:771",
+        "knu-bcst2-bcs1611061294:773",
+        "knu-bcst2-bcs1611061294:781",
+        "knu-bcst2-bcs1611061294:792",
+        "knu-bcst2-bcs1611061294:795",
+        "knu-bcst2-bcs1611061294:799",
+        "knu-bcst2-bcs1611061294:807",
+        "knu-bcst2-bcs1611061294:814",
+        "knu-bcst2-bcs1611061294:815",
+        "knu-bcst2-bcs1611061294:816",
+        "knu-bcst2-bcs1611061294:817",
+        "knu-bcst2-bcs1611061294:818",
+        "knu-bcst2-bcs1611061294:819",
+        "knu-bcst2-bcs1611061294:810",
+        "knu-bcst2-bcs1611061294:811",
+        "knu-bcst2-bcs1611061294:812",
+        "knu-bcst2-bcs1611061294:813"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-ecd686f730b2",
+      "channel_ids": [
+        "notice-ecd686f730b2"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "- 신청 기간: 2026. 6. 24.(수) ~ 6. 26.(금)"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:2012",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2. 응모기간: 공고일로부터 2026. 1. 9.(금)까지"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:2002",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- 신청 기간: 11. 10.(월) ~ 11. 28.(금)"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:1951",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2. 응모기간: 공고일로부터 2025. 1. 10.(금)까지"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:1878",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- 신청 기간: 2024. 11. 11.(월) ~ 11. 29.(금)"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:1877",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2024-10-31",
+          "evidence": [
+            "4. 신청기간 : 2024. 10. 31.(목)까지"
+          ],
+          "notice_id": "knu-humanities-hum1623199741:1874",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 모집기간 : 2024. 9. 2. ∼ 10. 13."
+          ],
+          "notice_id": "knu-humanities-hum1623199741:1864",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 24.403,
+      "errors": [],
+      "finished_at": "2026-10-02T14:12:28+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 20,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-humanities-hum1623199741:2012",
+        "knu-humanities-hum1623199741:2002",
+        "knu-humanities-hum1623199741:1951",
+        "knu-humanities-hum1623199741:1878",
+        "knu-humanities-hum1623199741:1877",
+        "knu-humanities-hum1623199741:1864"
+      ],
+      "new": [
+        "knu-humanities-hum1623199741:1864",
+        "knu-humanities-hum1623199741:1865",
+        "knu-humanities-hum1623199741:1872",
+        "knu-humanities-hum1623199741:1874",
+        "knu-humanities-hum1623199741:1876",
+        "knu-humanities-hum1623199741:1877",
+        "knu-humanities-hum1623199741:1878",
+        "knu-humanities-hum1623199741:1881",
+        "knu-humanities-hum1623199741:1884",
+        "knu-humanities-hum1623199741:1946",
+        "knu-humanities-hum1623199741:1951",
+        "knu-humanities-hum1623199741:1965",
+        "knu-humanities-hum1623199741:1969",
+        "knu-humanities-hum1623199741:1975",
+        "knu-humanities-hum1623199741:1983",
+        "knu-humanities-hum1623199741:1990",
+        "knu-humanities-hum1623199741:2002",
+        "knu-humanities-hum1623199741:2005",
+        "knu-humanities-hum1623199741:2006",
+        "knu-humanities-hum1623199741:2012"
+      ],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 22,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-humanities-hum1623199741",
+      "started_at": "2026-10-02T14:12:04+09:00",
+      "successful": 20,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-5c6cbaba27ab",
+      "channel_ids": [
+        "notice-5c6cbaba27ab"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 신청기간: 2026. 11. 23.(월)∼12. 31.(목)"
+          ],
+          "notice_id": "knu-hum-hum1741312301:205",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "수강신청 기간 2026. 11. 11.(수) 13:00 ~ 11. 12.(목) 17:59"
+          ],
+          "notice_id": "knu-hum-hum1741312301:201",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 제출기한: 사유 발생일로부터 14일 이내"
+          ],
+          "notice_id": "knu-hum-hum1741312301:146",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- 신청 기간(학생): 2026. 1. 2.(금) ~ 1. 6.(화)"
+          ],
+          "notice_id": "knu-hum-hum1741312301:122",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 신청기간: 2026. 7. 22.(수) 11:00 ~ 7. 24.(금) 17:59【3일간】"
+          ],
+          "notice_id": "knu-hum-hum1741312301:177",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 성적 열람 및 이의신청 기간: 2026. 7. 3.(금) 10:00~ 7. 9.(목) 18:00까지 (학생→교과목담당교수)"
+          ],
+          "notice_id": "knu-hum-hum1741312301:175",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026년 2학기 1차 주거안정장학금 학생 신청 기간 안내",
+            "2026년 2학기 1차 주거안정장학금 학생 신청 기간 및 주요 내용을 다음과 같이 안내"
+          ],
+          "notice_id": "knu-hum-hum1741312301:168",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026년 2학기 1차 국가근로장학금 학생 신청 기간 안내"
+          ],
+          "notice_id": "knu-hum-hum1741312301:167",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 수강신청기간: 2026. 5. 14.(목) 13:00 ∼ 5. 15.(금) 17:59"
+          ],
+          "notice_id": "knu-hum-hum1741312301:165",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 60.318,
+      "errors": [],
+      "finished_at": "2026-10-02T14:13:28+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 49,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-hum-hum1741312301:205",
+        "knu-hum-hum1741312301:201",
+        "knu-hum-hum1741312301:146",
+        "knu-hum-hum1741312301:122",
+        "knu-hum-hum1741312301:177",
+        "knu-hum-hum1741312301:175",
+        "knu-hum-hum1741312301:168",
+        "knu-hum-hum1741312301:167",
+        "knu-hum-hum1741312301:165"
+      ],
+      "new": [
+        "knu-hum-hum1741312301:122",
+        "knu-hum-hum1741312301:127",
+        "knu-hum-hum1741312301:130",
+        "knu-hum-hum1741312301:138",
+        "knu-hum-hum1741312301:140",
+        "knu-hum-hum1741312301:141",
+        "knu-hum-hum1741312301:146",
+        "knu-hum-hum1741312301:147",
+        "knu-hum-hum1741312301:162",
+        "knu-hum-hum1741312301:171",
+        "knu-hum-hum1741312301:182",
+        "knu-hum-hum1741312301:184",
+        "knu-hum-hum1741312301:192",
+        "knu-hum-hum1741312301:193",
+        "knu-hum-hum1741312301:194",
+        "knu-hum-hum1741312301:195",
+        "knu-hum-hum1741312301:196",
+        "knu-hum-hum1741312301:197",
+        "knu-hum-hum1741312301:198",
+        "knu-hum-hum1741312301:199",
+        "knu-hum-hum1741312301:201",
+        "knu-hum-hum1741312301:202",
+        "knu-hum-hum1741312301:203",
+        "knu-hum-hum1741312301:204",
+        "knu-hum-hum1741312301:205",
+        "knu-hum-hum1741312301:165",
+        "knu-hum-hum1741312301:166",
+        "knu-hum-hum1741312301:167",
+        "knu-hum-hum1741312301:168",
+        "knu-hum-hum1741312301:169",
+        "knu-hum-hum1741312301:170",
+        "knu-hum-hum1741312301:172",
+        "knu-hum-hum1741312301:173",
+        "knu-hum-hum1741312301:174",
+        "knu-hum-hum1741312301:175",
+        "knu-hum-hum1741312301:176",
+        "knu-hum-hum1741312301:177",
+        "knu-hum-hum1741312301:178",
+        "knu-hum-hum1741312301:179",
+        "knu-hum-hum1741312301:180",
+        "knu-hum-hum1741312301:181",
+        "knu-hum-hum1741312301:183",
+        "knu-hum-hum1741312301:185",
+        "knu-hum-hum1741312301:186",
+        "knu-hum-hum1741312301:187",
+        "knu-hum-hum1741312301:188",
+        "knu-hum-hum1741312301:189",
+        "knu-hum-hum1741312301:190",
+        "knu-hum-hum1741312301:191"
+      ],
+      "new_candidates": [],
+      "pages": 4,
+      "request_count": 53,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-hum-hum1741312301",
+      "started_at": "2026-10-02T14:12:28+09:00",
+      "successful": 49,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-614324804939",
+      "channel_ids": [
+        "notice-614324804939"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "나. 신청 기간: 2021. 7. 12.(월) 09:00 ~ 7. 14.(수) 18:00까지"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:253",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 접수 기간(학생): 2021. 5. 24.(월) 〜 6. 18.(금)",
+            "※ 코로나-19 생활속 거리두기 감안하여 접수기간을 2주간 확장(대면 최소화)",
+            "※ 위 기간은 집중 접수기간이며, 해당 기한 경과 후에도 졸업사정 시까지 추가 접수 가능"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:251",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "나. 신청기간: 2020. 12. 9.(수) ~ 2021. 1. 8.(금)",
+            "다. 신청방법: 신청기간 내 관련서류를 구비, 학과 사무실에 제출"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:248",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2021-01-08",
+          "evidence": [
+            "다. 신청기간: 2020. 12. 9.(수) 09:00 ~ 2021. 1. 8.(금) 18:00까지"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:247",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 접수 기간(학생) : 2020. 11. 16.(월) 〜 12. 11.(금)",
+            "※ 코로나-19 생활속 거리두기 감안하여 접수기간을 2주간 확장(대면 최소화)",
+            "※ 위 기간은 집중 접수기간이며, 해당 기한 경과 후 제출이 불가한 학생에 대하여 졸업사정 시까지 추가 접수 가능"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:245",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2020-11-19",
+          "evidence": [
+            "라. 추천기한 1) 학과(부) → 대학: 2020. 11. 19.(목)"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:242",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2020-11-20",
+          "evidence": [
+            "다. 접수기간: 2020. 10. 26.(월) ~ 2020. 11. 20.(금) 18시"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:241",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2021-01-11",
+          "evidence": [
+            "2. 신청기간: 2020. 10. 26.(월) ~ 2021. 1. 11.(월) 18:00까지(* 연장 접수 없음)"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:239",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "5. 제출기한(기한엄수)",
+            "- (학생→학과) 참여 신청서 제출: 2020. 10. 16.(금) 18:00까지"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:236",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "바. 신청기간: 2020. 10. 5.(월) ~ 10. 23.(금)"
+          ],
+          "notice_id": "knu-ilsa-ils1622609066:235",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 30.028,
+      "errors": [],
+      "finished_at": "2026-10-02T14:13:58+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 25,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-ilsa-ils1622609066:253",
+        "knu-ilsa-ils1622609066:251",
+        "knu-ilsa-ils1622609066:248",
+        "knu-ilsa-ils1622609066:245",
+        "knu-ilsa-ils1622609066:236",
+        "knu-ilsa-ils1622609066:235"
+      ],
+      "new": [
+        "knu-ilsa-ils1622609066:123",
+        "knu-ilsa-ils1622609066:130",
+        "knu-ilsa-ils1622609066:215",
+        "knu-ilsa-ils1622609066:235",
+        "knu-ilsa-ils1622609066:236",
+        "knu-ilsa-ils1622609066:237",
+        "knu-ilsa-ils1622609066:238",
+        "knu-ilsa-ils1622609066:239",
+        "knu-ilsa-ils1622609066:240",
+        "knu-ilsa-ils1622609066:241",
+        "knu-ilsa-ils1622609066:242",
+        "knu-ilsa-ils1622609066:243",
+        "knu-ilsa-ils1622609066:244",
+        "knu-ilsa-ils1622609066:245",
+        "knu-ilsa-ils1622609066:246",
+        "knu-ilsa-ils1622609066:247",
+        "knu-ilsa-ils1622609066:248",
+        "knu-ilsa-ils1622609066:249",
+        "knu-ilsa-ils1622609066:250",
+        "knu-ilsa-ils1622609066:251",
+        "knu-ilsa-ils1622609066:252",
+        "knu-ilsa-ils1622609066:253",
+        "knu-ilsa-ils1622609066:260",
+        "knu-ilsa-ils1622609066:51",
+        "knu-ilsa-ils1622609066:52"
+      ],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 27,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-ilsa-ils1622609066",
+      "started_at": "2026-10-02T14:13:28+09:00",
+      "successful": 25,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-3c7bfc3da404",
+      "channel_ids": [
+        "notice-3c7bfc3da404"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 신청 기간 : 2026.11.24(화)까지 수시 신청 ※ 기한 엄수",
+            "- 학사과 제출 마감일: 2026. 12.18.(금)까지"
+          ],
+          "notice_id": "knu-japan-jap1695016568:430",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "☞ 졸업자격인정원 증빙서류는 졸업자격인정원 신청 기간 내에 통합정보시스템 업로드 ! / 졸업논문은 학과로 실물 제출"
+          ],
+          "notice_id": "knu-japan-jap1695016568:138",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3.제출기한 : 사유 발생일로부터 14일 이내 ( ※ 부득이한 사유로 기한 내 제출이 어려운 경우에는 성적입력기간 전까지 제출)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:21",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "나. 신청 기간: 매년 4월 1일 ~ 4월 7일까지"
+          ],
+          "notice_id": "knu-japan-jap1695016568:18",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "신청 기간 대상(등록횟수)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:439",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "■ 신청 기간 2026년 9월 1일(화) ~ 9월 15일(화) (아래 Google Form을 통해 신청)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:436",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "※ 신청 기간이 지나면 시스템 신청이 불가하므로 기한을 반드시 준수하여 주시기 바랍니다.",
+            "※ 중간, 결과보고서 제출 마감일까지 미제출 시 지연제출 1일당 출석율 2% 포인트씩 감하여 계산"
+          ],
+          "notice_id": "knu-japan-jap1695016568:434",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "●응모 기간: 2026년 7월 30일(목)~10월 10일(토)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:433",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "신청 기간 : 8월 12일- 8월 17일까지!"
+          ],
+          "notice_id": "knu-japan-jap1695016568:429",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-08-11",
+          "evidence": [
+            "1. 신청기한: 2026년 8월 11일(화) 오전 10시까지"
+          ],
+          "notice_id": "knu-japan-jap1695016568:426",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 신청 및 등록 기간 1) 신청기간: 2026. 8. 17.(월)~8. 19.(수)",
+            "1) 신청기간: 2026. 8. 17.(월)~8. 19.(수)",
+            "2) 등록기간: 2026. 9. 2.(수)~9. 3.(목)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:422",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "※ 제출 마감 : 8. 4(화). 17시까지. 원본 제출 또는 japan6150@knu.ac.kr로 파일 제출 가능."
+          ],
+          "notice_id": "knu-japan-jap1695016568:421",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "▢ 신청 기간: 2026. 7. 13.(월) ~ 7. 24.(금) ※ 추가신청 기간 없음",
+            "※ 학사학위취득의 유예생 등록금 납부 기간 : 2026. 8. 11.(화) 09:00 ~ 8. 13.(목) 16:00",
+            "◦ 수강신청자는 차등납부기간에 등록금 추가납부(납부일정 추후 공지)"
+          ],
+          "notice_id": "knu-japan-jap1695016568:419",
+          "reason": "연도 생략 또는 여러 날짜·기간; 조건부·상시 마감; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "*서류마감: 7.24(금) 14시까지"
+          ],
+          "notice_id": "knu-japan-jap1695016568:416",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 68.611,
+      "errors": [],
+      "finished_at": "2026-10-02T14:15:07+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 60,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-japan-jap1695016568:430",
+        "knu-japan-jap1695016568:138",
+        "knu-japan-jap1695016568:21",
+        "knu-japan-jap1695016568:18",
+        "knu-japan-jap1695016568:439",
+        "knu-japan-jap1695016568:436",
+        "knu-japan-jap1695016568:434",
+        "knu-japan-jap1695016568:433",
+        "knu-japan-jap1695016568:429",
+        "knu-japan-jap1695016568:422",
+        "knu-japan-jap1695016568:421",
+        "knu-japan-jap1695016568:419",
+        "knu-japan-jap1695016568:416"
+      ],
+      "new": [
+        "knu-japan-jap1695016568:130",
+        "knu-japan-jap1695016568:138",
+        "knu-japan-jap1695016568:207",
+        "knu-japan-jap1695016568:249",
+        "knu-japan-jap1695016568:25",
+        "knu-japan-jap1695016568:258",
+        "knu-japan-jap1695016568:259",
+        "knu-japan-jap1695016568:263",
+        "knu-japan-jap1695016568:266",
+        "knu-japan-jap1695016568:28",
+        "knu-japan-jap1695016568:284",
+        "knu-japan-jap1695016568:29",
+        "knu-japan-jap1695016568:30",
+        "knu-japan-jap1695016568:32",
+        "knu-japan-jap1695016568:33",
+        "knu-japan-jap1695016568:34",
+        "knu-japan-jap1695016568:368",
+        "knu-japan-jap1695016568:380",
+        "knu-japan-jap1695016568:41",
+        "knu-japan-jap1695016568:412",
+        "knu-japan-jap1695016568:430",
+        "knu-japan-jap1695016568:431",
+        "knu-japan-jap1695016568:438",
+        "knu-japan-jap1695016568:441",
+        "knu-japan-jap1695016568:445",
+        "knu-japan-jap1695016568:14",
+        "knu-japan-jap1695016568:15",
+        "knu-japan-jap1695016568:16",
+        "knu-japan-jap1695016568:18",
+        "knu-japan-jap1695016568:19",
+        "knu-japan-jap1695016568:20",
+        "knu-japan-jap1695016568:21",
+        "knu-japan-jap1695016568:22",
+        "knu-japan-jap1695016568:23",
+        "knu-japan-jap1695016568:24",
+        "knu-japan-jap1695016568:425",
+        "knu-japan-jap1695016568:426",
+        "knu-japan-jap1695016568:427",
+        "knu-japan-jap1695016568:429",
+        "knu-japan-jap1695016568:432",
+        "knu-japan-jap1695016568:433",
+        "knu-japan-jap1695016568:434",
+        "knu-japan-jap1695016568:435",
+        "knu-japan-jap1695016568:436",
+        "knu-japan-jap1695016568:437",
+        "knu-japan-jap1695016568:439",
+        "knu-japan-jap1695016568:440",
+        "knu-japan-jap1695016568:442",
+        "knu-japan-jap1695016568:443",
+        "knu-japan-jap1695016568:444",
+        "knu-japan-jap1695016568:414",
+        "knu-japan-jap1695016568:415",
+        "knu-japan-jap1695016568:416",
+        "knu-japan-jap1695016568:417",
+        "knu-japan-jap1695016568:418",
+        "knu-japan-jap1695016568:419",
+        "knu-japan-jap1695016568:420",
+        "knu-japan-jap1695016568:421",
+        "knu-japan-jap1695016568:422",
+        "knu-japan-jap1695016568:423"
+      ],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 63,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-japan-jap1695016568",
+      "started_at": "2026-10-02T14:13:58+09:00",
+      "successful": 60,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-7bb331bb8b0f",
+      "channel_ids": [
+        "notice-7bb331bb8b0f"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "아. 신청기한: 8월 10일(월) 14시 까지 서명 삽입하여 forest1@knu.ac.kr로 제출"
+          ],
+          "notice_id": "knu-treei-tre1622610220:298",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026학년도 교직과정 이수예정자 선발 계획 안내 (신청기간: 04.02~04.06)"
+          ],
+          "notice_id": "knu-treei-tre1622610220:290",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "나. 지원서 접수기간: 2026. 3.26.(목) ~ 4. 6.(월) 11:00까지"
+          ],
+          "notice_id": "knu-treei-tre1622610220:283",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026-1학기 수강꾸러미 신청 기간 및 방법 안내",
+            "2026-1학기 수강꾸러미 신청 기간 및 방법을 안내드립니다.",
+            "가. 신청기간 : 2026. 1. 20.(화) 11:00 ∼ 1. 22.(목) 17:59【3일간】"
+          ],
+          "notice_id": "knu-treei-tre1622610220:269",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "사. 신청기한: 7월 27일 일요일까지"
+          ],
+          "notice_id": "knu-treei-tre1622610220:266",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2025-06-30",
+          "evidence": [
+            "다. 신청마감: 2025. 6. 30.(월) 14:00까지"
+          ],
+          "notice_id": "knu-treei-tre1622610220:265",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "□ 신청 기간: 2025. 6. 9.(월) 10:00 ~ 6. 16.(월) 18:00"
+          ],
+          "notice_id": "knu-treei-tre1622610220:264",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2025-01-10",
+          "evidence": [
+            "2. 신청기간: 2024. 12. 11.(수) 09:00 ~ 2025. 1. 10.(금) 18:00까지"
+          ],
+          "notice_id": "knu-treei-tre1622610220:258",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "▢ 신청 기간: 2024. 12. 9.(월) 10:00 ~ 12. 13.(금) 18:00"
+          ],
+          "notice_id": "knu-treei-tre1622610220:257",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "▢ 신청 기간: 2024. 12. 9.(월) 10:00 ~ 12. 13.(금) 18:00"
+          ],
+          "notice_id": "knu-treei-tre1622610220:256",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2024학년도 동계방학중 교내 근로장학생 학생 신청기간 및 방법 안내 (11/1~11/15)"
+          ],
+          "notice_id": "knu-treei-tre1622610220:251",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 접수기간: 2024. 10. 15.(화) ~ 11. 15.(금) 18시까지"
+          ],
+          "notice_id": "knu-treei-tre1622610220:249",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2) 총동창회비(입회비) 기 납부(2024년 10월 10일까지 납부한 자) 및 성적우수자(전체",
+            "마. 신청기간: 2024. 10. 18.(금) ~ 11. 1.(금) 18:00"
+          ],
+          "notice_id": "knu-treei-tre1622610220:247",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 24.67,
+      "errors": [],
+      "finished_at": "2026-10-02T14:15:31+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 20,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-treei-tre1622610220:298",
+        "knu-treei-tre1622610220:290",
+        "knu-treei-tre1622610220:283",
+        "knu-treei-tre1622610220:269",
+        "knu-treei-tre1622610220:266",
+        "knu-treei-tre1622610220:264",
+        "knu-treei-tre1622610220:257",
+        "knu-treei-tre1622610220:256",
+        "knu-treei-tre1622610220:251",
+        "knu-treei-tre1622610220:249",
+        "knu-treei-tre1622610220:247"
+      ],
+      "new": [
+        "knu-treei-tre1622610220:241",
+        "knu-treei-tre1622610220:247",
+        "knu-treei-tre1622610220:249",
+        "knu-treei-tre1622610220:251",
+        "knu-treei-tre1622610220:256",
+        "knu-treei-tre1622610220:257",
+        "knu-treei-tre1622610220:258",
+        "knu-treei-tre1622610220:262",
+        "knu-treei-tre1622610220:264",
+        "knu-treei-tre1622610220:265",
+        "knu-treei-tre1622610220:266",
+        "knu-treei-tre1622610220:268",
+        "knu-treei-tre1622610220:269",
+        "knu-treei-tre1622610220:283",
+        "knu-treei-tre1622610220:284",
+        "knu-treei-tre1622610220:285",
+        "knu-treei-tre1622610220:287",
+        "knu-treei-tre1622610220:290",
+        "knu-treei-tre1622610220:293",
+        "knu-treei-tre1622610220:298"
+      ],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 22,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-treei-tre1622610220",
+      "started_at": "2026-10-02T14:15:07+09:00",
+      "successful": 20,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-4b4549901a22",
+      "channel_ids": [
+        "notice-4b4549901a22"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "- 2018년 6월 15일(금) 오후 5시 마감"
+          ],
+          "notice_id": "knu-forest-for1622521051:35",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 22.183,
+      "errors": [],
+      "finished_at": "2026-10-02T14:15:54+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 18,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-forest-for1622521051:35"
+      ],
+      "new": [
+        "knu-forest-for1622521051:103",
+        "knu-forest-for1622521051:104",
+        "knu-forest-for1622521051:107",
+        "knu-forest-for1622521051:108",
+        "knu-forest-for1622521051:109",
+        "knu-forest-for1622521051:24",
+        "knu-forest-for1622521051:25",
+        "knu-forest-for1622521051:27",
+        "knu-forest-for1622521051:30",
+        "knu-forest-for1622521051:31",
+        "knu-forest-for1622521051:34",
+        "knu-forest-for1622521051:35",
+        "knu-forest-for1622521051:36",
+        "knu-forest-for1622521051:37",
+        "knu-forest-for1622521051:71",
+        "knu-forest-for1622521051:73",
+        "knu-forest-for1622521051:75",
+        "knu-forest-for1622521051:78"
+      ],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 20,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-forest-for1622521051",
+      "started_at": "2026-10-02T14:15:32+09:00",
+      "successful": 18,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-68d5f9aa762f",
+      "channel_ids": [
+        "notice-68d5f9aa762f"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "4. 신청기간: 2026. 11. 24.(화)까지 수시 신청 [기한 엄수]"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:917",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 ○ 복 학 : 2026. 7. 1.(수) ~ 9. 21.(월)"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:906",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 제출기한: 사유 발생일로부터 14일 이내"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:717",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "수강신청 기간 2026. 11. 11.(수) 13:00 ~ 11. 12.(목) 17:59"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:924",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "4. 신청기간: 2026. 9. 21.(월) ~ 10. 16.(금) 18:00까지"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:923",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 접수기간: 2026. 9. 3.(목) ~ 12. 4.(금)"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:921",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 신청기간: 2026. 8. 12.(수) 09:00 ~ 9. 9.(수) 18:00"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:915",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "○ 등록기간: 2026. 8. 11.(화) 09:00 ~ 8. 12.(수) 16:00",
+            "* 수강신청을 한 경우에도 위 등록기간(8.11.~8.12.) 내에 반드시 등록금을 납부하여야 하며,",
+            "수강신청에 따른 등록금 차액은 차등납부기간(10.13.~10.14.)에 추가납부하여야 함.",
+            "※ 위 등록기간 이후 추가 납부기간은 없으며, 등록을 하지 않는 경우 유예는 직권 취소하여 9월초에 졸업 재사정을 거쳐 졸업처리 됩니다."
+          ],
+          "notice_id": "knu-automobile-aut1623370299:914",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 신청기간: 2026. 7. 22.(수) 11:00 ~ 7. 24.(금) 17:59【3일간】"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:910",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "신청의사가 있는 학생은 아래의 신청기간 및 신청방법 등을 숙지하여 신청하시기 바랍니다.",
+            "▢ 신청 기간: 2026. 7. 13.(월) ~ 7. 24.(금) ※ 추가신청 기간 없음"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:909",
+          "reason": "연도까지 명시된 마감 날짜 없음; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "3. 성적 열람 및 이의신청 기간: 2026. 7. 3.(금) 10:00~ 7. 9.(목) 18:00까지"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:907",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "○ 신청기간: 2026. 6. 15.(월) 09:00 ~ 6. 19.(금) 18:00"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:905",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 2026학년도 2학기 국가장학금 1차 신청 기간 안내",
+            "1) 신청기간: 2026. 5. 22.(금) 09:00 ~ 6. 22.(월) 18:00"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:904",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 신청기간: 2026. 5. 20.(수) 9시 ~ 6. 9.(화) 18시"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:903",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-06-30",
+          "evidence": [
+            "o 수기접수 기간 : 2026. 5. 23.(토) ~ 2026. 6. 30.(화)"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:902",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 신청기간: 2026. 5. 26.(화) 10시 ~ 6. 2.(화) 18시"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:901",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "- (신청 기한) 2026. 5. 12.(화)까지 ※ 추가 신청 기간 없음"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:899",
+          "reason": "한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-05-04",
+          "evidence": [
+            "6. 제출기한 : 2026. 5. 4.(월)까지 학과사무실로 제출​"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:897",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "ㅇ신청기간: 2026. 4. 6.(월) ~ 6. 30.(화)",
+            "※ 신청기간 경과 후 졸업자격 인정원 제출에 관하여는 소속학과 사무실로 문의 바람"
+          ],
+          "notice_id": "knu-automobile-aut1623370299:896",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 42.049,
+      "errors": [],
+      "finished_at": "2026-10-02T14:16:40+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 34,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-automobile-aut1623370299:917",
+        "knu-automobile-aut1623370299:906",
+        "knu-automobile-aut1623370299:717",
+        "knu-automobile-aut1623370299:924",
+        "knu-automobile-aut1623370299:923",
+        "knu-automobile-aut1623370299:921",
+        "knu-automobile-aut1623370299:915",
+        "knu-automobile-aut1623370299:914",
+        "knu-automobile-aut1623370299:910",
+        "knu-automobile-aut1623370299:909",
+        "knu-automobile-aut1623370299:907",
+        "knu-automobile-aut1623370299:905",
+        "knu-automobile-aut1623370299:904",
+        "knu-automobile-aut1623370299:903",
+        "knu-automobile-aut1623370299:901",
+        "knu-automobile-aut1623370299:899",
+        "knu-automobile-aut1623370299:896"
+      ],
+      "new": [
+        "knu-automobile-aut1623370299:130",
+        "knu-automobile-aut1623370299:314",
+        "knu-automobile-aut1623370299:707",
+        "knu-automobile-aut1623370299:717",
+        "knu-automobile-aut1623370299:905",
+        "knu-automobile-aut1623370299:906",
+        "knu-automobile-aut1623370299:907",
+        "knu-automobile-aut1623370299:908",
+        "knu-automobile-aut1623370299:909",
+        "knu-automobile-aut1623370299:910",
+        "knu-automobile-aut1623370299:911",
+        "knu-automobile-aut1623370299:912",
+        "knu-automobile-aut1623370299:913",
+        "knu-automobile-aut1623370299:914",
+        "knu-automobile-aut1623370299:915",
+        "knu-automobile-aut1623370299:916",
+        "knu-automobile-aut1623370299:917",
+        "knu-automobile-aut1623370299:918",
+        "knu-automobile-aut1623370299:919",
+        "knu-automobile-aut1623370299:920",
+        "knu-automobile-aut1623370299:921",
+        "knu-automobile-aut1623370299:922",
+        "knu-automobile-aut1623370299:923",
+        "knu-automobile-aut1623370299:924",
+        "knu-automobile-aut1623370299:925",
+        "knu-automobile-aut1623370299:896",
+        "knu-automobile-aut1623370299:897",
+        "knu-automobile-aut1623370299:898",
+        "knu-automobile-aut1623370299:899",
+        "knu-automobile-aut1623370299:900",
+        "knu-automobile-aut1623370299:901",
+        "knu-automobile-aut1623370299:902",
+        "knu-automobile-aut1623370299:903",
+        "knu-automobile-aut1623370299:904"
+      ],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 37,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-automobile-aut1623370299",
+      "started_at": "2026-10-02T14:15:54+09:00",
+      "successful": 34,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-55ac86f2e763",
+      "channel_ids": [
+        "notice-55ac86f2e763",
+        "notice-392eeaadf103"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "▪ 신청기간: 2025. 5. 22.(목) ~ 6. 4.(수) 까지"
+          ],
+          "notice_id": "knu-cns-cns1623199799:231",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "▪ 신청기간: 2024. 5. 27.(월) ~ 6. 5.(수) 15:00까지"
+          ],
+          "notice_id": "knu-cns-cns1623199799:208",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 15.564,
+      "errors": [],
+      "finished_at": "2026-10-02T14:17:03+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 20,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-cns-cns1623199799:231",
+        "knu-cns-cns1623199799:208"
+      ],
+      "new": [
+        "knu-cns-cns1623199799:191",
+        "knu-cns-cns1623199799:195",
+        "knu-cns-cns1623199799:196",
+        "knu-cns-cns1623199799:201",
+        "knu-cns-cns1623199799:208",
+        "knu-cns-cns1623199799:209",
+        "knu-cns-cns1623199799:218",
+        "knu-cns-cns1623199799:219",
+        "knu-cns-cns1623199799:224",
+        "knu-cns-cns1623199799:231"
+      ],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 12,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-cns-cns1623199799:260",
+        "knu-cns-cns1623199799:258",
+        "knu-cns-cns1623199799:256",
+        "knu-cns-cns1623199799:248",
+        "knu-cns-cns1623199799:245",
+        "knu-cns-cns1623199799:244",
+        "knu-cns-cns1623199799:240",
+        "knu-cns-cns1623199799:239",
+        "knu-cns-cns1623199799:234",
+        "knu-cns-cns1623199799:233"
+      ],
+      "source_board_id": "knu-cns-cns1623199799",
+      "started_at": "2026-10-02T14:16:40+09:00",
+      "successful": 10,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": true,
+      "channel_id": "notice-9a0b59b2a2b4",
+      "channel_ids": [
+        "notice-9a0b59b2a2b4"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 납부기간 구 분",
+            "납부 기간 납부 금액"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:403",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1) 신청기간: 2026. 7. 1.(수) ~ 9. 21.(월)",
+            "1) 신청기간 및 제출 서류",
+            "신청기간 비 고"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:347",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "● 신청기간 이후 수강변경을 원할 경우 수강정정기간에 처리(연장불가)"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:431",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-08-12",
+          "evidence": [
+            "가. 신청기간: 2026. 8. 12.(수) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:418",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 : 2026. 8. 11.(화) 10:00 ∼ 8. 13.(목) 18:00 (3일간)"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:411",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 8. 4.(화) ~ 10:00 ~ 8. 5.(수) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:410",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 : 2026. 7. 22.(수) 11:00 ∼ 7. 24.(금) 18:00 (3일간)"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:391",
+          "reason": "상대적인 기한 표현이 섞여 있음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-06-22",
+          "evidence": [
+            "라. 신청기한: 2026. 6. 22.(월) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:369",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "다. 성적 열람 및 이의신청 기간: 2026. 7. 3.(금) 10:00 ~ 7. 9.(목) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:349",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 5. 22.(금) 9:00 ~ 6. 22.(월) 18:00",
+            "※ 주말 및 공휴일 포함 신청기간 내 24시간 신청 가능(단, 마감일 제외)"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:341",
+          "reason": "연도 생략 또는 여러 날짜·기간; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 5. 22.(금) 9:00 ~ 6. 22.(월) 18:00",
+            "※ 주말 및 공휴일 포함 신청기간 내 24시간 신청 가능(단, 마감일 제외)",
+            "반드시 2026학년도 2학기 학생신청 기간(1차 또는 2차)에 국가근로장학금 신청 필요함",
+            "소속대학이 미정인 신(편)입생은 2차 학생신청기간에 신청 바람",
+            "● 2026학년도 2학기 국가근로장학금 1차 학생신청 기간동안 2026학년도 1학기 봉사유형 및",
+            "취업연계유형 상시신청 불가함. 2026학년도 2학기 국가근로장학금 1차 학생신청 기간 종료 후 재개 가능함"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:336",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음; 조건부·상시 마감; 한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간: 2026. 5. 22.(금) 9:00 ~ 6. 22.(월) 18:00"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:328",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-06-02",
+          "evidence": [
+            "가. 신청기간: 2026. 6. 2.(화) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:325",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-06-09",
+          "evidence": [
+            "가. 신청기간: 2026. 6. 9.(화) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:324",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 신청기간 : 2026. 5. 14.(목) 13:00 ∼ 5. 15.(금) 18:00"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:320",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-03-25",
+          "evidence": [
+            "나. 신청기간: 2026. 3. 25.(수) 18:00까지"
+          ],
+          "notice_id": "knu-sofi-sof1741566884:249",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 39.574,
+      "errors": [],
+      "finished_at": "2026-10-02T14:17:42+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 32,
+      "max_pages": 1000,
+      "mode": "start",
+      "needs_review": [
+        "knu-sofi-sof1741566884:403",
+        "knu-sofi-sof1741566884:347",
+        "knu-sofi-sof1741566884:431",
+        "knu-sofi-sof1741566884:411",
+        "knu-sofi-sof1741566884:410",
+        "knu-sofi-sof1741566884:391",
+        "knu-sofi-sof1741566884:349",
+        "knu-sofi-sof1741566884:341",
+        "knu-sofi-sof1741566884:336",
+        "knu-sofi-sof1741566884:328",
+        "knu-sofi-sof1741566884:320"
+      ],
+      "new": [
+        "knu-sofi-sof1741566884:188",
+        "knu-sofi-sof1741566884:215",
+        "knu-sofi-sof1741566884:318",
+        "knu-sofi-sof1741566884:319",
+        "knu-sofi-sof1741566884:320",
+        "knu-sofi-sof1741566884:321",
+        "knu-sofi-sof1741566884:322",
+        "knu-sofi-sof1741566884:324",
+        "knu-sofi-sof1741566884:325",
+        "knu-sofi-sof1741566884:328",
+        "knu-sofi-sof1741566884:336",
+        "knu-sofi-sof1741566884:337",
+        "knu-sofi-sof1741566884:341",
+        "knu-sofi-sof1741566884:347",
+        "knu-sofi-sof1741566884:348",
+        "knu-sofi-sof1741566884:349",
+        "knu-sofi-sof1741566884:369",
+        "knu-sofi-sof1741566884:391",
+        "knu-sofi-sof1741566884:403",
+        "knu-sofi-sof1741566884:410",
+        "knu-sofi-sof1741566884:411",
+        "knu-sofi-sof1741566884:418",
+        "knu-sofi-sof1741566884:431",
+        "knu-sofi-sof1741566884:457",
+        "knu-sofi-sof1741566884:458",
+        "knu-sofi-sof1741566884:223",
+        "knu-sofi-sof1741566884:224",
+        "knu-sofi-sof1741566884:249",
+        "knu-sofi-sof1741566884:256",
+        "knu-sofi-sof1741566884:287",
+        "knu-sofi-sof1741566884:289",
+        "knu-sofi-sof1741566884:314"
+      ],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 35,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-sofi-sof1741566884",
+      "started_at": "2026-10-02T14:17:03+09:00",
+      "successful": 32,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    }
+  ],
+  "duration_sec": 435.335,
+  "finished_at": "2026-10-02T14:17:42.608843+09:00",
+  "request_count": 387,
+  "started_at": "2026-10-02T14:10:15.898084+09:00"
+}

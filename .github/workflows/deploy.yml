@@ -1,0 +1,44 @@
+name: GitHub Pages 배포
+
+"on":
+  push:
+    branches: [main]
+    paths: ['output/app/**', 'assets/bgm/**', 'tools/daily_bgm.py', '.github/workflows/deploy.yml']
+  # 수집 워크플로의 자동 커밋은 push 트리거를 시작시키지 않으므로 완료 이벤트로 잇는다.
+  workflow_run:
+    workflows: ['매일 경북대 자료 수집']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: knu-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      # 새 화면과 그 자료만 올린다. 이전 시험 화면(legacy.html, data.json, details/)은 올리지 않는다.
+      - name: 올릴 파일 모으기
+        run: mkdir -p site && cp output/app/index.html site/ && cp -R output/app/data site/data
+      - name: 배포용 하루 배경음악 선택
+        run: python3 -m tools.daily_bgm --output site/data/bgm
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: 정적 앱 배포
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,822 @@
+{
+  "channels": [
+    {
+      "channel_id": "notice-ddb70636c525",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-04f9a84e582c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7537783c05b0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-56d213db968e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f5bf5684020e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fd04b6b6208e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0158c1288046",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-541aff0da509",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-78e12cb6bc22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a6afbe817dd2",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8860bb9a4bc5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a267229666ef",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7ff56c3af3e0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8d0ba20b8a78",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ab33c8b6f3d1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-cd772685aa0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-eaa2bcd13c4a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f3ba4290e5dd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ca78d3fd3c51",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6c1f8a512fa4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b7eb69e8405d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74a3f719131b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-61c2fdac4b03",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2fdcd3cab366",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dc7fc6a93fe8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e3a4a5455384",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-12a353fc2eb8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-683cb3e528ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0ef73fec9014",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d42e73c1be80",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-30f51dd33791",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-750dff5618d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ddfc5b2ca163",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fe90b8f3beb7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-956827a355a7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ec96ad09ef78",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f4ac509b75c4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7dbc635b2399",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7e56cbeca2ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-73ffa1763744",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9b84b4adc47a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5015ce1e74b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2ae1ca96e3de",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9f20cdb4b423",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7502f997e5e7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-bbfcc8756400",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1268b7a10e0b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8b73f625639c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afb535aeb941",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5e6a10e952e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9bcb92908bc9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3bb6de2335b3",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fe8857afa2d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0b9f7e3a61e0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f9d9ecdb1284",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2487b99aea65",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4c132ad6150a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-472ae4378387",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8666f6ab7bde",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f310e00db70c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-cc19e513d407",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5c34881a6cc",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-451c515734ae",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e0dc5a51576c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-aaa5e07a26eb",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-5489a94f38cd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2c006faa8fdd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-45a059e34b9c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-57321798a19a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d5e75aa6b2da",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-99ea5018f469",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6b16f01d1a75",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7fcf94c45b4e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-16f98ec95fc6",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-97fffffebd44",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9a2cb1c992c7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-06dffccf1c28",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-70d703a20086",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-848538cdce05",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9c2e2dbd2980",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1abc9573202c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f95f0e2ac40d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3834483dc081",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ef883ff42361",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a1540deb2a6f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74558916c320",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a1c0cc5412ca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7dfeec322405",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ad22d5b4a9e9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ecd686f730b2",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-5c6cbaba27ab",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-614324804939",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3c7bfc3da404",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7bb331bb8b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4b4549901a22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-68d5f9aa762f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-55ac86f2e763",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-392eeaadf103",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9a0b59b2a2b4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d1802616c625",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1cbb3d90d081",
+      "meals": [],
+      "notices": [
+        {
+          "body": "산학일체형 교육 체계 실현 및 창의적 종합 설계 능력 및 산업체 수요를 반영한 현장실무 능력을 갖춘 인재 양성을 위해 2026년 2학기 캡스톤디자인 프로그램을 다음과 같이 운영하오니, 관심있는 학생들의 적극적인 참여 바랍니다.\n1. 프로그램명 : 2026년 2학기 캡스톤디자인 프로그램\n2. 운영계획\n가. 대상학과: 전체 학과(부)\n- 2026-2학기 교과목명 “캡스톤디자인(Capstone Design)” 또는 “종합 설계”가 표기된 정규 교과목을 운영하는 학과 (※ 영문 교과목명에 “Capstone Design”으로 표기된 경우 포함)\n나. 지원대상: 2026-2학기 해당 교과목을 수강하는 재학생(2인 이상 팀 단위)\n※ 팀 구성: ① 2인 이상으로 구성, ② 팀장은 3,4학년 재학생으로 하며, 동일인(팀장)이 2개팀 신청 불가, ③ 1,2학년은 팀 인원의 과반수를 초과할 수 없음\n다. 운영내용\n구분\n주요 내용\n지원금액\n일반\n캡스톤\n- 전공 분야 관련 주제를 기획, 설계, 제작하여 결과물 도출\n- 학생 창업 및 사업화를 목적으로 하는 주제로 과제 수행\n(사업자 등록, 관련 실전 멘토링 지원 가능)\n- 학생 지식재산권(IP)을 출원 또는 등록을 목적으로 과제 수행\n팀당/\n최대 500,000원\n기업\n연계형\n- 기업체와 학생들의 교류를 기반으로 기업체 현안 관련 아이디어 발굴, 기업체 전문가 자문 등을 통해 결과물 도출(기술 공유 및 기술사업화 연계)\n- 1회 이상 온·오프라인 미팅 필수(자문료를 집행하지 않더라도 자문에 대한 멘토링 일지 제출 필수)\n※ 연계할 기업체와 과제가 정해진 팀에 한하여 지원하므로 반드시 과제제안서 및 협약서 제출(필수)\n팀당\n최대/1,000,000원\n※ 신청 팀 수, 예산에 따라 팀당 지원금액은 변동될 수 있음\n※ 타 재정지원사업과 동일한 주제, 내용으로 중복지원 불가)\n라. 운영방법 : 적정성 평가 후 참가팀을 확정하여, 지원금 예산 해당 단과대학으로 재배정\n마. 지원기간 : 2026. 9. 1.(화) ~ 12. 11.(금) (해당 기간 내 지원금 사용분만 인정)\n※ 선정팀에 한하여 해당 기간 내 사용분만 인정(증빙자료 미비 시 지원 불가)\n바. 운영 세부사항: [붙임1] 운영 계획 및 [붙임2] 운영 가이드 참조\n3. 신청안내\n가. 제출방법 : [붙임2]참가 신청 서류를 작성하여 이메일 제출 (az.zin@knu.ac.kr)\n나. 제출기한 : 2026년 10월 7일 수요일까지",
+          "channel_id": "notice-1cbb3d90d081",
+          "dday": 3,
+          "deadline": "2026-10-07",
+          "id": "knu-electric-ele1622787198:7420",
+          "posted_at": "2026-09-30",
+          "reason": "reminder",
+          "source": "전기공학과 · 공지사항",
+          "title": "2026학년도 2학기 캡스톤디자인 프로그램 참가팀 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0MjAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNDgmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-e08af12e34e3",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-450caf336106",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8b2d3f025a39",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1d6a78636180",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b8ebd17a5dca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-c4b1c79994bd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-787893a88ff5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-278455937509",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2eb7684c7df1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1f235111f7dc",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6ef40bd632d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d7e3a598e69c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e187e9582e58",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afca571a7ef1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dd1ea15f1f4f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dfce5afb9336",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6c272c6c7db",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ccc3a94a1fa5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f14e44ae5bb9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9dbd1b2695c9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3d2a3e87207a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d13e4abb0470",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4a41e1328a3e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b46aed7f6b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ac0144f93d45",
+      "meals": [],
+      "notices": [
+        {
+          "body": "1. 태평양아시아협회(이하 “PAS”)의 2026년 제55기(동계) WFK PAS 청년봉사단 파견 추천 의뢰에 따라 단원을 추천하고자 하니 관심있는 학생들의 많은 신청 바랍니다.\n가. 신청마감: 2026. 10. 7.(수)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
+          "channel_id": "notice-ac0144f93d45",
+          "dday": 3,
+          "deadline": "2026-10-07",
+          "id": "knu-chem-che1622521080:7036",
+          "posted_at": "2026-09-18",
+          "reason": "reminder",
+          "source": "화학과 · 공지사항",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwMzYmc3RhcnRQYWdlPTIwJmxpc3RObz0zODU2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-093d2d29fb09",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-101538fb6a8e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6fafb52e7377",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-459a4805de72",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "knu-academic",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-df44dd8507c1",
+      "meals": [],
+      "notices": [
+        {
+          "body": "산학일체형 교육 체계 실현 및 창의적 종합 설계 능력 및 산업체 수요를 반영한 현장 실무 능력을 갖춘 인재 양성을 위해 2026년 2학기 캡스톤디자인 프로그램을 다음과 같이 운영하오니, 학부 재학생 중 해당되는 학생들은 기한 내 신청하여 주시기 바랍니다.\n가. 캡스톤디자인 운영계획\n대상학과: 전체 학과(부)\n- 2026-2학기 교과목명 “캡스톤디자인(Capstone Design)” 또는 “종합 설계”가 표\n기된 정규 교과목을 수강하는 재학생 (※ 영문 교과목명에 “Capstone Design”으로 표기된 경우 포함)\n나. 지원대상: 2026-2학기 해당 교과목을 수강하는 재학생(2인 이상 팀 단위)\n※ 팀 구성: ① 2인 이상으로 구성, ② 팀장은 3,4학년 재학생으로 하며, 동일인(팀장)이 2개팀 신청 불가,\n③ 1,2학년은 팀 인원의 과반수를 초과할 수 없음\n다. 운영내용\n구분 내용 지원금액\n* 일반 캡스톤\n- 전공 분야 관련 주제를 기획, 설계, 제작하여 결과물 도출\n- 학생 창업 및 사업화를 목적으로 하는 주제로 과제 수행 (사업자 등록, 관련 실전 멘토링 지원 가능)\n- 학생 지식재산권(IP)을 출원 또는 등록을 목적으로 과제 수행\n팀당/최대 500,000원 지원\n*기업연계형\n- 기업체와 학생들의 교류를 기반으로 기업체 현안 관련 아이디어 발굴, 기업체 전문가 자문 등을 통해 결과물 도출(기술 공유 및 기술사업화 연계)\n- 1회 이상 온·오프라인 미팅 필수(자문료를 집행하지 않더라도 자문에 대한 멘토링 일지 제출 필수)\n※ 연계할 기업체와 과제가 정해진 팀에 한하여 지원하므로 반드시 과제 제안서 및 협약서 제출(필수)\n팀당 최대/1,000,000원 지원\n※ 신청 팀 수, 예산에 따라 팀당 지원금액은 변동될 수 있음\n라. 지원기간 : 2026. 9. 1.(화) ~ 12. 11.(금) (해당 기간 내 지원금 사용분만 인정)\n※ 선정팀에 한하여 해당 기간 내 사용분만 인정(증빙자료 미비 시 지원 불가)\n마. 운영 세부사항: [붙임1] 운영 계획 및 [붙임2] 운영 가이드 참조\n바. 캡스톤디자인 과제 신청서 제출 안내\n가. 제출서류: [붙임3] 캡스톤디자인 신청 리스트 및 [붙임2]과제신청서류 일체\n- 신청서류가 누락되지 않도록 운영 계획 및 운영 가이드를 참고\n- 필수 제출서류 목록 : [서식1], [서식1-1], [서식1-2], [서식1-3] 공통필수로 제출\n나. 제출장소: IT-2호관 330호로 제출\n다. 제출기한: 2026. 10. 7.(수) 17:00까지(기한 엄수)\n붙임 1. 지역전략산업혁신연구소 2026-2학기 캡스톤디자인 운영 계획 안내 1부.\n2. 2026-2학기 캡스톤디자인 운영 가이드라인 및 제출서식 1부.\n3. 2026-2학기 캡스톤디자인 신청 리스트 양식(학과 작성용) 1부.\n문의 : 학부 940-8779. 지역전략산업혁신연구소 담당 석수진: 940-7042.\n또는 capstone1@knu.ac.kr 끝.",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": 3,
+          "deadline": "2026-10-07",
+          "id": "knu-see-notice:105661",
+          "posted_at": "2026-09-30",
+          "reason": "reminder",
+          "source": "전자공학부 · 공지사항",
+          "title": "(지역전략산업혁신연구소) 2026년 2학기 캡스톤디자인 프로그램 신청 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105661&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b1133d4c8b3b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b34ee1a00417",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fefffa32e24c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6b04da14aae1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a363da417a07",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7414782e7dbb",
+      "meals": [],
+      "notices": []
+    }
+  ],
+  "collected_at": "2026-10-04T09:20:48.306998+09:00",
+  "date": "2026-10-04",
+  "errors": [
+    {
+      "message": "오늘 식단은 로컬에서 아직 수집하지 않았습니다",
+      "source": "meals"
+    },
+    {
+      "message": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f8ec6ae8490>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)",
+      "source": "notice-6b04da14aae1"
+    },
+    {
+      "message": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f8ec5d5e4d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=2)",
+      "source": "notice-6b04da14aae1"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-ddb70636c525"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b7eb69e8405d"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-dc7fc6a93fe8"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-3bb6de2335b3"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fe8857afa2d4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-848538cdce05"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-4b4549901a22"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-55ac86f2e763"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-392eeaadf103"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-d6ef40bd632d"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-e187e9582e58"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-6b04da14aae1"
+    }
+  ],
+  "schedule": [
+    {
+      "dday": 1,
+      "end": null,
+      "start": "2026-10-05",
+      "title": "개천절 대체공휴일 (10.5.)"
+    },
+    {
+      "dday": 2,
+      "end": "2026-10-07",
+      "start": "2026-10-06",
+      "title": "[대학원] 논문 접수 결과 보고 : 10.6.~10.7."
+    }
+  ],
+  "weather": {
+    "rain_prob": 12,
+    "summary": "흐림",
+    "temp_max": 24.5,
+    "temp_min": 14.6
+  }
+}

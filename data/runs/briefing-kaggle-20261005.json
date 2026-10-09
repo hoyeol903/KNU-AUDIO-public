@@ -1,0 +1,35 @@
+{
+  "app_file_sha256": {
+    "23d534eaf2c86f7e7f3e29cd1861be2ec201b36ff51c6955cdaed1d543a7eaae.mp3": "23d534eaf2c86f7e7f3e29cd1861be2ec201b36ff51c6955cdaed1d543a7eaae",
+    "27c93d9f59b798ae174d475fbe37e47aa700113cc92742d0d38372f4fd7e504f.mp3": "27c93d9f59b798ae174d475fbe37e47aa700113cc92742d0d38372f4fd7e504f",
+    "33e15ab1ebe6a4b8401f2475fccb680b0b4c35d873d1bc19b75204b8003a0e72.mp3": "33e15ab1ebe6a4b8401f2475fccb680b0b4c35d873d1bc19b75204b8003a0e72",
+    "67a237e8b927566a596f2d6ad99a51144da55233ee8149aeb8c6a46ee017108e.mp3": "67a237e8b927566a596f2d6ad99a51144da55233ee8149aeb8c6a46ee017108e",
+    "8fcbb5d179cabafd74bfc47fd2dcc7a4bb1531cb6087e4366edd58c117a2674e.mp3": "8fcbb5d179cabafd74bfc47fd2dcc7a4bb1531cb6087e4366edd58c117a2674e",
+    "932a4cac4767503d9dff757c5fe55dd7a702656e787d65496239fc1a2549771a.mp3": "c5a6b79e8f4d74753aa461fe875d1023b348c76de80bcd950ab35295809e0f92",
+    "segments.json": "6fc109a5105266f1761decbd706e3147a0cfaf3d408c019c8fea04bdd678c0cb"
+  },
+  "bundle_sha256": "d603f9537d768a6d5b89a2d6617bc3ed97d306f86c99143ed039009f620be5e6",
+  "github_sha": "65172ee0c7b39baa79519caa2b770783632f1620",
+  "gpu": "Tesla T4",
+  "input_date": "2026-10-05",
+  "input_sha256": "3d7359309b67af85e4bd1f03fd75b77e407570c80117f1b5b0c540456184e889",
+  "kernel_id": "muyahoyeol/knu-audio-briefing-20261006003200-2",
+  "kernel_version": 1,
+  "published_app_counts": {
+    "files": 7,
+    "segments": 11,
+    "unique_audio_files": 6
+  },
+  "source_counts": {
+    "segments": 14,
+    "unique_audio_files": 10
+  },
+  "timing_seconds": {
+    "audio": 1211.28,
+    "generation": 1363.93,
+    "preparation_approx": 480,
+    "scripts": 152.65,
+    "whole_kernel": 1848.262
+  },
+  "verified": true
+}

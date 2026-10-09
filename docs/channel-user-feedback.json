@@ -1,0 +1,44 @@
+{
+  "edits": [
+    {
+      "channel_id": "missing-dept-forest-landscape",
+      "channel_name": "산림과학·조경학부 · 공지 게시판 미확인",
+      "url": "https://home.knu.ac.kr/HOME/forest/sub.htm?nav_code=for1622521051"
+    },
+    {
+      "channel_id": "missing-dept-textile-fashion",
+      "channel_name": "섬유패션디자인학부 · 공지 게시판 미확인",
+      "memo": "학부에 전공이 2개였음. 2개를 나눠서 봐야할듯, 두개 다 넣어둠",
+      "url": "https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012, https://home.knu.ac.kr/HOME/textile/sub.htm?nav_code=tex1616634934"
+    },
+    {
+      "channel_id": "missing-dept-european-education",
+      "channel_name": "유럽어교육학부 · 공지 게시판 미확인",
+      "memo": "",
+      "url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?nav_code=ger1622609973"
+    },
+    {
+      "channel_id": "missing-dept-health-exercise",
+      "channel_name": "건강운동관리전공 · 공지 게시판 미확인",
+      "memo": "없어진듯"
+    },
+    {
+      "channel_id": "missing-dept-global-undeclared",
+      "channel_name": "글로벌자율학부 · 공지 게시판 미확인",
+      "memo": "없어진듯"
+    },
+    {
+      "channel_id": "missing-dept-agriculture-undeclared",
+      "channel_name": "농업생명과학대학 자율학부 · 공지 게시판 미확인",
+      "memo": "없어진듯"
+    },
+    {
+      "channel_id": "missing-dept-natural-sciences-undeclared",
+      "channel_name": "자연과학대학 자율학부 · 공지 게시판 미확인",
+      "memo": "없어진듯"
+    }
+  ],
+  "exported_at": "2026-09-30T10:34:37.481Z",
+  "selected_channel_ids": [],
+  "selected_department_id": "dept-child-3"
+}

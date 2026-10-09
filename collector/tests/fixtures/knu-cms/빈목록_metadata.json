@@ -1,0 +1,22 @@
+[
+  {
+    "bytes": 27098,
+    "content_type": "text/html; charset=utf-8",
+    "encoding": "utf-8",
+    "file": "경상대학_빈목록.html",
+    "final_url": "https://home.knu.ac.kr/HOME/CEBA/sub.htm?nav_code=CEB1748499674",
+    "sha256": "cd8f7e85cb45ae489c726293fd1f2cbada30cab9e63d11628f260b55680b5acf",
+    "status": 200,
+    "url": "https://home.knu.ac.kr/HOME/CEBA/sub.htm?nav_code=CEB1748499674"
+  },
+  {
+    "bytes": 36150,
+    "content_type": "text/html; charset=utf-8",
+    "encoding": "utf-8",
+    "file": "경상대학 자율학부_빈목록.html",
+    "final_url": "https://home.knu.ac.kr/HOME/biz/sub.htm?nav_code=biz1623200446",
+    "sha256": "1501c6a196e6bf95e4bec0aebb3643cb4f5643df0ac15a6c62a98ab990368276",
+    "status": 200,
+    "url": "https://home.knu.ac.kr/HOME/biz/sub.htm?nav_code=biz1623200446"
+  }
+]

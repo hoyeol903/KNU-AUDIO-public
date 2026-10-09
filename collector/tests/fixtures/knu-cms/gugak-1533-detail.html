@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 예술대학 국악학과 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 예술대학 국악학과" />
+<meta property="og:description" content="경북대학교  경북대학교 예술대학 국악학과 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 예술대학 국악학과</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1626343029" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/kmusic; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+
+
+
+
+
+
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:17%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(0, 0, 0);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+	
+	<div id="topwrap">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+							<img src="./data/designImages/logo.png" alt="로고이미지"/>
+						<span class="sub_name">경북대학교 예술대학 <em>국악학과</em></span>
+			</a>
+		</div>
+		<div class="topmn clearfix">		
+			<a href="http://knu.ac.kr/" target="_blank" class="top-dk">경북대학교</a>
+												<a href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JmNvZGU9WEJrOVdHMzd6SHFsJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0" class="top-dk top-login">로그인</a>
+													
+																		
+					</div>
+		</div>
+		<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+	</div>
+
+
+	<div id="gnb">	
+	<div id="gnbmn">
+			<nav id="menu">
+			<ul id="top1menu" class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=kmu1622787052"  id="top1m1" title ='학과소개 > 학과장인사 페이지로 이동합니다.'>학과소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=kmu1622787052"  title ='학과장인사 페이지로 이동합니다.'>학과장인사</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=kmu1622787057"  title ='학과개요 페이지로 이동합니다.'>학과개요</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=kmu1622787062"  title ='교육목표 페이지로 이동합니다.'>교육목표</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=kmu1622787070"  title ='학과연혁 페이지로 이동합니다.'>학과연혁</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=kmu1622787074"  title ='조직도 및 연락처 페이지로 이동합니다.'>조직도 및 연락처</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=kmu1622787081"  title ='찾아오시는길 페이지로 이동합니다.'>찾아오시는길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kmu1622787090"  id="top1m2" title ='교수소개 > 전임교원 페이지로 이동합니다.'>교수소개</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="./sub.htm?nav_code=kmu1622787090"  title ='전임교원 페이지로 이동합니다.'>전임교원</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kmu1622787151"  id="top1m3" title ='학사과정 > 진로안내 페이지로 이동합니다.'>학사과정</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1803" target='_blank' title ='새창으로 교과과정 페이지가 열립니다.'>교과과정</a></li>
+										<li id="top2m3m2"><a href="https://ipsi1.knu.ac.kr/" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+										<li id="top2m3m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target='_blank' title ='새창으로 학사일정 페이지가 열립니다.'>학사일정</a></li>
+										<li id="top2m3m4"><a href="./sub.htm?nav_code=kmu1622787151"  title ='진로안내 페이지로 이동합니다.'>진로안내</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=2112Q" target='_blank' id="top1m4" title ='새창으로 대학원 > 교과과정 페이지가 열립니다.'>대학원</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=2112Q" target='_blank' title ='새창으로 교과과정 페이지가 열립니다.'>교과과정</a></li>
+										<li id="top2m4m2"><a href="https://ipsi2.knu.ac.kr/" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kmu1622787232"  id="top1m5" title ='학생활동 > 학생회 페이지로 이동합니다.'>학생활동</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+										<li id="top2m5m1"><a href="./sub.htm?nav_code=kmu1622787232"  title ='학생회 페이지로 이동합니다.'>학생회</a></li>
+										<li id="top2m5m2"><a href="./sub.htm?nav_code=kmu1622787241"  title ='동아리 페이지로 이동합니다.'>동아리</a></li>
+										<li id="top2m5m3"><a href="./sub.htm?nav_code=kmu1622787335"  title ='동창회 페이지로 이동합니다.'>동창회</a></li>
+										<li id="top2m5m4"><a href="./sub.htm?nav_code=kmu1622787339"  title ='학생복지 페이지로 이동합니다.'>학생복지</a></li>
+										<li id="top2m5m5"><a href="./sub.htm?nav_code=kmu1622787347"  title ='학생활동 페이지로 이동합니다.'>학생활동</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=kmu1622609949"  id="top1m6" title ='게시판 > 공지사항 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="./sub.htm?nav_code=kmu1622609949"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+										<li id="top2m6m2"><a href="./sub.htm?nav_code=kmu1622609948"  title ='자료실 페이지로 이동합니다.'>자료실</a></li>
+										<li id="top2m6m3"><a href="./sub.htm?nav_code=kmu1622609947"  title ='행사 및 세미나 페이지로 이동합니다.'>행사 및 세미나</a></li>
+										<li id="top2m6m4"><a href="./sub.htm?nav_code=kmu1622609946"  title ='묻고답하기 페이지로 이동합니다.'>묻고답하기</a></li>
+										<li id="top2m6m5"><a href="./sub.htm?nav_code=kmu1622609945"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+										<li id="top2m6m6"><a href="./sub.htm?nav_code=kmu1622787438"  title ='관련사이트 페이지로 이동합니다.'>관련사이트</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+
+			<!--sns 추가
+			-->
+
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(6,1);max_2menu=6;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../kmusic/data/designImages/SUBBG_1623293017');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;background-color:rgba(144, 209, 249, 0);width:100%;z-index:1"></div>
+
+
+<div id="svisual" style="min-height:340px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:960px;height:100px;left: 0px; top: 185px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit">국악학과</p>
+	<p class="txt">한국 전통음악을 계승·발전시킴은 물론 그에 따른 연주와 연주력을 습득한 전문인을 육성하며<br>
+	세계음악문화발전에 기여하고 이바지할 수 있는 음악인 및 음악교육자를 양성합니다.</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=kmu1622609949'>게시판</a></li><li><a href='./sub.htm?nav_code=kmu1622609949'>공지사항</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkmusic%2Fsub.htm%3Fnav_code%3Dkmu1622609949" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=kmu1622609949" >공지사항</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=kmu1622609948" >자료실</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=kmu1622609947" >행사 및 세미나</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=kmu1622609946" >묻고답하기</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=kmu1622609945" >포토갤러리</a>
+							</li>
+						<li id="snb2m6"><a href="./sub.htm?nav_code=kmu1622787438" >관련사이트</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(1,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>공지사항</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+
+<div class="board_view">
+	<div class="title">〔학위논문 제출 자격요건〕대학원생 연구윤리교육 운영 변경 예정 안내</div>
+	<input type="hidden" name="userid" id="userid" value="">
+		<div class="desc clearfix">
+		<dl>
+				<dt>등록일</dt>
+		<dd>2026-08-25</dd>
+				<dt>작성자</dt>
+		<dd>국악학과</dd>
+		<dt>조회수</dt>
+		<dd>10</dd>
+		</dl>
+	</div>
+	
+	<div class="cont">
+		<!-- 내용부 첨부파일이 image 파일이면 view -->
+		<p><br></p><div id="snb" style="box-sizing: border-box; margin: 0px; padding: 0px; float: left; width: 240px; color: rgb(85, 85, 85); font-family: &quot;Noto Sans KR&quot;, sans-serif; font-size: 16px;"><div id="snbmn" style="box-sizing: border-box; margin: 0px 0px 40px; padding: 0px; width: 240px;"><ul id="snb2m" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;"><li id="snb2m4" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none; position: relative; background-color: rgb(243, 243, 243);"><a href="https://home.knu.ac.kr/HOME/grad/sub.htm?nav_code=gra1626668305" style="box-sizing: border-box; transition: 0.2s ease-out; text-decoration: none; color: rgb(85, 85, 85); clear: both; display: block; line-height: 22.4px; position: relative; padding: 18px 35px 18px 20px; margin: 0px; border-width: medium 1px 1px; border-style: none solid solid; border-color: currentcolor rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1); border-image: none; word-break: keep-all;" target="_parent">FAQ</a></li><li id="snb2m5" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none; position: relative; background-color: rgb(243, 243, 243);"><a href="https://home.knu.ac.kr/HOME/grad/sub.htm?nav_code=gra1626668303" style="box-sizing: border-box; transition: 0.2s ease-out; text-decoration: none; color: rgb(85, 85, 85); clear: both; display: block; line-height: 22.4px; position: relative; padding: 18px 35px 18px 20px; margin: 0px; border-width: medium 1px 1px; border-style: none solid solid; border-color: currentcolor rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1); border-image: none; word-break: keep-all;" target="_parent">Q&amp;A</a></li><li id="snb2m6" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none; position: relative; background-color: rgb(243, 243, 243);"><a href="https://home.knu.ac.kr/HOME/grad/sub.htm?nav_code=gra1760667370" style="box-sizing: border-box; transition: 0.2s ease-out; text-decoration: none; color: rgb(85, 85, 85); clear: both; display: block; line-height: 22.4px; position: relative; padding: 18px 35px 18px 20px; margin: 0px; border-width: medium 1px 1px; border-style: none solid solid; border-color: currentcolor rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1); border-image: none; word-break: keep-all;" target="_parent">포토뉴스</a></li></ul></div></div><section style="box-sizing: border-box; color: rgb(85, 85, 85); font-family: &quot;Noto Sans KR&quot;, sans-serif; font-size: 16px;"><div id="content" style="box-sizing: border-box; margin: 0px 0px 0px 40px; padding: 0px; float: left; width: 1120px;"><div id="body_title" style="box-sizing: border-box; margin: 0px 0px 20px; padding: 0px 0px 20px; clear: both;"><h1 style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: 400; font-size: 38px; color: rgb(51, 51, 51); line-height: 1.25; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; letter-spacing: -2px;">공지사항</h1></div><div id="body_content" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 40px; min-height: 460px; clear: both;"><div class="" style="box-sizing: border-box; margin: 0px; padding: 0px;"><div class="board_view" style="box-sizing: border-box; margin: 0px; padding: 0px; border-top: 2px solid rgb(106, 125, 138); border-bottom: 1px solid rgb(106, 125, 138);"><div class="title" style="box-sizing: border-box; margin: 0px; padding: 20px 0px; text-align: center; font-size: 28px; color: rgb(34, 34, 34); line-height: 1.2;">〔학위논문 제출 자격요건〕대학원생 연구윤리교육 운영 변경 예정 안내</div><div class="desc clearfix" style="box-sizing: border-box; margin: 0px; padding: 15px 0px; background: rgb(245, 245, 245); color: rgb(153, 153, 153);"><dl style="box-sizing: border-box; margin: 0px; padding: 0px; float: left;"><dt style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left; text-indent: 15px;">등록일</dt><dd style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left;">2026-08-06</dd><dt style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left; text-indent: 15px;">작성자</dt><dd style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left;">경북대학교대학원</dd><dt style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left; text-indent: 15px;">조회수</dt><dd style="box-sizing: border-box; margin: 0px 10px 0px 0px; padding: 0px; float: left;">501</dd></dl></div><div class="cont" style="box-sizing: border-box; margin: 0px; padding: 15px 0px; clear: both; border-top: 1px solid rgb(221, 221, 221);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 9.8pt; line-height: 22.4px; text-indent: -9.8pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">1. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">관련</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 9.8pt; line-height: 22.4px; text-indent: -9.8pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">가</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">.</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">「</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">경북대학교 학위수여규정</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">」</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">제</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">12</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">조</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">(</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">논문제출자격</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">)</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 9.8pt; line-height: 22.4px; text-indent: -9.8pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">나</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">교무과</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">-12639(2026. 6. 29.)</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">「</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">대학원 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">‘AI</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">윤리 및 연구윤리</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">’ </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">공통교과목 원격수업 개발 공모 안내</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">」</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 9.8pt; line-height: 22.4px; text-indent: -9.8pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -1.3pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">다</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -1.3pt; font-size: 12pt;">. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학사과</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">-10341(</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학사과</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">-10341)</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">「</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">2026</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학년도 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">2</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학기 대학원생 연구윤리교육 시행 안내</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">」</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 9.8pt; line-height: 16px; text-indent: -9.8pt; letter-spacing: -0.5pt; font-size: 12pt;">&nbsp;<o:p style="box-sizing: border-box;"></o:p></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 15.6pt; line-height: 22.4px; text-indent: -15.6pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">2. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">우리대학교는 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">2016</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학년도 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">1</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학기부터 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">학위논문 제출 자격요건</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">으로</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.3pt; font-weight: bold; font-size: 12pt;">「</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.3pt; font-weight: bold; font-size: 12pt;">대학원생을 위한 연구윤리교육</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.4pt; font-weight: bold; font-size: 12pt;">」</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.4pt; font-size: 12pt;">을 운영하고 있으며</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.6pt; font-size: 12pt;">AI </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.6pt; font-size: 12pt;">대전환 시대에 기존 연구윤리교육을 확대하여 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.6pt; font-size: 12pt;">AI </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.6pt; font-size: 12pt;">활용 과정에서 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.7pt; font-size: 12pt;">발생할 수 있는 각종 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-size: 12pt;">윤리적 문제를 예방하고자</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">「</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">대학원 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">AI</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">윤리 및 연구윤리</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">(</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">가칭</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">)</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">」</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-size: 12pt;">로 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">변경</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-size: 12pt;">하여 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">운영</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-size: 12pt;">할 예정이오니 참고하시기 바랍니다</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.8pt; font-size: 12pt;">.</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 22.4px;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt; color: rgb(0, 0, 255);"></span><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">가</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">과목 비교</span></p><table style="line-height: 1.5; border-collapse: collapse; width: 1120px; table-layout: fixed; border-width: medium; border-style: none; border-color: currentcolor;"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box;"><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 99.31pt; height: 15.65pt; padding: 1.41pt 5.1pt; border-width: 1.7pt 0.28pt 0.28pt medium; border-style: solid solid solid none; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0) currentcolor; background: rgb(223, 230, 247);"><p class="0" style="box-sizing: border-box; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">과목</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 51.2pt; height: 15.65pt; padding: 1.41pt 5.1pt; border-width: 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: rgb(0, 0, 0); background: rgb(223, 230, 247);"><p class="0" style="box-sizing: border-box; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">교과구분</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 101.23pt; height: 15.65pt; padding: 1.41pt 5.1pt; border-width: 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: rgb(0, 0, 0); background: rgb(223, 230, 247);"><p class="0" style="box-sizing: border-box; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">운영방법</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 61.61pt; height: 15.65pt; padding: 1.41pt 5.1pt; border-width: 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: rgb(0, 0, 0); background: rgb(223, 230, 247);"><p class="0" style="box-sizing: border-box; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">이수시간</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">(H)</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 134.57pt; height: 15.65pt; padding: 1.41pt 5.1pt; border-width: 1.7pt medium 0.28pt 0.28pt; border-style: solid none solid solid; border-color: rgb(0, 0, 0) currentcolor rgb(0, 0, 0) rgb(0, 0, 0); background: rgb(223, 230, 247);"><p class="0" style="box-sizing: border-box; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">비고</span></p></td></tr><tr style="box-sizing: border-box;"><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 99.31pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt 0.28pt 0.28pt medium; border-style: solid solid solid none; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0) currentcolor;"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 16px; text-align: center; word-break: keep-all;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">(</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">기존</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">)</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">대학원생을 위한 연구윤리교육</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 51.2pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">비교과</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 101.23pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">LMS </span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">동영상 교육이수</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 61.61pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; text-align: center; word-break: keep-all;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">2</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 134.57pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt medium 0.28pt 0.28pt; border-style: solid none solid solid; border-color: rgb(0, 0, 0) currentcolor rgb(0, 0, 0) rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt;">이수자만 논문제출 자격인정</span></p></td></tr><tr style="box-sizing: border-box;"><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 99.31pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt 0.28pt 1.7pt medium; border-style: solid solid solid none; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0) currentcolor;"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 16px; text-align: center; word-break: keep-all;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">(</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">변경</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">)</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">대학원 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">AI</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">윤리 및 연구윤리</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 51.2pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; text-align: center; word-break: keep-all;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">교과</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 101.23pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 16px;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">대학원 공통교과목</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">원격수업 이수</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 61.61pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; text-align: center; word-break: keep-all;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">5</span></p></td><td valign="middle" style="box-sizing: border-box; vertical-align: middle; width: 134.57pt; height: 22.82pt; padding: 1.41pt 5.1pt; border-width: 0.28pt medium 1.7pt 0.28pt; border-style: solid none solid solid; border-color: rgb(0, 0, 0) currentcolor rgb(0, 0, 0) rgb(0, 0, 0);"><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 16px;"><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">학점 없이 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">S/U</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">로 부과하며 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">S</span><span style="box-sizing: border-box; font-family: 굴림체; letter-spacing: -0.5pt; font-weight: bold;">취득자만 논문제출 자격인정</span></p></td></tr></tbody></table><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 22.4px;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">나</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">변경 예정사항</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 22.4px;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">○ </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">기존 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">대학원생을 위한 연구윤리교육</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">은 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">2026</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">학년 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">2</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">학기까지 운영 후 종료</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 22.4px;"><span lang="EN-US" style="box-sizing: border-box; font-family: verdana, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; letter-spacing: -0.5pt; font-size: 12pt;"></span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">○ </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">2027</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학년도 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">1</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">학기부터는 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">대학원 </span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">AI</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">윤리 및 연구윤리만 운영</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">(</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">신입생</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">, </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">기존 미이수자 대상</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">)</span></p><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 0px; line-height: 16px; letter-spacing: -0.5pt; font-size: 12pt;">&nbsp;<o:p style="box-sizing: border-box;"></o:p></p><div id="hwpEditorBoardContent" class="hwp_editor_board_content" data-hjsonver="1.0" data-jsonlen="50560" style="box-sizing: border-box; margin: 0px; padding: 0px;"></div><p class="0" style="box-sizing: border-box; margin: 0px 5pt 0px 16.4pt; line-height: 22.4px; text-indent: -16.4pt;"><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">3. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">이에&nbsp;</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.6pt; font-size: 12pt;">&nbsp;</span><u style="box-sizing: border-box;"><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">대학원생을 위한 연구윤리교육 미이수자는 기존 교육이 </span></u><u style="box-sizing: border-box;"><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.4pt; font-size: 12pt;">이번 학기로 운영 종료 예정</span></u><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.4pt; font-size: 12pt;">이고 이에 따른 변경 예정사항을 충분히 숙지하여 논문제출 자격 충족에 </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">착오가 없도록 하여</span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">주시기 바랍니다</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">. </span><span style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">끝</span><span lang="EN-US" style="box-sizing: border-box; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;">.</span></p></div></div></div></div></div></section>
+			</div>
+	</div>
+
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/kmusic/sub.htm?mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JnNpdGVfY29kZT1rbXVzaWMmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/kmusic/sub.htm?nav_code=kmu1622609949&bbs_view_edit=1&mode=edit&mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JnNpdGVfY29kZT1rbXVzaWMmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+
+<div class="btnarea">
+<div class="left">
+<a href="#" onclick="boardPrint(1);return false;" class='btn_d'>프린트</a>
+</div>
+<div class="right">
+
+	  
+	  
+			  <a href="/HOME/kmusic/sub.htm?mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JnNpdGVfY29kZT1rbXVzaWMmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=" class="btn_d">목록</a>
+
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+	
+	<footer>
+	<div class="d_width clearfix">
+				<div class="f_cont">
+						<ul class="fmn clearfix">
+			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+			</ul>
+						<address>
+										<p>
+									[41566] 
+													우)41566 대구광역시 북구 대학로80(산격동) 경북대학교													 / T.053-950-5670																									</p>
+							
+				<p class="copyright">Copyright ⓒ 경북대학교 예술대학 <em>국악학과</em>. All rights Reserved.</p>
+										
+			<div class="fcnt">
+				Total : 71,713명 / Today : 15명
+			</div>
+
+
+							<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+									
+
+			</address>		
+		</div>
+
+				<div class="f_link">
+				
+								<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<select onchange="footer_link_go(this.value);" title="주요사이트">
+				<option value="">4단계 BK21사업 관련사이트</option>
+				<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+				<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+				<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+				<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+				<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+				<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+				<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+				<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+				<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+				<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+				<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+				<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+				<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+				<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+				<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+				<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+				<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+				<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+				<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+				<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+				<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+				<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+				<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+				<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+				<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+				<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+				<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+				<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+				<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+			</select>
+			<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+					
+		</div>
+			</div>
+	</footer>
+
+
+	
+
+
+<!-- //footer -->
+
+</body>
+</html>

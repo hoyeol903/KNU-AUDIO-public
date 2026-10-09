@@ -1,0 +1,11 @@
+{
+  "content_type": "text/html; charset=utf-8",
+  "detected_encoding": "utf-8",
+  "fetched_at": "2026-10-02T13:20:48+09:00",
+  "fixture": "gugak-1533-detail.html",
+  "http_status": 200,
+  "request_attempts": 1,
+  "requested_url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JmNvZGU9WEJrOVdHMzd6SHFsJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0=",
+  "response_url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDg5JnRhYmxlPWV4X2Jic19kYXRhX2ttdXNpYyZuYXZfY29kZT1rbXUxNjIyNjA5OTQ5JmNvZGU9WEJrOVdHMzd6SHFsJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0=",
+  "sha256": "9281ea3d252bd39f037c7abc49a35bdef9c857f608ab1413bd0ea6fed5807e3d"
+}

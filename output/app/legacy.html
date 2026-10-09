@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>크누아 앱 테스트</title>
+<style>
+:root{--outer:#d9dce1;--bg:#f2f3f5;--card:#fff;--text:#16181d;--sub:#6b7280;--line:#e5e7eb;--accent:#c8102e;--soft:#fdecef;--frame:#16181d}
+@media (prefers-color-scheme:dark){:root{--outer:#000;--bg:#0f1115;--card:#1a1d23;--text:#f1f3f5;--sub:#9aa1ad;--line:#2a2e37;--accent:#ff5c75;--soft:#3a1a22;--frame:#3a3f4a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}
+#phone{max-width:420px;margin:0 auto;height:100dvh;background:var(--bg);display:flex;flex-direction:column}
+@media (min-width:500px){body{background:var(--outer);padding:20px 0}#phone{height:calc(100dvh - 40px);max-height:860px;border:10px solid var(--frame);border-radius:38px;overflow:hidden}}
+header{display:flex;align-items:center;gap:8px;padding:14px 16px;background:var(--card);border-bottom:1px solid var(--line)}
+header h1{font-size:18px;margin:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+main{flex:1;overflow-y:auto;padding:16px}
+footer{padding:12px 16px;background:var(--card);border-top:1px solid var(--line)}
+button{font:inherit;color:inherit;cursor:pointer}
+.plain{background:none;border:0;padding:6px 8px;color:var(--accent);font-weight:600}
+.primary{width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font-weight:700}
+.primary:disabled{opacity:.4;cursor:default}
+label{display:block;font-weight:600;margin:16px 0 6px}
+input[type=text],input[type=search]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);font:inherit}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--accent);flex:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hero{font-size:26px;font-weight:800;margin:8px 0 2px}
+.sub,small{color:var(--sub);font-size:13px}
+small{display:block}
+.card{background:var(--card);border-radius:16px;padding:14px 16px;margin-bottom:12px}
+.group{font-size:13px;font-weight:700;color:var(--sub);margin:18px 4px 6px}
+.list{background:var(--card);border-radius:16px;overflow:hidden}
+.row{display:flex;align-items:center;gap:10px;width:100%;padding:12px 14px;background:none;border:0;border-bottom:1px solid var(--line);text-align:left}
+.list>.row:last-child{border-bottom:0}
+.row.on{background:var(--soft)}
+.grow{flex:1;min-width:0}
+.grow b{display:block;font-weight:600;overflow-wrap:anywhere}
+.pill{flex:none;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--line);color:var(--sub)}
+.pill.hot{background:var(--accent);color:#fff}
+.pill.must{background:var(--soft);color:var(--accent)}
+.tabs{display:flex;gap:6px;background:var(--line);padding:4px;border-radius:12px;margin-bottom:12px}
+.tabs button{flex:1;padding:8px;border:0;border-radius:9px;background:none;font-weight:600;color:var(--sub)}
+.tabs button[aria-selected=true]{background:var(--card);color:var(--text)}
+.empty{text-align:center;color:var(--sub);padding:28px 12px}
+.nums{display:flex;gap:10px}
+.nums div{flex:1;background:var(--card);border-radius:16px;padding:12px;text-align:center;font-size:13px;color:var(--sub)}
+.nums b{display:block;font-size:22px;color:var(--text)}
+dialog{width:100%;max-width:420px;max-height:85dvh;margin:auto auto 0;border:0;border-radius:20px 20px 0 0;padding:18px 18px 24px;background:var(--card);color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+dialog h2{font-size:18px;margin:0 0 6px;overflow-wrap:anywhere}
+.body{white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0;font-size:15px}
+a{color:var(--accent)}
+details{margin-top:14px;color:var(--sub);font-size:13px}
+</style>
+<div id="phone"></div>
+<dialog id="sheet"></dialog>
+<script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isCurrentDate=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul'}).format(new Date())===snap?.items.date;
+const phone=document.getElementById('phone'),sheet=document.getElementById('sheet');
+const KEY='knua-app-test';
+let catalog,byId,profile,draft,snap,tab='required',boardId;
+const staticMode=location.pathname!=='/app';
+let staticData,detailCache={};
+
+async function api(path,payload){
+  if(staticMode){
+    if(!staticData)staticData=await fetch('./data.json',{cache:'no-store'}).then(async r=>{if(!r.ok)throw new Error('정적 자료를 불러오지 못했습니다. export를 다시 실행하세요.');return r.json()});
+    if(path==='/api/catalog')return staticData.catalog;
+    if(path==='/api/snapshot'){
+      const ids=payload?.channels;
+      if(!Array.isArray(ids)||!ids.length||ids.some(id=>!staticData.catalog.channels.some(c=>c.id===id)))throw new Error('선택한 채널에 정적 자료가 없습니다. 앱 자료를 다시 내보내세요.');
+      const selected=new Set(ids),known=new Set(staticData.catalog.channels.map(c=>c.id)),source=staticData.snapshot;
+      const boardChannels={};
+      for(const row of source.checks)boardChannels[row.id.split(':',1)[0]]=[...(boardChannels[row.id.split(':',1)[0]]||[]),...row.channel_ids];
+      return {...source,checks:source.checks.filter(r=>r.channel_ids.some(id=>selected.has(id))),items:{...source.items,
+        channels:source.items.channels.filter(c=>selected.has(c.channel_id)),
+        errors:source.items.errors.filter(e=>known.has(e.source)?selected.has(e.source):
+          boardChannels[e.source]?boardChannels[e.source].some(id=>selected.has(id)):true)}};
+    }
+    if(path.startsWith('/api/notice?id=')){
+      const id=decodeURIComponent(path.slice(path.indexOf('=')+1)),check=snap?.checks.find(row=>row.id===id);
+      if(!check)throw new Error('선택한 채널에서 확인할 수 없는 공지입니다.');
+      const board=id.split(':',1)[0];
+      if(!detailCache[board])detailCache[board]=await fetch(`./details/${encodeURIComponent(board)}.json`).then(async r=>{if(!r.ok)throw new Error('이 게시판의 상세 자료 파일을 찾지 못했습니다. 앱 자료를 다시 내보내세요.');return r.json()});
+      if(!detailCache[board][id])throw new Error('상세 자료가 내보내기에 포함되지 않았습니다.');
+      return detailCache[board][id];
+    }
+    throw new Error('정적 앱에서는 이 기능을 사용할 수 없습니다.');
+  }
+  const r=await fetch(path,payload===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const data=await r.json();
+  if(!r.ok)throw new Error(data.error||'요청 실패');
+  return data;
+}
+function saveProfile(){try{localStorage.setItem(KEY,JSON.stringify(profile))}catch{}}
+function loadProfile(){
+  try{
+    const p=JSON.parse(localStorage.getItem(KEY));
+    if(p&&typeof p.name==='string'&&catalog.departments.some(d=>d.id===p.dept)&&Array.isArray(p.optional)){
+      p.optional=[...new Set(p.optional.filter(id=>byId[id]?.type==='meal'))];
+      p.optionalDepartments=[...new Set((Array.isArray(p.optionalDepartments)?p.optionalDepartments:[])
+        .filter(id=>id!==p.dept&&selectableDepartments(p.dept).some(d=>d.id===id)))];
+      try{localStorage.setItem(KEY,JSON.stringify(p))}catch{}
+      return p;
+    }
+  }catch{}
+  return null;
+}
+
+// 다른 학과 필수 공지와 식당을 선택으로 추가한다. 공통 채널은 Set으로 한 번만 포함한다.
+const requiredFor=dept=>catalog.channels.filter(c=>c.classification==='required'&&(c.required==='all'||c.required_department_ids.includes(dept)));
+const optionalAll=()=>catalog.channels.filter(c=>c.type==='meal'&&c.classification==='optional'&&c.collection_enabled);
+const deptRequiredNotices=dept=>requiredFor(dept).filter(c=>c.type==='notice'&&c.required!=='all');
+const selectableDepartments=dept=>catalog.departments.filter(d=>d.id!==dept&&deptRequiredNotices(d.id).length);
+const chosenIds=p=>[...new Set([...requiredFor(p.dept).map(c=>c.id),
+  ...(p.optionalDepartments||[]).flatMap(dept=>deptRequiredNotices(dept).map(c=>c.id)),
+  ...p.optional.filter(id=>byId[id]?.type==='meal')])];
+const deptLabel=d=>d.college+' · '+d.name;
+const stored=id=>catalog.stored_channel_ids.includes(id);
+
+function show(title,body,{back,action,footer}={}){
+  phone.innerHTML=`<header>${back?`<button class="plain" data-act="${back}" aria-label="뒤로">‹ 뒤로</button>`:''}<h1>${esc(title)}</h1>${action||''}</header><main>${body}</main>${footer?`<footer>${footer}</footer>`:''}`;
+  phone.querySelector('main').scrollTop=0;
+}
+
+/* 1. 시작: 이름과 학과 */
+function startScreen(){
+  draft=draft||{name:profile?.name||'',dept:profile?.dept||'',optional:profile?.optional||[],optionalDepartments:profile?.optionalDepartments||[]};
+  show('크누아 시작하기',`<p class="hero">반가워요</p><p class="sub">이름과 학과만 알려주면 내 게시판을 준비할게요.</p>
+    <label for="name">이름</label><input id="name" type="text" maxlength="20" autocomplete="off" value="${esc(draft.name)}">
+    <label for="q">학과</label><input id="q" type="search" placeholder="학과 이름 검색" autocomplete="off">
+    <p class="sub" id="picked"></p><div class="list" id="depts"></div>`,
+    {footer:'<button class="primary" id="next" data-act="toChannels">다음</button>'});
+  const name=document.getElementById('name'),q=document.getElementById('q');
+  const sync=()=>{
+    const d=catalog.departments.find(x=>x.id===draft.dept);
+    document.getElementById('picked').textContent=d?'선택한 학과: '+deptLabel(d):'아래에서 학과를 골라주세요.';
+    document.getElementById('next').disabled=!draft.name.trim()||!d;
+  };
+  const list=()=>{
+    const word=q.value.trim();
+    const found=catalog.departments.filter(d=>deptLabel(d).includes(word));
+    document.getElementById('depts').innerHTML=found.length?found.map(d=>`<button class="row${d.id===draft.dept?' on':''}" data-act="dept" data-id="${esc(d.id)}"><span class="grow"><b>${esc(d.name)}</b><small>${esc(d.college)}</small></span>${d.id===draft.dept?'<span class="pill must">선택됨</span>':''}</button>`).join(''):'<p class="empty">찾는 학과가 없습니다.</p>';
+    sync();
+  };
+  name.oninput=()=>{draft.name=name.value;sync()};
+  q.oninput=list;
+  startScreen.list=list;
+  list();
+}
+
+/* 2. 게시판 고르기: 필수는 자동, 선택은 직접 */
+function channelScreen(){
+  const must=requiredFor(draft.dept),picks=optionalAll(),otherDepartments=selectableDepartments(draft.dept);
+  const verb=profile?'저장':'시작하기';
+  draft.optional=draft.optional.filter(id=>picks.some(c=>c.id===id));
+  draft.optionalDepartments=(draft.optionalDepartments||[]).filter(id=>otherDepartments.some(d=>d.id===id));
+  show('게시판 고르기',`<div class="tabs" role="tablist">
+      <button role="tab" data-act="tab" data-id="required" aria-selected="${tab==='required'}">필수 ${must.length}</button>
+      <button role="tab" data-act="tab" data-id="optional" aria-selected="${tab==='optional'}">선택 ${draft.optionalDepartments.length}개 학과 · ${draft.optional.length}개 식당</button></div>
+    ${tab==='optional'?'<input id="cq" type="search" placeholder="다른 학과·식당 검색" autocomplete="off">':'<p class="sub">학교와 내 학과 필수 공지는 자동 포함됩니다. 다른 학과 공지도 함께 선택할 수 있어요.</p>'}
+    <div id="chans"></div>`,
+    {back:'toStart',footer:`<button class="primary" data-act="finish">${verb} (게시판 ${chosenIds(draft).length}개)</button>`});
+  const box=document.getElementById('chans');
+  if(tab==='required'){
+    box.innerHTML=`<div class="list">${must.map(c=>`<div class="row"><span class="grow"><b>${esc(c.name)}</b><small>${stored(c.id)?'저장 자료 있음':'저장된 공지 없음'}</small></span><span class="pill must">필수</span></div>`).join('')}</div>`;
+    return;
+  }
+  const cq=document.getElementById('cq');
+  const list=()=>{
+    const query=cq.value.trim();let html='';
+    const depts=otherDepartments.filter(d=>deptLabel(d).includes(query));
+    if(depts.length)html+=`<p class="group">다른 학과 공지 ${depts.length}</p><div class="list">${depts.map(d=>{
+      const rows=deptRequiredNotices(d.id),hasData=rows.some(c=>stored(c.id));
+      return `<label class="row" style="margin:0;font-weight:400"><input type="checkbox" data-kind="department" data-id="${esc(d.id)}"${draft.optionalDepartments.includes(d.id)?' checked':''}><span class="grow"><b>${esc(deptLabel(d))}</b><small>필수 공지 ${rows.length}개 · ${hasData?'저장 자료 있음':'저장된 공지 없음'}</small></span></label>`;
+    }).join('')}</div>`;
+    const meals=picks.filter(c=>c.type==='meal'&&c.name.includes(query));
+    if(meals.length)html+=`<p class="group">식당 ${meals.length}</p><div class="list">${meals.map(c=>`<label class="row" style="margin:0;font-weight:400"><input type="checkbox" data-kind="meal" data-id="${esc(c.id)}"${draft.optional.includes(c.id)?' checked':''}><span class="grow"><b>${esc(c.name)}</b><small>식단 채널</small></span></label>`).join('')}</div>`;
+    box.innerHTML=html||'<p class="empty">찾는 게시판이 없습니다.</p>';
+  };
+  cq.oninput=list;
+  box.onchange=e=>{
+    const id=e.target.dataset.id;
+    if(e.target.dataset.kind==='department')draft.optionalDepartments=e.target.checked?[...draft.optionalDepartments,id]:draft.optionalDepartments.filter(x=>x!==id);
+    else draft.optional=e.target.checked?[...draft.optional,id]:draft.optional.filter(x=>x!==id);
+    phone.querySelector('[data-id=optional]').textContent=`선택 ${draft.optionalDepartments.length}개 학과 · ${draft.optional.length}개 식당`;
+    phone.querySelector('[data-act=finish]').textContent=`${verb} (게시판 ${chosenIds(draft).length}개)`;
+  };
+  list();
+}
+
+/* 3. 홈: 인사와 게시판 목록 */
+function postsOf(id){return snap.checks.filter(r=>r.channel_ids.includes(id))}
+function mealsOf(id){return snap.items.channels.find(c=>c.channel_id===id)?.meals}
+async function homeScreen(){
+  if(!snap){
+    show('크누아','<p class="empty">저장된 자료를 읽는 중…</p>');
+    try{snap=await api('/api/snapshot',{channels:chosenIds(profile)})}
+    catch(e){return show('크누아',`<p class="empty">${esc(e.message)}</p><button class="primary" data-act="home">다시 시도</button>`)}
+  }
+  const i=snap.items,w=i.weather,today=isCurrentDate(),must=new Set(requiredFor(profile.dept).map(c=>c.id));
+  const selected=snap.checks.filter(r=>r.status==='selected');
+  const dept=catalog.departments.find(d=>d.id===profile.dept);
+  const rows=chosenIds(profile).map(id=>{
+    const c=byId[id];let sub,n=0;
+    if(c.type==='meal'){const m=mealsOf(id),failed=i.errors.some(e=>e.source===id);sub=m?.length?`${today?'오늘':'기준일'} 식단 ${m.length}개`:failed?`${today?'오늘':'기준일'} 식단 확인 실패`:`${today?'오늘':'기준일'} 식단 자료 없음`}
+    else{const p=postsOf(id);n=p.filter(r=>r.status==='selected').length;sub=p.length?`저장된 글 ${p.length.toLocaleString()}개`:'저장된 공지 없음'}
+    return `<button class="row" data-act="board" data-id="${esc(id)}"><span class="grow"><b>${esc(c.name)}</b><small>${sub}</small></span>${n?`<span class="pill hot">${today?'오늘':'기준일'} ${n}</span>`:''}<span class="pill${must.has(id)?' must':''}">${must.has(id)?'필수':'선택'}</span></button>`;
+  }).join('');
+  show('크누아',`<p class="hero">${esc(profile.name)}님, 안녕하세요</p><p class="sub">자료 기준 ${esc(i.date)} · 확인 ${esc(i.collected_at.slice(11,16))} · ${esc(deptLabel(dept))}</p>
+    <div class="card"><b>${today?'오늘':'기준일'} 날씨</b><br>${w.summary?`${esc(w.summary)} · 최저 ${esc(w.temp_min)}° / 최고 ${esc(w.temp_max)}° · 비 올 확률 ${esc(w.rain_prob)}%`:`<span class="sub">${today?'오늘':'기준일'} 날씨를 수집하지 않았습니다.</span>`}</div>
+    <div class="nums"><div><b>${selected.filter(r=>r.reason==='new').length}</b>새 글</div><div><b>${selected.filter(r=>r.reason==='reminder').length}</b>마감 알림</div><div><b>${i.schedule.length}</b>${today?'학사일정':'기준일 일정'}</div></div>
+    ${i.schedule.length?`<p class="group">${today?'학사일정':'기준일 일정'}</p><div class="list">${i.schedule.map(s=>`<div class="row"><span class="grow"><b>${esc(s.title)}</b><small>${esc(s.start)}${s.end?' ~ '+esc(s.end):''}</small></span><span class="pill">${s.dday<0?'진행 중':s.dday===0?(today?'오늘':'기준일'):'D-'+esc(s.dday)}</span></div>`).join('')}</div>`:''}
+    <p class="group">내 게시판 ${chosenIds(profile).length}</p><div class="list">${rows}</div>
+    <details><summary>확인할 내용 ${i.errors.length}개</summary>${i.errors.map(e=>`<p>${esc(byId[e.source]?.name||e.source)}: ${esc(e.message)}</p>`).join('')||'<p>없습니다.</p>'}</details>`,
+    {action:'<button class="plain" data-act="edit">게시판 설정</button>'});
+}
+
+/* 게시판 하나: 오늘 소식과 최근 글 */
+function postRow(r){
+  const tag=r.status!=='selected'?'':r.reason==='new'?'<span class="pill hot">새 글</span>':'<span class="pill hot">마감 알림</span>';
+  const due=r.dday!==null&&r.dday>=0?` · 마감 ${r.dday===0?(isCurrentDate()?'오늘':'기준일'):'D-'+r.dday}`:'';
+  return `<button class="row" data-act="post" data-id="${esc(r.id)}"><span class="grow"><b>${esc(r.title)}</b><small>${esc(r.posted_at||'게시일 미확인')}${due}</small></span>${tag}</button>`;
+}
+function boardScreen(){
+  const c=byId[boardId];let body;
+  if(c.type==='meal'){
+    const m=mealsOf(c.id);
+    body=m?.length?m.map(x=>`<div class="card"><b>${esc(x.place)}</b> <span class="sub">${esc(x.time||'시간 미제공')}</span><br>${x.menu.map(esc).join(' · ')}</div>`).join(''):`<p class="empty">${snap.items.errors.some(e=>e.source===c.id)?'식단 확인 실패':'식단 자료 없음'}</p><p><a href="${esc(c.source_url)}" target="_blank" rel="noopener">식당 원문에서 확인</a></p>`;
+  }else{
+    const posts=postsOf(c.id),today=posts.filter(r=>r.status==='selected');
+    const recent=[...posts].sort((a,b)=>(b.posted_at||'').localeCompare(a.posted_at||'')).slice(0,30);
+    body=`<p class="group">${isCurrentDate()?'오늘':'기준일'} 소식 ${today.length}</p>${today.length?`<div class="list">${today.map(postRow).join('')}</div>`:'<p class="empty">새 글이나 마감 알림이 없습니다.</p>'}
+      <p class="group">최근 글${posts.length>30?' (최근 30개만 표시)':''}</p>${recent.length?`<div class="list">${recent.map(postRow).join('')}</div>`:'<p class="empty">이 게시판은 아직 수집하지 않았습니다.</p>'}
+      <details><summary>게시판 주소</summary><p><a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source_url)}</a></p></details>`;
+  }
+  show(c.name,body,{back:'home'});
+}
+async function openPost(id){
+  sheet.innerHTML='<p class="empty">불러오는 중…</p>';sheet.showModal();
+  try{
+    const r=await api('/api/notice?id='+encodeURIComponent(id)),d=snap.checks.find(x=>x.id===id);
+    const link=/^https?:\/\//.test(r.url)?`<a href="${esc(r.url)}" target="_blank" rel="noopener">학교 원문 열기</a>`:'';
+    sheet.innerHTML=`<h2>${esc(r.title)}</h2><p class="sub">게시 ${esc(r.posted_at||'미확인')} · 마감 ${esc(r.deadline||'없음 또는 미확인')}</p><p class="sub">${esc(d?.message||'')}</p>
+      <div class="body">${r.body?esc(r.body):'<span class="sub">본문이 이미지나 첨부파일이라 글자를 읽지 못했습니다. 원문에서 확인하세요.</span>'}</div>
+      <p>${link}</p><button class="primary" data-act="close">닫기</button>`;
+  }catch(e){sheet.innerHTML=`<p class="empty">${esc(e.message)}</p><button class="primary" data-act="close">닫기</button>`}
+}
+
+document.onclick=e=>{
+  const b=e.target.closest('[data-act]');if(!b)return;
+  const {act,id}=b.dataset;
+  if(act==='dept'){draft.dept=id;startScreen.list()}
+  else if(act==='toChannels'){tab='required';channelScreen()}
+  else if(act==='toStart')startScreen();
+  else if(act==='tab'){tab=id;channelScreen()}
+  else if(act==='finish'){profile={name:draft.name.trim(),dept:draft.dept,optional:draft.optional,optionalDepartments:draft.optionalDepartments};draft=null;snap=null;saveProfile();homeScreen()}
+  else if(act==='edit'){draft={...profile};tab='optional';channelScreen()}
+  else if(act==='home')homeScreen();
+  else if(act==='board'){boardId=id;boardScreen()}
+  else if(act==='post')openPost(id);
+  else if(act==='close')sheet.close();
+};
+sheet.onclick=e=>{if(e.target===sheet)sheet.close()};
+
+(async()=>{
+  try{
+    if(location.protocol==='file:')throw new Error('파일을 직접 열 수 없습니다. python -m http.server 8000 --directory output/app 을 실행하고 http://127.0.0.1:8000 에서 여세요.');
+    catalog=await api('/api/catalog');
+    byId=Object.fromEntries(catalog.channels.map(c=>[c.id,c]));
+    profile=loadProfile();
+    profile?homeScreen():startScreen();
+  }catch(e){show('크누아',`<p class="empty">${esc(e.message)}</p>`)}
+})();
+</script>
+</html>

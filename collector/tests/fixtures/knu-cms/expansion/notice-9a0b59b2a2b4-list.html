@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  자율미래인재학부 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="자율미래인재학부" property="og:title"/>
+<meta content="경북대학교  자율미래인재학부 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>자율미래인재학부</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1741567107" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/sofi; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:20%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:rgb(243, 243, 243);}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">자율미래인재학부</span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/sofi/sub.htm?nav_code=sof1741566884">로그인</a>
+<a class="top-nav" href="./sub.htm?nav_code=sof1741565156"><i class="fas fa-bars"></i></a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=sof1749450729" id="top1m1" title="학부소개 &gt; 학부장인사 페이지로 이동합니다.">학부소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=sof1749450729" title="학부장인사 페이지로 이동합니다.">학부장인사</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=sof1749451246" title="교육목표 페이지로 이동합니다.">교육목표</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=sof1749451456" title="학부연혁 페이지로 이동합니다.">학부연혁</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=sof1749451513" title="찾아오시는길 페이지로 이동합니다.">찾아오시는길</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=sof1741768206" id="top1m2" title="교수소개 &gt; 전임교수 페이지로 이동합니다.">교수소개</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="./sub.htm?nav_code=sof1741768206" title="전임교수 페이지로 이동합니다.">전임교수</a></li>
+<li id="top2m2m2"><a href="./sub.htm?nav_code=sof1741768226" title="교직원 페이지로 이동합니다.">교직원</a></li>
+</ul>
+</li>
+<li><a href="" id="top1m3" title="학사과정 &gt;  페이지로 이동합니다.">학사과정</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=A301" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m3m2"><a href="https://ipsi1.knu.ac.kr/intro/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m3m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m3m4"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03_01_09" target="_blank" title="새창으로 졸업요건 페이지가 열립니다.">졸업요건</a></li>
+<li id="top2m3m5"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03_05" target="_blank" title="새창으로 졸업자격인정제 페이지가 열립니다.">졸업자격인정제</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=sof1744763314" id="top1m4" title="학부활동 &gt; 포토갤러리 페이지로 이동합니다.">학부활동</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="./sub.htm?nav_code=sof1744763314" title="포토갤러리 페이지로 이동합니다.">포토갤러리</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=sof1741566884" id="top1m5" title="게시판 &gt; 공지사항 페이지로 이동합니다.">게시판</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=sof1741566884" title="공지사항 페이지로 이동합니다.">공지사항</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=sof1743151406" title="자료실 페이지로 이동합니다.">자료실</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(5,1);max_2menu=5;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../sofi/data/designImages/SUBBG_1741567005');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:340px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:1400px;height:119px;left: 0px; top: 221px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">SCHOOL OF FUTURE INNOVATORS</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">경북대학교 자율미래인재학부에 오신걸 환영합니다.
+
+</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=sof1741828031">게시판</a></li><li><a href="./sub.htm?nav_code=sof1741566884">공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fsofi%2Fsub.htm%3Fnav_code%3Dsof1741566884" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(249, 249, 249);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(51, 51, 51);background-color:rgb(243, 243, 243);border-color:rgb(243, 243, 243);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:rgb(85, 85, 85);color:#FFFFFF;">게시판</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=sof1741566884">공지사항</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=sof1743151406">자료실</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="sof1741566884">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/sofi/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+<!--[SubBegin] 검색알고리즘 -->
+<div class="board_search">
+<form action="/HOME/sofi/sub.htm" method="get" name="bbs_form01" onsubmit="return search01();" title="게시물 검색">
+<input name="code" type="hidden" value="6jy0d79WbSU7"/>
+<input name="nav_code" type="hidden" value="sof1741566884"/>
+<input name="order_list" type="hidden" value=""/>
+<input name="list_scale" type="hidden" value=""/>
+<input name="view_cate" type="hidden" value=""/>
+<input class="text" id="search_order" name="search_order" title="검색어" type="text" value="">
+<button onclick="search01();return false;" type="button"><i class="fa fa-search"></i><span>검색</span></button>
+</input></form>
+</div>
+<!-- <div class="board_info">
+						<div class="left">총 <em>174</em>개의 글이 있습니다. (<em>1</em>/18 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/sofi/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='sof1741566884'>
+							<input type='hidden' name='code' value='6jy0d79WbSU7'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+<div class="board_list">
+<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+<thead>
+<tr>
+<th abbr="번호" scope="col" style="width:50px;">번호</th>
+<th abbr="제목" scope="col">제목</th>
+<th abbr="첨부" scope="col" style="width:100px;">첨부</th>
+<th abbr="작성자" class="writer" scope="col" style="width:200px">작성자</th>
+<th abbr="작성일" scope="col" style="width:100px;">작성일</th>
+<th abbr="조회" scope="col" style="width:80px;">조회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQ1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026학년도 전공자율선택제 AI기반 전공적성 진단검사 실시 안내★</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQ1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-09-10</td>
+<td class="hit">20</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026학년도 2학기 재학생 등록금 수납 계획 안내★</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-07-21</td>
+<td class="hit">84</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTM0NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026학년도 2학기 복학 및 휴학 신청 안내★</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM0NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-06-04</td>
+<td class="hit">69</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTIxNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026년 인권·젠더 교육 이수 안내★</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTIxNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-02-13</td>
+<td class="hit">165</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTE4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 주요 학사일정 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTE4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2025-12-22</td>
+<td class="hit">303</td>
+</tr>
+<tr>
+<td class="num">174</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQ1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026학년도 전공자율선택제 AI기반 전공적성 진단검사 실시 안내★</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQ1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-09-10</td>
+<td class="hit">20</td>
+</tr>
+<tr>
+<td class="num">173</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQ1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTczJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 수강정정 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQ1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTczJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-09-10</td>
+<td class="hit">26</td>
+</tr>
+<tr>
+<td class="num">172</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQzMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcyJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 수강변경 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQzMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcyJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-08-24</td>
+<td class="hit">63</td>
+</tr>
+<tr>
+<td class="num">171</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQxOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcxJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 교내 근로장학생 신청 및 선발 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQxOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcxJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-08-10</td>
+<td class="hit">46</td>
+</tr>
+<tr>
+<td class="num">170</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQxMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcwJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 수강신청 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQxMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcwJnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-08-04</td>
+<td class="hit">60</td>
+</tr>
+<tr>
+<td class="num">169</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQxMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTY5JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 생활관 분관 신규관생 모집 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQxMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTY5JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-07-28</td>
+<td class="hit">33</td>
+</tr>
+<tr>
+<td class="num">168</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTQwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTY4JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">★2026학년도 2학기 재학생 등록금 수납 계획 안내★</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTY4JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-07-21</td>
+<td class="hit">84</td>
+</tr>
+<tr>
+<td class="num">167</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTM5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY3JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 수강꾸러미 신청 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTM5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY3JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-07-08</td>
+<td class="hit">86</td>
+</tr>
+<tr>
+<td class="num">166</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTM2OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY2JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 2학기 수강신청 프로그램 점검단 모집 및 지원 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTM2OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY2JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-06-16</td>
+<td class="hit">32</td>
+</tr>
+<tr>
+<td class="num">165</td>
+<td class="subject">
+<a href="/HOME/sofi/sub.htm?mode=view&amp;mv_data=aWR4PTM0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY1JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9">2026학년도 1학기 성적처리 일정 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTM0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTY1JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">자율미래인재학부</td>
+<td class="date">2026-06-08</td>
+<td class="hit">56</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[Begin] 페이징 및 버튼부-->
+<!-- page -->
+<div class="paging">
+<strong>1</strong><a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="2 페이지">2</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="3 페이지">3</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="4 페이지">4</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="5 페이지">5</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="6 페이지">6</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="7 페이지">7</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="8 페이지">8</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="9 페이지">9</a>
+<a href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="10 페이지">10</a>
+<a class="next" href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPTZqeTBkNzlXYlNVNyZuYXZfY29kZT1zb2YxNzQxNTY2ODg0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||" title="다음 10페이지"><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i><span>다음</span></a>
+<a class="last" href="/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTE3MCZjb2RlPTZqeTBkNzlXYlNVNyZuYXZfY29kZT1zb2YxNzQxNTY2ODg0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||" title="마지막 페이지"><i class="fa fa-angle-double-right"></i><i class="fa fa-angle-double-right"></i><span>마지막 페이지</span></a>
+</div>
+<!-- //page -->
+<!-- board_info -->
+<div class="btnarea tar">
+</div>
+<!-- //board_info -->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[37224] 
+													 경상북도 상주시 경상대로 2559, 본관(4호관) 102호													 / T.054-530-1920																									</p>
+<p class="copyright">Copyright ⓒ 자율미래인재학부. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 19,071명 / Today : 3명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

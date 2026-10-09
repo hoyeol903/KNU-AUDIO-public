@@ -1,0 +1,131 @@
+name: 브리핑 음성 생성
+
+# 지금은 수동 실행만. 걸리는 시간을 잰 뒤 매일 수집 뒤에 이어 붙인다.
+"on":
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+# 수집 워크플로와 같은 묶음: main에 자료를 저장하는 실행은 한 번에 하나만.
+concurrency:
+  group: knu-collector-writer
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      TZ: Asia/Seoul
+      PYTHONUNBUFFERED: '1'
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+      OLLAMA_MODELS: ${{ github.workspace }}/.cache/ollama
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-tts.txt
+      - name: 오늘 수집 자료 확인
+        id: day
+        run: |
+          day="$(date +%F)"
+          test -f "data/raw/$day/items.json" || { echo "오늘($day) 수집 자료가 없습니다. 수집을 먼저 실행하세요."; exit 1; }
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+      # 모델(약 수 GB)과 이미 만든 대본·음성을 다음 실행에서 다시 쓴다.
+      - name: 캐시 디렉터리 준비
+        run: mkdir -p .cache/huggingface .cache/ollama .cache/briefing
+      - uses: actions/cache/restore@v6
+        id: model-cache
+        with:
+          path: |
+            .cache/huggingface
+            .cache/ollama
+          key: briefing-models-${{ hashFiles('config/briefing.yaml', 'requirements-tts.txt', 'scripts/start-ollama-ci.sh') }}
+      - uses: actions/cache/restore@v6
+        id: audio-cache
+        with:
+          path: |
+            .cache/briefing
+            !.cache/briefing/.build-lock
+          key: briefing-audio-${{ steps.day.outputs.day }}-${{ github.run_id }}
+          restore-keys: |
+            briefing-audio-${{ steps.day.outputs.day }}-
+            briefing-audio-
+      - name: 음성 도구 설치
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg sox libsox-dev zstd
+          # 그래픽카드가 없으므로 CPU용 torch를 받는다.
+          python -m pip install -r requirements-tts.txt --extra-index-url https://download.pytorch.org/whl/cpu
+      - name: 대본 모델 실행
+        run: bash scripts/start-ollama-ci.sh
+      - name: 대본과 음성 생성
+        run: |
+          python -m briefing.build --input "data/raw/${{ steps.day.outputs.day }}/items.json"
+          python -c "from pathlib import Path; from briefing.daily import verify_publication; verify_publication(Path('dist'), '${{ steps.day.outputs.day }}')"
+      - name: 앱 화면용으로 내보내기
+        id: app-export
+        run: python -m briefing.app_export
+      - name: 음성·진단 산출물 보관
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: briefing-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          if-no-files-found: ignore
+          path: |
+            output/review.json
+            output/briefing-report.json
+            output/briefing-progress.json
+            ${{ runner.temp }}/ollama.log
+            dist/**
+      - name: 앱용 음성 산출물 보관
+        if: always() && steps.app-export.outcome == 'success'
+        uses: actions/upload-artifact@v7
+        with:
+          name: briefing-app-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          if-no-files-found: ignore
+          path: output/app/data/briefing/**
+      - name: 실패·중단과 관계없이 모델 캐시 저장 시도
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            .cache/huggingface
+            .cache/ollama
+          key: briefing-models-${{ hashFiles('config/briefing.yaml', 'requirements-tts.txt', 'scripts/start-ollama-ci.sh') }}
+      - name: 실패·중단과 관계없이 대본·음성 캐시 저장 시도
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            .cache/briefing
+            !.cache/briefing/.build-lock
+          key: briefing-audio-${{ steps.day.outputs.day }}-${{ github.run_id }}
+      - name: 브랜치 실행은 검증 산출물만 보관
+        if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+        run: echo '기능 브랜치 실행은 artifact만 남기고 저장소와 배포를 변경하지 않습니다.'
+      - name: main에 저장하고 배포 실행
+        if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- output/app/data/briefing
+          if git diff --cached --quiet; then echo '바뀐 음성이 없습니다.'; exit 0; fi
+          git commit -m "오늘 브리핑 음성 갱신"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          # 자동 커밋은 배포를 시작시키지 않으므로 직접 실행한다.
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"

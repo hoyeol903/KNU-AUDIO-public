@@ -1,0 +1,179 @@
+"""Official Qwen3-TTS CustomVoice adapter, shared model for both speakers."""
+from pathlib import Path
+import math
+import os
+import re
+import shutil
+import subprocess
+import tempfile
+import json
+from contextlib import contextmanager
+
+from briefing.open_tts import qwen_spoken_text
+from briefing.model_cache import MODEL, verify_model_directory
+
+VOICES = {'female': 'Sohee', 'male': 'Aiden'}
+VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
+MODE = 'slm-qwen3-tts'
+# Bump when model/version/normalization or generation parameters change.
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v1'
+GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
+SEED = 20261007
+AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
+                         trim_start_duration_sec=.05, trim_end_duration_sec=.1,
+                         trim_start_threshold_db=-55, trim_end_threshold_db=-50,
+                         preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
+                         added_tail_silence_sec=.18)
+CACHE_PROFILE = dict(sampling=GENERATION, seed=SEED, postprocess=AUDIO_POSTPROCESS)
+
+
+def cached_model_source(model, cache_root):
+    """Use an already-downloaded HF snapshot directly, including offline builds."""
+    dataset_path = os.environ.get('KNU_TTS_MODEL_PATH')
+    if dataset_path:
+        if model != MODEL:
+            raise ValueError('연결된 모델과 요청한 음성 모델이 다릅니다.')
+        print('Kaggle에 저장된 음성 모델을 검증합니다. 다운로드하지 않습니다.', flush=True)
+        return verify_model_directory(dataset_path)
+    repository = 'models--' + model.replace('/', '--')
+    repo_cache = Path(cache_root) / 'hub' / repository
+    ref = repo_cache / 'refs' / 'main'
+    if ref.is_file():
+        revision = ref.read_text(encoding='utf-8').strip()
+        snapshot = repo_cache / 'snapshots' / revision if re.fullmatch(r'[0-9a-f]{40}', revision) else None
+        required = ('config.json', 'model.safetensors', 'tokenizer_config.json', 'vocab.json', 'merges.txt',
+                    'speech_tokenizer/config.json', 'speech_tokenizer/model.safetensors')
+        if snapshot and all((snapshot / name).is_file() for name in required):
+            return str(snapshot)
+    return model
+
+
+def _audio_filters(tempo):
+    profile = AUDIO_POSTPROCESS
+    trim_edges = (f'silenceremove=start_periods=1:start_duration={profile["trim_start_duration_sec"]}:'
+                  f'start_threshold={profile["trim_start_threshold_db"]}dB:'
+                  f'start_silence={profile["preserved_start_silence_sec"]},areverse,'
+                  f'silenceremove=start_periods=1:start_duration={profile["trim_end_duration_sec"]}:'
+                  f'start_threshold={profile["trim_end_threshold_db"]}dB:'
+                  f'start_silence={profile["preserved_end_silence_sec"]},areverse')
+    return f'atempo={tempo},{trim_edges},apad=pad_dur={profile["added_tail_silence_sec"]}'
+
+
+@contextmanager
+def seeded_rng(torch, runtime_device):
+    devices = [0] if runtime_device == 'cuda:0' else []
+    with torch.random.fork_rng(devices=devices):
+        torch.manual_seed(SEED)
+        if devices:
+            torch.cuda.manual_seed_all(SEED)
+        yield
+
+
+def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
+    """Two-pass EBU R128 normalization with a uniform, conservative segment tail."""
+    base = _audio_filters(tempo)
+    target = 'I=-19:TP=-2:LRA=7'
+    measurement = runner(
+        ['ffmpeg', '-nostdin', '-v', 'info', '-i', str(wav), '-af', f'{base},loudnorm={target}:print_format=json',
+         '-f', 'null', '-'], check=True, timeout=180, capture_output=True, text=True)
+    matches = re.findall(r'\{\s*"input_i".*?\}', measurement.stderr, flags=re.S)
+    if not matches:
+        raise RuntimeError('FFmpeg 음량 측정 결과를 읽지 못했습니다.')
+    stats = json.loads(matches[-1])
+    required = ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')
+    if any(stats.get(key) in (None, '-inf', 'inf', 'nan') for key in required):
+        raise RuntimeError('음성 구간의 음량을 안정적으로 측정하지 못했습니다.')
+    measured = ':'.join(f'measured_{key}={stats[source]}' for key, source in (
+        ('I', 'input_i'), ('TP', 'input_tp'), ('LRA', 'input_lra'), ('thresh', 'input_thresh')))
+    second_pass = f'{base},loudnorm={target}:{measured}:offset={stats["target_offset"]}:linear=true:print_format=summary'
+    runner(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(wav), '-af', second_pass,
+            '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
+           check=True, timeout=180, capture_output=True)
+
+
+class QwenTTS:
+    def __init__(self, *, device='auto', instructions=None):
+        if device not in {'auto', 'cpu', 'cuda:0'}:
+            raise ValueError('tts.device는 auto, cpu, cuda:0 중 하나여야 합니다.')
+        self.device = device
+        self.instructions = instructions or {}
+        self.runtime_device = None
+        self.model = None
+        self.loaded_id = None
+
+    def verify(self, voice, role, model):
+        if model != MODEL or VOICES.get(role) != voice:
+            raise ValueError('Qwen3-TTS 1.7B CustomVoice의 Sohee·Aiden 설정을 사용하세요.')
+        if not shutil.which('ffmpeg'):
+            raise RuntimeError('MP3 변환용 ffmpeg가 필요합니다. START-HERE.md를 확인하세요.')
+
+    def _load(self, model):
+        if self.model is not None:
+            if self.loaded_id != model:
+                raise ValueError('한 실행에서 TTS 모델을 혼용할 수 없습니다.')
+            return
+        cache_root = Path(__file__).resolve().parents[1] / '.cache'
+        cache_root.mkdir(parents=True, exist_ok=True)
+        os.environ.setdefault('HF_HOME', str(cache_root / 'huggingface'))
+        # Numba-backed librosa helpers in qwen-tts require a writable cache path
+        # on some Python/macOS environments; keep it with the model cache.
+        os.environ.setdefault('NUMBA_CACHE_DIR', str(cache_root / 'numba'))
+        Path(os.environ['NUMBA_CACHE_DIR']).mkdir(parents=True, exist_ok=True)
+        try:
+            import torch
+            from qwen_tts import Qwen3TTSModel
+        except ImportError as exc:
+            raise RuntimeError('Qwen3-TTS 환경이 필요합니다. START-HERE.md대로 새 환경에 requirements-tts.txt를 설치하세요.') from exc
+        device = self.device
+        if device == 'auto':
+            # CPU is the portable fallback, including macOS. CUDA uses GPU if present.
+            device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+        if device == 'cuda:0' and not torch.cuda.is_available():
+            raise RuntimeError('CUDA GPU가 없습니다. tts.device를 auto 또는 cpu로 설정하세요.')
+        print(f'Qwen3-TTS 모델 준비: {model} ({device})', flush=True)
+        self.model = Qwen3TTSModel.from_pretrained(
+            cached_model_source(model, cache_root / 'huggingface'), device_map=device,
+            dtype=torch.bfloat16 if device.startswith('cuda') and torch.cuda.is_bf16_supported()
+            else torch.float16 if device.startswith('cuda') else torch.float32,
+            attn_implementation='eager',
+        )
+        self.runtime_device = device
+        self.loaded_id = model
+        speakers = {s.lower() for s in self.model.get_supported_speakers()}
+        languages = {s.lower() for s in self.model.get_supported_languages()}
+        if not {v.lower() for v in VOICES.values()} <= speakers or 'korean' not in languages:
+            self.model = None
+            self.loaded_id = None
+            raise RuntimeError('설치된 모델의 한국어 또는 화자 지원이 설정과 다릅니다.')
+
+    def synthesize(self, text, voice, model, tempo):
+        if voice not in VOICES.values() or model != MODEL:
+            raise ValueError('지원하지 않는 Qwen3-TTS 모델/화자입니다.')
+        if not isinstance(tempo, (int, float)) or not math.isfinite(tempo) or not .5 <= tempo <= 2:
+            raise ValueError('합성 속도는 0.5~2 사이여야 합니다.')
+        self._load(model)
+        import numpy as np
+        import soundfile as sf
+        import torch
+        # Re-seed every segment inside a forked RNG scope: identical inputs remain
+        # reproducible, and model sampling cannot perturb the build's other RNG use.
+        with seeded_rng(torch, self.runtime_device):
+            with torch.inference_mode():
+                role = next((name for name, speaker in VOICES.items() if speaker == voice), None)
+                wavs, sr = self.model.generate_custom_voice(
+                    text=qwen_spoken_text(text), language='Korean', speaker=voice,
+                    instruct=self.instructions.get(role) or None, **GENERATION)
+        if len(wavs) != 1 or sr <= 0:
+            raise RuntimeError('Qwen3-TTS가 유효한 음성을 반환하지 않았습니다.')
+        wave = np.asarray(wavs[0])
+        if wave.ndim != 1 or wave.size == 0 or not np.isfinite(wave).all() or np.max(np.abs(wave)) == 0:
+            raise RuntimeError('빈 음성 또는 잘못된 음성 데이터입니다.')
+        # 12 Hz codec: hitting the generation cap may silently cut the script.
+        # Refuse to publish an output near the cap instead of accepting a clipped notice.
+        if wave.size / sr >= (GENERATION['max_new_tokens'] - 4) / 12.5:
+            raise RuntimeError('음성이 생성 길이 상한에 도달했습니다. 대본을 더 짧은 구간으로 나눠 확인하세요.')
+        with tempfile.TemporaryDirectory() as td:
+            wav, mp3 = Path(td)/'voice.wav', Path(td)/'voice.mp3'
+            sf.write(wav, wave, sr, subtype='PCM_16')
+            normalize_audio(wav, mp3, tempo)
+            return mp3.read_bytes()

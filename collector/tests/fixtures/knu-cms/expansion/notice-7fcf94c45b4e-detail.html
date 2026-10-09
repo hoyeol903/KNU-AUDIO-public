@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  경북대학교 공과대학 신소재공학과 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="경북대학교 공과대학 신소재공학과" property="og:title"/>
+<meta content="경북대학교  경북대학교 공과대학 신소재공학과 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>경북대학교 공과대학 신소재공학과</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1727226182" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/kremse; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:20%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 공과대학 <em>신소재공학과</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&amp;mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0">로그인</a>
+<a href="http://enmse.knu.ac.kr" target="_blank">EN</a>
+<a href="https://semiconductorbk.knu.ac.kr" target="_blank">BK21</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=kre1640131488" id="top1m1" title="학과소개 &gt; 학과장인사말 페이지로 이동합니다.">학과소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=kre1640131488" title="학과장인사말 페이지로 이동합니다.">학과장인사말</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=kre1640131527" title="학과비전 및 인재상 페이지로 이동합니다.">학과비전 및 인재상</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=kre1646872145" title="구성원 페이지로 이동합니다.">구성원</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=kre1646873176" title="학과연혁 페이지로 이동합니다.">학과연혁</a></li>
+<li id="top2m1m5"><a href="./sub.htm?nav_code=kre1669080421" title="학과 발전 계획 페이지로 이동합니다.">학과 발전 계획</a></li>
+<li id="top2m1m6"><a href="./sub.htm?nav_code=kre1640131702" title="찾아오시는 길 페이지로 이동합니다.">찾아오시는 길</a></li>
+</ul>
+</li>
+<li><a href="http://intro.uway.com/knu/intro.html" id="top1m2" target="_blank" title="새창으로 학사정보 &gt; 입학안내+ 페이지가 열립니다.">학사정보</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="http://intro.uway.com/knu/intro.html" target="_blank" title="새창으로 입학안내+ 페이지가 열립니다.">입학안내+</a></li>
+<li id="top2m2m2"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정+ 페이지가 열립니다.">학사일정+</a></li>
+<li id="top2m2m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03" target="_blank" title="새창으로 학사안내+ 페이지가 열립니다.">학사안내+</a></li>
+<li id="top2m2m4"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1618" target="_blank" title="새창으로 교육과정+ 페이지가 열립니다.">교육과정+</a></li>
+<li id="top2m2m5"><a href="https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1668399325&amp;code=dept5&amp;dept=dept-emse" target="_blank" title="새창으로 진로로드맵+ 페이지가 열립니다.">진로로드맵+</a></li>
+<li id="top2m2m6"><a href="./sub.htm?nav_code=kre1649077259" title="졸업요건 페이지로 이동합니다.">졸업요건</a></li>
+</ul>
+</li>
+<li><a href="https://ipsi2.knu.ac.kr/" id="top1m3" target="_blank" title="새창으로 대학원 &gt; 입학안내+ 페이지가 열립니다.">대학원</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="https://ipsi2.knu.ac.kr/" target="_blank" title="새창으로 입학안내+ 페이지가 열립니다.">입학안내+</a></li>
+<li id="top2m3m2"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=2118L02" target="_blank" title="새창으로 교육과정+ 페이지가 열립니다.">교육과정+</a></li>
+<li id="top2m3m3"><a href="./sub.htm?nav_code=kre1647851860" title="대학원 공지사항 페이지로 이동합니다.">대학원 공지사항</a></li>
+<li id="top2m3m4"><a href="./sub.htm?nav_code=kre1679016622" title="대학원 서식함 페이지로 이동합니다.">대학원 서식함</a></li>
+<li id="top2m3m5"><a href="./sub.htm?nav_code=kre1688347929" title="졸업요건 페이지로 이동합니다.">졸업요건</a></li>
+<li id="top2m3m6"><a href="https://semiconductorbk.knu.ac.kr/" target="_blank" title="새창으로 4단계 BK21사업+ 페이지가 열립니다.">4단계 BK21사업+</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=kre1646874431" id="top1m4" title="학생활동 &gt; 학생회 페이지로 이동합니다.">학생활동</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="./sub.htm?nav_code=kre1646874431" title="학생회 페이지로 이동합니다.">학생회</a></li>
+<li id="top2m4m2"><a href="./sub.htm?nav_code=kre1640137364" title="동아리소개 페이지로 이동합니다.">동아리소개</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=kre1640045053" id="top1m5" title="게시판 &gt; 공지사항 페이지로 이동합니다.">게시판</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=kre1640045053" title="공지사항 페이지로 이동합니다.">공지사항</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=kre1646824653" title="채용정보 페이지로 이동합니다.">채용정보</a></li>
+<li id="top2m5m3"><a href="./sub.htm?nav_code=kre1647345137" title="학과소식 페이지로 이동합니다.">학과소식</a></li>
+<li id="top2m5m4"><a href="./sub.htm?nav_code=kre1648435308" title="장학금 안내 페이지로 이동합니다.">장학금 안내</a></li>
+<li id="top2m5m5"><a href="./sub.htm?nav_code=kre1646823651" title="서식함 페이지로 이동합니다.">서식함</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(5,1);max_2menu=6;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../kremse/data/designImages/SUBBG_1689122659');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:340px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:904px;height:100px;left: 0px; top: 177px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">신소재공학과</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">첨단소재 공학분야 모든 산업의 기초가 되는 재료에 관한 전 분야를 담당하고 있습니다.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=kre1640045053">게시판</a></li><li><a href="./sub.htm?nav_code=kre1640045053">공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fkremse%2Fsub.htm%3Fnav_code%3Dkre1640045053" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=kre1640045053">공지사항</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=kre1646824653">채용정보</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=kre1647345137">학과소식</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=kre1648435308">장학금 안내</a>
+</li>
+<li id="snb2m5"><a href="./sub.htm?nav_code=kre1646823651">서식함</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<div class="board_view">
+<div class="title">2026년 공과대학 “이것이 나의 연구다(이나연)” 잘한연구 &amp; 망한연구 소개대회 안내</div>
+<input id="userid" name="userid" type="hidden" value=""/>
+<div class="desc clearfix">
+<dl>
+<dt>등록일</dt>
+<dd>2026-10-01</dd>
+<dt>작성자</dt>
+<dd>경북대학교 신소재공학과</dd>
+<dt>조회수</dt>
+<dd>3</dd>
+</dl>
+</div>
+<div class="cont">
+<!-- 내용부 첨부파일이 image 파일이면 view -->
+<p class="0" style="margin-left:16.2pt;margin-right:5.0pt;text-indent:-16.2pt;margin-top:10.0pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.1pt;mso-text-raise:0pt;font-size:12.0pt;">행사명: 2026</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-size:12.0pt;">년 공과대학 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">“</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-weight:bold;font-size:12.0pt;">이것이 나의 연구다</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-weight:bold;font-size:12.0pt;">이나연</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)” </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-weight:bold;font-size:12.0pt;">잘한연구 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-1.1pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">&amp; </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-weight:bold;font-size:12.0pt;">망한연구 소개대회</span></p><p class="0" style="margin-left:16.2pt;margin-right:5.0pt;text-indent:-16.2pt;margin-top:10.0pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-1.1pt;font-weight:bold;font-size:12.0pt;"><br/></span></p><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">가</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">행사목적</span></p><p class="0" style="margin-left:41.3pt;margin-right:5.0pt;text-indent:-41.3pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">1) </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">자신의 연구 경험을 다양한 구성원에게 효과적으로 전달하는 소통 능력을 기르고</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">자신의 연구를 객관적으로 개선할 수 있는 기회 제공</span></p><p class="0" style="margin-left:41.0pt;margin-right:5.0pt;text-indent:-41.0pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;"> </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">2) </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.2pt;font-size:12.0pt;">연구과정의 시행착오와 경험을 공유함으로써 상호학습을 유도하고 과정의 실패를 </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">포용하고 학습의 기회로 삼는 건강한 연구문화 확산 도모</span></p><p class="0" style="margin-left:39.9pt;margin-right:5.0pt;text-indent:-39.9pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">나</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">참가대상</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">: </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">공과대학 내 연구실 소속 학부생</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">대학원생</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">연구원 등 </span></p><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">다</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">제출서류</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">: </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">참가신청서</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">, </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">개인정보 수집 및 이용동의서</span></p><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">라</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">신청방법</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">: </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-size:12.0pt;">전자우편 </span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-size:12.0pt;">(ma1104@knu.ac.kr)</span></p><div class="hwp_editor_board_content" data-hjsonver="1.0" data-jsonlen="19135" id="hwpEditorBoardContent"></div><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span lang="EN-US" style="mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;"> </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">마</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">. </span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">신청기간</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">: 2026.10.14.(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">수</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">)</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">~</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">10.26.(</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">월</span><span lang="EN-US" style="mso-fareast-font-family:굴림;font-family:굴림;mso-ascii-font-family:굴림;mso-font-width:100%;letter-spacing:-0.4pt;mso-text-raise:0pt;font-weight:bold;font-size:12.0pt;">) 18:00</span><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;">까지</span></p><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;"><br/></span></p><p class="0" style="margin-left:18.1pt;margin-right:5.0pt;text-indent:-18.1pt;tab-stops:left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt;mso-pagination:none;text-autospace:none;mso-padding-alt:0pt 0pt 0pt 0pt;"><span style="font-family:굴림;mso-fareast-font-family:굴림;letter-spacing:-0.4pt;font-weight:bold;font-size:12.0pt;"><img src="https://home.knu.ac.kr/HOME/kremse/data/bbsData/um61o3c0bisc6048gs6w6abdc4c6f3235.0" width="960px;"/></span></p>
+</div>
+<div class="attach">
+<ul>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJnNpdGVfY29kZT1rcmVtc2UmY29kZT1BQ2F2aU5iejJKRHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&amp;download=h&amp;seq=0">이것이 나의 연구다 포스터.jpg</a></li>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJnNpdGVfY29kZT1rcmVtc2UmY29kZT1BQ2F2aU5iejJKRHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&amp;download=h&amp;seq=1">[서식] 참가신청서 및 개인정보이용동의서.hwp</a></li>
+</ul>
+</div>
+</div>
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/kremse/sub.htm?mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJnNpdGVfY29kZT1rcmVtc2UmY29kZT1BQ2F2aU5iejJKRHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/kremse/sub.htm?nav_code=kre1640045053&bbs_view_edit=1&mode=edit&mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJnNpdGVfY29kZT1rcmVtc2UmY29kZT1BQ2F2aU5iejJKRHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+<div class="btnarea">
+<div class="left">
+<a class="btn_d" href="#" onclick="boardPrint(1);return false;">프린트</a>
+</div>
+<div class="right">
+<a class="btn_d" href="/HOME/kremse/sub.htm?mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJnNpdGVfY29kZT1rcmVtc2UmY29kZT1BQ2F2aU5iejJKRHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=">목록</a>
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[41566] 
+													대구광역시 북구 대학로 80 경북대학교
+													 / T.053-950-5631													 / F.053-950-5645													 / E-mail.bjpark0401@knu.ac.kr								</p>
+<p class="copyright">Copyright ⓒ 경북대학교 공과대학 <em>신소재공학과</em>. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 100,711명 / Today : 37명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

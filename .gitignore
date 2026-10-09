@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.wrangler/
+output/pdf/
+output/collector-test-preview.png
+# 브리핑 생성 중간 결과 (briefing.build)
+.cache/
+dist/
+preview/
+.venv*/
+output/review.json
+output/briefing-report.json
+output/daily-collection.json
+output/qwen-samples/

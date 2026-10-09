@@ -1,0 +1,39 @@
+greeting: 안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요.
+outro: 오늘도 좋은 하루 보내세요!
+greeting_templates:
+- "안녕하세요, {name}님. 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
+- "안녕하세요, {name}님. 좋은 아침이에요! 가볍게 학교 소식을 듣고 오늘을 시작해 볼까요?"
+- "안녕하세요, {name}님. 좋은 아침이에요! 등굣길에 필요한 소식만 간단히 들려드릴게요."
+outro_variants:
+- 오늘도 좋은 하루 보내세요!
+- 오늘도 좋은 하루 보내세요!
+- 오늘도 좋은 하루 보내세요!
+weather_region: 대구
+umbrella_rain_percent: 60
+jacket_below_celsius: 15
+event_keywords:
+- 시험
+- 축제
+- 대동제
+event_horizon_days: 60
+max_events: 3
+model: Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+tempo: 1.0
+# 만들 목소리. 앱은 한 목소리만 쓰므로 하나만 만든다. 둘 다 만들려면 [female, male].
+voices: [female]
+tts:
+  device: auto
+  instructions:
+    female: "차분하고 또렷한 아침 라디오 진행자처럼 자연스러운 한국어로 말해 주세요. 약간 밝고 생기 있게 말하되, 속도와 음량은 안정적으로 유지하고 들뜨거나 과장하지 마세요."
+bgm:
+  # 음악 파일은 사용 허락을 확인하기 전까지 저장소에 넣지 않는다. 확인되면 assets/ 아래 경로를 적는다.
+  file: ''
+  source_url: ''
+  attribution: '배경음악: Mas Cafe - Casa Rosa (사용자 제공 파일명 기준)'
+  license_note: 사용자 제공 음악. 이전 곡과 다른 파일이므로 공개 배포·재배포 조건은 별도 확인 필요.
+  volume: 0.1
+
+slm:
+  model: qwen3:4b
+  url: http://127.0.0.1:11434
+  timeout_seconds: 600

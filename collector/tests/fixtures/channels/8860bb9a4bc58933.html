@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 경상대학 경제통상학부 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 경상대학 경제통상학부" />
+<meta property="og:description" content="경북대학교  경북대학교 경상대학 경제통상학부 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 경상대학 경제통상학부</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1626341065" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/econ; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+
+
+
+
+
+
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:14%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:#FFFFFF;}
+
+</style>
+</svg>
+	
+	<div id="topwrap">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+							<img src="./data/designImages/logo.png" alt="로고이미지"/>
+						<span class="sub_name">경북대학교 경상대학 <em>경제통상학부</em></span>
+			</a>
+		</div>
+		<div class="topmn clearfix">		
+			<a href="http://knu.ac.kr/" target="_blank" class="top-dk">경북대학교</a>
+												<a href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509" class="top-dk top-login">로그인</a>
+													
+																		
+					</div>
+		</div>
+		<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+	</div>
+
+
+	<div id="gnb">	
+	<div id="gnbmn">
+			<nav id="menu">
+			<ul id="top1menu" class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=eco1624512514"  id="top1m1" title ='학부소개 > 학부현황 페이지로 이동합니다.'>학부소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=eco1624512514"  title ='학부현황 페이지로 이동합니다.'>학부현황</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=eco1624512526"  title ='학부연혁 페이지로 이동합니다.'>학부연혁</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=eco1624512531"  title ='교육이념 페이지로 이동합니다.'>교육이념</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=eco1624512537"  title ='비전·인재상·교육목표 페이지로 이동합니다.'>비전·인재상·교육목표</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=eco1624512544"  title ='학부소식 페이지로 이동합니다.'>학부소식</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=eco1624512549"  title ='학부사무실 페이지로 이동합니다.'>학부사무실</a></li>
+										<li id="top2m1m7"><a href="./sub.htm?nav_code=eco1624512557"  title ='찾아오시는 길 페이지로 이동합니다.'>찾아오시는 길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1624512566"  id="top1m2" title ='교수소개 > 전임교수 페이지로 이동합니다.'>교수소개</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="./sub.htm?nav_code=eco1624512566"  title ='전임교수 페이지로 이동합니다.'>전임교수</a></li>
+										<li id="top2m2m2"><a href="./sub.htm?nav_code=eco1624512577"  title ='초빙교수 페이지로 이동합니다.'>초빙교수</a></li>
+										<li id="top2m2m3"><a href="./sub.htm?nav_code=eco1691555014"  title ='명예교수 페이지로 이동합니다.'>명예교수</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1624512634"  id="top1m3" title ='학사안내 > 전공 페이지로 이동합니다.'>학사안내</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="./sub.htm?nav_code=eco1624512634"  title ='교과과정 페이지로 이동합니다.'>교과과정</a></li>
+										<li id="top2m3m2"><a href="https://ipsi1.knu.ac.kr/" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+										<li id="top2m3m3"><a href="https://knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target='_blank' title ='새창으로 학사일정 페이지가 열립니다.'>학사일정</a></li>
+										<li id="top2m3m4"><a href="./sub.htm?nav_code=eco1709684190"  title ='졸업요건 페이지로 이동합니다.'>졸업요건</a></li>
+										<li id="top2m3m5"><a href="./sub.htm?nav_code=eco1624512688"  title ='서식자료실 페이지로 이동합니다.'>서식자료실</a></li>
+										<li id="top2m3m6"><a href="./sub.htm?nav_code=eco1624512706"  title ='학부강의 페이지로 이동합니다.'>학부강의</a></li>
+										<li id="top2m3m7"><a href="./sub.htm?nav_code=eco1707876212"  title ='진로 로드맵 페이지로 이동합니다.'>진로 로드맵</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1624512732"  id="top1m4" title ='대학원 > 대학원소개 페이지로 이동합니다.'>대학원</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="./sub.htm?nav_code=eco1624512732"  title ='대학원소개 페이지로 이동합니다.'>대학원소개</a></li>
+										<li id="top2m4m2"><a href="./sub.htm?nav_code=eco1624512746"  title ='교과과정 페이지로 이동합니다.'>교과과정</a></li>
+										<li id="top2m4m3"><a href="./sub.htm?nav_code=eco1624512805"  title ='입학안내 페이지로 이동합니다.'>입학안내</a></li>
+										<li id="top2m4m4"><a href="./sub.htm?nav_code=eco1624512811"  title ='대학원서식 페이지로 이동합니다.'>대학원서식</a></li>
+										<li id="top2m4m5"><a href="./sub.htm?nav_code=eco1624512816"  title ='서식자료실 페이지로 이동합니다.'>서식자료실</a></li>
+										<li id="top2m4m6"><a href="./sub.htm?nav_code=eco1624512822"  title ='대학원강의 페이지로 이동합니다.'>대학원강의</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1624512871"  id="top1m5" title ='BK21 > 경제학과 BK21 공지사항 페이지로 이동합니다.'>BK21</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+										<li id="top2m5m1"><a href="https://econbk21.knu.ac.kr/" target='_blank' title ='새창으로 대학원 경제학과 페이지가 열립니다.'>대학원 경제학과</a></li>
+										<li id="top2m5m2"><a href="https://tradebk21.knu.ac.kr/" target='_blank' title ='새창으로 대학원 무역학과 페이지가 열립니다.'>대학원 무역학과</a></li>
+										<li id="top2m5m3"><a href="./sub.htm?nav_code=eco1624512871"  title ='경제학과 BK21 공지사항 페이지로 이동합니다.'>경제학과 BK21 공지사항</a></li>
+										<li id="top2m5m4"><a href="./sub.htm?nav_code=eco1624512878"  title ='무역학과 BK21 공지사항 페이지로 이동합니다.'>무역학과 BK21 공지사항</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1623370509"  id="top1m6" title ='게시판 > 학부 공지사항 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="./sub.htm?nav_code=eco1623370509"  title ='학부 공지사항 페이지로 이동합니다.'>학부 공지사항</a></li>
+										<li id="top2m6m2"><a href="./sub.htm?nav_code=eco1689659875"  title ='학생게시판 페이지로 이동합니다.'>학생게시판</a></li>
+										<li id="top2m6m3"><a href="./sub.htm?nav_code=eco1623370508"  title ='대학원 공지사항 페이지로 이동합니다.'>대학원 공지사항</a></li>
+										<li id="top2m6m4"><a href="./sub.htm?nav_code=eco1623370507"  title ='학부세미나 페이지로 이동합니다.'>학부세미나</a></li>
+										<li id="top2m6m5"><a href="./sub.htm?nav_code=eco1623370506"  title ='FAQ 페이지로 이동합니다.'>FAQ</a></li>
+										<li id="top2m6m6"><a href="./sub.htm?nav_code=eco1624512921"  title ='취업정보 페이지로 이동합니다.'>취업정보</a></li>
+										<li id="top2m6m7"><a href="./sub.htm?nav_code=eco1623370505"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+										<li id="top2m6m8"><a href="./sub.htm?nav_code=eco1624512926"  title ='특성화(CK)사업 페이지로 이동합니다.'>특성화(CK)사업</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eco1624512954"  id="top1m7" title ='English > General Information 페이지로 이동합니다.'>English</a>
+				
+					
+										<ul id="top2m7" class="depth2">
+										<li id="top2m7m1"><a href="./sub.htm?nav_code=eco1624512954"  title ='General Information 페이지로 이동합니다.'>General Information</a></li>
+										<li id="top2m7m2"><a href="./sub.htm?nav_code=eco1624512961"  title ='History 페이지로 이동합니다.'>History</a></li>
+										<li id="top2m7m3"><a href="./sub.htm?nav_code=eco1624512966"  title ='Mission 페이지로 이동합니다.'>Mission</a></li>
+										<li id="top2m7m4"><a href="./sub.htm?nav_code=eco1624512978"  title ='Programs 페이지로 이동합니다.'>Programs</a></li>
+										<li id="top2m7m5"><a href="./sub.htm?nav_code=eco1624513000"  title ='Faculty 페이지로 이동합니다.'>Faculty</a></li>
+										<li id="top2m7m6"><a href="./sub.htm?nav_code=eco1624513029"  title ='Community 페이지로 이동합니다.'>Community</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+
+			<!--sns 추가
+			-->
+
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(6,1);max_2menu=8;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../econ/data/designImages/SUBBG_1623394025');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"><div class="pattern-bg pattern01" style='opacity:0.08;'></div></div>
+
+
+<div id="svisual" style="min-height:340px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:904px;height:100px;left: 286px; top: 184px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">경제통상학부</p>
+	<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">세계를 향해 열려 있으며, 지역사회발전을 추구하며 최고의 인재 양성과 연구활동을 선도합니다.</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=eco1623370509'>게시판</a></li><li><a href='./sub.htm?nav_code=eco1623370509'>학부 공지사항</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%ED%95%99%EB%B6%80+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 학부 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fecon%2Fsub.htm%3Fnav_code%3Deco1623370509" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=eco1623370509" >학부 공지사항</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=eco1689659875" >학생게시판</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=eco1623370508" >대학원 공지사항</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=eco1623370507" >학부세미나</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=eco1623370506" >FAQ</a>
+							</li>
+						<li id="snb2m6"><a href="./sub.htm?nav_code=eco1624512921" >취업정보</a>
+							</li>
+						<li id="snb2m7"><a href="./sub.htm?nav_code=eco1623370505" >포토갤러리</a>
+							</li>
+						<li id="snb2m8"><a href="./sub.htm?nav_code=eco1624512926" >특성화(CK)사업</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(1,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>학부 공지사항</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="eco1623370509">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/econ/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			
+								<div class="board_search">
+						<form action="/HOME/econ/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+						<input type='hidden' name='code' value='XcWRlzvCuzi5'>
+						<input type='hidden' name='nav_code' value='eco1623370509'>
+						<input type="hidden" name="order_list" value="">
+						<input type="hidden" name="list_scale" value="">
+						<input type="hidden" name="view_cate" value="">
+
+						<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+						<button type="button" onclick="search01();return false;"><i class="fa fa-search"></i><span>검색</span></button>
+						</form>
+					</div>
+					<!-- <div class="board_info">
+						<div class="left">총 <em>2628</em>개의 글이 있습니다. (<em>1</em>/263 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/econ/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='eco1623370509'>
+							<input type='hidden' name='code' value='XcWRlzvCuzi5'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+
+
+					<div class="board_list">
+						<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+							<thead>
+								<tr>
+								<th scope="col" abbr="번호" style="width:50px;">번호</th>
+																<th scope="col" abbr="제목">제목</th>
+																<th scope="col" abbr="첨부" style="width:100px;">첨부</th>
+																								<th scope="col" abbr="작성자" style="width:200px" class="writer">작성자</th>
+																<th scope="col" abbr="작성일" style="width:100px;">작성일</th>
+																								<th scope="col" abbr="조회" style="width:80px;">조회</th>
+																								</tr>
+							</thead>
+							<tbody>
+
+
+			  								<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ5Mzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2025학년도 후기 졸업 2018~2022학년도 입학자 대상 교양 초과학점에 대한 교과구분 변경 신청 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ5Mzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-06-29</td>
+																								<td class="hit">4081</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ5MTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 1학기 성적처리 일정 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-06-08</td>
+																								<td class="hit">4152</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ3Mjcmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 학사일정</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ3Mjcmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2025-12-19</td>
+																								<td class="hit">5210</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ1MTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>통합정보시스템 졸업자가진단 프로그램 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2025-07-23</td>
+																								<td class="hit">5549</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTM5NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>경제통상학부 주전공 및 마이크로 모듈 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTM5NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2024-04-02</td>
+																								<td class="hit">9673</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTM4MzEmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>「경북대학교 학업성적 처리 규정」및 「경북대학교 수업관리 지침」일부개정에 따른 변경사항 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTM4MzEmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2024-01-08</td>
+																								<td class="hit">9137</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTM2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>공적결석자 출석인정 제도 안내(2025.1.1부터 적용)</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2023-09-06</td>
+																								<td class="hit">9091</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTM2OTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>부전공 신청 방법 안내 (차세대통합정보시스템에서 온라인 신청)</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTM2OTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2023-09-06</td>
+																								<td class="hit">10361</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTM0ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>경제통상학부 학번별 졸업요건</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTM0ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2023-03-20</td>
+																								<td class="hit">12721</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTMzMzImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>경제통상학부 현장실습 교육과정 지침</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2022-12-08</td>
+																								<td class="hit">10244</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTMxMzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>학생증 발급안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2022-09-01</td>
+																								<td class="hit">10400</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTI5Mzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>경제통상학부 전과 최소 요구 기준</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2022-05-03</td>
+																								<td class="hit">12126</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTg1NCZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>교양 이수지침 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2019-07-19</td>
+																								<td class="hit">145803</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTg0MiZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>(필독)지도교수 상담관련</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2019-07-11</td>
+																								<td class="hit">158880</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTc4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>[학사] 학사 학위 취득의 유예제 시행 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2019-04-29</td>
+																								<td class="hit">164284</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTc3NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>경제통상학부  복수전공 이수학점(경통 복수전공자 필독)</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">관리자</td>
+																<td class="date">2019-03-05</td>
+																								<td class="hit">187232</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTU0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>(필독)경제통상학부 졸업 자격 인정 요건</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTU0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjYyOCZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmY29kZT1YY1dSbHp2Q3V6aTUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">관리자</td>
+																<td class="date">2018-07-31</td>
+																								<td class="hit">176645</td>
+																								</tr>
+			
+											<tr>
+								<td class="num">2628</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내</a>								<em class='new'>새글</em>								</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUxMTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-30</td>
+																								<td class="hit">3</td>	
+																								</tr>
+												<tr>
+								<td class="num">2627</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjcmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 2학기 강의개선을 위한 중간설문 실시 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUxMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjcmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">6</td>	
+																								</tr>
+												<tr>
+								<td class="num">2626</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMDcmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjYmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 학생의료공제회 독감 예방접종비 지원 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUxMDcmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjYmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">16</td>	
+																								</tr>
+												<tr>
+								<td class="num">2625</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjUmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUxMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjUmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-21</td>
+																								<td class="hit">27</td>	
+																								</tr>
+												<tr>
+								<td class="num">2624</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwODImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjQmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 2학기 학생의료공제회비 2차 추가 납부 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUwODImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjQmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-16</td>
+																								<td class="hit">21</td>	
+																								</tr>
+												<tr>
+								<td class="num">2623</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwNzMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjMmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>[오늘 18:00] 경북대학교 개교 80주년 기념 복현금융경제포럼 시리즈: 제1차 — iM금융지주 황병우 회장 초청 강연</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-10</td>
+																								<td class="hit">81</td>	
+																								</tr>
+												<tr>
+								<td class="num">2622</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwNjImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjImdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 2학기 다문화가정 장학금 장학생 선발 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwNjImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjImdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-09</td>
+																								<td class="hit">24</td>	
+																								</tr>
+												<tr>
+								<td class="num">2621</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwNjEmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjEmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>2026학년도 2학기 수강정정 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUwNjEmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjEmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-09</td>
+																								<td class="hit">35</td>	
+																								</tr>
+												<tr>
+								<td class="num">2620</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwNTEmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjAmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>연체도서 반납 협조 요청</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-04</td>
+																								<td class="hit">27</td>	
+																								</tr>
+												<tr>
+								<td class="num">2619</td>
+																<td class="subject">
+								<a href='/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUwNDImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>학습관리시스템(LMS) 개편 및 주요 기능 개선 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUwNDImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">경제통상학부</td>
+																<td class="date">2026-09-03</td>
+																								<td class="hit">28</td>	
+																								</tr>
+											</tbody>
+						</table>
+					</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">															   
+				
+<strong>1</strong><a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='2 페이지'>2</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='3 페이지'>3</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='4 페이지'>4</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='5 페이지'>5</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='6 페이지'>6</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='7 페이지'>7</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='8 페이지'>8</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='9 페이지'>9</a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' title='10 페이지'>10</a>
+
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPVhjV1JsenZDdXppNSZuYXZfY29kZT1lY28xNjIzMzcwNTA5JnRhYmxlPWV4X2Jic19kYXRhX2Vjb24mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' class='next' title='다음 10페이지'><i class='fa fa-angle-right'></i><i class='fa fa-angle-right'></i><span>다음</span></a>
+<a href='/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTI2MjAmY29kZT1YY1dSbHp2Q3V6aTUmbmF2X2NvZGU9ZWNvMTYyMzM3MDUwOSZ0YWJsZT1leF9iYnNfZGF0YV9lY29uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' class='last' title='마지막 페이지'><i class='fa fa-angle-double-right'></i><i class='fa fa-angle-double-right'></i><span>마지막 페이지</span></a>
+						   
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						
+			</div>
+			<!-- //board_info -->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+	
+	<footer>
+	<div class="d_width clearfix">
+				<div class="f_cont">
+						<ul class="fmn clearfix">
+			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+			</ul>
+						<address>
+										<p>
+									[702-701] 
+													대구광역시 북구 대학로 80 국제경상관 105호 경북대학교 경제통상학부													 / T.053)950-5406(수업/학적),5407(입학/취업),5428(대학원/장학)													 / F.053)950-5429												</p>
+							
+				<p class="copyright">Copyright ⓒ 경북대학교 경상대학 <em>경제통상학부</em>. All rights Reserved.</p>
+										
+			<div class="fcnt">
+				Total : 336,997명 / Today : 79명
+			</div>
+
+
+							<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+									
+
+			</address>		
+		</div>
+
+				<div class="f_link">
+				
+								<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<select onchange="footer_link_go(this.value);" title="주요사이트">
+				<option value="">4단계 BK21사업 관련사이트</option>
+				<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+				<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+				<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+				<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+				<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+				<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+				<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+				<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+				<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+				<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+				<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+				<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+				<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+				<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+				<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+				<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+				<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+				<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+				<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+				<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+				<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+				<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+				<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+				<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+				<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+				<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+				<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+				<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+				<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+			</select>
+			<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+					
+		</div>
+			</div>
+	</footer>
+
+
+	
+
+
+<!-- //footer -->
+
+</body>
+</html>

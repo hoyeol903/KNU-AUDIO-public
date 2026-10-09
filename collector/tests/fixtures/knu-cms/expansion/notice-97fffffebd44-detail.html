@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  경북대학교 생활과학대학 아동학부 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="경북대학교 생활과학대학 아동학부" property="og:title"/>
+<meta content="경북대학교  경북대학교 생활과학대학 아동학부 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>경북대학교 생활과학대학 아동학부</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1671432908" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/knuchild; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:20%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:#FFFFFF;}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 생활과학대학 <em>아동학부</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&amp;mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0">로그인</a>
+<a href="http://enchild.knu.ac.kr" target="_blank">EN</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=knu1623378041" id="top1m1" title="학부소개 &gt; 교육목표 페이지로 이동합니다.">학부소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=knu1623378041" title="교육목표 페이지로 이동합니다.">교육목표</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=knu1623378059" title="학부연혁 페이지로 이동합니다.">학부연혁</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=knu1623378063" title="조직도 및 연락처 페이지로 이동합니다.">조직도 및 연락처</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=knu1623378077" title="교육시설 페이지로 이동합니다.">교육시설</a></li>
+<li id="top2m1m5"><a href="./sub.htm?nav_code=knu1623378091" title="찾아오시는길 페이지로 이동합니다.">찾아오시는길</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=knu1623378102" id="top1m2" title="교수소개 &gt; 전임교원 페이지로 이동합니다.">교수소개</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="./sub.htm?nav_code=knu1623378102" title="전임교원 페이지로 이동합니다.">전임교원</a></li>
+<li id="top2m2m2"><a href="./sub.htm?nav_code=knu1623378107" title="명예교수 페이지로 이동합니다.">명예교수</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=knu1623378280" id="top1m3" title="학사과정 &gt; 진로안내 페이지로 이동합니다.">학사과정</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1B07" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m3m2"><a href="https://ipsi1.knu.ac.kr/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m3m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m3m4"><a href="./sub.htm?nav_code=knu1623378280" title="진로안내 페이지로 이동합니다.">진로안내</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=knu1623378336" id="top1m4" title="대학원 &gt; 입학 및 졸업요건 페이지로 이동합니다.">대학원</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=21137" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m4m2"><a href="https://ipsi2.knu.ac.kr/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m4m3"><a href="./sub.htm?nav_code=knu1623378336" title="입학 및 졸업요건 페이지로 이동합니다.">입학 및 졸업요건</a></li>
+<li id="top2m4m4"><a href="./sub.htm?nav_code=knu1623378342" title="연구실소개 페이지로 이동합니다.">연구실소개</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=knu1623370362" id="top1m5" title="게시판 &gt; 학부 공지사항 페이지로 이동합니다.">게시판</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=knu1623370362" title="학부 공지사항 페이지로 이동합니다.">학부 공지사항</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=knu1623370359" title="대학원 공지사항 페이지로 이동합니다.">대학원 공지사항</a></li>
+<li id="top2m5m3"><a href="./sub.htm?nav_code=knu1623370361" title="자료실 페이지로 이동합니다.">자료실</a></li>
+<li id="top2m5m4"><a href="./sub.htm?nav_code=knu1623379655" title="관련사이트 페이지로 이동합니다.">관련사이트</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(5,1);max_2menu=5;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../knuchild/data/designImages/SUBBG_1626688002');background-size:cover;background-position:50% 0;background-repeat:no-repeat;height:340px;width:100%;z-index:1"><div class="pattern-bg pattern06" style="opacity:0.07;"></div></div>
+<div id="svisual" style="min-height:340px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:1041px;height:100px;left: 194px; top: 172px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">아동학부</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">아동발달 및 보육, 아동가족상담 및 교육, 아동 및 가족복지 전문인을 양성하고<br/>유아교육, 보육, 아동상담 분야의 교육과정을 심화 학습합니다.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=knu1623370362">게시판</a></li><li><a href="./sub.htm?nav_code=knu1623370362">학부 공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%ED%95%99%EB%B6%80+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 학부 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fknuchild%2Fsub.htm%3Fnav_code%3Dknu1623370362" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=knu1623370362">학부 공지사항</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=knu1623370359">대학원 공지사항</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=knu1623370361">자료실</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=knu1623379655">관련사이트</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>학부 공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<div class="board_view">
+<div class="title">2026학년도 2학기 응급처치 및 심폐소생술 실습 시행 안내</div>
+<input id="userid" name="userid" type="hidden" value=""/>
+<div class="desc clearfix">
+<dl>
+<dt>등록일</dt>
+<dd>2026-09-17</dd>
+<dt>작성자</dt>
+<dd>아동학부</dd>
+<dt>조회수</dt>
+<dd>39</dd>
+</dl>
+</div>
+<div class="cont">
+<!-- 내용부 첨부파일이 image 파일이면 view -->
+<p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">「</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">2026</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">년도 </span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">2</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">학기 응급처치 및 심폐소생술 실습 계획</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">」</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-size: 12pt;">을 다음과 같이 </span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">시행</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-size: 12pt;">하고자 하오니 </span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">기간 내 신청</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-size: 12pt;">하여 </span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-weight: bold; font-size: 12pt;">실습에 참여</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-size: 12pt;"> 바랍니다</span><span style="text-indent: -18pt; font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.5pt; font-size: 12pt;">.</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="text-indent: -18pt; font-family: 굴림; letter-spacing: -0.5pt; font-size: 12pt;"><br/></span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 161.5pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -161.5pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">가</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">신청대상</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">교직과정 이수예정자</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">사범대학</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">교육대학원 포함</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-size: 12pt;">) </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-weight: bold; font-size: 12pt;">※ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.7pt; font-weight: bold; font-size: 12pt;">휴학 및 수료생도 신청 가능</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">나</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">신청기간</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">: </span><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">2026. 9. 22.(</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">화</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">) ~ 9. 23.(</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">수</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">)</span></u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">, </span><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">9. 28.(</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">월</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">) ~ 9. 30.(</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">수</span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">), </span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">매일 </span></u><u><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-weight: bold; font-size: 12pt;">10:00 ~ 17:00</span></u></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; font-size: 12pt;">     </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; font-size: 12pt;">-</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;"> </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">주말 및 공휴일 제외</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">   </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">- </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">대상자 별 신청 일자가 상이 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">[(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">붙임 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">1) </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">참조</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255); font-size: 12pt;">]</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">다</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">신청방법</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">통합정보시스템</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">(<a href="https://knuin.knu.ac.kr)" target="_parent">https://knuin.knu.ac.kr)</a> </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">로그인 후 신청</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">    </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">- </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">메뉴</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">: [</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">통합정보시스템</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">-</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">교직</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">-</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">응급처치및심폐소생술실습</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">-</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">응급처치및심폐소생술실습신청</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -0.8pt; font-size: 12pt;">]</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">라</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">실습내용 및 이수기준</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">총 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">3</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">시간 이수</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">[</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">응급처치 및 심폐소생술 이론 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">+ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">실습</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">]</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 161.5pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -161.5pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">   </span><span style="font-family: 한양중고딕; font-weight: bold;"></span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">※ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">교원자격증 발급 기준</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">졸업 전 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">2</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">회 이수</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">학기 당 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">1</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">회 이수 가능</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">)</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">마</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">실습일시 및 장소</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">: 2026. 11. 9.(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">월</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">) ~ 11. 10.(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">화</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">), </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">글로벌플라자 경하홀</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">Ⅰ․Ⅱ</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 굴림;"></span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -2.3pt; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">바</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">협조기관</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">대구광역시 응급의료지원단</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">  </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">사</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">실습시간</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">대상자별 신청 일시</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">유의사항 등 세부계획</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">[</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">붙임 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">1]</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 0pt; font-size: 10pt; letter-spacing: 0pt; text-indent: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조;"><span style="font-family: 굴림; font-size: 12pt;"></span><span style="font-family: 굴림; font-weight: bold; font-size: 12pt;"></span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">아</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">. </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">추가 인정</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">대체실습</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-weight: bold; font-size: 12pt;">) </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">방법</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 43.5pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -43.5pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">    </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">❍ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">관련 대학장 주관으로 강사를 초빙하는 등 실습내용 및 이수기준에 맞는 추가 실습 운영 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">⇒ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">추후 실습자료 및 결과를 첨부하여 학사과로 인정 요청</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 42.4pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -42.4pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">    </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">❍ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.3pt; font-size: 12pt;">외부기관</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">대구광역시 응급의료지원단</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">대한적십자사</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">대한심폐소생협회</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">한국응급처치교육원 등</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.9pt; font-size: 12pt;">)</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.3pt; font-size: 12pt;">의</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-size: 12pt;"> </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-size: 12pt;">실습 내용을 검토한 후 이수기준에 적합한지 판단하여 인정 요청 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-weight: bold; font-size: 12pt;">※ </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-weight: bold; font-size: 12pt;">[</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-weight: bold; font-size: 12pt;">붙임 </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-weight: bold; font-size: 12pt;">2] </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: -1.1pt; font-weight: bold; font-size: 12pt;">참조</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 52.8pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -52.8pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">      </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">- </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">교육내용</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">: </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">심폐소생술</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">성인</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">‧</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">소아</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">‧</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">영아</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">), </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">기도폐쇄</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">, AED(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">자동제세동기</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">) </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">사용법 반드시 포함</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">, 3</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0.1pt; font-size: 12pt;">시간 이상 이론 및 실습</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 50.2pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -50.2pt;"><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">      </span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">- </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">이수자 명단</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">, </span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">이수증 등을 첨부하여 학사과로 인정 요청</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">(</span><span style="font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">이수증 발급 즉시</span><span style="font-family: 돋움체, DotumChe, AppleGothic; letter-spacing: 0pt; font-size: 12pt;">)</span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 50.2pt; font-size: 10pt; letter-spacing: 0pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -50.2pt;"><span style="font-family: 굴림; letter-spacing: 0pt; font-size: 12pt;"><br/></span></p><p style="line-height: 21.3333px; margin: 0pt 5pt 0pt 35.6pt; font-size: 10pt; text-align: justify; vertical-align: baseline; font-family: 한양신명조; text-indent: -35.6pt;"><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">아울러 </span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">2027. 2</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">월</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">, 2027. 8</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">월 졸업예정자</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">(</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">기 수료자 포함</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">)</span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;"> </span><span style="letter-spacing: -0.2pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">중 응급처치 및 심폐소생술</span><span style="letter-spacing: 0pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;"> </span><span style="letter-spacing: 0pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">실습을 충족하지 못한 학생들은 </span><span style="letter-spacing: 0pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-weight: bold; font-size: 12pt;">반드시 신청 및 참여</span><span style="letter-spacing: 0pt; text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt;">할 수 있도록 확인하여 주시기 바랍니다</span><span style="text-indent: -19.3pt; font-family: 돋움체, DotumChe, AppleGothic; font-size: 12pt; letter-spacing: -0.266667px;">.</span></p><div><span style="text-indent: -19.3pt; font-family: 굴림체; font-size: 12pt; letter-spacing: -0.266667px;"><br/></span></div>
+</div>
+<div class="attach">
+<ul>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJnNpdGVfY29kZT1rbnVjaGlsZCZjb2RlPXB1NnQ1N2NWRUdYVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&amp;download=h&amp;seq=0">2026학년도 2학기 응급처치 및 심폐소생술 실습 계획.hwp</a></li>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJnNpdGVfY29kZT1rbnVjaGlsZCZjb2RlPXB1NnQ1N2NWRUdYVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&amp;download=h&amp;seq=1">외부기관 대체 실습 프로그램.zip</a></li>
+</ul>
+</div>
+</div>
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/knuchild/sub.htm?mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJnNpdGVfY29kZT1rbnVjaGlsZCZjb2RlPXB1NnQ1N2NWRUdYVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/knuchild/sub.htm?nav_code=knu1623370362&bbs_view_edit=1&mode=edit&mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJnNpdGVfY29kZT1rbnVjaGlsZCZjb2RlPXB1NnQ1N2NWRUdYVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+<div class="btnarea">
+<div class="left">
+<a class="btn_d" href="#" onclick="boardPrint(1);return false;">프린트</a>
+</div>
+<div class="right">
+<a class="btn_d" href="/HOME/knuchild/sub.htm?mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJnNpdGVfY29kZT1rbnVjaGlsZCZjb2RlPXB1NnQ1N2NWRUdYVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==">목록</a>
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[41566] 
+													대구광역시 북구 대학로80(산격동) 경북대학교 생활과학대학 아동학부(아동가족학전공,아동학전공)사무실 214호													 / T.053-950-6210													 / F.053-950-6209												</p>
+<p class="copyright">Copyright ⓒ 경북대학교 생활과학대학 <em>아동학부</em>. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 119,666명 / Today : 24명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

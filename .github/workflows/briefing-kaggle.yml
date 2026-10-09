@@ -1,0 +1,224 @@
+name: Kaggle GPU 브리핑 생성
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '사용할 수집 자료 기준일 (비우면 최초 실행의 한국 날짜)'
+        required: false
+        type: string
+        default: ''
+      source_sha:
+        description: '브리핑에 사용할 저장소 commit SHA'
+        required: false
+        type: string
+        default: ''
+      resume_kernel:
+        description: '다른 실행에서 저장한 묶음을 이어갈 경우 Kaggle 커널 ID (같은 실행 재시도는 자동 복원)'
+        required: false
+        type: string
+        default: ''
+      publish:
+        description: '완료된 최신 음성을 앱에 자동 게시'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: knu-briefing-kaggle
+  cancel-in-progress: false
+
+jobs:
+  kaggle-briefing:
+    outputs:
+      artifact_id: ${{ steps.archive.outputs.artifact-id }}
+      failure_stage: ${{ steps.auth.outcome == 'failure' && 'Kaggle 인증·사용량 확인' || steps.submit.outcome == 'failure' && 'Kaggle 묶음 생성·저장' || '산출물 확인' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TZ: Asia/Seoul
+      PYTHONUNBUFFERED: '1'
+      KAGGLE_USERNAME: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      KERNEL_DIR: .cache/kaggle/kernel
+      EXPECTED_CONTEXT: .cache/kaggle/expected.json
+      KAGGLE_OUTPUT: .cache/kaggle/output
+      KAGGLE_LOGS: .cache/kaggle/kaggle-logs.txt
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.source_sha || github.sha }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: 고정 버전 Kaggle CLI 설치
+        run: python -m pip install --disable-pip-version-check -r requirements.txt 'kaggle==2.2.4' 'mutagen>=1.47,<2'
+      - name: 날짜와 최소 코드·자료 스냅샷 준비
+        id: package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_DAY: ${{ inputs.date }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          PUBLISH_REQUESTED: ${{ inputs.publish }}
+        run: |
+          day="$REQUESTED_DAY"
+          if [ -z "$day" ]; then
+            created_at="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" --jq .created_at)"
+            day="$(python -c 'from datetime import datetime; from zoneinfo import ZoneInfo; import sys; print(datetime.fromisoformat(sys.argv[1]).astimezone(ZoneInfo("Asia/Seoul")).date())' "$created_at")"
+          fi
+          mkdir -p .cache/kaggle
+          printf '%s\n' "$PUBLISH_REQUESTED" > .cache/kaggle/publish-requested.txt
+          source_sha="$(git rev-parse HEAD)"
+          python -m briefing.kaggle prepare \
+            --date "$day" --run-id "$RUN_ID" --run-attempt "$RUN_ATTEMPT" \
+            --github-sha "$source_sha" --username "$KAGGLE_USERNAME" \
+            --kernel-dir "$KERNEL_DIR" --expected "$EXPECTED_CONTEXT"
+          python -c 'import json, os; d=json.load(open(os.environ["EXPECTED_CONTEXT"])); f=open(os.environ["GITHUB_OUTPUT"],"a"); f.write("kernel_id="+d["kernel_id"]+"\n"); f.write("day="+d["day"]+"\n")'
+      - name: Kaggle 인증과 남은 사용량 확인
+        id: auth
+        run: kaggle quota
+      - name: Kaggle 음성 30개씩 저장하고 다음 묶음 생성
+        id: submit
+        env:
+          RESUME_KERNEL: ${{ inputs.resume_kernel }}
+        run: |
+          python -m briefing.kaggle_batch --expected "$EXPECTED_CONTEXT" \
+            --kernel-dir "$KERNEL_DIR" --output "$KAGGLE_OUTPUT" --logs "$KAGGLE_LOGS" \
+            --resume-kernel "$RESUME_KERNEL"
+      - name: 날짜·실행 ID·commit SHA·파일 해시 검증
+        run: python -m briefing.kaggle verify --output "$KAGGLE_OUTPUT/briefing-artifacts" --expected "$EXPECTED_CONTEXT"
+      - name: Kaggle 버전 실행정보 기록
+        env:
+          KERNEL_ID: ${{ steps.submit.outputs.kernel_id || steps.package.outputs.kernel_id }}
+          KERNEL_VERSION: ${{ steps.submit.outputs.kernel_version }}
+          SELECTED_DAY: ${{ steps.package.outputs.day }}
+        run: |
+          python - "$EXPECTED_CONTEXT" "$KERNEL_VERSION" <<'PY'
+          import json, pathlib, sys
+          path = pathlib.Path(sys.argv[1])
+          context = json.loads(path.read_text(encoding='utf-8'))
+          context['kernel_version'] = int(sys.argv[2])
+          path.write_text(json.dumps(context, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          printf 'kernel_id=%s\nkernel_version=%s\ndate=%s\n' "$KERNEL_ID" "$KERNEL_VERSION" "$SELECTED_DAY" > "$KAGGLE_OUTPUT/kaggle-run-info.txt"
+      - name: 실패한 Kaggle 진단 artifact 수집
+        if: failure() && steps.package.outputs.kernel_id != ''
+        continue-on-error: true
+        env:
+          KERNEL_ID: ${{ steps.submit.outputs.kernel_id || steps.package.outputs.kernel_id }}
+          KERNEL_VERSION: ${{ steps.submit.outputs.kernel_version }}
+        run: |
+          echo "Kaggle 실행 확인: https://www.kaggle.com/code/$KERNEL_ID"
+          if [ -n "$KERNEL_VERSION" ]; then
+            kaggle kernels output "$KERNEL_ID/$KERNEL_VERSION" --path "$KAGGLE_OUTPUT" \
+              --file-pattern '^briefing-artifacts/diagnostics/' --force > "$KAGGLE_LOGS" 2>&1
+          else
+            echo 'Kaggle가 버전 번호를 반환하지 않아 실행 산출물을 특정하지 못했습니다.' > "$KAGGLE_LOGS"
+          fi
+      - name: 비공개 검증 artifact 보관
+        if: always()
+        uses: actions/upload-artifact@v7
+        id: archive
+        with:
+          name: kaggle-briefing-${{ steps.package.outputs.day }}-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          if-no-files-found: ignore
+          include-hidden-files: true
+          path: |
+            .cache/kaggle/expected.json
+            .cache/kaggle/publish-requested.txt
+            .cache/kaggle/resume.json
+            .cache/kaggle/output/briefing-artifacts/**
+            .cache/kaggle/kaggle-logs.txt
+  publish:
+    needs: kaggle-briefing
+    if: inputs.publish && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    concurrency:
+      group: knu-collector-writer
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Seoul
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: 게시 검증 의존성 설치
+        run: python -m pip install -r requirements.txt 'mutagen>=1.47,<2'
+      - name: 검증된 GPU 결과 받기
+        uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ needs.kaggle-briefing.outputs.artifact_id }}
+          path: .cache/kaggle
+      - name: 최신 자료 확인 후 게시·커밋·배포 요청
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          output=.cache/kaggle/output/briefing-artifacts
+          expected=.cache/kaggle/expected.json
+          python -m briefing.kaggle publish --output "$output" --expected "$expected"
+          day="$(python -c 'import json; print(json.load(open(".cache/kaggle/expected.json"))["day"])')"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- output/app/data/briefing "data/runs/briefing-kaggle-$day.json"
+          if git diff --cached --quiet; then
+            echo '이미 게시된 결과입니다.'
+            exit 0
+          fi
+          git commit -m "Kaggle GPU 브리핑 $day 게시"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          python -m briefing.kaggle publish --output "$output" --expected "$expected"
+          git diff --exit-code -- output/app/data/briefing data/runs
+          git diff --cached --exit-code
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"
+  notify:
+    needs: [kaggle-briefing, publish]
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      GH_OWNER: ${{ github.repository_owner }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      FAILURE_STAGE: ${{ needs.kaggle-briefing.outputs.failure_stage }}
+      GENERATION_RESULT: ${{ needs.kaggle-briefing.result }}
+      PUBLICATION_RESULT: ${{ needs.publish.result }}
+      PUBLISH_REQUESTED: ${{ inputs.publish }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: 실패 목록과 진단 자료 받기
+        if: needs.kaggle-briefing.outputs.artifact_id != ''
+        uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ needs.kaggle-briefing.outputs.artifact_id }}
+          path: .cache/kaggle
+      - name: 실패 목록 메일 알림
+        if: always()
+        run: |
+          python -m briefing.failure_notice
+          if [ ! -s briefing-notice.md ]; then exit 0; fi
+          number=$(gh issue list --state open --search 'in:title "브리핑 실패 알림"' --limit 100 --json number,title -q '[.[] | select(.title == "브리핑 실패 알림")][0].number // empty')
+          if [ -z "$number" ]; then
+            gh issue create --title '브리핑 실패 알림' --body-file briefing-notice.md
+          else
+            gh issue comment "$number" --body-file briefing-notice.md
+          fi

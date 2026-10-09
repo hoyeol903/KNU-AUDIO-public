@@ -1,0 +1,20 @@
+{
+  "channel_id": "notice-6c1f8a512fa4",
+  "errors": [
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/korean/sub.htm?nav_code=kor1657071357 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106754a50>: Failed to resolve 'home.knu.ac.kr' ([Errno 8] nodename nor servname provided, or not known)\"))",
+      "source": "notice-6c1f8a512fa4",
+      "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
+    }
+  ],
+  "finished_at": "2026-09-30T20:25:28+09:00",
+  "initial_import": true,
+  "listed": 0,
+  "new": [],
+  "scope": "first-page",
+  "source_board_id": "knu-korean-kor1657071357",
+  "started_at": "2026-09-30T20:25:26+09:00",
+  "successful": 0,
+  "unchanged": [],
+  "updated": []
+}

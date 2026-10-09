@@ -1,0 +1,113 @@
+name: 완료된 Kaggle 음성 자동 게시
+
+"on":
+  workflow_run:
+    workflows: ['Kaggle GPU 브리핑 생성']
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: '완료 결과를 가져올 원래 GitHub 음성 실행 ID'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: kaggle-result-${{ inputs.run_id || github.event.workflow_run.id }}
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.head_branch == github.event.repository.default_branch &&
+       github.event.workflow_run.conclusion != 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    outputs:
+      artifact_id: ${{ steps.archive.outputs.artifact-id }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RUN_ID: ${{ inputs.run_id || github.event.workflow_run.id }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      KAGGLE_USERNAME: ${{ vars.KAGGLE_USERNAME || 'muyahoyeol' }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt 'kaggle==2.2.4' 'mutagen>=1.47,<2'
+      - name: 원래 실행과 게시 요청 확인
+        id: context
+        env:
+          MANUAL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          python -m briefing.kaggle_recover --run-id "$RUN_ID" --manual "$MANUAL"
+      - name: 검증된 완료 결과 보관
+        if: steps.context.outputs.ready == 'true'
+        uses: actions/upload-artifact@v7
+        id: archive
+        with:
+          name: recovered-kaggle-${{ env.RUN_ID }}
+          retention-days: 3
+          include-hidden-files: true
+          path: |
+            .cache/kaggle/expected.json
+            .cache/kaggle/output/briefing-artifacts/**
+  publish:
+    needs: recover
+    if: needs.recover.outputs.artifact_id != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    concurrency:
+      group: knu-collector-writer
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Seoul
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: 게시 검증 의존성 설치
+        run: python -m pip install -r requirements.txt 'mutagen>=1.47,<2'
+      - name: 검증된 GPU 결과 받기
+        uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ needs.recover.outputs.artifact_id }}
+          path: .cache/kaggle
+      - name: 최신 자료 확인 후 게시·커밋·배포 요청
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          output=.cache/kaggle/output/briefing-artifacts
+          expected=.cache/kaggle/expected.json
+          python -m briefing.kaggle publish --output "$output" --expected "$expected"
+          day="$(python -c 'import json; print(json.load(open(".cache/kaggle/expected.json"))["day"])')"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- output/app/data/briefing "data/runs/briefing-kaggle-$day.json"
+          if git diff --cached --quiet; then
+            echo '이미 게시된 결과입니다.'
+            exit 0
+          fi
+          git commit -m "Kaggle GPU 브리핑 $day 게시"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          python -m briefing.kaggle publish --output "$output" --expected "$expected"
+          git diff --exit-code -- output/app/data/briefing data/runs
+          git diff --cached --exit-code
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"

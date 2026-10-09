@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 경상대학 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 경상대학" />
+<meta property="og:description" content="경북대학교  경북대학교 경상대학 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 경상대학</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1743396253" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/biz; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:11%} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(0, 0, 0);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+</style>
+</svg>
+<!-- header -->
+<header class="h-fix">
+	<div id="topwrap">		
+		<div class="d_width clearfix">
+		<div class="toplogo">
+			<a href="http://knu.ac.kr/" target="_blank"><img src="../data/img/logo_sm.png" alt="로고이미지"/></a>
+		</div>
+		<div class="topmn clearfix">
+			<span class="top-link">
+				<select onchange="window.open(value,'_blank');" title="경북대학교 대학홈페이지">
+					<option value="">경북대학교 대학홈페이지</option>
+						<option value="http://humanities.knu.ac.kr/" title="새창으로 인문대학 홈페이지가 열립니다.">인문대학</option>
+						<option value="http://social.knu.ac.kr/" title="새창으로 사회과학대학 홈페이지가 열립니다.">사회과학대학</option>
+						<option value="http://cns.knu.ac.kr/" title="새창으로 자연과학대학 홈페이지가 열립니다.">자연과학대학</option>
+						<option value="http://cec.knu.ac.kr/" title="새창으로 경상대학 홈페이지가 열립니다.">경상대학</option>
+						<option value="http://eng.knu.ac.kr/" title="새창으로 공과대학 홈페이지가 열립니다.">공과대학</option>
+						<option value="http://cite.knu.ac.kr/" title="새창으로 IT대학 홈페이지가 열립니다.">IT대학</option>
+						<option value="http://cals.knu.ac.kr/" title="새창으로 농업생명과학대학 홈페이지가 열립니다.">농업생명과학대학</option>
+						<option value="http://mvarts.knu.ac.kr/" title="새창으로 예술대학 홈페이지가 열립니다.">예술대학</option>
+						<option value="http://knutc.knu.ac.kr/" title="새창으로 사범대학 홈페이지가 열립니다.">사범대학</option>
+						<option value="http://med.knu.ac.kr/" title="새창으로 의과대학 홈페이지가 열립니다.">의과대학</option>
+						<option value="http://dent.knu.ac.kr/" title="새창으로 치과대학 홈페이지가 열립니다.">치과대학</option>
+						<option value="http://vet.knu.ac.kr/" title="새창으로 수의과대학 홈페이지가 열립니다.">수의과대학</option>
+						<option value="http://cohe.knu.ac.kr/" title="새창으로 생활과학대학 홈페이지가 열립니다.">생활과학대학</option>
+						<option value="http://nurs.knu.ac.kr/" title="새창으로 간호대학 홈페이지가 열립니다.">간호대학</option>
+						<option value="http://pharmacy.knu.ac.kr/" title="새창으로 약학대학 홈페이지가 열립니다.">약학대학</option>
+						<option value="http://cee.knu.ac.kr/" title="새창으로 생태환경대학 홈페이지가 열립니다.">생태환경대학</option>
+						<option value="http://cst.knu.ac.kr/" title="새창으로 과학기술대학 홈페이지가 열립니다.">과학기술대학</option>
+						<option value="http://gls.knu.ac.kr/" title="새창으로 글로벌인재학부 홈페이지가 열립니다.">글로벌인재학부</option>
+						<option value="http://puad.knu.ac.kr/" title="새창으로 행정학부 홈페이지가 열립니다.">행정학부</option>
+						<option value="http://udm.knu.ac.kr/" title="새창으로 자율전공부 홈페이지가 열립니다.">자율전공부</option>
+						<option value="http://tbudm.knu.ac.kr/" title="새창으로 과학기술생명자원자율학부 홈페이지가 열립니다.">과학기술생명자원자율학부</option>
+						<option value="http://shw.knu.ac.kr/" title="새창으로 보건복지학부 홈페이지가 열립니다.">보건복지학부</option>
+						<option value="http://grad.knu.ac.kr" title="새창으로 일반대학원 홈페이지가 열립니다.">일반대학원</option>
+						<option value="http://med.knu.ac.kr/" title="새창으로 의학전문대학원 홈페이지가 열립니다.">의학전문대학원</option>
+						<option value="http://dent.knu.ac.kr/" title="새창으로 치의학전문대학원 홈페이지가 열립니다.">치의학전문대학원</option>
+						<option value="http://lawschool.knu.ac.kr/" title="새창으로 법학전문대학원 홈페이지가 열립니다.">법학전문대학원</option>
+						<option value="http://gse.knu.ac.kr/" title="새창으로 교육대학원 홈페이지가 열립니다.">교육대학원</option>
+						<option value="http://gspa.knu.ac.kr/" title="새창으로 행정대학원 홈페이지가 열립니다.">행정대학원</option>
+						<option value="http://cec.knu.ac.kr/main01.asp" title="새창으로 경영대학원 홈페이지가 열립니다.">경영대학원</option>
+						<option value="http://health.knu.ac.kr/" title="새창으로 보건대학원 홈페이지가 열립니다.">보건대학원</option>
+						<option value="http://ind.knu.ac.kr/" title="새창으로 산업대학원 홈페이지가 열립니다.">산업대학원</option>
+						<option value="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_01&amp;menu_idx=41" title="새창으로 농업생명융합대학원 홈페이지가 열립니다.">농업생명융합대학원</option>
+						<option value="http://gsis.knu.ac.kr/" title="새창으로 국제대학원 홈페이지가 열립니다.">국제대학원</option>
+						<option value="http://social.knu.ac.kr/kor/subpage.php?Pcode=About&amp;Ccode=06&amp;PageNum=010501" title="새창으로 정책정보대학원 홈페이지가 열립니다.">정책정보대학원</option>
+						<option value="" title="새창으로 수사과학대학원 홈페이지가 열립니다.">수사과학대학원</option>
+						<option value="http://seoksa.knu.ac.kr/" title="새창으로 과학기술대학원 홈페이지가 열립니다.">과학기술대학원</option>
+					
+				</select>
+			</span>
+														<a href="https://home.knu.ac.kr/sso/business.php" class="top-dk top-login"><i class="far fa-user mrp5"></i>로그인</a>
+																			<a href="./sub.htm?nav_code=biz1623200441" class="top-nav"><i class="fas fa-bars mrp5"></i> 사이트맵</a>
+										
+									
+
+											</div>
+		</div>
+	</div>
+
+
+	<div id="gnb">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+									<img src="./data/designImages/logo.png" alt="로고이미지"/>
+								<span class="sub_name">(구)경상대학</span>
+			</a>
+		</div>
+		</div>
+	<div id="gnbmn">
+			<nav>
+			<ul class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=biz1623215203"  id="top1m1" title ='대학소개 > 학장인사 페이지로 이동합니다.'>대학소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=biz1623215203"  title ='학장인사 페이지로 이동합니다.'>학장인사</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=biz1623215208"  title ='대학개요 페이지로 이동합니다.'>대학개요</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=biz1623215217"  title ='대학연혁 페이지로 이동합니다.'>대학연혁</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=biz1623215222"  title ='조직도 및 연락처 페이지로 이동합니다.'>조직도 및 연락처</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=biz1623215500"  title ='역대학장 페이지로 이동합니다.'>역대학장</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=biz1623215511"  title ='찾아오시는길 페이지로 이동합니다.'>찾아오시는길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="https://ipsi1.knu.ac.kr/" target='_blank' id="top1m2" title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a>
+				
+					
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=biz1623200450"  id="top1m3" title ='학부/학과 페이지로 이동합니다.'>학부/학과</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="https://econ.knu.ac.kr/" target='_blank' title ='새창으로 경제통상학부 페이지가 열립니다.'>경제통상학부</a></li>
+										<li id="top2m3m2"><a href="https://biz.knu.ac.kr/" target='_blank' title ='새창으로 경영학부 페이지가 열립니다.'>경영학부</a></li>
+										<li id="top2m3m3"><a href="./sub.htm?nav_code=biz1740126423"  title ='자율학부 페이지로 이동합니다.'>자율학부</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="https://mba.knu.ac.kr/" target='_blank' id="top1m4" title ='새창으로 경영대학원 페이지가 열립니다.'>경영대학원</a>
+				
+					
+									</li>
+								
+				<li><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03&menu_idx=44" target='_blank' id="top1m5" title ='새창으로 학사 페이지가 열립니다.'>학사</a>
+				
+					
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=biz1623215819"  id="top1m6" title ='연구 페이지로 이동합니다.'>연구</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="http://iac.knu.ac.kr/iachome/" target='_blank' title ='새창으로 산학협력단 페이지가 열립니다.'>산학협력단</a></li>
+										<li id="top2m6m2"><a href="https://rieba.knu.ac.kr/" target='_blank' title ='새창으로 경제경영연구소 페이지가 열립니다.'>경제경영연구소</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=biz1623200446"  id="top1m7" title ='게시판 > 공지사항 페이지로 이동합니다.' class="on">게시판</a>
+				
+					
+										<ul id="top2m7" class="depth2">
+										<li id="top2m7m1"><a href="./sub.htm?nav_code=biz1623200446"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+										<li id="top2m7m2"><a href="./sub.htm?nav_code=biz1623200445"  title ='피플&이슈 페이지로 이동합니다.'>피플&이슈</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(7,1);max_2menu=6;</script>
+<!-- //header -->
+
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../biz/data/designImages/SUBBG_1623304999');background-size:cover;background-position:50% 100%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"></div>
+
+
+<div id="svisual" style="min-height:340px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:726px;height:100px;left: 0px; top: 187px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit">경상대학</p>
+	<p class="txt">경상대학은 국가경제 발전과 그 바탕이 되는 기업의 경영을 위한<br> 유능한 인재를 육성함을 목적으로 하고 있습니다!</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=biz1623200446'>게시판</a></li><li><a href='./sub.htm?nav_code=biz1623200446'>공지사항</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fbiz%2Fsub.htm%3Fnav_code%3Dbiz1623200446" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=biz1623200446" >공지사항</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=biz1623200445" >피플&이슈</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(1,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>공지사항</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="biz1623200446">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/biz/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			
+								<div class="board_search">
+						<form action="/HOME/biz/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+						<input type='hidden' name='code' value='ZljnoAYivA8u'>
+						<input type='hidden' name='nav_code' value='biz1623200446'>
+						<input type="hidden" name="order_list" value="">
+						<input type="hidden" name="list_scale" value="">
+						<input type="hidden" name="view_cate" value="">
+
+						<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+						<button type="button" onclick="search01();return false;"><i class="fa fa-search"></i><span>검색</span></button>
+						</form>
+					</div>
+					<!-- <div class="board_info">
+						<div class="left">총 <em>0</em>개의 글이 있습니다. (<em>1</em>/0 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/biz/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='biz1623200446'>
+							<input type='hidden' name='code' value='ZljnoAYivA8u'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+
+
+					<div class="board_list">
+						<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+							<thead>
+								<tr>
+								<th scope="col" abbr="번호" style="width:50px;">번호</th>
+																<th scope="col" abbr="제목">제목</th>
+																<th scope="col" abbr="첨부" style="width:100px;">첨부</th>
+																								<th scope="col" abbr="작성자" style="width:200px" class="writer">작성자</th>
+																<th scope="col" abbr="작성일" style="width:100px;">작성일</th>
+																								<th scope="col" abbr="조회" style="width:80px;">조회</th>
+																								</tr>
+							</thead>
+							<tbody>
+
+
+			  
+											<tr>
+								<td scope="row" colspan='6' class="tac"><div class="list_nodata">등록된 내용이 없습니다.</div></td>
+								</tr>
+										</tbody>
+						</table>
+					</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">															   
+				<strong>1</strong>						   
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						
+			</div>
+			<!-- //board_info -->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+	
+	<footer>
+	<div class="d_width clearfix">
+				<div class="f_cont">
+						<ul class="fmn clearfix">
+			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+			</ul>
+						<address>
+										<p>
+									[41566] 
+													우)41566 대구광역시 북구 대학로80(산격동) 경북대학교 국제경상관 227호  													 / T.053-950-3312~3320													 / F.053-950-5405												</p>
+							
+				<p class="copyright">Copyright ⓒ 경상대학. All rights Reserved.</p>
+										
+			<div class="fcnt">
+				Total : 75,270명 / Today : 0명
+			</div>
+
+
+							<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+									
+
+			</address>		
+		</div>
+
+				<div class="f_link">
+				
+								<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<select onchange="footer_link_go(this.value);" title="주요사이트">
+				<option value="">4단계 BK21사업 관련사이트</option>
+				<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+				<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+				<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+				<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+				<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+				<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+				<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+				<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+				<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+				<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+				<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+				<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+				<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+				<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+				<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+				<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+				<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+				<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+				<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+				<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+				<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+				<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+				<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+				<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+				<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+				<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+				<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+				<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+				<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+			</select>
+			<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+					
+		</div>
+			</div>
+	</footer>
+
+
+	
+
+
+<!-- //footer -->
+
+</body>
+</html>

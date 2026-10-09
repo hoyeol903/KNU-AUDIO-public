@@ -1,0 +1,57 @@
+{
+  "channels": [
+    {
+      "channel_id": "sample-notice",
+      "meals": [],
+      "notices": [
+        {
+          "body": "연결 확인용 가상 신청 마감: 2026. 10. 4.",
+          "channel_id": "sample-notice",
+          "dday": 3,
+          "deadline": "2026-10-04",
+          "id": "sample-board:2",
+          "posted_at": "2026-09-29",
+          "reason": "reminder",
+          "source": "샘플 학과 공지 (실제 공지 아님)",
+          "title": "샘플: 마감 3일 전 공지",
+          "url": "https://example.com/notices/2"
+        },
+        {
+          "body": "연결 확인용 가상 공지입니다.",
+          "channel_id": "sample-notice",
+          "dday": null,
+          "deadline": null,
+          "id": "sample-board:1",
+          "posted_at": "2026-10-01",
+          "reason": "new",
+          "source": "샘플 학과 공지 (실제 공지 아님)",
+          "title": "샘플: 오늘 새로 발견한 공지",
+          "url": "https://example.com/notices/1"
+        }
+      ]
+    }
+  ],
+  "collected_at": "2026-10-01T06:00:00+09:00",
+  "date": "2026-10-01",
+  "errors": [
+    {
+      "message": "날씨 수집은 아직 구현되지 않았습니다",
+      "source": "weather"
+    },
+    {
+      "message": "학식 수집은 아직 구현되지 않았습니다",
+      "source": "meals"
+    },
+    {
+      "message": "학사일정 수집은 아직 구현되지 않았습니다",
+      "source": "schedule"
+    }
+  ],
+  "schedule": [],
+  "weather": {
+    "rain_prob": null,
+    "summary": null,
+    "temp_max": null,
+    "temp_min": null
+  }
+}

@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 인문대학 영어영문학과 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 인문대학 영어영문학과" />
+<meta property="og:description" content="경북대학교  경북대학교 인문대학 영어영문학과 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 인문대학 영어영문학과</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1753319848" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/english; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+
+
+
+
+
+
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:17%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(0, 0, 0);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+	
+	<div id="topwrap">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+							<img src="./data/designImages/logo.png" alt="로고이미지"/>
+						<span class="sub_name">경북대학교 인문대학 <em>영어영문학과</em></span>
+			</a>
+		</div>
+		<div class="topmn clearfix">		
+			<a href="http://knu.ac.kr/" target="_blank" class="top-dk">경북대학교</a>
+												<a href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9" class="top-dk top-login">로그인</a>
+													
+																				<a href="https://enenglish.knu.ac.kr/" target='_blank'>ENGLISH</a>
+										
+					</div>
+		</div>
+		<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+	</div>
+
+
+	<div id="gnb">	
+	<div id="gnbmn">
+			<nav id="menu">
+			<ul id="top1menu" class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=eng1621851281"  id="top1m1" title ='학과안내 > 교육목표 페이지로 이동합니다.'>학과안내</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=eng1621851281"  title ='교육목표 페이지로 이동합니다.'>교육목표</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=eng1621851317"  title ='연혁 페이지로 이동합니다.'>연혁</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=eng1621851386"  title ='교수진 페이지로 이동합니다.'>교수진</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=eng1621851397"  title ='강사 페이지로 이동합니다.'>강사</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=eng1628559001"  title ='명예교수 페이지로 이동합니다.'>명예교수</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=eng1621851410"  title ='우리 학과는 페이지로 이동합니다.'>우리 학과는</a></li>
+										<li id="top2m1m7"><a href="./sub.htm?nav_code=eng1621851449"  title ='찾아오는 길 페이지로 이동합니다.'>찾아오는 길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eng1621851490"  id="top1m2" title ='학부 > 교육과정 페이지로 이동합니다.'>학부</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="https://ipsi1.knu.ac.kr/" target='_blank' title ='새창으로 입학 페이지가 열립니다.'>입학</a></li>
+										<li id="top2m2m2"><a href="./sub.htm?nav_code=eng1621851490"  title ='교육과정 페이지로 이동합니다.'>교육과정</a></li>
+										<li id="top2m2m3"><a href="./sub.htm?nav_code=eng1621852149"  title ='학생활동 페이지로 이동합니다.'>학생활동</a></li>
+										<li id="top2m2m4"><a href="./sub.htm?nav_code=eng1621852173"  title ='학부공지 페이지로 이동합니다.'>학부공지</a></li>
+										<li id="top2m2m5"><a href="./sub.htm?nav_code=eng1621852181"  title ='장학 페이지로 이동합니다.'>장학</a></li>
+										<li id="top2m2m6"><a href="./sub.htm?nav_code=eng1621852188"  title ='행사 페이지로 이동합니다.'>행사</a></li>
+										<li id="top2m2m7"><a href="./sub.htm?nav_code=eng1695284149"  title ='교직과정 페이지로 이동합니다.'>교직과정</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eng1621852230"  id="top1m3" title ='대학원 > 교육과정 페이지로 이동합니다.'>대학원</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="https://ipsi2.knu.ac.kr/" target='_blank' title ='새창으로 입학 페이지가 열립니다.'>입학</a></li>
+										<li id="top2m3m2"><a href="./sub.htm?nav_code=eng1740705870"  title ='학사안내 페이지로 이동합니다.'>학사안내</a></li>
+										<li id="top2m3m3"><a href="./sub.htm?nav_code=eng1621852230"  title ='교육과정 페이지로 이동합니다.'>교육과정</a></li>
+										<li id="top2m3m4"><a href="./sub.htm?nav_code=eng1621852239"  title ='대학원공지 페이지로 이동합니다.'>대학원공지</a></li>
+										<li id="top2m3m5"><a href="./sub.htm?nav_code=eng1621852248"  title ='논문 페이지로 이동합니다.'>논문</a></li>
+										<li id="top2m3m6"><a href="./sub.htm?nav_code=eng1621852257"  title ='장학 페이지로 이동합니다.'>장학</a></li>
+										<li id="top2m3m7"><a href="./sub.htm?nav_code=eng1621852276"  title ='행사 페이지로 이동합니다.'>행사</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eng1621573430"  id="top1m4" title ='학과/동문소식 > 학과/동문소식 페이지로 이동합니다.'>학과/동문소식</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="./sub.htm?nav_code=eng1621573430"  title ='학과/동문소식 페이지로 이동합니다.'>학과/동문소식</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eng1621852323"  id="top1m5" title ='취업정보 > 취업정보 페이지로 이동합니다.'>취업정보</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+										<li id="top2m5m1"><a href="./sub.htm?nav_code=eng1621852323"  title ='취업정보 페이지로 이동합니다.'>취업정보</a></li>
+										<li id="top2m5m2"><a href="./sub.htm?nav_code=eng1621852333"  title ='취업사례 페이지로 이동합니다.'>취업사례</a></li>
+										<li id="top2m5m3"><a href="./sub.htm?nav_code=eng1621852343"  title ='졸업 후 진로 페이지로 이동합니다.'>졸업 후 진로</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=eng1621573426"  id="top1m6" title ='게시판 > 자료실 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="./sub.htm?nav_code=eng1621573426"  title ='자료실 페이지로 이동합니다.'>자료실</a></li>
+										<li id="top2m6m2"><a href="./sub.htm?nav_code=eng1622100307"  title ='관련사이트 페이지로 이동합니다.'>관련사이트</a></li>
+										<li id="top2m6m3"><a href="./sub.htm?nav_code=eng1621573423"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+
+			<!--sns 추가
+			-->
+
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(2,4);max_2menu=7;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../english/data/designImages/SUBBG_1622093429');background-size:cover;background-position:100% 50%;background-repeat:no-repeat;height:340px;background-color:rgba(144, 209, 249, 0);width:100%;z-index:1"></div>
+
+
+<div id="svisual" style="min-height:340px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:960px;height:100px;left: 0px; top: 171px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">영어영문학과</p>
+	<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">영미문화권의 역사와 문화를 올바르게 이해하며, 인문학적 교양과 사고력을 기르도록 할 뿐 아니라,<br> 21세기 국제화시대의 주역이 될 수 있는 창의적이고 유능한 국제적 감각의 인재를 양성하는 것을 목표로 하고 있다.</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=eng1621851490'>학부</a></li><li><a href='./sub.htm?nav_code=eng1621852173'>학부공지</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%ED%95%99%EB%B6%80+%3E+%ED%95%99%EB%B6%80%EA%B3%B5%EC%A7%80&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=학부 > 학부공지&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fenglish%2Fsub.htm%3Fnav_code%3Deng1621852173" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">학부</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="https://ipsi1.knu.ac.kr/" target='_blank'>입학</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=eng1621851490" >교육과정</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=eng1621852149" >학생활동</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=eng1621852173" >학부공지</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=eng1621852181" >장학</a>
+							</li>
+						<li id="snb2m6"><a href="./sub.htm?nav_code=eng1621852188" >행사</a>
+							</li>
+						<li id="snb2m7"><a href="./sub.htm?nav_code=eng1695284149" >교직과정</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(4,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>학부공지</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+
+<div class="board_view">
+	<div class="title">★★군 휴학생에 대한 재이수 제도 적용 유예 알림 및 군휴학생 재이수 신청서 제출 재안내(수정)[2/14(금)-2/28(금)까지]</div>
+	<input type="hidden" name="userid" id="userid" value="">
+		<div class="desc clearfix">
+		<dl>
+				<dt>등록일</dt>
+		<dd>2020-02-20</dd>
+				<dt>작성자</dt>
+		<dd>영어영문학과</dd>
+		<dt>조회수</dt>
+		<dd>132</dd>
+		</dl>
+	</div>
+	
+	<div class="cont">
+		<!-- 내용부 첨부파일이 image 파일이면 view -->
+		<p class="1" style="margin: 0px; text-align: left; line-height: 130%; letter-spacing: 0pt; font-size: 9pt; font-weight: bold; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림" mousey="7" mousex="1">군 휴학생에 대한 재이수 제도 적용 유예 알림 및 군휴학생 재이수 신청서 제출 <span style="font-size: 14pt"><font style="background-color: #ffd9ec">재안내</font></span></span><font style="background-color: #ffd9ec"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">(</span><span style="font-size: 14pt; font-weight: bold; mso-fareast-font-family: 굴림">수정</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"><span style="font-size: 14pt">)</span></span></font></p>
+<p class="1" style="margin: 0px; text-align: left; line-height: 130%; letter-spacing: 0pt; font-size: 9pt; font-weight: bold; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"></span>&nbsp;</p>
+<p class="1" style="margin: 0px; text-align: left; line-height: 130%; letter-spacing: -0.4pt; font-size: 9pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 97%; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1. </span><span style="letter-spacing: -0.4pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">관련</span></p>
+<p class="0" style="letter-spacing: 0pt; font-size: 9pt; margin-right: 5pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: -0.4pt; font-family: 굴림; font-size: 9pt; mso-font-width: 97%"></span><span style="letter-spacing: -0.4pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">가</span><span style="letter-spacing: -0.4pt; font-family: 굴림; font-size: 9pt; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">.</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">「</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">경북대학교 수업관리 지침</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">」</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">제</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">17</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">조</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">(</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">재이수 수강신청</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">)</span></p>
+<p class="0" style="letter-spacing: 0pt; font-size: 9pt; margin-right: 5pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">나</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">.</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">「</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학업성적처리규정</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">」</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">제</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">3</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">조의</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2(</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">재이수</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">)</span></p>
+<p class="0" style="letter-spacing: 0pt; font-size: 9pt; margin-right: 5pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">다</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학사과</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">-1687(2020.02.10.)</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">「</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">군 휴학생에 대한 개정 재이수 규정 적용 유예</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">(</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">안</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">)</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">」</span></p>
+<p class="0" style="text-indent: -35.1pt; letter-spacing: 0pt; font-size: 9pt; margin-right: 5pt; margin-left: 35.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">라</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학사과</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">-1715(2020.02.11.)</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">「</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">군 휴학생에 대한 개정 재이수 규정 적용 유예 알림 및 군휴학생 재이수 신청서 제출 안내</span><span style="letter-spacing: 0pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">」</span></p>
+<p class="0" style="text-indent: -17.1pt; font-size: 9pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span>&nbsp;</p>
+<p class="0" style="text-indent: -17.1pt; letter-spacing: -0.8pt; font-size: 9pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 97%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">위와 </span><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">관련하여</span><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 97%"> </span><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2020</span><span style="letter-spacing: -0.8pt; font-size: 9pt; font-weight: bold; mso-font-width: 97%; mso-fareast-font-family: 굴림">학년도 </span><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span><span style="letter-spacing: -0.8pt; font-size: 9pt; font-weight: bold; mso-font-width: 97%; mso-fareast-font-family: 굴림">학기 </span><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">‘</span><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">군 휴학생에 대한 </span><span style="letter-spacing: 0pt; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">「</span><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">개정된 재이수 제도</span><span style="letter-spacing: 0pt; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">」</span><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">적용 유예</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">’ </span><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">시행</span><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">을 붙임과 같이 재안내 드리오니<br />&nbsp;</span><u style="text-underline: #000000 single"><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">교과목 담당교수에게 관련 내용 안내</span></u><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; mso-font-width: 97%"> </span><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">및 </span><u style="text-underline: #000000 single"><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">기한 내 에해당 학생들은 신청</span></u><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 97%; mso-fareast-font-family: 굴림">하여 주시기 바랍니다</span><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">.</span></p>
+<p class="0" style="text-indent: -17.1pt; letter-spacing: -0.8pt; font-size: 9pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 97%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: -0.8pt; font-family: 굴림; font-size: 9pt; mso-font-width: 97%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"></span><strong><span style="font-size: 9pt; mso-fareast-font-family: 굴림"><span style="font-size: 12pt">가</span></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 12pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림"><span style="font-size: 12pt">주요내용</span></span></strong></p>
+<p class="0" style="text-indent: -17.1pt; letter-spacing: -0.8pt; font-size: 9pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 97%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-size: 9pt; mso-fareast-font-family: 굴림">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">내 용</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">:</span><span style="letter-spacing: -0.3pt; font-family: 굴림; font-size: 9pt"> </span><span style="letter-spacing: -1.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">재</span><span style="letter-spacing: -1.4pt; font-size: 9pt; mso-fareast-font-family: 굴림">이수 개정 규정 시행 유예기간</span><span style="letter-spacing: -1.4pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">(‘18. 1</span><span style="letter-spacing: -1.4pt; font-size: 9pt; mso-fareast-font-family: 굴림">학기 </span><span style="letter-spacing: -1.4pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">~ ’19. 2</span><span style="letter-spacing: -1.4pt; font-size: 9pt; mso-fareast-font-family: 굴림">학기</span><span style="letter-spacing: -1.4pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">) </span><span style="letter-spacing: -1.4pt; font-size: 9pt; mso-fareast-font-family: 굴림">중 군 입대 </span><span style="letter-spacing: -1.2pt; font-size: 9pt; mso-fareast-font-family: 굴림">휴학자에 대한 재이수 기회 부여<br /></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">적용대상</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: </span><span style="letter-spacing: -0.1pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2018</span><span style="letter-spacing: -0.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">학년도 </span><span style="letter-spacing: -0.1pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span><span style="letter-spacing: -0.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">학기 </span><span style="letter-spacing: -0.1pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">~ 2019</span><span style="letter-spacing: -0.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">학년도 </span><span style="letter-spacing: -0.1pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2</span><span style="letter-spacing: -0.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">학기 내에 </span><span style="letter-spacing: -0.1pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span><span style="letter-spacing: -0.1pt; font-size: 9pt; mso-fareast-font-family: 굴림">학기 이상 군 휴학자</span><span style="font-family: 굴림; font-size: 9pt"> <br /></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">3) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">운영기간</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: 2020</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학년도 </span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학기 </span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">~ 2022</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학년도 </span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2</span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">학기<br /></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">4) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">적용기준</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">종전 재이수 기준 적용<span style="font-size: 18pt"></span></span></p><span style="font-family: 굴림; font-size: 9pt"></span> 
+<p style="margin: 0px"></p>
+<table style="border-right-color: currentColor; border-bottom-color: currentColor; border-left-color: currentColor; border-right-width: medium; border-bottom-width: medium; border-left-width: medium; border-right-style: none; border-bottom-style: none; border-left-style: none; border-collapse: collapse; mso-table-overlap: never">
+<tbody>
+<tr>
+<td valign="middle" style="background: #e6eef7; border-width: 0.28pt 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: #000000 rgb(255, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0); padding: 1.41pt 5.1pt; width: 102.37pt; height: 12.82pt">
+<p class="0" style="margin: 0px; text-align: center; line-height: 180%; letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림체">구분</span></p></td>
+<td valign="middle" style="background: #e6eef7; border-width: 1.7pt 1.7pt 0.28pt; border-style: solid; border-color: #ff0000 rgb(255, 0, 0) rgb(0, 0, 0); padding: 1.41pt 5.1pt; width: 85.39pt; height: 12.82pt">
+<p class="0" style="margin: 0px; text-align: center; line-height: 180%; letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림체">종전</span></p></td>
+<td valign="middle" style="background: #e6eef7; border-width: 0.28pt 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 144.82pt; height: 12.82pt">
+<p class="0" style="margin: 0px; text-align: center; line-height: 180%; letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림체">개선</span></p></td></tr>
+<tr>
+<td valign="middle" style="border-width: 0.28pt 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: #000000 rgb(255, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0); padding: 1.41pt 5.1pt; width: 102.37pt; height: 28.02pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">전공 과목 재이수 성적</span></p></td>
+<td valign="middle" style="border-width: 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 85.39pt; height: 28.02pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">교양교과목 </span><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">B+ </span><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">까지 </span></p></td>
+<td valign="middle" style="border-width: 0.28pt 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 144.82pt; height: 28.02pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">교양</span><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">·</span><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">전공교과목 </span><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">B+ </span><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">까지 취득 </span></p></td></tr>
+<tr>
+<td valign="middle" style="border-width: 0.28pt 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: #000000 rgb(255, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0); padding: 1.41pt 5.1pt; width: 102.37pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">재이수 대상과목</span></p></td>
+<td valign="middle" style="border-width: 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 85.39pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">-</span></p></td>
+<td valign="middle" style="border-width: 0.28pt 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 144.82pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">C+ </span><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">이하부터 재이수 신청 가능</span></p></td></tr>
+<tr>
+<td valign="middle" style="border-width: 0.28pt 1.7pt 0.28pt 0.28pt; border-style: solid; border-color: #000000 rgb(255, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0); padding: 1.41pt 5.1pt; width: 102.37pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">학기별 재이수 신청학점</span></p></td>
+<td valign="middle" style="border-width: 0.28pt 1.7pt 1.7pt; border-style: solid; border-color: #000000 rgb(255, 0, 0) rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 85.39pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">-</span></p></td>
+<td valign="middle" style="border-width: 0.28pt 0.28pt 0.28pt 1.7pt; border-style: solid; border-color: #000000 rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 0, 0); padding: 1.41pt 5.1pt; width: 144.82pt; height: 12.82pt">
+<p class="0" style="text-align: center; line-height: 180%; text-indent: -14.1pt; letter-spacing: -0.7pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 40.0pt left blank 80.0pt left blank 120.0pt left blank 160.0pt left blank 200.0pt left blank 240.0pt left blank 280.0pt left blank 320.0pt left blank 360.0pt left blank 400.0pt left blank 440.0pt left blank 480.0pt left blank 520.0pt left blank 560.0pt left blank 600.0pt left blank 640.0pt left blank 680.0pt left blank 720.0pt left blank 760.0pt left blank 800.0pt left blank 840.0pt left blank 880.0pt left blank 920.0pt left blank 960.0pt left blank 1000.0pt left blank 1040.0pt left blank 1080.0pt left blank 1120.0pt left blank 1160.0pt left blank 1200.0pt left blank 1240.0pt"><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">한 학기 </span><span style="letter-spacing: -0.7pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">6</span><span style="letter-spacing: -0.7pt; font-size: 9pt; mso-fareast-font-family: 새굴림">학점 이내</span></p></td></tr></tbody></table>
+<p style="margin: 0px"></p>
+<p style="margin: 0px"><span style="font-size: 9pt; mso-fareast-font-family: 굴림"></span>&nbsp;</p>
+<p style="margin: 0px"><strong><span style="font-size: 9pt; mso-fareast-font-family: 굴림"><span style="font-size: 12pt">나</span></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 12pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림"><span style="font-size: 12pt">재이수 규정 적용 유예 신청</span></span></strong></p>
+<p style="margin: 0px"><span style="font-size: 9pt; mso-fareast-font-family: 굴림">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: #ff0000; letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1) </span><span style="color: #ff0000; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">신청 대상</span><span style="color: #ff0000; letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: </span><u style="text-underline: #000000 single"><span style="color: #ff0000; letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2020</span></u><u style="text-underline: #000000 single"><span style="color: #ff0000; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">학년도 </span></u><u style="text-underline: #000000 single"><span style="color: #ff0000; letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span></u><u style="text-underline: #000000 single"><span style="color: #ff0000; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">학기 군복학 예정자 및 적용대상이 되는 재학생</span></u></p>
+<p style="margin: 0px"><span>&nbsp;&nbsp; &nbsp; 2) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">신청 기간</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: </span><font style="background-color: #d4f4fa"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"><span style="font-size: 12pt">2020. 2. 14.(</span></span><span style="font-size: 12pt; font-weight: bold; mso-fareast-font-family: 굴림">금</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 12pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">) ~ 2. 28.(</span><span style="font-size: 12pt; font-weight: bold; mso-fareast-font-family: 굴림">금</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"><span style="font-size: 12pt">) 오전까지</span></span></font></p>
+<p style="margin: 0px"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"><span style="font-size: 12pt"><font color="#000000" style="background-color: #ffffff">&nbsp;&nbsp;&nbsp; </font></span></span><span style="letter-spacing: -1.3pt; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">※ </span><span style="letter-spacing: -1.3pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">최초 </span><span style="letter-spacing: -1.3pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span><span style="letter-spacing: -1.3pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">회 신청으로 일괄 적용되며</span><span style="letter-spacing: -1.3pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">, 2020. 2</span><span style="letter-spacing: -1.3pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">학기부터 수강신청 이전 일정 별도 공지</span></p>
+<p class="0" style="text-indent: -17.1pt; font-size: 9pt; margin-right: 5pt; margin-left: 33.2pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">3) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">신청방법: </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">이메일 또는 카톡 또는 직접 방문 중 <strong>택일</strong>하여 학과사무실로 제출바래요.</span></p>
+<p class="0" style="text-indent: -17.1pt; letter-spacing: 0pt; font-size: 9pt; margin-right: 5pt; margin-left: 33.2pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"></span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">4) </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">신청자 수강신청</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">: </span><u style="text-underline: #000000 single"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2020</span></u><u style="text-underline: #000000 single"><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">학년도 </span></u><u style="text-underline: #000000 single"><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">1</span></u><u style="text-underline: #000000 single"><span style="font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림">학기 수강변경 기간 중</span></u></p>
+<p class="0" style="line-height: 90%; text-indent: -17.1pt; font-size: 9pt; margin-top: 5pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"><font style="background-color: #ffd9ec"><strong>** 유예신청기간에 유예신청 먼저 하고, 수강변경기간에 수강신청하길 바래요~~</strong></font></span></p>
+<p class="0" style="text-indent: -17.1pt; font-size: 9pt; margin-top: 5pt; margin-right: 5pt; margin-left: 17.1pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="font-family: 굴림; font-size: 9pt"></span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">다</span><span style="letter-spacing: 0pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">. </span><span style="font-size: 9pt; mso-fareast-font-family: 굴림">협조 및 유의사항</span></p>
+<p style="margin: 0px"><span style="font-family: 굴림; font-size: 9pt"></span></p>
+<table style="border-right-color: currentColor; border-bottom-color: currentColor; border-left-color: currentColor; border-right-width: medium; border-bottom-width: medium; border-left-width: medium; border-right-style: none; border-bottom-style: none; border-left-style: none; border-collapse: collapse; mso-table-overlap: never">
+<tbody>
+<tr>
+<td valign="middle" style="background: #e7f4f6; padding: 1.41pt 5.1pt; border: 0.28pt solid rgb(0, 0, 0); border-image: none; width: 29.17pt; height: 37.02pt">
+<p class="0" style="margin: 0px; text-align: center; line-height: 140%; letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt"><span style="letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림체">협조사항</span></p></td>
+<td valign="middle" style="padding: 1.41pt 5.1pt; border: 0.28pt solid rgb(0, 0, 0); border-image: none; width: 331.15pt; height: 37.02pt">
+<p class="0" style="text-align: left; line-height: 140%; text-indent: -14.1pt; letter-spacing: -1.6pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt"><span style="letter-spacing: -2pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 새굴림; mso-hansi-font-family: 새굴림">①</span><span style="letter-spacing: -2.2pt; font-family: 새굴림; font-size: 9pt"> </span><span style="letter-spacing: -1.6pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 새굴림">신청서 접수 시 신청 가능 여부 확인</span><span style="letter-spacing: -1.6pt; font-family: 새굴림; font-size: 9pt"> </span><span style="letter-spacing: -1.6pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">(E-mail </span><span style="letter-spacing: -1.6pt; font-size: 9pt; mso-fareast-font-family: 새굴림">또는 팩스 접수 가능</span><span style="letter-spacing: -1.6pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">)</span></p>
+<p class="0" style="text-align: left; line-height: 140%; text-indent: -14.1pt; letter-spacing: -1.1pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt"><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 새굴림; mso-hansi-font-family: 새굴림">② </span><span style="letter-spacing: -1.1pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 새굴림">출석부 표기 변경 관련 안내</span><span style="letter-spacing: -1.1pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">: </span><span style="letter-spacing: -1.1pt; font-size: 9pt; mso-fareast-font-family: 새굴림">재이수시 출석부에 </span><span style="letter-spacing: -1.1pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">‘</span><span style="letter-spacing: -1.1pt; font-size: 9pt; mso-fareast-font-family: 새굴림">군재</span><span style="letter-spacing: -1.1pt; font-family: 새굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 새굴림">’</span><span style="letter-spacing: -1.1pt; font-size: 9pt; mso-fareast-font-family: 새굴림">로 표시하며 </span><u style="text-underline: #000000 single"><span style="letter-spacing: -1.1pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 새굴림">성적 부여 시 학점 제한이 없음</span></u></p></td></tr>
+<tr>
+<td valign="middle" style="background: #e7f4f6; padding: 1.41pt 5.1pt; border: 0.28pt solid rgb(0, 0, 0); border-image: none; width: 29.17pt; height: 51.93pt">
+<p class="0" style="text-align: center; line-height: 140%; text-indent: -21.2pt; letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; margin-top: 1pt; margin-left: 21.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt"><span style="letter-spacing: -0.5pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림체">유의사항</span></p></td>
+<td valign="middle" style="padding: 1.41pt 5.1pt; border: 0.28pt solid rgb(0, 0, 0); border-image: none; width: 331.15pt; height: 51.93pt">
+<p class="0" style="text-align: left; color: #ff0000; line-height: 140%; text-indent: -14.1pt; letter-spacing: -0.9pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt"><span style="color: #ff0000; letter-spacing: -2pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 새굴림; mso-hansi-font-family: 새굴림">①</span><span style="color: #ff0000; letter-spacing: -0.8pt; font-family: 새굴림; font-size: 9pt"> </span><span style="color: #ff0000; letter-spacing: -0.9pt; font-size: 9pt; mso-fareast-font-family: 새굴림">수강신청 시 재이수 제한으로 인하여 </span><span style="color: #ff0000; letter-spacing: -0.9pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 새굴림">온라인 수강신청이 불가능한 경우</span><span style="color: #ff0000; letter-spacing: -0.9pt; font-family: 새굴림; font-size: 9pt"> </span><span style="color: #ff0000; letter-spacing: -0.9pt; font-size: 9pt; mso-fareast-font-family: 새굴림">또는 수강신청이 가능하더라도 </span><span style="color: #ff0000; letter-spacing: -0.9pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 새굴림">전공과목 재이수 취득 성적 제한 해제를 위하여</span><span style="color: #ff0000; letter-spacing: -0.9pt; font-family: 새굴림; font-size: 9pt"> </span><span style="color: #ff0000; letter-spacing: -0.9pt; font-size: 9pt; mso-fareast-font-family: 새굴림">유예 신청 가능</span></p>
+<p class="0" style="text-align: left; line-height: 140%; text-indent: -14.1pt; letter-spacing: -0.9pt; font-size: 9pt; margin-right: -1pt; margin-left: 27.2pt; -ms-word-break: keep-all; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt"><span style="letter-spacing: -0.8pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 새굴림; mso-hansi-font-family: 새굴림">②</span><span style="color: #ff0000; letter-spacing: -0.5pt; font-family: 새굴림; font-size: 9pt"> </span><span style="letter-spacing: -0.9pt; font-size: 9pt; mso-fareast-font-family: 새굴림">군 휴학 이외의 사유는 추가 유예기간에 포함하지 않음</span></p></td></tr></tbody></table>
+<p style="margin: 0px"></p>
+<p class="0" style="text-indent: -26.7pt; letter-spacing: -1.2pt; font-size: 9pt; margin-top: 5pt; margin-right: 5pt; margin-left: 26.7pt; mso-pagination: none; mso-padding-alt: 0pt 0pt 0pt 0pt; mso-font-width: 100%; mso-text-raise: 0pt; tab-stops: left blank 0fpt left blank 30.0pt left blank 60.0pt left blank 90.0pt left blank 120.0pt left blank 150.0pt left blank 180.0pt left blank 210.0pt left blank 240.0pt left blank 270.0pt left blank 300.0pt left blank 330.0pt left blank 360.0pt left blank 390.0pt left blank 420.0pt left blank 450.0pt left blank 480.0pt left blank 510.0pt left blank 540.0pt left blank 570.0pt left blank 600.0pt left blank 630.0pt left blank 660.0pt left blank 690.0pt left blank 720.0pt left blank 750.0pt left blank 780.0pt left blank 810.0pt left blank 840.0pt left blank 870.0pt left blank 900.0pt left blank 930.0pt left blank 960.0pt left blank 990.0pt left blank 1020.0pt left blank 1050.0pt left blank 1080.0pt left blank 1110.0pt left blank 1140.0pt left blank 1170.0pt"><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 9pt"></span><span style="letter-spacing: -1.2pt; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">※ </span><span style="letter-spacing: -1.2pt; font-size: 9pt; mso-fareast-font-family: 굴림">당초 안내된 사항&nbsp; 중에서 </span><font style="background-color: #ffd9ec"><span style="letter-spacing: -1.2pt; font-size: 9pt; font-weight: bold; mso-fareast-font-family: 굴림"><span style="font-size: 14pt"><span style="font-size: 14pt">유의사항 </span></span></span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">①</span><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 14pt"> </span><span style="letter-spacing: -1.2pt; font-size: 14pt; mso-fareast-font-family: 굴림">관련 내용 수정</span><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 14pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">, </span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">【</span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-fareast-font-family: 굴림">붙임 </span><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">2</span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">】 </span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-fareast-font-family: 굴림">및 </span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">【</span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-fareast-font-family: 굴림">붙임 </span><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림">3</span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-font-width: 100%; mso-text-raise: 0pt; mso-fareast-font-family: 굴림; mso-hansi-font-family: 굴림">】</span><span style="letter-spacing: -1.2pt; font-size: 14pt; font-weight: bold; mso-fareast-font-family: 굴림">서식</span><span style="letter-spacing: -1.2pt; font-size: 14pt; mso-fareast-font-family: 굴림">을 변경하였으니 참고 바랍니다</span><span style="letter-spacing: -1.2pt; font-family: 굴림; font-size: 9pt; mso-font-width: 100%; mso-text-raise: 0pt; mso-ascii-font-family: 굴림"><span style="font-size: 14pt"><span style="font-size: 14pt">.</span></span></span></font></p>
+			</div>
+		<div class="attach">
+	<ul>
+							<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&download=h&seq=0">군 휴학생 재이수 규정 적용 유예(안).hwp</a></li>
+												<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&download=h&seq=1">군 휴학생 재이수 규정 적용 유예 신청서.hwp</a></li>
+												<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&download=h&seq=2">군 휴학생 재이수 규정 적용 유예 신청현황.xlsx</a></li>
+								</ul>
+	</div>
+	</div>
+
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/english/sub.htm?mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/english/sub.htm?nav_code=eng1621852173&bbs_view_edit=1&mode=edit&mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+
+<div class="btnarea">
+<div class="left">
+<a href="#" onclick="boardPrint(1);return false;" class='btn_d'>프린트</a>
+</div>
+<div class="right">
+
+	  
+	  
+			  <a href="/HOME/english/sub.htm?mv_data=aWR4PTE2NjImc3RhcnRQYWdlPTExNzAmbGlzdE5vPTQ3JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZzaXRlX2NvZGU9ZW5nbGlzaCZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPQ==" class="btn_d">목록</a>
+
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+	
+	<footer>
+	<div class="d_width clearfix">
+				<div class="f_cont">
+						<ul class="fmn clearfix">
+			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+			</ul>
+						<address>
+										<p>
+									[41566] 
+													대구광역시 북구 대학로 80 경북대학교 영어영문학과 (대학원동 501호) 													 / T.053-950-5120													 / F.053-950-5133													 / E-mail.kj.hwang@knu.ac.kr / englishknu@naver.com								</p>
+							
+				<p class="copyright">Copyright ⓒ 경북대학교 <em>영어영문학과</em>. All rights Reserved.</p>
+										
+			<div class="fcnt">
+				Total : 123,588명 / Today : 24명
+			</div>
+
+
+							<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+									
+
+			</address>		
+		</div>
+
+				<div class="f_link">
+				
+								<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<select onchange="footer_link_go(this.value);" title="주요사이트">
+				<option value="">4단계 BK21사업 관련사이트</option>
+				<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+				<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+				<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+				<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+				<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+				<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+				<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+				<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+				<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+				<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+				<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+				<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+				<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+				<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+				<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+				<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+				<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+				<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+				<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+				<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+				<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+				<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+				<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+				<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+				<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+				<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+				<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+				<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+				<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+			</select>
+			<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+					
+		</div>
+			</div>
+	</footer>
+
+
+	
+
+
+<!-- //footer -->
+
+</body>
+</html>

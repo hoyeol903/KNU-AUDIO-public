@@ -1,0 +1,8 @@
+# 새 Python 3.10~3.12 환경에 설치. 이전 MeloTTS 환경과 분리하세요.
+-r requirements.txt
+qwen-tts==0.1.1
+torch==2.6.0
+torchaudio==2.6.0
+numpy>=1.26,<2
+soundfile>=0.12,<0.14
+mutagen>=1.47

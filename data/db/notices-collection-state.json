@@ -1,0 +1,548 @@
+{
+  "boards": {
+    "knu-acen-ace1622521462": {
+      "initialized_at": "2026-10-01T21:00:38.112346+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-aerospace-aer1694412321": {
+      "initialized_at": "2026-10-02T14:00:38.105545+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-aifm-aif1623029616": {
+      "initialized_at": "2026-10-01T20:59:26.243200+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-amse-ams1622609715": {
+      "initialized_at": "2026-10-01T20:58:25.973164+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-anibiotech-ani1622629991": {
+      "initialized_at": "2026-10-01T21:02:36.774847+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-appbio-app1700444270": {
+      "initialized_at": "2026-10-02T14:03:52.259953+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-aran-ara1623718660": {
+      "initialized_at": "2026-10-01T20:42:46.248600+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-arch-arc1623110358": {
+      "initialized_at": "2026-10-01T20:38:49.347989+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-arts-art1623199694": {
+      "initialized_at": "2026-10-01T21:12:26.988073+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-atcad-atc1753746498": {
+      "initialized_at": "2026-10-02T14:38:29.768080+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-automobile-aut1623370299": {
+      "initialized_at": "2026-10-02T14:16:40.436755+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-bcst2-bcs1611061294": {
+      "initialized_at": "2026-10-02T14:12:03.798671+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-bime-bim1622180687": {
+      "initialized_at": "2026-10-01T21:28:54.294604+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-bio-bio1616117150": {
+      "initialized_at": "2026-10-01T21:22:14.933922+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-bio-bio1616117151": {
+      "initialized_at": "2026-10-01T21:21:28.608087+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-bioedu-bio1622460188": {
+      "initialized_at": "2026-10-01T21:19:58.778986+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-biofiber-bio1623029353": {
+      "initialized_at": "2026-10-01T21:12:59.303412+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-biotech-sub6_1": {
+      "initialized_at": "2026-10-01T15:43:48.033795+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-biz-biz1623200446": {
+      "initialized_at": "2026-10-01T20:38:52.464557+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-cals-cal1623200331": {
+      "initialized_at": "2026-10-01T21:00:14.905020+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ceba-ceb1748499674": {
+      "initialized_at": "2026-10-01T20:38:50.820190+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-cee-cee1623200416": {
+      "initialized_at": "2026-10-01T21:22:39.442881+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-chedu-che1623057663": {
+      "initialized_at": "2026-10-02T14:51:59.018990+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-chem-che1622521080": {
+      "initialized_at": "2026-10-02T14:51:10.528926+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-chinese-notice": {
+      "initialized_at": "2026-10-01T15:48:24.702619+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-civil-civ1614066197": {
+      "initialized_at": "2026-10-02T14:41:23.396962+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-cns-cns1623199799": {
+      "initialized_at": "2026-10-02T14:17:03.025192+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-comedu-com1744781375": {
+      "initialized_at": "2026-10-02T14:28:32.758669+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-computer-sub6_1_a": {
+      "initialized_at": "2026-10-01T15:47:09.558742+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-coss-cos1623199778": {
+      "initialized_at": "2026-10-01T21:16:14.838202+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-cst-cst1614760898": {
+      "initialized_at": "2026-10-01T20:45:44.051052+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-dent-k1news": {
+      "initialized_at": "2026-10-01T15:50:18.221509+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-disaster-dis1616717237": {
+      "initialized_at": "2026-10-01T20:38:21.688782+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-earth-ear1622787840": {
+      "initialized_at": "2026-10-02T14:30:33.480130+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ece-ece1704877202": {
+      "initialized_at": "2026-10-02T13:48:42.627190+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-econ-eco1623370509": {
+      "initialized_at": "2026-10-01T20:41:02.394736+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-education-edu1623200393": {
+      "initialized_at": "2026-10-01T21:15:01.967812+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-electric-ele1622787198": {
+      "initialized_at": "2026-10-02T14:25:44.603052+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-enged-eng1622787290": {
+      "initialized_at": "2026-10-02T14:00:28.466063+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-engineer-eng1729076802": {
+      "initialized_at": "2026-10-01T20:45:07.403660+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-english-eng1621852173": {
+      "initialized_at": "2026-10-01T14:04:16.239437+09:00",
+      "last_full_scan_at": "2026-10-01T13:44:39+09:00"
+    },
+    "knu-ento-ent1625131133": {
+      "initialized_at": "2026-10-01T20:44:38.453117+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-env-env1624500229": {
+      "initialized_at": "2026-10-02T14:52:44.397249+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ethedu-eth1622460163": {
+      "initialized_at": "2026-10-02T14:02:52.768932+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-fashion-fas1623134444": {
+      "initialized_at": "2026-10-02T14:05:50.698630+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ffsi-ffs1623133940": {
+      "initialized_at": "2026-10-02T13:42:27.290838+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-foodbio-foo1623134098": {
+      "initialized_at": "2026-10-01T21:31:25.442764+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-foodbiotechnology-foo1619661320": {
+      "initialized_at": "2026-10-01T21:31:53.178648+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-foodbm-foo1623888041": {
+      "initialized_at": "2026-10-01T21:32:20.725140+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-fore-for1622704960": {
+      "initialized_at": "2026-10-01T21:19:25.627960+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-forest-for1622521051": {
+      "initialized_at": "2026-10-02T14:15:54.023978+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-fredu-fre1623134357": {
+      "initialized_at": "2026-10-01T21:13:25.771127+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-french-fre1623147753": {
+      "initialized_at": "2026-10-01T21:14:21.982667+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-fsnu-fsn1622459812": {
+      "initialized_at": "2026-10-02T13:41:49.496742+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-geoedu-geo1623029261": {
+      "initialized_at": "2026-10-02T14:31:16.430455+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-geog-geo1614082611": {
+      "initialized_at": "2026-10-02T14:35:08.454913+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-geology-geo1621814864": {
+      "initialized_at": "2026-10-02T14:35:48.586864+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-geredu-ger1622609973": {
+      "initialized_at": "2026-10-01T21:01:04.794730+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-german-ger1623133982": {
+      "initialized_at": "2026-10-01T21:01:42.188966+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-german-ger1623203350": {
+      "initialized_at": "2026-10-01T21:02:11.260509+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-hanl-han1769127610": {
+      "initialized_at": "2026-10-02T14:36:26.082892+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-hanmun-han1624361542": {
+      "initialized_at": "2026-10-02T14:46:46.841785+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-he-he1623200306": {
+      "initialized_at": "2026-10-01T21:23:03.894853+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-hisedu-his1622459767": {
+      "initialized_at": "2026-10-02T13:49:08.726601+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-history-his1622521427": {
+      "initialized_at": "2026-10-01T21:15:34.434829+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-homeedu-hom1622521250": {
+      "initialized_at": "2026-10-01T20:35:34.750935+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-horti-hor1622609861": {
+      "initialized_at": "2026-10-02T14:01:16.364064+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-hum-hum1741312301": {
+      "initialized_at": "2026-10-02T14:13:28.523684+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-humanities-hum1623199741": {
+      "initialized_at": "2026-10-02T14:12:28.204190+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ilsa-ils1622609066": {
+      "initialized_at": "2026-10-02T14:13:58.553619+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-innopharm-inn1706058584": {
+      "initialized_at": "2026-10-02T14:49:33.255191+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-it-it1623310437": {
+      "initialized_at": "2026-10-01T20:34:15.771561+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-it-it1790050032": {
+      "initialized_at": "2026-10-01T20:34:58.213509+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-japan-jap1695016568": {
+      "initialized_at": "2026-10-02T14:15:07.165939+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-kac-kac1622609930": {
+      "initialized_at": "2026-10-02T14:53:15.942074+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-kbiz-kbi1623370557": {
+      "initialized_at": "2026-10-01T20:39:50.397558+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-kmusic-kmu1622609949": {
+      "initialized_at": "2026-10-02T15:13:54.148191+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knuagec-knu1623134126": {
+      "initialized_at": "2026-10-02T13:43:19.760246+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knuatc-knu1711976689": {
+      "initialized_at": "2026-10-02T14:37:47.921005+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knuce-knu1762850029": {
+      "initialized_at": "2026-10-02T14:04:45.899163+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knuchild-knu1623370362": {
+      "initialized_at": "2026-10-02T13:46:08.283275+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knupharmacy-knu1623650948": {
+      "initialized_at": "2026-10-02T13:46:46.330697+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knupolymer-knu1623888520": {
+      "initialized_at": "2026-10-01T20:44:01.482602+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knurussian-knu1742773842": {
+      "initialized_at": "2026-10-01T20:59:16.046778+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knusw-knu1623026178": {
+      "initialized_at": "2026-10-01T21:17:42.896058+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-korean-kor1657071357": {
+      "initialized_at": "2026-10-01T14:04:16.239437+09:00",
+      "last_full_scan_at": "2026-10-01T13:44:39+09:00"
+    },
+    "knu-koredu-kor1622459695": {
+      "initialized_at": "2026-10-01T20:48:30.875159+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-kremse-kre1640045053": {
+      "initialized_at": "2026-10-02T13:44:00.352622+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-land-lan1614079746": {
+      "initialized_at": "2026-10-02T14:29:58.518859+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-lbis-lbi1661932979": {
+      "initialized_at": "2026-10-02T14:02:12.581758+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-lis-lis1622460108": {
+      "initialized_at": "2026-10-01T21:08:48.510222+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-masscom-mas1614079680": {
+      "initialized_at": "2026-10-01T21:11:45.940420+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-material-mat1623632513": {
+      "initialized_at": "2026-10-01T20:49:29.043892+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-math-mat1623029308": {
+      "initialized_at": "2026-10-01T14:04:16.239437+09:00",
+      "last_full_scan_at": "2026-10-01T13:44:39+09:00"
+    },
+    "knu-mathedu-mat1623134407": {
+      "initialized_at": "2026-10-01T21:27:09.071635+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-me-me1623370438": {
+      "initialized_at": "2026-10-01T20:50:43.895517+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-med-notice001": {
+      "initialized_at": "2026-10-01T15:48:30.797078+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-mobility-mob1692863999": {
+      "initialized_at": "2026-10-01T21:28:03.935730+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-music-mus1622610244": {
+      "initialized_at": "2026-10-02T14:03:35.612133+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-nurse-nur1624533185": {
+      "initialized_at": "2026-10-01T20:36:01.854867+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-nurse-nur1624533209": {
+      "initialized_at": "2026-10-01T20:37:38.695694+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ocean-oce1623632597": {
+      "initialized_at": "2026-10-02T14:47:41.542003+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-pbs-pbs1623632560": {
+      "initialized_at": "2026-10-01T21:29:53.582664+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-philosophy-phi1623391659": {
+      "initialized_at": "2026-10-02T14:37:11.087297+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-physed-phy1623371316": {
+      "initialized_at": "2026-10-01T21:09:39.341769+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-physics-phy1645592197": {
+      "initialized_at": "2026-10-01T21:11:03.167485+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-plantmed-pla1677024917": {
+      "initialized_at": "2026-10-01T21:30:31.157046+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-pmeatknu-pme1623030157": {
+      "initialized_at": "2026-10-02T14:27:56.403268+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-politics-pol1614071864": {
+      "initialized_at": "2026-10-02T14:29:09.880167+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-psychology-psy1614066241": {
+      "initialized_at": "2026-10-02T13:44:50.496590+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-puad-pua1623029519": {
+      "initialized_at": "2026-10-02T14:49:08.753315+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-robot-rob1623632307": {
+      "initialized_at": "2026-10-01T21:07:22.785778+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-scplant-scp1622705079": {
+      "initialized_at": "2026-10-01T21:30:57.696115+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-se-se1617170620": {
+      "initialized_at": "2026-10-01T21:25:09.232882+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-see-notice": {
+      "initialized_at": "2026-10-01T14:39:14.717629+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-seeai-see1667180581": {
+      "initialized_at": "2026-10-02T14:27:17.896301+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-smartplant-sma1653282097": {
+      "initialized_at": "2026-10-01T21:29:21.781828+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-smobile-smo1616372729": {
+      "initialized_at": "2026-10-02T14:26:10.975967+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-socio-soc1622181477": {
+      "initialized_at": "2026-10-01T21:18:49.863474+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-soee-soe1622609908": {
+      "initialized_at": "2026-10-02T13:47:57.386426+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-sofi-sof1741566884": {
+      "initialized_at": "2026-10-02T14:17:42.604188+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-spanimal-spa1622450979": {
+      "initialized_at": "2026-10-01T21:08:03.558065+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-spoedu-spo1623029398": {
+      "initialized_at": "2026-10-02T14:38:56.566965+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-sports-spo1622609691": {
+      "initialized_at": "2026-10-02T14:39:20.270539+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-stat-sta1623632390": {
+      "initialized_at": "2026-10-02T14:44:36.914783+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-style-sty1616635012": {
+      "initialized_at": "2026-10-02T14:45:07.120892+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-textile-tex1616634934": {
+      "initialized_at": "2026-10-01T21:23:43.360849+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-textileng-tex1623029574": {
+      "initialized_at": "2026-10-01T21:24:11.135225+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-tour-tou1616116950": {
+      "initialized_at": "2026-10-01T20:46:24.830799+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-treei-tre1622610220": {
+      "initialized_at": "2026-10-02T14:15:31.838687+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-udm-udm1623371432": {
+      "initialized_at": "2026-10-02T14:24:26.263011+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-ue-ue1616633942": {
+      "initialized_at": "2026-10-02T15:00:51.544694+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-vcd-vcd1622551643": {
+      "initialized_at": "2026-10-01T21:05:32.438651+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-veterinary-vet1623200224": {
+      "initialized_at": "2026-10-01T21:25:37.967997+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-wbbs-stu_812": {
+      "initialized_at": "2026-10-01T14:36:29.646622+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-zootechny-zoo1622709676": {
+      "initialized_at": "2026-10-02T14:39:45.635100+09:00",
+      "last_full_scan_at": null
+    }
+  }
+}

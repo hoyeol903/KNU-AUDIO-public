@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  IT대학 전자공학부 인공지능전공 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="IT대학 전자공학부 인공지능전공" />
+<meta property="og:description" content="경북대학교  IT대학 전자공학부 인공지능전공 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>IT대학 전자공학부 인공지능전공</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1667181022" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/seeai; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+
+
+
+
+
+
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:25%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(34, 34, 34);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+	
+	<div id="topwrap">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+							<img src="./data/designImages/logo.png" alt="로고이미지"/>
+						<span class="sub_name">IT대학 전자공학부 <em>인공지능전공</em></span>
+			</a>
+		</div>
+		<div class="topmn clearfix">		
+			<a href="http://knu.ac.kr/" target="_blank" class="top-dk">경북대학교</a>
+												<a href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581" class="top-dk top-login">로그인</a>
+													
+																		
+					</div>
+		</div>
+		<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+	</div>
+
+
+	<div id="gnb">	
+	<div id="gnbmn">
+			<nav id="menu">
+			<ul id="top1menu" class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=see1667174047"  id="top1m1" title ='전공소개 > 전공주임 인사말 페이지로 이동합니다.'>전공소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=see1667174047"  title ='전공주임 인사말 페이지로 이동합니다.'>전공주임 인사말</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=see1667174075"  title ='전공소개 페이지로 이동합니다.'>전공소개</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=see1667175272"  title ='비전 및 진로 페이지로 이동합니다.'>비전 및 진로</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=see1667175280"  title ='혜택 및 장학프로그램 페이지로 이동합니다.'>혜택 및 장학프로그램</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=see1667175308"  title ='전공사무실 페이지로 이동합니다.'>전공사무실</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=see1667177578"  id="top1m2" title ='구성원 > 교수진 페이지로 이동합니다.'>구성원</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="./sub.htm?nav_code=see1667177578"  title ='교수진 페이지로 이동합니다.'>교수진</a></li>
+										<li id="top2m2m2"><a href="./sub.htm?nav_code=see1667177626"  title ='연구실 소개 페이지로 이동합니다.'>연구실 소개</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=see1667177956"  id="top1m3" title ='전공안내 > 교과과정 페이지로 이동합니다.'>전공안내</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="./sub.htm?nav_code=see1667177956"  title ='교과과정 페이지로 이동합니다.'>교과과정</a></li>
+										<li id="top2m3m2"><a href="https://ipsi2.knu.ac.kr" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+										<li id="top2m3m3"><a href="./sub.htm?nav_code=see1667178315"  title ='졸업요건 페이지로 이동합니다.'>졸업요건</a></li>
+										<li id="top2m3m4"><a href="https://knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target='_blank' title ='새창으로 학사일정 페이지가 열립니다.'>학사일정</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=see1667180581"  id="top1m4" title ='게시판 > 공지사항 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="./sub.htm?nav_code=see1667180581"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+										<li id="top2m4m2"><a href="./sub.htm?nav_code=see1667180603"  title ='각종서식 페이지로 이동합니다.'>각종서식</a></li>
+										<li id="top2m4m3"><a href="./sub.htm?nav_code=see1667180616"  title ='취업정보 페이지로 이동합니다.'>취업정보</a></li>
+										<li id="top2m4m4"><a href="./sub.htm?nav_code=see1790747514"  title ='학과소식 페이지로 이동합니다.'>학과소식</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+
+			<!--sns 추가
+			-->
+
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(4,1);max_2menu=5;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../seeai/data/designImages/SUBBG_1667179312');background-size:cover;background-position:50% 0;background-repeat:no-repeat;height:200px;width:100%;z-index:1"></div>
+
+
+<div id="svisual" style="min-height:200px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:914px;height:100px;left: 0px; top: 55px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">인공지능학과</p>
+	<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">4차 산업 혁명시대를 이끌어가는 핵심 기술인 인공지능의 글로벌 최고 수준의 전문 및 융합인력 양성!</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=see1667180581'>게시판</a></li><li><a href='./sub.htm?nav_code=see1667180581'>공지사항</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fseeai%2Fsub.htm%3Fnav_code%3Dsee1667180581" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=see1667180581" >공지사항</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=see1667180603" >각종서식</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=see1667180616" >취업정보</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=see1790747514" >학과소식</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(1,0);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>공지사항</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="see1667180581">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/seeai/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			
+								<div class="board_search">
+						<form action="/HOME/seeai/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+						<input type='hidden' name='code' value='VejNLDRkrHog'>
+						<input type='hidden' name='nav_code' value='see1667180581'>
+						<input type="hidden" name="order_list" value="">
+						<input type="hidden" name="list_scale" value="">
+						<input type="hidden" name="view_cate" value="">
+
+						<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+						<button type="button" onclick="search01();return false;"><i class="fa fa-search"></i><span>검색</span></button>
+						</form>
+					</div>
+					<!-- <div class="board_info">
+						<div class="left">총 <em>203</em>개의 글이 있습니다. (<em>1</em>/21 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/seeai/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='see1667180581'>
+							<input type='hidden' name='code' value='VejNLDRkrHog'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+
+
+					<div class="board_list">
+						<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+							<thead>
+								<tr>
+								<th scope="col" abbr="번호" style="width:50px;">번호</th>
+																<th scope="col" abbr="제목">제목</th>
+																<th scope="col" abbr="첨부" style="width:100px;">첨부</th>
+																								<th scope="col" abbr="작성자" style="width:200px" class="writer">작성자</th>
+																<th scope="col" abbr="작성일" style="width:100px;">작성일</th>
+																								<th scope="col" abbr="조회" style="width:80px;">조회</th>
+																								</tr>
+							</thead>
+							<tbody>
+
+
+			  								<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>[대학원] 인공지능학과 오픈랩 안내 (10. 7.(수)~ 10.21.(수) )</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">62</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTIzMSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>[필독] ★2027학년도 1학기★ 인공지능전공 등록금감면(성적우수) 장학생 선발 규정 알림</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-07-09</td>
+																								<td class="hit">641</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTE1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>증명성적교과구분변경신청 (전공인정 수업)</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-01-23</td>
+																								<td class="hit">1010</td>
+																								</tr>
+			
+											<tr>
+								<td class="num">203</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>수요기반 교양교과목 개발 관련 「내가 듣고 싶은 교양수업 공모전」안내</a>								<em class='new'>새글</em>								</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTI4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-30</td>
+																								<td class="hit">5</td>	
+																								</tr>
+												<tr>
+								<td class="num">202</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 2학기 강의개선을 위한 중간설문 시행 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTI4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">9</td>	
+																								</tr>
+												<tr>
+								<td class="num">201</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4NyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAxJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 학습컨설팅 운영안내</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">14</td>	
+																								</tr>
+												<tr>
+								<td class="num">200</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjAwJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 학생의료공제회 독감 예방접종비 지원 안내</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">8</td>	
+																								</tr>
+												<tr>
+								<td class="num">199</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk5JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>[대학원] 인공지능학과 오픈랩 안내 (10. 7.(수)~ 10.21.(수) )</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">62</td>	
+																								</tr>
+												<tr>
+								<td class="num">198</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk4JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 겨울계절수업 희망과목 수요조사 실시 (필요한 과목이 있는경우 꼭 설문조사에 참여하세요!!)</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTI4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk4JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">38</td>	
+																								</tr>
+												<tr>
+								<td class="num">197</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTk3JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>(전력거래소 주관)2026년 반기「전국 에너지 공동학점과정」학생 참여 모집</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTk3JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">22</td>	
+																								</tr>
+												<tr>
+								<td class="num">196</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTk2JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTI4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTk2JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-21</td>
+																								<td class="hit">19</td>	
+																								</tr>
+												<tr>
+								<td class="num">195</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk1JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>수업 중 저작권 침해 예방을 위한 &quot;대학생이 반드시 지켜야 할 저작권 상식&quot; 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTI4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk1JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-21</td>
+																								<td class="hit">9</td>	
+																								</tr>
+												<tr>
+								<td class="num">194</td>
+																<td class="subject">
+								<a href='/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk0JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=='>2026학년도 동계 해외대학 단기 프로그램 모집 안내</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer"> IT대학 전자공학부 인공지능전공</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">48</td>	
+																								</tr>
+											</tbody>
+						</table>
+					</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">															   
+				
+<strong>1</strong><a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='2 페이지'>2</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='3 페이지'>3</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='4 페이지'>4</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='5 페이지'>5</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='6 페이지'>6</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='7 페이지'>7</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='8 페이지'>8</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='9 페이지'>9</a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='10 페이지'>10</a>
+
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPVZlak5MRFJrckhvZyZuYXZfY29kZT1zZWUxNjY3MTgwNTgxJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' class='next' title='다음 10페이지'><i class='fa fa-angle-right'></i><i class='fa fa-angle-right'></i><span>다음</span></a>
+<a href='/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTIwMCZjb2RlPVZlak5MRFJrckhvZyZuYXZfY29kZT1zZWUxNjY3MTgwNTgxJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' class='last' title='마지막 페이지'><i class='fa fa-angle-double-right'></i><i class='fa fa-angle-double-right'></i><span>마지막 페이지</span></a>
+						   
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						
+			</div>
+			<!-- //board_info -->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+
+<footer>
+<div class="d_width clearfix">
+	<div class="f_logo"><img src="./data/designImages/logo.png"></div>
+	<div class="f_cont">
+		<ul class="fmn clearfix">
+		<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+		<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li>
+				</ul>
+		<address>대구광역시 북구 대학로 80 (산격동,경북대학교)<br>Tel.053-950-6531		<p class="copyright">Copyright ⓒ IT대학 전자공학부 <em>인공지능전공</em>. All rights Reserved.</p></address>		
+	</div>
+
+		<div class="f_link">
+		</div>
+	
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- //footer -->
+
+</body>
+</html>

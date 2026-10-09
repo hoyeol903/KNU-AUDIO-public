@@ -1,0 +1,1736 @@
+{
+  "channels": [
+    {
+      "channel_id": "meal-46",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-35",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-85",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-86",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-bokji",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-37",
+      "meals": [],
+      "notices": []
+    }
+  ],
+  "collected_at": "2026-10-03T20:36:41.544251+09:00",
+  "date": "2026-10-03",
+  "errors": [
+    {
+      "message": "중식: 오늘 메뉴 미게시, 휴무 여부 미확인",
+      "source": "meal-46"
+    },
+    {
+      "message": "날짜 표만 있고 식단 표가 없습니다",
+      "source": "meal-35"
+    },
+    {
+      "message": "중식: 오늘 메뉴 미게시, 휴무 여부 미확인",
+      "source": "meal-85"
+    },
+    {
+      "message": "중식: 오늘 메뉴 미게시, 휴무 여부 미확인",
+      "source": "meal-86"
+    },
+    {
+      "message": "중식: 오늘 메뉴 미게시, 휴무 여부 미확인",
+      "source": "meal-bokji"
+    },
+    {
+      "message": "조식: 오늘 메뉴 미게시, 휴무 여부 미확인",
+      "source": "meal-37"
+    }
+  ],
+  "meal_week": {
+    "meal-35": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "failed"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "failed"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [],
+        "status": "failed"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [],
+        "status": "failed"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [],
+        "status": "failed"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [],
+        "status": "failed"
+      }
+    ],
+    "meal-37": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [
+          {
+            "head": 1,
+            "label": "조식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "카페테리아 첨성",
+            "price": null,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "카페테리아 첨성",
+            "price": null,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [
+          {
+            "head": 1,
+            "label": "조식",
+            "menu": [
+              "천원의 아침밥",
+              "흰밥",
+              "순두부김치국",
+              "마라상궈★",
+              "김떡만강정★",
+              "셀프에그마요",
+              "모닝빵",
+              "요구르트",
+              "깍두기"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 1000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "소시지",
+              "오므라이스★",
+              "흰밥",
+              "사각어묵국",
+              "배추김치"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": "11:00~13:30"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "육회비빔밥"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "순대수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 7000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "순살돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 4500,
+            "time": "11:00~15:30"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "고구마돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "라면"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 2800,
+            "time": "9:00~11:00,13:00~15:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [
+          {
+            "head": 1,
+            "label": "조식",
+            "menu": [
+              "천원의 아침밥",
+              "(大)떡만두국밥★",
+              "생선가스*타르타르",
+              "김치메밀전병",
+              "오이고추된장무침",
+              "깍두기"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 1000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "치킨유린기&",
+              "마파두부면★",
+              "흰밥",
+              "수제비국",
+              "배추김치"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": "11:00~13:30"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "오삼비빔밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "순대수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 7000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "순살돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 4500,
+            "time": "11:00~15:30"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "고구마돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "라면"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 2800,
+            "time": "9:00~11:00,13:00~15:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [
+          {
+            "head": 1,
+            "label": "조식",
+            "menu": [
+              "천원의 아침밥",
+              "미니우동",
+              "김밥볶음밥★",
+              "떡볶이",
+              "순대찜*양념소금★",
+              "쥬시쿨",
+              "단무지"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 1000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "콩불냄비&",
+              "갈비만두★",
+              "흰밥",
+              "들깨미역국",
+              "배추김치"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": "11:00~13:30"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "닭불고기비빔밥"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "중식",
+            "menu": [
+              "더진국",
+              "순대수육국밥★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 7000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "순살돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 4500,
+            "time": "11:00~15:00"
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "고구마돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈왕돈가스★"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "라면"
+            ],
+            "place": "카페테리아 첨성",
+            "price": 2800,
+            "time": "9:00~11:00,13:00~15:00"
+          }
+        ],
+        "status": "ok"
+      }
+    ],
+    "meal-46": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "대체공휴일",
+              "^^"
+            ],
+            "place": "GP감꽃식당",
+            "price": null,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "백미밥",
+              "육개장",
+              "마파두부★",
+              "돼지고기굴소스볶음★",
+              "천사채샐러드",
+              "로투스꽈배기/포기김치"
+            ],
+            "place": "GP감꽃식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "<생일밥상>",
+              "찰밥",
+              "소고기미역국",
+              "돈갈비찜★",
+              "해물잡채",
+              "황도요거트샐러드",
+              "베이비슈/포기김치"
+            ],
+            "place": "GP감꽃식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "백미밥",
+              "(큰)얼큰탄탄멘★",
+              "오야꼬동덮밥소스",
+              "김치메밀전병★",
+              "오이지초생강무침",
+              "복숭아홍차/포기김치"
+            ],
+            "place": "GP감꽃식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      }
+    ],
+    "meal-85": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": null,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": null,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "정식",
+              "흑미밥/쌀밥",
+              "곤이배추국",
+              "고구마닭갈비",
+              "메밀전병&초간장",
+              "얼갈이나물무침",
+              "직접담근김치",
+              "온국수"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "11:30~13:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "정식",
+              "기장밥/쌀밥",
+              "짬뽕국",
+              "맛초킹탕수육★",
+              "해물볶음우동",
+              "중국식오이무침",
+              "직접담근김치",
+              "도시락김"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "17:00~19:00"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "정식",
+              "기장밥/쌀밥",
+              "닭개장",
+              "돼지고기갈비맛양념구이★",
+              "비빔만두★",
+              "파송송콩나물무침",
+              "직접담근김치",
+              "온국수"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "11:30~13:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "석식",
+              "흑미밥/쌀밥",
+              "건새우아욱국",
+              "순살안심치킨까스&소스",
+              "비빔파스타",
+              "연근채흑임자소스무침",
+              "직접담근김치",
+              "도시락김"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "17:00~19:00"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "중식",
+              "흑미밥/쌀밥",
+              "소고기무국",
+              "닭강정",
+              "비엔나새송이볶음",
+              "양상추&키위드레싱",
+              "직접담근김치",
+              "온국수"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "11:30~13:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "석식",
+              "기장밥/쌀밥",
+              "수제비국",
+              "돼지고기깨순볶음★",
+              "오코노미야끼계란말이",
+              "가지찜무침",
+              "직접담근김치",
+              "도시락김"
+            ],
+            "place": "공학관교직원식당(외부업체)",
+            "price": 6000,
+            "time": "17:00~19:00"
+          }
+        ],
+        "status": "ok"
+      }
+    ],
+    "meal-86": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": null,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": null,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "육회비빔밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "통다리살오븐구이&매콤볶음밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "산더미오리주물럭(2인)"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "등심돈가스&제육볶음★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "참치덮밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치킨마요/매운치킨마요"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "순두부찌개정식★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "대패삼겹즉석떡볶이(2인)★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이돈육양념찜★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "꼬마부대찌개★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이비빔밥&된장찌개"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "뚝배기치즈김치볶음밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면&밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": "10:00~14:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "등심돈가스&스프★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "양푼이비빔밥&된장찌개"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "석식",
+            "menu": [
+              "통다리살오븐구이&매콤볶음밥",
+              "17:00~1900"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "쟁반수육★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치킨난반&매콤볶음밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "돼지고기김치구이(2인)★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "등심돈가스&스프★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "땡초우동&주먹밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "오므라이스★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "된장찌개정식★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "삼겹살김치전골(2인)★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이돈육양념찜★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "꼬마부대찌개★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이비빔밥&된장찌개"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "불고기치즈뚝배기★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면&밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": "10:00~14:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "등심돈가스&스프★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "땡초우동&주먹밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "석식",
+            "menu": [
+              "불고기치즈뚝배기★",
+              "17:00~1900"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "육회비빔밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "통다리살오븐구이&매콤볶음밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "산더미오리주물럭(2인)"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "등심돈가스&제육볶음★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "참치덮밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "고기듬뿍잡채밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "순두부찌개정식"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "대패삼겹즉석떡볶이(2인)★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 12000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이돈육양념찜★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "꼬마부대찌개★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "치즈뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "양푼이비빔밥&된장찌개"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "뚝배기치즈김치볶음밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "떡라면&밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "만두라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 3500,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "중식",
+            "menu": [
+              "최루탄라면&밥★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 4000,
+            "time": "10:00~14:30"
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "등심돈가스&스프★"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "따로소고기국밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5000,
+            "time": null
+          },
+          {
+            "head": 1,
+            "label": "석식",
+            "menu": [
+              "치즈뚝배기알밥"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 5500,
+            "time": null
+          },
+          {
+            "head": 2,
+            "label": "석식",
+            "menu": [
+              "꼬마삼겹김치찌개★",
+              "17:00~1900"
+            ],
+            "place": "공학관학생식당(외부업체)",
+            "price": 6000,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      }
+    ],
+    "meal-bokji": [
+      {
+        "date": "2026-10-03",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-04",
+        "meals": [],
+        "status": "empty"
+      },
+      {
+        "date": "2026-10-05",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "대체공휴일"
+            ],
+            "place": "복지관 교직원식당",
+            "price": null,
+            "time": null
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-06",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "흰밥",
+              "모듬어묵국",
+              "마라상궈★",
+              "삼겹살야끼소바★",
+              "얼갈이무생채",
+              "포기김치"
+            ],
+            "place": "복지관 교직원식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-07",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "*생일밥상*",
+              "찰밥",
+              "소고기미역국",
+              "돈갈비찜★",
+              "해물잡채",
+              "황도요거트샐러드",
+              "베이비슈",
+              "포기김치"
+            ],
+            "place": "복지관 교직원식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      },
+      {
+        "date": "2026-10-08",
+        "meals": [
+          {
+            "head": 0,
+            "label": "중식",
+            "menu": [
+              "흰밥",
+              "감자수제비국",
+              "대패돈육야채찜★",
+              "&겨자냉채소스",
+              "김치메밀전병★",
+              "들기름막국수",
+              "깍두기"
+            ],
+            "place": "복지관 교직원식당",
+            "price": 6000,
+            "time": "11:15~13:30"
+          }
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  "request_count": 2,
+  "schedule": [
+    {
+      "dday": 2,
+      "end": null,
+      "start": "2026-10-05",
+      "title": "개천절 대체공휴일 (10.5.)"
+    },
+    {
+      "dday": 3,
+      "end": "2026-10-07",
+      "start": "2026-10-06",
+      "title": "[대학원] 논문 접수 결과 보고 : 10.6.~10.7."
+    }
+  ],
+  "sources": [
+    {
+      "checked_at": "2026-10-03T18:33:00.439040+09:00",
+      "source": "meal-46",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=46&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T18:33:01.554078+09:00",
+      "source": "meal-35",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=35&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T18:33:02.646169+09:00",
+      "source": "meal-85",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=85&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T18:33:03.746707+09:00",
+      "source": "meal-86",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=86&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T18:33:04.840648+09:00",
+      "source": "meal-bokji",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=36&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T18:33:05.929395+09:00",
+      "source": "meal-37",
+      "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37&selDate=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T20:36:39.321128+09:00",
+      "source": "weather",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=35.87028&longitude=128.59111&daily=weather_code%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_probability_max&timezone=Asia%2FSeoul&start_date=2026-10-03&end_date=2026-10-03"
+    },
+    {
+      "checked_at": "2026-10-03T20:36:41.476476+09:00",
+      "source": "schedule",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026"
+    }
+  ],
+  "weather": {
+    "rain_prob": 1,
+    "summary": "흐림",
+    "temp_max": 22.7,
+    "temp_min": 11.1
+  }
+}

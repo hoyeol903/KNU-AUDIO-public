@@ -1,0 +1,32 @@
+{
+  "college": "의과대학",
+  "evidence": [
+    "메뉴: 공지사항",
+    "알려진 템플릿의 충분한 URL/HTML 표식 없음"
+  ],
+  "files": [
+    {
+      "bytes": 56594,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "의학과_목록.html",
+      "final_url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748",
+      "sha256": "9b191fe2325b5dcb578ba4e1dc0a8281d5652722cacbaa14a84003d4571fb421",
+      "status": 200,
+      "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
+    },
+    {
+      "bytes": 66802,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "의학과_상세.html",
+      "final_url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMyJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgyJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||",
+      "sha256": "595dafa3bd2e2024fb594948811b43fde748950a0cf579b13941254a15f3678e",
+      "status": 200,
+      "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMyJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgyJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||"
+    }
+  ],
+  "id": "dept-med",
+  "representative": "의학과",
+  "template": "unknown"
+}

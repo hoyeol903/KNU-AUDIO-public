@@ -1,0 +1,33 @@
+{
+  "daily": {
+    "precipitation_probability_max": [
+      45
+    ],
+    "temperature_2m_max": [
+      21.3
+    ],
+    "temperature_2m_min": [
+      14.1
+    ],
+    "time": [
+      "2026-10-01"
+    ],
+    "weather_code": [
+      2
+    ]
+  },
+  "daily_units": {
+    "precipitation_probability_max": "%",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "time": "iso8601",
+    "weather_code": "wmo code"
+  },
+  "elevation": 47.0,
+  "generationtime_ms": 0.10716915130615234,
+  "latitude": 35.85,
+  "longitude": 128.5625,
+  "timezone": "Asia/Seoul",
+  "timezone_abbreviation": "GMT+9",
+  "utc_offset_seconds": 32400
+}

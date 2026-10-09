@@ -1,0 +1,96 @@
+{
+  "channels": [
+    {
+      "bootstrap": false,
+      "channel_id": "notice-1abc9573202c",
+      "channel_ids": [
+        "notice-1abc9573202c"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "[졸업시험 원서접수기간은 학기초부터 졸업시험일 한 달 전까지임]",
+            "제출시기 : 졸업시험일 또는 졸업자격인정원 제출기한일까지"
+          ],
+          "notice_id": "knu-english-eng1621852173:4037",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-24",
+          "evidence": [
+            "마. 제출 기간: 학 생 → 학 과: 2026. 11. 24.(화)까지"
+          ],
+          "notice_id": "knu-english-eng1621852173:4417",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 8.079,
+      "errors": [],
+      "finished_at": "2026-10-02T14:06:18+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 32,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-english-eng1621852173:4037"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 7,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-english-eng1621852173:4434",
+        "knu-english-eng1621852173:4433",
+        "knu-english-eng1621852173:4432",
+        "knu-english-eng1621852173:4430",
+        "knu-english-eng1621852173:4428",
+        "knu-english-eng1621852173:4427",
+        "knu-english-eng1621852173:4419",
+        "knu-english-eng1621852173:4418",
+        "knu-english-eng1621852173:4414",
+        "knu-english-eng1621852173:4413",
+        "knu-english-eng1621852173:4412",
+        "knu-english-eng1621852173:4408",
+        "knu-english-eng1621852173:4401",
+        "knu-english-eng1621852173:4383",
+        "knu-english-eng1621852173:4382",
+        "knu-english-eng1621852173:4379",
+        "knu-english-eng1621852173:4378",
+        "knu-english-eng1621852173:4376",
+        "knu-english-eng1621852173:4372",
+        "knu-english-eng1621852173:4370",
+        "knu-english-eng1621852173:4369",
+        "knu-english-eng1621852173:4368",
+        "knu-english-eng1621852173:4366",
+        "knu-english-eng1621852173:4365",
+        "knu-english-eng1621852173:4364",
+        "knu-english-eng1621852173:4360",
+        "knu-english-eng1621852173:4358",
+        "knu-english-eng1621852173:4355"
+      ],
+      "source_board_id": "knu-english-eng1621852173",
+      "started_at": "2026-10-02T14:06:10+09:00",
+      "successful": 4,
+      "truncated": false,
+      "unchanged": [
+        "knu-english-eng1621852173:1792",
+        "knu-english-eng1621852173:4037",
+        "knu-english-eng1621852173:4417",
+        "knu-english-eng1621852173:4443"
+      ],
+      "updated": [],
+      "window_complete": true
+    }
+  ],
+  "duration_sec": 8.084,
+  "finished_at": "2026-10-02T14:06:18.124694+09:00",
+  "request_count": 7,
+  "started_at": "2026-10-02T14:06:10.040918+09:00"
+}

@@ -1,0 +1,32 @@
+{
+  "college": "인문대학",
+  "evidence": [
+    "메뉴: 공지사항",
+    "board.php?bo_table 또는 g5_ / 그누보드 표식"
+  ],
+  "files": [
+    {
+      "bytes": 60768,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "중어중문학과_목록.html",
+      "final_url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice",
+      "sha256": "dbb18aa8c4d08da7d6ea80bd6d451cfc1af44f506fe8477ced24b763f9cf4c26",
+      "status": 200,
+      "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice"
+    },
+    {
+      "bytes": 65978,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "중어중문학과_상세.html",
+      "final_url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13615",
+      "sha256": "bbcf2bd395114f1991e33705257a02f82d84085c14ee626f4d0d677d4544e126",
+      "status": 200,
+      "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13615"
+    }
+  ],
+  "id": "dept-chinese",
+  "representative": "중어중문학과",
+  "template": "gnuboard"
+}

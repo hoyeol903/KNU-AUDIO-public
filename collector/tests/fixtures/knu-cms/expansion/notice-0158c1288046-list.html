@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  경북대학교 공과대학 건축학부 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="경북대학교 공과대학 건축학부" property="og:title"/>
+<meta content="경북대학교  경북대학교 공과대학 건축학부 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>경북대학교 공과대학 건축학부</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1715321247" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/arch; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:17%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgba(51, 102, 153, 0);} 
+#gnbmn ul.depth1 li a	{color:#FFFFFF;}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:#FFFFFF;}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:#555555;}
+.gnb_bg		{background-color:#FFFFFF;}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 공과대학 <em>건축학부</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/arch/sub.htm?nav_code=arc1623110358">로그인</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=arc1623133548" id="top1m1" title="학부소개 &gt; 학부장인사 페이지로 이동합니다.">학부소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=arc1623133548" title="학부장인사 페이지로 이동합니다.">학부장인사</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=arc1623133554" title="학부연혁 페이지로 이동합니다.">학부연혁</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=arc1623133564" title="교육목표 페이지로 이동합니다.">교육목표</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=arc1623133572" title="찾아오시는길 페이지로 이동합니다.">찾아오시는길</a></li>
+</ul>
+</li>
+<li><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" id="top1m2" target="_blank" title="새창으로 학사안내 &gt; 학사일정 페이지가 열립니다.">학사안내</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m2m2"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m2m3"><a href="https://ipsi1.knu.ac.kr/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m2m4"><a href="./sub.htm?nav_code=arc1623133656" title="공학전공 페이지로 이동합니다.">공학전공</a></li>
+<li id="top2m2m5"><a href="./sub.htm?nav_code=arc1623133660" title="건축학인증 페이지로 이동합니다.">건축학인증</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=arc1623133740" id="top1m3" title="교육/연구 &gt; 연구분야 페이지로 이동합니다.">교육/연구</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="./sub.htm?nav_code=arc1623133740" title="연구분야 페이지로 이동합니다.">연구분야</a></li>
+<li id="top2m3m2"><a href="./sub.htm?nav_code=arc1623133748" title="보유장비/기자재 페이지로 이동합니다.">보유장비/기자재</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=arc1623133770" id="top1m4" title="구성원 &gt; 전임교원 페이지로 이동합니다.">구성원</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="./sub.htm?nav_code=arc1623133770" title="전임교원 페이지로 이동합니다.">전임교원</a></li>
+<li id="top2m4m2"><a href="./sub.htm?nav_code=arc1623133786" title="명예교수 페이지로 이동합니다.">명예교수</a></li>
+<li id="top2m4m3"><a href="./sub.htm?nav_code=arc1623133791" title="교직원 페이지로 이동합니다.">교직원</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=arc1623133815" id="top1m5" title="학부생활 &gt; 장학금 페이지로 이동합니다.">학부생활</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=arc1623133815" title="장학금 페이지로 이동합니다.">장학금</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=arc1623133821" title="지원시설 페이지로 이동합니다.">지원시설</a></li>
+<li id="top2m5m3"><a href="./sub.htm?nav_code=arc1623133824" title="학술소모임 페이지로 이동합니다.">학술소모임</a></li>
+<li id="top2m5m4"><a href="./sub.htm?nav_code=arc1623133828" title="교과외활동 페이지로 이동합니다.">교과외활동</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=arc1623133855" id="top1m6" title="게시판 &gt; 건축학부게시판 페이지로 이동합니다.">게시판</a>
+<ul class="depth2" id="top2m6">
+<li id="top2m6m1"><a href="./sub.htm?nav_code=arc1623133855" title="건축학부게시판 페이지로 이동합니다.">건축학부게시판</a></li>
+<li id="top2m6m2"><a href="./sub.htm?nav_code=arc1623110359" title="동아리게시판 페이지로 이동합니다.">동아리게시판</a></li>
+<li id="top2m6m3"><a href="./sub.htm?nav_code=arc1623110358" title="학년별공지사항 페이지로 이동합니다.">학년별공지사항</a></li>
+<li id="top2m6m4"><a href="./sub.htm?nav_code=arc1623134210" title="연구실홈페이지 페이지로 이동합니다.">연구실홈페이지</a></li>
+<li id="top2m6m5"><a href="./sub.htm?nav_code=arc1623134220" title="자료실 페이지로 이동합니다.">자료실</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(6,3);max_2menu=5;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../arch/data/designImages/SUBBG_1623238678');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:340px;width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:340px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:904px;height:100px;left: 0px; top: 175px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">건축학부</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">건축(공)학 분야의 발전을 선도적이고 창의적으로 이끌어 나갈 수 있는<br/>우수한 건축인과 전문기술인 및 연구 인력을 양성합니다.</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=arc1623110361">게시판</a></li><li><a href="./sub.htm?nav_code=arc1623110358">학년별공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%ED%95%99%EB%85%84%EB%B3%84%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 학년별공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Farch%2Fsub.htm%3Fnav_code%3Darc1623110358" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=arc1623133855">건축학부게시판</a>
+<ul id="snb3m1">
+<li class="fst" id="snb3m1m1"><a href="./sub.htm?nav_code=arc1623133855">공지사항</a></li>
+<li id="snb3m1m2"><a href="./sub.htm?nav_code=arc1623133879">채용/인턴</a></li>
+<li id="snb3m1m3"><a href="./sub.htm?nav_code=arc1623133886">자유게시판</a></li>
+<li id="snb3m1m4"><a href="./sub.htm?nav_code=arc1623110357">사진첩</a></li>
+<li id="snb3m1m5"><a href="./sub.htm?nav_code=arc1623133906">학사/행정 Q&amp;A</a></li>
+<li id="snb3m1m6"><a href="./sub.htm?nav_code=arc1623133923">공모전</a></li>
+<li id="snb3m1m7"><a href="./sub.htm?nav_code=arc1670973985">그린리모델링혁신인재양성사업</a></li>
+</ul>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=arc1623110359">동아리게시판</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=arc1623110358">학년별공지사항</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=arc1623134210">연구실홈페이지</a>
+</li>
+<li id="snb2m5"><a href="./sub.htm?nav_code=arc1623134220">자료실</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(3,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>학년별공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="arc1623110358">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/arch/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+<!--[SubBegin] 검색알고리즘 -->
+<div class="tab_list board_search mbp20">
+<ul class="tab5">
+<li class="on"><a href="/HOME/arch/sub.htm?view_cate=&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">전체</a></li>
+<li><a href="/HOME/arch/sub.htm?view_cate=1학년&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">1학년</a></li>
+<li><a href="/HOME/arch/sub.htm?view_cate=2학년&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">2학년</a></li>
+<li><a href="/HOME/arch/sub.htm?view_cate=3학년&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">3학년</a></li>
+<li><a href="/HOME/arch/sub.htm?view_cate=4학년&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">4학년</a></li>
+<li><a href="/HOME/arch/sub.htm?view_cate=5학년&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX&amp;site_code=arch">5학년</a></li>
+</ul>
+</div>
+<div class="board_search">
+<form action="/HOME/arch/sub.htm" method="get" name="bbs_form01" onsubmit="return search01();" title="게시물 검색">
+<input name="code" type="hidden" value="p50wBvCixQGX"/>
+<input name="nav_code" type="hidden" value="arc1623110358"/>
+<input name="order_list" type="hidden" value=""/>
+<input name="list_scale" type="hidden" value=""/>
+<input name="view_cate" type="hidden" value=""/>
+<input class="text" id="search_order" name="search_order" title="검색어" type="text" value="">
+<button onclick="search01();return false;" type="button"><i class="fa fa-search"></i><span>검색</span></button>
+</input></form>
+</div>
+<!-- <div class="board_info">
+						<div class="left">총 <em>53</em>개의 글이 있습니다. (<em>1</em>/6 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/arch/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='arc1623110358'>
+							<input type='hidden' name='code' value='p50wBvCixQGX'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+<div class="board_list">
+<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+<thead>
+<tr>
+<th abbr="번호" scope="col" style="width:50px;">번호</th>
+<th abbr="첨부" scope="col" style="width:100px;">카테고리</th>
+<th abbr="제목" scope="col">제목</th>
+<th abbr="첨부" scope="col" style="width:100px;">첨부</th>
+<th abbr="작성자" class="writer" scope="col" style="width:200px">작성자</th>
+<th abbr="작성일" scope="col" style="width:100px;">작성일</th>
+<th abbr="조회" scope="col" style="width:80px;">조회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="category"><span class="badge category yellow">2학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">&lt; 건축학 필수전공, 필수교양 &gt;</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">건축학부</td>
+<td class="date">2019-01-16</td>
+<td class="hit">2769</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="category"><span class="badge category red">1학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM1OCZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">&lt; 건축학 필수전공, 필수교양 &gt;</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM1OCZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">건축학부</td>
+<td class="date">2019-01-16</td>
+<td class="hit">3452</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="category"><span class="badge category yellow">2학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM1NSZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">건축학부 공지사항</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">건축학부</td>
+<td class="date">2019-01-15</td>
+<td class="hit">2599</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="category"><span class="badge category red">1학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM1NCZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">건축학부 공지사항</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">건축학부</td>
+<td class="date">2019-01-15</td>
+<td class="hit">2706</td>
+</tr>
+<tr>
+<td class="num">53</td>
+<td class="category"><span class="badge category green">3학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">[수업자료] 구조동역학 옥상실험 계측자료입니다.</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">건축학부</td>
+<td class="date">2022-10-06</td>
+<td class="hit">173</td>
+</tr>
+<tr>
+<td class="num">52</td>
+<td class="category"></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTU3NyZzdGFydFBhZ2U9MCZsaXN0Tm89NTImdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">[수업자료] 구조동역학 옥상실험 계측 데이터입니다.</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU3NyZzdGFydFBhZ2U9MCZsaXN0Tm89NTImdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">건축학부</td>
+<td class="date">2021-10-13</td>
+<td class="hit">145</td>
+</tr>
+<tr>
+<td class="num">51</td>
+<td class="category"><span class="badge category yellow">2학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3NiZzdGFydFBhZ2U9MCZsaXN0Tm89NTEmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">창의적 기본설계 내진구조물 예시(영상) 입니다.</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3NiZzdGFydFBhZ2U9MCZsaXN0Tm89NTEmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">김구연</td>
+<td class="date">2020-06-03</td>
+<td class="hit">770</td>
+</tr>
+<tr>
+<td class="num">50</td>
+<td class="category"><span class="badge category red">1학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3NSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">안내-2020국가우수장학금(이공계) 수능우수유형 신규</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTM3NSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">백신영</td>
+<td class="date">2020-04-10</td>
+<td class="hit">776</td>
+</tr>
+<tr>
+<td class="num">49</td>
+<td class="category"><span class="badge category sky">4학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3NCZzdGFydFBhZ2U9MCZsaXN0Tm89NDkmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">범어도서관 남측 가로공간의 개선을 위한 아이디어</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3NCZzdGFydFBhZ2U9MCZsaXN0Tm89NDkmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">백신영</td>
+<td class="date">2020-04-09</td>
+<td class="hit">741</td>
+</tr>
+<tr>
+<td class="num">48</td>
+<td class="category"><span class="badge category blue">5학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3MyZzdGFydFBhZ2U9MCZsaXN0Tm89NDgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">범어도서관 남측 가로공간의 개선을 위한 아이디어</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3MyZzdGFydFBhZ2U9MCZsaXN0Tm89NDgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">백신영</td>
+<td class="date">2020-04-09</td>
+<td class="hit">613</td>
+</tr>
+<tr>
+<td class="num">47</td>
+<td class="category"><span class="badge category yellow">2학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3MiZzdGFydFBhZ2U9MCZsaXN0Tm89NDcmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">[수업자료]2020년도 1학기 창의적 기본 설계 3주차 수업자료(동영상)입니다.</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3MiZzdGFydFBhZ2U9MCZsaXN0Tm89NDcmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">김구연</td>
+<td class="date">2020-03-29</td>
+<td class="hit">676</td>
+</tr>
+<tr>
+<td class="num">46</td>
+<td class="category"><span class="badge category blue">5학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3MSZzdGFydFBhZ2U9MCZsaXN0Tm89NDYmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">건축설계실습 보고서(2019적용안)</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3MSZzdGFydFBhZ2U9MCZsaXN0Tm89NDYmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">백신영</td>
+<td class="date">2019-11-29</td>
+<td class="hit">974</td>
+</tr>
+<tr>
+<td class="num">45</td>
+<td class="category"><span class="badge category sky">4학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM3MCZzdGFydFBhZ2U9MCZsaXN0Tm89NDUmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">20192 졸업자격인정원 접수 안내(붙임 서식)</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTM3MCZzdGFydFBhZ2U9MCZsaXN0Tm89NDUmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">백신영</td>
+<td class="date">2019-11-27</td>
+<td class="hit">875</td>
+</tr>
+<tr>
+<td class="num">44</td>
+<td class="category"><span class="badge category red">1학년</span></td>
+<td class="subject">
+<a href="/HOME/arch/sub.htm?mode=view&amp;mv_data=aWR4PTM2OSZzdGFydFBhZ2U9MCZsaXN0Tm89NDQmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">[수업자료]19년도 2학기 재료역학 수업자료입니다.(2)</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTM2OSZzdGFydFBhZ2U9MCZsaXN0Tm89NDQmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">김구연</td>
+<td class="date">2019-10-11</td>
+<td class="hit">981</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[Begin] 페이징 및 버튼부-->
+<!-- page -->
+<div class="paging">
+<strong>1</strong><a href="/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="2 페이지">2</a>
+<a href="/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="3 페이지">3</a>
+<a href="/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="4 페이지">4</a>
+<a href="/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="5 페이지">5</a>
+<a href="/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="6 페이지">6</a>
+</div>
+<!-- //page -->
+<!-- board_info -->
+<div class="btnarea tar">
+<a class="btn_d btn_dgray" href="/HOME/arch/sub.htm?mode=write&amp;nav_code=arc1623110358&amp;code=p50wBvCixQGX">글쓰기</a>
+</div>
+<!-- //board_info -->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[41566] 
+													우)41566 대구광역시 북구 대학로80(산격동) 경북대학교  공대2호관 316호													 / T.053-950-5590													 / F.053-950-6590												</p>
+<p class="copyright">Copyright ⓒ 경북대학교 공과대학 <em>건축학부</em>. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 195,301명 / Today : 26명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

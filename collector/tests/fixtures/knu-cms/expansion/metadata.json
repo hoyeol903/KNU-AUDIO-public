@@ -1,0 +1,3037 @@
+{
+  "channels": [
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-ddb70636c525",
+      "checked_at": "2026-10-01T14:11:21.374753+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ddb70636c525-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/it/sub.htm?mode=view&mv_data=aWR4PTY5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjM1JnRhYmxlPWV4X2Jic19kYXRhX2l0Jm5hdl9jb2RlPWl0MTYyMzMxMDQzNyZjb2RlPXpvNjNXeFhzNTN1VCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ddb70636c525-list.html",
+          "url": "https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1623310437"
+        }
+      },
+      "listed": 10,
+      "name": "IT대학 · 게시판",
+      "next_url": "https://home.knu.ac.kr/HOME/it/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9em82M1d4WHM1M3VUJm5hdl9jb2RlPWl0MTYyMzMxMDQzNyZ0YWJsZT1leF9iYnNfZGF0YV9pdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "699",
+      "source_board_id": "knu-it-it1623310437",
+      "source_url": "https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1623310437",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-04f9a84e582c",
+      "checked_at": "2026-10-01T14:11:24.327178+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-04f9a84e582c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/it/sub.htm?mode=view&mv_data=aWR4PTcwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ5JnRhYmxlPWV4X2Jic19kYXRhX2l0Jm5hdl9jb2RlPWl0MTc5MDA1MDAzMiZjb2RlPUtaMGNSNDlNZnY4RSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-04f9a84e582c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1790050032"
+        }
+      },
+      "listed": 15,
+      "name": "IT대학 자율학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/it/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S1owY1I0OU1mdjhFJm5hdl9jb2RlPWl0MTc5MDA1MDAzMiZ0YWJsZT1leF9iYnNfZGF0YV9pdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "709",
+      "source_board_id": "knu-it-it1790050032",
+      "source_url": "https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1790050032",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7537783c05b0",
+      "checked_at": "2026-10-01T14:11:27.229986+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7537783c05b0-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/homeedu/sub.htm?mode=view&mv_data=aWR4PTIyMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTIwJnRhYmxlPWV4X2Jic19kYXRhX2hvbWVlZHUmbmF2X2NvZGU9aG9tMTYyMjUyMTI1MCZjb2RlPWx6R2lnRmZGN1poZCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7537783c05b0-list.html",
+          "url": "https://home.knu.ac.kr/HOME/homeedu/sub.htm?nav_code=hom1622521250"
+        }
+      },
+      "listed": 14,
+      "name": "가정교육과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/homeedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bHpHaWdGZkY3WmhkJm5hdl9jb2RlPWhvbTE2MjI1MjEyNTAmdGFibGU9ZXhfYmJzX2RhdGFfaG9tZWVkdSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "222",
+      "source_board_id": "knu-homeedu-hom1622521250",
+      "source_url": "https://home.knu.ac.kr/HOME/homeedu/sub.htm?nav_code=hom1622521250",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-56d213db968e",
+      "checked_at": "2026-10-01T14:11:30.089586+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-56d213db968e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NTImc3RhcnRQYWdlPTAmbGlzdE5vPTQ0MyZ0YWJsZT1leF9iYnNfZGF0YV9udXJzZSZuYXZfY29kZT1udXIxNjI0NTMzMTg1JmNvZGU9VkhUVkZRbFk0bHplJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-56d213db968e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533185"
+        }
+      },
+      "listed": 15,
+      "name": "간호학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VkhUVkZRbFk0bHplJm5hdl9jb2RlPW51cjE2MjQ1MzMxODUmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "4952",
+      "source_board_id": "knu-nurse-nur1624533185",
+      "source_url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533185",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f5bf5684020e",
+      "checked_at": "2026-10-01T14:11:32.557796+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f5bf5684020e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzcmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f5bf5684020e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209"
+        }
+      },
+      "listed": 50,
+      "name": "간호학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "5027",
+      "source_board_id": "knu-nurse-nur1624533209",
+      "source_url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-fd04b6b6208e",
+      "checked_at": "2026-10-01T14:11:35.377498+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fd04b6b6208e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?mode=view&mv_data=aWR4PTY5NSZzdGFydFBhZ2U9MCZsaXN0Tm89NTIwJnRhYmxlPWV4X2Jic19kYXRhX2Rpc2FzdGVyJm5hdl9jb2RlPWRpczE2MTY3MTcyMzcmY29kZT1rUkxwU1FCcnRsUHcmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fd04b6b6208e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?nav_code=dis1616717237"
+        }
+      },
+      "listed": 16,
+      "name": "건설방재공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9a1JMcFNRQnJ0bFB3Jm5hdl9jb2RlPWRpczE2MTY3MTcyMzcmdGFibGU9ZXhfYmJzX2RhdGFfZGlzYXN0ZXImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "695",
+      "source_board_id": "knu-disaster-dis1616717237",
+      "source_url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?nav_code=dis1616717237",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-0158c1288046",
+      "checked_at": "2026-10-01T14:11:38.220156+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0158c1288046-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/arch/sub.htm?mode=view&mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89NTMmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZuYXZfY29kZT1hcmMxNjIzMTEwMzU4JmNvZGU9cDUwd0J2Q2l4UUdYJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0158c1288046-list.html",
+          "url": "https://home.knu.ac.kr/HOME/arch/sub.htm?nav_code=arc1623110358"
+        }
+      },
+      "listed": 14,
+      "name": "건축학부 · 학년별공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/arch/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cDUwd0J2Q2l4UUdYJm5hdl9jb2RlPWFyYzE2MjMxMTAzNTgmdGFibGU9ZXhfYmJzX2RhdGFfYXJjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "737",
+      "source_board_id": "knu-arch-arc1623110358",
+      "source_url": "https://home.knu.ac.kr/HOME/arch/sub.htm?nav_code=arc1623110358",
+      "status": "verified"
+    },
+    {
+      "channel_id": "notice-541aff0da509",
+      "checked_at": "2026-10-01T14:11:39.841979+09:00",
+      "errors": [],
+      "files": {
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-541aff0da509-list.html",
+          "url": "https://home.knu.ac.kr/HOME/CEBA/sub.htm?nav_code=CEB1748499674"
+        }
+      },
+      "listed": 0,
+      "name": "경상대학 · 공지사항",
+      "next_url": null,
+      "source_board_id": "knu-ceba-ceb1748499674",
+      "source_url": "https://home.knu.ac.kr/HOME/CEBA/sub.htm?nav_code=CEB1748499674",
+      "status": "empty"
+    },
+    {
+      "channel_id": "notice-78e12cb6bc22",
+      "checked_at": "2026-10-01T14:11:41.603711+09:00",
+      "errors": [],
+      "files": {
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-78e12cb6bc22-list.html",
+          "url": "https://home.knu.ac.kr/HOME/biz/sub.htm?nav_code=biz1623200446"
+        }
+      },
+      "listed": 0,
+      "name": "경상대학 자율학부 · 공지사항",
+      "next_url": null,
+      "source_board_id": "knu-biz-biz1623200446",
+      "source_url": "https://home.knu.ac.kr/HOME/biz/sub.htm?nav_code=biz1623200446",
+      "status": "empty"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-a6afbe817dd2",
+      "checked_at": "2026-10-01T14:11:44.477933+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a6afbe817dd2-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTEmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a6afbe817dd2-list.html",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
+        }
+      },
+      "listed": 21,
+      "name": "경영학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9QTdKVEE0R3QwbE45Jm5hdl9jb2RlPWtiaTE2MjMzNzA1NTcmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "5849",
+      "source_board_id": "knu-kbiz-kbi1623370557",
+      "source_url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-8860bb9a4bc5",
+      "checked_at": "2026-10-01T14:11:46.749209+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8860bb9a4bc5-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MjgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8860bb9a4bc5-list.html",
+          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509"
+        }
+      },
+      "listed": 27,
+      "name": "경제통상학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WGNXUmx6dkN1emk1Jm5hdl9jb2RlPWVjbzE2MjMzNzA1MDkmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "5113",
+      "source_board_id": "knu-econ-eco1623370509",
+      "source_url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-a267229666ef",
+      "checked_at": "2026-10-01T14:11:49.800918+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a267229666ef-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MDkmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTAmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a267229666ef-list.html",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?nav_code=ara1623718660"
+        }
+      },
+      "listed": 45,
+      "name": "고고인류학과 · 학부공지",
+      "next_url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9empXeEVrMk9wWktKJm5hdl9jb2RlPWFyYTE2MjM3MTg2NjAmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4809",
+      "source_board_id": "knu-aran-ara1623718660",
+      "source_url": "https://home.knu.ac.kr/HOME/aran/sub.htm?nav_code=ara1623718660",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7ff56c3af3e0",
+      "checked_at": "2026-10-01T14:11:52.787412+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7ff56c3af3e0-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2OTImc3RhcnRQYWdlPTAmbGlzdE5vPTUyOCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7ff56c3af3e0-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
+        }
+      },
+      "listed": 22,
+      "name": "고분자공학과 · 학사 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WldMYThlNVNFdW1hJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1692",
+      "source_board_id": "knu-knupolymer-knu1623888520",
+      "source_url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-8d0ba20b8a78",
+      "checked_at": "2026-10-01T14:11:55.544002+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8d0ba20b8a78-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ento/sub.htm?mode=view&mv_data=aWR4PTk5MCZzdGFydFBhZ2U9MCZsaXN0Tm89NzcxJnRhYmxlPWV4X2Jic19kYXRhX2VudG8mbmF2X2NvZGU9ZW50MTYyNTEzMTEzMyZjb2RlPWdQdTdFM0ROS0NLSyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8d0ba20b8a78-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ento/sub.htm?nav_code=ent1625131133"
+        }
+      },
+      "listed": 12,
+      "name": "곤충생명과학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ento/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Z1B1N0UzRE5LQ0tLJm5hdl9jb2RlPWVudDE2MjUxMzExMzMmdGFibGU9ZXhfYmJzX2RhdGFfZW50byZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "990",
+      "source_board_id": "knu-ento-ent1625131133",
+      "source_url": "https://home.knu.ac.kr/HOME/ento/sub.htm?nav_code=ent1625131133",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ab33c8b6f3d1",
+      "checked_at": "2026-10-01T14:11:58.390814+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ab33c8b6f3d1-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/engineer/sub.htm?mode=view&mv_data=aWR4PTUzOCZzdGFydFBhZ2U9MCZsaXN0Tm89MjImdGFibGU9ZXhfYmJzX2RhdGFfZW5naW5lZXImbmF2X2NvZGU9ZW5nMTcyOTA3NjgwMiZjb2RlPUdUcjFuRHYzYklPdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ab33c8b6f3d1-list.html",
+          "url": "https://home.knu.ac.kr/HOME/engineer/sub.htm?nav_code=eng1729076802"
+        }
+      },
+      "listed": 10,
+      "name": "공과대학 자율학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/engineer/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9R1RyMW5EdjNiSU90Jm5hdl9jb2RlPWVuZzE3MjkwNzY4MDImdGFibGU9ZXhfYmJzX2RhdGFfZW5naW5lZXImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "538",
+      "source_board_id": "knu-engineer-eng1729076802",
+      "source_url": "https://home.knu.ac.kr/HOME/engineer/sub.htm?nav_code=eng1729076802",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-cd772685aa0f",
+      "checked_at": "2026-10-01T14:12:01.774673+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-cd772685aa0f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/cst/sub.htm?mode=view&mv_data=aWR4PTUxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MzEyJnRhYmxlPWV4X2Jic19kYXRhX2NzdCZuYXZfY29kZT1jc3QxNjE0NzYwODk4JmNvZGU9TXdtdFJMc29QbmtIJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-cd772685aa0f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/cst/sub.htm?nav_code=cst1614760898"
+        }
+      },
+      "listed": 10,
+      "name": "과학기술대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/cst/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TXdtdFJMc29QbmtIJm5hdl9jb2RlPWNzdDE2MTQ3NjA4OTgmdGFibGU9ZXhfYmJzX2RhdGFfY3N0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "512",
+      "source_board_id": "knu-cst-cst1614760898",
+      "source_url": "https://home.knu.ac.kr/HOME/cst/sub.htm?nav_code=cst1614760898",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-eaa2bcd13c4a",
+      "checked_at": "2026-10-01T14:12:04.676971+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-eaa2bcd13c4a-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?mode=view&mv_data=aWR4PTg2MyZzdGFydFBhZ2U9MCZsaXN0Tm89MzQ2JnRhYmxlPWV4X2Jic19kYXRhX3RvdXImbmF2X2NvZGU9dG91MTYxNjExNjk1MCZjb2RlPUYzYlJTRTlxT3hKWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-eaa2bcd13c4a-list.html",
+          "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950"
+        }
+      },
+      "listed": 14,
+      "name": "관광학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/tour/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9RjNiUlNFOXFPeEpZJm5hdl9jb2RlPXRvdTE2MTYxMTY5NTAmdGFibGU9ZXhfYmJzX2RhdGFfdG91ciZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "863",
+      "source_board_id": "knu-tour-tou1616116950",
+      "source_url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f3ba4290e5dd",
+      "checked_at": "2026-10-01T14:12:07.827841+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f3ba4290e5dd-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MDkmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f3ba4290e5dd-list.html",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?nav_code=kmu1622609949"
+        }
+      },
+      "listed": 12,
+      "name": "국악학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WEJrOVdHMzd6SHFsJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1553",
+      "source_board_id": "knu-kmusic-kmu1622609949",
+      "source_url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?nav_code=kmu1622609949",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ca78d3fd3c51",
+      "checked_at": "2026-10-01T14:12:10.690693+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ca78d3fd3c51-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI2OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcxJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ca78d3fd3c51-list.html",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?nav_code=kor1622459695"
+        }
+      },
+      "listed": 11,
+      "name": "국어교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cWtkZ08yWFBTN1l3Jm5hdl9jb2RlPWtvcjE2MjI0NTk2OTUmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "269",
+      "source_board_id": "knu-koredu-kor1622459695",
+      "source_url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?nav_code=kor1622459695",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-6c1f8a512fa4",
+      "checked_at": "2026-10-01T14:12:13.540783+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6c1f8a512fa4-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEzMzEmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNSZ0YWJsZT1leF9iYnNfZGF0YV9rb3JlYW4mbmF2X2NvZGU9a29yMTY1NzA3MTM1NyZjb2RlPVpFZkhDaUJQbFJCciZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6c1f8a512fa4-list.html",
+          "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
+        }
+      },
+      "listed": 19,
+      "name": "국어국문학과 · 공지사항(학사)",
+      "next_url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WkVmSENpQlBsUkJyJm5hdl9jb2RlPWtvcjE2NTcwNzEzNTcmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1331",
+      "source_board_id": "knu-korean-kor1657071357",
+      "source_url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-b7eb69e8405d",
+      "checked_at": "2026-10-01T14:12:16.398179+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b7eb69e8405d-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/material/sub.htm?mode=view&mv_data=aWR4PTI4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX21hdGVyaWFsJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmY29kZT1pNjRwTnBNdVg0Ukgmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b7eb69e8405d-list.html",
+          "url": "https://home.knu.ac.kr/HOME/material/sub.htm?nav_code=mat1623632513"
+        }
+      },
+      "listed": 10,
+      "name": "금속재료공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/material/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9aTY0cE5wTXVYNFJIJm5hdl9jb2RlPW1hdDE2MjM2MzI1MTMmdGFibGU9ZXhfYmJzX2RhdGFfbWF0ZXJpYWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "283",
+      "source_board_id": "knu-material-mat1623632513",
+      "source_url": "https://home.knu.ac.kr/HOME/material/sub.htm?nav_code=mat1623632513",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-74a3f719131b",
+      "checked_at": "2026-10-01T14:12:18.773775+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-74a3f719131b-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY4NTcmc3RhcnRQYWdlPTAmbGlzdE5vPTE5ODImdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-74a3f719131b-list.html",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
+        }
+      },
+      "listed": 25,
+      "name": "기계공학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/me/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MGJvY0hDRkhlNDNRJm5hdl9jb2RlPW1lMTYyMzM3MDQzOCZ0YWJsZT1leF9iYnNfZGF0YV9tZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "6857",
+      "source_board_id": "knu-me-me1623370438",
+      "source_url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-61c2fdac4b03",
+      "checked_at": "2026-10-01T14:12:21.884860+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-61c2fdac4b03-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?mode=view&mv_data=aWR4PTg1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NDMzJnRhYmxlPWV4X2Jic19kYXRhX2Ftc2UmbmF2X2NvZGU9YW1zMTYyMjYwOTcxNSZjb2RlPWF4eTZzelJxbG5zcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-61c2fdac4b03-list.html",
+          "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?nav_code=ams1622609715"
+        }
+      },
+      "listed": 416,
+      "name": "나노신소재공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/amse/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9YXh5NnN6UnFsbnNwJm5hdl9jb2RlPWFtczE2MjI2MDk3MTUmdGFibGU9ZXhfYmJzX2RhdGFfYW1zZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "859",
+      "source_board_id": "knu-amse-ams1622609715",
+      "source_url": "https://home.knu.ac.kr/HOME/amse/sub.htm?nav_code=ams1622609715",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-2fdcd3cab366",
+      "checked_at": "2026-10-01T14:12:24.097343+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2fdcd3cab366-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyMjAmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzgmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2fdcd3cab366-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?nav_code=knu1742773842"
+        }
+      },
+      "listed": 14,
+      "name": "노어노문학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9QnFZdFplV1VrYkd0Jm5hdl9jb2RlPWtudTE3NDI3NzM4NDImdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "3220",
+      "source_board_id": "knu-knurussian-knu1742773842",
+      "source_url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?nav_code=knu1742773842",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-dc7fc6a93fe8",
+      "checked_at": "2026-10-01T14:12:26.887059+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dc7fc6a93fe8-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/aifm/sub.htm?mode=view&mv_data=aWR4PTgmc3RhcnRQYWdlPTAmbGlzdE5vPTgmdGFibGU9ZXhfYmJzX2RhdGFfYWlmbSZuYXZfY29kZT1haWYxNjIzMDI5NjE2JmNvZGU9SFZma0JSbVR2VEVwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dc7fc6a93fe8-list.html",
+          "url": "https://home.knu.ac.kr/HOME/aifm/sub.htm?nav_code=aif1623029616"
+        }
+      },
+      "listed": 8,
+      "name": "농산업학과 · 공지사항",
+      "next_url": null,
+      "sample_post_id": "8",
+      "source_board_id": "knu-aifm-aif1623029616",
+      "source_url": "https://home.knu.ac.kr/HOME/aifm/sub.htm?nav_code=aif1623029616",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-e3a4a5455384",
+      "checked_at": "2026-10-01T14:12:29.671188+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e3a4a5455384-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?mode=view&mv_data=aWR4PTQ2NCZzdGFydFBhZ2U9MCZsaXN0Tm89OTYmdGFibGU9ZXhfYmJzX2RhdGFfY2FscyZuYXZfY29kZT1jYWwxNjIzMjAwMzMxJmNvZGU9Q2QzNFVvc2J1eXRMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e3a4a5455384-list.html",
+          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?nav_code=cal1623200331"
+        }
+      },
+      "listed": 10,
+      "name": "농업생명과학대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/cals/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Q2QzNFVvc2J1eXRMJm5hdl9jb2RlPWNhbDE2MjMyMDAzMzEmdGFibGU9ZXhfYmJzX2RhdGFfY2FscyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "464",
+      "source_board_id": "knu-cals-cal1623200331",
+      "source_url": "https://home.knu.ac.kr/HOME/cals/sub.htm?nav_code=cal1623200331",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-12a353fc2eb8",
+      "checked_at": "2026-10-01T14:12:32.441324+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-12a353fc2eb8-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/acen/sub.htm?mode=view&mv_data=aWR4PTYxJnN0YXJ0UGFnZT0wJmxpc3RObz0xOSZ0YWJsZT1leF9iYnNfZGF0YV9hY2VuJm5hdl9jb2RlPWFjZTE2MjI1MjE0NjImY29kZT16V0MzUktXUjJrcEgmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-12a353fc2eb8-list.html",
+          "url": "https://home.knu.ac.kr/HOME/acen/sub.htm?nav_code=ace1622521462"
+        }
+      },
+      "listed": 11,
+      "name": "농업토목공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/acen/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9eldDM1JLV1Iya3BIJm5hdl9jb2RlPWFjZTE2MjI1MjE0NjImdGFibGU9ZXhfYmJzX2RhdGFfYWNlbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "61",
+      "source_board_id": "knu-acen-ace1622521462",
+      "source_url": "https://home.knu.ac.kr/HOME/acen/sub.htm?nav_code=ace1622521462",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-683cb3e528ee",
+      "checked_at": "2026-10-01T14:12:35.790489+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-683cb3e528ee-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?mode=view&mv_data=aWR4PTIyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MjQmdGFibGU9ZXhfYmJzX2RhdGFfZ2VyZWR1Jm5hdl9jb2RlPWdlcjE2MjI2MDk5NzMmY29kZT1sZmUzREFVelUwdk4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-683cb3e528ee-list.html",
+          "url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?nav_code=ger1622609973"
+        }
+      },
+      "listed": 13,
+      "name": "독어교육전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bGZlM0RBVXpVMHZOJm5hdl9jb2RlPWdlcjE2MjI2MDk5NzMmdGFibGU9ZXhfYmJzX2RhdGFfZ2VyZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "223",
+      "source_board_id": "knu-geredu-ger1622609973",
+      "source_url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?nav_code=ger1622609973",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-0ef73fec9014",
+      "checked_at": "2026-10-01T14:12:38.975510+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0ef73fec9014-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?mode=view&mv_data=aWR4PTE2Njkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMiZ0YWJsZT1leF9iYnNfZGF0YV9nZXJtYW4mbmF2X2NvZGU9Z2VyMTYyMzEzMzk4MiZjb2RlPWZIeTJHNUZFVW1mRCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0ef73fec9014-list.html",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623133982"
+        }
+      },
+      "listed": 12,
+      "name": "독어독문학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/german/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Zkh5Mkc1RkVVbWZEJm5hdl9jb2RlPWdlcjE2MjMxMzM5ODImdGFibGU9ZXhfYmJzX2RhdGFfZ2VybWFuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1669",
+      "source_board_id": "knu-german-ger1623133982",
+      "source_url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623133982",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d42e73c1be80",
+      "checked_at": "2026-10-01T14:12:41.698553+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d42e73c1be80-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?mode=view&mv_data=aWR4PTE2Njcmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNSZ0YWJsZT1leF9iYnNfZGF0YV9nZXJtYW4mbmF2X2NvZGU9Z2VyMTYyMzIwMzM1MCZjb2RlPW5oRUFlSUtYczNJdyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d42e73c1be80-list.html",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623203350"
+        }
+      },
+      "listed": 14,
+      "name": "독어독문학과 · 학사공지",
+      "next_url": "https://home.knu.ac.kr/HOME/german/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bmhFQWVJS1hzM0l3Jm5hdl9jb2RlPWdlcjE2MjMyMDMzNTAmdGFibGU9ZXhfYmJzX2RhdGFfZ2VybWFuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1667",
+      "source_board_id": "knu-german-ger1623203350",
+      "source_url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623203350",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-30f51dd33791",
+      "checked_at": "2026-10-01T14:12:44.564555+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-30f51dd33791-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?mode=view&mv_data=aWR4PTExOTgmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MyZ0YWJsZT1leF9iYnNfZGF0YV9hbmliaW90ZWNoJm5hdl9jb2RlPWFuaTE2MjI2Mjk5OTEmY29kZT1PR0VQMnpGc2JwZjEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-30f51dd33791-list.html",
+          "url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?nav_code=ani1622629991"
+        }
+      },
+      "listed": 11,
+      "name": "동물생명공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9T0dFUDJ6RnNicGYxJm5hdl9jb2RlPWFuaTE2MjI2Mjk5OTEmdGFibGU9ZXhfYmJzX2RhdGFfYW5pYmlvdGVjaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1198",
+      "source_board_id": "knu-anibiotech-ani1622629991",
+      "source_url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?nav_code=ani1622629991",
+      "status": "verified"
+    },
+    {
+      "body_status": "attachment-only",
+      "channel_id": "notice-750dff5618d4",
+      "checked_at": "2026-10-01T14:12:47.851259+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-750dff5618d4-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/vcd/sub.htm?mode=view&mv_data=aWR4PTc3MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-750dff5618d4-list.html",
+          "url": "https://home.knu.ac.kr/HOME/vcd/sub.htm?nav_code=vcd1622551643"
+        }
+      },
+      "listed": 141,
+      "name": "디자인학과 · 학과공지",
+      "next_url": "https://home.knu.ac.kr/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "773",
+      "source_board_id": "knu-vcd-vcd1622551643",
+      "source_url": "https://home.knu.ac.kr/HOME/vcd/sub.htm?nav_code=vcd1622551643",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ddfc5b2ca163",
+      "checked_at": "2026-10-01T14:12:50.685110+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ddfc5b2ca163-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MCZsaXN0Tm89NzE1JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ddfc5b2ca163-list.html",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
+        }
+      },
+      "listed": 32,
+      "name": "로봇공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MnJUODE4UGxYVDN0Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmdGFibGU9ZXhfYmJzX2RhdGFfcm9ib3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "808",
+      "source_board_id": "knu-robot-rob1623632307",
+      "source_url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-fe90b8f3beb7",
+      "checked_at": "2026-10-01T14:12:57.445081+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fe90b8f3beb7-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/spanimal/sub.htm?mode=view&mv_data=aWR4PTIxNDUmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOSZ0YWJsZT1leF9iYnNfZGF0YV9zcGFuaW1hbCZuYXZfY29kZT1zcGExNjIyNDUwOTc5JmNvZGU9VnhZaUIyYjdIRklKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fe90b8f3beb7-list.html",
+          "url": "https://home.knu.ac.kr/HOME/spanimal/sub.htm?nav_code=spa1622450979"
+        }
+      },
+      "listed": 13,
+      "name": "말/특수동물학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/spanimal/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VnhZaUIyYjdIRklKJm5hdl9jb2RlPXNwYTE2MjI0NTA5NzkmdGFibGU9ZXhfYmJzX2RhdGFfc3BhbmltYWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "2145",
+      "source_board_id": "knu-spanimal-spa1622450979",
+      "source_url": "https://home.knu.ac.kr/HOME/spanimal/sub.htm?nav_code=spa1622450979",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-956827a355a7",
+      "checked_at": "2026-10-01T14:12:59.666182+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-956827a355a7-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/lis/sub.htm?mode=view&mv_data=aWR4PTExOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTUzMSZ0YWJsZT1leF9iYnNfZGF0YV9saXMmbmF2X2NvZGU9bGlzMTYyMjQ2MDEwOCZjb2RlPVFFbm1SWGZsYzVGVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-956827a355a7-list.html",
+          "url": "https://home.knu.ac.kr/HOME/lis/sub.htm?nav_code=lis1622460108"
+        }
+      },
+      "listed": 21,
+      "name": "문헌정보학과 · 학부공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/lis/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UUVubVJYZmxjNUZVJm5hdl9jb2RlPWxpczE2MjI0NjAxMDgmdGFibGU9ZXhfYmJzX2RhdGFfbGlzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1194",
+      "source_board_id": "knu-lis-lis1622460108",
+      "source_url": "https://home.knu.ac.kr/HOME/lis/sub.htm?nav_code=lis1622460108",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ec96ad09ef78",
+      "checked_at": "2026-10-01T14:13:01.891408+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ec96ad09ef78-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMTYmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MDMmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ec96ad09ef78-list.html",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316"
+        }
+      },
+      "listed": 26,
+      "name": "물리교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VmpxTnE5dmw1WGttJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "5016",
+      "source_board_id": "knu-physed-phy1623371316",
+      "source_url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f4ac509b75c4",
+      "checked_at": "2026-10-01T14:13:04.169612+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f4ac509b75c4-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMwOTkmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f4ac509b75c4-list.html",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
+        }
+      },
+      "listed": 31,
+      "name": "물리학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S1p0RFZQaUNCN1VwJm5hdl9jb2RlPXBoeTE2NDU1OTIxOTcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4724",
+      "source_board_id": "knu-physics-phy1645592197",
+      "source_url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-7dbc635b2399",
+      "checked_at": "2026-10-01T14:13:07.094802+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7dbc635b2399-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?mode=view&mv_data=aWR4PTE1NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTM3MSZ0YWJsZT1leF9iYnNfZGF0YV9tYXNzY29tJm5hdl9jb2RlPW1hczE2MTQwNzk2ODAmY29kZT1yN0hweEpPYUV6UGMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7dbc635b2399-list.html",
+          "url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?nav_code=mas1614079680"
+        }
+      },
+      "listed": 17,
+      "name": "미디어커뮤니케이션학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cjdIcHhKT2FFelBjJm5hdl9jb2RlPW1hczE2MTQwNzk2ODAmdGFibGU9ZXhfYmJzX2RhdGFfbWFzc2NvbSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1564",
+      "source_board_id": "knu-masscom-mas1614079680",
+      "source_url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?nav_code=mas1614079680",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7e56cbeca2ee",
+      "checked_at": "2026-10-01T14:13:09.331628+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7e56cbeca2ee-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/arts/sub.htm?mode=view&mv_data=aWR4PTEwNTAmc3RhcnRQYWdlPTAmbGlzdE5vPTYxMyZ0YWJsZT1leF9iYnNfZGF0YV9hcnRzJm5hdl9jb2RlPWFydDE2MjMxOTk2OTQmY29kZT10REkzMjZoeEFKZUkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7e56cbeca2ee-list.html",
+          "url": "https://home.knu.ac.kr/HOME/arts/sub.htm?nav_code=art1623199694"
+        }
+      },
+      "listed": 17,
+      "name": "미술학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/arts/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dERJMzI2aHhBSmVJJm5hdl9jb2RlPWFydDE2MjMxOTk2OTQmdGFibGU9ZXhfYmJzX2RhdGFfYXJ0cyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1050",
+      "source_board_id": "knu-arts-art1623199694",
+      "source_url": "https://home.knu.ac.kr/HOME/arts/sub.htm?nav_code=art1623199694",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-73ffa1763744",
+      "checked_at": "2026-10-01T14:13:12.354126+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-73ffa1763744-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/biofiber/sub.htm?mode=view&mv_data=aWR4PTIyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTg0JnRhYmxlPWV4X2Jic19kYXRhX2Jpb2ZpYmVyJm5hdl9jb2RlPWJpbzE2MjMwMjkzNTMmY29kZT1MOGp3cHlZcXE4ekEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-73ffa1763744-list.html",
+          "url": "https://home.knu.ac.kr/HOME/biofiber/sub.htm?nav_code=bio1623029353"
+        }
+      },
+      "listed": 17,
+      "name": "바이오섬유소재학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/biofiber/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TDhqd3B5WXFxOHpBJm5hdl9jb2RlPWJpbzE2MjMwMjkzNTMmdGFibGU9ZXhfYmJzX2RhdGFfYmlvZmliZXImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "223",
+      "source_board_id": "knu-biofiber-bio1623029353",
+      "source_url": "https://home.knu.ac.kr/HOME/biofiber/sub.htm?nav_code=bio1623029353",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9b84b4adc47a",
+      "checked_at": "2026-10-01T14:13:15.245269+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9b84b4adc47a-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/fredu/sub.htm?mode=view&mv_data=aWR4PTkwOSZzdGFydFBhZ2U9MCZsaXN0Tm89NTQ1JnRhYmxlPWV4X2Jic19kYXRhX2ZyZWR1Jm5hdl9jb2RlPWZyZTE2MjMxMzQzNTcmY29kZT0zaFlBZFI5aGt0Y1omc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9b84b4adc47a-list.html",
+          "url": "https://home.knu.ac.kr/HOME/fredu/sub.htm?nav_code=fre1623134357"
+        }
+      },
+      "listed": 12,
+      "name": "불어교육전공(~2024학년) · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/fredu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9M2hZQWRSOWhrdGNaJm5hdl9jb2RlPWZyZTE2MjMxMzQzNTcmdGFibGU9ZXhfYmJzX2RhdGFfZnJlZHUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "909",
+      "source_board_id": "knu-fredu-fre1623134357",
+      "source_url": "https://home.knu.ac.kr/HOME/fredu/sub.htm?nav_code=fre1623134357",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-b5015ce1e74b",
+      "checked_at": "2026-10-01T14:13:19.428707+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5015ce1e74b-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/french/sub.htm?mode=view&mv_data=aWR4PTE4NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTExOTcmdGFibGU9ZXhfYmJzX2RhdGFfZnJlbmNoJm5hdl9jb2RlPWZyZTE2MjMxNDc3NTMmY29kZT1KR09xSWFVbjlrZ2smc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5015ce1e74b-list.html",
+          "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
+        }
+      },
+      "listed": 17,
+      "name": "불어불문학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/french/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SkdPcUlhVW45a2drJm5hdl9jb2RlPWZyZTE2MjMxNDc3NTMmdGFibGU9ZXhfYmJzX2RhdGFfZnJlbmNoJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1854",
+      "source_board_id": "knu-french-fre1623147753",
+      "source_url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-2ae1ca96e3de",
+      "checked_at": "2026-10-01T14:13:22.444211+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2ae1ca96e3de-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQxNSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA3JnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2ae1ca96e3de-list.html",
+          "url": "https://home.knu.ac.kr/HOME/education/sub.htm?nav_code=edu1623200393"
+        }
+      },
+      "listed": 18,
+      "name": "사범대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/education/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bzVaUW5sNTdXV0s3Jm5hdl9jb2RlPWVkdTE2MjMyMDAzOTMmdGFibGU9ZXhfYmJzX2RhdGFfZWR1Y2F0aW9uJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "415",
+      "source_board_id": "knu-education-edu1623200393",
+      "source_url": "https://home.knu.ac.kr/HOME/education/sub.htm?nav_code=edu1623200393",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9f20cdb4b423",
+      "checked_at": "2026-10-01T14:13:25.233846+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9f20cdb4b423-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/history/sub.htm?mode=view&mv_data=aWR4PTIxMTgmc3RhcnRQYWdlPTAmbGlzdE5vPTk0OSZ0YWJsZT1leF9iYnNfZGF0YV9oaXN0b3J5Jm5hdl9jb2RlPWhpczE2MjI1MjE0MjcmY29kZT1aQ2ZHcWJyb2E0QW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9f20cdb4b423-list.html",
+          "url": "https://home.knu.ac.kr/HOME/history/sub.htm?nav_code=his1622521427"
+        }
+      },
+      "listed": 18,
+      "name": "사학과 · 공지사항(학부)",
+      "next_url": "https://home.knu.ac.kr/HOME/history/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WkNmR3Ficm9hNEFuJm5hdl9jb2RlPWhpczE2MjI1MjE0MjcmdGFibGU9ZXhfYmJzX2RhdGFfaGlzdG9yeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "2118",
+      "source_board_id": "knu-history-his1622521427",
+      "source_url": "https://home.knu.ac.kr/HOME/history/sub.htm?nav_code=his1622521427",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7502f997e5e7",
+      "checked_at": "2026-10-01T14:13:27.966942+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7502f997e5e7-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?mode=view&mv_data=aWR4PTYwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTUyJnRhYmxlPWV4X2Jic19kYXRhX2Nvc3MmbmF2X2NvZGU9Y29zMTYyMzE5OTc3OCZjb2RlPWJzZFV1WEtZbDBJUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7502f997e5e7-list.html",
+          "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?nav_code=cos1623199778"
+        }
+      },
+      "listed": 11,
+      "name": "사회과학대학 자율학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/coss/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9YnNkVXVYS1lsMElTJm5hdl9jb2RlPWNvczE2MjMxOTk3NzgmdGFibGU9ZXhfYmJzX2RhdGFfY29zcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "603",
+      "source_board_id": "knu-coss-cos1623199778",
+      "source_url": "https://home.knu.ac.kr/HOME/coss/sub.htm?nav_code=cos1623199778",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-bbfcc8756400",
+      "checked_at": "2026-10-01T14:13:30.220921+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-bbfcc8756400-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5MzImc3RhcnRQYWdlPTAmbGlzdE5vPTMwNTkmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-bbfcc8756400-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178"
+        }
+      },
+      "listed": 26,
+      "name": "사회복지학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9blJJOTBaRXYzRWRTJm5hdl9jb2RlPWtudTE2MjMwMjYxNzgmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "8932",
+      "source_board_id": "knu-knusw-knu1623026178",
+      "source_url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-1268b7a10e0b",
+      "checked_at": "2026-10-01T14:13:32.464844+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1268b7a10e0b-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NjkmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1268b7a10e0b-list.html",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477"
+        }
+      },
+      "listed": 16,
+      "name": "사회학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Y01HMVVWb3VQVWVjJm5hdl9jb2RlPXNvYzE2MjIxODE0NzcmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "3953",
+      "source_board_id": "knu-socio-soc1622181477",
+      "source_url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-8b73f625639c",
+      "checked_at": "2026-10-01T14:13:35.344867+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8b73f625639c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/fore/sub.htm?mode=view&mv_data=aWR4PTUyNCZzdGFydFBhZ2U9MCZsaXN0Tm89NDM3JnRhYmxlPWV4X2Jic19kYXRhX2ZvcmUmbmF2X2NvZGU9Zm9yMTYyMjcwNDk2MCZjb2RlPUtsVk5sMENicDBYdiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8b73f625639c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/fore/sub.htm?nav_code=for1622704960"
+        }
+      },
+      "listed": 20,
+      "name": "산림생태보호학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/fore/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S2xWTmwwQ2JwMFh2Jm5hdl9jb2RlPWZvcjE2MjI3MDQ5NjAmdGFibGU9ZXhfYmJzX2RhdGFfZm9yZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "524",
+      "source_board_id": "knu-fore-for1622704960",
+      "source_url": "https://home.knu.ac.kr/HOME/fore/sub.htm?nav_code=for1622704960",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-afb535aeb941",
+      "checked_at": "2026-10-01T14:13:38.399970+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-afb535aeb941-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?mode=view&mv_data=aWR4PTI5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX2Jpb2VkdSZuYXZfY29kZT1iaW8xNjIyNDYwMTg4JmNvZGU9S0xBSExoaVMzWXVkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-afb535aeb941-list.html",
+          "url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?nav_code=bio1622460188"
+        }
+      },
+      "listed": 18,
+      "name": "생물교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S0xBSExoaVMzWXVkJm5hdl9jb2RlPWJpbzE2MjI0NjAxODgmdGFibGU9ZXhfYmJzX2RhdGFfYmlvZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "299",
+      "source_board_id": "knu-bioedu-bio1622460188",
+      "source_url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?nav_code=bio1622460188",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-b5e6a10e952e",
+      "checked_at": "2026-10-01T14:13:41.944414+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5e6a10e952e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0ODMmc3RhcnRQYWdlPTAmbGlzdE5vPTIxOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5e6a10e952e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
+        }
+      },
+      "listed": 34,
+      "name": "생물학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9ajFEczhMbjdEcHlTJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "2483",
+      "source_board_id": "knu-bio-bio1616117151",
+      "source_url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9bcb92908bc9",
+      "checked_at": "2026-10-01T14:13:45.346718+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9bcb92908bc9-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0MzQmc3RhcnRQYWdlPTAmbGlzdE5vPTY5JnRhYmxlPWV4X2Jic19kYXRhX2JpbyZuYXZfY29kZT1iaW8xNjE2MTE3MTUwJmNvZGU9MWRPV3FIM05tcEpvJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9bcb92908bc9-list.html",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117150"
+        }
+      },
+      "listed": 36,
+      "name": "생물학과 · 학사공지",
+      "next_url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MWRPV3FIM05tcEpvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTAmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "2434",
+      "source_board_id": "knu-bio-bio1616117150",
+      "source_url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117150",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-3bb6de2335b3",
+      "checked_at": "2026-10-01T14:13:48.290401+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3bb6de2335b3-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/cee/sub.htm?mode=view&mv_data=aWR4PTEwMCZzdGFydFBhZ2U9MCZsaXN0Tm89MzYmdGFibGU9ZXhfYmJzX2RhdGFfY2VlJm5hdl9jb2RlPWNlZTE2MjMyMDA0MTYmY29kZT1wbjNjMlcycXk2NDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3bb6de2335b3-list.html",
+          "url": "https://home.knu.ac.kr/HOME/cee/sub.htm?nav_code=cee1623200416"
+        }
+      },
+      "listed": 10,
+      "name": "생태환경대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/cee/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cG4zYzJXMnF5NjQ1Jm5hdl9jb2RlPWNlZTE2MjMyMDA0MTYmdGFibGU9ZXhfYmJzX2RhdGFfY2VlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "100",
+      "source_board_id": "knu-cee-cee1623200416",
+      "source_url": "https://home.knu.ac.kr/HOME/cee/sub.htm?nav_code=cee1623200416",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-fe8857afa2d4",
+      "checked_at": "2026-10-01T14:13:51.121324+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fe8857afa2d4-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/he/sub.htm?mode=view&mv_data=aWR4PTMwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MjIxJnRhYmxlPWV4X2Jic19kYXRhX2hlJm5hdl9jb2RlPWhlMTYyMzIwMDMwNiZjb2RlPWdDRVdEcE1TU1VidyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-fe8857afa2d4-list.html",
+          "url": "https://home.knu.ac.kr/HOME/he/sub.htm?nav_code=he1623200306"
+        }
+      },
+      "listed": 10,
+      "name": "생활과학대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/he/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Z0NFV0RwTVNTVWJ3Jm5hdl9jb2RlPWhlMTYyMzIwMDMwNiZ0YWJsZT1leF9iYnNfZGF0YV9oZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "302",
+      "source_board_id": "knu-he-he1623200306",
+      "source_url": "https://home.knu.ac.kr/HOME/he/sub.htm?nav_code=he1623200306",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-0b9f7e3a61e0",
+      "checked_at": "2026-10-01T14:13:54.038357+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0b9f7e3a61e0-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/textile/sub.htm?mode=view&mv_data=aWR4PTQ3MCZzdGFydFBhZ2U9MCZsaXN0Tm89MzI4JnRhYmxlPWV4X2Jic19kYXRhX3RleHRpbGUmbmF2X2NvZGU9dGV4MTYxNjYzNDkzNCZjb2RlPU56ZFVzWVRBYVRXQyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-0b9f7e3a61e0-list.html",
+          "url": "https://home.knu.ac.kr/HOME/textile/sub.htm?nav_code=tex1616634934"
+        }
+      },
+      "listed": 13,
+      "name": "섬유공학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/textile/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TnpkVXNZVEFhVFdDJm5hdl9jb2RlPXRleDE2MTY2MzQ5MzQmdGFibGU9ZXhfYmJzX2RhdGFfdGV4dGlsZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "470",
+      "source_board_id": "knu-textile-tex1616634934",
+      "source_url": "https://home.knu.ac.kr/HOME/textile/sub.htm?nav_code=tex1616634934",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f9d9ecdb1284",
+      "checked_at": "2026-10-01T14:13:57.707621+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f9d9ecdb1284-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/textileng/sub.htm?mode=view&mv_data=aWR4PTI1OCZzdGFydFBhZ2U9MCZsaXN0Tm89ODAmdGFibGU9ZXhfYmJzX2RhdGFfdGV4dGlsZW5nJm5hdl9jb2RlPXRleDE2MjMwMjk1NzQmY29kZT1ObHBGak9ra2JPaGwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f9d9ecdb1284-list.html",
+          "url": "https://home.knu.ac.kr/HOME/textileng/sub.htm?nav_code=tex1623029574"
+        }
+      },
+      "listed": 14,
+      "name": "섬유시스템공학과 · 학사 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/textileng/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TmxwRmpPa2tiT2hsJm5hdl9jb2RlPXRleDE2MjMwMjk1NzQmdGFibGU9ZXhfYmJzX2RhdGFfdGV4dGlsZW5nJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "258",
+      "source_board_id": "knu-textileng-tex1623029574",
+      "source_url": "https://home.knu.ac.kr/HOME/textileng/sub.htm?nav_code=tex1623029574",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-2487b99aea65",
+      "checked_at": "2026-10-01T14:14:00.729469+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2487b99aea65-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTg4OSZzdGFydFBhZ2U9MCZsaXN0Tm89NjkyJnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2487b99aea65-list.html",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?nav_code=se1617170620"
+        }
+      },
+      "listed": 23,
+      "name": "소프트웨어학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/se/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9alZ3bzFXZW1pSUhnJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZ0YWJsZT1leF9iYnNfZGF0YV9zZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "889",
+      "source_board_id": "knu-se-se1617170620",
+      "source_url": "https://home.knu.ac.kr/HOME/se/sub.htm?nav_code=se1617170620",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-4c132ad6150a",
+      "checked_at": "2026-10-01T14:14:04.533614+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4c132ad6150a-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/veterinary/sub.htm?mode=view&mv_data=aWR4PTM4OTAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MCZ0YWJsZT1leF9iYnNfZGF0YV92ZXRlcmluYXJ5Jm5hdl9jb2RlPXZldDE2MjMyMDAyMjQmY29kZT1SS3I5R0tOYjR4MG0mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4c132ad6150a-list.html",
+          "url": "https://home.knu.ac.kr/HOME/veterinary/sub.htm?nav_code=vet1623200224"
+        }
+      },
+      "listed": 13,
+      "name": "수의학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/veterinary/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UktyOUdLTmI0eDBtJm5hdl9jb2RlPXZldDE2MjMyMDAyMjQmdGFibGU9ZXhfYmJzX2RhdGFfdmV0ZXJpbmFyeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "3890",
+      "source_board_id": "knu-veterinary-vet1623200224",
+      "source_url": "https://home.knu.ac.kr/HOME/veterinary/sub.htm?nav_code=vet1623200224",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-472ae4378387",
+      "checked_at": "2026-10-01T14:14:07.342501+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-472ae4378387-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Mjgmc3RhcnRQYWdlPTAmbGlzdE5vPTI4MDgmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-472ae4378387-list.html",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
+        }
+      },
+      "listed": 16,
+      "name": "수학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/math/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dUR6MlNTZVJsTnJ0Jm5hdl9jb2RlPW1hdDE2MjMwMjkzMDgmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "3428",
+      "source_board_id": "knu-math-mat1623029308",
+      "source_url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-8666f6ab7bde",
+      "checked_at": "2026-10-01T14:14:10.206952+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8666f6ab7bde-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/mathedu/sub.htm?mode=view&mv_data=aWR4PTI2MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjAxJnRhYmxlPWV4X2Jic19kYXRhX21hdGhlZHUmbmF2X2NvZGU9bWF0MTYyMzEzNDQwNyZjb2RlPUM3NGhPSFhoNEszTSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8666f6ab7bde-list.html",
+          "url": "https://home.knu.ac.kr/HOME/mathedu/sub.htm?nav_code=mat1623134407"
+        }
+      },
+      "listed": 21,
+      "name": "수학교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/mathedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Qzc0aE9IWGg0SzNNJm5hdl9jb2RlPW1hdDE2MjMxMzQ0MDcmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aGVkdSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "263",
+      "source_board_id": "knu-mathedu-mat1623134407",
+      "source_url": "https://home.knu.ac.kr/HOME/mathedu/sub.htm?nav_code=mat1623134407",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f310e00db70c",
+      "checked_at": "2026-10-01T14:14:13.266664+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f310e00db70c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ1NCZzdGFydFBhZ2U9MCZsaXN0Tm89NDAwJnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f310e00db70c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?nav_code=mob1692863999"
+        }
+      },
+      "listed": 27,
+      "name": "스마트모빌리티공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WWdiR1BaTkpZckg1Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmdGFibGU9ZXhfYmJzX2RhdGFfbW9iaWxpdHkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "454",
+      "source_board_id": "knu-mobility-mob1692863999",
+      "source_url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?nav_code=mob1692863999",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-cc19e513d407",
+      "checked_at": "2026-10-01T14:14:15.521393+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-cc19e513d407-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTU0OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-cc19e513d407-list.html",
+          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687"
+        }
+      },
+      "listed": 11,
+      "name": "스마트생물산업기계공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9YmhobWlrOXM1cEt3Jm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmdGFibGU9ZXhfYmJzX2RhdGFfYmltZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1426",
+      "source_board_id": "knu-bime-bim1622180687",
+      "source_url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-b5c34881a6cc",
+      "checked_at": "2026-10-01T14:14:19.720295+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5c34881a6cc-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?mode=view&mv_data=aWR4PTE0MzAmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNjQmdGFibGU9ZXhfYmJzX2RhdGFfc21hcnRwbGFudCZuYXZfY29kZT1zbWExNjUzMjgyMDk3JmNvZGU9dmI1bVMwZkpMVmpBJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b5c34881a6cc-list.html",
+          "url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?nav_code=sma1653282097"
+        }
+      },
+      "listed": 15,
+      "name": "스마트플랜트공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dmI1bVMwZkpMVmpBJm5hdl9jb2RlPXNtYTE2NTMyODIwOTcmdGFibGU9ZXhfYmJzX2RhdGFfc21hcnRwbGFudCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1430",
+      "source_board_id": "knu-smartplant-sma1653282097",
+      "source_url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?nav_code=sma1653282097",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-451c515734ae",
+      "checked_at": "2026-10-01T14:14:22.684253+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-451c515734ae-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/pbs/sub.htm?mode=view&mv_data=aWR4PTIwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTg4JnRhYmxlPWV4X2Jic19kYXRhX3BicyZuYXZfY29kZT1wYnMxNjIzNjMyNTYwJmNvZGU9M1hDY2ltTUpIaWxzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-451c515734ae-list.html",
+          "url": "https://home.knu.ac.kr/HOME/pbs/sub.htm?nav_code=pbs1623632560"
+        }
+      },
+      "listed": 18,
+      "name": "식물생명과학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/pbs/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9M1hDY2ltTUpIaWxzJm5hdl9jb2RlPXBiczE2MjM2MzI1NjAmdGFibGU9ZXhfYmJzX2RhdGFfcGJzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "202",
+      "source_board_id": "knu-pbs-pbs1623632560",
+      "source_url": "https://home.knu.ac.kr/HOME/pbs/sub.htm?nav_code=pbs1623632560",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-e0dc5a51576c",
+      "checked_at": "2026-10-01T14:14:25.537902+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e0dc5a51576c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?mode=view&mv_data=aWR4PTExMSZzdGFydFBhZ2U9MCZsaXN0Tm89NjUmdGFibGU9ZXhfYmJzX2RhdGFfcGxhbnRtZWQmbmF2X2NvZGU9cGxhMTY3NzAyNDkxNyZjb2RlPXVPcThWSzVJelhudyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e0dc5a51576c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?nav_code=pla1677024917"
+        }
+      },
+      "listed": 11,
+      "name": "식물의학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dU9xOFZLNUl6WG53Jm5hdl9jb2RlPXBsYTE2NzcwMjQ5MTcmdGFibGU9ZXhfYmJzX2RhdGFfcGxhbnRtZWQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "111",
+      "source_board_id": "knu-plantmed-pla1677024917",
+      "source_url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?nav_code=pla1677024917",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-aaa5e07a26eb",
+      "checked_at": "2026-10-01T14:14:28.933683+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-aaa5e07a26eb-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/scplant/sub.htm?mode=view&mv_data=aWR4PTUxNCZzdGFydFBhZ2U9MCZsaXN0Tm89MjA0JnRhYmxlPWV4X2Jic19kYXRhX3NjcGxhbnQmbmF2X2NvZGU9c2NwMTYyMjcwNTA3OSZjb2RlPWpSRzhaM29VSzNrMSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-aaa5e07a26eb-list.html",
+          "url": "https://home.knu.ac.kr/HOME/scplant/sub.htm?nav_code=scp1622705079"
+        }
+      },
+      "listed": 13,
+      "name": "식물자원학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/scplant/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9alJHOFozb1VLM2sxJm5hdl9jb2RlPXNjcDE2MjI3MDUwNzkmdGFibGU9ZXhfYmJzX2RhdGFfc2NwbGFudCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "514",
+      "source_board_id": "knu-scplant-scp1622705079",
+      "source_url": "https://home.knu.ac.kr/HOME/scplant/sub.htm?nav_code=scp1622705079",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-5489a94f38cd",
+      "checked_at": "2026-10-01T14:14:32.446143+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-5489a94f38cd-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?mode=view&mv_data=aWR4PTc1OCZzdGFydFBhZ2U9MCZsaXN0Tm89NTYxJnRhYmxlPWV4X2Jic19kYXRhX2Zvb2RiaW8mbmF2X2NvZGU9Zm9vMTYyMzEzNDA5OCZjb2RlPUhLWlFEaXlDaHNMayZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-5489a94f38cd-list.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098"
+        }
+      },
+      "listed": 13,
+      "name": "식품공학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SEtaUURpeUNoc0xrJm5hdl9jb2RlPWZvbzE2MjMxMzQwOTgmdGFibGU9ZXhfYmJzX2RhdGFfZm9vZGJpbyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "758",
+      "source_board_id": "knu-foodbio-foo1623134098",
+      "source_url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-45a059e34b9c",
+      "checked_at": "2026-10-01T14:14:34.778026+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-45a059e34b9c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbiotechnology/sub.htm?mode=view&mv_data=aWR4PTQzNiZzdGFydFBhZ2U9MCZsaXN0Tm89MjE2JnRhYmxlPWV4X2Jic19kYXRhX2Zvb2RiaW90ZWNobm9sb2d5Jm5hdl9jb2RlPWZvbzE2MTk2NjEzMjAmY29kZT14T3NzT2F6Y2pLcjkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-45a059e34b9c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbiotechnology/sub.htm?nav_code=foo1619661320"
+        }
+      },
+      "listed": 13,
+      "name": "식품생물공학전공 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/foodbiotechnology/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9eE9zc09hemNqS3I5Jm5hdl9jb2RlPWZvbzE2MTk2NjEzMjAmdGFibGU9ZXhfYmJzX2RhdGFfZm9vZGJpb3RlY2hub2xvZ3kmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "436",
+      "source_board_id": "knu-foodbiotechnology-foo1619661320",
+      "source_url": "https://home.knu.ac.kr/HOME/foodbiotechnology/sub.htm?nav_code=foo1619661320",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-57321798a19a",
+      "checked_at": "2026-10-01T14:14:37.516652+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-57321798a19a-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?mode=view&mv_data=aWR4PTU4NiZzdGFydFBhZ2U9MCZsaXN0Tm89NDM2JnRhYmxlPWV4X2Jic19kYXRhX2Zvb2RibSZuYXZfY29kZT1mb28xNjIzODg4MDQxJmNvZGU9c3licUxqWlpyN0M2JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-57321798a19a-list.html",
+          "url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?nav_code=foo1623888041"
+        }
+      },
+      "listed": 13,
+      "name": "식품소재공학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9c3licUxqWlpyN0M2Jm5hdl9jb2RlPWZvbzE2MjM4ODgwNDEmdGFibGU9ZXhfYmJzX2RhdGFfZm9vZGJtJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "586",
+      "source_board_id": "knu-foodbm-foo1623888041",
+      "source_url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?nav_code=foo1623888041",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d5e75aa6b2da",
+      "checked_at": "2026-10-01T14:14:40.400091+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d5e75aa6b2da-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/fsnu/sub.htm?mode=view&mv_data=aWR4PTM5OCZzdGFydFBhZ2U9MCZsaXN0Tm89MjgxJnRhYmxlPWV4X2Jic19kYXRhX2ZzbnUmbmF2X2NvZGU9ZnNuMTYyMjQ1OTgxMiZjb2RlPUdUS1ZmTmlTU2diZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d5e75aa6b2da-list.html",
+          "url": "https://home.knu.ac.kr/HOME/fsnu/sub.htm?nav_code=fsn1622459812"
+        }
+      },
+      "listed": 27,
+      "name": "식품영양학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/fsnu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9R1RLVmZOaVNTZ2JnJm5hdl9jb2RlPWZzbjE2MjI0NTk4MTImdGFibGU9ZXhfYmJzX2RhdGFfZnNudSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "398",
+      "source_board_id": "knu-fsnu-fsn1622459812",
+      "source_url": "https://home.knu.ac.kr/HOME/fsnu/sub.htm?nav_code=fsn1622459812",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-99ea5018f469",
+      "checked_at": "2026-10-01T14:14:43.480793+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-99ea5018f469-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ffsi/sub.htm?mode=view&mv_data=aWR4PTEwNzImc3RhcnRQYWdlPTAmbGlzdE5vPTcwMSZ0YWJsZT1leF9iYnNfZGF0YV9mZnNpJm5hdl9jb2RlPWZmczE2MjMxMzM5NDAmY29kZT1vSjhYUVo1aDVzcjUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-99ea5018f469-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ffsi/sub.htm?nav_code=ffs1623133940"
+        }
+      },
+      "listed": 11,
+      "name": "식품외식산업학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ffsi/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9b0o4WFFaNWg1c3I1Jm5hdl9jb2RlPWZmczE2MjMxMzM5NDAmdGFibGU9ZXhfYmJzX2RhdGFfZmZzaSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1072",
+      "source_board_id": "knu-ffsi-ffs1623133940",
+      "source_url": "https://home.knu.ac.kr/HOME/ffsi/sub.htm?nav_code=ffs1623133940",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-2c006faa8fdd",
+      "checked_at": "2026-10-01T14:14:45.829671+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2c006faa8fdd-detail.html",
+          "url": "https://foodbio.knu.ac.kr/HOME/foodbio/sub.htm?mode=view&mv_data=aWR4PTc1OCZzdGFydFBhZ2U9MCZsaXN0Tm89NTYxJnRhYmxlPWV4X2Jic19kYXRhX2Zvb2RiaW8mbmF2X2NvZGU9Zm9vMTYyMzEzNDA5OCZjb2RlPUhLWlFEaXlDaHNMayZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2c006faa8fdd-list.html",
+          "url": "https://foodbio.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098"
+        }
+      },
+      "listed": 13,
+      "name": "식품응용공학전공 · 공지사항",
+      "next_url": "https://foodbio.knu.ac.kr/HOME/foodbio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SEtaUURpeUNoc0xrJm5hdl9jb2RlPWZvbzE2MjMxMzQwOTgmdGFibGU9ZXhfYmJzX2RhdGFfZm9vZGJpbyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "758",
+      "source_board_id": "knu-foodbio-foo1623134098",
+      "source_url": "https://foodbio.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-6b16f01d1a75",
+      "checked_at": "2026-10-01T14:14:48.717564+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6b16f01d1a75-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyMzImc3RhcnRQYWdlPTAmbGlzdE5vPTExNDImdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6b16f01d1a75-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
+        }
+      },
+      "listed": 15,
+      "name": "식품자원경제학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dEhrMzVOcElyZXM0Jm5hdl9jb2RlPWtudTE2MjMxMzQxMjYmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "3232",
+      "source_board_id": "knu-knuagec-knu1623134126",
+      "source_url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7fcf94c45b4e",
+      "checked_at": "2026-10-01T14:14:51.599797+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7fcf94c45b4e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTczNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7fcf94c45b4e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?nav_code=kre1640045053"
+        }
+      },
+      "listed": 14,
+      "name": "신소재공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9QUNhdmlOYnoySkR5Jm5hdl9jb2RlPWtyZTE2NDAwNDUwNTMmdGFibGU9ZXhfYmJzX2RhdGFfa3JlbXNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "737",
+      "source_board_id": "knu-kremse-kre1640045053",
+      "source_url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?nav_code=kre1640045053",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-16f98ec95fc6",
+      "checked_at": "2026-10-01T14:14:54.363632+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-16f98ec95fc6-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?mode=view&mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-16f98ec95fc6-list.html",
+          "url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?nav_code=psy1614066241"
+        }
+      },
+      "listed": 23,
+      "name": "심리학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dkRLN0xhYnUzbHYyJm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmdGFibGU9ZXhfYmJzX2RhdGFfcHN5Y2hvbG9neSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1648",
+      "source_board_id": "knu-psychology-psy1614066241",
+      "source_url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?nav_code=psy1614066241",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-97fffffebd44",
+      "checked_at": "2026-10-01T14:14:58.059232+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-97fffffebd44-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0MjImc3RhcnRQYWdlPTAmbGlzdE5vPTY2NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-97fffffebd44-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
+        }
+      },
+      "listed": 27,
+      "name": "아동학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cHU2dDU3Y1ZFR1hVJm5hdl9jb2RlPWtudTE2MjMzNzAzNjImdGFibGU9ZXhfYmJzX2RhdGFfa251Y2hpbGQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1422",
+      "source_board_id": "knu-knuchild-knu1623370362",
+      "source_url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9a2cb1c992c7",
+      "checked_at": "2026-10-01T14:15:01.136581+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9a2cb1c992c7-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knupharmacy/sub.htm?mode=view&mv_data=aWR4PTE0MTMmc3RhcnRQYWdlPTAmbGlzdE5vPTIxOCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwaGFybWFjeSZuYXZfY29kZT1rbnUxNjIzNjUwOTQ4JmNvZGU9V1U3OW1jVk1IRTh3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9a2cb1c992c7-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knupharmacy/sub.htm?nav_code=knu1623650948"
+        }
+      },
+      "listed": 11,
+      "name": "약학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knupharmacy/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9V1U3OW1jVk1IRTh3Jm5hdl9jb2RlPWtudTE2MjM2NTA5NDgmdGFibGU9ZXhfYmJzX2RhdGFfa251cGhhcm1hY3kmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1413",
+      "source_board_id": "knu-knupharmacy-knu1623650948",
+      "source_url": "https://home.knu.ac.kr/HOME/knupharmacy/sub.htm?nav_code=knu1623650948",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-06dffccf1c28",
+      "checked_at": "2026-10-01T14:15:05.735308+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-06dffccf1c28-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzQmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-06dffccf1c28-list.html",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?nav_code=soe1622609908"
+        }
+      },
+      "listed": 18,
+      "name": "에너지공학부 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9RFhKS3NmbUtJTHRKJm5hdl9jb2RlPXNvZTE2MjI2MDk5MDgmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1857",
+      "source_board_id": "knu-soee-soe1622609908",
+      "source_url": "https://home.knu.ac.kr/HOME/soee/sub.htm?nav_code=soe1622609908",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-70d703a20086",
+      "checked_at": "2026-10-01T14:15:09.374460+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-70d703a20086-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ece/sub.htm?mode=view&mv_data=aWR4PTcxOSZzdGFydFBhZ2U9MCZsaXN0Tm89NDYwJnRhYmxlPWV4X2Jic19kYXRhX2VjZSZuYXZfY29kZT1lY2UxNzA0ODc3MjAyJmNvZGU9ejRyNmpYckhNNXlsJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-70d703a20086-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ece/sub.htm?nav_code=ece1704877202"
+        }
+      },
+      "listed": 17,
+      "name": "에너지화학공학과 · 학과공지",
+      "next_url": "https://home.knu.ac.kr/HOME/ece/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9ejRyNmpYckhNNXlsJm5hdl9jb2RlPWVjZTE3MDQ4NzcyMDImdGFibGU9ZXhfYmJzX2RhdGFfZWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "719",
+      "source_board_id": "knu-ece-ece1704877202",
+      "source_url": "https://home.knu.ac.kr/HOME/ece/sub.htm?nav_code=ece1704877202",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-848538cdce05",
+      "checked_at": "2026-10-01T14:15:12.609174+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-848538cdce05-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/hisedu/sub.htm?mode=view&mv_data=aWR4PTExMCZzdGFydFBhZ2U9MCZsaXN0Tm89MzMmdGFibGU9ZXhfYmJzX2RhdGFfaGlzZWR1Jm5hdl9jb2RlPWhpczE2MjI0NTk3NjcmY29kZT1Ic0I4azJGZU82cTImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-848538cdce05-list.html",
+          "url": "https://home.knu.ac.kr/HOME/hisedu/sub.htm?nav_code=his1622459767"
+        }
+      },
+      "listed": 10,
+      "name": "역사교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/hisedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SHNCOGsyRmVPNnEyJm5hdl9jb2RlPWhpczE2MjI0NTk3NjcmdGFibGU9ZXhfYmJzX2RhdGFfaGlzZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "110",
+      "source_board_id": "knu-hisedu-his1622459767",
+      "source_url": "https://home.knu.ac.kr/HOME/hisedu/sub.htm?nav_code=his1622459767",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9c2e2dbd2980",
+      "checked_at": "2026-10-01T14:15:15.811534+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9c2e2dbd2980-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1NiZzdGFydFBhZ2U9MCZsaXN0Tm89NDk5JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9c2e2dbd2980-list.html",
+          "url": "https://home.knu.ac.kr/HOME/enged/sub.htm?nav_code=eng1622787290"
+        }
+      },
+      "listed": 465,
+      "name": "영어교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/enged/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9ekFjb3JNTE40cDBFJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmdGFibGU9ZXhfYmJzX2RhdGFfZW5nZWQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "556",
+      "source_board_id": "knu-enged-eng1622787290",
+      "source_url": "https://home.knu.ac.kr/HOME/enged/sub.htm?nav_code=eng1622787290",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-1abc9573202c",
+      "checked_at": "2026-10-01T14:15:18.701744+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1abc9573202c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NDMmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMTcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1abc9573202c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173"
+        }
+      },
+      "listed": 12,
+      "name": "영어영문학과 · 학부공지",
+      "next_url": "https://home.knu.ac.kr/HOME/english/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Sm9haTFoRVA4ckl0Jm5hdl9jb2RlPWVuZzE2MjE4NTIxNzMmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4443",
+      "source_board_id": "knu-english-eng1621852173",
+      "source_url": "https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f95f0e2ac40d",
+      "checked_at": "2026-10-01T14:15:21.503448+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f95f0e2ac40d-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/aerospace/sub.htm?mode=view&mv_data=aWR4PTEyOSZzdGFydFBhZ2U9MCZsaXN0Tm89OCZ0YWJsZT1leF9iYnNfZGF0YV9hZXJvc3BhY2UmbmF2X2NvZGU9YWVyMTY5NDQxMjMyMSZjb2RlPW1FYmdFODFyeFBMUiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f95f0e2ac40d-list.html",
+          "url": "https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321"
+        }
+      },
+      "listed": 8,
+      "name": "우주공학부 · 공지사항",
+      "next_url": null,
+      "sample_post_id": "129",
+      "source_board_id": "knu-aerospace-aer1694412321",
+      "source_url": "https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-3834483dc081",
+      "checked_at": "2026-10-01T14:15:25.213203+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3834483dc081-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2ODEmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNzkmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3834483dc081-list.html",
+          "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861"
+        }
+      },
+      "listed": 10,
+      "name": "원예과학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/horti/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MFpVRG5GRkI5R01aJm5hdl9jb2RlPWhvcjE2MjI2MDk4NjEmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1681",
+      "source_board_id": "knu-horti-hor1622609861",
+      "source_url": "https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ef883ff42361",
+      "checked_at": "2026-10-01T14:15:29.032786+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ef883ff42361-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMTMmc3RhcnRQYWdlPTAmbGlzdE5vPTE2OTUmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ef883ff42361-list.html",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979"
+        }
+      },
+      "listed": 21,
+      "name": "위치정보시스템학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TTFma2R6SlpjVXB0Jm5hdl9jb2RlPWxiaTE2NjE5MzI5NzkmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "2113",
+      "source_board_id": "knu-lbis-lbi1661932979",
+      "source_url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-a1540deb2a6f",
+      "checked_at": "2026-10-01T14:15:31.934654+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a1540deb2a6f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?mode=view&mv_data=aWR4PTI1NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTgmdGFibGU9ZXhfYmJzX2RhdGFfZXRoZWR1Jm5hdl9jb2RlPWV0aDE2MjI0NjAxNjMmY29kZT1vOWx2dVY2MGt1VmYmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a1540deb2a6f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163"
+        }
+      },
+      "listed": 15,
+      "name": "윤리교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bzlsdnVWNjBrdVZmJm5hdl9jb2RlPWV0aDE2MjI0NjAxNjMmdGFibGU9ZXhfYmJzX2RhdGFfZXRoZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "2560",
+      "source_board_id": "knu-ethedu-eth1622460163",
+      "source_url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-74558916c320",
+      "checked_at": "2026-10-01T14:15:35.010449+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-74558916c320-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/music/sub.htm?mode=view&mv_data=aWR4PTEwMzgmc3RhcnRQYWdlPTAmbGlzdE5vPTYzMSZ0YWJsZT1leF9iYnNfZGF0YV9tdXNpYyZuYXZfY29kZT1tdXMxNjIyNjEwMjQ0JmNvZGU9dXA3TXZmb0NhVXRyJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-74558916c320-list.html",
+          "url": "https://home.knu.ac.kr/HOME/music/sub.htm?nav_code=mus1622610244"
+        }
+      },
+      "listed": 17,
+      "name": "음악학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/music/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dXA3TXZmb0NhVXRyJm5hdl9jb2RlPW11czE2MjI2MTAyNDQmdGFibGU9ZXhfYmJzX2RhdGFfbXVzaWMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1038",
+      "source_board_id": "knu-music-mus1622610244",
+      "source_url": "https://home.knu.ac.kr/HOME/music/sub.htm?nav_code=mus1622610244",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-a1c0cc5412ca",
+      "checked_at": "2026-10-01T14:15:38.069930+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a1c0cc5412ca-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/appbio/sub.htm?mode=view&mv_data=aWR4PTE3JnN0YXJ0UGFnZT0wJmxpc3RObz0xMyZ0YWJsZT1leF9iYnNfZGF0YV9hcHBiaW8mbmF2X2NvZGU9YXBwMTcwMDQ0NDI3MCZjb2RlPWtMVlE1bExZU2x4bSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-a1c0cc5412ca-list.html",
+          "url": "https://home.knu.ac.kr/HOME/appbio/sub.htm?nav_code=app1700444270"
+        }
+      },
+      "listed": 11,
+      "name": "응용생명과학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/appbio/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9a0xWUTVsTFlTbHhtJm5hdl9jb2RlPWFwcDE3MDA0NDQyNzAmdGFibGU9ZXhfYmJzX2RhdGFfYXBwYmlvJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "17",
+      "source_board_id": "knu-appbio-app1700444270",
+      "source_url": "https://home.knu.ac.kr/HOME/appbio/sub.htm?nav_code=app1700444270",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7dfeec322405",
+      "checked_at": "2026-10-01T14:15:40.943409+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7dfeec322405-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM1MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTY4JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7dfeec322405-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
+        }
+      },
+      "listed": 21,
+      "name": "응용화학공학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Y0RRVEtnZVBpRnA0Jm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmdGFibGU9ZXhfYmJzX2RhdGFfa251Y2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "352",
+      "source_board_id": "knu-knuce-knu1762850029",
+      "source_url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ad22d5b4a9e9",
+      "checked_at": "2026-10-01T14:15:44.952984+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ad22d5b4a9e9-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwMSZzdGFydFBhZ2U9MCZsaXN0Tm89Nzg1JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ad22d5b4a9e9-list.html",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444"
+        }
+      },
+      "listed": 14,
+      "name": "의류학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9a0lPdE1PcXJua2lKJm5hdl9jb2RlPWZhczE2MjMxMzQ0NDQmdGFibGU9ZXhfYmJzX2RhdGFfZmFzaGlvbiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "901",
+      "source_board_id": "knu-fashion-fas1623134444",
+      "source_url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-e1ec1bf0eb87",
+      "checked_at": "2026-10-01T14:18:30.137290+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e1ec1bf0eb87-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzAyJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e1ec1bf0eb87-list.html",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
+        },
+        "next": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e1ec1bf0eb87-next.html",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      },
+      "listed": 29,
+      "name": "의생명융합공학과 · 공지사항",
+      "next_listed": 29,
+      "next_url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||",
+      "sample_post_id": "819",
+      "source_board_id": "knu-bcst2-bcs1611061294",
+      "source_url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ecd686f730b2",
+      "checked_at": "2026-10-01T14:15:49.011656+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ecd686f730b2-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?mode=view&mv_data=aWR4PTIwMTImc3RhcnRQYWdlPTAmbGlzdE5vPTg2OCZ0YWJsZT1leF9iYnNfZGF0YV9odW1hbml0aWVzJm5hdl9jb2RlPWh1bTE2MjMxOTk3NDEmY29kZT1HUnJDUjhKT0IwejQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ecd686f730b2-list.html",
+          "url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?nav_code=hum1623199741"
+        }
+      },
+      "listed": 10,
+      "name": "인문대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9R1JyQ1I4Sk9CMHo0Jm5hdl9jb2RlPWh1bTE2MjMxOTk3NDEmdGFibGU9ZXhfYmJzX2RhdGFfaHVtYW5pdGllcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "2012",
+      "source_board_id": "knu-humanities-hum1623199741",
+      "source_url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?nav_code=hum1623199741",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-5c6cbaba27ab",
+      "checked_at": "2026-10-01T14:15:52.067215+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-5c6cbaba27ab-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/hum/sub.htm?mode=view&mv_data=aWR4PTIwNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk1JnRhYmxlPWV4X2Jic19kYXRhX2h1bSZuYXZfY29kZT1odW0xNzQxMzEyMzAxJmNvZGU9UVpLeHJMdWpBS3BMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-5c6cbaba27ab-list.html",
+          "url": "https://home.knu.ac.kr/HOME/hum/sub.htm?nav_code=hum1741312301"
+        }
+      },
+      "listed": 22,
+      "name": "인문대학 자율학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/hum/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UVpLeHJMdWpBS3BMJm5hdl9jb2RlPWh1bTE3NDEzMTIzMDEmdGFibGU9ZXhfYmJzX2RhdGFfaHVtJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "205",
+      "source_board_id": "knu-hum-hum1741312301",
+      "source_url": "https://home.knu.ac.kr/HOME/hum/sub.htm?nav_code=hum1741312301",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-614324804939",
+      "checked_at": "2026-10-01T14:15:55.141637+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-614324804939-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ilsa/sub.htm?mode=view&mv_data=aWR4PTI2MCZzdGFydFBhZ2U9MCZsaXN0Tm89MjA3JnRhYmxlPWV4X2Jic19kYXRhX2lsc2EmbmF2X2NvZGU9aWxzMTYyMjYwOTA2NiZjb2RlPVJaVklSMWdXTVJzeCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-614324804939-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ilsa/sub.htm?nav_code=ils1622609066"
+        }
+      },
+      "listed": 15,
+      "name": "일반사회교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ilsa/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UlpWSVIxZ1dNUnN4Jm5hdl9jb2RlPWlsczE2MjI2MDkwNjYmdGFibGU9ZXhfYmJzX2RhdGFfaWxzYSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "260",
+      "source_board_id": "knu-ilsa-ils1622609066",
+      "source_url": "https://home.knu.ac.kr/HOME/ilsa/sub.htm?nav_code=ils1622609066",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-3c7bfc3da404",
+      "checked_at": "2026-10-01T14:15:57.889756+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3c7bfc3da404-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?mode=view&mv_data=aWR4PTQ0NSZzdGFydFBhZ2U9MCZsaXN0Tm89NDIwJnRhYmxlPWV4X2Jic19kYXRhX2phcGFuJm5hdl9jb2RlPWphcDE2OTUwMTY1NjgmY29kZT01TE5MZHJORkducVImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3c7bfc3da404-list.html",
+          "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568"
+        }
+      },
+      "listed": 42,
+      "name": "일어일문학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/japan/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9NUxOTGRyTkZHbnFSJm5hdl9jb2RlPWphcDE2OTUwMTY1NjgmdGFibGU9ZXhfYmJzX2RhdGFfamFwYW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "445",
+      "source_board_id": "knu-japan-jap1695016568",
+      "source_url": "https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-7bb331bb8b0f",
+      "checked_at": "2026-10-01T14:16:01.079387+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7bb331bb8b0f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/treei/sub.htm?mode=view&mv_data=aWR4PTI5OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTg5JnRhYmxlPWV4X2Jic19kYXRhX3RyZWVpJm5hdl9jb2RlPXRyZTE2MjI2MTAyMjAmY29kZT1SNFIzejFSbDl5ZkMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-7bb331bb8b0f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/treei/sub.htm?nav_code=tre1622610220"
+        }
+      },
+      "listed": 10,
+      "name": "임산공학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/treei/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UjRSM3oxUmw5eWZDJm5hdl9jb2RlPXRyZTE2MjI2MTAyMjAmdGFibGU9ZXhfYmJzX2RhdGFfdHJlZWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "298",
+      "source_board_id": "knu-treei-tre1622610220",
+      "source_url": "https://home.knu.ac.kr/HOME/treei/sub.htm?nav_code=tre1622610220",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-4b4549901a22",
+      "checked_at": "2026-10-01T14:16:03.834466+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4b4549901a22-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/forest/sub.htm?mode=view&mv_data=aWR4PTEwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTgmdGFibGU9ZXhfYmJzX2RhdGFfZm9yZXN0Jm5hdl9jb2RlPWZvcjE2MjI1MjEwNTEmY29kZT0wNVdzd25uYUZ6UGUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4b4549901a22-list.html",
+          "url": "https://home.knu.ac.kr/HOME/forest/sub.htm?nav_code=for1622521051"
+        }
+      },
+      "listed": 10,
+      "name": "임학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/forest/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MDVXc3dubmFGelBlJm5hdl9jb2RlPWZvcjE2MjI1MjEwNTEmdGFibGU9ZXhfYmJzX2RhdGFfZm9yZXN0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "109",
+      "source_board_id": "knu-forest-for1622521051",
+      "source_url": "https://home.knu.ac.kr/HOME/forest/sub.htm?nav_code=for1622521051",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-68d5f9aa762f",
+      "checked_at": "2026-10-01T14:16:06.620246+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-68d5f9aa762f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?mode=view&mv_data=aWR4PTkyNSZzdGFydFBhZ2U9MCZsaXN0Tm89ODgmdGFibGU9ZXhfYmJzX2RhdGFfYXV0b21vYmlsZSZuYXZfY29kZT1hdXQxNjIzMzcwMjk5JmNvZGU9dkRlaDg1aFZhS3ZJJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-68d5f9aa762f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?nav_code=aut1623370299"
+        }
+      },
+      "listed": 15,
+      "name": "자동차공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dkRlaDg1aFZhS3ZJJm5hdl9jb2RlPWF1dDE2MjMzNzAyOTkmdGFibGU9ZXhfYmJzX2RhdGFfYXV0b21vYmlsZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "925",
+      "source_board_id": "knu-automobile-aut1623370299",
+      "source_url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?nav_code=aut1623370299",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-55ac86f2e763",
+      "checked_at": "2026-10-01T14:16:09.564734+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-55ac86f2e763-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2MCZzdGFydFBhZ2U9MCZsaXN0Tm89ODkmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-55ac86f2e763-list.html",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799"
+        }
+      },
+      "listed": 10,
+      "name": "자연과학대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9NHV0d2NaN1hIRURCJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmdGFibGU9ZXhfYmJzX2RhdGFfY25zJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "260",
+      "source_board_id": "knu-cns-cns1623199799",
+      "source_url": "https://home.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9a0b59b2a2b4",
+      "checked_at": "2026-10-01T14:16:12.662097+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9a0b59b2a2b4-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/sofi/sub.htm?mode=view&mv_data=aWR4PTQ1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTc0JnRhYmxlPWV4X2Jic19kYXRhX3NvZmkmbmF2X2NvZGU9c29mMTc0MTU2Njg4NCZjb2RlPTZqeTBkNzlXYlNVNyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9a0b59b2a2b4-list.html",
+          "url": "https://home.knu.ac.kr/HOME/sofi/sub.htm?nav_code=sof1741566884"
+        }
+      },
+      "listed": 13,
+      "name": "자율미래인재학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/sofi/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Nmp5MGQ3OVdiU1U3Jm5hdl9jb2RlPXNvZjE3NDE1NjY4ODQmdGFibGU9ZXhfYmJzX2RhdGFfc29maSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "458",
+      "source_board_id": "knu-sofi-sof1741566884",
+      "source_url": "https://home.knu.ac.kr/HOME/sofi/sub.htm?nav_code=sof1741566884",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d1802616c625",
+      "checked_at": "2026-10-01T14:16:14.922036+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d1802616c625-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2Mjgmc3RhcnRQYWdlPTAmbGlzdE5vPTkxNSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d1802616c625-list.html",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432"
+        }
+      },
+      "listed": 36,
+      "name": "자율전공학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9d0JiS2hYWTFsRjBKJm5hdl9jb2RlPXVkbTE2MjMzNzE0MzImdGFibGU9ZXhfYmJzX2RhdGFfdWRtJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1628",
+      "source_board_id": "knu-udm-udm1623371432",
+      "source_url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-1cbb3d90d081",
+      "checked_at": "2026-10-01T14:16:17.264583+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1cbb3d90d081-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0MjUmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNTImdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1cbb3d90d081-list.html",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
+        }
+      },
+      "listed": 18,
+      "name": "전기공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cWg4aXh3Nzk4YW5ZJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "7425",
+      "source_board_id": "knu-electric-ele1622787198",
+      "source_url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-e08af12e34e3",
+      "checked_at": "2026-10-01T14:16:20.017885+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e08af12e34e3-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?mode=view&mv_data=aWR4PTcyNCZzdGFydFBhZ2U9MCZsaXN0Tm89MzEmdGFibGU9ZXhfYmJzX2RhdGFfc21vYmlsZSZuYXZfY29kZT1zbW8xNjE2MzcyNzI5JmNvZGU9eDdsbmJKODVwTWtwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e08af12e34e3-list.html",
+          "url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?nav_code=smo1616372729"
+        }
+      },
+      "listed": 12,
+      "name": "전자공학부 모바일공학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9eDdsbmJKODVwTWtwJm5hdl9jb2RlPXNtbzE2MTYzNzI3MjkmdGFibGU9ZXhfYmJzX2RhdGFfc21vYmlsZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "724",
+      "source_board_id": "knu-smobile-smo1616372729",
+      "source_url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?nav_code=smo1616372729",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-450caf336106",
+      "checked_at": "2026-10-01T14:16:22.961432+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-450caf336106-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI5NyZzdGFydFBhZ2U9MCZsaXN0Tm89MjA1JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-450caf336106-list.html",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581"
+        }
+      },
+      "listed": 12,
+      "name": "전자공학부 인공지능전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VmVqTkxEUmtySG9nJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmdGFibGU9ZXhfYmJzX2RhdGFfc2VlYWkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "297",
+      "source_board_id": "knu-seeai-see1667180581",
+      "source_url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-8b2d3f025a39",
+      "checked_at": "2026-10-01T14:16:25.710074+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8b2d3f025a39-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE0OTYmc3RhcnRQYWdlPTAmbGlzdE5vPTcxNiZ0YWJsZT1leF9iYnNfZGF0YV9wbWVhdGtudSZuYXZfY29kZT1wbWUxNjIzMDMwMTU3JmNvZGU9RmJXSTNnSURDNFdoJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-8b2d3f025a39-list.html",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157"
+        }
+      },
+      "listed": 11,
+      "name": "정밀기계공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9RmJXSTNnSURDNFdoJm5hdl9jb2RlPXBtZTE2MjMwMzAxNTcmdGFibGU9ZXhfYmJzX2RhdGFfcG1lYXRrbnUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1496",
+      "source_board_id": "knu-pmeatknu-pme1623030157",
+      "source_url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-1d6a78636180",
+      "checked_at": "2026-10-01T14:16:28.620095+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1d6a78636180-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?mode=view&mv_data=aWR4PTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yOSZ0YWJsZT1leF9iYnNfZGF0YV9jb21lZHUmbmF2X2NvZGU9Y29tMTc0NDc4MTM3NSZjb2RlPXFyMlBHQlk1MTZhSyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1d6a78636180-list.html",
+          "url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?nav_code=com1744781375"
+        }
+      },
+      "listed": 11,
+      "name": "정보·컴퓨터교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cXIyUEdCWTUxNmFLJm5hdl9jb2RlPWNvbTE3NDQ3ODEzNzUmdGFibGU9ZXhfYmJzX2RhdGFfY29tZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "33",
+      "source_board_id": "knu-comedu-com1744781375",
+      "source_url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?nav_code=com1744781375",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-b8ebd17a5dca",
+      "checked_at": "2026-10-01T14:16:31.349190+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b8ebd17a5dca-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/politics/sub.htm?mode=view&mv_data=aWR4PTEwNjUmc3RhcnRQYWdlPTAmbGlzdE5vPTQzNSZ0YWJsZT1leF9iYnNfZGF0YV9wb2xpdGljcyZuYXZfY29kZT1wb2wxNjE0MDcxODY0JmNvZGU9WkdmS2xyZVU4azVPJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b8ebd17a5dca-list.html",
+          "url": "https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864"
+        }
+      },
+      "listed": 12,
+      "name": "정치외교학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/politics/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WkdmS2xyZVU4azVPJm5hdl9jb2RlPXBvbDE2MTQwNzE4NjQmdGFibGU9ZXhfYmJzX2RhdGFfcG9saXRpY3Mmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1065",
+      "source_board_id": "knu-politics-pol1614071864",
+      "source_url": "https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-c4b1c79994bd",
+      "checked_at": "2026-10-01T14:16:34.587844+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-c4b1c79994bd-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/land/sub.htm?mode=view&mv_data=aWR4PTIwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTcxJnRhYmxlPWV4X2Jic19kYXRhX2xhbmQmbmF2X2NvZGU9bGFuMTYxNDA3OTc0NiZjb2RlPUZvU2lGcm5ubFBJTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-c4b1c79994bd-list.html",
+          "url": "https://home.knu.ac.kr/HOME/land/sub.htm?nav_code=lan1614079746"
+        }
+      },
+      "listed": 24,
+      "name": "조경학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/land/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Rm9TaUZybm5sUElOJm5hdl9jb2RlPWxhbjE2MTQwNzk3NDYmdGFibGU9ZXhfYmJzX2RhdGFfbGFuZCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "209",
+      "source_board_id": "knu-land-lan1614079746",
+      "source_url": "https://home.knu.ac.kr/HOME/land/sub.htm?nav_code=lan1614079746",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-787893a88ff5",
+      "checked_at": "2026-10-01T14:16:37.332520+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-787893a88ff5-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/earth/sub.htm?mode=view&mv_data=aWR4PTEyNiZzdGFydFBhZ2U9MCZsaXN0Tm89OTQmdGFibGU9ZXhfYmJzX2RhdGFfZWFydGgmbmF2X2NvZGU9ZWFyMTYyMjc4Nzg0MCZjb2RlPUR6OFh6RW5hSmVmRiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-787893a88ff5-list.html",
+          "url": "https://home.knu.ac.kr/HOME/earth/sub.htm?nav_code=ear1622787840"
+        }
+      },
+      "listed": 22,
+      "name": "지구과학교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/earth/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9RHo4WHpFbmFKZWZGJm5hdl9jb2RlPWVhcjE2MjI3ODc4NDAmdGFibGU9ZXhfYmJzX2RhdGFfZWFydGgmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "126",
+      "source_board_id": "knu-earth-ear1622787840",
+      "source_url": "https://home.knu.ac.kr/HOME/earth/sub.htm?nav_code=ear1622787840",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-392eeaadf103",
+      "checked_at": "2026-10-01T14:16:39.973742+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-392eeaadf103-detail.html",
+          "url": "https://cns.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2MCZzdGFydFBhZ2U9MCZsaXN0Tm89ODkmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-392eeaadf103-list.html",
+          "url": "https://cns.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799"
+        }
+      },
+      "listed": 10,
+      "name": "지구시스템과학부 · 공지사항",
+      "next_url": "https://cns.knu.ac.kr/HOME/cns/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9NHV0d2NaN1hIRURCJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmdGFibGU9ZXhfYmJzX2RhdGFfY25zJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "260",
+      "source_board_id": "knu-cns-cns1623199799",
+      "source_url": "https://cns.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-278455937509",
+      "checked_at": "2026-10-01T14:16:42.810348+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-278455937509-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?mode=view&mv_data=aWR4PTE0MzImc3RhcnRQYWdlPTAmbGlzdE5vPTEzODEmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZWR1Jm5hdl9jb2RlPWdlbzE2MjMwMjkyNjEmY29kZT1KcWxkN1FVZXV6aDMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-278455937509-list.html",
+          "url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?nav_code=geo1623029261"
+        }
+      },
+      "listed": 18,
+      "name": "지리교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SnFsZDdRVWV1emgzJm5hdl9jb2RlPWdlbzE2MjMwMjkyNjEmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1432",
+      "source_board_id": "knu-geoedu-geo1623029261",
+      "source_url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?nav_code=geo1623029261",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-2eb7684c7df1",
+      "checked_at": "2026-10-01T14:16:45.656449+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2eb7684c7df1-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?mode=view&mv_data=aWR4PTI4NzAmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MTYmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZyZuYXZfY29kZT1nZW8xNjE0MDgyNjExJmNvZGU9cE4xOE9zdlJjV1dkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-2eb7684c7df1-list.html",
+          "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?nav_code=geo1614082611"
+        }
+      },
+      "listed": 21,
+      "name": "지리학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/geog/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cE4xOE9zdlJjV1dkJm5hdl9jb2RlPWdlbzE2MTQwODI2MTEmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "2870",
+      "source_board_id": "knu-geog-geo1614082611",
+      "source_url": "https://home.knu.ac.kr/HOME/geog/sub.htm?nav_code=geo1614082611",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-1f235111f7dc",
+      "checked_at": "2026-10-01T14:16:48.437715+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1f235111f7dc-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjImc3RhcnRQYWdlPTAmbGlzdE5vPTEzODYmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-1f235111f7dc-list.html",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864"
+        }
+      },
+      "listed": 14,
+      "name": "지질학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9WllINUU1Znloc2d1Jm5hdl9jb2RlPWdlbzE2MjE4MTQ4NjQmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1622",
+      "source_board_id": "knu-geology-geo1621814864",
+      "source_url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d6ef40bd632d",
+      "checked_at": "2026-10-01T14:16:51.304302+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d6ef40bd632d-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/hanl/sub.htm?mode=view&mv_data=aWR4PTQ4MzUmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MCZ0YWJsZT1leF9iYnNfZGF0YV9oYW5sJm5hdl9jb2RlPWhhbjE3NjkxMjc2MTAmY29kZT16Z0JHZ3Z4ZlJyelImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d6ef40bd632d-list.html",
+          "url": "https://home.knu.ac.kr/HOME/hanl/sub.htm?nav_code=han1769127610"
+        }
+      },
+      "listed": 10,
+      "name": "천문대기과학전공 · 학과공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/hanl/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9emdCR2d2eGZScnpSJm5hdl9jb2RlPWhhbjE3NjkxMjc2MTAmdGFibGU9ZXhfYmJzX2RhdGFfaGFubCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4835",
+      "source_board_id": "knu-hanl-han1769127610",
+      "source_url": "https://home.knu.ac.kr/HOME/hanl/sub.htm?nav_code=han1769127610",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d7e3a598e69c",
+      "checked_at": "2026-10-01T14:16:55.293529+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d7e3a598e69c-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?mode=view&mv_data=aWR4PTQxNTEmc3RhcnRQYWdlPTAmbGlzdE5vPTEyODYmdGFibGU9ZXhfYmJzX2RhdGFfcGhpbG9zb3BoeSZuYXZfY29kZT1waGkxNjIzMzkxNjU5JmNvZGU9eTVlc2ZnZ2ZZQlBZJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d7e3a598e69c-list.html",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?nav_code=phi1623391659"
+        }
+      },
+      "listed": 19,
+      "name": "철학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9eTVlc2ZnZ2ZZQlBZJm5hdl9jb2RlPXBoaTE2MjMzOTE2NTkmdGFibGU9ZXhfYmJzX2RhdGFfcGhpbG9zb3BoeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4151",
+      "source_board_id": "knu-philosophy-phi1623391659",
+      "source_url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?nav_code=phi1623391659",
+      "status": "verified"
+    },
+    {
+      "body_status": "image-only",
+      "channel_id": "notice-e187e9582e58",
+      "checked_at": "2026-10-01T14:16:58.988481+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e187e9582e58-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knuatc/sub.htm?mode=view&mv_data=aWR4PTU0NSZzdGFydFBhZ2U9MCZsaXN0Tm89NTEwJnRhYmxlPWV4X2Jic19kYXRhX2tudWF0YyZuYXZfY29kZT1rbnUxNzExOTc2Njg5JmNvZGU9MkFwSkNDZ0pFeUw2JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-e187e9582e58-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knuatc/sub.htm?nav_code=knu1711976689"
+        }
+      },
+      "listed": 10,
+      "name": "첨단기술융합대학 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/knuatc/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MkFwSkNDZ0pFeUw2Jm5hdl9jb2RlPWtudTE3MTE5NzY2ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251YXRjJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "545",
+      "source_board_id": "knu-knuatc-knu1711976689",
+      "source_url": "https://home.knu.ac.kr/HOME/knuatc/sub.htm?nav_code=knu1711976689",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-afca571a7ef1",
+      "checked_at": "2026-10-01T14:17:02.019365+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-afca571a7ef1-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?mode=view&mv_data=aWR4PTEyOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTIzJnRhYmxlPWV4X2Jic19kYXRhX2F0Y2FkJm5hdl9jb2RlPWF0YzE3NTM3NDY0OTgmY29kZT1zRWxDS3NqbWlyZTMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-afca571a7ef1-list.html",
+          "url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?nav_code=atc1753746498"
+        }
+      },
+      "listed": 16,
+      "name": "첨단기술융합대학 자율학부1 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9c0VsQ0tzam1pcmUzJm5hdl9jb2RlPWF0YzE3NTM3NDY0OTgmdGFibGU9ZXhfYmJzX2RhdGFfYXRjYWQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "128",
+      "source_board_id": "knu-atcad-atc1753746498",
+      "source_url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?nav_code=atc1753746498",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-dd1ea15f1f4f",
+      "checked_at": "2026-10-01T14:17:04.848475+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dd1ea15f1f4f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/spoedu/sub.htm?mode=view&mv_data=aWR4PTMyNyZzdGFydFBhZ2U9MCZsaXN0Tm89NzImdGFibGU9ZXhfYmJzX2RhdGFfc3BvZWR1Jm5hdl9jb2RlPXNwbzE2MjMwMjkzOTgmY29kZT1BZmQ3bXhRbE5JVHAmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dd1ea15f1f4f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/spoedu/sub.htm?nav_code=spo1623029398"
+        }
+      },
+      "listed": 12,
+      "name": "체육교육과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/spoedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9QWZkN214UWxOSVRwJm5hdl9jb2RlPXNwbzE2MjMwMjkzOTgmdGFibGU9ZXhfYmJzX2RhdGFfc3BvZWR1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "327",
+      "source_board_id": "knu-spoedu-spo1623029398",
+      "source_url": "https://home.knu.ac.kr/HOME/spoedu/sub.htm?nav_code=spo1623029398",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-dfce5afb9336",
+      "checked_at": "2026-10-01T14:17:07.804601+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dfce5afb9336-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/sports/sub.htm?mode=view&mv_data=aWR4PTk3JnN0YXJ0UGFnZT0wJmxpc3RObz0xOSZ0YWJsZT1leF9iYnNfZGF0YV9zcG9ydHMmbmF2X2NvZGU9c3BvMTYyMjYwOTY5MSZjb2RlPXZndkRhZ0hzbjJOZiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-dfce5afb9336-list.html",
+          "url": "https://home.knu.ac.kr/HOME/sports/sub.htm?nav_code=spo1622609691"
+        }
+      },
+      "listed": 10,
+      "name": "체육학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/sports/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9dmd2RGFnSHNuMk5mJm5hdl9jb2RlPXNwbzE2MjI2MDk2OTEmdGFibGU9ZXhfYmJzX2RhdGFfc3BvcnRzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "97",
+      "source_board_id": "knu-sports-spo1622609691",
+      "source_url": "https://home.knu.ac.kr/HOME/sports/sub.htm?nav_code=spo1622609691",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d6c272c6c7db",
+      "checked_at": "2026-10-01T14:17:10.776800+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d6c272c6c7db-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/zootechny/sub.htm?mode=view&mv_data=aWR4PTE5MTUmc3RhcnRQYWdlPTAmbGlzdE5vPTc0JnRhYmxlPWV4X2Jic19kYXRhX3pvb3RlY2hueSZuYXZfY29kZT16b28xNjIyNzA5Njc2JmNvZGU9MjNuaFU3SXdERUd3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d6c272c6c7db-list.html",
+          "url": "https://home.knu.ac.kr/HOME/zootechny/sub.htm?nav_code=zoo1622709676"
+        }
+      },
+      "listed": 11,
+      "name": "축산학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/zootechny/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9MjNuaFU3SXdERUd3Jm5hdl9jb2RlPXpvbzE2MjI3MDk2NzYmdGFibGU9ZXhfYmJzX2RhdGFfem9vdGVjaG55JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1915",
+      "source_board_id": "knu-zootechny-zoo1622709676",
+      "source_url": "https://home.knu.ac.kr/HOME/zootechny/sub.htm?nav_code=zoo1622709676",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ccc3a94a1fa5",
+      "checked_at": "2026-10-01T14:17:14.338243+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ccc3a94a1fa5-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI1MzgmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ccc3a94a1fa5-list.html",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?nav_code=civ1614066197"
+        }
+      },
+      "listed": 15,
+      "name": "토목공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Y2l0bXFyS1RZaXFlJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "3115",
+      "source_board_id": "knu-civil-civ1614066197",
+      "source_url": "https://home.knu.ac.kr/HOME/civil/sub.htm?nav_code=civ1614066197",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-f14e44ae5bb9",
+      "checked_at": "2026-10-01T14:17:17.233831+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f14e44ae5bb9-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MyZzdGFydFBhZ2U9MCZsaXN0Tm89MjA4JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-f14e44ae5bb9-list.html",
+          "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390"
+        }
+      },
+      "listed": 36,
+      "name": "통계학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/stat/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9V1BFRWJxTFhLcGxTJm5hdl9jb2RlPXN0YTE2MjM2MzIzOTAmdGFibGU9ZXhfYmJzX2RhdGFfc3RhdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "363",
+      "source_board_id": "knu-stat-sta1623632390",
+      "source_url": "https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-9dbd1b2695c9",
+      "checked_at": "2026-10-01T14:17:20.229545+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9dbd1b2695c9-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/style/sub.htm?mode=view&mv_data=aWR4PTM5MCZzdGFydFBhZ2U9MCZsaXN0Tm89MzI3JnRhYmxlPWV4X2Jic19kYXRhX3N0eWxlJm5hdl9jb2RlPXN0eTE2MTY2MzUwMTImY29kZT1JV0czTzA1NkhZQXAmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-9dbd1b2695c9-list.html",
+          "url": "https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012"
+        }
+      },
+      "listed": 15,
+      "name": "패션디자인전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/style/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SVdHM08wNTZIWUFwJm5hdl9jb2RlPXN0eTE2MTY2MzUwMTImdGFibGU9ZXhfYmJzX2RhdGFfc3R5bGUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "390",
+      "source_board_id": "knu-style-sty1616635012",
+      "source_url": "https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-3d2a3e87207a",
+      "checked_at": "2026-10-01T14:17:23.439869+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3d2a3e87207a-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-3d2a3e87207a-list.html",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
+        }
+      },
+      "listed": 32,
+      "name": "한문학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9Tkd6TUxqYmJYRDhTJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "7360",
+      "source_board_id": "knu-hanmun-han1624361542",
+      "source_url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d13e4abb0470",
+      "checked_at": "2026-10-01T14:17:26.289921+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d13e4abb0470-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1Nzkmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzImdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d13e4abb0470-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
+        }
+      },
+      "listed": 18,
+      "name": "해양학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9UzlkdlcxbElieXdJJm5hdl9jb2RlPW9jZTE2MjM2MzI1OTcmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1579",
+      "source_board_id": "knu-ocean-oce1623632597",
+      "source_url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-4a41e1328a3e",
+      "checked_at": "2026-10-01T14:17:28.646539+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4a41e1328a3e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNTMmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMDgmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-4a41e1328a3e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
+        }
+      },
+      "listed": 26,
+      "name": "행정학부 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9OVh0VDBtZzVITGkzJm5hdl9jb2RlPXB1YTE2MjMwMjk1MTkmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "4053",
+      "source_board_id": "knu-puad-pua1623029519",
+      "source_url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-b46aed7f6b0f",
+      "checked_at": "2026-10-01T14:17:32.033279+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b46aed7f6b0f-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/innopharm/sub.htm?mode=view&mv_data=aWR4PTEwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MjgmdGFibGU9ZXhfYmJzX2RhdGFfaW5ub3BoYXJtJm5hdl9jb2RlPWlubjE3MDYwNTg1ODQmY29kZT1uSVdHaDVJZHBGUDcmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-b46aed7f6b0f-list.html",
+          "url": "https://home.knu.ac.kr/HOME/innopharm/sub.htm?nav_code=inn1706058584"
+        }
+      },
+      "listed": 10,
+      "name": "혁신신약학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/innopharm/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bklXR2g1SWRwRlA3Jm5hdl9jb2RlPWlubjE3MDYwNTg1ODQmdGFibGU9ZXhfYmJzX2RhdGFfaW5ub3BoYXJtJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "102",
+      "source_board_id": "knu-innopharm-inn1706058584",
+      "source_url": "https://home.knu.ac.kr/HOME/innopharm/sub.htm?nav_code=inn1706058584",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-ac0144f93d45",
+      "checked_at": "2026-10-01T14:17:34.490286+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ac0144f93d45-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTAmbGlzdE5vPTM4NzYmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-ac0144f93d45-list.html",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
+        }
+      },
+      "listed": 13,
+      "name": "화학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9TDJIbTdrdzRadmxOJm5hdl9jb2RlPWNoZTE2MjI1MjEwODAmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "7065",
+      "source_board_id": "knu-chem-che1622521080",
+      "source_url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-093d2d29fb09",
+      "checked_at": "2026-10-01T14:17:37.324455+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-093d2d29fb09-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?mode=view&mv_data=aWR4PTEyNjImc3RhcnRQYWdlPTAmbGlzdE5vPTY5NCZ0YWJsZT1leF9iYnNfZGF0YV9jaGVkdSZuYXZfY29kZT1jaGUxNjIzMDU3NjYzJmNvZGU9ckRTNDl0cmRQUkZTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-093d2d29fb09-list.html",
+          "url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?nav_code=che1623057663"
+        }
+      },
+      "listed": 21,
+      "name": "화학교육과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9ckRTNDl0cmRQUkZTJm5hdl9jb2RlPWNoZTE2MjMwNTc2NjMmdGFibGU9ZXhfYmJzX2RhdGFfY2hlZHUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||",
+      "sample_post_id": "1262",
+      "source_board_id": "knu-chedu-che1623057663",
+      "source_url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?nav_code=che1623057663",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-101538fb6a8e",
+      "checked_at": "2026-10-01T14:17:40.231887+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-101538fb6a8e-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTEwOTgmc3RhcnRQYWdlPTAmbGlzdE5vPTE4NCZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-101538fb6a8e-list.html",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229"
+        }
+      },
+      "listed": 19,
+      "name": "환경공학과 · 학부 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/env/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9ZGZrNFBPbWxJbnJWJm5hdl9jb2RlPWVudjE2MjQ1MDAyMjkmdGFibGU9ZXhfYmJzX2RhdGFfZW52JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "1098",
+      "source_board_id": "knu-env-env1624500229",
+      "source_url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-6fafb52e7377",
+      "checked_at": "2026-10-01T14:17:43.725568+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6fafb52e7377-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/kac/sub.htm?mode=view&mv_data=aWR4PTQxMyZzdGFydFBhZ2U9MCZsaXN0Tm89MzM0JnRhYmxlPWV4X2Jic19kYXRhX2thYyZuYXZfY29kZT1rYWMxNjIyNjA5OTMwJmNvZGU9T1NhVmNsQUF0Z1pWJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-6fafb52e7377-list.html",
+          "url": "https://home.knu.ac.kr/HOME/kac/sub.htm?nav_code=kac1622609930"
+        }
+      },
+      "listed": 16,
+      "name": "환경생명화학전공 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/kac/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9T1NhVmNsQUF0Z1pWJm5hdl9jb2RlPWthYzE2MjI2MDk5MzAmdGFibGU9ZXhfYmJzX2RhdGFfa2FjJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "413",
+      "source_board_id": "knu-kac-kac1622609930",
+      "source_url": "https://home.knu.ac.kr/HOME/kac/sub.htm?nav_code=kac1622609930",
+      "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-459a4805de72",
+      "checked_at": "2026-10-01T14:17:46.915479+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-459a4805de72-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/ue/sub.htm?mode=view&mv_data=aWR4PTEwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTgyNSZ0YWJsZT1leF9iYnNfZGF0YV91ZSZuYXZfY29kZT11ZTE2MTY2MzM5NDImY29kZT1xM3NwYUQ2OUdOdHMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-459a4805de72-list.html",
+          "url": "https://home.knu.ac.kr/HOME/ue/sub.htm?nav_code=ue1616633942"
+        }
+      },
+      "listed": 19,
+      "name": "환경안전공학과 · 공지사항",
+      "next_url": "https://home.knu.ac.kr/HOME/ue/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9cTNzcGFENjlHTnRzJm5hdl9jb2RlPXVlMTYxNjYzMzk0MiZ0YWJsZT1leF9iYnNfZGF0YV91ZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||",
+      "sample_post_id": "1003",
+      "source_board_id": "knu-ue-ue1616633942",
+      "source_url": "https://home.knu.ac.kr/HOME/ue/sub.htm?nav_code=ue1616633942",
+      "status": "verified"
+    }
+  ],
+  "finished_at": "2026-10-01T14:18:30.137809+09:00",
+  "repairs": [
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "checked_at": "2026-10-01T14:18:30.137290+09:00",
+      "previous_errors": [
+        "공지 행의 제목·게시일 구조가 없습니다"
+      ],
+      "request_count": 2
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "previous_errors": [
+        "상세 제목·본문 구조가 없습니다"
+      ],
+      "reason": "저장된 실제 상세 HTML로 h2 제목/표 작성일/첨부 구조 확인",
+      "request_count": 0
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "checked_at": "2026-10-01T14:20:52.058772+09:00",
+      "reason": "구형 페이지 이동 실제 확인",
+      "request_count": 1
+    }
+  ],
+  "request_count": 262,
+  "started_at": "2026-10-01T14:11:18.445855+09:00"
+}

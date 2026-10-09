@@ -1,0 +1,164 @@
+name: 매일 경북대 자료 수집
+
+"on":
+  # cron-job.org가 매일 한국시간 01:07에 workflow_dispatch를 호출한다.
+  workflow_dispatch:
+    inputs:
+      collection_mode:
+        description: 전체 수집 또는 실패 게시판 재수집
+        required: true
+        type: choice
+        default: full
+        options:
+          - full
+          - retry_failed
+      retry_report:
+        description: 선택 사항. data/runs 안의 이전 JSON 보고서 경로
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+# 외부 예약·수동 실행이 같은 DB를 동시에 갱신하지 않는다.
+concurrency:
+  group: knu-collector-writer
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    # 필수 게시판 136개는 요청 간격 1초로 약 50분이 걸린다.
+    timeout-minutes: 120
+    env:
+      TZ: Asia/Seoul
+      PYTHONUNBUFFERED: '1'
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # 대기 중 다른 실행이 저장한 최신 DB에서 시작한다.
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: 의존성 설치
+        run: python -m pip install -r requirements.txt
+      - name: 오프라인 검사
+        run: |
+          python -m pytest -q
+          python docs/check_channels.py
+      - name: 공지·날씨·학사일정 수집
+        id: collect
+        continue-on-error: true
+        env:
+          COLLECTION_MODE: ${{ inputs.collection_mode || 'full' }}
+          RETRY_REPORT: ${{ inputs.retry_report }}
+        run: |
+          started_at="$(python -c 'from datetime import datetime; from zoneinfo import ZoneInfo; print(datetime.now(ZoneInfo("Asia/Seoul")).isoformat())')"
+          echo "started_at=$started_at" >> "$GITHUB_OUTPUT"
+          report_path="data/runs/$(date +%Y%m%dT%H%M%S)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-channels.json"
+          echo "report_path=$report_path" >> "$GITHUB_OUTPUT"
+          previous_items="$RUNNER_TEMP/previous-items.json"
+          rm -f "$previous_items"
+          today="$(date +%F)"
+          if [ -f "data/raw/$today/items.json" ]; then
+            cp "data/raw/$today/items.json" "$previous_items"
+          fi
+          if [ "$COLLECTION_MODE" = "retry_failed" ]; then
+            if [ -n "$RETRY_REPORT" ]; then
+              python -m collector.run --retry-failed --write-items --retry-report "$RETRY_REPORT" --report-path "$report_path"
+            else
+              python -m collector.run --retry-failed --write-items --report-path "$report_path"
+            fi
+          elif [ "$COLLECTION_MODE" = "full" ]; then
+            if [ -n "$RETRY_REPORT" ]; then
+              echo 'retry_report는 retry_failed 모드에서만 사용합니다.'
+              exit 2
+            fi
+            python -m collector.run --all-required --write-items --collect-extras --skip-meals --report-path "$report_path"
+          else
+            echo 'collection_mode 값이 올바르지 않습니다.'
+            exit 2
+          fi
+      - name: GitHub Pages 정적 앱 자료 생성
+        id: export
+        if: always() && !cancelled() && steps.collect.outcome != 'skipped' && steps.collect.outcome != ''
+        run: python -m collector.export_app
+      - name: 수집 실패 CSV 생성
+        if: always() && !cancelled() && steps.collect.outcome != 'skipped' && steps.collect.outcome != ''
+        env:
+          COLLECTION_STARTED_AT: ${{ steps.collect.outputs.started_at }}
+          COLLECTION_REPORT_PATH: ${{ steps.collect.outputs.report_path }}
+        run: python -m tools.notice_comment --report "$COLLECTION_REPORT_PATH" --started-at "$COLLECTION_STARTED_AT" --write-failures output/app/data/collection-failures.csv
+      - name: 결과 백업 (커밋 실패 시에도 다운로드 가능)
+        if: always() && steps.collect.outcome != 'skipped' && steps.collect.outcome != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: collection-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            data/db/
+            data/raw/
+            data/runs/
+            output/app/
+      - name: 성공한 자료와 실패 기록 저장
+        id: save
+        if: always() && !cancelled() && steps.collect.outcome != 'skipped' && steps.collect.outcome != ''
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for path in data/db data/raw data/runs output/app; do
+            if [ -e "$path" ]; then git add -- "$path"; fi
+          done
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "매일 수집 자료와 확인 결과 갱신"
+          # 강제 푸시 없이 재배치한다. DB 충돌이 나면 중단하고 백업에서 복구한다.
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+      - name: 최신 수집 자료로 Kaggle 브리핑 시작
+        if: always() && !cancelled() && vars.ENABLE_KAGGLE_BRIEFING == 'true' && steps.export.outcome == 'success' && steps.save.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COLLECTION_STARTED_AT: ${{ steps.collect.outputs.started_at }}
+        run: |
+          day="$(python -m briefing.kaggle collection-input --started-at "$COLLECTION_STARTED_AT" --previous-input "$RUNNER_TEMP/previous-items.json")"
+          if [ -z "$day" ]; then
+            echo '이번 실행에서 새 입력을 만들지 않아 음성 생성을 건너뜁니다.'
+            exit 0
+          fi
+          source_sha="$(git rev-parse HEAD)"
+          gh workflow run briefing-kaggle.yml --ref "$DEFAULT_BRANCH" \
+            -f date="$day" -f source_sha="$source_sha" -f publish=true
+      # GitHub issue 댓글 알림을 보낸다. 이메일 수신 여부는 사용자 설정에 따른다.
+      - name: 오늘 공지 목록 알림
+        if: always() && !cancelled() && steps.collect.outcome != 'skipped' && steps.collect.outcome != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COLLECTION_STARTED_AT: ${{ steps.collect.outputs.started_at }}
+          COLLECTION_REPORT_PATH: ${{ steps.collect.outputs.report_path }}
+          COLLECTION_OUTCOME: ${{ steps.collect.outcome }}
+          EXPORT_OUTCOME: ${{ steps.export.outcome }}
+          SAVE_OUTCOME: ${{ steps.save.outcome }}
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          number=$(gh issue list --state open --limit 100 --json number,title -q '[.[] | select(.title == "매일 수집 결과")][0].number // empty')
+          if [ -z "$number" ]; then
+            number=$(gh issue create --title '매일 수집 결과' --body '매일 수집이 끝나면 그날 선정된 공지 목록이 댓글로 올라옵니다.' | grep -o '[0-9]*$')
+          fi
+          python -m tools.notice_comment "$GITHUB_REPOSITORY" "$(git rev-parse HEAD)" "$GITHUB_REPOSITORY_OWNER" \
+            --report "$COLLECTION_REPORT_PATH" --started-at "$COLLECTION_STARTED_AT" \
+            --collect-outcome "$COLLECTION_OUTCOME" --export-outcome "$EXPORT_OUTCOME" \
+            --save-outcome "$SAVE_OUTCOME" --run-url "$ACTIONS_RUN_URL" | gh issue comment "$number" --body-file -
+      - name: 수집 또는 앱 자료 생성 실패 표시
+        if: steps.collect.outcome == 'failure' || steps.export.outcome == 'failure'
+        run: |
+          echo '수집 또는 정적 앱 자료 생성을 완료하지 못했습니다. 저장된 결과와 실행 로그를 확인하세요.'
+          exit 1

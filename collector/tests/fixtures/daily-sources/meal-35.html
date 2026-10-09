@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>경북대학교 생활협동조합 - 행복한 대학생활의 동반자, 협동사회의 큰 기둥!</title>
+<link href="/css/all.css" rel="stylesheet" type="text/css"/>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<script charset="utf-8" src="/application/js/jquery-1.10.0.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="/js/jqt.util.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="/js/all.js"></script> -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+// 신규 이미지 롤오버
+function swapImgRestore( id, src ) { //v3.0
+	$("#"+id).attr("src", src);
+}
+
+function swapImage( id, src ) { //v3.0
+	swapImgRestore( id, src );
+}
+</script>
+</head>
+<body>
+<!-- 전체감싸는 박스 -->
+<div id="wrapper">
+<!-- //본문 전체 -->
+<div id="container">
+<!-- //서브상단 -->
+<script type="text/javascript">
+$(document).ready(function() {//전체 펼침
+	$(".gnb_img").bind( "mouseenter", function(){
+		
+		imgArr = $(this).attr( "src" ).split( "_" );
+		imgArr = imgArr[1].split( "." );
+		targetClass = imgArr[0];
+
+		if ( "" == "1" && targetClass == "03" ) 
+			targetClass = "03_sangju";
+
+
+		$(".d2").css("display","block");
+		$(".gnb_02").css("display","none");
+		$(".nav_"+targetClass).css("display","block");
+//		alert( $( ".d2").css("display") );
+//		alert( $( ".nav_"+targetClass ).css("display") );
+	}); 
+});
+</script>
+<!-- //메인상단 -->
+<div id="head">
+<!-- 로고-->
+<p id="logo">
+<a href="http://coop.knu.ac.kr">
+<img alt="SUB_TITLE 메인페이지 바로가기" src="/images/common/logo.jpg"/>
+</a>
+</p>
+<script type="text/javascript">
+function changeCamp( camp )
+{
+	document.campus.camp.value = camp;
+	document.campus.submit();
+}
+</script>
+<form action="/changeCampus.php" method="post" name="campus">
+<input name="camp" type="hidden" value=""/>
+</form>
+<!-- 탑메뉴-->
+<div id="top_menu_area">
+<ul id="top_menu">
+<li class="first"><img alt="대구캠퍼스" src="/images/common/t_menu_daegu_on.gif"/></li>
+<li class="first"><a href="#this" onclick="changeCamp( 'SANGJU' )"><img alt="상주캠퍼스" src="/images/common/t_menu_sangju.gif"/></a></li>
+<li><a href="http://coop.knu.ac.kr"><img alt="홈으로" src="/images/common/t_menu01.gif"/></a></li>
+<!--
+					<li><a href="#"><img src="/images/common/t_menu02.gif" alt="로그인" /></a></li>
+					<li><a href="http://partner.cway.co.kr:8100/index.html?_UNIVCODE_=00109001"><img src="/images/common/t_menu03.gif" alt="회원가입" /></a></li>
+					-->
+<li class="last"><a href="/guide/sub03.html"><img alt="사이트맵" src="/images/common/t_menu04.gif"/></a></li>
+</ul>
+<!--<p class="all_site"><img src="/images/common/all_site_on.gif" alt="전체메뉴보기" /></p>
+				<div id="search">
+					<input id="totalsearch" class="c_txt" type="text" name="search_val" title="검색어를 입력하세요!" value="검색어를 입력하세요!">
+					<input class="search_btn1" type="image" src="/images/common/search_bt.gif" alt="검색하기">
+				</div>-->
+</div>
+<!-- 네비게이션-->
+<div id="gnb">
+<ul class="d1">
+<li><a href="/sub01/sub01.html"><img alt="생협소개" class="gnb_img" src="/images/common/gnb_01.gif"/></a></li>
+<li><a href="/sub02/sub01.html?prdt_dvcd=FM"><img alt="매장안내" class="gnb_img" src="/images/common/gnb_02.gif"/></a></li>
+<li><a href="/sub03/sub01_01.html?shop_sqno=35"><img alt="식당메뉴" class="gnb_img" src="/images/common/gnb_03.gif"/></a></li>
+<li><a href="/sub04/sub01.html"><img alt="조합원공간" class="gnb_img" src="/images/common/gnb_04.gif"/></a></li>
+<li><a href="/pages/board/list.php?board_sid=1"><img alt="커뮤니티" class="gnb_img" src="/images/common/gnb_05.gif"/></a></li>
+<li><a href="/pages/board/list.php?board_sid=12"><img alt="생협에바란다" class="gnb_img" src="/images/common/gnb_06.gif"/></a></li>
+</ul>
+<div class="d2">
+<div class="table_d2">
+<div class="nav_01 gnb_02" style="display:block;">
+<h2>생협소개</h2>
+<ul>
+<li><a href="/sub01/sub01.html">설립목적</a></li>
+<li><a href="/sub01/sub02.html">생협이란?</a></li>
+<li><a href="/sub01/sub03.html">정관</a></li>
+<li><a href="/sub01/sub04.html">연혁</a></li>
+<li><a href="/sub01/sub05.html">학생위원회</a></li>
+<li><a href="/sub01/sub06.html">조직구성</a></li>
+<li><a class="ls2" href="/sub01/sub07.html">C I 소개</a></li>
+<li><a href="/sub01/sub08.html">오시는 길</a></li>
+</ul>
+</div>
+<div class="nav_02 gnb_02" style="display:none;">
+<h2>매장안내</h2>
+<ul>
+<li><a href="/sub02/sub01.html?prdt_dvcd=FM">식당</a></li>
+<li><a href="/sub02/sub01.html?prdt_dvcd=SM">편의점</a></li>
+<!--<li><a href="/sub02/sub01.html?prdt_dvcd=RE">카페</a></li>-->
+<li><a href="/sub02/sub01.html?prdt_dvcd=RE">휴게점</a></li>
+<!--<li><a href="#">패스트푸드점</a></li>-->
+<!--<li><a href="#">김밥점</a></li>-->
+<li><a href="/sub02/sub05.html">서점</a></li>
+<!--<li><a href="#">우편취급국</a></li>-->
+<!--<li><a href="#">쇼핑프라자</a></li>-->
+<li><a href="/sub02/sub08.html">자판기</a></li>
+</ul>
+</div>
+<div class="nav_03 gnb_02" style="display:none;">
+<h2>식당메뉴</h2>
+<ul>
+<li><a href="/sub03/sub01_01.html?shop_sqno=35">정보센터식당</a></li><li><a href="/sub03/sub01_01.html?shop_sqno=36">복지관 교직원식당</a></li><li><a href="/sub03/sub01_01.html?shop_sqno=37">카페테리아 첨성</a></li><li><a href="/sub03/sub01_01.html?shop_sqno=46">GP감꽃식당</a></li><li><a href="/sub03/sub01_01.html?shop_sqno=85">공학관교직원식당(외부업체)</a></li><li><a href="/sub03/sub01_01.html?shop_sqno=86">공학관학생식당(외부업체)</a></li> <li><a href="/pages/board/list.php?board_sid=9">ENGLISH MENU</a></li>
+</ul>
+</div>
+<div class="nav_04 gnb_02" style="display:none;">
+<h2>조합원공간</h2>
+<ul>
+<li><a href="/sub04/sub01.html">조합원 안내</a></li>
+<li><a href="http://partner.cway.co.kr:8100/index.html?_UNIVCODE_=00109001">조합원 가입</a></li>
+</ul></div>
+<div class="nav_05 gnb_02" style="display:none;">
+<h2>커뮤니티</h2>
+<ul>
+<li><a href="/pages/board/list.php?board_sid=1">공지사항</a></li>
+<li><a href="/pages/board/list.php?board_sid=2">사진자료실</a></li>
+<li><a href="/pages/board/list.php?board_sid=4">묻고 답하기</a></li>
+<li><a href="/pages/board/list.php?board_sid=5">자주하는 질문</a></li>
+<li><a href="/pages/board/list.php?board_sid=7">아르바이트 모집</a></li>
+<li><a href="/pages/board/list.php?board_sid=10">이벤트 응모게시판</a></li>
+</ul>
+</div>
+<div class="nav_06 gnb_02" style="display:none;">
+<h2>생협에 바란다</h2>
+<ul>
+<li><a href="/pages/board/list.php?board_sid=12">생협에 바란다</a></li>
+<li><a href="/pages/board/list.php?board_sid=13">친절/ 불친절 신고센터</a></li>
+<li><a href="/sub07/survey.html">설문조사</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- 네비게이션end -->
+</div>
+<!-- //메인상단end---->
+<!-- //메인상단end---->
+<!-- //서브바디 -->
+<div id="s_body">
+<!-- //서브이미지 -->
+<div id="sub_visual"></div>
+<!-- //서브이미지end -->
+<!-- //컨텐츠 -->
+<div id="sub_content">
+<!-- //sub_menu_list-->
+<div class="s_content01">
+<h2><img src="/images/sub03/sub_Title.gif"/></h2>
+<ul>
+<li class="on" id="menu_step01">
+<a href="/sub03/sub01_01.html?shop_sqno=35">정보센터식당</a>
+</li><li id="menu_step00">
+<a href="/sub03/sub01_01.html?shop_sqno=36">복지관 교직원식당</a>
+</li><li id="menu_step00">
+<a href="/sub03/sub01_01.html?shop_sqno=37">카페테리아 첨성</a>
+</li><li id="menu_step00">
+<a href="/sub03/sub01_01.html?shop_sqno=46">GP감꽃식당</a>
+</li><li id="menu_step00">
+<a href="/sub03/sub01_01.html?shop_sqno=85">공학관교직원식당(외부업체)</a>
+</li><li id="menu_step00">
+<a href="/sub03/sub01_01.html?shop_sqno=86">공학관학생식당(외부업체)</a>
+</li><li id="menu_step00">
+<a href="/pages/board/list.php?board_sid=9">ENGLISH MENU</a>
+</li> </ul>
+<!-- <ul>
+		<li class="on"><a>설립목적</a>
+			<div class="left_3depth">
+				<ul>
+					<li class="on"><a>3뎁스메뉴일때</a></li>
+					<li><a>3뎁스메뉴일때</a></li>
+					<li><a>3뎁스메뉴일때</a></li>
+					<li><a>3뎁스메뉴일때</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a>생협이란?</a></li>
+		<li><a>정관</a></li>
+		<li><a>연혁</a></li>
+		<li><a>학생위원회</a></li>
+		<li><a>조직구성</a></li>
+		<li><a>오시는 길</a></li>
+	</ul> -->
+</div> <!-- //sub_menu_list end-->
+<!-- //서브내용틀-->
+<div class="s_content02">
+<div class="s_Title">
+<h2>정보센터식당</h2>
+<p class="roc">홈 &gt; 식당메뉴 &gt; 정보센터식당</p>
+</div>
+<!----------- //서브내용 들어가는곳------------------------------------------------------------------>
+<div class="body_content">
+<script type="text/javascript">
+function showOrigin()
+{
+	if ( $("#_origin_info").is(":visible") )
+		$("#_origin_info").hide();
+	else
+		$("#_origin_info").show();
+}
+</script>
+<!-- 주간메뉴 -->
+<div>
+<div class="week_title">
+<a href="/sub03/sub01_01.html?shop_sqno=35&amp;selDate=2026-09-24"><img alt="지난주 식단" src="/images/sub03/b_preweek.gif"/></a>
+<span class="fb"> 2026-10-01 ~ 2026-10-07</span>
+<a href="/sub03/sub01_01.html?shop_sqno=35&amp;selDate=2026-10-08"><img alt="다음주 식단" src="/images/sub03/b_nextweek.gif"/></a>
+<a href="#this" onclick="showOrigin()"><img alt="원산지" src="/images/sub03/origin.gif"/></a>
+<div id="_origin_info"><img src="/upload_files//common_file/shop/15161694985.gif" width="700"/> <p class="ori_close"><a href="#this" onclick="$('#_origin_info').hide()"><img alt="닫기" src="/images/common/close.gif"/></a><p></p></p></div>
+<a href="#this" onclick="printView();"><img alt="프린트" src="/images/sub03/print.gif"/></a>
+</div>
+<script type="text/javascript">
+	<!--
+	function printView(){
+		//window.open("/pages/print_view.html","print","width=800, height=700, scrollbars=1")
+		window.open("print.php?shop_sqno=35&selDate=2026-10-01","print","width=800, height=700, scrollbars=1")
+	}
+	//-->
+	</script>
+<span>★<font color="3333cc">로 표시된 항목은 돈육이 포함된 메뉴입니다.</font></span>
+<!-- 프린트 시작 -->
+<div id="print">
+<table class="tstyle_me tac">
+<caption>주간메뉴</caption>
+<colgroup>
+<col width="50px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">분류</th>
+<th class="on" scope="col">월<p class="week_t">(10/01) </p></th>
+<th scope="col">화<p class="week_t">(10/02) </p></th>
+<th scope="col">수<p class="week_t">(10/03) </p></th>
+<th scope="col">목<p class="week_t">(10/04) </p></th>
+<th scope="col">금<p class="week_t">(10/05) </p></th>
+<th scope="col">토<p class="week_t">(10/06) </p></th>
+</tr>
+</thead>
+</table>
+<!--조식-->
+<!--조식 end -->
+<!--중식-->
+<div class="week_table mt5">
+<p class="title">중식</p>
+<table class="tstyle_me tac" style="width:721px;">
+<caption>중식</caption>
+<colgroup>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+</colgroup>
+<tbody>
+<tr><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"><li class="first">바베큐폭립오므라이스★<br/>
+(11:00~13:30)<p>흰밥<br/>
+어묵무국<br/>
+배추김치</p><p>￦ 6,500</p></li><li>김치함박스테이크★<br/>
+핫도그★<p></p><p>￦ 6,000</p></li><li>오삼비빔밥<p></p><p>￦ 5,000</p></li><li>순살돈가스★<p></p><p>￦ 4,500</p></li><li>치즈돈가스★<p></p><p>￦ 5,000</p></li><li>고구마돈가스★<p></p><p>￦ 5,000</p></li><li>왕돈가스★<p></p><p>￦ 6,000</p></li><li>왕치즈돈가스★<p></p><p>￦ 6,000</p></li><li>라면<br/>
+(13:00~17:00)<p></p><p>￦ 2,800</p></li><li>우동<p></p><p>￦ 4,500</p></li><li>우동밥<p></p><p>￦ 5,000</p></li> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"><li class="first">불고기필라프<br/>
+허니브래드<br/>
+(11:00~13:30)<p>흰밥<br/>
+계란양파국<br/>
+배추김치</p><p>￦ 6,000</p></li><li>북성로불고기★<br/>
+우동<p></p><p>￦ 6,000</p></li><li>제육치즈돌솥★<p></p><p>￦ 6,000</p></li><li>순살돈가스★<p></p><p>￦ 4,500</p></li><li>치즈돈가스★<p></p><p>￦ 5,000</p></li><li>고구마돈가스★<p></p><p>￦ 5,000</p></li><li>왕돈가스★<p></p><p>￦ 6,000</p></li><li>왕치즈돈가스★<p></p><p>￦ 6,000</p></li><li>라면<br/>
+(13:00~17:00)<p></p><p>￦ 2,800</p></li><li>우동<p></p><p>￦ 4,500</p></li><li>우동밥<p></p><p>￦ 5,000</p></li> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><ul class="menu_im"> </ul>
+</td></tr>
+</tbody>
+</table>
+</div>
+<!--중식 end -->
+<!--석식-->
+<div class="week_table mt5">
+<p class="title">석식</p>
+<table class="tstyle_me tac" style="width:721px;">
+<caption>석식</caption>
+<colgroup>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+<col width="120px"/>
+</colgroup>
+<tbody>
+<tr><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"><li class="first">1식4찬<br/>
+자율배식<br/>
+(17:00~19:00)<p>흰밥<br/>
+새알미역국<br/>
+콩불★<br/>
+갈비만두★&amp;초간장<br/>
+오이맛고추된장무침<br/>
+포기김치</p><p>￦ 6,000</p></li> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"><li class="first">1식4찬<br/>
+자율배식<br/>
+(17:00~19:00)<p>흰밥<br/>
+꽃게된장국<br/>
+해물볶음우동<br/>
+감자스팸볶음★<br/>
+케이준샐러드<br/>
+포기김치</p><p>￦ 6,000</p></li> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><div class="button_m bt_me01">특식</div><ul class="menu_im"> </ul>
+</td><td scope="row"><ul class="menu_im"> </ul>
+</td></tr> </tbody>
+</table>
+</div>
+<!--석식 end -->
+</div>
+<!-- 프린트 끝 -->
+</div>
+</div>
+</div>
+</div>
+<!-- //컨텐츠 end-->
+</div>
+<!-- //메인바디end-->
+</div>
+<!-- //본문 전체end -->
+<!--footer -->
+<div id="footer">
+<div id="footArea">
+<p class="logo"><a href="/"><img alt="경북대 생활협동조합" src="/images/common/copy_logo.gif"/></a></p>
+<p class="top"><a href="#top"><img alt="화면 상단 링크" src="/images/common/top_icon.gif"/></a></p>
+<div class="foot_menu">
+<ul class="fmenu">
+<li><a href="/guide/sub01.html"><img alt="개인정보처리방침" src="/images/common/c_menu01.gif"/></a></li>
+<li><a href="/guide/sub02.html"><img alt="이메일주소무단수집거부" src="/images/common/c_menu03.gif"/></a></li>
+<li><a href="http://www.knu.ac.kr/" target="_blank"><img alt="학교홈페이지" src="/images/common/c_menu04.gif"/></a></li>
+</ul>
+<!--<ul class="sle">
+				<li>
+					<select name="link_sel" style="height:20px;">
+						<option selected>복현회관학생회관</option>
+						<option value="">복현회관학생회관</option>
+					</select>
+				</li>
+				<li>
+					<select name="link_sel" style="height:20px;">
+						<option selected>복현회관학생회관</option>
+						<option value="">복현회관학생회관</option>
+					</select>
+				</li>
+			</ul>-->
+</div>
+<div class="foot_copy">
+<address><img alt="주소 : (707-701) 대구광역시 북구 대학로 80 경북대학교 생활협동조합         TEL : 053-950-6041~3         FAX : 053-950-6044         E-Mail : knucoop@mail.knu.ac.kr" src="/images/common/add.gif"/></address>
+<cite><img alt="Copyright(c) 2015 by KYUNGPOOK NATIONAL UNIVERSITY. All rights reserved." src="/images/common/copy.gif"/> <a href="http://coop.knu.ac.kr/adm_menu" target="_blank"><img alt="." src="/images/common/key--arrow.png"/></a></cite>
+</div>
+</div>
+</div> <!--//footer end-->
+</div>
+</body>
+</html>

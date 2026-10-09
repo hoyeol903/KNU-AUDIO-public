@@ -1,0 +1,45 @@
+name: 주간 학식 로컬 수집 알림
+
+"on":
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: weekly-meal-reminder
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      GH_OWNER: ${{ github.repository_owner }}
+      GH_SERVER: ${{ github.server_url }}
+      GH_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      TZ: Asia/Seoul
+    steps:
+      - name: 주간 학식 수집 알림
+        run: |
+          title='주간 학식 로컬 수집 알림'
+          number=$(gh issue list --repo "$GH_REPO" --state open --search 'in:title "주간 학식 로컬 수집 알림"' --limit 100 --json number,title -q '[.[] | select(.title == "주간 학식 로컬 수집 알림")][0].number // empty')
+          sources_url="$GH_SERVER/$GH_REPO/blob/$GH_DEFAULT_BRANCH/docs/daily-sources.md"
+          app_url='https://hoyeol903.github.io/KNU-AUDIO-public/'
+          if [ -z "$number" ]; then
+            gh issue create --repo "$GH_REPO" --title "$title" --body "@$GH_OWNER 주간 학식 자료를 로컬에서 수집해 주세요. 여섯 식당 자료는 자동 수집·업로드되지 않습니다. 주간 표에는 게시된 날짜의 메뉴만 표시되며, 한 주 전체 메뉴가 자동으로 채워지는 것은 아닙니다.
+
+            수집 안내: $sources_url
+            앱: $app_url"
+          else
+            date=$(date +%F)
+            gh issue comment "$number" --repo "$GH_REPO" --body "@$GH_OWNER 오늘($date) 주간 학식 자료를 로컬에서 수집해 주세요. 여섯 식당 자료는 자동 수집·업로드되지 않습니다. 주간 표에는 게시된 날짜의 메뉴만 표시되며, 한 주 전체 메뉴가 자동으로 채워지는 것은 아닙니다.
+
+            수집 안내: $sources_url
+            앱: $app_url"
+          fi

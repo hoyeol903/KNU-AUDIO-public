@@ -1,0 +1,20 @@
+{
+  "bytes": 4520228775,
+  "dataset": "muyahoyeol/knu-audio-qwen3-tts-17b-0c0e3051",
+  "dataset_private": true,
+  "dataset_version": 1,
+  "files": 13,
+  "generation_performed": false,
+  "gpu_used": false,
+  "internet_enabled": false,
+  "manifest_sha256": "41a458e85ca35fecdd66e3073a4225c7fb558462c0837dfae76756077740b7b2",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "path": "/kaggle/input/datasets/muyahoyeol/knu-audio-qwen3-tts-17b-0c0e3051",
+  "probe_code_sha256": "a8fc56da5127899bc86604289c8aa5830fe0319842ad8e28582731a32bf2062e",
+  "probe_kernel": "muyahoyeol/knu-tts-model-cache-check-20261009",
+  "probe_version": 1,
+  "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "sohee_supported": true,
+  "tts_model_type": "custom_voice",
+  "verification_seconds": 20.13
+}

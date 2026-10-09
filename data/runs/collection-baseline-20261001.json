@@ -1,0 +1,12 @@
+{
+  "adopted_records": 4330,
+  "boards": [
+    "knu-korean-kor1657071357",
+    "knu-math-mat1623029308",
+    "knu-english-eng1621852173"
+  ],
+  "db_sha256_unchanged": "20e895ddf6145b01501051675d20d343465eb704ec592f4f00032aa3df7db0ea",
+  "initialized_at": "2026-10-01T14:04:16.239437+09:00",
+  "last_full_scan_at": "2026-10-01T13:44:39+09:00",
+  "source": "full-benchmark-20261001.json + title-truncation-recovery-20261001.json"
+}

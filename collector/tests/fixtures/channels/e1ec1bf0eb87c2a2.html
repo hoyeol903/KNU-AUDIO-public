@@ -1,0 +1,1607 @@
+<script>
+var sso_url = "https://home.knu.ac.kr";
+</script>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>경북대학교 의생명융합공학과</title>
+
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/jquery-ui-1.12.0.min.css?1611724934">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/common.css?1613384671">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/font.css?1611626226">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/font-awesome.min.css?1611105067">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/board.css?1613392428">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/page_tmp.css?1611104408">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/title_tmp.css?1611105107">
+<link rel="stylesheet" type="text/css" href="../old_data/css/bcst2/animate.css?1611105141">
+<link rel="stylesheet" href="../old_data/css/bcst2/content.css?1741660742">
+
+<!--
+<script src="http://newcms2.2ver.com/js/jquery-3.1.1.min.js"></script>
+-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="http://newcms2.2ver.com/HOME/data/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="http://newcms2.2ver.com/js/jquery-ui-1.12.1.js"></script>
+
+<!--
+<script src="http://newcms2.2ver.com/HOME/data/js/jquery.form.min.js?1504093352"></script>
+<script src="http://newcms2.2ver.com/HOME/data/js/common.js?1595380688"></script>
+<script src="http://newcms2.2ver.com/HOME/data/js/tmp_js.js?1497938077"></script>
+<script src="http://newcms2.2ver.com/HOME/data/js/wow.min.js?1536580494"></script>
+-->
+<script src="../old_data/js/jquery.form.min.js?1504093352"></script>
+<script src="../old_data/js/common.js?1595380688"></script>
+<script src="../data/js/tmp_js.js?1497938077"></script>
+<script src="../data/js/wow.min.js?1536580494"></script>
+
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="http://newcms2.2ver.com/cmsware/js/bootstrap.min.js"></script>
+<script src="../old_data/js/menu.js?1566556404"></script>
+<script type="text/javascript" src="../old_data/css/bcst2/jquery-ui-1.9.2.min.js?1611725389"></script>
+<script type="text/javascript" src="../old_data/css/bcst2/jquery.cycle2.carousel.js?1611534251"></script>
+<script type="text/javascript" src="../old_data/css/bcst2/jquery.cycle2.js?1611534253"></script>
+<script type="text/javascript" src="../old_data/css/bcst2/owl.carousel.min.js?1611534288"></script>
+
+
+<script>
+$(document).ready(function(){
+
+	$("header").bind('mouseover focusin', function(){
+		$('header').addClass('active');
+	});
+
+	$("header").bind('mouseout focusout', function(){
+		$('header').removeClass('active');
+	});
+
+
+	// 모바일 메뉴 표출
+	$( ".bt_full_m" ).click(function(){
+		$( "#lnb" ).show('slide', {direction: 'right'}, 100);
+		$( "#menu_background" ).show();
+	});
+	$( "#menu_background" ).click(function(){
+		$( "#lnb" ).hide('slide', {direction: 'right'}, 100);
+		$( "#menu_background" ).hide();
+	});
+	
+	$( ".menu_dep_1" ).click(function(){
+		$( ".menu_dep_1" ).removeClass('on');
+		$( "#"+$(this).attr('id') ).addClass('on');
+
+		var wd = $( window ).innerWidth();
+		if( wd < 1024 ){
+			$(".m_depth2_" + $(this).attr('id')).stop().slideToggle(100);
+		}
+	});
+
+
+});
+
+$(function(){
+	/**
+	 *	GNB Initialize
+	 */
+	var fe_gnbInit = function(){
+		var $gnb = $("#gnb");
+		
+		//1depth control
+		//alert(max_2menu);
+		h_px = (max_2menu * 30);
+		//mouseover
+		$gnb.find("> div > div > ul > li > a")
+		.bind("mouseenter", function(){ 
+			$(".depth2").show().stop().animate({opacity:'1',height:h_px+20},400);
+			$("#id_gnb_bg").stop().animate({opacity:'1',height:h_px+20},200);
+		});
+
+
+		$gnb.mouseleave(function(){
+			$(".depth2").stop().animate({height:'0px',opacity:'1'},200,function() {$(".depth2").hide();});
+			$("#id_gnb_bg").stop().animate({height:'0px',opacity:'1'},400);
+		});
+
+		$gnb.find("> div > div > ul > li > a")
+		.focus(function(){ 
+			$(".depth2").show().stop().animate({opacity:'1',height:h_px+20},400);
+			$("#id_gnb_bg").stop().animate({opacity:'1',height:h_px+20},200);
+		});
+		
+		
+		$gnb.find("li:last > a").blur(function(){
+			$(".depth2").stop().animate({height:'0px',opacity:'1'},200,function() {$(".depth2").hide();});
+			$("#id_gnb_bg").stop().animate({height:'0px',opacity:'1'},400);
+		});
+
+		$("#menu_out_check").focus(function(){ 
+			$(".depth2").stop().animate({height:'0px',opacity:'1'},200,function() {$(".depth2").hide();});
+			$("#id_gnb_bg").stop().animate({height:'0px',opacity:'1'},400);
+		});
+	}
+	fe_gnbInit(); //excute
+
+});
+
+
+// 메인 탭
+function mNotice1_tab(data){
+	$(".tab").removeClass("tab_on");
+	$(".tab").addClass("tab_off");
+
+	$("#"+data+"_div").removeClass("tab_off");
+	$("#"+data+"_div").addClass("tab_on");
+
+	$(".tabcontent").css('visibility', 'hidden');
+	$("#"+data+"").css('visibility', 'visible');
+
+	$(".tabplus").css('visibility', 'hidden');
+	$("#"+data+"_add").css('visibility', 'visible');
+
+}
+
+</script>
+
+<!-- header -->
+<header>
+	<div id="header">
+	<!-- topwrap -->
+	<div id="topwrap">
+	<div class="d_width">
+		<div id="toplogo">
+		<img src="../old_data/staticObj/knu_logo_d.png" class="png24" alt="KNU경북대학교"/>		</div>
+		<div class="right">
+			<a href="index.htm" title="홈으로 이동" >홈</a>
+						<a href="#" onclick="login_show()" title="로그인페이지로 이동" >로그인</a>
+						<a href="http://www.knu.ac.kr" title="(새창)경북대학교 이동" target="_blank">경북대학교</a>
+		</div>
+		<div class="right">
+			<div class="topZoom">
+			<a href="#" onclick="updateZoom(0.1);return false;" class="ico-scale-up" title="화면크기 확대"></a>
+			<a href="#" onclick="updateZoom(0.0);return false;" class="ico-scale-d" title="화면크기 기본값">A</a>
+			<a href="#" onclick="updateZoom(-0.1);return false;" class="ico-scale-down" title="화면크기 축소"></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+	<!-- //topwrap -->
+	<!-- gnb -->
+	<div id="gnb"><a name="gnb"></a>
+	<div class="d_width">
+											<h1 id="logo" class="logo_w tit1"><a href="index.htm" title="홈으로 이동" >의생명융합공학과</a></h1>
+										<div id="gnbmn">
+			<h2>주메뉴</h2>
+			<ul id="top1menu" class="depth1">
+								
+				<li style="width:20%;"><a href="./sub.htm?nav_code=bcs1611061160"  id="top1m1" title ='학과소개 > 학과개요 페이지로 이동합니다.'>학과소개</a>
+				
+					
+										<ul id="top2m1" class="depth2 fst">
+
+					
+															<li id="top2m1m1"><a href="./sub.htm?nav_code=bcs1611061160"  title ='학과개요 페이지로 이동합니다.'>학과개요</a></li>
+															<li id="top2m1m2"><a href="./sub.htm?nav_code=bcs1611654786"  title ='학과장 인사말 페이지로 이동합니다.'>학과장 인사말</a></li>
+															<li id="top2m1m3"><a href="./sub.htm?nav_code=bcs1611654810"  title ='설립배경 및 연혁 페이지로 이동합니다.'>설립배경 및 연혁</a></li>
+															<li id="top2m1m4"><a href="./sub.htm?nav_code=bcs1611061171"  title ='장학제도 페이지로 이동합니다.'>장학제도</a></li>
+															<li id="top2m1m5"><a href="./sub.htm?nav_code=bcs1611061208"  title ='찾아오시는 길 페이지로 이동합니다.'>찾아오시는 길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li style="width:20%;"><a href="./sub.htm?nav_code=bcs1611061218"  id="top1m2" title ='구성원 > 교수진 페이지로 이동합니다.'>구성원</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+
+					
+															<li id="top2m2m1"><a href="./sub.htm?nav_code=bcs1611061218"  title ='교수진 페이지로 이동합니다.'>교수진</a></li>
+															<li id="top2m2m2"><a href="./sub.htm?nav_code=bcs1611655048"  title ='행정팀 페이지로 이동합니다.'>행정팀</a></li>
+															<li id="top2m2m3"><a href="./sub.htm?nav_code=bcs1615771056"  title ='학생현황 페이지로 이동합니다.'>학생현황</a></li>
+					
+					</ul>
+									</li>
+								
+				<li style="width:20%;"><a href="./sub.htm?nav_code=bcs1611655016"  id="top1m3" title ='연구 > 실험실 및 관련연구소 페이지로 이동합니다.'>연구</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+
+					
+															<li id="top2m3m1"><a href="./sub.htm?nav_code=bcs1611655016"  title ='실험실 및 관련연구소 페이지로 이동합니다.'>실험실 및 관련연구소</a></li>
+															<li id="top2m3m2"><a href="./sub.htm?nav_code=bcs1611655029"  title ='연구시설 페이지로 이동합니다.'>연구시설</a></li>
+															<li id="top2m3m3"><a href="./sub.htm?nav_code=bcs1611655281"  title ='연구소식 페이지로 이동합니다.'>연구소식</a></li>
+					
+					</ul>
+									</li>
+								
+				<li style="width:20%;"><a href="./sub.htm?nav_code=bcs1611655108"  id="top1m4" title ='교육과정 > 학석사 연계과정 개요 페이지로 이동합니다.'>교육과정</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+
+					
+															<li id="top2m4m1"><a href="./sub.htm?nav_code=bcs1611655108"  title ='학사과정 페이지로 이동합니다.'>학사과정</a></li>
+															<li id="top2m4m2"><a href="./sub.htm?nav_code=bcs1615772143"  title ='대학원과정 페이지로 이동합니다.'>대학원과정</a></li>
+															<li id="top2m4m3"><a href="https://grad.knu.ac.kr/bbs/content.php?co_id=03_admission" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li>
+															<li id="top2m4m4"><a href="./sub.htm?nav_code=bcs1611654984"  title ='학사일정 페이지로 이동합니다.'>학사일정</a></li>
+					
+					</ul>
+									</li>
+								
+				<li style="width:20%;"><a href="./sub.htm?nav_code=bcs1611061294"  id="top1m5" title ='게시판 > 공지사항 페이지로 이동합니다.'>게시판</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+
+					
+															<li id="top2m5m1"><a href="./sub.htm?nav_code=bcs1611061294"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+															<li id="top2m5m2"><a href="./sub.htm?nav_code=bcs1621295227"  title ='입학공지 페이지로 이동합니다.'>입학공지</a></li>
+															<li id="top2m5m3"><a href="./sub.htm?nav_code=bcs1611109765"  title ='자료실 페이지로 이동합니다.'>자료실</a></li>
+															<li id="top2m5m4"><a href="./sub.htm?nav_code=bcs1611109777"  title ='채용정보 페이지로 이동합니다.'>채용정보</a></li>
+															<li id="top2m5m5"><a href="./sub.htm?nav_code=bcs1611109808"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+					
+					</ul>
+									</li>
+											</ul>
+			</div>
+			<div class="clear"></div>
+
+			<div class="m-nav">
+				<a href="javascript:void(0);" class="bt_full_m">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+
+				<nav id="lnb" style="display: none;">
+					<h2 class="skip">메뉴</h2>
+					<ul id="top1menu" class="depth1 clearfix">
+														<li class="menu_dep_1" id="1"><a href="javascript:void(0);"  id="top1m1">학과소개</a></li>
+															<div id="top2m1" class="m_depth2_1" style="display:none;">
+										<ul>
+																	<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611061160"  title ='학과개요 페이지로 이동합니다.'>&nbsp;&nbsp;학과개요</a></li>
+
+												<!-- <li id="top2m1" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611061160"  title ='학과개요 페이지로 이동합니다.'>학과개요</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611654786"  title ='학과장 인사말 페이지로 이동합니다.'>&nbsp;&nbsp;학과장 인사말</a></li>
+
+												<!-- <li id="top2m1" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611654786"  title ='학과장 인사말 페이지로 이동합니다.'>학과장 인사말</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611654810"  title ='설립배경 및 연혁 페이지로 이동합니다.'>&nbsp;&nbsp;설립배경 및 연혁</a></li>
+
+												<!-- <li id="top2m1" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611654810"  title ='설립배경 및 연혁 페이지로 이동합니다.'>설립배경 및 연혁</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611061171"  title ='장학제도 페이지로 이동합니다.'>&nbsp;&nbsp;장학제도</a></li>
+
+												<!-- <li id="top2m1" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611061171"  title ='장학제도 페이지로 이동합니다.'>장학제도</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611061208"  title ='찾아오시는 길 페이지로 이동합니다.'>&nbsp;&nbsp;찾아오시는 길</a></li>
+
+												<!-- <li id="top2m1" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611061208"  title ='찾아오시는 길 페이지로 이동합니다.'>찾아오시는 길</a></li> -->
+																					</ul>
+									</div>
+															<li class="menu_dep_1" id="2"><a href="javascript:void(0);"  id="top1m2">구성원</a></li>
+															<div id="top2m2" class="m_depth2_2" style="display:none;">
+										<ul>
+																	<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611061218"  title ='교수진 페이지로 이동합니다.'>&nbsp;&nbsp;교수진</a></li>
+
+												<!-- <li id="top2m2" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611061218"  title ='교수진 페이지로 이동합니다.'>교수진</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611655048"  title ='행정팀 페이지로 이동합니다.'>&nbsp;&nbsp;행정팀</a></li>
+
+												<!-- <li id="top2m2" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611655048"  title ='행정팀 페이지로 이동합니다.'>행정팀</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1615771056"  title ='학생현황 페이지로 이동합니다.'>&nbsp;&nbsp;학생현황</a></li>
+
+												<!-- <li id="top2m2" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1615771056"  title ='학생현황 페이지로 이동합니다.'>학생현황</a></li> -->
+																					</ul>
+									</div>
+															<li class="menu_dep_1" id="3"><a href="javascript:void(0);"  id="top1m3">연구</a></li>
+															<div id="top2m3" class="m_depth2_3" style="display:none;">
+										<ul>
+																	<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611655016"  title ='실험실 및 관련연구소 페이지로 이동합니다.'>&nbsp;&nbsp;실험실 및 관련연구소</a></li>
+
+												<!-- <li id="top2m3" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611655016"  title ='실험실 및 관련연구소 페이지로 이동합니다.'>실험실 및 관련연구소</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611655029"  title ='연구시설 페이지로 이동합니다.'>&nbsp;&nbsp;연구시설</a></li>
+
+												<!-- <li id="top2m3" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611655029"  title ='연구시설 페이지로 이동합니다.'>연구시설</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611655281"  title ='연구소식 페이지로 이동합니다.'>&nbsp;&nbsp;연구소식</a></li>
+
+												<!-- <li id="top2m3" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611655281"  title ='연구소식 페이지로 이동합니다.'>연구소식</a></li> -->
+																					</ul>
+									</div>
+															<li class="menu_dep_1" id="4"><a href="javascript:void(0);"  id="top1m4">교육과정</a></li>
+															<div id="top2m4" class="m_depth2_4" style="display:none;">
+										<ul>
+																	<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611655108"  title ='학사과정 페이지로 이동합니다.'>&nbsp;&nbsp;학사과정</a></li>
+
+												<!-- <li id="top2m4" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611655108"  title ='학사과정 페이지로 이동합니다.'>학사과정</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1615772143"  title ='대학원과정 페이지로 이동합니다.'>&nbsp;&nbsp;대학원과정</a></li>
+
+												<!-- <li id="top2m4" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1615772143"  title ='대학원과정 페이지로 이동합니다.'>대학원과정</a></li> -->
+																							<li class="lnb_sub"><a href="https://grad.knu.ac.kr/bbs/content.php?co_id=03_admission" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>&nbsp;&nbsp;입학안내</a></li>
+
+												<!-- <li id="top2m4" class="lnb_sub" ><a href="https://grad.knu.ac.kr/bbs/content.php?co_id=03_admission" target='_blank' title ='새창으로 입학안내 페이지가 열립니다.'>입학안내</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611654984"  title ='학사일정 페이지로 이동합니다.'>&nbsp;&nbsp;학사일정</a></li>
+
+												<!-- <li id="top2m4" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611654984"  title ='학사일정 페이지로 이동합니다.'>학사일정</a></li> -->
+																					</ul>
+									</div>
+															<li class="menu_dep_1" id="5"><a href="javascript:void(0);"  id="top1m5">게시판</a></li>
+															<div id="top2m5" class="m_depth2_5" style="display:none;">
+										<ul>
+																	<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611061294"  title ='공지사항 페이지로 이동합니다.'>&nbsp;&nbsp;공지사항</a></li>
+
+												<!-- <li id="top2m5" class="lnb_sub" class="mm-selected"><a href="./sub.htm?nav_code=bcs1611061294"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1621295227"  title ='입학공지 페이지로 이동합니다.'>&nbsp;&nbsp;입학공지</a></li>
+
+												<!-- <li id="top2m5" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1621295227"  title ='입학공지 페이지로 이동합니다.'>입학공지</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611109765"  title ='자료실 페이지로 이동합니다.'>&nbsp;&nbsp;자료실</a></li>
+
+												<!-- <li id="top2m5" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611109765"  title ='자료실 페이지로 이동합니다.'>자료실</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611109777"  title ='채용정보 페이지로 이동합니다.'>&nbsp;&nbsp;채용정보</a></li>
+
+												<!-- <li id="top2m5" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611109777"  title ='채용정보 페이지로 이동합니다.'>채용정보</a></li> -->
+																							<li class="lnb_sub"><a href="./sub.htm?nav_code=bcs1611109808"  title ='포토갤러리 페이지로 이동합니다.'>&nbsp;&nbsp;포토갤러리</a></li>
+
+												<!-- <li id="top2m5" class="lnb_sub" ><a href="./sub.htm?nav_code=bcs1611109808"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li> -->
+																					</ul>
+									</div>
+												</ul>
+			<!-- 모바일 메뉴 -->
+
+				</nav>
+				<div id="menu_background" style="position:fixed; left:0; right:0; bottom:0; top:0;display:none; background:#000; z-index:999; opacity: .7;"></div>
+			</div>
+			
+	</div>	
+	<script type="text/javascript">initTopMenu(5,1);max_2menu=5;</script>
+	</div>
+	<!-- //gnb -->
+</div>
+<div id="id_gnb_bg" class="gnb_bg"></div>
+<div class="clear"></div></header>
+
+<!-- container -->
+<div id="wrap" class="sbg">
+	<div class="script_sbg">
+<!-- 		<div style="position:absolute;top:0;left:0;background:url('../old_data/staticObj/bcst2/svimg.png');background-size:cover;background-position:50% 0;background-repeat:no-repeat;height:350px;width:100%;z-index:1"> -->
+<!-- 		</div> -->
+
+		<div id="svisual">
+			<div class="d_width">			
+				<div class="svtit">
+					<p class="tit1">KNU Biomedical Convergence Science &amp; Technology</p>
+					<p class="tit2">의생명융합공학과</p>
+					<p class="tit3">첨단기술융합대학 의생명융합공학과</p>
+				</div>	
+			</div>
+
+			<!-- 시작 -->
+	<ul>
+		<li>
+			<div id="mo-snb" >
+			<div class="d_width">
+				<ul class="clearfix depth1" id="location-ul">
+				<li class="home"><a href="./index.htm"></a></li>
+				
+				<li class="btn-a"><span>게시판</span>
+					<ul class="depth2">
+												</ul>
+						</li>
+
+						
+						
+						<li class="btn-a sub_btn"><span>공지사항</span>
+							<ul class="depth2">
+														<li class='on'><a href="./sub.htm?nav_code=bcs1611061294"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+														<li><a href="./sub.htm?nav_code=bcs1621295227"  title ='입학공지 페이지로 이동합니다.'>입학공지</a></li>
+														<li><a href="./sub.htm?nav_code=bcs1611109765"  title ='자료실 페이지로 이동합니다.'>자료실</a></li>
+														<li><a href="./sub.htm?nav_code=bcs1611109777"  title ='채용정보 페이지로 이동합니다.'>채용정보</a></li>
+														<li><a href="./sub.htm?nav_code=bcs1611109808"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+														</ul>
+						</li>
+						
+						
+						</ul>
+			</div>		
+			</div>
+
+			<script type="text/javascript">
+			<!--
+			$(document).ready(function(){ 
+				
+				// 서브 메뉴 클릭 시 밑으로 보이게
+				$("#location-ul").bind('mouseover focusin', function(){
+					$('.sub_btn').addClass('active');
+				});
+
+				$("#location-ul").bind('mouseout focusout', function(){
+					$('.sub_btn').removeClass('active');
+				});
+
+
+				i=0;
+				loc_num = $('#location-ul > li').length;
+				$('#location-ul > li').each(function(){
+					i++;
+					if(i != loc_num && i > 1){
+						$(this).addClass('mobile_none');
+					}		
+				});
+
+			}); 	
+
+
+			//-->
+			</script>
+		</li>
+	</ul>
+	
+	
+	<!-- 끝 -->
+
+		</div>
+	</div>
+
+	<!-- //visual -->		
+	<div id="body_head" class="clearfix">
+		<div class="inwrap">
+			<div id="location">
+				<ul>
+				<li><a href='./index.htm'>홈</a></li><li><a href='./sub.htm?nav_code=bcs1611061294'>게시판</a></li><li><a href='./sub.htm?nav_code=bcs1611061294'>공지사항</a></li><!-- 					<li><a href='./index.htm'>HOME</a></li><li><a href='../_site_skin/type_k10_sub.htm?nav_code=uni16106188671'>학과소개</a></li> -->
+				</ul>
+			</div>
+			<div id="pnb">
+				<ul class="page_sns">
+					<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnewcms2.2ver.com%2FHOME%2Fdata%2FdesignModel%2Funiv_univ15%2Fpkg%2Fsub.htm%3Fnav_code%3Duni16106188671" target="_blank"><strong>f</strong></a></li>
+					<li><a href="https://twitter.com/intent/tweet?text=학과소개&url=http%3A%2F%2Fnewcms2.2ver.com%2FHOME%2Fdata%2FdesignModel%2Funiv_univ15%2Fpkg%2Fsub.htm%3Fnav_code%3Duni16106188671" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fnewcms2.2ver.com%2FHOME%2Fdata%2FdesignModel%2Funiv_univ15%2Fpkg%2Fsub.htm%3Fnav_code%3Duni16106188671" target="_blank"><strong>b</strong></a></li>
+				</ul>
+				<ul class="pnb_bx">
+					<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fas fa-plus"></i></a></li>
+					<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fas fa-minus"></i></a></li>
+					<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fas fa-print"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+	<div id="container" class="cbg sub_container d_width">
+
+		<div>
+					<div id="snb"><a name="snb"></a>
+			
+			<h2>게시판</h2>
+			<div id="snbmn">
+			
+			<ul id="snb2m">
+			
+			
+
+						<li id="snb2m1"><a href="./sub.htm?nav_code=bcs1611061294"  title ='공지사항 페이지로 이동합니다.'>공지사항</a>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=bcs1621295227"  title ='입학공지 페이지로 이동합니다.'>입학공지</a>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=bcs1611109765"  title ='자료실 페이지로 이동합니다.'>자료실</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=bcs1611109777"  title ='채용정보 페이지로 이동합니다.'>채용정보</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=bcs1611109808"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a>
+							</li>
+						</ul>
+			</div>
+			<script type="text/javascript">initsnbMenu(1,0);</script>
+			<noscript><p>자바스크립트를 사용할 수 없는 환경에서는 현재 페이지에 해당되는 메뉴활성화를 보실 수 없습니다.</p></noscript>
+					</div>
+
+		<section id="content">			
+			<div id="body_title">
+				<h1>공지사항</h1>
+			</div>			
+			<div id="body_content">
+								
+				
+				<!-- 컨텐츠 -->
+				<script language="javascript" type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+// 정렬 방식
+function orderChange(obj){
+var d = document.itemForm;
+	d.page.value="";
+	d.orderOPT.value = obj;
+	d.submit();
+}
+
+//자동으로 다음 텍스트 박스로 포커스를 이동시킨다.
+function js_next_focus(obj,sLength,sNext)
+{
+	if (obj.value.length == sLength)
+	{
+		document.getElementsByName(sNext)[0].focus()
+	}
+}
+
+//-->
+</script>
+
+<script language="javascript">
+<!--
+
+var statusmsg="" //상태바 메세지 안보이기
+function hidestatus(){
+window.status=statusmsg
+return true
+}
+
+//텍스트박스 리사이즈
+function textarea_resize( formname, size ) {
+	if( size=='reset' ){
+		formname.rows = 10;
+	}else{
+		var value = formname.rows + size;
+		if(value>11) formname.rows = value;
+		else return;
+	}
+}
+//-->
+</script>
+
+<script>
+function view(what) { 
+var imgwin = window.open("",'WIN','scrollbars=no,status=no,toolbar=no,resizable=1,location=no,menu=no,width=10,height=10'); 
+imgwin.focus(); 
+imgwin.document.open(); 
+imgwin.document.write("<html>\n"); 
+imgwin.document.write("<head>\n"); 
+imgwin.document.write("<sc"+"ript>\n"); 
+imgwin.document.write("function closeWin(){\n");
+imgwin.document.write("window.close();\n");
+imgwin.document.write("}\n");
+imgwin.document.write("function resize() {\n"); 
+imgwin.document.write("pic = document.il;\n"); 
+imgwin.document.write("if (eval(pic).height) { var name = navigator.appName\n"); 
+imgwin.document.write("  if (name == 'Microsoft Internet Explorer') { myHeight = eval(pic).height + 40; myWidth = eval(pic).width + 12;\n"); 
+imgwin.document.write("  } else { myHeight = eval(pic).height + 9; myWidth = eval(pic).width; }\n"); 
+imgwin.document.write("  var height = screen.height;\n"); 
+imgwin.document.write("  var width = screen.width;\n"); 
+imgwin.document.write("  var leftpos = width / 2 - myWidth / 2;\n"); 
+imgwin.document.write("  var toppos = height / 2 - myHeight / 2; \n"); 
+imgwin.document.write("  window.moveTo(leftpos, toppos);\n"); 
+imgwin.document.write("  window.resizeTo(myWidth, myHeight);\n"); 
+imgwin.document.write("} }\n"); 
+imgwin.document.write("</sc"+"ript>\n"); 
+imgwin.document.write("</head>\n"); 
+imgwin.document.write('<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF">\n'); 
+imgwin.document.write("<a href='javascript:closeWin()' onfocus='this.blur()' title='이미지를 클릭하시면 창이 닫힙니다.'>\n");
+imgwin.document.write("<img border=0 src="+what+" style='max-width:1024px;'xheight=9 name=il onload='resize();'>\n"); 
+imgwin.document.write("</a>\n");
+imgwin.document.write("</body>\n"); 
+imgwin.document.close(); 
+} 
+</script>
+
+<script>
+function print(what) { 
+var imgwin = window.open("",'WIN','scrollbars=no,status=no,toolbar=no,resizable=1,location=no,menu=no,width=10,height=10'); 
+imgwin.focus(); 
+imgwin.document.open(); 
+imgwin.document.write("<html>\n"); 
+imgwin.document.write("<head>\n"); 
+imgwin.document.write("<sc"+"ript>\n"); 
+imgwin.document.write("function closeWin(){\n");
+imgwin.document.write("window.close();\n");
+imgwin.document.write("}\n");
+imgwin.document.write("function resize() {\n"); 
+imgwin.document.write("pic = document.il;\n"); 
+//imgwin.document.write("alert(eval(pic).height);\n"); 
+imgwin.document.write("if (eval(pic).height) { var name = navigator.appName\n"); 
+imgwin.document.write("  if (name == 'Microsoft Internet Explorer') { myHeight = eval(pic).height + 40; myWidth = eval(pic).width + 12;\n"); 
+imgwin.document.write("  } else { myHeight = eval(pic).height + 9; myWidth = eval(pic).width; }\n"); 
+imgwin.document.write("  clearTimeout();\n"); 
+imgwin.document.write("  var height = screen.height;\n"); 
+imgwin.document.write("  var width = screen.width;\n"); 
+imgwin.document.write("  var leftpos = width / 2 - myWidth / 2;\n"); 
+imgwin.document.write("  var toppos = height / 2 - myHeight / 2; \n"); 
+imgwin.document.write("  self.moveTo(leftpos, toppos);\n"); 
+imgwin.document.write("  self.resizeTo(myWidth, myHeight);\n"); 
+imgwin.document.write("}else setTimeOut(resize(), 100);}\n"); 
+imgwin.document.write("</sc"+"ript>\n"); 
+imgwin.document.write("</head>\n"); 
+imgwin.document.write('<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF" onload="print();">\n'); 
+imgwin.document.write("<a href='javascript:closeWin()' onfocus='this.blur()' title='이미지를 클릭하시면 창이 닫힙니다.'>\n");
+imgwin.document.write("<img border=0 src="+what+" xwidth=100 xheight=9 name=il onload='resize();'>\n"); 
+imgwin.document.write("</a>\n");
+imgwin.document.write("</body>\n"); 
+imgwin.document.close(); 
+} 
+</script>
+<!-- </head> -->
+<!--[Begin] 스킨별 스타일시트 불러오기 -->
+<link href="../old_bbs/skin/bbs_basic/userbbs.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+// 검색기능2
+function search02(){
+	var form=document.bbs_form02;
+	if(form.search_item.value=="" || form.search_order.value=="")	{
+		alert("검색할 내용을 입력해 주십시오.");
+		form.search_order.focus();
+	} else {
+		form.submit();
+	}
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	if(form.order_list.value=="0" && form.list_scale.value=="0")	{
+		alert("검색옵션을 최소 1개 이상 선택해주세요.");
+	} else {
+		form.submit();
+	}
+}
+
+// 삭제
+function bbsDel(data) {
+
+	 var i = confirm("선택하신 게시물을 삭제하시겠습니까?");
+
+	 if (i == true) {
+		location.href="bbs_del_ok.php?mv_data="+data;
+	 }
+	 else if (i == false)
+	 {
+		 return;
+	 }
+}
+
+// 수정
+function bbsEdit(data) {
+	var editCheck = confirm("게시판 상세정보를 확인하시겠습니까?");
+	if( editCheck ) {
+		 location.href("bbs_admin_edit.php?mv_data="+data);
+	} else  { return; }
+}
+
+// 허용여부수정
+function allowChange(form_data){
+	form_data.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	window.open("../old_bbs/multi_download.php?mv_data="+data, "","scrollbars=yes,width=400,height=360");
+}
+
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			<!--[SubBegin] 카테고리구분-->
+
+						<!--[SubEnd] 카테고리구분-->
+
+
+
+						<div class="board_info">
+							<h2 class="dpn">공지사항</h2>
+							<div class="left totalpage">전체 <em>695</em>건(<em>1</em>/70 페이지)</div>
+							<div class="right mlp10">
+								<form action="/HOME/bcst2/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+								<input type='hidden' name='code' value='notice'>
+								<input type='hidden' name='nav_code' value='bcs1611061294'>
+								<input type="hidden" name="order_list" value="">
+								<input type="hidden" name="list_scale" value="">
+								<input type="hidden" name="view_cate" value="">
+								<div class="search">
+									<label for="search_item" class="dpn">검색</label>
+									<select name="search_item" id="search_item" title="검색 종류 선택하기">
+										<option value="subject" >제목</option>
+										<option value="content" >내용</option>
+										<option value="name" >작성자</option>
+									</select>
+									<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+									<a href="#" class="btn_d btn_r btn_small" onclick="search01();return false;" title="검색버튼">검색</a>
+								</div>
+								</form>
+							</div>
+
+
+
+							<div class="clear"></div>
+						</div>
+
+
+
+
+
+<div class="board_list">
+			<!--[SubBegin] 게시물목록
+				공지형리스트의 타이틀은 불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수  -->
+						<table>
+						<caption>공지사항 목록입니다. 번호, 제목, 첨부파일,  작성자, 등록일, 조회수의 순서로 게시물 목록을 나타낸 표입니다. 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.</caption>
+							<thead>
+								<tr>
+<!--1.번호-->					<th scope="col" class="fst" width="8%">번호</th>
+<!--2.비밀글-->		<!--3.카테고리-->	<!--4.제목-->					<th scope="col">제목</th>
+<!--5.첨부파일-->									<th scope="col" width="8%">첨부</th>
+					<!--6.작성자-->					<th scope="col" width="18%">작성자</th>
+<!--7.등록일-->					<th scope="col" width="18%">등록일</th>
+<!--8.조회수-->					<th scope="col" width="8%">조회수</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+			  
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwNyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[안내] KNU LAB 신규출입자교육(온라인) 수강 재안내(미이수자 이수 필수 ★) 게시물 상세정보 바로가기">[안내] KNU LAB 신규출입자교육(온라인) 수강 재안내(미이수자 이수 필수 ★)</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTgwNyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='(붙임1)KNU LAB 신규출입자 교육 매뉴얼.pptx외 3개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/23</td>
+<!--8.조회수-->					<td>933</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc5OSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학사][필수] 2026년 온라인 인권·젠더 교육 미이수자 명단(2026.9.13.. 게시물 상세정보 바로가기">[학사][필수] 2026년 온라인 인권·젠더 교육 미이수자 명단(2026.9.13..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTc5OSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='수강 방법(PC) 2026.pdf외 2개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/16</td>
+<!--8.조회수-->					<td>2025</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc5NSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[대학원][졸업] 2026학년도 2학기 대학원 심사용 학위논문 접수 안내(9/30.. 게시물 상세정보 바로가기">[대학원][졸업] 2026학년도 2학기 대학원 심사용 학위논문 접수 안내(9/30..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTc5NSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='붙임1-7.zip파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/15</td>
+<!--8.조회수-->					<td>2451</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc5MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학사][필수★] 2026년 사이버 장애인식개선 교육 미이수자 명단 및 이수 재안.. 게시물 상세정보 바로가기">[학사][필수★] 2026년 사이버 장애인식개선 교육 미이수자 명단 및 이수 재안..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTc5MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='붙임1-1. 장애인식개선교육 수강 방법(2026).pdf외 2개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/15</td>
+<!--8.조회수-->					<td>2587</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc4MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[대학원][졸업] 2026학년도 2학기 대학원 학위논문 심사위원 추천 안내(9.2.. 게시물 상세정보 바로가기">[대학원][졸업] 2026학년도 2학기 대학원 학위논문 심사위원 추천 안내(9.2..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTc4MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='학위논문심사위원 추천조서(2026.2학기).xlsx외 3개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/04</td>
+<!--8.조회수-->					<td>4094</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc3MyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학적][대학원] (일반·전문·특수)대학원 학점 인정 신청 관련 안내 게시물 상세정보 바로가기">[학적][대학원] (일반·전문·특수)대학원 학점 인정 신청 관련 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTc3MyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='입학 이전 이수학점 인정 신청서(서식).hwp외 2개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/03</td>
+<!--8.조회수-->					<td>4206</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc3MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[안내] 2027학년도 경북대 대학원 의생명융합공학과 신입생 모집 입학설명회 안내 게시물 상세정보 바로가기">[안내] 2027학년도 경북대 대학원 의생명융합공학과 신입생 모집 입학설명회 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTc3MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='경북대_의생명융합공학과_입학설명회_포스터_최종.pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/02</td>
+<!--8.조회수-->					<td>4420</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc2MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[안내][필수] 2026학년도 2학기 연구활동종사자 안전교육(정기) 실시 안내(~11/30) 게시물 상세정보 바로가기">[안내][필수] 2026학년도 2학기 연구활동종사자 안전교육(정기) 실시 안내(~11/30)</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTc2MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='1. 2026학년도 연구실 안전교육 대상 학과.xlsx외 4개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/01</td>
+<!--8.조회수-->					<td>4450</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc0NiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[안내][대학원 신입생 필수]  2026학년도 2학기 연구실 안전교육(신규집합교육.. 게시물 상세정보 바로가기">[안내][대학원 신입생 필수]  2026학년도 2학기 연구실 안전교육(신규집합교육..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTc0NiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='(붙임3)랩단위 대면교육 등록 매뉴얼(연구실).pptx파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/08/26</td>
+<!--8.조회수-->					<td>5066</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[대학원][졸업] ★2027년 2월 졸업예정자 졸업자격인정원 제출 안내(9/9~9/11 12시) 게시물 상세정보 바로가기">[대학원][졸업] ★2027년 2월 졸업예정자 졸업자격인정원 제출 안내(9/9~9/11 12시)</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='★대학원 졸업자격인정원 서류(학생제출용).hwp파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/08/25</td>
+<!--8.조회수-->					<td>5205</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTcxOSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[대학원][졸업] 〔학위논문 제출 자격요건〕대학원생 연구윤리교육 운영 변경 예정 안내 게시물 상세정보 바로가기">[대학원][졸업] 〔학위논문 제출 자격요건〕대학원생 연구윤리교육 운영 변경 예정 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/08/07</td>
+<!--8.조회수-->					<td>6878</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTcwMiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[등록] 2026학년도 2학기 재학생 등록금 수납 계획 안내 게시물 상세정보 바로가기">[등록] 2026학년도 2학기 재학생 등록금 수납 계획 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																	<a href="javascript:pdsWinOpen('aWR4PTcwMiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==');" title='2026학년도 2학기 재학생 등록금 수납 계획(안).hwp외 2개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/07/21</td>
+<!--8.조회수-->					<td>8642</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTY3MyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학사] 2026학년도 학사력 변경 안내 게시물 상세정보 바로가기">[학사] 2026학년도 학사력 변경 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTY3MyZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='2026학년도 학사력(변경).hwp파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/06/10</td>
+<!--8.조회수-->					<td>10130</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학적] 2026학년도 2학기 복학 및 휴학 신청 안내 게시물 상세정보 바로가기">[학적] 2026학년도 2학기 복학 및 휴학 신청 안내</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+								<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==&type=0&download=h&jf=1' title='2026학년도 2학기 복학 및 휴학 안내 공고(최종).pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>								</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/06/04</td>
+<!--8.조회수-->					<td>10298</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTU3MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학사][졸업] 전공이수학점 변경 및 졸업요건(졸업논문) 신설 안내(2026학번 .. 게시물 상세정보 바로가기">[학사][졸업] 전공이수학점 변경 및 졸업요건(졸업논문) 신설 안내(2026학번 ..</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/02/09</td>
+<!--8.조회수-->					<td>11338</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTUzMCZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[수업] 공적결석 출석인정 신청 절차 안내(학술대회 참가자) 게시물 상세정보 바로가기">[수업] 공적결석 출석인정 신청 절차 안내(학술대회 참가자)</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2025/12/10</td>
+<!--8.조회수-->					<td>11550</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTQxNCZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[대학원][필독]★ 대학원 졸업요건 및 자주묻는 질문 안내 ★ 게시물 상세정보 바로가기">[대학원][필독]★ 대학원 졸업요건 및 자주묻는 질문 안내 ★</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2025/08/14</td>
+<!--8.조회수-->					<td>13057</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTMwNCZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학부][학사][필독] 졸업자격인정제 중 상담영역 관련 안내★(경북대학교 졸업규정) 게시물 상세정보 바로가기">[학부][학사][필독] 졸업자격인정제 중 상담영역 관련 안내★(경북대학교 졸업규정)</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2025/05/21</td>
+<!--8.조회수-->					<td>13865</td>
+								</tr>
+
+
+			
+			<!--불릿(번호)/비밀글/카테고리/제목/첨부파일/작성자/등록일/조회수-->
+								<tr>
+								<td scope="row" class="fst notice">공지</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																<b>
+
+																	<a href="/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTE2MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==" title="[학생] 학부생 및 대학원생 학과 공지사항 단톡방 링크 안내 ★ 게시물 상세정보 바로가기">[학생] 학부생 및 대학원생 학과 공지사항 단톡방 링크 안내 ★</a></b>
+																&nbsp;																</td>
+<!--5.첨부파일-->												<td>
+																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2025/03/04</td>
+<!--8.조회수-->					<td>14571</td>
+								</tr>
+
+
+			
+											<tr>
+								<td scope="row" class="fst">695</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxMiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026학년도 학습컨설팅 운영 재안내 게시물 보기페이지 바로가기'>[안내] 2026학년도 학습컨설팅 운영 재안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+						&nbsp;<img src='../../cms_img/ico_new.gif' align='absmiddle' alt='새글' >													</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgxMiZzdGFydFBhZ2U9MCZsaXN0Tm89Njk1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='붙임1 2026학년도 학습컨설팅 안내 포스터(웹게시용).jpg파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/30</td>
+<!--8.조회수-->					<td>1</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">694</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxMSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[학적] 2026학년도 2학기 대학원 융합전공 선발자 통보 게시물 보기페이지 바로가기'>[학적] 2026학년도 2학기 대학원 융합전공 선발자 통보</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																																																</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/29</td>
+<!--8.조회수-->					<td>9</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">693</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxMCZzdGFydFBhZ2U9MCZsaXN0Tm89NjkzJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026년 10월 도서관 국내 전자자원 온라인 교육 안내 게시물 보기페이지 바로가기'>[안내] 2026년 10월 도서관 국내 전자자원 온라인 교육 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgxMCZzdGFydFBhZ2U9MCZsaXN0Tm89NjkzJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='2026년 10월 국내 전자자원 온라인 교육 안내.pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/29</td>
+<!--8.조회수-->					<td>3</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">692</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwOSZzdGFydFBhZ2U9MCZsaXN0Tm89NjkyJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026학년도 2학기 「도서관 교육주간」 실시 안내 게시물 보기페이지 바로가기'>[안내] 2026학년도 2학기 「도서관 교육주간」 실시 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgwOSZzdGFydFBhZ2U9MCZsaXN0Tm89NjkyJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='도서관 교육주간 홍보 포스터.jpg파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/29</td>
+<!--8.조회수-->					<td>2</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">691</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MCZsaXN0Tm89NjkxJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026학년도 학생의료공제회 독감 예방접종비 지원 안내 게시물 보기페이지 바로가기'>[안내] 2026학년도 학생의료공제회 독감 예방접종비 지원 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MCZsaXN0Tm89NjkxJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='홈페이지 안내문.jpg파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/29</td>
+<!--8.조회수-->					<td>7</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">690</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwNiZzdGFydFBhZ2U9MCZsaXN0Tm89NjkwJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026 개인정보 보호주간 홍보물 안내 게시물 보기페이지 바로가기'>[안내] 2026 개인정보 보호주간 홍보물 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																																			<a href="javascript:pdsWinOpen('aWR4PTgwNiZzdGFydFBhZ2U9MCZsaXN0Tm89NjkwJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w');" title='개인정보보호주간_카드뉴스_2종.zip외 3개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																													</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/23</td>
+<!--8.조회수-->					<td>748</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">689</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwNSZzdGFydFBhZ2U9MCZsaXN0Tm89Njg5JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내 게시물 보기페이지 바로가기'>[안내] 2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgwNSZzdGFydFBhZ2U9MCZsaXN0Tm89Njg5JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='2026학년도 2학기 첨성인 아너스 클럽 운영 계획(안내용).pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/22</td>
+<!--8.조회수-->					<td>683</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">688</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwNCZzdGFydFBhZ2U9MCZsaXN0Tm89Njg4JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 수업 중 저작권 침해 예방을 위한「대학생이 반드시 지켜야 할 저작권 상식.. 게시물 보기페이지 바로가기'>[안내] 수업 중 저작권 침해 예방을 위한「대학생이 반드시 지켜야 할 저작권 상식..</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgwNCZzdGFydFBhZ2U9MCZsaXN0Tm89Njg4JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='대학생이 반드시 지켜야 할 저작권 상식.pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/22</td>
+<!--8.조회수-->					<td>656</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">687</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwMyZzdGFydFBhZ2U9MCZsaXN0Tm89Njg3JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026년 10월 도서관 국외 전자자원 온라인 교육 안내 게시물 보기페이지 바로가기'>[안내] 2026년 10월 도서관 국외 전자자원 온라인 교육 안내</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																											<a href='../old_bbs/bbs_download.php?mv_data=aWR4PTgwMyZzdGFydFBhZ2U9MCZsaXN0Tm89Njg3JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w&type=0&download=h&jf='  title='[도서관]10월 국외전자자원 온라인이용교육 안내.pdf파일을 다운로드합니다.'><img src='../../cms_img/ico_file.gif' border='0' alt='첨부파일' ></a>																					</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/22</td>
+<!--8.조회수-->					<td>659</td>
+								</tr>
+
+
+
+
+												<tr>
+								<td scope="row" class="fst">686</td>
+<!--2.비밀글-->					<!--3.카테고리-->				<!--4.제목-->					<td class="subject">
+																									<!--#########[SubBegin]제목클릭시 권한처리
+							관리자만 쓰는 글이면 버튼노출안함 회원도 쓸 수 있는 글이면 버튼 노출하되 alert으로 처리함
+							관리자에 의해 삭제된 게시물의 경로 링크X, 제목X -->
+							
+
+							<a href='/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgwMSZzdGFydFBhZ2U9MCZsaXN0Tm89Njg2JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w' title='[안내] 2026학년도 대구 앵커 글로벌 매칭 Lab 대학원생 해외 파견 프로그램.. 게시물 보기페이지 바로가기'>[안내] 2026학년도 대구 앵커 글로벌 매칭 Lab 대학원생 해외 파견 프로그램..</a>
+							
+							
+
+						<!--#########[SubEnd]제목클릭시 권한처리-->
+
+																			</td>
+<!--5.첨부파일-->												<td>
+																																			<a href="javascript:pdsWinOpen('aWR4PTgwMSZzdGFydFBhZ2U9MCZsaXN0Tm89Njg2JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w');" title='1. 2026 대구 앵커 사업 글로벌 매칭Lab 대학원생 해외 파견 프로그램 수정 안내.hwp외 2개의 파일을 새창으로 다운로드 받을 수 있습니다.'><img src='../../cms_img/ico_file_multi.gif' border='0' alt='멀티첨부파일(새창)'></a>
+																													</td>
+								<!--6.작성자-->					<td>의생명융합공학과</td>
+<!--7.등록일-->					<td>2026/09/16</td>
+<!--8.조회수-->					<td>1141</td>
+								</tr>
+
+
+
+
+				
+							</tbody>
+						</table>
+			<!--[SubEnd]등록된 내용없음 표시-->
+</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">
+				
+<strong>1</strong><a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='2 페이지'>2</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='3 페이지'>3</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='4 페이지'>4</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='5 페이지'>5</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='6 페이지'>6</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='7 페이지'>7</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='8 페이지'>8</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='9 페이지'>9</a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9bm90aWNlJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmdGFibGU9ZXhfYmJzX2RhdGFfYmNzdDImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==||' title='10 페이지'>10</a>
+
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPW5vdGljZSZuYXZfY29kZT1iY3MxNjExMDYxMjk0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||' class='next' title='다음 10페이지'><span>다음 10페이지</span></a>
+<a href='/HOME/bcst2/sub.htm?mv_data=c3RhcnRQYWdlPTY5MCZjb2RlPW5vdGljZSZuYXZfY29kZT1iY3MxNjExMDYxMjk0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||' class='last' title='마지막 페이지'><span>마지막 페이지</span></a>
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						</div>
+			<!-- //board_info -->
+				<!-- //컨텐츠 -->
+
+			</div>
+			<div id="body_foot"></div>		
+		</section>
+		<aside></aside>
+	</div>
+
+</div>
+<!-- //container -->
+
+<!-- [FOOTER AREA] : FOOTER 공간(site_mainfooter) -->
+<script src="../old_data/js/jquery_selectric/jquery.selectric.min.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){//셀렉트박스
+	$('.Script_select_ui').selectric({
+	  onChange: function() {
+		var url = $(this).val();
+		if(url!=""){
+			var openNewWindow = window.open("about:blank");
+			openNewWindow.location.href = url;
+			$(this).val("");
+		}
+	  }
+	});
+});
+/*
+$(document).ready(function(){
+$('.Script_select_ui').selectric().on('change', function() {
+  alert($(this).val());
+});
+});
+*/
+function policy_pop(){
+	window.open("../old_bbs/template_policy_pop.htm", "","scrollbars=yes,width=860,height=600");
+}
+function private_pop(){
+	window.open("../old_bbs/template_private_pop.htm", "","scrollbars=yes,width=860,height=600");
+}
+//바로가기 목록 열고 닫기
+$(document).ready(function() {
+	$(this).find('#f_related span.tit, #f_related a.arr').bind('click',function(){
+		//alert($(this).attr("class"));
+		if($(this).attr("class") == "tit"){
+			//alert($(this).next().attr("display"));
+			if($(this).next().css("display") == "none"){
+				$("#f_related .select_ul").hide();
+				$("#f_related a.arr img").attr({
+					src:"../old_data/staticObj/support/f_select_arr.png",
+					alt:"바로가기 목록 열기"
+				});
+				$(this).next().show();
+				$(this).parent().find('a.arr img').attr({
+					src:"../old_data/staticObj/support/f_select_arr2.png",
+					alt:"바로가기 목록 닫기"
+				});
+			}else{
+				$(this).next().hide();
+				$(this).parent().find('a.arr img').attr({
+					src:"../old_data/staticObj/support/f_select_arr.png",
+					alt:"바로가기 목록 열기"
+				});
+			}
+		}else{
+			if($(this).prev().css("display") == "none"){
+				$("#f_related .select_ul").hide();
+				$("#f_related a.arr img").attr({
+					src:"../old_data/staticObj/support/f_select_arr.png",
+					alt:"바로가기 목록 열기"
+				});
+				$(this).prev().show();
+				$(this).find('img').attr({
+					src:"../old_data/staticObj/support/f_select_arr2.png",
+					alt:"바로가기 목록 닫기"
+				});
+			}else{
+				$(this).prev().hide();
+				$(this).find('img').attr({
+					src:"../old_data/staticObj/support/f_select_arr.png",
+					alt:"바로가기 목록 열기"
+				});
+			}
+		}
+	});
+
+});
+//-->
+</script>
+<link rel="stylesheet" href="../old_data/js/jquery_selectric/selectric.css">
+
+<div id="footer">
+<div class="d_width">
+		<div class="left">
+			<div class="dpb mbp10"><img src="../old_data/staticObj/footer_logo.png" alt="KNU"></div>
+			<!-- <a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" class="point">개인정보처리방침</a> -->
+			<!-- <a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank">이메일무단수집거부</a> -->
+			<!--<a href="#" onclick="private_pop();return false;" class="point">개인정보처리방침</a> -->
+			<a href="http://knu.ac.kr//wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" class="point">개인정보처리방침</a>
+			<a href="#" onclick="policy_pop();return false;">이메일무단수집거부</a>
+							<address>대구광역시 북구 대학로80(산격동) 경북대학교 연수동 104호 | 학교안내전화 053-950-5114 | 당직실 053-950-6000</address>
+						<div id="copyright">Copyright(c) Kyungpook National University. All rights reserved.</div>
+		</div>		
+		<div id="f_related">
+						<div class="list1">
+				<span class="tit" id="f_select01">대학/대학원 홈페이지</span>
+				<ul class="f_select01 select_ul" style="display:none;">
+					<li><a href="http://humanities.knu.ac.kr/" target="_blank" title="새창으로 인문대학 홈페이지가 열립니다.">인문대학</a></li>
+					<li><a href="http://social.knu.ac.kr/" target="_blank" title="새창으로 사회과학대학 홈페이지가 열립니다.">사회과학대학</a></li>
+					<li><a href="http://cns.knu.ac.kr/" target="_blank" title="새창으로 자연과학대학 홈페이지가 열립니다.">자연과학대학</a></li>
+					<li><a href="http://cec.knu.ac.kr/" target="_blank" title="새창으로 경상대학 홈페이지가 열립니다.">경상대학</a></li>
+					<li><a href="http://eng.knu.ac.kr/" target="_blank" title="새창으로 공과대학 홈페이지가 열립니다.">공과대학</a></li>
+					<li><a href="http://cite.knu.ac.kr/" target="_blank" title="새창으로 IT대학 홈페이지가 열립니다.">IT대학</a></li>
+					<li><a href="http://cals.knu.ac.kr/" target="_blank" title="새창으로 농업생명과학대학 홈페이지가 열립니다.">농업생명과학대학</a></li>
+					<li><a href="http://mvarts.knu.ac.kr/" target="_blank" title="새창으로 예술대학 홈페이지가 열립니다.">예술대학</a></li>
+					<li><a href="http://knutc.knu.ac.kr/" target="_blank" title="새창으로 사범대학 홈페이지가 열립니다.">사범대학</a></li>
+					<li><a href="http://med.knu.ac.kr/" target="_blank" title="새창으로 의과대학 홈페이지가 열립니다.">의과대학</a></li>
+					<li><a href="http://dent.knu.ac.kr/" target="_blank" title="새창으로 치과대학 홈페이지가 열립니다.">치과대학</a></li>
+					<li><a href="http://vet.knu.ac.kr/" target="_blank" title="새창으로 수의과대학 홈페이지가 열립니다.">수의과대학</a></li>
+					<li><a href="http://cohe.knu.ac.kr/" target="_blank" title="새창으로 생활과학대학 홈페이지가 열립니다.">생활과학대학</a></li>
+					<li><a href="http://nurs.knu.ac.kr/" target="_blank" title="새창으로 간호대학 홈페이지가 열립니다.">간호대학</a></li>
+					<li><a href="http://pharmacy.knu.ac.kr/" target="_blank" title="새창으로 약학대학 홈페이지가 열립니다.">약학대학</a></li>
+					<li><a href="http://cee.knu.ac.kr/" target="_blank" title="새창으로 생태환경대학 홈페이지가 열립니다.">생태환경대학</a></li>
+					<li><a href="http://cst.knu.ac.kr/" target="_blank" title="새창으로 과학기술대학 홈페이지가 열립니다.">과학기술대학</a></li>
+					<li><a href="http://gls.knu.ac.kr/" target="_blank" title="새창으로 글로벌인재학부 홈페이지가 열립니다.">글로벌인재학부</a></li>
+					<li><a href="http://puad.knu.ac.kr/" target="_blank" title="새창으로 행정학부 홈페이지가 열립니다.">행정학부</a></li>
+					<li><a href="http://udm.knu.ac.kr/" target="_blank" title="새창으로 자율전공부 홈페이지가 열립니다.">자율전공부</a></li>
+					<li><a href="http://tbudm.knu.ac.kr/" target="_blank" title="새창으로 과학기술생명자원자율학부 홈페이지가 열립니다.">과학기술생명자원자율학부</a></li>
+					<li><a href="http://shw.knu.ac.kr/" target="_blank" title="새창으로 보건복지학부 홈페이지가 열립니다.">보건복지학부</a></li>
+					<li><a href="http://grad.knu.ac.kr" target="_blank" title="새창으로 일반대학원 홈페이지가 열립니다.">일반대학원</a></li>
+					<li><a href="http://med.knu.ac.kr/" target="_blank" title="새창으로 의학전문대학원 홈페이지가 열립니다.">의학전문대학원</a></li>
+					<li><a href="http://dent.knu.ac.kr/" target="_blank" title="새창으로 치의학전문대학원 홈페이지가 열립니다.">치의학전문대학원</a></li>
+					<li><a href="http://lawschool.knu.ac.kr/" target="_blank" title="새창으로 법학전문대학원 홈페이지가 열립니다.">법학전문대학원</a></li>
+					<li><a href="http://gse.knu.ac.kr/" target="_blank" title="새창으로 교육대학원 홈페이지가 열립니다.">교육대학원</a></li>
+					<li><a href="http://gspa.knu.ac.kr/" target="_blank" title="새창으로 행정대학원 홈페이지가 열립니다.">행정대학원</a></li>
+					<li><a href="http://cec.knu.ac.kr/main01.asp" target="_blank" title="새창으로 경영대학원 홈페이지가 열립니다.">경영대학원</a></li>
+					<li><a href="http://health.knu.ac.kr/" target="_blank" title="새창으로 보건대학원 홈페이지가 열립니다.">보건대학원</a></li>
+					<li><a href="http://ind.knu.ac.kr/" target="_blank" title="새창으로 산업대학원 홈페이지가 열립니다.">산업대학원</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_01&menu_idx=41" target="_blank" title="새창으로 농업생명융합대학원 홈페이지가 열립니다.">농업생명융합대학원</a></li>
+					<li><a href="http://gsis.knu.ac.kr/" target="_blank" title="새창으로 국제대학원 홈페이지가 열립니다.">국제대학원</a></li>
+					<li><a href="http://social.knu.ac.kr/kor/subpage.php?Pcode=About&Ccode=06&PageNum=010501" target="_blank" title="새창으로 정책정보대학원 홈페이지가 열립니다.">정책정보대학원</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_02&menu_idx=41" target="_blank" title="새창으로 수사과학대학원 홈페이지가 열립니다.">수사과학대학원</a></li>
+					<li><a href="http://seoksa.knu.ac.kr/" target="_blank" title="새창으로 과학기술대학원 홈페이지가 열립니다.">과학기술대학원</a></li>
+				</ul>
+			<a href="#f_select01" class="arr"><img src="../old_data/staticObj/support/f_select_arr.png" alt="대학/대학원 홈페이지 바로가기 목록 열기"></a>
+			</div>
+			<div class="list2">
+				<span class="tit" id="f_select02">교내 주요홈페이지</span>
+				<ul class="f_select02 select_ul" style="display:none;">
+					<li><a href="http://iac.knu.ac.kr/" target="_blank" title="새창으로 산학연구처(산학협력단) 홈페이지가 열립니다.">산학연구처(산학협력단)</a></li>
+					<li><a href="http://kudos.knu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지가 열립니다.">도서관</a></li>
+					<li><a href="http://gp.knu.ac.kr/" target="_blank" title="새창으로 국제교류원 홈페이지가 열립니다.">국제교류원</a></li>
+					<li><a href="http://knujob.knu.ac.kr/" target="_blank" title="새창으로 인재개발원 홈페이지가 열립니다.">인재개발원</a></li>
+					<li><a href="http://linc.knu.ac.kr/" target="_blank" title="새창으로 LINC사업단 홈페이지가 열립니다.">LINC사업단</a></li>
+					<li><a href="http://fle.knu.ac.kr" target="_blank" title="새창으로 기초교육원 홈페이지가 열립니다.">기초교육원</a></li>
+					<li><a href="http://uicc.knu.ac.kr/" target="_blank" title="새창으로 정보화본부 홈페이지가 열립니다.">정보화본부</a></li>
+					<li><a href="http://dorm.knu.ac.kr/" target="_blank" title="새창으로 생활관 홈페이지가 열립니다.">생활관</a></li>
+					<li><a href="http://clinic.knu.ac.kr" target="_blank" title="새창으로 보건진료소 홈페이지가 열립니다.">보건진료소</a></li>
+					<li><a href="http://kpcl.knu.ac.kr/" target="_blank" title="새창으로 공동실험실습관 홈페이지가 열립니다.">공동실험실습관</a></li>
+					<li><a href="http://lang.knu.ac.kr" target="_blank" title="새창으로 외국어교육원 홈페이지가 열립니다.">외국어교육원</a></li>
+					<li><a href="http://sports.knu.ac.kr/" target="_blank" title="새창으로 체육진흥센터 홈페이지가 열립니다.">체육진흥센터</a></li>
+					<li><a href="http://lifelong.knu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지가 열립니다.">평생교육원</a></li>
+					<li><a href="http://ctl.knu.ac.kr" target="_blank" title="새창으로 교수학습센터 홈페이지가 열립니다.">교수학습센터</a></li>
+					<li><a href="http://support.knu.ac.kr/" target="_blank" title="새창으로 장애학생지원센터 홈페이지가 열립니다.">장애학생지원센터</a></li>
+					<li><a href="http://knuclar.knu.ac.kr/" target="_blank" title="새창으로 실험동물자원관리센터 홈페이지가 열립니다.">실험동물자원관리센터</a></li>
+					<li><a href="http://globalplaza.knu.ac.kr/" target="_blank" title="새창으로 글로벌플라자 홈페이지가 열립니다.">글로벌플라자</a></li>
+					<li><a href="http://museum.knu.ac.kr/" target="_blank" title="새창으로 박물관 홈페이지가 열립니다.">박물관</a></li>
+					<li><a href="http://mnh.knu.ac.kr/" target="_blank" title="새창으로 자연사박물관 홈페이지가 열립니다.">자연사박물관</a></li>
+					<li><a href="http://vmc.knu.ac.kr/" target="_blank" title="새창으로 수의과대학부속동물병원 홈페이지가 열립니다.">수의과대학부속동물병원</a></li>
+					<li><a href="http://artmuseum.knu.ac.kr/" target="_blank" title="새창으로 미술관 홈페이지가 열립니다.">미술관</a></li>
+					<li><a href="http://oz.knu.ac.kr/" target="_blank" title="새창으로 IT교육센터 홈페이지가 열립니다.">IT교육센터</a></li>
+					<li><a href="http://prfa.knu.ac.kr" target="_blank" title="새창으로 교수회 홈페이지가 열립니다.">교수회</a></li>
+					<li><a href="http://fund.knu.ac.kr/" target="_blank" title="새창으로 발전기금 홈페이지가 열립니다.">발전기금</a></li>
+					<li><a href="http://ipsi1.knu.ac.kr/" target="_blank" title="새창으로 입학안내 홈페이지가 열립니다.">입학안내</a></li>
+					<li><a href="http://ssw.knu.ac.kr/" target="_blank" title="새창으로 장학복지 홈페이지가 열립니다.">장학복지</a></li>
+					<li><a href="/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 홈페이지가 열립니다.">학사일정</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=edu/academic03&menu_idx=44" target="_blank" title="새창으로 학사행정 홈페이지가 열립니다.">학사행정</a></li>
+					<li><a href="http://prad.knu.ac.kr/" target="_blank" title="새창으로 교수초빙 홈페이지가 열립니다.">교수초빙</a></li>
+					<li><a href="http://www.knu.ac.kr/bbs/xml/kmap.jsp"" target="_blank" title="새창으로 캠퍼스맵 홈페이지가 열립니다.">캠퍼스맵</a></li>
+					<li><a href="http://knupr.knu.ac.kr/sub.php?menu=5&sub=2&sn=1" target="_blank" title="새창으로 견학안내 홈페이지가 열립니다.">견학안내</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=intro/search03&menu_idx=32" target="_blank" title="새창으로 교내사이트안내 홈페이지가 열립니다.">교내사이트안내</a></li>
+					<li><a href="/wbbs/wbbs/device_center/main.jsp" target="_blank" title="새창으로 친절/불친절신고 홈페이지가 열립니다.">친절/불친절신고</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=siteinfo/knu119&menu_idx=92"" target="_blank" title="새창으로 KNU119 홈페이지가 열립니다.">KNU119</a></li>
+					<li><a href="/wbbs/wbbs/contents/index.action?menu_url=intro/about05_03&menu_idx=12" target="_blank" title="새창으로 예·결산회계 홈페이지가 열립니다.">예·결산회계</a></li>
+					<li><a href="http://ufis.knu.ac.kr/" target="_blank" title="새창으로 대학시설공간종합관리시스템 홈페이지가 열립니다.">대학시설공간종합관리시스템</a></li>
+					<li><a href="http://safe.knu.ac.kr/" target="_blank" title="새창으로 연구실안전관리시스템 홈페이지가 열립니다.">연구실안전관리시스템</a></li>
+				</ul>
+				<a href="#f_select02" class="arr"><img src="../old_data/staticObj/support/f_select_arr.png" alt="교내 주요홈페이지 바로가기 목록 열기"></a>
+			</div>
+								</div>
+		<div class="clear"></div>
+</div>
+</div>
+<!-- [FOOTER AREA] : FOOTER 공간(site_mainfooter) -->
+
+</body>
+</html><script type="text/javascript">
+<!--
+/*프레임 새로고침시 현재페이지 유지 */
+document.onkeydown = function(e) {
+    var evtK = (e) ? e.which : window.event.keyCode;
+    var isCtrl = ((typeof isCtrl != 'undefined' && isCtrl) || ((e && evtK == 17) || (!e && event.ctrlKey))) ? true : false;
+
+    if ((isCtrl && evtK == 82) || evtK == 116) {
+        if (e) { evtK = 505; } else { event.keyCode = evtK = 505; }
+    }
+    if (evtK == 505) {
+        location.reload(location.href);
+        return false;
+    }
+}
+//-->
+</script>

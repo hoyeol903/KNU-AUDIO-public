@@ -1,0 +1,1569 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin" />
+
+
+ 
+ 		<meta name="viewport" content="width=1280" />  
+  	  
+  
+<meta name="description" content="경북대학교  경북대학교 간호대학 홈페이지 입니다.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="경북대학교 간호대학" />
+<meta property="og:description" content="경북대학교  경북대학교 간호대학 홈페이지 입니다." />
+<link rel="shortcut icon" href="../data/img/favicon.ico" />
+<title>경북대학교 간호대학</title>
+<link rel="stylesheet" href="/css/jquery-ui-1.12.0.min.css" /><link rel="stylesheet" href="/HOME/data/css/font-awesome.min.css?" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" >
+<link rel="stylesheet" href="/HOME/data/css/font.css?" />
+<link rel="stylesheet" href="/HOME/data/css/animate.css?" />
+<link rel="stylesheet" href="/HOME/data/css/common.css?" />
+<link rel="stylesheet" href="/HOME/data/css/board.css?" /> 
+<link rel="stylesheet" href="/HOME/data/css/page_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/title_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/knu_tmp.css?" />
+<link rel="stylesheet" href="/HOME/data/css/swiper.min.css?">
+
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+
+			<link rel="stylesheet" href="./css/content.css?1659430059" />
+	
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+
+<link rel="stylesheet" href="/HOME/data/css/owl.carousel.min.css?" />
+<link rel="stylesheet" href="/HOME/data/css/owl.theme.default.min.css?" />
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+	<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+	
+				<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/nurse; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+			<div class="login_section clearfix">
+			<div class="col_wrap clearfix">
+				<div class="col_d2"><a href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse" class="ico1" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+				<div class="col_d2"><a href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse" class="ico2" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+			</div>
+		</div>
+	
+	<div class="tac"><a href="#" onclick="login_close();" class="btn_d btn_gray">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+	<ul>
+	<li><a href="#container">본문 내용으로 바로가기</a></li>
+	<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+	</ul>
+</div>
+</div></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:11%} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(0, 0, 0);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+</style>
+</svg>
+<!-- header -->
+<header class="h-fix">
+	<div id="topwrap">		
+		<div class="d_width clearfix">
+		<div class="toplogo">
+			<a href="http://knu.ac.kr/" target="_blank"><img src="../data/img/logo_sm.png" alt="로고이미지"/></a>
+		</div>
+		<div class="topmn clearfix">
+			<span class="top-link">
+				<select onchange="window.open(value,'_blank');" title="경북대학교 대학홈페이지">
+					<option value="">경북대학교 대학홈페이지</option>
+						<option value="http://humanities.knu.ac.kr/" title="새창으로 인문대학 홈페이지가 열립니다.">인문대학</option>
+						<option value="http://social.knu.ac.kr/" title="새창으로 사회과학대학 홈페이지가 열립니다.">사회과학대학</option>
+						<option value="http://cns.knu.ac.kr/" title="새창으로 자연과학대학 홈페이지가 열립니다.">자연과학대학</option>
+						<option value="http://cec.knu.ac.kr/" title="새창으로 경상대학 홈페이지가 열립니다.">경상대학</option>
+						<option value="http://eng.knu.ac.kr/" title="새창으로 공과대학 홈페이지가 열립니다.">공과대학</option>
+						<option value="http://cite.knu.ac.kr/" title="새창으로 IT대학 홈페이지가 열립니다.">IT대학</option>
+						<option value="http://cals.knu.ac.kr/" title="새창으로 농업생명과학대학 홈페이지가 열립니다.">농업생명과학대학</option>
+						<option value="http://mvarts.knu.ac.kr/" title="새창으로 예술대학 홈페이지가 열립니다.">예술대학</option>
+						<option value="http://knutc.knu.ac.kr/" title="새창으로 사범대학 홈페이지가 열립니다.">사범대학</option>
+						<option value="http://med.knu.ac.kr/" title="새창으로 의과대학 홈페이지가 열립니다.">의과대학</option>
+						<option value="http://dent.knu.ac.kr/" title="새창으로 치과대학 홈페이지가 열립니다.">치과대학</option>
+						<option value="http://vet.knu.ac.kr/" title="새창으로 수의과대학 홈페이지가 열립니다.">수의과대학</option>
+						<option value="http://cohe.knu.ac.kr/" title="새창으로 생활과학대학 홈페이지가 열립니다.">생활과학대학</option>
+						<option value="http://nurs.knu.ac.kr/" title="새창으로 간호대학 홈페이지가 열립니다.">간호대학</option>
+						<option value="http://pharmacy.knu.ac.kr/" title="새창으로 약학대학 홈페이지가 열립니다.">약학대학</option>
+						<option value="http://cee.knu.ac.kr/" title="새창으로 생태환경대학 홈페이지가 열립니다.">생태환경대학</option>
+						<option value="http://cst.knu.ac.kr/" title="새창으로 과학기술대학 홈페이지가 열립니다.">과학기술대학</option>
+						<option value="http://gls.knu.ac.kr/" title="새창으로 글로벌인재학부 홈페이지가 열립니다.">글로벌인재학부</option>
+						<option value="http://puad.knu.ac.kr/" title="새창으로 행정학부 홈페이지가 열립니다.">행정학부</option>
+						<option value="http://udm.knu.ac.kr/" title="새창으로 자율전공부 홈페이지가 열립니다.">자율전공부</option>
+						<option value="http://tbudm.knu.ac.kr/" title="새창으로 과학기술생명자원자율학부 홈페이지가 열립니다.">과학기술생명자원자율학부</option>
+						<option value="http://shw.knu.ac.kr/" title="새창으로 보건복지학부 홈페이지가 열립니다.">보건복지학부</option>
+						<option value="http://grad.knu.ac.kr" title="새창으로 일반대학원 홈페이지가 열립니다.">일반대학원</option>
+						<option value="http://med.knu.ac.kr/" title="새창으로 의학전문대학원 홈페이지가 열립니다.">의학전문대학원</option>
+						<option value="http://dent.knu.ac.kr/" title="새창으로 치의학전문대학원 홈페이지가 열립니다.">치의학전문대학원</option>
+						<option value="http://lawschool.knu.ac.kr/" title="새창으로 법학전문대학원 홈페이지가 열립니다.">법학전문대학원</option>
+						<option value="http://gse.knu.ac.kr/" title="새창으로 교육대학원 홈페이지가 열립니다.">교육대학원</option>
+						<option value="http://gspa.knu.ac.kr/" title="새창으로 행정대학원 홈페이지가 열립니다.">행정대학원</option>
+						<option value="http://cec.knu.ac.kr/main01.asp" title="새창으로 경영대학원 홈페이지가 열립니다.">경영대학원</option>
+						<option value="http://health.knu.ac.kr/" title="새창으로 보건대학원 홈페이지가 열립니다.">보건대학원</option>
+						<option value="http://ind.knu.ac.kr/" title="새창으로 산업대학원 홈페이지가 열립니다.">산업대학원</option>
+						<option value="/wbbs/wbbs/contents/index.action?menu_url=edu/school04_01&amp;menu_idx=41" title="새창으로 농업생명융합대학원 홈페이지가 열립니다.">농업생명융합대학원</option>
+						<option value="http://gsis.knu.ac.kr/" title="새창으로 국제대학원 홈페이지가 열립니다.">국제대학원</option>
+						<option value="http://social.knu.ac.kr/kor/subpage.php?Pcode=About&amp;Ccode=06&amp;PageNum=010501" title="새창으로 정책정보대학원 홈페이지가 열립니다.">정책정보대학원</option>
+						<option value="" title="새창으로 수사과학대학원 홈페이지가 열립니다.">수사과학대학원</option>
+						<option value="http://seoksa.knu.ac.kr/" title="새창으로 과학기술대학원 홈페이지가 열립니다.">과학기술대학원</option>
+					
+				</select>
+			</span>
+														<a href="https://home.knu.ac.kr/sso/business.php" class="top-dk top-login"><i class="far fa-user mrp5"></i>로그인</a>
+																			<a href="./sub.htm?nav_code=nur1623200258" class="top-nav"><i class="fas fa-bars mrp5"></i> 사이트맵</a>
+										
+									
+
+											<a href="http://nurse.knu.ac.kr" target='_blank'>EN</a>
+												</div>
+		</div>
+	</div>
+
+
+	<div id="gnb">
+		<div class="d_width">
+		<div id="logo">
+			<a href="./index.htm">
+									<img src="./data/designImages/logo.png" alt="로고이미지"/>
+								<span class="sub_name">간호대학</span>
+			</a>
+		</div>
+		</div>
+	<div id="gnbmn">
+			<nav>
+			<ul class="depth1 clearfix">
+								
+				<li><a href="./sub.htm?nav_code=nur1624522135"  id="top1m1" title ='대학소개 > 학장인사 페이지로 이동합니다.'>대학소개</a>
+				
+					
+										<ul id="top2m1" class="depth2">
+										<li id="top2m1m1"><a href="./sub.htm?nav_code=nur1624522135"  title ='학장인사 페이지로 이동합니다.'>학장인사</a></li>
+										<li id="top2m1m2"><a href="./sub.htm?nav_code=nur1624522147"  title ='교육철학과 비전 페이지로 이동합니다.'>교육철학과 비전</a></li>
+										<li id="top2m1m3"><a href="./sub.htm?nav_code=nur1659328020"  title ='교육목적·교육목표 페이지로 이동합니다.'>교육목적·교육목표</a></li>
+										<li id="top2m1m4"><a href="./sub.htm?nav_code=nur1624522153"  title ='졸업후진로 페이지로 이동합니다.'>졸업후진로</a></li>
+										<li id="top2m1m5"><a href="./sub.htm?nav_code=nur1624522160"  title ='주요연혁 페이지로 이동합니다.'>주요연혁</a></li>
+										<li id="top2m1m6"><a href="./sub.htm?nav_code=nur1624522174"  title ='조직도 페이지로 이동합니다.'>조직도</a></li>
+										<li id="top2m1m7"><a href="./sub.htm?nav_code=nur1624522181"  title ='교내연락처 페이지로 이동합니다.'>교내연락처</a></li>
+										<li id="top2m1m8"><a href="./sub.htm?nav_code=nur1624522190"  title ='오시는길 페이지로 이동합니다.'>오시는길</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=nur1623200268"  id="top1m2" title ='입학안내 페이지로 이동합니다.'>입학안내</a>
+				
+					
+										<ul id="top2m2" class="depth2">
+										<li id="top2m2m1"><a href="https://ipsi1.knu.ac.kr/intro" target='_blank' title ='새창으로 학부 페이지가 열립니다.'>학부</a></li>
+										<li id="top2m2m2"><a href="https://ipsi2.knu.ac.kr/intro" target='_blank' title ='새창으로 대학원 페이지가 열립니다.'>대학원</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=nur1624522296"  id="top1m3" title ='교수진 > 전임교원 페이지로 이동합니다.'>교수진</a>
+				
+					
+										<ul id="top2m3" class="depth2">
+										<li id="top2m3m1"><a href="./sub.htm?nav_code=nur1624522296"  title ='전임교원 페이지로 이동합니다.'>전임교원</a></li>
+										<li id="top2m3m2"><a href="./sub.htm?nav_code=nur1624522307"  title ='명예교수 페이지로 이동합니다.'>명예교수</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=nur1657605659"  id="top1m4" title ='교육과정 > 교육과정 주요 내용 페이지로 이동합니다.'>교육과정</a>
+				
+					
+										<ul id="top2m4" class="depth2">
+										<li id="top2m4m1"><a href="./sub.htm?nav_code=nur1657605659"  title ='학부 페이지로 이동합니다.'>학부</a></li>
+										<li id="top2m4m2"><a href="./sub.htm?nav_code=nur1624522789"  title ='일반대학원 페이지로 이동합니다.'>일반대학원</a></li>
+										<li id="top2m4m3"><a href="./sub.htm?nav_code=nur1677833062"  title ='임상간호대학원 임상간호학과 페이지로 이동합니다.'>임상간호대학원 임상간호학과</a></li>
+										<li id="top2m4m4"><a href="./sub.htm?nav_code=nur1624522412"  title ='특별과정프로그램 페이지로 이동합니다.'>특별과정프로그램</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=nur1624522468"  id="top1m5" title ='학사정보 > 장학안내 페이지로 이동합니다.'>학사정보</a>
+				
+					
+										<ul id="top2m5" class="depth2">
+										<li id="top2m5m1"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target='_blank' title ='새창으로 학사일정 페이지가 열립니다.'>학사일정</a></li>
+										<li id="top2m5m2"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1C01" target='_blank' title ='새창으로 교과과정 페이지가 열립니다.'>교과과정</a></li>
+										<li id="top2m5m3"><a href="./sub.htm?nav_code=nur1624522468"  title ='장학안내 페이지로 이동합니다.'>장학안내</a></li>
+										<li id="top2m5m4"><a href="./sub.htm?nav_code=nur1624522474"  title ='학생복지 페이지로 이동합니다.'>학생복지</a></li>
+										<li id="top2m5m5"><a href="./sub.htm?nav_code=nur1624522486"  title ='학생활동 페이지로 이동합니다.'>학생활동</a></li>
+										<li id="top2m5m6"><a href="./sub.htm?nav_code=nur1624522492"  title ='간호대학생활관 페이지로 이동합니다.'>간호대학생활관</a></li>
+										<li id="top2m5m7"><a href="./sub.htm?nav_code=nur1624533140"  title ='시설현황 페이지로 이동합니다.'>시설현황</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="./sub.htm?nav_code=nur1624533185"  id="top1m6" title ='게시판 > 전체 공지사항 페이지로 이동합니다.' class="on">게시판</a>
+				
+					
+										<ul id="top2m6" class="depth2">
+										<li id="top2m6m1"><a href="./sub.htm?nav_code=nur1624533185"  title ='공지사항 페이지로 이동합니다.'>공지사항</a></li>
+										<li id="top2m6m2"><a href="./sub.htm?nav_code=nur1624533310"  title ='자료실 페이지로 이동합니다.'>자료실</a></li>
+										<li id="top2m6m3"><a href="./sub.htm?nav_code=nur1623200261"  title ='포토갤러리 페이지로 이동합니다.'>포토갤러리</a></li>
+										<li id="top2m6m4"><a href="./sub.htm?nav_code=nur1749457941"  title ='간호대학 소식지 페이지로 이동합니다.'>간호대학 소식지</a></li>
+										<li id="top2m6m5"><a href="./sub.htm?nav_code=nur1623200260"  title ='행사 및 세미나 페이지로 이동합니다.'>행사 및 세미나</a></li>
+										<li id="top2m6m6"><a href="./sub.htm?nav_code=nur1623200259"  title ='취업정보 페이지로 이동합니다.'>취업정보</a></li>
+										<li id="top2m6m7"><a href="./sub.htm?nav_code=nur1624859113"  title ='관련사이트 페이지로 이동합니다.'>관련사이트</a></li>
+					
+					</ul>
+									</li>
+								
+				<li><a href="https://nlab.knu.ac.kr/" target='_blank' id="top1m7" title ='새창으로 간호혁신연구소 페이지가 열립니다.'>간호혁신연구소</a>
+				
+					
+									</li>
+											</ul>
+			</nav>
+	</div>
+	</div>
+	<div id="id_gnb_bg" class="gnb_bg"></div>
+</header>
+<script>initTopMenu(6,1);max_2menu=8;</script>
+<!-- //header -->
+
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div id="wrap" class="sbg">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../nurse/data/designImages/SUBBG_1636954372');background-size:cover;background-position:50% 0;background-repeat:no-repeat;height:200px;width:100%;z-index:1"><div class="pattern-bg pattern01_w" style='opacity:0.1;'></div></div>
+
+
+<div id="svisual" style="min-height:200px;">
+	<div style="z-index:3">
+
+	<div class="d_width" style="height:100%;">
+		<div style="position:absolute;width:726px;height:100px;left: 0px; top: 55px;z-index:99">
+			<div id="sub_title_editarea">
+														<div class="sub-title">
+	<p class="tit">간호대학</p>
+	<p class="txt">차세대를 이끄는 창의적 실무역량을 갖춘 글로벌 간호 인재를 육성합니다.</p>
+</div>												</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+		<div id="body_head" class="clearfix">
+			<div class="inwrap">
+						<div id="location">
+							
+							<ul>
+							<li><a href='./index.htm'>HOME</a></li><li><a href='./sub.htm?nav_code=nur1624533185'>게시판</a></li><li><a href='./sub.htm?nav_code=nur1624533185'>공지사항</a></li><li><a href='./sub.htm?nav_code=nur1624533209'>학부 공지사항</a></li>							</ul>
+												</div>
+						<div id="pnb">
+							<ul class="pnb_bx">
+							<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+							<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+							<li class="fa fa-share-alt" style="display:none;">
+								<div class="page_sns">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD+%3E+%ED%95%99%EB%B6%80+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+									<a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank" class="blog">b</a>
+									<a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy"><i class="fa fa-link"></i></a>
+								</div>
+							</li>
+							</ul>
+							<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 공지사항 > 학부 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fnurse%2Fsub.htm%3Fnav_code%3Dnur1624533209" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div id="container" class="cbg sub-section d_width">
+		<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(0, 0, 0);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+		<div id="snb">
+		<div id="snbmn">
+		<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+					<ul id="snb2m">
+						<li id="snb2m1"><a href="./sub.htm?nav_code=nur1624533185" >공지사항</a>
+								<ul id="snb3m1">
+								<li id="snb3m1m1" class="fst"><a href="./sub.htm?nav_code=nur1624533185" >전체 공지사항</a></li>
+								<li id="snb3m1m2"><a href="./sub.htm?nav_code=nur1624533209" >학부 공지사항</a></li>
+								<li id="snb3m1m3"><a href="./sub.htm?nav_code=nur1624533217" >대학원 공지사항</a></li>
+								<li id="snb3m1m4"><a href="./sub.htm?nav_code=nur1624533227" >학술대회 공지사항</a></li>
+								<li id="snb3m1m5"><a href="./sub.htm?nav_code=nur1624533235" >학술대회 포스터 갤러리</a></li>
+								</ul>
+							</li>
+						<li id="snb2m2"><a href="./sub.htm?nav_code=nur1624533310" >자료실</a>
+								<ul id="snb3m2">
+								<li id="snb3m2m1" class="fst"><a href="./sub.htm?nav_code=nur1624533310" >전체 자료실</a></li>
+								<li id="snb3m2m2"><a href="./sub.htm?nav_code=nur1624533321" >학부 자료실</a></li>
+								<li id="snb3m2m3"><a href="./sub.htm?nav_code=nur1624533332" >대학원 자료실</a></li>
+								</ul>
+							</li>
+						<li id="snb2m3"><a href="./sub.htm?nav_code=nur1623200261" >포토갤러리</a>
+							</li>
+						<li id="snb2m4"><a href="./sub.htm?nav_code=nur1749457941" >간호대학 소식지</a>
+							</li>
+						<li id="snb2m5"><a href="./sub.htm?nav_code=nur1623200260" >행사 및 세미나</a>
+							</li>
+						<li id="snb2m6"><a href="./sub.htm?nav_code=nur1623200259" >취업정보</a>
+							</li>
+						<li id="snb2m7"><a href="./sub.htm?nav_code=nur1624859113" >관련사이트</a>
+							</li>
+						</ul>
+			<script type="text/javascript">initsnbMenu(1,2);</script>
+				</div>
+
+
+		
+
+		</div>
+		<!-- //snb -->
+
+		<section>
+		<div id="content">			
+			<div id="body_title"><h1>학부 공지사항</h1></div>
+			<div id="body_content">
+			<!-- content -->
+				
+
+	
+	<div class="nur1624533209">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+
+
+	
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/nurse/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+
+<!--[SubBegin] 검색알고리즘 -->
+		  
+			
+								<div class="board_search">
+						<form action="/HOME/nurse/sub.htm" method="get" name="bbs_form01" title="게시물 검색" onsubmit="return search01();">
+						<input type='hidden' name='code' value='IKvG3Zqk3TyS'>
+						<input type='hidden' name='nav_code' value='nur1624533209'>
+						<input type="hidden" name="order_list" value="">
+						<input type="hidden" name="list_scale" value="">
+						<input type="hidden" name="view_cate" value="">
+
+						<input type="text" name="search_order" id="search_order" value="" class="text" title="검색어" />
+						<button type="button" onclick="search01();return false;"><i class="fa fa-search"></i><span>검색</span></button>
+						</form>
+					</div>
+					<!-- <div class="board_info">
+						<div class="left">총 <em>2772</em>개의 글이 있습니다. (<em>1</em>/278 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/nurse/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='nur1624533209'>
+							<input type='hidden' name='code' value='IKvG3Zqk3TyS'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+
+
+					<div class="board_list">
+						<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+							<thead>
+								<tr>
+								<th scope="col" abbr="번호" style="width:50px;">번호</th>
+																<th scope="col" abbr="제목">제목</th>
+																<th scope="col" abbr="첨부" style="width:100px;">첨부</th>
+																								<th scope="col" abbr="작성자" style="width:200px" class="writer">작성자</th>
+																<th scope="col" abbr="작성일" style="width:100px;">작성일</th>
+																								<th scope="col" abbr="조회" style="width:80px;">조회</th>
+																								</tr>
+							</thead>
+							<tbody>
+
+
+			  								<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 학습컨설팅 운영 재안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">최영숙</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">12</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 강의개선을 위한 중간 설문 실시 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">21</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 학생의료공제회 독감 예방접종비 지원 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">28</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026년 10월 도서관 국내 전자자원 온라인 교육 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">최영숙</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">297</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 겨울계절수업 및 디딤돌수업 실시 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">665</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 겨울계절수업 희망과목 수요조사 실시 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">776</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-18</td>
+																								<td class="hit">1139</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-18</td>
+																								<td class="hit">1318</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[교직]  2026학년도 2학기 응급처치 및 심폐소생술 실습 시행 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTUwMDImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">1402</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>정보통신관련특강 &quot;FHIR 기반 간호기록지 데이터&quot; 개최 알림</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">1481</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 동계 해외대학 단기 프로그램 모집 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMDAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">1617</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5OTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 동계 해외봉사활동 파견 학생 모집 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ5OTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-15</td>
+																								<td class="hit">2265</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기『다문화가정 장학금』선발 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ5ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">장학담당자</td>
+																<td class="date">2026-09-09</td>
+																								<td class="hit">2974</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5Nzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[교직]  2026학년도 2학기 교직 적성 및 인성검사(1차) 시행 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5Nzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-03</td>
+																								<td class="hit">3239</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>군 입대 휴학자에 대한 취득학점 인정 및 학점인정 신청서 제출 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-03</td>
+																								<td class="hit">3385</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[대구시간호사회] 2026년 간호꿈나무장학금 신청 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-01</td>
+																								<td class="hit">3719</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026년도 대구광역시 대학생 학자금대출 부담경감 지원사업 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">장학담당자</td>
+																<td class="date">2026-09-01</td>
+																								<td class="hit">3659</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 학부 교내수업 시간표 및 3-4학년 전공수업운영계획 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-08-28</td>
+																								<td class="hit">4192</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>학칙 개정에 따른 수강신청 제도 일부 변경사항 사전 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-08-26</td>
+																								<td class="hit">4575</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NDcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[3~4학년] 2026학년도 2학기 동인동캠퍼스 임상실습생 탈의실, 탈의장 사용안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NDcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-08-26</td>
+																								<td class="hit">4737</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[3~4학년] 2026학년도 2학기 임상실습 기관별 자료(OT자료, 과목/부서별 세부사항 등) 안내 : 내용 숙지 및 철저 준..</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-08-24</td>
+																								<td class="hit">5096</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5NDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[3~4학년] 2026학년도 2학기 임상실습 현장지도자 평가표 작성 및 제출 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5NDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-08-24</td>
+																								<td class="hit">5243</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 보훈(가족)장학 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ5Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">장학담당자</td>
+																<td class="date">2026-08-20</td>
+																								<td class="hit">5372</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ5MjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 국가장학금, 국가근로장학금, 주거안정장학금 2차 신청 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ5MjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">장학담당자</td>
+																<td class="date">2026-08-11</td>
+																								<td class="hit">7040</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4OTkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 3~4학년 임상실습계획표 수정 공고(2026.09.14.자)</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ4OTkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-07-28</td>
+																								<td class="hit">10462</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4OTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2027년도 제67회 간호사 국가시험 개인정보제공동의서 제출 및 시험 안내(4학년)</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ4OTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-07-21</td>
+																								<td class="hit">10375</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4OTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 재학생 등록금 수납 계획 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ4OTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-07-21</td>
+																								<td class="hit">10202</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4Nzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>학습관리시스템(LMS) 내 AI 실시간 통번역 서비스 기능 개선 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ4Nzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-07-07</td>
+																								<td class="hit">11159</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4MjUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 복학 및 휴학 신청 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ4MjUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-06-04</td>
+																								<td class="hit">14514</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ4MjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[교직]  교육대학원 개설 ‘교직실무 2’ 교과목 개설 중단 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-06-04</td>
+																								<td class="hit">14443</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ3OTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>경북대학교장학기금 KNU 우수연구 장학금 장학사업 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ3OTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">장학담당자</td>
+																<td class="date">2026-05-19</td>
+																								<td class="hit">14650</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ3NTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>비교과프로그램 이수 변경 안내 (전 학번 해당)</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ3NTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-04-13</td>
+																								<td class="hit">14980</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ3NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[교직]  2026학년도 교원양성과정 성인지 교육 이수 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ3NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-04-13</td>
+																								<td class="hit">14508</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ3MTkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 학생의료공제회원 예방접종비 지원 사업 실시 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ3MTkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-03-27</td>
+																								<td class="hit">14681</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ3MDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 &quot;자살예방교육, 인터넷*스마트폰 과의존 예방교육&quot; 실시 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ3MDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-03-20</td>
+																								<td class="hit">14785</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ2NzEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[학습멘토링] 청곡종합사회복지관 청소년-대학생 학습멘토링의 멘토를 모집합니다!</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTQ2NzEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-03-04</td>
+																								<td class="hit">14778</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ0NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>간호사 국가시험 출제범위 및 시험시간표 변경 안내 (2028년도 제68회 국가시험부터 적용)</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ0NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2025-11-17</td>
+																								<td class="hit">19111</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQ0MzAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>대학생 해외 취업 피해 예방을 위한 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQ0MzAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2025-10-28</td>
+																								<td class="hit">19212</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTQwOTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>규정 개정에 따른 수업 공적결석 출석인정 관련 주요 사항 안내</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTQwOTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2025-04-03</td>
+																								<td class="hit">24270</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTM5NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>보건교육사 시험 응시자격 관련 교과목 현황(수정)</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTM5NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2025-01-31</td>
+																								<td class="hit">24828</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTM2ODImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>교양 학점 이수 변경 안내</a>									
+																</td>
+																<td class="file">
+								<a href='../bbs/bbs_download.php?mv_data=aWR4PTM2ODImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>								</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2024-07-04</td>
+																								<td class="hit">25327</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTM2MTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2023학번이후 간호학과 교육과정 일부 변경 및  경북대학교 간호대학 교육과정 운영 및 이수에 관한 지침(교양 이수부분) 변경..</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2024-05-08</td>
+																								<td class="hit">25587</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTM1MTAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>교양과목 이수학점 학칙 개정에 따른 지속가능발전목표(SDG)교양교과목 알림 및 이수 요청(2024학번부터 적용)</a>									
+																</td>
+																<td class="file">
+																	<a href="javascript:pdsWinOpen('aWR4PTM1MTAmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2024-03-05</td>
+																								<td class="hit">25272</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTMyMTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>온라인 상의 석차 확인 불가능 알림</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2023-08-31</td>
+																								<td class="hit">31258</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTMwOTEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>학부 졸업 자가진단 프로그램 운영 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2023-06-20</td>
+																								<td class="hit">31358</td>
+																								</tr>
+											<tr>
+								<td class="notice"><span>공지</span></td>
+																<td class="subject">
+								
+									<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTIxMyZzdGFydFBhZ2U9MCZsaXN0Tm89Mjc3MiZ0YWJsZT1leF9iYnNfZGF0YV9udXJzZSZuYXZfY29kZT1udXIxNjI0NTMzMjA5JmNvZGU9SUt2RzNacWszVHlTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0='>개인 석차 확인 안내</a>									
+																</td>
+																<td class="file">
+																</td>
+																								<td class="writer">간호대학</td>
+																<td class="date">2018-07-04</td>
+																								<td class="hit">32380</td>
+																								</tr>
+			
+											<tr>
+								<td class="num">2772</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 학습컨설팅 운영 재안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTcmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzImdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">최영숙</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">12</td>	
+																								</tr>
+												<tr>
+								<td class="num">2771</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzEmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 강의개선을 위한 중간 설문 실시 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzEmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">21</td>	
+																								</tr>
+												<tr>
+								<td class="num">2770</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzAmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 학생의료공제회 독감 예방접종비 지원 안내</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-29</td>
+																								<td class="hit">28</td>	
+																								</tr>
+												<tr>
+								<td class="num">2769</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026년 10월 도서관 국내 전자자원 온라인 교육 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMTImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">최영숙</td>
+																<td class="date">2026-09-28</td>
+																								<td class="hit">297</td>	
+																								</tr>
+												<tr>
+								<td class="num">2768</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjgmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 겨울계절수업 및 디딤돌수업 실시 안내</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">665</td>	
+																								</tr>
+												<tr>
+								<td class="num">2767</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjcmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 겨울계절수업 희망과목 수요조사 실시 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjcmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">조수정</td>
+																<td class="date">2026-09-22</td>
+																								<td class="hit">776</td>	
+																								</tr>
+												<tr>
+								<td class="num">2766</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjYmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjYmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-18</td>
+																								<td class="hit">1139</td>	
+																								</tr>
+												<tr>
+								<td class="num">2765</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjUmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내</a>																</td>
+																<td class="file">
+																											<a href='../bbs/bbs_download.php?mv_data=aWR4PTUwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjUmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9&type=0&download=h'><i class='fa fa-floppy-o'></i></a>																					</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-18</td>
+																								<td class="hit">1318</td>	
+																								</tr>
+												<tr>
+								<td class="num">2764</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjQmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>[교직]  2026학년도 2학기 응급처치 및 심폐소생술 실습 시행 안내</a>																</td>
+																<td class="file">
+																																			<a href="javascript:pdsWinOpen('aWR4PTUwMDImc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjQmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9');"><i class='fa fa-files-o'></i></a>
+																													</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">1402</td>	
+																								</tr>
+												<tr>
+								<td class="num">2763</td>
+																<td class="subject">
+								<a href='/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDEmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NjMmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9'>정보통신관련특강 &quot;FHIR 기반 간호기록지 데이터&quot; 개최 알림</a>																</td>
+																<td class="file">
+																																																</td>
+																								<td class="writer">도경화</td>
+																<td class="date">2026-09-17</td>
+																								<td class="hit">1481</td>	
+																								</tr>
+											</tbody>
+						</table>
+					</div>
+			<!--[Begin] 페이징 및 버튼부-->
+
+			<!-- page -->
+			<div class="paging">															   
+				
+<strong>1</strong><a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='2 페이지'>2</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='3 페이지'>3</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='4 페이지'>4</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='5 페이지'>5</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='6 페이지'>6</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='7 페이지'>7</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='8 페이지'>8</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='9 페이지'>9</a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9SUt2RzNacWszVHlTJm5hdl9jb2RlPW51cjE2MjQ1MzMyMDkmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZ2aWV3X2NhdGUzPSZ2aWV3X2NhdGU0PSZ2aWV3X2NhdGU1PQ==||' title='10 페이지'>10</a>
+
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPUlLdkczWnFrM1R5UyZuYXZfY29kZT1udXIxNjI0NTMzMjA5JnRhYmxlPWV4X2Jic19kYXRhX251cnNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||' class='next' title='다음 10페이지'><i class='fa fa-angle-right'></i><i class='fa fa-angle-right'></i><span>다음</span></a>
+<a href='/HOME/nurse/sub.htm?mv_data=c3RhcnRQYWdlPTI3NzAmY29kZT1JS3ZHM1pxazNUeVMmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZ0YWJsZT1leF9iYnNfZGF0YV9udXJzZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||' class='last' title='마지막 페이지'><i class='fa fa-angle-double-right'></i><i class='fa fa-angle-double-right'></i><span>마지막 페이지</span></a>
+						   
+			</div>
+			<!-- //page -->
+			<!-- board_info -->
+			<div class="btnarea tar">
+						
+			</div>
+			<!-- //board_info -->	
+</div>			<!-- //content -->
+			</div>
+			<div id="body_foot"></div>		</div>
+		</section>
+		<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+	
+	<footer>
+	<div class="d_width clearfix">
+				<div class="f_cont">
+						<ul class="fmn clearfix">
+			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+			</ul>
+						<address>
+										<p>
+									[41566] 
+													대구광역시 북구 대학로80(산격동) 경북대학교 간호대학(126번 건물) / T. 053-950-4463~4465(행정실) / 4466,4469(학부) / 4467(대학원) / F.053-950-4460<br> 동인동 캠퍼스 : [41944] 대구 중구 국채보상로 680  / T.053-420-4937(학부 임상실습) / 4938(대학원) 													 / T.053-950-5114
+																									</p>
+							
+				<p class="copyright">Copyright ⓒ 간호대학. All rights Reserved.</p>
+										
+			<div class="fcnt">
+				Total : 510,396명 / Today : 138명
+			</div>
+
+
+							<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+									
+
+			</address>		
+		</div>
+
+				<div class="f_link">
+				
+								<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+			<select onchange="footer_link_go(this.value);" title="주요사이트">
+				<option value="">4단계 BK21사업 관련사이트</option>
+				<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+				<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+				<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+				<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+				<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+				<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+				<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+				<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+				<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+				<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+				<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+				<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+				<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+				<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+				<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+				<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+				<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+				<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+				<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+				<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+				<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+				<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+				<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+				<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+				<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+				<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+				<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+				<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+				<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+				<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+			</select>
+			<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+					
+		</div>
+			</div>
+	</footer>
+
+
+	
+
+
+<!-- //footer -->
+
+</body>
+</html>

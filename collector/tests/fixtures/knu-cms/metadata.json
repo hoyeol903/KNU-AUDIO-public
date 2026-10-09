@@ -1,0 +1,32 @@
+{
+  "college": "인문대학",
+  "evidence": [
+    "메뉴: 공지사항(학사)",
+    "URL의 /HOME/<site>/ 및 nav_code, CMS 메뉴/스킨 경로"
+  ],
+  "files": [
+    {
+      "bytes": 56693,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "국어국문학과_목록.html",
+      "final_url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357",
+      "sha256": "7474ef664c7b38664b8b8b26360d8301d9a493b5fa98ae90249b2b58bb78e879",
+      "status": 200,
+      "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
+    },
+    {
+      "bytes": 46085,
+      "content_type": "text/html; charset=utf-8",
+      "encoding": "utf-8",
+      "file": "국어국문학과_상세.html",
+      "final_url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEyODMmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNSZ0YWJsZT1leF9iYnNfZGF0YV9rb3JlYW4mbmF2X2NvZGU9a29yMTY1NzA3MTM1NyZjb2RlPVpFZkhDaUJQbFJCciZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9",
+      "sha256": "9b867a71b89f994a79b3e37d1afc745050ded8686d07fe25256e460ce46134d3",
+      "status": 200,
+      "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEyODMmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNSZ0YWJsZT1leF9iYnNfZGF0YV9rb3JlYW4mbmF2X2NvZGU9a29yMTY1NzA3MTM1NyZjb2RlPVpFZkhDaUJQbFJCciZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+    }
+  ],
+  "id": "dept-korean",
+  "representative": "국어국문학과",
+  "template": "knu-cms"
+}

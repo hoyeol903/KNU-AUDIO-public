@@ -1,0 +1,2467 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  경북대학교 예술대학 디자인학과 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="경북대학교 예술대학 디자인학과" property="og:title"/>
+<meta content="경북대학교  경북대학교 예술대학 디자인학과 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>경북대학교 예술대학 디자인학과</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1726028496" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/vcd; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:14%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(34, 34, 34);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 예술대학 <em>디자인학과</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/vcd/sub.htm?nav_code=vcd1622551643">로그인</a>
+<a href="http://vcden.knu.ac.kr" target="_blank">EN</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=vcd1622551373" id="top1m1" title="학과개요 &gt; 학과소개 페이지로 이동합니다.">학과개요</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=vcd1622551373" title="학과소개 페이지로 이동합니다.">학과소개</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=vcd1622551383" title="인사말 페이지로 이동합니다.">인사말</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=vcd1622551398" title="교수소개 페이지로 이동합니다.">교수소개</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=vcd1622551408" title="교육시설 페이지로 이동합니다.">교육시설</a></li>
+<li id="top2m1m5"><a href="./sub.htm?nav_code=vcd1622551417" title="찾아오시는길 페이지로 이동합니다.">찾아오시는길</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=vcd1622521143" id="top1m2" title="교육목표 및 인재상 페이지로 이동합니다.">교육목표 및 인재상</a>
+</li>
+<li><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1806" id="top1m3" target="_blank" title="새창으로 교과과정 &gt; 학과 페이지가 열립니다.">교과과정</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1806" target="_blank" title="새창으로 학과 페이지가 열립니다.">학과</a></li>
+<li id="top2m3m2"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=21166" target="_blank" title="새창으로 대학원 페이지가 열립니다.">대학원</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=vcd1622551470" id="top1m4" title="갤러리 &gt; 졸업작품전 페이지로 이동합니다.">갤러리</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="./sub.htm?nav_code=vcd1622551470" title="졸업작품전 페이지로 이동합니다.">졸업작품전</a></li>
+<li id="top2m4m2"><a href="./sub.htm?nav_code=vcd1622551483" title="교내과제전 페이지로 이동합니다.">교내과제전</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=vcd1622551524" id="top1m5" title="학과활동 &gt; 공모전수상 페이지로 이동합니다.">학과활동</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="./sub.htm?nav_code=vcd1622551524" title="공모전수상 페이지로 이동합니다.">공모전수상</a></li>
+<li id="top2m5m2"><a href="./sub.htm?nav_code=vcd1622551535" title="학술교류 및 세미나 페이지로 이동합니다.">학술교류 및 세미나</a></li>
+<li id="top2m5m3"><a href="./sub.htm?nav_code=vcd1622551550" title="디자인박람회 및 전시회참관 페이지로 이동합니다.">디자인박람회 및 전시회참관</a></li>
+<li id="top2m5m4"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43#body_content" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+</ul>
+</li>
+<li><a href="https://ipsi1.knu.ac.kr/" id="top1m6" target="_blank" title="새창으로 입학정보 &gt; 입시문의 페이지가 열립니다.">입학정보</a>
+<ul class="depth2" id="top2m6">
+<li id="top2m6m1"><a href="https://ipsi1.knu.ac.kr/" target="_blank" title="새창으로 입시문의 페이지가 열립니다.">입시문의</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=vcd1622551643" id="top1m7" title="커뮤니티 &gt; 학과공지 페이지로 이동합니다.">커뮤니티</a>
+<ul class="depth2" id="top2m7">
+<li id="top2m7m1"><a href="./sub.htm?nav_code=vcd1622551643" title="학과공지 페이지로 이동합니다.">학과공지</a></li>
+<li id="top2m7m2"><a href="./sub.htm?nav_code=vcd1622551671" title="학과행사 페이지로 이동합니다.">학과행사</a></li>
+<li id="top2m7m3"><a href="./sub.htm?nav_code=vcd1622551681" title="공모전소식 페이지로 이동합니다.">공모전소식</a></li>
+<li id="top2m7m4"><a href="./sub.htm?nav_code=vcd1622551690" title="전시회소식 페이지로 이동합니다.">전시회소식</a></li>
+<li id="top2m7m5"><a href="./sub.htm?nav_code=vcd1622551702" title="구인구직 페이지로 이동합니다.">구인구직</a></li>
+<li id="top2m7m6"><a href="https://cafe.naver.com/knusidi/" target="_blank" title="새창으로 동문카페 페이지가 열립니다.">동문카페</a></li>
+<li id="top2m7m7"><a href="./sub.htm?nav_code=vcd1622551721" title="대학원 페이지로 이동합니다.">대학원</a></li>
+<li id="top2m7m8"><a href="./sub.htm?nav_code=vcd1622521134" title="포토갤러리 페이지로 이동합니다.">포토갤러리</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(7,1);max_2menu=8;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../vcd/data/designImages/SUBBG_1725843560');background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:200px;background-color:rgb(169, 160, 147);width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:200px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:914px;height:100px;left: 0px; top: 55px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit">디자인학과</p>
+<p class="txt">21세기 국제화, 정보화, 디지털 환경 속에서 기술과 예술이 결합되는<br/>
+	기획력과 창의력을 겸비한 독창적인 Total Communication Designer 양성</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=vcd1622551643">커뮤니티</a></li><li><a href="./sub.htm?nav_code=vcd1622551643">학과공지</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0+%3E+%ED%95%99%EA%B3%BC%EA%B3%B5%EC%A7%80&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=커뮤니티 > 학과공지&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fvcd%2Fsub.htm%3Fnav_code%3Dvcd1622551643" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:rgb(255, 153, 0);color:#FFFFFF;">커뮤니티</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=vcd1622551643">학과공지</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=vcd1622551671">학과행사</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=vcd1622551681">공모전소식</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=vcd1622551690">전시회소식</a>
+</li>
+<li id="snb2m5"><a href="./sub.htm?nav_code=vcd1622551702">구인구직</a>
+</li>
+<li id="snb2m6"><a href="https://cafe.naver.com/knusidi/" target="_blank">동문카페</a>
+</li>
+<li id="snb2m7"><a href="./sub.htm?nav_code=vcd1622551721">대학원</a>
+</li>
+<li id="snb2m8"><a href="./sub.htm?nav_code=vcd1622521134">포토갤러리</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>학과공지</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="vcd1622551643">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<script language="JavaScript">
+<!--
+
+// 검색기능
+function search01(){
+	var form=document.bbs_form01;
+	form.submit();
+}
+
+// 통합 정렬 검색
+function orderSearch() {
+	var form=document.form_search_total;
+	form.submit();
+}
+
+// 멀티첨부 다운로드창 열기
+function pdsWinOpen(data) {
+	modal_layer_add("pds_pop");
+	$.ajax({
+		url: "../bbs/multi_download.php?mv_data="+data,
+		success: function(html){
+			$("#pds_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#pds_pop").dialog({
+		resizable: true,
+		height: 360,
+		width: 400,
+		title: "▣ 첨부파일 다운로드",
+		modal: true,
+		buttons: {
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#pds_pop").remove();
+		}
+	});
+}
+function modal_view(data){
+	modal_layer_add("view_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#view_pop").html(html);
+		},error: function(html){
+		}
+	});	
+
+	$("#view_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/vcd/sub.htm?mode=view&mv_data="+data+"&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#view_pop").remove();
+		}
+	});
+}
+//-->
+</script>
+<!--[SubBegin] 검색알고리즘 -->
+<div class="board_search">
+<form action="/HOME/vcd/sub.htm" method="get" name="bbs_form01" onsubmit="return search01();" title="게시물 검색">
+<input name="code" type="hidden" value="kWMsYul5eL6L"/>
+<input name="nav_code" type="hidden" value="vcd1622551643"/>
+<input name="order_list" type="hidden" value=""/>
+<input name="list_scale" type="hidden" value=""/>
+<input name="view_cate" type="hidden" value=""/>
+<input class="text" id="search_order" name="search_order" title="검색어" type="text" value="">
+<button onclick="search01();return false;" type="button"><i class="fa fa-search"></i><span>검색</span></button>
+</input></form>
+</div>
+<!-- <div class="board_info">
+						<div class="left">총 <em>144</em>개의 글이 있습니다. (<em>1</em>/15 페이지)</div>
+						<div class="right">
+							<form name="form_search_total" method="get" action="/HOME/vcd/sub.htm?mv_data=">
+							<input type='hidden' name='nav_code' value='vcd1622551643'>
+							<input type='hidden' name='code' value='kWMsYul5eL6L'>
+							<input type="hidden" name="search_item" value="">
+							<input type="hidden" name="search_order" value="">
+							<select name="order_list" onchange="orderSearch();">
+								<option value="0" selected>정렬방식선택</option>
+								<option value="1" >작성일 최근순</option>
+								<option value="2" >작성일 과거순</option>
+							</select>
+							<select name="list_scale" onchange="orderSearch();">
+								<option value="0" selected>목록수</option>
+								<option value="10" >10개씩보기</option>
+								<option value="25" >25개씩보기</option>
+								<option value="50" >50개씩보기</option>
+								<option value="75" >75개씩보기</option>
+								<option value="100" >100개씩보기</option>
+							</select>
+							</form>
+						</div>
+					</div> -->
+<div class="board_list">
+<table summary="게시물 목록을 볼 수 있고 제목 링크를 통해서 게시물 상세 내용으로 이동합니다.">
+<thead>
+<tr>
+<th abbr="번호" scope="col" style="width:50px;">번호</th>
+<th abbr="제목" scope="col">제목</th>
+<th abbr="첨부" scope="col" style="width:100px;">첨부</th>
+<th abbr="작성자" class="writer" scope="col" style="width:200px">작성자</th>
+<th abbr="작성일" scope="col" style="width:100px;">작성일</th>
+<th abbr="조회" scope="col" style="width:80px;">조회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">축하합니다. 조철희교수님 개인전 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-05-14</td>
+<td class="hit">211</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2026-1학기 수업시간표(공고용)-최종</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-04-21</td>
+<td class="hit">186</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025 환경교육 창업 아이디어 공모전 대상 수상</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-03-25</td>
+<td class="hit">191</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2026년 1월 28일 개최된 캡스톤디자인 성과포럼에서 장려상 수상</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc1MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-19</td>
+<td class="hit">200</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">‘2025년 대한민국대학생광고대회 영상 콘텐츠 챌린지’ 전국대회에서 은상 수상</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-05</td>
+<td class="hit">173</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">UX 디자인 연구 및 서비스 제안 프로젝트의 결과물을 발표</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-05</td>
+<td class="hit">189</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">２０２５졸전 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc0MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-11-04</td>
+<td class="hit">390</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025-2학기 수업시간표(공고용)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-07-17</td>
+<td class="hit">413</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 디자인학과 과제전 행사 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-06-17</td>
+<td class="hit">322</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 디자인학과 졸업전시회 행사 일정 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTczNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-30</td>
+<td class="hit">352</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 디자인학과 과제전 행사 일정 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTczNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-30</td>
+<td class="hit">251</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">애플 디벨로퍼 아카데미 (경북대 특별 워크샵) 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTczNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-30</td>
+<td class="hit">238</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 1학기 장학사정관 장학금 장학생 추천 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-23</td>
+<td class="hit">212</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">3학년 대상-2025학년도 1학기 궁옥균장학회 장학생 선발 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-17</td>
+<td class="hit">202</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2025년 푸른등대 삼성기부장학금 신규장학생 선발 신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTczMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-16</td>
+<td class="hit">217</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025년 사이버 장애인식개선교육 개설 안내 및 이수 등 협조요청</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-15</td>
+<td class="hit">188</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2025년 인권·젠더 교육 미이수자 명단 안내 및 이수 독려 요청(1차)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-15</td>
+<td class="hit">189</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 1학기 강의 개선을 위한 중간 설문 시행 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-04-02</td>
+<td class="hit">198</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 디자인학과 춘계 야외스케치 행사 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTcxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-03-25</td>
+<td class="hit">210</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">반드시 이수해 주세요...2025년 온라인 인권·젠더 교육(구. 폭력예방교육) 신규 개설 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-03-05</td>
+<td class="hit">210</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 졸업 필수이수원칙</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-02-28</td>
+<td class="hit">371</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 내부지침(since2004)</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-02-28</td>
+<td class="hit">275</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">【 디자인학과 등록금 감면장학생 선발관련 학과 지침 】</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-02-28</td>
+<td class="hit">206</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 1학기 조기취업자 출석인정 신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcwNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-02-27</td>
+<td class="hit">189</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 1학기 수강신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-02-06</td>
+<td class="hit">254</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 1학기 재학생 등록금 수납 계획 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTcwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-01-20</td>
+<td class="hit">228</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTcwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">시간표(2025-1학기)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTcwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-01-07</td>
+<td class="hit">323</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 역량강화 단체 현장견학 이미지</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-19</td>
+<td class="hit">286</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 2학기 장학사정관 장학금 장학생 추천 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-05</td>
+<td class="hit">227</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-2학기 졸업작품전 오픈식 이미지-５</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-04</td>
+<td class="hit">347</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-2학기 졸업작품전 오픈식 이미지-４</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-04</td>
+<td class="hit">258</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-2학기 졸업작품전 오픈식 이미지-３</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-04</td>
+<td class="hit">245</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-2학기 졸업작품전 오픈식 이미지-２</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-04</td>
+<td class="hit">225</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-2학기 졸업작품전 오픈식 이미지-1</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-04</td>
+<td class="hit">223</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY5MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2024년「KNU 학생 옴부즈맨」참여 대학원생 추천 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY5MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-01</td>
+<td class="hit">194</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024년 KNU 학생 옴부즈맨 참여 학생 추천 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-11-01</td>
+<td class="hit">197</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">딥페이크 성범죄 예방 홍보 영상 홍보</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-10-21</td>
+<td class="hit">216</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 졸업작품전 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTY4NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-10-15</td>
+<td class="hit">266</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 두산연강재단 장학생 선발 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-10-15</td>
+<td class="hit">205</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 2학기 경북대학교총동창회 장학생 선발 홍보 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-10-14</td>
+<td class="hit">208</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 2학기 궁옥균장학회 장학생 선발 안내(대상: 3학년)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTY4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-09-20</td>
+<td class="hit">225</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭더 공모전 시상식 풍경-3</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-09-12</td>
+<td class="hit">283</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭더 공모전 시상식 풍경-2</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-09-12</td>
+<td class="hit">239</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭더 공모전 시상식 풍경-1</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-09-11</td>
+<td class="hit">227</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 당선작 공고-4</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">398</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 당선작 공고-3</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">326</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 당선작 공고-2</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">279</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 당선작 공고-1</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">284</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(캐릭터-3)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">251</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(캐릭터-2)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">216</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY3MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(캐릭터-1)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY3MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">222</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-6)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">213</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-5)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">210</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-4)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">213</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-3)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">220</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-2)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">227</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTY2NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 로고 및 캐릭터 공모전 출품작(로고-1)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTY2NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-08-26</td>
+<td class="hit">239</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYzMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 졸업작품전 일정 안내</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-06-05</td>
+<td class="hit">309</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 디자인학과 교내전 일정 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-06-05</td>
+<td class="hit">251</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYyOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024학년도 2학기 학·석사 및 학·석박사통합연계과정 이수예정자 선발 계획 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYyOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-05-28</td>
+<td class="hit">263</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">■디자인 학과 로고 및 캐릭터 공모전 연장 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-05-27</td>
+<td class="hit">292</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인특강(2차)현장 이미지-5.22(수)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-05-27</td>
+<td class="hit">240</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYyMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인특강(1차)현장 이미지</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-05-21</td>
+<td class="hit">276</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">5월 외부 디자인전문가 초청 디자인특강 안내(2차)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYxOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-05-10</td>
+<td class="hit">315</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">5월 외부 전문강사 초청 디자인특강 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYxOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-04-16</td>
+<td class="hit">305</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">※ 경북대학교 디자인 학과 로고 및 캐릭터 공모전 진행</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYxNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2024-03-28</td>
+<td class="hit">311</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2024-1학기 시간표</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYxMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-12-18</td>
+<td class="hit">661</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2024학년도 1학기 학·석사 및 학·석박사통합연계과정 이수예정자 선발 계획 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-11-17</td>
+<td class="hit">335</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">인권·젠더 교육(구. 폭력예방교육) 이수 현황 안내 및 이수 독려 요청</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYxMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-11-16</td>
+<td class="hit">268</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYxMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 동계방학중 교내 근로장학생 인원 배정, 학생 신청 및 선발 방법 알림</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYxMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-11-16</td>
+<td class="hit">271</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023 IT, 간호, 예술대학 축제('NAITflix')개최안내</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-11-13</td>
+<td class="hit">276</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 디자인학과 졸업작품전 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTYwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-10-27</td>
+<td class="hit">389</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTYwMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 2학기 수강정정 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTYwMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-09-11</td>
+<td class="hit">270</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">10월 2일(월) 임시공휴일 지정 관련 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-09-11</td>
+<td class="hit">250</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023-1학기 경북대학교 캡스톤디자인 성과 포럼: 우수상 수상</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU5NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-09-08</td>
+<td class="hit">307</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 학부생들, 미국 국제 디자인 공모전 Spark Awards에서 다수 수상</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-09-06</td>
+<td class="hit">349</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">여름철 물놀이 안전사고 주의 및 교육 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-08-01</td>
+<td class="hit">252</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 2학기 교내 근로장학생 인원 배정, 학생 신청 및 선발 방법 알림</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU5NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-08-01</td>
+<td class="hit">282</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023년 2학기 학기 중 국가근로장학생 인원 배정 및 선발 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU5MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-08-01</td>
+<td class="hit">257</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 2학기 수강신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU5MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-08-01</td>
+<td class="hit">276</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025-1학기 수업시간표(공고용)-최종</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-07-06</td>
+<td class="hit">360</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 디자인학과 교내전 행사 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU4NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-06-20</td>
+<td class="hit">302</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 장학사정관 장학금 장학생 추천 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU4NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-05-10</td>
+<td class="hit">276</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 하계방학중 교내 근로장학생 인원 배정, 학생 신청 및 선발 방법 알림</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-05-03</td>
+<td class="hit">270</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023-1학기 수업시간표(최종공고용)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU4MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-28</td>
+<td class="hit">341</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 「2023년 상반기 KNU 메타버스 취업박람회」 행사 홍보 및 참가 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU4MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-20</td>
+<td class="hit">296</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 학·석사 및 학·석박사통합연계과정 이수예정자 선발 계획 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU4MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-16</td>
+<td class="hit">350</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2023년 2월 학위수여식 행사 계획 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-14</td>
+<td class="hit">340</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU2MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">코로나19 대응 2023학년도 1학기 수업 운영 계획</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU2MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-10</td>
+<td class="hit">335</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU2MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023-1학기 수업시간표 공지</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU2MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-09</td>
+<td class="hit">366</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 수강신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-09</td>
+<td class="hit">368</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU2MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023년 1학기 학기중 국가근로장학생 인원 배정 및 선발 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU2MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-03</td>
+<td class="hit">354</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 교내 근로장학생 인원 배정, 학생 신청 알림</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-02-03</td>
+<td class="hit">328</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 대학(원) 재학생 등록금감면 장학생 인원배정 및 선발 의뢰</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU1OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-01-30</td>
+<td class="hit">322</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">방역당국 실내 마스크 착용 의무 조정에 따른 학교(대학) 적용사항 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-01-30</td>
+<td class="hit">313</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">경북대학교 연구윤리센터「연구윤리 및 연구노트 교육 콘텐츠 영상」 홈페이지 게시</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-01-27</td>
+<td class="hit">320</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2023학년도 1학기 진로탐색수업 운영 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU1NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2023-01-02</td>
+<td class="hit">333</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">KNU Road 진로지원체계 구축 관련 ‘학과(전공)별 진로 로드맵’ 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTU1NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-12-20</td>
+<td class="hit">332</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목   2023학년도 1학기 수강신청 세부 추진계획 사전 알림</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-12-16</td>
+<td class="hit">346</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU0OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 제16회 별빛수기 공모전 개최 안내</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-12-07</td>
+<td class="hit">335</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU0MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 2학기 졸업자격인정원 접수 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU0MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-11-18</td>
+<td class="hit">385</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTU0MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">「제3차 정기교육과정 개편」관련 디자인학과 2023학년도 교육과정개편(2023-1학년부터 실시)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTU0MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-11-18</td>
+<td class="hit">338</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">참고(졸업예정자)-2022년 2월 졸업예정자의 학사학위취득 유예 선발 계획 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUzOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-11-18</td>
+<td class="hit">332</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 다중이용시설 안전점검 및 안전사고 예방 철저 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUzOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-11-18</td>
+<td class="hit">311</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">【 디자인학과 등록금 감면장학생 선발관련 학과 지침 】</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-10-27</td>
+<td class="hit">376</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">&lt;경북대학교 2022학년도 디자인학과 졸업작품전 안내&gt;</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUzNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-10-24</td>
+<td class="hit">420</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 연계과정 선발 학생의 졸업신청서(대학원 입학지원서) 제출 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUzNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-09-13</td>
+<td class="hit">385</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 졸업 필수이수원칙</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-09-06</td>
+<td class="hit">497</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 가을 MT 일정 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUzMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-09-06</td>
+<td class="hit">377</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 2학기 조기취업자 출석인정 신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUzMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-08-24</td>
+<td class="hit">359</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUzMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 코로나19 대응 2022학년도 2학기 수업 운영 계획 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUzMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-08-05</td>
+<td class="hit">375</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022학년도 2학기 수강신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUyOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-08-04</td>
+<td class="hit">394</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022-2학기 수업시간표(최종공고용)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUyOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-08-04</td>
+<td class="hit">432</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 보건진료소(부속의원) A.B.C형 간염 예방법 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-07-28</td>
+<td class="hit">355</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 2학기 수강신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUyNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-07-28</td>
+<td class="hit">375</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022-2학기 수업시간표(최종공고용)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUyNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-07-12</td>
+<td class="hit">472</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목:  학과 발전계획 수립 추진 결과 알림 및 관련 사항 협조 요청</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUyNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-06-08</td>
+<td class="hit">405</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 1학기 ‘첨성인 아너스 클럽’ 운영 계획 안내</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUyMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-06-02</td>
+<td class="hit">390</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022년 대학 진로취업 지원 현황조사 실시에 따른 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUyMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-05-27</td>
+<td class="hit">392</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUyMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 경북대학교 학생역량 진단검사 운영 관련 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUyMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-05-25</td>
+<td class="hit">401</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 해외 방문 전(외국대학 교류 등) 풍토병·전염병 예방 안내 사항 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUxOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-05-25</td>
+<td class="hit">407</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">주요: 대학원 학과지침 개정(2022~)</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUxNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-05-24</td>
+<td class="hit">416</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 『생명나눔, 사랑의 헌혈』 참여 안내 및 헌헐 버스 관련 협조 요청</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-05-24</td>
+<td class="hit">400</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제57회 대한민국디자인전람회 대학생(원)부문 출품 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUxNCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-24</td>
+<td class="hit">425</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 졸업 필수이수원칙(2022년도)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUxMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-23</td>
+<td class="hit">518</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">차세대 크누피아(KNUPIA) QR 체크인 기능 활용 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUxMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-23</td>
+<td class="hit">429</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 소개 및 내규 등(2022)</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTUwOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-18</td>
+<td class="hit">484</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">"축하드립니다."- 우리학과 이경용 교수님, 미국 IDA DESIGN AWARD에서 Bronze Award와 Honorable..</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-17</td>
+<td class="hit">483</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022년 우수학생 국가장학사업(인문100년,예술체육비전) 학생 사전신청 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUwNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-17</td>
+<td class="hit">431</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">제  목 2022학년도 1학기 캡스톤디자인 운영계획 및 교과목 예산 수요조사 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUwNiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-14</td>
+<td class="hit">436</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">캡스톤디자인 교과목(2022년 현재) 안내</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-14</td>
+<td class="hit">455</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022학년도 1학기 코로나19 확진자 발생 시 수업 운영 협조 요청</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-10</td>
+<td class="hit">439</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">&lt;디자인학과 재학생 협조요청&gt;2022학년도 경북대학교 학생역량 진단검사 운영 관련 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-10</td>
+<td class="hit">451</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">코로나19로 인한 공적 결석 처리 기준안내 및 공적 츨석인정원서식 첨부</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUwMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-08</td>
+<td class="hit">439</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTUwMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022년 우수학생 국가장학사업(인문100년,예술체육비전) 시행계획 및 업무처리 기준 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTUwMCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-08</td>
+<td class="hit">469</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTQ5OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">차세대 통합정보시스템 개통 안내</a>
+</td>
+<td class="file">
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-08</td>
+<td class="hit">443</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTQ5OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">코로나19 대응 2022학년도 1학기 공적결석 출석인정 기준 추가 안내</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQ5OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-03-07</td>
+<td class="hit">447</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTQ5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">코로나19 대응 2022학년도 1학기 수업 운영 계획 변경 알림</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTQ5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-02-25</td>
+<td class="hit">516</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTQ5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">디자인학과 재학생  협조 요청-2022학년도 경북대학교 학생역량 진단검사 운영 관련 협조 요청</a>
+</td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTQ5NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-02-25</td>
+<td class="hit">487</td>
+</tr>
+<tr>
+<td class="notice"><span>공지</span></td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTQ5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2022-1학기 수업시간표 수정 공고</a>
+</td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTQ5MSZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2022-01-14</td>
+<td class="hit">659</td>
+</tr>
+<tr>
+<td class="num">144</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc3MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2026학년도 2학기 수업시간표</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc3MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQ0JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-08-28</td>
+<td class="hit">39</td>
+</tr>
+<tr>
+<td class="num">143</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQzJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">축하합니다. 조철희교수님 개인전 안내</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1NyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQzJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-05-14</td>
+<td class="hit">211</td>
+</tr>
+<tr>
+<td class="num">142</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQyJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2026-1학기 수업시간표(공고용)-최종</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQyJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-04-21</td>
+<td class="hit">186</td>
+</tr>
+<tr>
+<td class="num">141</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQxJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025 환경교육 창업 아이디어 공모전 대상 수상</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTQxJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-03-25</td>
+<td class="hit">191</td>
+</tr>
+<tr>
+<td class="num">140</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQwJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2026년 1월 28일 개최된 캡스톤디자인 성과포럼에서 장려상 수상</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc1MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTQwJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-19</td>
+<td class="hit">200</td>
+</tr>
+<tr>
+<td class="num">139</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc1MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTM5JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">‘2025년 대한민국대학생광고대회 영상 콘텐츠 챌린지’ 전국대회에서 은상 수상</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc1MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTM5JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-05</td>
+<td class="hit">173</td>
+</tr>
+<tr>
+<td class="num">138</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTM4JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">UX 디자인 연구 및 서비스 제안 프로젝트의 결과물을 발표</a> </td>
+<td class="file">
+<a href="javascript:pdsWinOpen('aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTM4JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=');"><i class="fa fa-files-o"></i></a>
+</td>
+<td class="writer">디자인학과</td>
+<td class="date">2026-02-05</td>
+<td class="hit">189</td>
+</tr>
+<tr>
+<td class="num">137</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTM3JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">２０２５졸전 안내</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc0MyZzdGFydFBhZ2U9MCZsaXN0Tm89MTM3JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-11-04</td>
+<td class="hit">390</td>
+</tr>
+<tr>
+<td class="num">136</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTM2JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025-2학기 수업시간표(공고용)</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTc0MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTM2JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-07-17</td>
+<td class="hit">413</td>
+</tr>
+<tr>
+<td class="num">135</td>
+<td class="subject">
+<a href="/HOME/vcd/sub.htm?mode=view&amp;mv_data=aWR4PTczOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTM1JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=">2025학년도 디자인학과 과제전 행사 안내</a> </td>
+<td class="file">
+<a href="../bbs/bbs_download.php?mv_data=aWR4PTczOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTM1JnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJmNvZGU9a1dNc1l1bDVlTDZMJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=&amp;type=0&amp;download=h"><i class="fa fa-floppy-o"></i></a> </td>
+<td class="writer">디자인학과</td>
+<td class="date">2025-06-17</td>
+<td class="hit">322</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[Begin] 페이징 및 버튼부-->
+<!-- page -->
+<div class="paging">
+<strong>1</strong><a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="2 페이지">2</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTIwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="3 페이지">3</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTMwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="4 페이지">4</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTQwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="5 페이지">5</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTUwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="6 페이지">6</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTYwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="7 페이지">7</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTcwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="8 페이지">8</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTgwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="9 페이지">9</a>
+<a href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTkwJmNvZGU9a1dNc1l1bDVlTDZMJm5hdl9jb2RlPXZjZDE2MjI1NTE2NDMmdGFibGU9ZXhfYmJzX2RhdGFfdmNkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||" title="10 페이지">10</a>
+<a class="next" href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTEwMCZjb2RlPWtXTXNZdWw1ZUw2TCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="다음 10페이지"><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i><span>다음</span></a>
+<a class="last" href="/HOME/vcd/sub.htm?mv_data=c3RhcnRQYWdlPTE0MCZjb2RlPWtXTXNZdWw1ZUw2TCZuYXZfY29kZT12Y2QxNjIyNTUxNjQzJnRhYmxlPWV4X2Jic19kYXRhX3ZjZCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||" title="마지막 페이지"><i class="fa fa-angle-double-right"></i><i class="fa fa-angle-double-right"></i><span>마지막 페이지</span></a>
+</div>
+<!-- //page -->
+<!-- board_info -->
+<div class="btnarea tar">
+</div>
+<!-- //board_info -->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<!-- 			<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li> -->
+</ul>
+<address>
+<p>
+									[41566] 
+													우)41566 대구광역시 북구 대학로80(산격동) 경북대학교 예술대학 디자인학과													 / T.053-950-5694													 / F.053-950-5695												</p>
+<p class="copyright">Copyright ⓒ 디자인학과. All rights Reserved.</p>
+<div class="fcnt">
+				Total : 90,297명 / Today : 12명
+			</div>
+<!-- <div class="fsns">
+					<a href="https://www.facebook.com/donggukgj.univ" target="_blank" class="facebook" title="새창으로  열립니다."></a>
+					<a href="https://blog.naver.com/dongguksns" target="_blank" class="blog" title="새창으로  열립니다."></a>
+					<a href="https://www.instagram.com/dongguk_gyeongju/" target="_blank" class="instagram" title="새창으로  열립니다."></a>
+					<a href="https://www.youtube.com/channel/UCHl_-tUWnOfqlH_4h-c66mg" target="_blank" class="youtube" title="새창으로  열립니다."></a>
+				</div> -->
+</address>
+</div>
+<div class="f_link">
+<script>
+			<!--
+			function footer_link_go2(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<script>
+			<!--
+			function footer_link_go(str){
+				var win = window.open(str);
+				if ( !win ) {
+					top.location.href=str;
+				}
+			}
+			//-->
+			</script>
+<select onchange="footer_link_go(this.value);" title="주요사이트">
+<option value="">4단계 BK21사업 관련사이트</option>
+<option value="https://bk21four.nrf.re.kr">한국연구재단 4단계 BK 사이트</option>
+<option value="https://knubk21four.knu.ac.kr">산학협력단 4단계 BK 사이트</option>
+<option value="https://physicsbk.knu.ac.kr">입자와 물질의 양자특성 교육연구단</option>
+<option value="https://biobk4.knu.ac.kr/">경북대학교 첨단복합 생명과학 교육연구단</option>
+<option value="https://mathbk21.knu.ac.kr/">경북대학교 BK 수학 교육연구단</option>
+<option value="https://chembk.knu.ac.kr/">혁신화학소재 교육연구단</option>
+<option value="https://bizbk4.knu.ac.kr/">지역산업의 혁신성장을 선도하는 창의형 경영인재 양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr">제도와 포용적 성장을 위한 교육연구단</option>
+<option value="http://create.knu.ac.kr/main/index.html">스마트 순환 사회환경시스템 인재양성 교육연구단</option>
+<option value="https://econbk21.knu.ac.kr/">지능기계 미래인재 교육연구단</option>
+<option value="https://agrodatabk21.knu.ac.kr/">데이터 기반 농업생산 혁신기술 개발 인력양성 교육연구단</option>
+<option value="https://bkmedi.knu.ac.kr/">KNU 융복합 의생명과학 미래 창의 인재양성 교육연구단</option>
+<option value="https://seeebk21four.knu.ac.kr/">KNU 전자전기 융합인재양성 교육연구단</option>
+<option value="https://bk.knu.ac.kr">지능융합 소프트웨어 교육연구단</option>
+<option value="http://knuhistory.org/">초경계 지향 역사문화교육연구단</option>
+<option value="http://bk21ync.org/">글로벌 시대의 지역 문화어문학 교육연구단	</option>
+<option value="https://geobk21.knu.ac.kr">지질재해 전문 인력 교육연구팀</option>
+<option value="https://tradebk21.knu.ac.kr">지역성장과 아시아 통상협력 교육연구팀</option>
+<option value="https://polisci.knu.ac.kr/">정치학적 소양을 갖춘 데이터사이언스 인재양성 교육연구팀</option>
+<option value="https://aranbk21four.knu.ac.kr">인류세 기술·지식·물질 네트워크와 문화 큐레이팅 전문가 양성 교육연구팀</option>
+<option value="https://smartbk21four.knu.ac.kr">전통기록물 스마트 플랫폼 구축을 위한 디지털지식정보큐레이터 교육연구팀</option>
+<option value="https://polymerbk21plus.knu.ac.kr">스마트 고분자 나노복합소재 교육연구팀	</option>
+<option value="https://philosophybk21.knu.ac.kr">갈등해결 철학 전문인력 양성 교육연구팀	</option>
+<option value="https://astc-bk21.knu.ac.kr">스마트융복합재난관리교육연구단</option>
+<option value="https://btbk21.knu.ac.kr">산지생태축산 6차산업 전문인재양성 교육연구단</option>
+<option value="https://pharmacybk21.knu.ac.kr">지역밀착형 지능형 혁신신약 개발 교육연구단	</option>
+<option value="https://eid.knu.ac.kr">신종감염병관리 플랫폼 개발 교육연구단</option>
+<option value="https://cfsebk21.knu.ac.kr/">기후변화대응 글로벌 에너지신산업 지역혁신인재양성교육연구단</option>
+<option value="https://bkai.knu.ac.kr/">경북대 AI 융합혁신인재양성 교육연구단</option>
+<option value="https://hortbk21four.knu.ac.kr">스마트팜 혁신 인재 양성 교육연구단	</option>
+<option value="https://semiconductorbk.knu.ac.kr">미래 모빌리티용 시스템반도체 혁신인재 교육연구단</option>
+</select>
+<!-- <select onchange="footer_link_go2(this.value);" title="학과사이트">
+				<option value="">학과사이트</option>
+				 
+			</select>
+			-->
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>

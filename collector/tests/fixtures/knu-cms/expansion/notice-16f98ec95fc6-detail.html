@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="strict-origin" name="referrer"/>
+<meta content="width=1280" name="viewport"/>
+<meta content="경북대학교  경북대학교 심리학과 홈페이지 입니다." name="description"/>
+<meta content="website" property="og:type">
+<meta content="경북대학교 심리학과" property="og:title"/>
+<meta content="경북대학교  경북대학교 심리학과 홈페이지 입니다." property="og:description"/>
+<link href="../data/img/favicon.ico" rel="shortcut icon"/>
+<title>경북대학교 심리학과</title>
+<link href="/css/jquery-ui-1.12.0.min.css" rel="stylesheet"/><link href="/HOME/data/css/font-awesome.min.css?" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"/>
+<link href="/HOME/data/css/font.css?" rel="stylesheet">
+<link href="/HOME/data/css/animate.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/common.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/board.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/page_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/title_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/knu_tmp.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/swiper.min.css?" rel="stylesheet"/>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<!--
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+-->
+<script src="/HOME/data/js/jquery.bxslider.min.js"></script><script src="/js/jquery-ui-1.12.1.js"></script><script src="/HOME/data/js/jquery.form.min.js?"></script><script src="/HOME/data/js/common.js?"></script><script src="/HOME/data/js/tmp_js.js?"></script><script src="/HOME/data/js/wow.min.js?"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/HOME/data/js/swiper.min.js"></script>
+<script>
+	new WOW().init();
+
+	$(document).ready(function(){
+		$(".depth1").bind('mouseover focusin', function(){
+			$('header').addClass('active');
+		});
+		$(".depth1").bind('mouseout focusout', function(){
+			$('header').removeClass('active');
+		});
+	});
+</script>
+<script type="text/javascript">
+<!--
+/*
+	.addEventListener('touchstart', function(e) {
+  if(e.touches.length > 1) {
+    e.preventDefault();
+  }
+});
+*/
+-->
+</script>
+<link href="./css/content.css?1626328988" rel="stylesheet">
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 120) {
+		$("#header").addClass("fix");
+		$("#mo-snb").addClass("fix");
+		}else {
+		$("#header").removeClass("fix");
+		$("#mo-snb").removeClass("fix");
+		}
+	});
+
+	$(document).ready(function() {
+	 $("a.page-go").anchorAnimate()
+	});
+	jQuery.fn.anchorAnimate = function(settings) {
+	  settings = jQuery.extend({
+	  speed : 600
+	 }, settings); 
+
+	 return this.each(function(){
+	  var caller = this
+	  $(caller).click(function (event) { 
+	   event.preventDefault()
+	   var locationHref = window.location.href
+	   var elementClick = $(caller).attr("href")
+
+	   var destination = $(elementClick).offset().top;
+	   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+		window.location.hash = elementClick
+	   });
+		 return false;
+	  })
+
+	 })
+	}
+
+function linksite_tab(data) 
+	{
+	var show_ck = 0;
+	$(".linksite div.tab a").removeClass("on");
+	$('.site-cont').each(function(){
+		if($(this).css("display") != "none" ){
+			show_ck = 1;
+		}
+	});
+
+	$('.site-cont').each(function(){
+		if($(this).attr('id') == data){
+			if($(this).css("display") != "none" ){
+				$(this).slideUp();
+			}else{
+				$("#"+data+"_tab").addClass("on");
+				if(show_ck == 1){
+					$(this).show();
+				}else{
+					$(this).slideDown();
+				}
+			}
+		}else{
+			$(this).hide();
+		}
+	});
+
+}
+</script>
+<link href="/HOME/data/css/owl.carousel.min.css?" rel="stylesheet"/>
+<link href="/HOME/data/css/owl.theme.default.min.css?" rel="stylesheet"/>
+<script src="/HOME/data/js/owl.carousel.js?"></script>
+<script>
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.main-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 110;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+
+$(function(){
+    var $win = $(window);
+    var top = $(window).scrollTop();
+ 
+    var speed          = 500;
+    var easing         = 'linear';
+    var $layer         = $('.sub-section #aside-quick');
+    var layerTopOffset = 0;
+    $layer.css('position', 'absolute');
+    if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+    $(window).scroll(function(){
+        yPosition = $win.scrollTop() - 360;
+        if (yPosition < 0)
+        {
+            yPosition = 40;
+        }
+        $layer.animate({"top":yPosition }, {duration:speed, easing:easing, queue:false});
+    });
+});
+</script>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+	if ($(window).scrollTop() > 160) {
+	$(".h-fix").addClass("fix");	
+	}else {
+	$(".h-fix").removeClass("fix");
+	}
+});
+    if(navigator.userAgent.match(/Trident\/7\./)) {
+    $('body').on("mousewheel", function () {
+        event.preventDefault();
+
+        var wheelDelta = event.wheelDelta;
+
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+    });
+
+    $('body').keydown(function (e) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        var currentScrollPosition = window.pageYOffset;
+
+        switch (e.which) {
+
+            case 38: // up
+                window.scrollTo(0, currentScrollPosition - 120);
+                break;
+
+            case 40: // down
+                window.scrollTo(0, currentScrollPosition + 120);
+                break;
+
+            default: return; // exit this handler for other keys
+        } 
+    });
+}
+</script>
+<div id="login_layer_bg" onclick="login_close();"></div>
+<div id="login_layer">
+<div class="toptxt">자신의 신분에 맞는 로그인화면을 선택하세요.</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + Number(1) );
+			document.cookie = "reUrl=https://home.knu.ac.kr/HOME/psychology; domain=knu.ac.kr; path=/; expires=" + todayDate.toGMTString() + ";"
+		});
+		</script>
+<div class="login_section clearfix">
+<div class="col_wrap clearfix">
+<div class="col_d2"><a class="ico1" href="https://my.knu.ac.kr/stpo/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology" title="학생포털시스템 로그인 페이지로 이동"><p class="tit">학생</p><p class="txt">학생 및 졸업생은<br/>학생포털시스템을 통해 로그인 됩니다.</p></a></div>
+<div class="col_d2"><a class="ico2" href="https://hi.knu.ac.kr//portal/comm/support/loginPortal/loginForm.action?redirUrl=https%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology" title="교직원 업무포털시스템 로그인 페이지로 이동"><p class="tit">교직원</p><p class="txt">교수 및 교직원은<br/>업무포털시스템을 통해 로그인 됩니다.</p></a></div>
+</div>
+</div>
+<div class="tac"><a class="btn_d btn_gray" href="#" onclick="login_close();">닫기</a></div>
+</div>
+<div id="skipwrap">
+<div id="skipnavi">
+<ul>
+<li><a href="#container">본문 내용으로 바로가기</a></li>
+<li><a href="#gnb">주 메뉴로 바로가기</a></li>
+</ul>
+</div>
+</div></link></link></meta></meta></head>
+<body class="bodybg">
+<script src="../data/js/menu.js?1743042183"></script>
+<!-- header -->
+<header class="h-fix">
+<svg>
+<style>
+#gnbmn ul.depth1 > li		{width:14%;} /* 메뉴수에 따라 */
+
+#gnb		{background-color:rgb(255, 255, 255);} 
+#gnbmn ul.depth1 li a	{color:rgb(51, 51, 51);}
+#gnbmn ul.depth1 li a:hover,
+#gnbmn ul.depth1 li a.on{color:rgb(0, 0, 0);}
+#gnbmn ul.depth2 li a	{color:#555555;}
+#gnbmn ul.depth2 li a:hover,
+#gnbmn ul.depth2 li a.on{color:rgb(34, 34, 34);}
+.gnb_bg		{background-color:rgb(247, 247, 247);}
+
+</style>
+</svg>
+<div id="topwrap">
+<div class="d_width">
+<div id="logo">
+<a href="./index.htm">
+<img alt="로고이미지" src="./data/designImages/logo.png"/>
+<span class="sub_name">경북대학교 사회과학대학 <em>심리학과</em></span>
+</a>
+</div>
+<div class="topmn clearfix">
+<a class="top-dk" href="http://knu.ac.kr/" target="_blank">경북대학교</a>
+<a class="top-dk top-login" href="https://home.knu.ac.kr/sso/business.php?returnUrl=home.knu.ac.kr/HOME/psychology/sub.htm?mode=view&amp;mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ">로그인</a>
+<a href="https://enpsy.knu.ac.kr/" target="_blank">EN</a>
+</div>
+</div>
+<a href="#menu" id="mobile-navicon" title="사이트 맵으로 이동합니다."><i class="fa-solid fa-bars"></i></a>
+</div>
+<div id="gnb">
+<div id="gnbmn">
+<nav id="menu">
+<ul class="depth1 clearfix" id="top1menu">
+<li><a href="./sub.htm?nav_code=psy1614072085" id="top1m1" title="학과소개 &gt; 학과개요 페이지로 이동합니다.">학과소개</a>
+<ul class="depth2" id="top2m1">
+<li id="top2m1m1"><a href="./sub.htm?nav_code=psy1614072085" title="학과개요 페이지로 이동합니다.">학과개요</a></li>
+<li id="top2m1m2"><a href="./sub.htm?nav_code=psy1614072092" title="학과연혁 페이지로 이동합니다.">학과연혁</a></li>
+<li id="top2m1m3"><a href="./sub.htm?nav_code=psy1614072104" title="비전 및 인재상 페이지로 이동합니다.">비전 및 인재상</a></li>
+<li id="top2m1m4"><a href="./sub.htm?nav_code=psy1614072113" title="졸업생 진출분야 페이지로 이동합니다.">졸업생 진출분야</a></li>
+<li id="top2m1m5"><a href="./sub.htm?nav_code=psy1614072122" title="학과장인사 페이지로 이동합니다.">학과장인사</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=psy1614072146" id="top1m2" title="교수소개 &gt; 교수진 페이지로 이동합니다.">교수소개</a>
+<ul class="depth2" id="top2m2">
+<li id="top2m2m1"><a href="./sub.htm?nav_code=psy1614072146" title="교수진 페이지로 이동합니다.">교수진</a></li>
+<li id="top2m2m2"><a href="./sub.htm?nav_code=psy1614072160" title="역대 교수진 페이지로 이동합니다.">역대 교수진</a></li>
+</ul>
+</li>
+<li><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1205" id="top1m3" target="_blank" title="새창으로 학부 &gt; 교과과정 페이지가 열립니다.">학부</a>
+<ul class="depth2" id="top2m3">
+<li id="top2m3m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=1205" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m3m2"><a href="http://intro.uway.com/knu/intro.html" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m3m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m3m4"><a href="https://www.knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=edu/academic03&amp;menu_idx=44" target="_blank" title="새창으로 학사안내 페이지가 열립니다.">학사안내</a></li>
+<li id="top2m3m5"><a href="./sub.htm?nav_code=psy1758267670" title="졸업요건 페이지로 이동합니다.">졸업요건</a></li>
+<li id="top2m3m6"><a href="https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1668399325&amp;code=dept2&amp;dept=dept-psychology&amp;setting=1" target="_blank" title="새창으로 학과(전공) 로드맵 페이지가 열립니다.">학과(전공) 로드맵</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=psy1788311790" id="top1m4" title="대학원 페이지로 이동합니다.">대학원</a>
+<ul class="depth2" id="top2m4">
+<li id="top2m4m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=2110G" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m4m2"><a href="https://ipsi2.knu.ac.kr/main/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m4m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m4m4"><a href="./sub.htm?nav_code=psy1788313929" title="대학원 안내 페이지로 이동합니다.">대학원 안내</a></li>
+</ul>
+</li>
+<li><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=22K0006" id="top1m5" target="_blank" title="새창으로 사회정책대학원 &gt; 교과과정 페이지가 열립니다.">사회정책대학원</a>
+<ul class="depth2" id="top2m5">
+<li id="top2m5m1"><a href="https://knuin.knu.ac.kr/public/stddm/edu.knu?itttn_cd=22K0006" target="_blank" title="새창으로 교과과정 페이지가 열립니다.">교과과정</a></li>
+<li id="top2m5m2"><a href="https://ipsi2.knu.ac.kr/main/" target="_blank" title="새창으로 입학안내 페이지가 열립니다.">입학안내</a></li>
+<li id="top2m5m3"><a href="https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43" target="_blank" title="새창으로 학사일정 페이지가 열립니다.">학사일정</a></li>
+<li id="top2m5m4"><a href="./sub.htm?nav_code=psy1788313929" title="대학원 안내 페이지로 이동합니다.">대학원 안내</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=psy1614072281" id="top1m6" title="학생활동 &gt; 학생회 페이지로 이동합니다.">학생활동</a>
+<ul class="depth2" id="top2m6">
+<li id="top2m6m1"><a href="./sub.htm?nav_code=psy1614072281" title="학생회 페이지로 이동합니다.">학생회</a></li>
+<li id="top2m6m2"><a href="./sub.htm?nav_code=psy1614072288" title="소모임 페이지로 이동합니다.">소모임</a></li>
+<li id="top2m6m3"><a href="./sub.htm?nav_code=psy1614072293" title="소식지 페이지로 이동합니다.">소식지</a></li>
+</ul>
+</li>
+<li><a href="./sub.htm?nav_code=psy1614066241" id="top1m7" title="게시판 &gt; 학부 공지사항 페이지로 이동합니다.">게시판</a>
+<ul class="depth2" id="top2m7">
+<li id="top2m7m1"><a href="./sub.htm?nav_code=psy1614066241" title="학부 공지사항 페이지로 이동합니다.">학부 공지사항</a></li>
+<li id="top2m7m2"><a href="./sub.htm?nav_code=psy1614066238" title="대학원 공지사항 페이지로 이동합니다.">대학원 공지사항</a></li>
+<li id="top2m7m3"><a href="./sub.htm?nav_code=psy1614066239" title="자유게시판(모집, 채용, 홍보) 페이지로 이동합니다.">자유게시판(모집, 채용, 홍보)</a></li>
+<li id="top2m7m4"><a href="./sub.htm?nav_code=psy1614066240" title="자료실 페이지로 이동합니다.">자료실</a></li>
+<li id="top2m7m5"><a href="./sub.htm?nav_code=psy1614066237" title="포토갤러리 페이지로 이동합니다.">포토갤러리</a></li>
+<li id="top2m7m6"><a href="./sub.htm?nav_code=psy1614072354" title="관련사이트 페이지로 이동합니다.">관련사이트</a></li>
+</ul>
+</li>
+</ul>
+<!--sns 추가
+			-->
+</nav>
+</div>
+</div>
+<div class="gnb_bg" id="id_gnb_bg"></div>
+</header>
+<script>initTopMenu(7,1);max_2menu=6;</script>
+<!-- //header -->
+<script>
+<!--
+$(function(){
+	top1Menu = $('#gnbmn');
+	top1MenuW = top1Menu.width(); //상단메뉴의 전체길이
+	top1MenuLi = $('ul.depth1 > li');
+	top1MenuLiCnt = top1MenuLi.length; //1차메뉴 갯수
+	top1MenuLiW = top1MenuW / top1MenuLiCnt; //1차메뉴 넓이값
+	top1MenuLiW = top1MenuLiW.toFixed(1);
+	if(top1MenuW>400){
+		/* 1차메뉴 넓이 구하기(단위:%) */
+		top1MenuLiP = 100 / top1MenuLiCnt;
+		top1MenuLiP = top1MenuLiP.toFixed(1);
+		top1MenuLiP_tmp = top1MenuLiP * top1MenuLiCnt;
+
+		if(top1MenuLiP_tmp < 100){
+			top1MenuLiP_last = top1MenuLiP + (100 - top1MenuLiP_tmp);
+		}else{
+			top1MenuLiP_last = top1MenuLiP - (top1MenuLiP_tmp - 100);
+		}
+
+		/* 1차메뉴 넓이 구하기(단위:%) */
+
+		for(i=0;i<top1MenuLiCnt;i++){
+			if(i < (top1MenuLiCnt-1)){
+				$(top1MenuLi[i]).css('width',top1MenuLiP+"%"); //1차메뉴 넓이값 적용
+			}else{
+				$(top1MenuLi[i]).css('width',top1MenuLiP_last+"%"); //마지막메뉴는 따로 넓이값 적용
+			}
+		}
+	}
+});
+//-->
+</script>
+<!-- container -->
+<div class="sbg" id="wrap">
+<div class="script_sbg">
+<div style="position:absolute;top:0;left:0;background:url('../psychology/data/designImages/SUBBG_1619767459');background-size:auto;background-position:50% 50%;background-repeat:no-repeat;height:200px;background-color:rgb(243, 245, 244);width:100%;z-index:1"></div>
+<div id="svisual" style="min-height:200px;">
+<div style="z-index:3">
+<div class="d_width" style="height:100%;">
+<div style="position:absolute;width:663px;height:100px;left: 0px; top: 56px;z-index:99">
+<div id="sub_title_editarea">
+<div class="sub-title">
+<p class="tit wow fadeInDown delay1" style="visibility: visible; animation-name: fadeInDown;">심리학과</p>
+<p class="txt wow fadeInDown delay2" style="visibility: visible; animation-name: fadeInDown;">인간에 대한 깊은 관심과 사랑에 기반을 두고 체계적으로 인간행동과 정신과정을 연구합니다!</p>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- //visual --><script>
+function url_copy(){
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.");
+}
+</script>
+<div class="clearfix" id="body_head">
+<div class="inwrap">
+<div id="location">
+<ul>
+<li><a href="./index.htm">HOME</a></li><li><a href="./sub.htm?nav_code=psy1614066241">게시판</a></li><li><a href="./sub.htm?nav_code=psy1614066241">학부 공지사항</a></li> </ul>
+</div>
+<div id="pnb">
+<ul class="pnb_bx">
+<li><a href="#pnb_bx" onclick="zoomFont(1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기확대"><i class="fa fa-plus"></i></a></li>
+<li><a href="#pnb_bx" onclick="zoomFont(-1);return false;" onkeypress="if(event.keyCode == 13){this.onclick}" title="글씨크기축소"><i class="fa fa-minus"></i></a></li>
+<li><a href="#pnb_bx" onclick="contentPrint(1);return false;" title="새창을 띄워 화면을 프린트합니다"><i class="fa fa-print"></i></a></li>
+<li class="fa fa-share-alt" style="display:none;">
+<div class="page_sns">
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=%EA%B2%8C%EC%8B%9C%ED%8C%90+%3E+%ED%95%99%EB%B6%80+%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD&amp;url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="blog" href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank">b</a>
+<a class="share-ico-copy" href="javascript:void(0)" onclick="url_copy();"><i class="fa fa-link"></i></a>
+</div>
+</li>
+</ul>
+<!-- <ul class="page_sns">
+							<li><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text=게시판 > 학부 공지사항&url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="http://blog.naver.com/openapi/share?url=http%3A%2F%2Fhome.knu.ac.kr%2FHOME%2Fpsychology%2Fsub.htm%3Fnav_code%3Dpsy1614066241" target="_blank"><strong>b</strong></a></li>
+							<li><a href="javascript:void(0)" onclick="url_copy();" class="share-ico-copy">U</a></li>
+							</ul> -->
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	$(function(){
+		$(".ico-share").click(function(){
+			$(".page_sns").fadeToggle("normal");
+		});
+	});
+//-->
+
+</script><div class="cbg sub-section d_width" id="container">
+<style type="text/css">
+#snbmn > ul > li	{background-color:rgb(247, 247, 247);}
+#snbmn > ul > li a	{color:#555555;}
+#snbmn > ul > li a.on, 
+#snbmn > ul > li a:focus, 
+#snbmn > ul > li a:active, 
+#snbmn > ul > li a:hover{color:rgb(68, 68, 68);background-color:rgb(241, 241, 241);border-color:rgb(241, 241, 241);}
+
+#snbmn ul ul		{background-color:#FFFFFF;}
+#snbmn ul ul li a	 {color:#555555;}
+#snbmn ul ul li a.on, 
+#snbmn ul ul li a:focus, 
+#snbmn ul ul li a:active, 
+#snbmn ul ul li a:hover {color:#555555;}
+</style>
+<!-- snb -->
+<div id="snb">
+<div id="snbmn">
+<div class="tit" style="background-color:#555555;color:#FFFFFF;">게시판</div>
+<ul id="snb2m">
+<li id="snb2m1"><a href="./sub.htm?nav_code=psy1614066241">학부 공지사항</a>
+</li>
+<li id="snb2m2"><a href="./sub.htm?nav_code=psy1614066238">대학원 공지사항</a>
+</li>
+<li id="snb2m3"><a href="./sub.htm?nav_code=psy1614066239">자유게시판(모집, 채용, 홍보)</a>
+</li>
+<li id="snb2m4"><a href="./sub.htm?nav_code=psy1614066240">자료실</a>
+</li>
+<li id="snb2m5"><a href="./sub.htm?nav_code=psy1614066237">포토갤러리</a>
+</li>
+<li id="snb2m6"><a href="./sub.htm?nav_code=psy1614072354">관련사이트</a>
+</li>
+</ul>
+<script type="text/javascript">initsnbMenu(1,0);</script>
+</div>
+</div>
+<!-- //snb -->
+<section>
+<div id="content">
+<div id="body_title"><h1>학부 공지사항</h1></div>
+<div id="body_content">
+<!-- content -->
+<div class="">
+<script>
+function win_professor2(str){
+	window.open("../data/popup/professor1.htm?mv_data="+str,"학력 및 경력","scrollbars=yes,width=800 height=640, location=no")
+}
+</script>
+<div class="board_view">
+<div class="title">2026학년도 겨울계절수업 희망과목 수요조사 실시 안내</div>
+<input id="userid" name="userid" type="hidden" value=""/>
+<div class="desc clearfix">
+<dl>
+<dt>등록일</dt>
+<dd>2026-09-23</dd>
+<dt>작성자</dt>
+<dd>심리학과</dd>
+<dt>조회수</dt>
+<dd>17</dd>
+</dl>
+</div>
+<div class="cont">
+<!-- 내용부 첨부파일이 image 파일이면 view -->
+<p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; font-size: 12pt;">1. 희망과목 수요조사 기간</span><span style="letter-spacing: 0pt; font-family: 돋움, Dotum; font-size: 12pt;">: </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">2026. 9. 23.(</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">수</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">) 09:00 ~ 10. 7.(</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">수</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">) 17:59</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;"><br/></span></p><p class="0" style="margin: 0px 0px 0px 14.4pt; color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255); text-indent: -14.4pt;"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">2. </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">희망과목 수요조사 참여방법</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">: </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">통합정보시스템</span><span style="font-size: 18.6667px;">(</span><a href="https://knuin.knu.ac.kr/)" target="_parent">https://knuin.knu.ac.kr/)</a></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="letter-spacing: -0.4pt;"></span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">  [</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">학사행정] </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">→ [</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">수강] </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">→ [</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">수강신청] </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">→ [</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">개설강좌수요조사]</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;"><br/></span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">3. </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">희망과목 신청 대상</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">: </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">본교 학부생 중 </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">2026</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">학년도 겨울계절수업 수학 희망 학생</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="letter-spacing: -0.4pt;"></span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">  (</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">타대학생</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">명예학생</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">시간제등록생</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">대학원생 제외</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">)</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;"><br/></span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">4. </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">희망과목 신청 대상강좌</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">: 2026</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">학년도 교육과정에 편성된 학부 교양</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">전공</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">, </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">교직과목 전체</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;"><br/></span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">5. </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">희망과목 신청 가능학점</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">: 6</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">학점 이내</span></p><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255); letter-spacing: -0.4pt;"><span style="font-family: 돋움, Dotum; font-size: 12pt;"></span><span style="font-family: 돋움, Dotum; font-size: 12pt;"> </span><span style="font-family: 돋움, Dotum; font-size: 12pt;"></span></p><div class="hwp_editor_board_content" id="hwpEditorBoardContent" style="margin: 0px; padding: 0px; color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"></div><p class="0" style="color: rgb(69, 69, 69); font-family: NanumBarunGothic, ngn, notokr-regular, NanumGothic, 나눔고딕, NGNormal, NanumGothicBold, 돋움, Dotum, Arial, Tahoma, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">붙임 개설희망과목 수요조사 참여방법 안내 </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">1</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">부</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">. </span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">끝</span><span style="font-family: 돋움, Dotum; letter-spacing: -0.4pt; font-size: 12pt;">.</span></p>
+<span class="dot11">첨부파일중 PDF미리보기</span><br/>
+<div class="mbp20">
+<object data="../psychology/data/bbsData/yl6r0tg43lhcc6tbi9ai6ab32fee1270b.0.pdf#scrollbar=1&amp;toolbar=1&amp;statusbar=0&amp;navpanes=0&amp;page=1" height="800" id="pdf_viewer" type="application/pdf" width="100%">
+<p>파일 열람을 위해서는 아크로뱃 리더 설치가 필요합니다. 아래 링크를 클릭하여 리더를 다운로드 받으세요.<br><a href="http://get.adobe.com/kr/reader/" target="_blank"><img alt="Get Acrobat Reader web logo" src="http://www.adobe.com/images/shared/download_buttons/get_adobe_reader.png"/></a></br></p>
+<param name="wmode" value="transparent"/>
+<param name="src" value="../psychology/data/bbsData/yl6r0tg43lhcc6tbi9ai6ab32fee1270b.0.pdf#scrollbar=1&amp;toolbar=1&amp;statusbar=0&amp;navpanes=0&amp;page=1"/>
+</object>
+</div>
+</div>
+<div class="attach">
+<ul>
+<li><i class="fa fa-floppy-o"></i><a href="../bbs/bbs_download.php?mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmc2l0ZV9jb2RlPXBzeWNob2xvZ3kmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&amp;download=h&amp;seq=0">붙임. 개설희망과목 수요조사 프로그램 사용안내(학생용).pdf</a></li>
+</ul>
+</div>
+</div>
+<!--[SubBegin] 버튼부-->
+<script language="JavaScript">
+<!--
+// 삭제
+function bbsdataDel(data,passwd) {
+	var i = confirm("현재 게시물을 삭제하시겠습니까?");
+	if (i == true) {
+		$.ajax({
+			url: "../bbs/bbs_del_ok.php?mv_data="+data+"&passwd="+passwd,
+			success: function(html){
+				if(html=="ok"){
+					alert("게시물을 삭제하였습니다.");
+					location.href="/HOME/psychology/sub.htm?mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmc2l0ZV9jb2RlPXBzeWNob2xvZ3kmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=";
+				}else{
+					alert(html);
+				}
+			},error: function(html){
+			}
+		});
+	}else if (i == false){
+		return;
+	}
+}
+function modal_del(data){
+	modal_layer_add("passwd_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#passwd_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#passwd_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					bbsdataDel(data,passwd);
+					$( this ).dialog( "close" );
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#passwd_pop").remove();
+		}
+	});
+}
+function modal_edit(data){
+	modal_layer_add("edit_pop");
+	$.ajax({
+		url: "../bbs/bbs_pw_accept_pop.php",
+		success: function(html){
+			$("#edit_pop").html(html);
+		},error: function(html){
+		}
+	});
+
+	$("#edit_pop").dialog({
+		resizable: true,
+		height: 190,
+		width: 400,
+		title: "▣ 비밀번호 입력",
+		modal: true,
+		buttons: {
+			"확인": function() {
+				var passwd = $("#access_passwd").val();
+				if(passwd!=""){
+					location.href="/HOME/psychology/sub.htm?nav_code=psy1614066241&bbs_view_edit=1&mode=edit&mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmc2l0ZV9jb2RlPXBzeWNob2xvZ3kmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=&pwd="+passwd;
+				}else{
+					alert("비밀번호를 입력해주세요.");
+					$("#access_passwd").focus();
+				}
+			},
+			"닫기": function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		close: function( event, ui ) {
+			$("#edit_pop").remove();
+		}
+	});
+}
+
+function iso_url(num){
+	var userid = $("#userid").val();
+	console.log(userid);
+	$.ajax({
+		cache:false,
+		url: "../bbs/get_iso_url.php?num="+num+"&userid="+userid,
+		success: function(data){
+			window.open(data);
+			//location.href = data;
+		},error: function(data){
+		}
+	});
+
+}
+//-->
+</script>
+<div class="btnarea">
+<div class="left">
+<a class="btn_d" href="#" onclick="boardPrint(1);return false;">프린트</a>
+</div>
+<div class="right">
+<a class="btn_d" href="/HOME/psychology/sub.htm?mv_data=aWR4PTE2NDgmc3RhcnRQYWdlPTAmbGlzdE5vPTcxMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmc2l0ZV9jb2RlPXBzeWNob2xvZ3kmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0=">목록</a>
+</div>
+<div class="clear"></div>
+</div>
+<!--[SubEnd] 버튼부-->
+</div> <!-- //content -->
+</div>
+<div id="body_foot"></div> </div>
+</section>
+<aside></aside></div>
+</div>
+<!-- //container -->
+<!-- footer -->
+<footer>
+<div class="d_width clearfix">
+<div class="f_logo"><img src="./data/designImages/logo.png"/></div>
+<div class="f_cont">
+<ul class="fmn clearfix">
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy01&amp;menu_idx=94" target="_blank" title="새창으로 개인정보처리방침페이지가 열립니다.">개인정보처리방침</a></li>
+<li><a href="http://knu.ac.kr/wbbs/wbbs/contents/index.action?menu_url=siteinfo/policy02&amp;menu_idx=95" target="_blank" title="새창으로 이메일무단수집거부페이지가 열립니다.">이메일무단수집거부</a></li>
+</ul>
+<address>41566 대구 북구 대학로 80 (산격동, 경북대학교) 사회과학대학 209호<br/>Tel.053-950-5244 Fax.053-950-5243		<p class="copyright">Copyright ⓒ 경북대학교 사회과학대학 <em>심리학과</em>. All rights Reserved.</p></address>
+</div>
+<div class="f_link">
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</body>
+</html>
