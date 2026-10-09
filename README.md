@@ -117,4 +117,14 @@ python -m tools.update_meals
 
 `.env`와 API 토큰 등 비밀 값은 저장소에 올리지 마세요.
 
+## 라이선스
+
+이 저장소의 코드는 [MIT 라이선스](LICENSE)를 따릅니다. 다음 자료에는 MIT 라이선스가 적용되지 않습니다.
+
+- 배경음악(`assets/bgm/`): Kevin MacLeod, CC BY 4.0. 곡별 출처는 `assets/bgm/catalog.json`에 있습니다.
+- 수집한 공지·학식·학사일정 자료와 테스트용 저장 페이지(`data/`, `output/app/data/`, `collector/tests/fixtures/`): 원 게시 기관의 자료입니다.
+- 호반우 캐릭터와 학교 상징 이미지(`tools/hobanu/`, `tools/avatars/`, `tools/branding/`, `output/app/data/` 아래 사본): 별도 권리가 있을 수 있습니다.
+
+외부 모델과 라이브러리는 [THIRD-PARTY.md](THIRD-PARTY.md)를 참고하세요.
+
 운영 코드는 공개 저장소 `hoyeol903/KNU-AUDIO-public`에서 관리합니다. 기존 `KNU-AUDIO`는 과거 기록을 보관하는 비공개 저장소입니다. 학번·주민등록번호·개인 휴대전화 형태와 학번에 연결된 명시적 성명은 저장 전에 가립니다. 검수는 **개인정보를 가린 원문**의 제목·날짜·마감·장소·신청 조건과 대조합니다. 자동 가림은 개인정보가 전혀 없다는 보증이 아니므로 새 자료의 공개 적합성도 확인해야 합니다. 자세한 전환 상태는 [공개 준비 점검](docs/public-readiness.md)을 참고하세요.
