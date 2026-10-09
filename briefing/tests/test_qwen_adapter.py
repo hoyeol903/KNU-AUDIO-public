@@ -6,8 +6,8 @@ import re
 import shutil
 import subprocess
 import sys
-import numpy as np
 import pytest
+np = pytest.importorskip('numpy', reason='음성 테스트는 requirements-tts.txt 설치가 필요합니다')
 from briefing.qwen_tts import (QwenTTS, MODEL, VOICES, CACHE_PROFILE, CACHE_VERSION,
                                cached_model_source, normalize_audio, seeded_rng)
 from briefing import build as b
@@ -72,7 +72,7 @@ def test_new_provider_cannot_reuse_old_melo_audio():
 
 
 def test_custom_voice_receives_per_speaker_instruction(monkeypatch, tmp_path):
-    import torch
+    torch = pytest.importorskip('torch')
     instruction='차분하고 또렷한 아침 라디오 진행자처럼 말해 주세요.'
     model=Mock()
     model.generate_custom_voice.return_value=([np.full(2400,.05,dtype=np.float32)],24000)
@@ -152,7 +152,7 @@ def test_audio_profile_includes_seed_and_quality_settings():
 
 
 def test_each_generation_uses_repeatable_seed_without_changing_host_rng():
-    import torch
+    torch = pytest.importorskip('torch')
     torch.manual_seed(123)
     expected_next = torch.rand(1)
     torch.manual_seed(123)

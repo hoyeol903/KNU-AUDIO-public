@@ -9,7 +9,7 @@
 - 프로젝트 개요와 현재 사용자 흐름은 [README](README.md)를 읽는다.
 - 데이터 입력·출력 필드 변경은 먼저 [데이터 계약](docs/contracts.md)과 관련 구현을 함께 확인한다.
 - 수집 동작은 [수집 운영](docs/operations.md), 대본·음성은 [Kaggle 브리핑](docs/briefing-kaggle.md), 화면 재생 형식은 [플레이리스트 계약](docs/briefing-playlist-v2.md)을 기준으로 한다.
-- 프로젝트 전체 GitHub 공개 전에 [공개 준비 점검](docs/public-readiness.md)을 확인한다. 저장소는 현재 비공개이며, 공개 전환은 별도 승인 없이 하지 않는다.
+- 이 저장소는 공개 저장소다. 커밋·PR·Actions 로그·artifact는 누구나 볼 수 있으므로 새 자료를 올리기 전에 [공개 준비 점검](docs/public-readiness.md)의 개인정보·라이선스 기준을 확인한다.
 
 ## 현재 구성
 
@@ -17,11 +17,11 @@
 - `data/db/notices.json`: 누적 공지와 확인 기록. `data/raw/<날짜>/items.json`은 브리핑 입력 스냅샷이다.
 - `briefing/`: SLM 대본 생성, 규칙 기반 검수, Qwen3 TTS, 앱용 음성 결과 내보내기.
 - `.github/workflows/collect.yml`: 수집과 선택적 Kaggle 브리핑 연결.
-- `.github/workflows/briefing-kaggle.yml`: 지정된 입력 스냅샷을 Kaggle의 비공개 T4 커널에 보내 대본·음성을 생성하고 검증한다. 게시 입력은 기본적으로 꺼져 있다.
+- `.github/workflows/briefing-kaggle.yml`: 지정된 입력 스냅샷을 Kaggle의 비공개 T4 커널에 보내 대본·음성을 생성하고 검증한다. 게시 입력(`publish`)은 기본적으로 켜져 있어 완료된 음성을 앱에 자동 게시한다.
 - `tools/knua-app.html` 및 `web/player/`: 브라우저 화면과 플레이어.
-- `output/app/`: Cloudflare Pages가 제공하는 정적 앱 데이터. `output/app/data/briefing/segments.json`에는 생성된 대본·카드·음성 참조가 있다.
+- `output/app/`: GitHub Pages(`.github/workflows/deploy.yml`)가 제공하는 정적 앱 데이터. `output/app/data/briefing/segments.json`에는 생성된 대본·카드·음성 참조가 있다.
 
-학교 수집은 GitHub Actions에서 실행한다. 식당 6곳 식단은 로컬에서 주간 갱신한다. Kaggle 브리핑은 수집 뒤 저장소 변수 `ENABLE_KAGGLE_BRIEFING=true`를 설정한 경우에만 자동 연결한다. 매일 한국시간 01:07에 cron-job.org가 `workflow_dispatch`로 수집을 요청한다. GitHub 자체 수집 예약과 `ENABLE_COLLECTION` 조건은 제거했으며 외부 예약 또는 실행 서버 대기는 발생할 수 있다. 현재 사이트 호스팅은 Cloudflare Pages다.
+학교 수집은 GitHub Actions에서 실행한다. 식당 6곳 식단은 로컬에서 주간 갱신한다. Kaggle 브리핑은 수집 뒤 저장소 변수 `ENABLE_KAGGLE_BRIEFING=true`를 설정한 경우에만 자동 연결한다. 매일 한국시간 01:07에 cron-job.org가 `workflow_dispatch`로 수집을 요청한다. GitHub 자체 수집 예약과 `ENABLE_COLLECTION` 조건은 제거했으며 외부 예약 또는 실행 서버 대기는 발생할 수 있다. 현재 사이트 호스팅은 GitHub Pages(https://hoyeol903.github.io/KNU-AUDIO-public/)다.
 
 ## 데이터와 검수 원칙
 
@@ -47,7 +47,7 @@ node collector/tests/test_daily_bgm_player.mjs
 - API 토큰은 GitHub Secrets 또는 로컬 `.env`로 전달하며 코드·로그·문서에 값을 쓰지 않는다. `.env`와 모델 가중치를 커밋하지 않는다.
 - 기능 작업은 별도 `feat/...` 브랜치에서 수행하고 PR로 `main`에 반영한다. 운영 워크플로의 데이터 자동 커밋은 예외다.
 - 커밋 메시지는 한국어로 쓴다. 작업이 끝나면 변경 내용, 실행 방법과 테스트 결과를 짧게 알린다.
-- 저장소 공개 전환은 명시적인 사용자 승인을 받은 뒤에만 수행한다. 전환 전에 Git 이력, Issues/PRs, Actions 로그·artifact, Kaggle 입력 범위와 라이선스를 점검한다.
+- 기존 비공개 저장소 `KNU-AUDIO`의 Git 이력·PR·Actions 기록·artifact를 이 저장소로 옮기지 않는다. 과거 이력에는 권리가 확인되지 않은 음악 파일과 가리기 전 자료가 있다.
 
 ## 공개 자료와 원문 대조
 

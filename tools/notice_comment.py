@@ -14,8 +14,8 @@ from collector.store import SEOUL, load_collection_report
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / 'output/app/data/new-notices.csv'
 FAILURES_PATH = ROOT / 'output/app/data/collection-failures.csv'
-SITE_URL = 'https://knu-audio.pages.dev/data/new-notices.csv'
-FAILURES_URL = 'https://knu-audio.pages.dev/data/collection-failures.csv'
+SITE_URL = 'https://hoyeol903.github.io/KNU-AUDIO-public/data/new-notices.csv'
+FAILURES_URL = 'https://hoyeol903.github.io/KNU-AUDIO-public/data/collection-failures.csv'
 MAX_ROWS = 100
 FAILURE_FIELDS = ['게시판', '실패 URL', '간단한 원인', '원문 오류', '상태', '재시도 안내']
 RETRY_ADVICE = '일시 오류면 다음 자동 수집을 기다리거나 Actions에서 실패 게시판 재수집을 실행하세요.'

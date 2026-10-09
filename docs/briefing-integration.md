@@ -1,6 +1,6 @@
 # 브리핑과 앱 화면 연동
 
-2026-10-07 기준 운영 경로다. 수집 자료를 입력으로 대본·음성을 만들고, 검증한 결과를 정적 앱 형식으로 내보낸다. 현재 웹 호스팅은 Cloudflare Pages다.
+2026-10-07 기준 운영 경로다. 수집 자료를 입력으로 대본·음성을 만들고, 검증한 결과를 정적 앱 형식으로 내보낸다. 현재 웹 호스팅은 GitHub Pages다.
 
 ## 실제 흐름
 
@@ -11,7 +11,7 @@ collector workflow
             └─ 비공개 Kaggle T4 커널: SLM 대본 → 규칙 검수 → Qwen3 TTS
                  └─ 해시·날짜·파일 검증
                       └─ output/app/data/briefing/segments.json + MP3
-                           └─ Cloudflare Pages
+                           └─ GitHub Pages
 ```
 
 Kaggle 워크플로의 수동 실행은 저장된 스냅샷으로 생성·검증만 하며, `publish=true`를 선택하지 않으면 앱 데이터를 바꾸지 않는다. 수집 뒤의 자동 연결은 저장소 변수 `ENABLE_KAGGLE_BRIEFING=true`일 때만 실행한다. 대본이나 음성 검증이 실패하면 게시 단계는 진행하지 않는다. 세부 실행 절차와 오류 처리는 [Kaggle 브리핑 안내](briefing-kaggle.md)와 [운영 문서](operations.md)를 본다.
