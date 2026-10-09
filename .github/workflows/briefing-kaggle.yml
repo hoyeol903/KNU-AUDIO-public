@@ -82,7 +82,7 @@ jobs:
       - name: Kaggle 인증과 남은 사용량 확인
         id: auth
         run: kaggle quota
-      - name: Kaggle 음성 30개씩 저장하고 다음 묶음 생성
+      - name: Kaggle 음성을 시간 묶음으로 저장하고 다음 묶음 생성
         id: submit
         env:
           RESUME_KERNEL: ${{ inputs.resume_kernel }}

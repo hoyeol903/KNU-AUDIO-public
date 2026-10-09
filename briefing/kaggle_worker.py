@@ -104,7 +104,9 @@ def _package_outputs(root, context, bundle_sha, gpu, run_dir, runtime_dir):
 
 
 
-AUDIO_BATCH_SIZE = 30
+# 커널 하나가 음성 생성에 쓰는 시간. 넘으면 저장하고 다음 커널에서 잇는다.
+# 커널마다 패키지 설치·모델 적재가 반복되므로, 강제 종료 때 잃어도 되는 범위에서 길게 잡는다.
+AUDIO_BATCH_SECONDS = 2 * 60 * 60
 
 
 def prepare_slm(root, items, cache, runtime_dir, env, github_path):
@@ -197,7 +199,7 @@ def run(root, bundle_sha):
         slm_client = prepare_slm(root, items, cache, runtime_dir, env, github_path)
         build(source_input, output=root / 'dist', cache=cache,
               allow_archive=True, progress=recorder,
-              audio_batch_size=AUDIO_BATCH_SIZE if context.get('batch') else None, failed_audio=failures,
+              audio_batch_seconds=AUDIO_BATCH_SECONDS if context.get('batch') else None, failed_audio=failures,
               slm_client=slm_client)
         verify_publication(root / 'dist', context['day'])
         export(root / 'dist', root / 'output/app/data/briefing', items_path=source_input)
@@ -210,7 +212,7 @@ def run(root, bundle_sha):
         diagnostics = run_dir / 'diagnostics'
         for name in ('briefing-progress.json', 'briefing-report.json', 'review.json'):
             _copy_file(root / 'output' / name, diagnostics / name)
-        print(f'음성 {AUDIO_BATCH_SIZE}개 묶음 저장 완료. 다음 묶음에서 이어갑니다.', flush=True)
+        print(f'음성 생성 {AUDIO_BATCH_SECONDS // 60}분 묶음 저장 완료. 다음 묶음에서 이어갑니다.', flush=True)
     except BaseException:
         diagnostics = run_dir / 'diagnostics'
         diagnostics.mkdir(parents=True, exist_ok=True)

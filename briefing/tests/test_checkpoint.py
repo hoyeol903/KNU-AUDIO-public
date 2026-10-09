@@ -8,24 +8,30 @@ import pytest
 from briefing import build as b, checkpoint, kaggle, kaggle_batch, kaggle_worker
 
 
-def test_batch_saves_thirty_and_restored_cache_only_generates_remaining(tmp_path, monkeypatch):
+def test_batch_stops_on_time_budget_and_restored_cache_only_generates_remaining(tmp_path, monkeypatch):
     data = json.loads((b.ROOT / 'data/raw/2026-10-03/items.json').read_text())
     segments = [dict(id=str(n), kind='outro', title=str(n), script=f'audio {n}', channel_ids=[], audio={}) for n in range(65)]
     monkeypatch.setattr(b, 'create_segments', lambda *a: (deepcopy(segments), []))
     monkeypatch.setattr(b, 'generate_segments', lambda s,*a,**kw:s)
     monkeypatch.setattr(b, 'prepare_bgm', lambda *a:None)
     monkeypatch.setattr(b, 'audio_info', lambda raw:1)
-    provider=Mock(); provider.synthesize.side_effect=lambda script,*a:script.encode()
+    # 음성 하나에 4분이 걸린다고 두면 2시간 묶음에 30개가 들어간다.
+    now=[0]
+    monkeypatch.setattr(b.time, 'monotonic', lambda: now[0])
+    def synthesize(script,*a):
+        now[0]+=240
+        return script.encode()
+    provider=Mock(); provider.synthesize.side_effect=synthesize
     path=tmp_path/'items.json'; path.write_text(json.dumps(data))
     ctx=dict(checkpoint_signature='same',day=data['date'],kernel_id='muyahoyeol/test')
     failures={}
-    assert kaggle_worker.AUDIO_BATCH_SIZE == 30
+    assert kaggle_worker.AUDIO_BATCH_SECONDS == 7200
     for batch in range(3):
         cache=tmp_path/f'cache-{batch}'
         if batch:
             failures=checkpoint.restore(tmp_path/f'saved-{batch-1}',cache,'same')
         kwargs=dict(output=tmp_path/'dist',cache=cache,allow_archive=True,client=provider,
-                    audio_batch_size=kaggle_worker.AUDIO_BATCH_SIZE,failed_audio=failures)
+                    audio_batch_seconds=kaggle_worker.AUDIO_BATCH_SECONDS,failed_audio=failures)
         if batch<2:
             with pytest.raises(b.AudioBatchComplete): b.build(path,**kwargs)
             assert not (tmp_path/'dist/manifest.json').exists()
@@ -129,3 +135,23 @@ def test_failure_mail_tells_how_to_resume_saved_kernel(tmp_path):
     text=render(tmp_path,'failure','skipped',True,'owner','run')
     assert 'Re-run failed jobs' in text and 'resume_kernel' in text
     assert '123-1-b2' in text
+
+
+def test_time_budget_always_finishes_at_least_one_audio(tmp_path, monkeypatch):
+    data=json.loads((b.ROOT/'data/raw/2026-10-03/items.json').read_text())
+    segments=[dict(id=str(i),kind='outro',title=str(i),script=str(i),channel_ids=[],audio={}) for i in range(3)]
+    monkeypatch.setattr(b,'create_segments',lambda *a:(deepcopy(segments),[]))
+    monkeypatch.setattr(b,'generate_segments',lambda s,*a,**kw:s)
+    monkeypatch.setattr(b,'prepare_bgm',lambda *a:None)
+    monkeypatch.setattr(b,'audio_info',lambda raw:1)
+    now=[0]
+    monkeypatch.setattr(b.time,'monotonic',lambda: now[0])
+    def synthesize(script,*a):
+        now[0]+=9999
+        return script.encode()
+    provider=Mock(); provider.synthesize.side_effect=synthesize
+    path=tmp_path/'input.json';path.write_text(json.dumps(data))
+    with pytest.raises(b.AudioBatchComplete):
+        b.build(path,cache=tmp_path/'cache',output=tmp_path/'dist',client=provider,allow_archive=True,audio_batch_seconds=60)
+    assert provider.synthesize.call_count==1
+

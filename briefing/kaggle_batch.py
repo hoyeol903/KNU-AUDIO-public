@@ -1,4 +1,4 @@
-"""30개씩 정상 종료한 Kaggle 결과를 다음 실행에 연결한다."""
+"""시간 묶음마다 정상 종료한 Kaggle 결과를 다음 실행에 연결한다."""
 import argparse
 import json
 import os
