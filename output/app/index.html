@@ -1940,7 +1940,7 @@ document.addEventListener('click', function(e){
     case 'extra': S.pickExtra.push(el.getAttribute('data-i')); S.pickQuery = ''; return render(false);
     case 'unextra': S.pickExtra = S.pickExtra.filter(function(i){ return i !== el.getAttribute('data-i'); }); return render(false);
     case 'cafeSw': { var id = el.getAttribute('data-id'); S.pickCafes[id] = !S.pickCafes[id]; return render(false); }
-    case 'pickDone': { var was = S.pickMode; store.extra = S.pickExtra.slice(); store.cafes = Object.assign({}, S.pickCafes); save(); pause(); P.started = false; P.ch = 0; P.chT = 0; P.done = false; refresh(); nav('home'); return toastMsg(was === 'settings' ? '저장했어요.' : W.hasBrief ? '준비 끝! 재생 버튼을 눌러 보세요.' : '준비 끝! 오늘 소식을 확인해 보세요.'); }
+    case 'pickDone': { var was = S.pickMode; store.extra = S.pickExtra.slice(); store.cafes = Object.assign({}, S.pickCafes); save(); pause(); P.started = false; P.ch = 0; P.chT = 0; P.done = false; refresh(); nav('home'); if (was === 'settings') toastMsg('저장했어요.'); return; }
     case 'settings': return openSettings();
     case 'collectionStatus': return nav('collection-status');
     case 'back': S.sheet = null; return nav(S.route === 'meeting-detail' ? 'meeting-list' : S.route === 'meeting-list' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
