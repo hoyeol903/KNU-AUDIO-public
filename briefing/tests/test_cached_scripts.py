@@ -50,7 +50,7 @@ def test_complete_cached_scripts_skip_ollama_and_keep_review_policy(tmp_path, mo
     monkeypatch.setattr(slm.requests.Session, 'get', Mock(side_effect=AssertionError('AI 접속 금지')))
     monkeypatch.setattr(slm.requests.Session, 'post', Mock(side_effect=AssertionError('AI 접속 금지')))
     assert slm.generate_segments(rows, provider, cache, tmp_path / 'report.json')
-    assert all(r['review']['status'] == ('revision-unchecked' if revised else 'passed') for r in rows)
+    assert all(r['review']['status'] == 'passed' for r in rows)
 
 
 @pytest.mark.parametrize('change', ['missing', 'input', 'invalid', 'model', 'prompt', 'review-version'])

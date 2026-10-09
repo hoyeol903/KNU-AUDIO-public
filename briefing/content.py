@@ -8,6 +8,394 @@ from difflib import SequenceMatcher
 from briefing.review import PHONE
 from collector.deadlines import extract_deadline
 
+NOTICE_STYLES = (
+    '1안: 차분한 설명형으로 핵심부터 말하고 자연스러운 해요체로 끝내세요.',
+    '2안: 친근한 안내형으로 학생에게 편하게 건네듯 자연스러운 해요체로 말하세요.',
+    '3안: 맑고 생기 있는 아침 라디오 말투로, 과장 없이 자연스러운 해요체로 말하세요.',
+)
+
+
+def daily_variant(value):
+    """Rotate 1→2→3 by calendar day, reproducibly within each date."""
+    return (date.fromisoformat(value).toordinal() - 1) % len(NOTICE_STYLES)
+
+
+def notice_topic(title):
+    """Extract a compact, source-title topic for short summaries and fallback checks."""
+    text = re.sub(r'\([^)]*\)|（[^）]*）', ' ', title or '')
+    text = text.translate(str.maketrans({'[':' ', ']':' ', '【':' ', '】':' ', '『':' ', '』':' ', '「':' ', '」':' '}))
+    text = text.lstrip()
+    text = re.sub(r'^(?:안내|공지)\s+', '', text)
+    text = re.sub(r'제\s*\d+\s*회|20\d{2}\s*(?:학년도?|년)|\d+\s*학기|\d+\s*차', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip(' -:：')
+    text = re.sub(r'(?:안내|시행|신청|모집|참가|개최|행사|무료\s*참관\s*혜택)(?:\s*안내)?\s*$', '', text).strip(' -:：')
+    matches = list(re.finditer(
+        r'([가-힣A-Za-z· ]{1,28}?(?:적성\s*(?:및|·)\s*인성검사|산업전|체험교육|어학연수|경진대회|단체이용|워크숍|설명회))',
+        text))
+    match = matches[-1] if matches else None
+    if match:
+        phrase = re.sub(r'^(?:안내|학생|학년도|학기)\s+', '', match.group(1)).strip()
+        phrase = re.sub(r'^제\s*\d+\s*회\s*', '', phrase)
+        phrase = re.sub(r'\s*및\s*', '·', phrase)
+        phrase = re.sub(r'\s+', ' ', phrase)
+        if phrase.startswith('교직 '):
+            phrase = phrase[len('교직 '):]
+        if phrase.endswith('산업전'):
+            phrase = '로봇산업전' if '로봇산업전' in phrase else re.search(r'[가-힣]{1,4}산업전$', phrase).group(0)
+        elif phrase.endswith('어학연수'):
+            phrase = '해외어학연수' if '해외어학연수' in phrase else phrase.split()[-1]
+        else:
+            phrase = ' '.join(phrase.split()[-3:])
+        return phrase
+    compact = re.sub(r'(?:신청|모집|참가|개최|시행|안내|행사|프로그램)\s*$', '', text).strip(' -:：')
+    phrase = ' '.join(compact.split()[-3:])
+    if re.sub(r'\s+', '', phrase) in {'공통', '모집', '신청', '안내', '공지', '프로그램', '학생'}:
+        return None
+    return phrase or None
+
+def notice_fact_hints(body):
+    """Keep complete original lines that label an action, audience, date, time or place."""
+    if not body:
+        return []
+    source_lines = [re.sub(r'\s+', ' ', raw).strip() for raw in body.splitlines()]
+    rows, seen = [], set()
+    for index, line in enumerate(source_lines):
+        if not line or len(line) > 300 or re.search(r'https?://|붙임|첨부파일|다운로드|\.pdf\b|\b1부\b|면접|확정 공고|승인서|기타사항', line, re.I):
+            continue
+        previous = source_lines[index - 1] if index else ''
+        score = 0
+        if '제외' in line and not re.search(r'대상|자격', line):
+            continue
+        is_target_label = bool(re.search(r'(?:이용)?대상|지원\s*자격|지원자격|참가\s*자격|신청\s*자격', line)) and not re.search(r'면접|확정', line)
+        is_application_label = bool(re.search(r'(?:신청|지원|접수|모집)\s*(?:기간|일정|마감|방법)|등록\s*방법', line))
+        if is_target_label:
+            score = 11
+        elif re.search(r'사전등록', line):
+            score = 15
+        elif re.search(r'(?:신청|지원|접수|모집).*(?:기간|마감|까지)|(?:기간|마감|까지).*(?:신청|지원|접수|모집)', line) and re.search(r'\d', line):
+            score = 15
+        elif is_application_label:
+            score = 10
+        elif re.search(r'(?:신청|접수).*(?:방법|공문|메일|온라인)|(?:방법|공문|메일|온라인).*(?:신청|접수)', line):
+            score = 9
+        elif re.search(r'20\d{2}', line) and re.search(r'에서|장소|개최|운영', line):
+            score = 8
+        elif re.search(r'대상|지원 자격|참가 자격', previous) and re.match(r'[-•▶\d가-하]', line):
+            score = 8
+        if is_application_label and re.fullmatch(r'.{1,24}(?:기간|일정|마감)\s*[:：]?', line):
+            # Pair a standalone application heading with its next complete source line.
+            following = source_lines[index + 1] if index + 1 < len(source_lines) else ''
+            if following and len(following) <= 300 and not re.search(r'https?://|붙임|첨부파일|다운로드|\.pdf\b', following, re.I):
+                rows.append((16, index + 1, following))
+        if is_target_label and re.fullmatch(r'.{1,24}(?:대상|자격)\s*[:：]?', line):
+            following = source_lines[index + 1] if index + 1 < len(source_lines) else ''
+            if following and len(following) <= 300 and not re.search(r'https?://|붙임|첨부파일|다운로드|\.pdf\b', following, re.I):
+                rows.append((12, index + 1, following))
+        if score and line not in seen:
+            rows.append((score, index, line))
+            seen.add(line)
+    ordered = []
+    for _, _, line in sorted(rows, key=lambda row: (-row[0], row[1])):
+        if line not in ordered:
+            ordered.append(line)
+        if len(ordered) == 8:
+            break
+    return ordered
+
+def notice_generation_evidence(body, title=''):
+    """Group a few complete source lines by purpose; this is not a truth parser."""
+    lines = [re.sub(r'\s+', ' ', line).strip() for line in (body or '').splitlines()]
+    cutoff = None
+    submission = None
+    target_values = []
+    method_values = []
+    event_values = []
+    caveats = []
+    required_documents_line = None
+    target_pattern = re.compile(r'(?:이용|신청|지원|참가)?대상(?:자)?\s*[:：]\s*([^\n]+)|(?:지원|참가|신청)\s*자격\s*[:：]\s*([^\n]+)')
+    for index, line in enumerate(lines):
+        if not line:
+            continue
+        clean_line = re.sub(r'\s*\[?붙임\s*\d+.*$', '', line).strip()
+        clean_line = re.sub(r'https?://\S+|www\.\S+', '', clean_line).strip()
+        if not clean_line:
+            continue
+        stripped = re.sub(r'^(?:\s*(?:▶|•|[*\-–—]|\d+[.)]|[가-하][.)])\s*)+', '', clean_line).strip()
+        following = lines[index + 1] if index + 1 < len(lines) else ''
+        if cutoff is None and re.fullmatch(r'(?:신청|지원|접수|모집)\s*(?:기간|마감)\s*[:：]?', stripped) and re.search(r'\d', following):
+            cutoff = clean_line + ' ' + following
+        elif cutoff is None and re.search(r'사전등록|(?:신청|지원|접수|모집)\s*(?:기간|마감)', clean_line) and re.search(r'\d', clean_line):
+            cutoff = clean_line
+
+        matches = target_pattern.search(clean_line)
+        if matches:
+            value = next((item for item in matches.groups() if item), '').strip()
+            if value:
+                target_values.append((clean_line, value))
+            elif re.fullmatch(r'(?:이용|신청|지원|참가)?대상(?:자)?\s*[:：]?|(?:지원|참가|신청)\s*자격\s*[:：]?', stripped):
+                matches = None
+        if not matches and re.fullmatch(r'(?:이용|신청|지원|참가)?대상(?:자)?\s*[:：]?|(?:지원|참가|신청)\s*자격\s*[:：]?', stripped) and index + 1 < len(lines):
+            following_lines = []
+            for candidate in lines[index + 1:index + 4]:
+                candidate_label = re.sub(r'^(?:\s*(?:▶|•|[*\-–—]|\d+[.)]|[가-하][.)])\s*)+', '', candidate).strip()
+                if (re.match(r'^\s*(?:▶|[가-하][.)])', candidate)
+                        or re.fullmatch(r'.*(?:기간|방법|일시|장소)\s*[:：]?', candidate_label)):
+                    break
+                if candidate:
+                    following_lines.append(candidate)
+                if len(following_lines) == 2:
+                    break
+            if following_lines:
+                target_values.append((clean_line + ' ' + ' '.join(following_lines), ' '.join(following_lines)))
+        elif '대상으로' in clean_line:
+            value = re.split(r'(?:을|를)\s*대상으로', clean_line)[0]
+            target_values.append((clean_line, value))
+
+        is_method = re.search(r'(?:신청|지원|접수|등록|제출)\s*방법|통합정보시스템|구글폼|공문으로\s*접수|신청서\s*메일', clean_line)
+        if not is_method and method_values and '이메일' in ' '.join(method_values) and re.search(r'또는\s*(?:링크|QR)', clean_line):
+            is_method = True
+        method_heading = re.fullmatch(r'(?:신청|지원|접수|등록|제출)\s*방법\s*[:：]?', stripped)
+        if is_method and not method_heading and not re.search(r'하지\s*않|불가|\b1부\b|붙임', clean_line):
+            method_values.append(re.sub(r'\s*\[?붙임\s*\d+.*$', '', clean_line).strip())
+        if re.search(r'(?:검사|행사|연수|운영)\s*(?:일시|기간|장소)|(?:검사|행사|연수)\s*장소|대구\s*엑스코|글로벌플라자', clean_line):
+            event_values.append(clean_line)
+        if (required_documents_line is None
+                and re.search(r'제출\s*서류', clean_line)
+                and re.search(r'필수\s*제출|제출\s*서류.{0,100}필수|필수.{0,100}제출\s*서류', clean_line)):
+            required_documents_line = clean_line
+        if re.search(r'조기\s*종료|신청\s*기간.{0,12}상이|등록횟수에\s*따라|휴학생\s*제외|모두\s*제출|양쪽.*제출|'
+                     r'대구\s*청년\s*연구자|팀원\s*중\s*\d+%|석사\s*재학생\s*이상|'
+                     r'주민등록상\s*주소지가\s*대구|대구광역시\s*거주|'
+                     r'참가팀\s*구성|팀원.{0,15}(?:\d+%|절반)|대구.*(?:주민등록|거주)|석사.*(?:재학|이상)|'
+                     r'개인\s*신청\s*시|팀\s*신청\s*시|대표자.{0,20}(?:자격|요건)|창업\s*\d+년\s*이내|만\s*\d+세\s*이하', clean_line):
+            caveats.append(clean_line)
+
+    # A compact “신청마감” heading can omit the actual submission time and destination.
+    # Prefer a same-date, explicit submit instruction only when it includes a clock time
+    # and a concrete office; unrelated event or later follow-up dates are not substituted.
+    if cutoff:
+        date_pattern = re.compile(
+            r'(?<!\d)(?:20\d{2}\s*(?:년|[./-])\s*)?(\d{1,2})\s*(?:월|[./-])\s*(\d{1,2})\s*일?')
+        cutoff_dates = {(int(month), int(day)) for month, day in date_pattern.findall(cutoff)}
+        if cutoff_dates:
+            mandatory_docs = bool(re.search(r'필수\s*제출|필수\s*제출서류|제출서류.{0,60}필수', body or ''))
+            for line in lines:
+                clean_line = re.sub(r'https?://\S+|www\.\S+', '', line).strip()
+                line_dates = {(int(month), int(day)) for month, day in date_pattern.findall(clean_line)}
+                if not (cutoff_dates & line_dates):
+                    continue
+                if not re.search(r'\d{1,2}\s*시(?:\s*\d{1,2}\s*분)?\s*까지', clean_line):
+                    continue
+                if not re.search(r'(?:제출|접수|신청)', clean_line):
+                    continue
+                place_match = re.search(
+                    r'(?P<place>(?:[가-힣A-Za-z0-9·]{1,10}(?:학부|학과|대학|본부)\s*)?(?:학부|학과)?사무실|'
+                    r'[가-힣A-Za-z0-9·]{2,12}(?:행정실|지원센터|센터))\s*(?:로|으로)\s*(?:제출|접수)',
+                    clean_line)
+                if not place_match:
+                    continue
+                place = re.sub(r'\s+', '', place_match.group('place'))
+                documents_named = bool(re.search(r'제출\s*서류', clean_line))
+                action_match = re.search(r'(제출|접수|신청)', clean_line)
+                submission = dict(line=clean_line, place=place,
+                                  required_documents=documents_named and mandatory_docs,
+                                  documents_named=documents_named,
+                                  action=action_match.group(1) if action_match else '제출')
+                cutoff = clean_line
+                break
+
+    target = target_values[0][0] if target_values else None
+    audience_values = [value for _, value in target_values if value]
+    method = ' '.join(dict.fromkeys(method_values)) or None
+    event = ' '.join(dict.fromkeys(event_values[:2])) or None
+    lines_out = []
+    for line in (cutoff, target, method, event, required_documents_line, *caveats):
+        if line and line not in lines_out:
+            lines_out.append(line)
+    intent = 'event' if re.search(r'시행|행사|개최|일정|일시', title) and not re.search(r'신청|모집|접수|지원', title) else 'application'
+    return {
+        'intent': intent,
+        'topic': notice_topic(title),
+        'cutoff': cutoff,
+        'audience': target,
+        'audience_values': audience_values,
+        'method': method,
+        'event': event,
+        'caveats': caveats,
+        'submission': submission,
+        'required_documents': bool(required_documents_line),
+        'required_documents_line': required_documents_line,
+        'lines': lines_out[:6],
+    }
+
+def notice_required_anchors(evidence):
+    """Build conservative omission checks for explicit cutoff dates/times and source conditions."""
+    cutoff = evidence.get('cutoff') or ''
+    dates = re.findall(r'(?<!\d)(?:\d{4}\s*[./-]\s*)?(\d{1,2})\s*(?:월|[./-])\s*(\d{1,2})\s*일?', cutoff)
+    if dates:
+        cutoff_day = str(int(dates[-1][1]))
+    else:
+        days = re.findall(r'(?<!\d)(\d{1,2})\s*일', cutoff)
+        cutoff_day = str(int(days[-1])) if days else None
+    variable_period = bool(evidence.get('intent') == 'application' and any(
+        re.search(r'등록횟수에\s*따라|신청\s*기간.{0,12}상이|신청기간.{0,12}다르', item)
+        for item in evidence.get('caveats', [])))
+    cutoff_times = []
+    for meridiem, hour, minute, minute_word in re.findall(
+            r'(오전|오후|아침|저녁|밤|낮)?\s*(\d{1,2})\s*(?::\s*(\d{2})|시(?:\s*(\d{1,2})\s*분)?)', cutoff):
+        hour, minute = int(hour), int(minute or minute_word or 0)
+        if meridiem and 1 <= hour <= 12:
+            if meridiem in ('오후', '저녁', '낮'):
+                hour = hour % 12 + 12
+            elif meridiem == '밤':
+                hour = 0 if hour == 12 else hour + 12
+            else:
+                hour %= 12
+        item = [hour, minute]
+        if item not in cutoff_times:
+            cutoff_times.append(item)
+    if cutoff_times and not variable_period:
+        # For an application window, the closing time is the short-script anchor.
+        cutoff_times = cutoff_times[-1:]
+    cutoff_date_parts = [(int(month), int(day)) for month, day in re.findall(
+        r'(?<!\d)(?:20\d{2}\s*(?:년|[./-])\s*)?(\d{1,2})\s*(?:월|[./-])\s*(\d{1,2})\s*일?', cutoff)]
+    range_match = re.search(r'(?<!\d)(\d{1,2})\s*월\s*(\d{1,2})\s*일?\s*[~∼〜～–—-]\s*(\d{1,2})\s*일', cutoff)
+    if range_match:
+        month, start_day, end_day = map(int, range_match.groups())
+        cutoff_date_parts = [(month, start_day), (month, end_day)]
+
+    event = evidence.get('event') or ''
+    event_days = []
+    for match in re.finditer(r'(?<!\d)(?:\d{4}\s*[./-]\s*)?(\d{1,2})\s*(?:월|[./-])\s*(\d{1,2})\s*일?', event):
+        event_days.append(str(int(match.group(2))))
+    if not event_days:
+        event_days = [str(int(day)) for day in re.findall(r'(?<!\d)(\d{1,2})\s*일', event)]
+    event_times = []
+    if evidence.get('intent') == 'event':
+        for meridiem, hour, minute, minute_word in re.findall(
+                r'(오전|오후|아침|저녁|밤|낮)?\s*(\d{1,2})\s*(?::\s*(\d{2})|시(?:\s*(\d{1,2})\s*분)?)', event):
+            hour, minute = int(hour), int(minute or minute_word or 0)
+            if meridiem and 1 <= hour <= 12:
+                hour = hour % 12 + 12 if meridiem in ('오후', '저녁', '낮') else (0 if hour == 12 else hour + 12) if meridiem == '밤' else hour % 12
+            item = [hour, minute]
+            if item not in event_times:
+                event_times.append(item)
+        event_days += [str(int(day)) for day in re.findall(r'(?<!\d)(\d{1,2})\s*(?=\s*\([^)]*[월화수목금토일]\))', event)
+                       if str(int(day)) not in event_days]
+        event_days += [str(int(day)) for day in re.findall(
+            r'(?:월\s*\d{1,2}\s*일?|(?<![:\d])\d{1,2}\s*일)\s*[~∼〜～–—-]\s*(\d{1,2})\s*일?', event)
+                       if str(int(day)) not in event_days]
+
+    audience_values = list(dict.fromkeys(evidence.get('audience_values') or []))
+    audience = audience_values[0] if len(audience_values) == 1 else ''
+    neutral_audience = (not audience or bool(re.search(
+        r'제외|포함|복수전공|부전공|타학과|및|또는|총\s*선발|최대|조건에\s*따라', audience)))
+    audience_terms = []
+    for term in re.findall(r'[가-힣A-Za-z]{2,}', audience):
+        if term in {'대상', '이용대상', '지원자격', '참가자격', '신청자격', '관련', '전공', '본교', '학생', '포함', '가능', '신청', '지원', '휴학생', '제외', '및', '또는', '검사', '인원', '대학'}:
+            continue
+        term = re.sub(r'(?:은|는|이|가|을|를|들|에|에서)$', '', term)
+        if term not in audience_terms:
+            audience_terms.append(term)
+    audience_terms = audience_terms[:2] if not neutral_audience else []
+    audience_qualifiers = ['선착순'] if re.search(r'선착순', (evidence.get('audience') or '') + ' ' + cutoff) else []
+
+    method = evidence.get('method') or ''
+    method_groups = []
+    method_routes = []
+    method_must_include = []
+    route_qualifiers = []
+    if evidence.get('intent') == 'event' and '사전등록' not in cutoff:
+        method_groups = []
+    elif (('대학 및 학과행사' in method or '대학·학과행사' in method)
+          and '공문' in method and '동아리행사' in method and '메일' in method):
+        method_routes = [['대학', '공문'], ['동아리', '메일']]
+        if '대학에서 취합' in method:
+            route_qualifiers = [['대학', '취합']]
+    elif '통합정보시스템' in method:
+        method_groups.append(['통합정보시스템', '통합정보'])
+    elif '구글폼' in method and '이메일' in method:
+        method_groups.extend([['구글폼'], ['이메일']])
+    elif '공문으로 접수' in method and '메일' in method:
+        method_groups.extend([['공문'], ['메일']])
+    elif '이메일' in method and '링크' in method and '또는' in method:
+        method_groups.append(['이메일', '링크'])
+    elif '사전등록' in method:
+        method_groups.append(['사전등록', '등록'])
+
+    if '링크' in method and '개별' in method and ('사전등록' in method or '등록방법' in method):
+        method_must_include.extend(['링크', '개별'])
+    if '이메일' in method and '링크' in method and '또는' in method:
+        method_must_include.extend(['이메일', '링크'])
+    method_must_include = list(dict.fromkeys(method_must_include))
+
+    required_caveats = []
+    for caveat in (evidence.get('caveats', []) if evidence.get('intent') != 'event' else []):
+        if '조기 종료' in caveat:
+            if ['조기 종료', '조기 마감', '조기마감'] not in required_caveats:
+                required_caveats.append(['조기 종료', '조기 마감', '조기마감'])
+        if '등록횟수에 따라' in caveat or '신청 기간' in caveat and '상이' in caveat:
+            if ['등록횟수', '등록 횟수'] not in required_caveats:
+                required_caveats.append(['등록횟수', '등록 횟수'])
+        if '모두 제출' in caveat or '양쪽' in caveat:
+            if ['모두 제출', '둘 다 제출', '모두 신청'] not in required_caveats:
+                required_caveats.append(['모두 제출', '둘 다 제출', '모두 신청'])
+        if '휴학생 제외' in caveat and not neutral_audience:
+            if ['휴학생 제외'] not in required_caveats:
+                required_caveats.append(['휴학생 제외'])
+        if '대구 청년 연구자' in caveat:
+            required_caveats.append(['대구 청년 연구자', '청년 연구자'])
+        member_share = re.search(r'팀원\s*중\s*(\d+)%', caveat)
+        if member_share:
+            amount = member_share.group(1)
+            required_caveats.append([f'팀원 중 {amount}%', f'팀원 {amount}% 이상', f'{amount}% 이상'])
+        if '석사 재학생 이상' in caveat:
+            required_caveats.append(['석사 재학생 이상', '석사 이상'])
+        if '주소지가 대구' in caveat or '대구광역시 거주' in caveat:
+            required_caveats.append(['주소지가 대구', '대구광역시 거주', '대구 거주'])
+        if '개인 신청 시' in caveat:
+            required_caveats.append(['개인 신청', '개인으로 신청'])
+        if '팀 신청 시' in caveat:
+            required_caveats.append(['팀 신청', '팀으로 신청'])
+        age_limit = re.search(r'만\s*(\d+)\s*세\s*이하', caveat)
+        if age_limit:
+            required_caveats.append([f'{age_limit.group(1)}세 이하', f'만 {age_limit.group(1)}세'])
+        company_years = re.search(r'창업\s*(\d+)\s*년\s*이내', caveat)
+        if company_years:
+            required_caveats.append([f'창업 {company_years.group(1)}년 이내'])
+        if '대표자' in caveat:
+            required_caveats.append(['대표자'])
+
+    place_terms = []
+    for term in re.findall(r'[가-힣A-Za-z0-9· ]{2,24}(?:플라자|엑스코|센터|회관)', event):
+        term = term.strip()
+        if term not in place_terms:
+            place_terms.append(term)
+
+    if variable_period and ['신청 기간 상이', '등록횟수별'] not in required_caveats:
+        required_caveats.append(['신청 기간 상이', '등록횟수별'])
+    preserve_cutoff = bool(cutoff and not variable_period and (evidence.get('intent') != 'event' or '사전등록' in cutoff))
+    free_offer = bool(re.search(r'무료', cutoff) and evidence.get('intent') == 'event')
+    submission = evidence.get('submission') or {}
+    return dict(deadline_day=cutoff_day if evidence.get('intent') != 'event' else (event_days[0] if event_days else None),
+                deadline_times=cutoff_times if evidence.get('intent') != 'event' else event_times or cutoff_times,
+                cutoff_day=cutoff_day if preserve_cutoff else None,
+                cutoff_times=cutoff_times if preserve_cutoff else [],
+                must_preserve_cutoff=preserve_cutoff,
+                audience_terms=audience_terms, neutral_audience=neutral_audience,
+                audience_qualifiers=audience_qualifiers, variable_period=variable_period,
+                cutoff_date_parts=cutoff_date_parts if variable_period else [],
+                method_groups=method_groups, method_routes=method_routes,
+                method_must_include=method_must_include, method_route_qualifiers=route_qualifiers,
+                free_offer=free_offer,
+                submission_place=submission.get('place'),
+                submission_documents=bool(evidence.get('required_documents') or submission.get('required_documents')),
+                topic=evidence.get('topic'),
+                caveat_groups=required_caveats,
+                event_days=event_days if evidence.get('intent') == 'event' else [],
+                event_times=event_times if evidence.get('intent') == 'event' else [],
+                place_terms=place_terms if evidence.get('intent') == 'event' else [],
+                intent=evidence.get('intent', 'application'))
 
 def digest(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
@@ -139,7 +527,7 @@ def weather_script(weather, config, variant=0):
 def create_segments(data, catalog, config, events, *, variant=None):
     day = date.fromisoformat(data['date'])
     # 날짜별로 말투를 바꾸되 같은 날 재실행에서는 캐시를 재사용한다.
-    variant = int(digest(data['date'])[:8], 16) % 3 if variant is None else variant % 3
+    variant = daily_variant(data['date']) if variant is None else variant % len(NOTICE_STYLES)
     segments = []
     warnings = list(data['errors'])
 
@@ -158,8 +546,8 @@ def create_segments(data, catalog, config, events, *, variant=None):
     templates = config.get('greeting_templates', [])
     greeting = templates[variant % len(templates)] if templates else None
     row = add('greeting', '아침 인사', greeting.replace('{name}님. ', '') if greeting else config['greeting'])
-    if greeting:
-        row['personal_template'] = greeting
+    # Names are displayed in the profile UI only. The briefing greeting stays on
+    # the same generated Sohee voice as every other audio segment.
     row = add('weather', '날씨와 등교 안내', weather_script(data['weather'], config, variant))
     row['constraints'] = dict(max_chars=240, feedback_only=True)
     seen = {}
@@ -223,8 +611,6 @@ def create_segments(data, catalog, config, events, *, variant=None):
                 required.append(deadline_phrase)
                 if deadline == data['date']:
                     required.append('오늘')
-            if action:
-                required.append(action)
             if not notice['body']:
                 required.append('제목만')
             reference = notice['title'] + (' ' + (action + ' ' if action else '') + deadline_phrase if deadline_phrase else '')
@@ -244,12 +630,18 @@ def create_segments(data, catalog, config, events, *, variant=None):
             terms = [t for t in re.findall(r'[가-힣A-Za-z]{2,}', notice['title']) if t not in common]
             if not deadline:
                 terms = [t for t in terms if not any(w in t for w in ('마감', '기한', '임박'))]
-            segment['constraints'] = dict(max_chars=140, one_sentence=True, topic_terms=terms,
+            segment['style_instruction'] = NOTICE_STYLES[variant]
+            segment['constraints'] = dict(sentence_count=(1, 2), topic_terms=terms,
                                           no_contacts=True, title_only=not bool(notice['body']),
                                           deadline_unverified=not bool(deadline),
                                           verified_deadline=deadline_phrase or None,
                                           verified_today=bool(deadline and deadline == data['date']),
-                                          deadline_action=action)
+                                          deadline_action=action,
+                                          required_action=bool(action and re.search(r'신청|접수|지원|등록|제출', action)))
+            evidence = notice_generation_evidence(notice.get('body') or '', notice['title'])
+            segment['fact_hints'] = notice_fact_hints(notice.get('body') or '')
+            segment['generation_evidence'] = evidence
+            segment['constraints']['required_source_facts'] = notice_required_anchors(evidence)
             segment['notice_refs'] = [ref]
             grouped[key] = notice, segment
             seen[nid] = notice, segment

@@ -232,7 +232,9 @@ def build(input_path, *, text_only=False, plan=False, output=None, cache=None, a
         total_segments = len(segments)
         segments = generate_segments(segments, slm_client or Ollama(config['slm']), cache, ROOT / 'output/review.json',
                                      progress=progress)
-        skipped_notices = [s['_skip_notice'] for s in segments if s.get('_skip_notice')]
+        skipped_notices = [row for segment in segments if segment.get('_skip_notice')
+                           for row in (segment['_skip_notice'] if isinstance(segment['_skip_notice'], list)
+                                       else [segment['_skip_notice']])]
         for skipped in skipped_notices:
             for channel_id in skipped['channel_ids']:
                 warnings.append(dict(source=channel_id, message=f"공지 요약 검수 실패로 제외됨: {skipped['title']}"))
@@ -369,7 +371,8 @@ def build(input_path, *, text_only=False, plan=False, output=None, cache=None, a
                          department_ids=c.get('required_department_ids', []), available=c['id'] in present,
                          issues=[e['message'] for e in warnings if e['source'] == c['id']]) for c in offered]
         public_segments = [{k: v for k, v in s.items() if k not in {
-            'source_text', 'reference', 'required', 'constraints', 'deadline_verification', 'notice_id', '_skip_notice'}} for s in segments]
+            'source_text', 'reference', 'required', 'constraints', 'deadline_verification', 'notice_id',
+            'fact_hints', 'generation_evidence', '_skip_notice'}} for s in segments]
         manifest = dict(schema_version=2, status=report['status'], date=data['date'], collected_at=data['collected_at'],
                         generated_at=datetime.now(SEOUL).isoformat(), mode=report['mode'],
                         voices={r: dict(name=VOICE_NAMES[r], speaker=voices[r], ready=not text_only) for r in voices},

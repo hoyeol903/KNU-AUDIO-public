@@ -6,9 +6,10 @@ import pytest
 import requests
 
 from briefing import build as b
-from briefing.content import create_segments, deadline_action, weather_script
+from briefing.content import create_segments, deadline_action, weather_script, daily_variant
 from briefing.review import review
-from briefing.slm import generate_segments, Ollama
+from briefing.slm import generate_segments, Ollama, _script_errors
+from briefing.open_tts import qwen_spoken_text
 from briefing.open_tts import Melo
 
 
@@ -56,6 +57,21 @@ def test_notice_source_and_deadline_metadata_are_preserved(data, config):
     segment = next(s for s in create_segments(data, [], config, [])[0] if s['kind'] == 'notice')
     assert segment['source_text'] == notice['title'] + '\n' + notice['body']
     assert segment['deadline_verified'] and segment['notice_id'] == notice['id']
+    assert 'max_chars' not in segment['constraints']
+    assert segment['constraints']['sentence_count'] == (1, 2)
+
+
+def test_daily_notice_style_rotates_by_date_and_is_reproducible():
+    dates = ['2026-10-07', '2026-10-08', '2026-10-09', '2026-10-10']
+    assert [daily_variant(day) for day in dates] == [2, 0, 1, 2]
+    assert daily_variant('2026-10-08') == daily_variant('2026-10-08')
+
+
+def test_spoken_date_range_is_a_clean_contiguous_korean_phrase():
+    assert qwen_spoken_text('공모 기간은 2027. 1. 4.부터 1. 11.까지예요.') == \
+        '공모 기간은 2027년 1월 4일부터 1월 11일까지예요.'
+    assert qwen_spoken_text('기간은 2027. 2. 30.부터 3. 2.까지예요.') == \
+        '기간은 2027. 2. 30.부터 3. 2.까지예요.'
 
 
 def test_review_normalizes_numeric_date_time_and_amount_values():
@@ -163,30 +179,46 @@ def test_rule_checks_numbers_not_full_semantics():
     assert not review('10월 5일이 아니라 10월 5일입니다.', segment)
 
 
-def test_second_draft_is_accepted_without_rechecking(tmp_path):
+def test_unsafe_notice_revision_is_skipped_instead_of_published_unchecked(tmp_path):
     broken=Mock(); broken.identity.return_value='broken'
     broken.generate.side_effect = lambda payload, errors: ('없는 이야기 999999' if payload['kind'] == 'notice' else '오늘의 안내입니다.')
     report = b.build(b.ROOT/'data/raw/2026-10-03/items.json', allow_archive=True, text_only=True,
                      output=tmp_path/'out', cache=tmp_path/'cache', slm_client=broken)
-    assert not report['skipped_notices']
+    assert report['skipped_notices']
     manifest = json.loads((tmp_path/'out/manifest.json').read_text())
     notices = [s for s in manifest['segments'] if s['kind'] == 'notice']
-    assert notices
-    assert all(s['script'] == '없는 이야기 999999' and s['review']['status'] == 'revision-unchecked' for s in notices)
+    assert not notices
+    assert all(s['kind'] != 'notice' or s.get('review', {}).get('status') != 'revision-unchecked'
+               for s in manifest['segments'])
 
 
 def test_corrections_and_cache_are_rechecked(tmp_path):
     segment=dict(id='one', kind='notice', title='공지', generation='slm', source_text='5일 마감',
                  reference='5일 마감', channel_ids=['c'], url='https://example.org/1', notice_id='n1')
     provider=Mock(); provider.identity.return_value='digest'
-    provider.generate.side_effect=['6일 마감','5일 마감입니다.']
+    provider.generate.side_effect=['6일 마감','5일까지 신청해요.']
     generate_segments([segment], provider, tmp_path, tmp_path/'report.json')
     assert provider.generate.call_count == 2
     path=next((tmp_path/'scripts').glob('*.json'))
     path.write_text(json.dumps({'script':'9일 마감'}))
-    provider.generate.side_effect=None; provider.generate.return_value='5일 마감입니다.'
+    provider.generate.side_effect=None; provider.generate.return_value='5일까지 신청해요.'
     generate_segments([segment], provider, tmp_path, tmp_path/'report.json')
     assert provider.generate.call_count == 3
+
+
+def test_notice_gate_checks_topic_and_every_sentence_ending_without_fixed_char_cap():
+    segment = dict(kind='notice', title='로봇산업전 사전등록 안내', source_text='로봇산업전 안내',
+                   reference='로봇산업전 사전등록 안내', required=[],
+                   constraints=dict(sentence_count=(1, 2), topic_terms=['로봇산업전']))
+    assert not _script_errors('로봇산업전 사전등록을 안내해요.', segment)
+    assert _script_errors('로봇산업전 사전등록을 안내합니다.', segment)
+    assert _script_errors('로봇산업전 안내예요. 자세한 내용은 확인 바랍니다.', segment)
+    segment['source_text'] = 'AI'
+    segment['title'] = '안내'
+    segment['constraints']['topic_terms'] = []
+    long_spoken = 'AI' + '가' * 80 + ' 안내해요.'
+    assert sum(not c.isspace() for c in long_spoken) > 50
+    assert not _script_errors(long_spoken, segment)
 
 
 def test_ollama_payload_and_truncated_output():

@@ -17,15 +17,15 @@ def test_failed_attempts_keep_redacted_drafts_only_in_private_report(tmp_path):
     generate_segments([segment], Provider(), tmp_path, report_path)
     report = json.loads(report_path.read_text())
     attempts = report['segments'][0]['attempts']
-    assert len(attempts) == 1
+    assert len(attempts) == 3
+    assert attempts[-1]['attempt'] == 'source_fallback'
     assert attempts[0]['script'].count('[개인정보 가림]') == 3
     assert any(f['rule'] == 'number' and f['match'] == '999' for f in attempts[0]['findings'])
     for raw in ('person@example.edu', '010-1234-5678', '20261234'):
         assert raw not in report_path.read_text()
-    assert '_skip_notice' not in segment
-    assert segment['review']['status'] == 'revision-unchecked'
-    assert segment['review']['passed'] is None
-    assert list((tmp_path / 'scripts').glob('*.json'))
+    assert segment.get('_skip_notice')
+    assert 'review' not in segment
+    assert not list((tmp_path / 'scripts').glob('*.json'))
 
 
 def test_diagnostic_redaction_handles_invalid_and_overlapping_identifiers():
@@ -73,7 +73,7 @@ def test_retry_receives_masked_first_draft_and_source_evidence(tmp_path):
     assert '[개인정보 가림]' not in calls[0]['source_text']
     assert calls[1]['revision']['previous_script'] == '검사는 저녁 8시에 끝나요.'
     assert calls[1]['revision']['issues'][0]['source_quotes'] == ['검사 일시: 19:00~19:50']
-    assert row['review']['status'] == 'revision-unchecked'
+    assert row['review']['status'] == 'passed'
 
 
 def test_saved_five_failures_keep_real_errors_and_remove_known_false_positives():
@@ -91,7 +91,7 @@ def test_redaction_markers_are_not_spoken():
     assert review('문의는 [개인정보 가림]입니다.', dict(source_text='문의처', reference=''))
 
 
-def test_retry_and_its_cache_skip_second_review(tmp_path, monkeypatch):
+def test_notice_retry_is_rechecked_and_invalid_result_is_not_cached(tmp_path, monkeypatch):
     from unittest.mock import Mock
     import briefing.slm as slm
     checker = Mock(return_value=['원문 자료에 없는 숫자 값이 있습니다.'])
@@ -102,11 +102,10 @@ def test_retry_and_its_cache_skip_second_review(tmp_path, monkeypatch):
     row = dict(id='one', kind='notice', generation='slm', title='비용',
                source_text='100원', reference='')
     generate_segments([row], provider, tmp_path, tmp_path/'review.json')
-    assert checker.call_count == 1
-    assert row['script'] == '888원입니다.'
-    assert row['review']['passed'] is None
-    generate_segments([row], provider, tmp_path, tmp_path/'review.json')
-    assert checker.call_count == 1 and provider.generate.call_count == 2
+    assert checker.call_count == 2
+    assert row.get('_skip_notice')
+    assert provider.generate.call_count == 2
+    assert not list((tmp_path/'scripts').glob('*.json'))
 
 
 def test_empty_second_draft_still_fails(tmp_path):

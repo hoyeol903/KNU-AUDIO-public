@@ -19,10 +19,14 @@ const c = vm.createContext({console, A:audio, P:{ch:0,chT:0,gen:0,playing:false,
   audioUrl:x=>x, startBgm(){}, stopBgm(){}, toastMsg(){}, render(){},
   paintProgress(){painted.push(c.sentAt(c.CH[c.P.ch],c.P.chT));}});
 vm.runInContext(helpers, c);vm.runInContext(engine, c);
-const greeting={s:'안녕하세요, 정원님. 좋은 아침이에요! 소식을 전해요.',baseScript:'안녕하세요. 좋은 아침이에요! 소식을 전해요.',personalGreeting:true,audio:'greeting.mp3',est:8,cues:[]};
+const greeting={s:'안녕하세요. 좋은 아침이에요! 소식을 전해요.',personal_template:'안녕하세요, {name}님.',audio:'greeting.mp3',est:8,cues:[]};
 c.CH=[greeting];c.play(0);
+assert.equal(c.mode(),'audio');
+assert.equal(queue.length,0); // Legacy personal_template is ignored; the recorded Sohee greeting plays.
+assert.equal(c.chatText(greeting),greeting.s);
+greeting.audio=null;c.P.playing=false;c.P.fallback=false;c.play(0);
 assert.equal(c.mode(),'tts');
-assert.equal(queue[0].text,'안녕하세요, 정원님.');
+assert.equal(queue[0].text,'안녕하세요.');
 now=500;tick();assert.equal(c.P.chT,0); // Waiting for the device must not advance the chat.
 queue[0].onstart();
 now=2200;tick();assert.equal(c.sentAt(greeting,c.P.chT),0); // Length/time estimates cannot select the next sentence.
@@ -31,10 +35,10 @@ const stale=queue[1];
 c.pause();c.play();assert.equal(queue[0].text,'좋은 아침이에요!'); // Resume from the active sentence.
 c.seekTo(0,c.sentStart(greeting,2)+0.01);assert.equal(queue[0].text,'소식을 전해요.'); // Seeking is independent of the previously active sentence.
 const before=c.P.chT;stale.onstart();assert.equal(c.P.chT,before); // Cancelled utterance callbacks cannot change playback.
-queue[0].onerror();assert.equal(c.mode(),'audio');
-assert.equal(c.chatCues(greeting)[0].text,greeting.baseScript); // Audio fallback never shows a name it does not speak.
-c.voiceKo=null;c.P.fallback=false;assert.equal(c.chatText(greeting),greeting.baseScript);
-c.play(0);c.voiceKo={lang:'ko-KR'};assert.equal(c.mode(),'audio');assert.equal(c.chatText(greeting),greeting.baseScript); // A late voiceschanged event cannot switch a playing MP3 into TTS.
+queue[0].onerror();assert.equal(c.mode(),'timer');
+assert.equal(c.chatCues(greeting)[0].text,'안녕하세요.');
+c.voiceKo=null;c.P.fallback=false;assert.equal(c.chatText(greeting),greeting.s);
+greeting.audio='greeting.mp3';c.play(0);c.voiceKo={lang:'ko-KR'};assert.equal(c.mode(),'audio');assert.equal(c.chatText(greeting),greeting.s); // Legacy personal text never replaces recorded audio.
 const recording={s:'아주 긴 첫 문장이에요. 짧아요.',audio:'news.mp3',est:12,cues:[
   {text:'아주 긴 첫 문장이에요.',start_sec:0,end_sec:2},
   {text:'짧아요.',start_sec:2,end_sec:12}]};
@@ -44,5 +48,4 @@ audio.currentTime=2.01;audio.events.timeupdate();assert.equal(c.P.chT,2.01);asse
 assert.equal(c.sentStart(recording,1),2);
 recording.cues[1].text='다른 대본';assert.equal(c.chatCues(recording).length,1); // Reject stale cue text.
 recording.cues=[];assert.equal(c.chatCues(recording).length,1); // Legacy MP3s do not invent sentence timestamps.
-c.CH=[{s:'첫 문장. 둘째 문장.',est:10}];c.P.fallback=false;c.play(0);now+=2600;tick();assert.equal(c.mode(),'timer'); // A device that never starts must exit TTS mode.
 console.log('Briefing chat synchronization checks passed');
