@@ -837,7 +837,7 @@ function chapters(W){
     var rows = individual.length ? individual.filter(function(s){ return (s.channel_ids || []).indexOf(b.id) >= 0; }) : seg[b.id] ? [seg[b.id]] : [];
     rows.forEach(function(s){ var id = s.kind === 'notice' ? s.id : b.id; if (!used[id]) { used[id] = true; news.push(id); } });
   });
-  var ids = ['greeting', 'intro'].concat(news.length ? news : ['empty'], W.cafes.map(function(x){ return x.c.id; }), ['outro']);
+  var ids = ['greeting', 'intro'].concat(news, W.cafes.map(function(x){ return x.c.id; }), ['outro']);
   return ids.filter(function(id){ return seg[id]; }).map(function(id){
     var s = seg[id], b = W.boards.filter(function(x){ return x.id === id; })[0];
     var sec = s.duration > 0 ? s.duration : s.duration_sec;
