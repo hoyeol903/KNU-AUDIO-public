@@ -1,5 +1,0 @@
-{$KNUA_API_DOMAIN} {
-  reverse_proxy api:8080 {
-    header_up X-Knua-Client-IP {http.request.remote.host}
-  }
-}
