@@ -20,16 +20,27 @@
 | `GET /meetings?category=study&mine=1` | 작성자 자신의 글, 마감 포함 |
 | `GET /meetings?cursor=<created_at:id>` | 다음 페이지 |
 | `POST /meetings` | UUID로 멱등 등록, 동일 요청 재시도 시 중복 없음 |
-| `GET /meetings/:id` | 상세 |
+| `GET /meetings/:id` | 상세. 신청자가 열면 `myApplication`(상태·사유)을 함께 주고 결과 알림을 읽음 처리 |
 | `PUT /meetings/:id` | 작성자만 수정·마감 상태 변경 |
 | `DELETE /meetings/:id` | 작성자만 삭제, 신청 삭제 |
-| `POST /meetings/:id/applications` | 신청·신청 내용 수정 |
-| `GET /meetings/:id/applications` | 모집자만 신청 내역 조회 |
+| `POST /meetings/:id/applications` | 신청·신청 내용 수정. 다시 보내면 대기 상태로 돌아가고 모집자에게 새 신청 알림 |
+| `GET /meetings/:id/applications` | 모집자만 신청 내역 조회(상태·사유·`ref` 포함). 이 글의 새 신청 알림을 읽음 처리 |
+| `PUT /meetings/:id/applications/:ref` | 모집자만 `status`(accepted/rejected)와 `reason`(선택, 300자)으로 수락·거절. 신청자에게 결과 알림 |
+| `GET /applications` | 내가 신청한 글과 대기·수락·거절 상태, 사유 |
+| `GET /notifications` | 확인하지 않은 알림: 모집자는 새 신청, 신청자는 수락·거절 결과 |
+| `POST /notifications/read` | `before`(밀리초) 시점까지의 알림을 읽음 처리 |
 | `DELETE /meetings/:id/applications` | 자신의 신청 취소 |
 
-등록 필수: category, title(60자), intro(2,000자), when(100자), contact(500자). 스터디는 goal, 소모임은 activity, 둘 다 capacity(정수 2~100). 과팅은 team(m/f), size(2:2/3:3/4:4). 선택: where, requirements, cost, want, dept, college. contact는 `https://instagram.com/...`, `https://www.instagram.com/...`, `https://open.kakao.com/...`만 허용한다. HTML은 화면에서 escape하며 인스타/카카오 외부 링크는 새 창과 noopener/noreferrer를 사용한다. 요청 본문 상한 16KB, 브라우저 응답 대기 15초. 실패 시 입력을 유지하고 성공 메시지를 띄우지 않는다.
+등록 필수: category, title(60자), intro(2,000자), when(100자). contact(500자)는 선택이며 적었다면 인스타그램·오픈카톡 https 링크여야 한다. 스터디는 goal, 소모임은 activity, 둘 다 capacity(정수 2~100). 과팅은 team(m/f), size(2:2/3:3/4:4). 선택: where, requirements, cost, want, dept, college. contact는 `https://instagram.com/...`, `https://www.instagram.com/...`, `https://open.kakao.com/...`만 허용한다. HTML은 화면에서 escape하며 인스타/카카오 외부 링크는 새 창과 noopener/noreferrer를 사용한다. 요청 본문 상한 16KB, 브라우저 응답 대기 15초. 실패 시 입력을 유지하고 성공 메시지를 띄우지 않는다.
 
 등록 한도는 작성자 하루 20개, IP 하루 100개. 신청·수정은 작성자 하루 100회, IP 하루 500회. 공유 IP의 한도는 여러 사용자가 합산한다. DB 카운터는 하루별로 초기화하고 오래된 키를 정리한다. 분류·날짜·작성자 인덱스와 커서 페이지 이동을 사용한다. 비용·접근 권한 경계의 기본 방어이며 학교 인증·신고/차단·자동 스팸 판별을 포함하지 않는다.
+
+## 수락·거절과 앱 안 알림
+
+- 모집자는 신청 내역에서 신청마다 수락·거절을 고르고 사유(선택)를 남긴다. 결정은 나중에 바꿀 수 있다. 모집자에게는 신청자 토큰 해시 대신 글마다 다른 32자 `ref`만 준다.
+- 신청자는 상세 화면의 '내 신청'과 교류의 '알림 · 내 신청' 화면에서 대기·수락·거절 상태와 사유를 본다. 거절되면 다시 신청할 수 있다.
+- 알림은 휴대폰 푸시가 아니라 앱 안 알림이다. 교류를 써 본 브라우저(토큰이 있는 경우)만 앱을 열 때, 앱으로 돌아올 때, 열어 둔 동안 1분마다 `GET /notifications`를 확인한다. 새 알림은 교류 탭 숫자 배지와 안내 문구로 보여 주고, '알림 · 내 신청' 화면을 열면 읽음 처리한다.
+- DB 변경은 `migrations/0002_application_decisions.sql`이다. 서버를 배포하기 전에 먼저 적용해야 한다(아래 배포 순서 참고). 이전 신청은 새 알림으로 띄우지 않는다.
 
 ## GitHub Pages와 공유 API 연결
 
@@ -64,6 +75,8 @@ cp community/wrangler.example.toml community/wrangler.local.toml
 # 실제 database_id와 필요한 경우 account_id를 local 설정에 입력한다.
 npx wrangler@4 d1 migrations apply COMMUNITY_DB --remote --config community/wrangler.local.toml
 npx wrangler@4 deploy --config community/wrangler.local.toml
+# DB 변경이 추가되면 배포 전에 다시 적용한다(이미 적용한 파일은 건너뛴다).
+# npx wrangler@4 d1 migrations apply COMMUNITY_DB --remote --config community/wrangler.local.toml
 ```
 
 `wrangler.local.toml`은 커밋하지 않는다. 배포 결과의 workers.dev 주소에 `/api/community/`를 붙여 홈페이지의 `window.KNUA_COMMUNITY_API_BASE`에 설정한다. 백엔드는 `COMMUNITY_ALLOWED_ORIGINS=https://hoyeol903.github.io`로 브라우저 요청을 허용한다. API가 실제 배포되지 않았거나 이메일 인증이 끝나지 않았으면 홈페이지를 연결 완료로 표시하지 않는다. API 토큰은 HTML에 넣지 않는다.
