@@ -3,3 +3,4 @@ beautifulsoup4
 pydantic
 pyyaml
 pytest
+mutagen>=1.47,<2
