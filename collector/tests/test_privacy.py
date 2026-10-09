@@ -53,3 +53,10 @@ def test_names_only_roster_is_masked_with_notice_context():
     result = redact(notice)
     assert '가나별' not in result['body'] and '다라별' not in result['body']
     assert '2026-10-15 14:00' in result['body']
+
+
+def test_free_mail_is_masked_but_official_addresses_stay():
+    output=redact_text('문의 gildong99@naver.com, Gildong@Gmail.com 또는 office@knu.ac.kr, englishknu@naver.comhttps://knu.ac.kr')
+    assert 'gildong' not in output.lower() and output.count('[개인정보 가림]')==2
+    assert 'office@knu.ac.kr' in output and 'englishknu@naver.comhttps://knu.ac.kr' in output
+

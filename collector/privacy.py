@@ -9,7 +9,25 @@ TAGS = r'(?:\s|<[^>]*>)*'
 STUDENT = re.compile(r'(학\s*번' + TAGS + r'[:：]?' + TAGS + r')(\d{8,12})(?!\d)')
 NAME = re.compile(r'성\s*명' + TAGS + r'[:：]' + TAGS + r'([가-힣]{2,5})')
 MOBILE = re.compile(r'(?<!\d)010[- .]?\d{4}[- .]?\d{4}(?!\d)')
+# 무료 메일 주소는 개인 주소로 보고 가린다. 학교·기관 도메인(knu.ac.kr 등)은 공식 연락처로 유지한다.
+EMAIL = re.compile(r'[A-Za-z0-9._%+-]+@(?:gmail|naver|daum|hanmail|kakao|nate|hotmail|outlook|yahoo|icloud|live|msn)'
+                   r'\.(?:com|net|co\.kr)', re.I)
+# 사람이 원문을 확인한 부서·학회·기관 접수용 무료 메일. 새 주소는 확인 전까지 가려진다.
+OFFICIAL_EMAILS = frozenset((
+    '2015censuskr@gmail.com', 'ackorea2004@gmail.com', 'cg-welfare@naver.com', 'chungdong2015@naver.com',
+    'counsel2016@naver.com', 'cpteam2015@naver.com', 'dgwmaic@naver.com', 'englishknu@naver.com',
+    'fablab-seoul@naver.com', 'iaes2020@hotmail.com', 'intl.ecoschool@gmail.com', 'jbnuiidc@gmail.com',
+    'kmahwarangdae@gmail.com', 'kmcyouth4148@daum.net', 'knu-kinder@naver.com', 'knu-sw@naver.com',
+    'knu.iwc@gmail.com', 'knuartmuseum@gmail.com', 'knuexchangeapply@naver.com', 'knufeedback@gmail.com',
+    'knumobility@gmail.com', 'knupsy209@gmail.com', 'kowinner_korea@naver.com',
+    'kpsa.electionprogram@gmail.com', 'kukmoon@hanmail.net', 'kwms2004@gmail.com', 'oesolhoe@hanmail.net',
+    'pasyouth@hanmail.net', 'skheinstein@naver.com', 'spacehackathon2026@gmail.com', 'surimfd@naver.com',
+))
 RESIDENT = re.compile(r'(주민\s*등록\s*번호' + TAGS + r'[:：]?' + TAGS + r')\d{6}[- ]?[1-4]\d{6}(?!\d)')
+
+
+def redact_email(text):
+    return EMAIL.sub(lambda m: m[0] if m[0].lower() in OFFICIAL_EMAILS else MASK, text)
 
 
 def redact_text(text):
@@ -28,7 +46,7 @@ def redact_text(text):
     text = STUDENT.sub(lambda m: m[1] + MASK, text)
     text = RESIDENT.sub(lambda m: m[1] + MASK, text)
     text = PASSWORD.sub(lambda m: m[1] + MASK, text)
-    return MOBILE.sub(MASK, text)
+    return redact_email(MOBILE.sub(MASK, text))
 
 
 def redact(value):
