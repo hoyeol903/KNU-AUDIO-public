@@ -15,15 +15,15 @@ function setup({coarse = true, keyboard = 300} = {}) {
   return {c, scr, field, focus(el) { c.document.activeElement = el; listeners.focusin({target: el}); },
           openKeyboard() { c.window.visualViewport.height = 800 - keyboard; vvListeners.resize(); }};
 }
-const center = (s, el, visible) => el.getBoundingClientRect().top + 26 - visible / 2;
+const fromTop = el => el.getBoundingClientRect().top;
 
-test('자판이 올라오면 이름·학과 칸이 보이는 영역 가운데로 온다', () => {
+test('이름·학과 칸을 누르면 보이는 영역 위에서 90px 아래로 온다', () => {
   for (const id of ['inName', 'inDept']) {
     const s = setup(), el = s.field(id);
     s.focus(el);
-    assert.equal(center(s, el, 800), 0); // 자판이 뜨기 전에도 화면 가운데
+    assert.equal(fromTop(el), 90); // 라벨이 보이도록 위에 여백을 둔다
     s.openKeyboard();
-    assert.equal(center(s, el, 500), 0); // 자판에 가려지지 않는 500px의 가운데
+    assert.equal(fromTop(el), 90); // 자판이 올라와도 같은 자리
     assert.equal(s.scr.style.paddingBottom, '440px'); // 가려진 300px만큼 더 내릴 수 있게 여백을 늘린다
   }
 });

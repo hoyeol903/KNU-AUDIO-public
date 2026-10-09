@@ -1264,14 +1264,14 @@ function vStart(){
     '</div></div><div class="bottom-bar"><button class="btn-pri" data-act="startNext"' + (ok ? '' : ' disabled') + '>다음</button></div>';
 }
 
-/* 휴대폰에서 자판이 올라와도 누른 입력칸(이름·학과)이 보이는 영역 가운데에 오게 한다.
+/* 휴대폰에서 자판이 올라와도 누른 입력칸(이름·학과)이 보이는 영역 위쪽에 오게 한다. 라벨이 함께 보이도록 위에서 90px 아래에 둔다.
    자판은 화면을 덮기만 하고 높이를 줄이지 않으므로, 가려진 만큼 아래 여백을 늘린 뒤 스크롤한다. */
 function centerStartField(el){
   var sc = el.closest('.scr'); if (!sc || !window.matchMedia('(pointer:coarse)').matches) return;
   var vv = window.visualViewport, top = vv ? vv.offsetTop : 0, height = vv ? vv.height : window.innerHeight;
   sc.style.paddingBottom = (140 + Math.max(0, window.innerHeight - height)) + 'px';
   var r = el.getBoundingClientRect();
-  sc.scrollTop += r.top + r.height / 2 - (top + height / 2);
+  sc.scrollTop += r.top - (top + 90);
 }
 function centerFocusedStartField(){ var a = document.activeElement; if (a && (a.id === 'inName' || a.id === 'inDept')) centerStartField(a); }
 /* 자판은 누른 뒤 조금 있다가 올라온다. 바로 한 번, 올라온 뒤(크기 변화·잠시 후) 다시 맞춘다. */
