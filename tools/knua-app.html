@@ -982,10 +982,12 @@ function seekTo(ch, t){
   media(); render(false);
 }
 /* 다른 구간 파일로 옮길 때는 파일 길이를 안 뒤에야 위치를 바꿀 수 있다. */
-function applyPend(){ if (P.pend == null || A.readyState < 2 || !A.seekable.length) return; try { A.currentTime = P.pend; P.pend = null; } catch (e) {} }
+function applyPend(){ if (P.pend == null || A.readyState < 2 || !A.seekable.length || A.seekable.end(A.seekable.length - 1) < Math.min(P.pend, A.duration)) return; try { A.currentTime = P.pend; P.pend = null; } catch (e) {} }
 A.addEventListener('loadedmetadata', applyPend);
 A.addEventListener('loadeddata', applyPend);
 A.addEventListener('canplay', applyPend);
+A.addEventListener('canplaythrough', applyPend);
+A.addEventListener('progress', applyPend);
 function audioProgress(){ if (CH[P.ch] && mode() === 'audio' && P.pend == null) { P.chT = Math.min(A.currentTime, CH[P.ch].est); paintProgress(); } }
 A.addEventListener('timeupdate', audioProgress);
 A.addEventListener('seeked', audioProgress);

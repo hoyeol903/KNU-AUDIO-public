@@ -3,7 +3,7 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 class Audio {
   static count = 0;
-  constructor(){Audio.count++; this.attrs={};this.events={};this.currentTime=12;this.readyState=2;this.seekable={length:1};this.paused=true;}
+  constructor(){Audio.count++; this.attrs={};this.events={};this.currentTime=12;this.readyState=2;this.seekable={length:1,end(){return 60;}};this.duration=60;this.paused=true;}
   getAttribute(k){return this.attrs[k];} setAttribute(k,v){this.attrs[k]=v;}
   addEventListener(k,v){this.events[k]=v;} pause(){this.paused=true;}
   load(){this.readyState=0;this.currentTime=0;}
