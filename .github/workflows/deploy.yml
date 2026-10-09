@@ -32,7 +32,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
       # 새 화면과 그 자료만 올린다. 이전 시험 화면(legacy.html, data.json, details/)은 올리지 않는다.
       - name: 올릴 파일 모으기
-        run: mkdir -p site && cp output/app/index.html site/ && cp -R output/app/data site/data
+        run: mkdir -p site && cp output/app/index.html output/app/privacy.html site/ && cp -R output/app/data site/data
       - name: 배포용 하루 배경음악 선택
         run: python3 -m tools.daily_bgm --output site/data/bgm
       - uses: actions/configure-pages@v5
