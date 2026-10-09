@@ -98,7 +98,7 @@ def prepare_kernel(root, day, run_id, attempt, github_sha, username, kernel_dir,
         id=context['kernel_id'], title=f"KNU Audio Briefing {run_id}-{attempt}" + (f" B{batch}" if batch is not None else ""),
         code_file='run.py', language='python', kernel_type='script',
         is_private=True, enable_gpu=True, enable_internet=True,
-        machine_shape='NvidiaTeslaT4', dataset_sources=[context['username'] + '/' + DATASET_SLUG], competition_sources=[],
+        machine_shape='NvidiaTeslaT4', dataset_sources=[(os.environ.get('KAGGLE_MODEL_OWNER') or context['username']).lower() + '/' + DATASET_SLUG], competition_sources=[],
         kernel_sources=[resume_kernel] if resume_kernel else [], model_sources=[])
     (kernel_dir / 'kernel-metadata.json').write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
