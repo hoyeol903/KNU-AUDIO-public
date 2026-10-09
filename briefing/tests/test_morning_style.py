@@ -44,11 +44,11 @@ def test_three_preview_styles_keep_truth_and_do_not_call_tts(tmp_path):
     greetings, endings = set(), set()
     for draft in result['samples']:
         rows = draft['segments']
-        assert rows[0]['script'].startswith('안녕하세요, 김경민님. 좋은 아침이에요!')
+        assert rows[0]['script'] == config['greeting']
         assert '{name}' not in draft['script']
         assert '함께해 주셔서 고마워' not in draft['script']
         greetings.add(rows[0]['script']); endings.add(rows[-1]['script'])
-    assert len(greetings) == 3
+    assert greetings == {config['greeting']}
     assert endings == {'오늘도 좋은 하루 보내세요!'}
     # 운영 생성은 같은 날 같은 변형으로 캐시를 재사용한다.
     first = create_segments(data, [], config, [])[0]

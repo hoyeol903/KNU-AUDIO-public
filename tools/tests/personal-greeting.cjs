@@ -19,7 +19,7 @@ function setup(korean = true) {
     SpeechSynthesisUtterance:function(text){this.text=text;}, performance:{now:()=>1000},
     setTimeout(){}, setInterval(fn){context.tick=fn;}, navigator:{}, render(){}, media(){}, paintProgress(){}, toastMsg(){},
     store:{name:'김경민'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false,playToken:0}, BGM_TRACK:null, BRIEF_OLD:false,
-    BRIEF:{segments:[{id:'greeting',script:'안녕하세요.',personal_template:'안녕하세요, {name}님. 좋은 아침이에요!',audio:'hello.mp3',duration_sec:2},
+    BRIEF:{segments:[{id:'greeting',script:'안녕하세요. 좋은 아침이에요!',personal_template:'안녕하세요, {name}님. 좋은 아침이에요!',audio:'hello.mp3',duration_sec:2},
       {id:'intro',script:'겉옷을 챙겨 주세요.',audio:'weather.mp3',duration_sec:3},
       {id:'outro',script:'힘내세요.',audio:'bye.mp3',duration_sec:2}]}};
   vm.createContext(context);vm.runInContext(chapters,context);
@@ -28,12 +28,12 @@ function setup(korean = true) {
 }
 {
  const {context:c,spoken,audio}=setup();
- assert.equal(c.CH[0].s,'안녕하세요, 김경민님. 좋은 아침이에요!');
+ assert.equal(c.CH[0].s,'안녕하세요. 좋은 아침이에요!');
+ assert.equal(c.CH[0].personalGreeting,undefined);
  assert.equal(c.CH.length,3);c.play(0);
- assert.equal(c.mode(),'tts');assert.equal(audio.playCount,0);
- assert.equal(spoken[0].text,'안녕하세요, 김경민님.');
- spoken[spoken.length-1].onend();
- assert.equal(c.P.ch,1);assert.equal(c.mode(),'audio');assert.equal(audio.playCount,1);
+ assert.equal(c.mode(),'audio');assert.equal(audio.playCount,1);
+ assert.equal(audio.src,'data/briefing/hello.mp3');
+ assert.equal(spoken.length,0); // 저장 이름이나 예전 template으로 기기 음성을 부르지 않는다
 }
 {
  const {context:c,audio}=setup(false);c.play(0);
@@ -41,13 +41,9 @@ function setup(korean = true) {
  assert.equal(audio.playCount,1);
 }
 {
- const {context:c,spoken}=setup();c.play(0);const end=spoken[spoken.length-1].onend;
- c.pause();end();assert.equal(c.P.ch,0);assert.equal(c.P.playing,false);
- c.play();assert.equal(c.mode(),'tts');
- c.S.voice=false;c.startChapter(true);assert.equal(c.A.muted,true);assert.equal(c.A.playCount,1);
+ const {context:c}=setup();c.play(0);
+ c.pause();assert.equal(c.P.ch,0);assert.equal(c.P.playing,false);
+ c.play();assert.equal(c.mode(),'audio');
+ c.S.voice=false;c.startChapter(true);assert.equal(c.A.muted,true);
 }
-{
- const {context:c,audio}=setup();c.play(0);c.P.voiceOk=false;c.P.speakAt=-5000;c.tick();
- assert.equal(c.mode(),'audio');assert.equal(audio.playCount,1);assert.equal(c.P.ch,0);
-}
-console.log('이름 인사·기본 음성 대체·일시정지·무음·다음 구간 연결: 통과');
+console.log('고정 생성 인사·예전 이름 template 무시·일시정지·무음: 통과');
