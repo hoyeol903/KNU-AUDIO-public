@@ -183,7 +183,8 @@ def prepare_bgm(config):
 
 
 def build(input_path, *, text_only=False, plan=False, output=None, cache=None, allow_archive=False,
-          client=None, slm_client=None, progress=None, audio_batch_size=None, failed_audio=None):
+          client=None, slm_client=None, progress=None, audio_batch_size=None, audio_batch_seconds=None,
+          failed_audio=None):
     if progress:
         progress.update('build', 'started', 'initialize')
     config = read_yaml(ROOT / 'config/briefing.yaml')
@@ -269,8 +270,12 @@ def build(input_path, *, text_only=False, plan=False, output=None, cache=None, a
                     raise
                 if progress:
                     progress.update('voice-check', 'completed', role, index, len(voices))
+            audio_started = time.monotonic()
             for index, identity in enumerate(missing, 1):
-                if audio_batch_size is not None and index > audio_batch_size:
+                # 시간 기준 묶음은 한 개 이상 만든 뒤에만 끊어, 느린 음성 하나로 진행이 멈추지 않게 한다.
+                if (audio_batch_size is not None and index > audio_batch_size
+                        or audio_batch_seconds is not None and index > 1
+                        and time.monotonic() - audio_started >= audio_batch_seconds):
                     raise AudioBatchComplete()
                 job = jobs[identity]
                 unit = f'{index}/{len(missing)}:{identity[0]}'
