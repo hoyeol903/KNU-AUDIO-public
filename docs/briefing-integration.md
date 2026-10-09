@@ -40,7 +40,7 @@ Qwen3-TTS 1.7B CustomVoice의 Sohee 화자를 사용하고, 설정의 여성 화
 
 ## 배경음악과 라이선스
 
-Pages 배포는 `tools.daily_bgm`이 Incompetech CC BY 4.0 카탈로그에서 하루 한 곡을 선택해 앱 데이터에 넣는다. 현재 원본 30곡과 크레딧 목록은 [하루 배경음악](daily-bgm.md) 및 `assets/bgm/catalog.json`을 참고한다. 이전 staging 경로에 남아 있는 음악 파일은 별도 공개 준비 검토 대상이며, 현재 앱에 쓰는 30곡의 라이선스와 혼동하지 않는다.
+Pages 배포는 `tools.daily_bgm`으로 비공개 YouTube 원곡을 하루 한 곡 선택해 브리핑 음성과 혼합한다. 공개 결과에는 혼합본만 포함한다. 곡 30개의 조건과 운영 설정은 [하루 배경음악](daily-bgm.md)을 참고한다.
 
 ## 확인 및 한계
 

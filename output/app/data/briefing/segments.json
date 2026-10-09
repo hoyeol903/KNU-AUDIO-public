@@ -1,8 +1,24 @@
 {
+  "bgm": {
+    "artist": "TrackTribe",
+    "attribution": "저작자 표시 필요 없음",
+    "audio": null,
+    "changes": "크누아 브리핑 음성과 혼합 · 음악 음량 10%",
+    "date": "2026-10-09",
+    "license": "YouTube 오디오 보관함 라이선스",
+    "license_url": "https://support.google.com/youtube/answer/3376882?hl=ko",
+    "mode": "mixed",
+    "source_url": "https://www.youtube.com/audiolibrary",
+    "status": "ready",
+    "title": "Busy City",
+    "track_id": "yt-17",
+    "volume": 0.1
+  },
   "date": "2026-10-09",
   "segments": [
     {
       "audio": "9edb320f4d39377a078ea56d9e75cd24e9708e39f3a3958010147d0d5a697a83.mp3",
+      "audio_bgm": "mix-c0e1a07d77330b22499c5eab184adb58ac4823fa91f0015eca7d204d38940850.mp3",
       "channel_id": "greeting",
       "cues": [
         {
@@ -20,6 +36,7 @@
     },
     {
       "audio": "51007df75a253a239857cf40cd8f0d3c904e5472e199b5ef4d1e7e96e786871a.mp3",
+      "audio_bgm": "mix-9fd73af69240155a8409619a8af05835cf019ac26683073b0b5d17a8d9fc2a96.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -45,6 +62,7 @@
     },
     {
       "audio": "47bc598811b520604b677631b5e00e1fa81b3971657ad07dab4926c81d3dfa29.mp3",
+      "audio_bgm": "mix-437610ff2ac03a3e11f7c009aceb0d2e89d209f60d8e5683733e4a25f9a64971.mp3",
       "channel_id": "28e140eb8bb646d858044ec0",
       "channel_ids": [
         "notice-04f9a84e582c"
@@ -86,6 +104,7 @@
     },
     {
       "audio": "36a3687112456d1ebfa3ff05b2de7c687e7395f1f2bbe8e5834f9784450e2a95.mp3",
+      "audio_bgm": "mix-349f5c836863be88b48f8283cf1dd4b5e7258a8053fa352801e3e200c113645c.mp3",
       "channel_id": "e75da15fec9ecc380b11e097",
       "channel_ids": [
         "notice-f5bf5684020e",
@@ -146,6 +165,7 @@
     },
     {
       "audio": "c52de1f856ec02fb825a17656b5ee28e30ea41d4317aacb3f1e37d4e898a20f9.mp3",
+      "audio_bgm": "mix-9e32c37eff876214bfc16243dce576f6f1ea53f999ee173b0a9cd52d9e94782f.mp3",
       "channel_id": "7d9c9aaf153d496ce5a69acb",
       "channel_ids": [
         "notice-a6afbe817dd2"
@@ -187,6 +207,7 @@
     },
     {
       "audio": "ea70c0c4bd02caa06312e1c8bc20a790fc152ee5669fd229338bb1243bd41b46.mp3",
+      "audio_bgm": "mix-4443f26474fb379b05e1f0354ed953d364953e1004677d8124317cb4d296f469.mp3",
       "channel_id": "12b07156cfb830fc0b9ee2c4",
       "channel_ids": [
         "notice-a6afbe817dd2",
@@ -342,6 +363,7 @@
     },
     {
       "audio": "7c72b1169f8b1b840a2c139329932f70bed4d8c27cd131e7e56969812f8c054f.mp3",
+      "audio_bgm": "mix-306f400b1acb2d5a2bf3a2fe9eabe75dda2ac54ecce51539b77b367b2aef2e20.mp3",
       "channel_id": "10b8242d1d6fd099dd7efda5",
       "channel_ids": [
         "notice-ca78d3fd3c51"
@@ -383,6 +405,7 @@
     },
     {
       "audio": "b68e48b8310ebc6b45cb193f2002c0238f1faeb3b5aa65ad466f6d5547a233be.mp3",
+      "audio_bgm": "mix-db0e2c982c5fda2e957fbe795d89fcbbb1605adfbcd9f728870c183cd1ef8495.mp3",
       "channel_id": "b0a7e5d0d0a786465bbb9112",
       "channel_ids": [
         "notice-ddfc5b2ca163"
@@ -424,6 +447,7 @@
     },
     {
       "audio": "1007993e6553b9738be66ac56457003e9c787d13f74975adfb29ebe8c6ab594f.mp3",
+      "audio_bgm": "mix-664f8571f68ccdaf769f394d43f65fdb7537fa0f1956d574955c42ae3dfba327.mp3",
       "channel_id": "c5120cdba3e201a58d769d3e",
       "channel_ids": [
         "notice-956827a355a7"
@@ -465,6 +489,7 @@
     },
     {
       "audio": "89a976ea8ff204829770c08df3ba644c8f82ef578e8cdfe7b707c8055080fd00.mp3",
+      "audio_bgm": "mix-605be563b65d6ce53fe38cde7e930a4c6af83694e83749b3b052e5a64972439b.mp3",
       "channel_id": "50b2f4d1e3e8c9f248fa10dc",
       "channel_ids": [
         "notice-ec96ad09ef78"
@@ -506,6 +531,7 @@
     },
     {
       "audio": "c4d87afc8ff340133c2b5a3cf0ed4cd3e2335a8ff4cd5a024a925204dffad1fa.mp3",
+      "audio_bgm": "mix-8903e1e017cc78c913d945e5e07c068f38a607c05f24e344d351ce5f50833efa.mp3",
       "channel_id": "8f91c928e6263dd607d92deb",
       "channel_ids": [
         "notice-f4ac509b75c4"
@@ -547,6 +573,7 @@
     },
     {
       "audio": "3821cb063efadc5f82e7f4b44321196f1df9554d805fe6c9333b35e09f0571aa.mp3",
+      "audio_bgm": "mix-36182d9935d08e711366428c67633834c30242d2b4aabb547a8c0c98b06ac4c6.mp3",
       "channel_id": "b7fcd682222afec6c11c96ea",
       "channel_ids": [
         "notice-f4ac509b75c4"
@@ -588,6 +615,7 @@
     },
     {
       "audio": "f1281818eeffb688205d725031dbdc7d92744d360c522567227bbbdafaa936d9.mp3",
+      "audio_bgm": "mix-c7694c93227624eeb85b2417aef218606b1c367b4fa872adce33383d5a7393e3.mp3",
       "channel_id": "ece7b748685ca22379344813",
       "channel_ids": [
         "notice-f4ac509b75c4"
@@ -629,6 +657,7 @@
     },
     {
       "audio": "adc41357e2642da153a54ffbeb0880b121db5ad053f2960d51067dd95fcbd5e2.mp3",
+      "audio_bgm": "mix-daaec307a6e3dfb081f71f45f99b676e655c210956a89028f44ee1aa484c4e72.mp3",
       "channel_id": "75bd6616f9c9ce558f1c0af7",
       "channel_ids": [
         "notice-f4ac509b75c4"
@@ -670,6 +699,7 @@
     },
     {
       "audio": "b95d3ed79b8c0b1d6842f44ae65affb83aaf52f032eb3543f5646a375e455971.mp3",
+      "audio_bgm": "mix-6261236c80af0c00146faa0e20ea73f7b5025e1edc44e88219f404b298d1d2aa.mp3",
       "channel_id": "e8a61ff2e4ef11758445858b",
       "channel_ids": [
         "notice-f4ac509b75c4"
@@ -711,6 +741,7 @@
     },
     {
       "audio": "91e76ef72cef6e8db259af7549c51db991a470ce495d201111393b9b87c10824.mp3",
+      "audio_bgm": "mix-2762fa1ff95ee7872647e5478ec9fe2987b9522f397833583a8378b87adf3616.mp3",
       "channel_id": "3ca9c4edd41a255b35bd36ae",
       "channel_ids": [
         "notice-7502f997e5e7"
@@ -752,6 +783,7 @@
     },
     {
       "audio": "7839a1f5370863bc696e6f9daa179891cc4d467f900e19fd07d71318e9f76519.mp3",
+      "audio_bgm": "mix-b5833e522e7260d5801e159082596a1aabc7fd7f8f7ed03858feb5b179fc0181.mp3",
       "channel_id": "536681c7eb54f9730d5beb21",
       "channel_ids": [
         "notice-7502f997e5e7"
@@ -793,6 +825,7 @@
     },
     {
       "audio": "8278d046f36b13c76b1bcfdb1c3c20b9f21059746ce5216676268e2ecb5984c7.mp3",
+      "audio_bgm": "mix-a4c1e2ebd1c47c3da0c3252ed55355dc67e8ce04e9d8f1b83be5857745738aa5.mp3",
       "channel_id": "3afc868dcba4a7db56fef1e2",
       "channel_ids": [
         "notice-b5e6a10e952e"
@@ -834,6 +867,7 @@
     },
     {
       "audio": "d20d4b113294df77f523404f6845c9e91a9b6848ac8d70ad32bd3e8c67f3a844.mp3",
+      "audio_bgm": "mix-01e58bf4b04f0a0db3661314b9c0f61e9f720aaf97541da4fc1b2ecb3cabb5a6.mp3",
       "channel_id": "c2f6f2acc7c97db09cabb5c4",
       "channel_ids": [
         "notice-472ae4378387"
@@ -875,6 +909,7 @@
     },
     {
       "audio": "8c79dff2111aa2a058e5603f933cb8046d5aad2ffb8a64c8064d2b437bf5a134.mp3",
+      "audio_bgm": "mix-f5b39f605e2f2279aac90a93de835c6542e71e8646300c5deaeee54357284f96.mp3",
       "channel_id": "c9e33524eda3f18ee85aae1a",
       "channel_ids": [
         "notice-472ae4378387"
@@ -916,6 +951,7 @@
     },
     {
       "audio": "9fe30367dff93f6ad7a40c2984bb5b3ed15a825fb9f271f66f8c27df1909c90c.mp3",
+      "audio_bgm": "mix-bb15f677236be852143c863826a85dc45250ffd87a6a48f657f148f2db99523f.mp3",
       "channel_id": "d94681fab7bad30f758741de",
       "channel_ids": [
         "notice-472ae4378387"
@@ -957,6 +993,7 @@
     },
     {
       "audio": "400616d2ea50cc096a79b43cb87f7c382742d446cc699e5128fb487382cd57f5.mp3",
+      "audio_bgm": "mix-00a3b14d4b6075e24e126e241f95d2b6efb4ea53893e7038ef658e21b3b71098.mp3",
       "channel_id": "0b53f866f0f3be1366b8b00a",
       "channel_ids": [
         "notice-6b16f01d1a75"
@@ -998,6 +1035,7 @@
     },
     {
       "audio": "de5af64d8a0713eb26821c50b624e301d0ec47f1e10cce3e684a8bd8b00344dc.mp3",
+      "audio_bgm": "mix-e9c1c5854e80b814d11249e014a89cb8a680b9f0275f475b8d5cca6421efa561.mp3",
       "channel_id": "0b6876be69e46ab863563b41",
       "channel_ids": [
         "notice-6b16f01d1a75"
@@ -1039,6 +1077,7 @@
     },
     {
       "audio": "a0dd080350c870eaeddf773db4cb55e1db644f2f56615cd05d5a5f2596136467.mp3",
+      "audio_bgm": "mix-5ae2bd16cf1853f0e60a90e3f68856277096c4f11ac1c94a6f634df5aa4706e6.mp3",
       "channel_id": "c8608879ac443ec569b743ff",
       "channel_ids": [
         "notice-7fcf94c45b4e"
@@ -1080,6 +1119,7 @@
     },
     {
       "audio": "ab87750b68b6c84b71a296c1bbba9e655ec096fa50e6f2aa0257ac4591916865.mp3",
+      "audio_bgm": "mix-779beda9cf694c40c6df0a1419e0e8786353103c299da4dc7dd549f43352b4a0.mp3",
       "channel_id": "3d9877cc9cb77a309b5c213a",
       "channel_ids": [
         "notice-7fcf94c45b4e"
@@ -1121,6 +1161,7 @@
     },
     {
       "audio": "a456f0e4f7f6c759748b16852335388d595bcb13a9a6d3af75eb344e30323e01.mp3",
+      "audio_bgm": "mix-83f558f3d4a58a85b73a722574b08757ed683b0c8a0724a76f3fb807c1f731e0.mp3",
       "channel_id": "6ca5aefd3d44af414847586b",
       "channel_ids": [
         "notice-ef883ff42361"
@@ -1162,6 +1203,7 @@
     },
     {
       "audio": "25555bbf424885aad88d72b2a75728370bd2e24ac74fd5553c19a786aad88c4e.mp3",
+      "audio_bgm": "mix-04b1e90fae17a09e02c5c6ab942113a00f76fbe2e6e7dd8058f0c733c826d86c.mp3",
       "channel_id": "780f8f9200fc82f9e63fe733",
       "channel_ids": [
         "notice-7dfeec322405"
@@ -1203,6 +1245,7 @@
     },
     {
       "audio": "8f9a3557739b23f89a6b53531869ff7702be5597df4215dab1b866473c605ffe.mp3",
+      "audio_bgm": "mix-aeb6a71ef06ab70debe0f6498d1e5cb7ca19855a648f1c5857221de835bffa27.mp3",
       "channel_id": "50b6ff70c6490d0a948ed234",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1244,6 +1287,7 @@
     },
     {
       "audio": "c217ac32bf73015a77caa29c4212d8afffe4eb4d33fb451187956e67d5033dcc.mp3",
+      "audio_bgm": "mix-9b8373d693d46deb09da10700837c14cb99bb2214f1f981161ea753f7041f28d.mp3",
       "channel_id": "76b5421af20f5abc0a97aecc",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1285,6 +1329,7 @@
     },
     {
       "audio": "268609cd32bca26f831d7744ba9f0955766d0901d8e851967134996204074dd5.mp3",
+      "audio_bgm": "mix-9c1fb67749076b8cf4551fe8378ff04244643435e4bc094d4a630e8168f3675a.mp3",
       "channel_id": "69553260ef99e15833d7f777",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1326,6 +1371,7 @@
     },
     {
       "audio": "2ec46e8eb60d21ba64202ae2441b160a9c1b67166b8751ea932e5749272e9d3c.mp3",
+      "audio_bgm": "mix-92e557a655b28110865069171c5a41edf3f8ed7b049914d2118176ce5d7c7971.mp3",
       "channel_id": "555548f64789d9c9da9da746",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1367,6 +1413,7 @@
     },
     {
       "audio": "e04689f8bb09fed4beb0df8b885f9ed2f7b6e6c402d2317d42d32e0a7722ceae.mp3",
+      "audio_bgm": "mix-8469493dc4cbea88f0b2996febaeaad6c32450500d8446812d90e63b4e116be1.mp3",
       "channel_id": "ac27b6e53da200e94746eb30",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1408,6 +1455,7 @@
     },
     {
       "audio": "2ea4f020b5a65b17908bf72775491746423c684250eaf383f05e710e680a392d.mp3",
+      "audio_bgm": "mix-23ba0a519ba190aa614bc7eb98405ec006ba3aaf5d6c5ce78938d07c50bda446.mp3",
       "channel_id": "3026070aef42fb19fa57ef86",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1449,6 +1497,7 @@
     },
     {
       "audio": "19b2f368820029ff858fad26cd9167454eb5bfdc5c765d08ccc8b8576c1c102e.mp3",
+      "audio_bgm": "mix-52745e320dacf485bdb3bbd1522e11b696c8d6da8ea21b72047741e5a700a165.mp3",
       "channel_id": "7acd719ed5605c80841ddf78",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1490,6 +1539,7 @@
     },
     {
       "audio": "c6af41221db512974022d66c607cf5c86150f30a6100d3de1f26be1088c66b3b.mp3",
+      "audio_bgm": "mix-b59363583084be96bcc004aabffbc7a6047edac1863cd96c0b6180b6f86b2c1d.mp3",
       "channel_id": "33ba3d0d98e3dc6f35bb816b",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1531,6 +1581,7 @@
     },
     {
       "audio": "4d3602ed7d545fbbf3a3c41338e3730c1be8e6bed5da4f57ba99c8ad81ef0765.mp3",
+      "audio_bgm": "mix-c7540da2aa73434130800630b93052008a609f63c1ffe9bea926e2ddf1e6ee81.mp3",
       "channel_id": "e70c8572ce1b3577567e464d",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1572,6 +1623,7 @@
     },
     {
       "audio": "247644fec7e8c8ee70587e928304fa00eb1d432305faaa631b4ec1e548267910.mp3",
+      "audio_bgm": "mix-20dd9a835be6b3b861c2b057fa60724104773acb97087767b7ea2368909f07fd.mp3",
       "channel_id": "67b45c043efea101706841ad",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
@@ -1613,6 +1665,7 @@
     },
     {
       "audio": "8abb28e3e4534d17005e15fc8745b3476c26d67a6212864663e55099bb818b69.mp3",
+      "audio_bgm": "mix-145e2ec6fb6034d1c33ca5d3b48089661ebe39205e1fcc448f16faa3a64d9817.mp3",
       "channel_id": "d3c32fbec027ab8c30950b94",
       "channel_ids": [
         "notice-e1ec1bf0eb87"
@@ -1654,6 +1707,7 @@
     },
     {
       "audio": "3d2590f7b13bd2e32c2946f882ce39e5c306111e34d5683cc1410de02b72f5dd.mp3",
+      "audio_bgm": "mix-732db7c752818ade92feb80e2ca189cb44a930bb86d3f963b423788dc66efc4c.mp3",
       "channel_id": "e8f353c3bedb7cf86cc965c7",
       "channel_ids": [
         "notice-d1802616c625",
@@ -1733,6 +1787,7 @@
     },
     {
       "audio": "a1625035fe59de7f551d8e49d81aa3f4d87ae3f5362bb55434ce057b6ec70558.mp3",
+      "audio_bgm": "mix-317e3b228d9f2677176ad017cceec52312ecc96a6574ed4b6714fb1cdbae2b7d.mp3",
       "channel_id": "58d08853e2718e85f1b288f1",
       "channel_ids": [
         "notice-1cbb3d90d081"
@@ -1774,6 +1829,7 @@
     },
     {
       "audio": "770e67c18222e41af192a3c161ea0c35bcd28298757c47a7517a5f84c489df92.mp3",
+      "audio_bgm": "mix-d4e01d28516a4a04057498764b8e76e450018b016143788577f62d3621bef9a7.mp3",
       "channel_id": "f82242299ccedf559db2a61a",
       "channel_ids": [
         "notice-1cbb3d90d081"
@@ -1815,6 +1871,7 @@
     },
     {
       "audio": "a456f0e4f7f6c759748b16852335388d595bcb13a9a6d3af75eb344e30323e01.mp3",
+      "audio_bgm": "mix-83f558f3d4a58a85b73a722574b08757ed683b0c8a0724a76f3fb807c1f731e0.mp3",
       "channel_id": "4ad5d987f12c7a52f2f130c6",
       "channel_ids": [
         "notice-1cbb3d90d081"
@@ -1856,6 +1913,7 @@
     },
     {
       "audio": "bb3bbbf222a18d703d371bdae36237c6c9140fe5631a06ac3911761bc9557936.mp3",
+      "audio_bgm": "mix-73184c1dc148fb03126a2260114e8be74e895096d7a79f68cb83414999ec39da.mp3",
       "channel_id": "1a044ccc877176286b4ea948",
       "channel_ids": [
         "notice-450caf336106"
@@ -1897,6 +1955,7 @@
     },
     {
       "audio": "ced19994c9c66ac301b1532ced3ff85fdc25da17e54c147290b8d401849f21ea.mp3",
+      "audio_bgm": "mix-04b260dbb1c1e18f78762b29e474068e6af4a43319099da6e0b5845d142f4d34.mp3",
       "channel_id": "29f031ca8be4b2f118597634",
       "channel_ids": [
         "notice-ccc3a94a1fa5"
@@ -1938,6 +1997,7 @@
     },
     {
       "audio": "d5d7b9ea2a2069031b32f15eb98c2b2e5ccb5b57a01e457a8c18fa0dafd860da.mp3",
+      "audio_bgm": "mix-1ca18eb3ea310e334b1617a1852e7f8b43d3e96bec9018c7d845fbb892ecc1e8.mp3",
       "channel_id": "c5d8e2db4869e8a9a075fe54",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -1979,6 +2039,7 @@
     },
     {
       "audio": "94d45b44319be3b97951dfd58a56765424ae6a19b356582900a0251931f0946f.mp3",
+      "audio_bgm": "mix-b4a0feeb388d3ecefc248e3ee0945d606c6b20d4d3b5d8c21670e551517c48cf.mp3",
       "channel_id": "8ea0a64321442b0adc086521",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2020,6 +2081,7 @@
     },
     {
       "audio": "4b85e99a554a793290b222402683103dbd18f1a25e12333d5ae6c4573cb04db1.mp3",
+      "audio_bgm": "mix-c686690791ac31eafe015cd0b522a7870a3fc95aed5cced12ada9a619cd8c123.mp3",
       "channel_id": "4380db428ad9e4fbc4bd4500",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2061,6 +2123,7 @@
     },
     {
       "audio": "0392536f54b15e3109a3c2f3c1a8a41fe386cd99921439021f250f20609cf500.mp3",
+      "audio_bgm": "mix-6ee910432b746b38dd3f524aae16f9ddc4959ca091dae364b6b006b121e4d24a.mp3",
       "channel_id": "8e1c8a2e688edce4fae1f1f5",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2102,6 +2165,7 @@
     },
     {
       "audio": "f63b7744523fe503431ada2da805a22ac589daede0a3f4b9f7550240c8e0c495.mp3",
+      "audio_bgm": "mix-ab35b25dadcb3955581e2b90abcac6915f15d36cebbd002054192b27c3473194.mp3",
       "channel_id": "434a69402b74a8ab4410e076",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2143,6 +2207,7 @@
     },
     {
       "audio": "478c71e4850085148ba28501ea6d00ba24e6eda4c67fb28454d44f0092c2c659.mp3",
+      "audio_bgm": "mix-49617c1e479ca95d7a69afb75a72cfb69f6b5f3c90281047822b26a3bd140483.mp3",
       "channel_id": "17fe2445bcbcb89163fc9157",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2184,6 +2249,7 @@
     },
     {
       "audio": "deacf2da6932a818553ebf251e9c331cc00f363c5bf2e4a48ece491adf7b6ced.mp3",
+      "audio_bgm": "mix-ee1d1cd33737f24d67871b0423533a45613e58625871a957686533568c21abaa.mp3",
       "channel_id": "bb1a97deecf5aecda4126570",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2225,6 +2291,7 @@
     },
     {
       "audio": "dc1c67484a93f4e30201e93be45f71b1d73fd8d99892b38fc2ac9ce063f2f417.mp3",
+      "audio_bgm": "mix-d29d869940dc82a5b22b9a87cf8566b2c851c5240e959550734c728e14b532ba.mp3",
       "channel_id": "40c38fc0983db4f9010f1a97",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2266,6 +2333,7 @@
     },
     {
       "audio": "652be338cc78b13871212e4c5efdfbcd5e8fdfcbf4c9fb154f0f198f80df0318.mp3",
+      "audio_bgm": "mix-ad0065120f65f6ba0394a203264dc3c322e02035575c65efae45765ab6fd9e68.mp3",
       "channel_id": "21bdb13e1d79ea907e0d9a28",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2307,6 +2375,7 @@
     },
     {
       "audio": "ee8f71c04bf651ec2100964c2b21bedf448a3fcaf45cd618b985d7e28591339c.mp3",
+      "audio_bgm": "mix-031868d5b784c2db2589970eb594390d266cb7fa8934ef34ef386235c7101b83.mp3",
       "channel_id": "5efc7b3f59931ea314075a09",
       "channel_ids": [
         "notice-3d2a3e87207a"
@@ -2348,6 +2417,7 @@
     },
     {
       "audio": "6acfae608e84da211eb16e837ce1be5091f10da6259f88e2a9a26d6b1433af8c.mp3",
+      "audio_bgm": "mix-a148e076b7213a6a9398dd5cc6e9cc913191cffd51b3f582c39f9cbace4825c0.mp3",
       "channel_id": "e6a3bcdc3fe6d62b0c39845f",
       "channel_ids": [
         "notice-d13e4abb0470"
@@ -2389,6 +2459,7 @@
     },
     {
       "audio": "6ef3ed6d0a064709380de432d1b6815e9ec2171b053b3eb35b3d26273bd2048f.mp3",
+      "audio_bgm": "mix-09f77baa40f430c88eb6f89aaf4601a945699cc066b572509aaf2c8e6047c3c3.mp3",
       "channel_id": "97fc6c3b19e75b9c3583557f",
       "channel_ids": [
         "notice-4a41e1328a3e"
@@ -2430,6 +2501,7 @@
     },
     {
       "audio": "48d76fba9f7a10201dcdc2b855c992712256601925e6cbac0da58b24e0b22c0f.mp3",
+      "audio_bgm": "mix-54a8d0f20172cdc70ddf85b64e2338c00e70d725cdc2c0229d921290aaaa3640.mp3",
       "channel_id": "cbd3e57c9943cd18c22245f7",
       "channel_ids": [
         "notice-4a41e1328a3e"
@@ -2471,6 +2543,7 @@
     },
     {
       "audio": "bbc13e55a8ab3c3549c9aef48ba89614d1541bc68ad4f5a8b2d65a21b0d5bcee.mp3",
+      "audio_bgm": "mix-ea5b1f25dab54afcdd7bd04c3387e7ff4ec00a0fddcd8f72b3b8984181924a7c.mp3",
       "channel_id": "aff7dbcce13709b95a67402f",
       "channel_ids": [
         "notice-4a41e1328a3e"
@@ -2512,6 +2585,7 @@
     },
     {
       "audio": "824db2ca922d45108d558b15b57c9ed3eddd132054a87b60d92e789f13e0af7f.mp3",
+      "audio_bgm": "mix-c75d93c009454a87d14434b3ce737caaebd6e6168ca2a471d75b55b894a7374b.mp3",
       "channel_id": "b303965dd314a79b5ceed08d",
       "channel_ids": [
         "notice-ac0144f93d45"
@@ -2553,6 +2627,7 @@
     },
     {
       "audio": "263a89e922f0188e21da2a449ab9e3d6fc0e79fe45af021ace1e303af165814e.mp3",
+      "audio_bgm": "mix-d36144b588cce0b40c84b7abf88f20ed2096c36cadc54bf44bbe3ba3e641e271.mp3",
       "channel_id": "63b5b19d6a020082cccfdc33",
       "channel_ids": [
         "notice-ac0144f93d45"
@@ -2594,6 +2669,7 @@
     },
     {
       "audio": "8f9a3557739b23f89a6b53531869ff7702be5597df4215dab1b866473c605ffe.mp3",
+      "audio_bgm": "mix-aeb6a71ef06ab70debe0f6498d1e5cb7ca19855a648f1c5857221de835bffa27.mp3",
       "channel_id": "66be7b9918cfd22bb92f05fb",
       "channel_ids": [
         "notice-ac0144f93d45"
@@ -2635,6 +2711,7 @@
     },
     {
       "audio": "bedaf2df5b6e59f40d13187e53e3cfd3ad627272cc2f20e5d827ed8ef0ccabbc.mp3",
+      "audio_bgm": "mix-e8078dba674782b79b7bfa53b08c79aee56b3340b2da7354609b96fa33976488.mp3",
       "channel_id": "340c6e73da8dc33154a67d49",
       "channel_ids": [
         "notice-ac0144f93d45"
@@ -2676,6 +2753,7 @@
     },
     {
       "audio": "6e3687ce3fa72e7ad3e9f700fd5ffb75774637d9d6f99b85df3162e1d44d9e07.mp3",
+      "audio_bgm": "mix-aa3fcd345aa82126a35e467b73b1dd3c3a12c23de59806e49e73d239e767beed.mp3",
       "channel_id": "25d77e8065e821902715a37d",
       "channel_ids": [
         "notice-ac0144f93d45"
@@ -2717,6 +2795,7 @@
     },
     {
       "audio": "6535c0d948bc9803b4bafab40a872266023a5539446591ec26d7d3c498c3a6e4.mp3",
+      "audio_bgm": "mix-0efe1264e92ea7bf1a4a446493cd2d870d0275129c539d09bac7107d95c47298.mp3",
       "channel_id": "efc1f62ead1e9b01b7e2d593",
       "channel_ids": [
         "knu-academic"
@@ -2758,6 +2837,7 @@
     },
     {
       "audio": "bbb41247769ba436d5a97c216283b5384ca537fb7741743d0ea3fab69e82eb21.mp3",
+      "audio_bgm": "mix-22be96c9be096997d8c2a45373c55829f739c5cc0b52362e72ee38eb5914d559.mp3",
       "channel_id": "aa331f201612cea6ab93f080",
       "channel_ids": [
         "notice-df44dd8507c1"
@@ -2799,6 +2879,7 @@
     },
     {
       "audio": "dae6c61c3179e035a6bab9be50a0031cddd747f0240fff50820cf4f63108cb23.mp3",
+      "audio_bgm": "mix-209eb48364cd71aeda17aa4450cc888c3b400fea10cf4f7ca5da8ab410bfecd6.mp3",
       "channel_id": "781a73797655ad3cd4019f48",
       "channel_ids": [
         "notice-df44dd8507c1"
@@ -2840,6 +2921,7 @@
     },
     {
       "audio": "32e4ffbe1c421958be7358c5f12c5d5c14a558f2c3d904457d1411f1bfc1d3ff.mp3",
+      "audio_bgm": "mix-46d02eb62779520019a887b39cb54924322b67261611c7273d89655c7f917a43.mp3",
       "channel_id": "137b38160fe8b8007efe9cd3",
       "channel_ids": [
         "notice-df44dd8507c1"
@@ -2881,6 +2963,7 @@
     },
     {
       "audio": "a0e490f8176c6f83081baea616c6bb44df49e48bbfbefccc30731cedda903694.mp3",
+      "audio_bgm": "mix-d34a0ccd4c607a13a69f8922a8ba6100f51c4ed24d199b02ebda9f888db4cec7.mp3",
       "channel_id": "3c1802146ff89a16097e5cfc",
       "channel_ids": [
         "notice-df44dd8507c1"
@@ -2922,6 +3005,7 @@
     },
     {
       "audio": "5e4ba2cb1530d499048f8ae5988d2835b2ea98adbd5c271a9543fcc33c820ddf.mp3",
+      "audio_bgm": "mix-ee58bbbdb96bb8e245d85d9a3e9b93e91fd4139989cf9d52b944ed00216b21cb.mp3",
       "channel_id": "c976a103cf021d5996889080",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -2963,6 +3047,7 @@
     },
     {
       "audio": "630492e1a534e5ab406c687a713e8342e3310bd26d4a1660eb1fe193a31c07a8.mp3",
+      "audio_bgm": "mix-8457ad5f2d13c53666ace60de0d6df09724ff79590e4be2673e07fde7effc8e8.mp3",
       "channel_id": "b7e709e28d4b097521e532ed",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3004,6 +3089,7 @@
     },
     {
       "audio": "49576ebd720a0f38447f2435e912692ad8807ae271cd82f070037820a2bd1289.mp3",
+      "audio_bgm": "mix-0f57248562f4b401f8f7bfe0a112d6484b5eed0a06dc3f743bfd4b0ab018ce28.mp3",
       "channel_id": "8bb245e3349a3f7822e94551",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3045,6 +3131,7 @@
     },
     {
       "audio": "7d10e64fb9022b30f4c1293c4e2170b683d1491d6be91dc9f5a0d28ba895e09b.mp3",
+      "audio_bgm": "mix-fd489426dd23faffe3a8640c7b16ed1fbc9e529126f548a9812f8a8addc206e2.mp3",
       "channel_id": "5893fa3a63643bc81a8e4e9b",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3086,6 +3173,7 @@
     },
     {
       "audio": "505f0ddcf0f206759ce4463224927374862bc9a3cae3f3f9d1721e6e7f65d0fc.mp3",
+      "audio_bgm": "mix-3f7bc1d4ef3e0aad84467622104a77e226ba181991eb2a29e3c3263fb482900e.mp3",
       "channel_id": "705a54ad9ee267f3a2a2e55a",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3127,6 +3215,7 @@
     },
     {
       "audio": "b33c53297b19c1087e0033de0c16600e573c9b24855c825e61569ebc110d0fb6.mp3",
+      "audio_bgm": "mix-99b7988b051150a963b833ad9bcc2de91ed84e55d56ca8ed28b0c356f36d1809.mp3",
       "channel_id": "c8931e374300bb556ee46500",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3168,6 +3257,7 @@
     },
     {
       "audio": "3df70bc18ca769b92ca3c717b4d18ac973ecde22136e41d0db40a06502b0cf6f.mp3",
+      "audio_bgm": "mix-74699a2a8d00c2ef7bc4cec79f18c784ddbfbc5c1f6d08b6e243783cd90037f2.mp3",
       "channel_id": "c6cc4803c84d093b68f33718",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3209,6 +3299,7 @@
     },
     {
       "audio": "9cdff586950a471803ce26774c61f92afaf5b57281afbefe12b113e8dba27fe1.mp3",
+      "audio_bgm": "mix-0234cd478d9b7c5893f1d504a831f22b40dac4dc792c17093eb4d5e88bedde55.mp3",
       "channel_id": "2e9f048be2612e6eae900a8b",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3250,6 +3341,7 @@
     },
     {
       "audio": "816233b654b597cd2a1ba3c6be0bae6ebe75332ca5c1a50206769305758913d8.mp3",
+      "audio_bgm": "mix-a91111ed8e577c8cfd3e148713ac65078f8e3de9d5169566bd8af45446d2716c.mp3",
       "channel_id": "9d0278a878a7558d8af5de2d",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3291,6 +3383,7 @@
     },
     {
       "audio": "f97e3a20c60d66ce9c299a33f7d4c839b61323f0c0c4b510efd28fea22a70ff7.mp3",
+      "audio_bgm": "mix-9965e489ee692b5d7ea5a892edb4fa24245da339714aba732370630e5d8abd4a.mp3",
       "channel_id": "9151fbc4c875501e129ffd95",
       "channel_ids": [
         "notice-6b04da14aae1"
@@ -3332,6 +3425,7 @@
     },
     {
       "audio": "2ef6c29f3a350b9ba836892b28a8dacd35cdc7c484440a2d8b41169f37cc628f.mp3",
+      "audio_bgm": "mix-b86d51409723030b8dcf8edb64c1a60698cbd7622adce2884d216a60b4c5d8c1.mp3",
       "channel_id": "cc741412f14711517c9ef3ad",
       "channel_ids": [
         "notice-a363da417a07"
@@ -3373,6 +3467,7 @@
     },
     {
       "audio": "d281b1d71bb8a023de021f8474942ac6d2abd5ec769c28a138239acd187166f0.mp3",
+      "audio_bgm": "mix-0a69d38b235aa24289e738bc884e55908d7150db91bbcaef6bfabda267a282ed.mp3",
       "channel_id": "cafa6793a3469e8d4952490a",
       "channel_ids": [
         "notice-a363da417a07"
@@ -3414,6 +3509,7 @@
     },
     {
       "audio": "ce036b19cbe40ef002a377d17334e99b21bdc71faf42e1950a17ee83b198b750.mp3",
+      "audio_bgm": "mix-523881e20b07a59fcd00175fbae637abc4e63874c300579850168074062f1524.mp3",
       "channel_id": "529bc838067927a286de45c7",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3455,6 +3551,7 @@
     },
     {
       "audio": "8b392eb07306dd79e568e37991c06f0d9402c68ba9b6b4bd1268071089fa32f7.mp3",
+      "audio_bgm": "mix-ca5f076843b096aaf341c9bfa3953281a128bd7fb6189c60f1c70fdaad40ee89.mp3",
       "channel_id": "f92b89821b7532251c1b933e",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3496,6 +3593,7 @@
     },
     {
       "audio": "4a9665b005e7c11800b547fa7be776f4d3cdf754d18c2dcc507b0c1b00e68747.mp3",
+      "audio_bgm": "mix-2ba286a6acc105b411da7e284ba72a04d9dfaadfec259ecb7b30f39b8e186025.mp3",
       "channel_id": "18c01b68665db8ac64299ec7",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3537,6 +3635,7 @@
     },
     {
       "audio": "263a89e922f0188e21da2a449ab9e3d6fc0e79fe45af021ace1e303af165814e.mp3",
+      "audio_bgm": "mix-d36144b588cce0b40c84b7abf88f20ed2096c36cadc54bf44bbe3ba3e641e271.mp3",
       "channel_id": "51c40ecaa4ad628eca666880",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3578,6 +3677,7 @@
     },
     {
       "audio": "4d561c9778b40dae16ea864747c6a74cac9257b4f0ff0616cdb3c0e6aa1ea595.mp3",
+      "audio_bgm": "mix-6c5575489d42f22944e1f8d2e71f1293baa989f13a28b79ee4aaca54931a6645.mp3",
       "channel_id": "d7e1cb2f3d0e923505a9d00a",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3619,6 +3719,7 @@
     },
     {
       "audio": "bedaf2df5b6e59f40d13187e53e3cfd3ad627272cc2f20e5d827ed8ef0ccabbc.mp3",
+      "audio_bgm": "mix-e8078dba674782b79b7bfa53b08c79aee56b3340b2da7354609b96fa33976488.mp3",
       "channel_id": "0583674e7acdf1154f782a9d",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3660,6 +3761,7 @@
     },
     {
       "audio": "dbdafcf390efc67631fb350a8b33ffdd9399da6c720a97499fce38ff110c5ccf.mp3",
+      "audio_bgm": "mix-6e8e57e14e04a3beed179b845827faa37ee09dd26d2f01728d103daa04e808c0.mp3",
       "channel_id": "60f28c948720c542599648c2",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3701,6 +3803,7 @@
     },
     {
       "audio": "753a912fec8b93582c816e2da177feecf9601c86fa2a49a60452f66ac87e7ee5.mp3",
+      "audio_bgm": "mix-5ea01b50f63a38a4ebed938300da768de0019003b4f38f6a0a8842be295d13a5.mp3",
       "channel_id": "2bd9f25bbbc3543c7b3e5650",
       "channel_ids": [
         "notice-7414782e7dbb"
@@ -3742,6 +3845,7 @@
     },
     {
       "audio": "cb5df9b41f7ce948c187a9c887aa396cfe23d1141faec77d463fdc45cbfc5cf5.mp3",
+      "audio_bgm": "mix-b33704c2d9926e00248eb960ccadee90dbcb09915581737be0c9f6d912512c6a.mp3",
       "channel_id": "empty",
       "cues": [
         {
@@ -3758,6 +3862,7 @@
     },
     {
       "audio": "e0c5f69b909819705054e3403f0b5fe304508f7764132e468d9df85df90df282.mp3",
+      "audio_bgm": "mix-480ac0dce8555d11e4e73f315095715baf02fda7de3758f178cfaacbe9de12b4.mp3",
       "channel_id": "outro",
       "cues": [
         {

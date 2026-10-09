@@ -649,7 +649,8 @@ function loadMeta(){
       DATA = meta; DATA.deptMap = index(meta.departments); DATA.boardMap = index(meta.boards);
       var briefOk = brief && Array.isArray(brief.segments) && /^\d{4}-\d{2}-\d{2}$/.test(brief.date) && Math.abs(days(meta.asOf, brief.date)) <= BRIEF_MAX_AGE;
       BRIEF = briefOk ? brief : null; BRIEF_OLD = !!BRIEF && brief.date !== meta.asOf;
-      BGM_TRACK = bgm && /^\d{4}-\d{2}-\d{2}$/.test(bgm.date) && bgm.date === seoulToday() && typeof bgm.audio === 'string' && /^[a-f0-9]{64}\.mp3$/.test(bgm.audio) ? bgm : null;
+      var mixedTrack = briefOk && brief.bgm ? brief.bgm : bgm;
+      BGM_TRACK = mixedTrack && mixedTrack.mode === 'mixed' && mixedTrack.status === 'ready' ? mixedTrack : null;
       POSTS = {};
       if (!profileOk()) S.route = 'start';
       S.loadPhase = null; refresh(); render(true); splashReady();
@@ -861,7 +862,7 @@ function chapters(W){
     var s = seg[id], b = W.boards.filter(function(x){ return x.id === id; })[0];
     var sec = s.duration > 0 ? s.duration : s.duration_sec;
     var text = s.script || '';
-    return { id: id, t: s.title || '', s: text, cues: s.cues || [], audio: s.audio || null, est: sec > 0 ? sec : Math.max(4, text.length * 0.135),
+    return { id: id, t: s.title || '', s: text, cues: s.cues || [], audio: s.audio || null, audio_bgm: s.audio_bgm || null, est: sec > 0 ? sec : Math.max(4, text.length * 0.135),
       cards: (s.cards || s.items || []).filter(function(k){ return !k.channel_id || W.boards.some(function(x){ return x.id === k.channel_id; }); }).map(function(k){
         var board = k.channel_id ? W.boards.filter(function(x){ return x.id === k.channel_id; })[0] : b;
         var p = board && k.postId ? board.today.filter(function(x){ return x.id === k.postId; })[0] : null;
@@ -882,31 +883,34 @@ function elapsed(){ var t = 0; for (var i = 0; i < P.ch; i++) t += CH[i].est; re
 
 /* ---------- 재생 엔진: 구간 음성 파일을 <audio> 하나로 이어 재생. 음성 없이 대본만 있는 구간은 브라우저 음성으로 읽는다 ---------- */
 var A = new Audio(); A.preload = 'auto';
-var B = new Audio(), bgmEpoch = 0, bgmWanted = false;
-B.preload = 'none'; B.loop = true; B.volume = 0.1;
-function stopBgm(){ bgmWanted = false; bgmEpoch++; B.pause(); }
-function startBgm(gesture){
-  var m = mode(), sourceActive = m === 'audio' ? gesture || !A.paused : m === 'tts' && P.voiceOk;
-  if (!P.playing || !S.voice || !S.bgm || !BGM_TRACK || !BGM_TRACK.audio || !sourceActive) { stopBgm(); return; }
-  bgmWanted = true;
-  if (B.getAttribute('data-src') !== BGM_TRACK.audio) { B.setAttribute('data-src', BGM_TRACK.audio); B.src = 'data/bgm/' + BGM_TRACK.audio; }
-  B.volume = Math.max(0, Math.min(1, Number(BGM_TRACK.volume) || 0.1));
-  var epoch = ++bgmEpoch, result = B.play();
-  if (result && result.then) result.then(function(){ if (!bgmWanted || !P.playing || !S.voice || !S.bgm) B.pause(); }, function(){ if (epoch === bgmEpoch) stopBgm(); });
+/* 음악은 브리핑 음성과 미리 섞은 파일로만 재생한다. 원곡을 별도 재생하지 않는다. */
+function syncBgm(){
+  var c = CH[P.ch]; if (!c || !c.audio) return;
+  var src = audioUrl(S.bgm && c.audio_bgm && !c.bgmFailed ? c.audio_bgm : c.audio);
+  if (A.getAttribute('data-src') === src) return;
+  var at = isFinite(A.currentTime) ? A.currentTime : P.chT;
+  var playing = P.playing;
+  P.playToken++; A.pause();
+  A.setAttribute('data-src', src); A.src = src;
+  P.chT = at; P.pend = at; A.muted = !S.voice;
+  if (playing) { startChapter(true); if (A.readyState >= 1) applyPend(); }
 }
-function syncBgm(){ if (P.playing && ((mode() === 'audio' && !A.paused) || (mode() === 'tts' && P.voiceOk))) startBgm(false); else stopBgm(); }
-B.addEventListener('error', stopBgm);
-A.addEventListener('playing', syncBgm);
-/* 배경음악은 구간이 바뀌며 음성이 잠깐 멈추거나(pause·ended) 다음 파일을 불러오는 동안(waiting)에도 계속 흐른다.
-   멈추는 때는 사용자 일시정지(pause()), 끝까지 들음(nextAuto), 기기가 음성을 멈춤(아래 pause 확인)뿐이다. */
 /* 이어폰을 빼거나 전화가 오는 등 기기가 음성을 멈추면 화면도 일시정지로 맞춘다. 구간을 바꾸는 중의 잠깐 멈춤은 무시한다. */
-A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { P.playing = false; stopBgm(); media(); render(false); } }, 400); });
+A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { P.playing = false; media(); render(false); } }, 400); });
 function audioUrl(a){ return /^(https?:)?\/\//.test(a) || a.charAt(0) === '/' ? a : 'data/briefing/' + a; }
 function mode(c, fresh){ c = c || CH[P.ch]; if (!c) return 'timer';
   if (!fresh && c === CH[P.ch] && P.activeMode) return P.activeMode;
   return c.audio ? 'audio' : (c.s && S.voice && window.speechSynthesis && !P.fallback ? 'tts' : 'timer'); }
 A.addEventListener('ended', function(){ if (P.playing) nextAuto(); });
-A.addEventListener('error', function(){ if (P.playing && mode() === 'audio') { nextAuto(); toastMsg('음성 파일을 불러오지 못한 구간은 건너뛰었어요.'); } });
+A.addEventListener('error', function(){
+  if (!P.playing || mode() !== 'audio') return;
+  var c = CH[P.ch];
+  if (c && c.audio_bgm && !c.bgmFailed && A.getAttribute('data-src') === audioUrl(c.audio_bgm)) {
+    c.bgmFailed = true; P.pend = P.chT; startChapter(true);
+    toastMsg('음악을 불러오지 못해 음성만 이어서 재생해요.'); return;
+  }
+  nextAuto(); toastMsg('음성 파일을 불러오지 못한 구간은 건너뛰었어요.');
+});
 A.addEventListener('loadedmetadata', function(){ var c = CH[P.ch]; if (c && c.audio && isFinite(A.duration) && A.duration > 0) c.est = A.duration; });
 var voiceKo = null, keep = [];
 function pickVoice(){ if (!window.speechSynthesis) return; var vs = speechSynthesis.getVoices(); voiceKo = vs.filter(function(v){ return /^ko/i.test(v.lang); })[0] || null; }
@@ -922,7 +926,7 @@ function speakChapter(from){
     u.onstart = function(){
       if (gen !== P.gen || !P.playing) return;
       P.voiceOk = true; P.ttsSentence = k; P.chT = sentStart(c, k); P.last = performance.now();
-      startBgm(); paintProgress();
+      paintProgress();
     };
     u.onboundary = function(e){
       if (gen !== P.gen || !P.playing || P.ttsSentence !== k) return;
@@ -945,16 +949,14 @@ function startChapter(resume){
   var c = CH[P.ch], m = mode(c, true);
   P.activeMode = c.chatMode = m; c.spokenText = c.s;
   stopVoice();
-  if (m !== 'audio') { A.pause(); if (m === 'tts') speakChapter(resume ? sentAt(c, P.chT) : 0); else stopBgm(); return; }
-  if (m !== 'audio' && m !== 'tts') stopBgm();
-  var src = audioUrl(c.audio);
+  if (m !== 'audio') { A.pause(); if (m === 'tts') speakChapter(resume ? sentAt(c, P.chT) : 0); return; }
+  var src = audioUrl(S.bgm && c.audio_bgm && !c.bgmFailed ? c.audio_bgm : c.audio);
   if (A.getAttribute('data-src') !== src) { A.setAttribute('data-src', src); A.src = src; }
   else if (!resume) { try { A.currentTime = 0; } catch (e) {} }
   A.playbackRate = S.speed; A.muted = !S.voice;
-  startBgm(true);
   var token = ++P.playToken, pr = A.play();
   /* 휴대폰이 재생을 거절하면(자동 재생 제한 등) 소리는 안 나는데 '재생 중'으로 남지 않게 되돌린다. 일시정지·구간 이동으로 끊긴 경우(AbortError)는 정상이다. */
-  if (pr && pr.catch) pr.catch(function(e){ if (e && e.name === 'AbortError') return; if (A.paused && token === P.playToken) stopBgm(); if (token === P.playToken && A.paused && P.playing) { P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
+  if (pr && pr.catch) pr.catch(function(e){ if (e && e.name === 'AbortError') return; if (token === P.playToken && A.paused && P.playing) { P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
 }
 function play(ch, restart){
   if (!CH.length) return;
@@ -966,7 +968,7 @@ function play(ch, restart){
   P.playing = true; P.started = true; P.last = performance.now();
   startChapter(resume); media(); render();
 }
-function pause(){ P.playing = false; A.pause(); stopBgm(); stopVoice(); media(); render(); }
+function pause(){ P.playing = false; A.pause(); stopVoice(); media(); render(); }
 function toggle(){ P.playing ? pause() : play(); }
 /* 원하는 곳부터 듣기: 구간 ch의 t초부터 재생한다. 음성 파일은 그 자리로 옮기고, 브라우저 음성은 그 문장부터 다시 읽는다. */
 function seekTo(ch, t){
@@ -976,7 +978,7 @@ function seekTo(ch, t){
   P.activeMode = c.chatMode = m; c.spokenText = c.s;
   if (m === 'audio') { P.pend = P.chT; startChapter(true); if (A.readyState >= 1) applyPend(); }
   else if (m === 'tts') { A.pause(); stopVoice(); speakChapter(cueAt(c, P.chT)); }
-  else { A.pause(); stopVoice(); stopBgm(); }
+  else { A.pause(); stopVoice(); }
   media(); render(false);
 }
 /* 다른 구간 파일로 옮길 때는 파일 길이를 안 뒤에야 위치를 바꿀 수 있다. */
@@ -990,7 +992,7 @@ function locate(sec){ for (var i = 0; i < CH.length; i++) { if (sec < CH[i].est 
 function go(delta){ var n = Math.min(CH.length - 1, Math.max(0, P.ch + delta)); if (delta < 0 && P.chT > 3 && delta === -1) n = P.ch; play(n); }
 function nextAuto(){
   if (P.ch < CH.length - 1) { P.ch++; P.chT = 0; startChapter(false); media(); render(); }
-  else { P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopBgm(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
+  else { P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
 }
 function media(){
   if (!('mediaSession' in navigator)) return;

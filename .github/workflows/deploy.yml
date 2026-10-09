@@ -33,8 +33,25 @@ jobs:
       # 새 화면과 그 자료만 올린다. 이전 시험 화면(legacy.html, data.json, details/)은 올리지 않는다.
       - name: 올릴 파일 모으기
         run: mkdir -p site && cp output/app/index.html output/app/privacy.html site/ && cp -R output/app/data site/data
-      - name: 배포용 하루 배경음악 선택
-        run: python3 -m tools.daily_bgm --output site/data/bgm
+      # 원곡은 공개 저장소·Pages artifact에 포함하지 않는다. 전용 읽기 키로만 가져온다.
+      - name: 비공개 YouTube 음악 원본 받기
+        uses: actions/checkout@v7
+        with:
+          repository: jeongwonbahk/knua-youtube-bgm-private
+          ref: assets/youtube-20261009
+          ssh-key: ${{ secrets.KNUA_BGM_DEPLOY_KEY }}
+          persist-credentials: false
+          path: .cache/youtube-bgm
+      - name: 음성 혼합 도구 확인
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+      - name: 하루 음악을 브리핑 음성과 혼합
+        env:
+          KNUA_BGM_SOURCE_DIR: .cache/youtube-bgm/music
+        run: python3 -m tools.daily_bgm --output site/data/bgm --require-source
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
