@@ -1,0 +1,37 @@
+name: PR 오프라인 테스트
+
+"on":
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# 같은 PR에 새 커밋이 오면 이전 실행은 멈춘다.
+concurrency:
+  group: pr-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+      # community/test_api.mjs는 내장 SQLite가 있는 Node 22.13 이상이 필요하다.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: 의존성 설치
+        run: python -m pip install -r requirements.txt
+      # 저장된 fixture만 쓰며 학교 사이트·모델에 요청하지 않는다. Qwen 음성 테스트는 torch가 없어 건너뛴다.
+      - name: Python 테스트
+        run: python -m pytest -q -p no:cacheprovider collector/tests briefing/tests community tools/tests
+      - name: 채널 목록 검사
+        run: python docs/check_channels.py
+      - name: 화면 테스트
+        run: node --test tests/*.test.mjs collector/tests/*.mjs community/test_api.mjs
