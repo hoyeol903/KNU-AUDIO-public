@@ -263,7 +263,7 @@ def export(output=ROOT / 'output/app', *, db_path=DEFAULT_PATH, raw_dir=ROOT / '
                             stored_channel_ids=sorted({id for row in stored for id in row['channel_ids']}),
                             date=now.date().isoformat())
     # index.html은 새 화면, legacy.html은 data.json·details를 읽는 이전 시험 화면이다.
-    for name, source in (('index.html', 'tools/knua-app.html'), ('legacy.html', 'tools/app-test.html'), ('privacy.html', 'tools/privacy.html')):
+    for name, source in (('index.html', 'tools/knua-app.html'), ('briefing-onepass.js', 'tools/briefing-onepass.js'), ('legacy.html', 'tools/app-test.html'), ('privacy.html', 'tools/privacy.html')):
         temporary = root / (name + '.tmp')
         temporary.write_text((ROOT / source).read_text(encoding='utf-8'), encoding='utf-8')
         temporary.replace(root / name)

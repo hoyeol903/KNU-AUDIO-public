@@ -21,3 +21,6 @@ output/qwen-samples/
 
 # 개인 Cloudflare 계정의 배포 설정
 community/wrangler.local.toml
+
+# Private one-pass GPU job state and generated audio cache
+.onepass-state/

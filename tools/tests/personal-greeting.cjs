@@ -15,10 +15,11 @@ function setup(korean = true) {
     addEventListener(){}, pause(){this.pauseCount++;}, play(){this.playCount++;return Promise.resolve();},
     getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;} };
   const speech = { getVoices(){return korean ? [{lang:'ko-KR'}] : [];}, cancel(){}, speak(u){spoken.push(u);} };
-  const context = { Audio: function(){return audio;}, window: {speechSynthesis:speech}, speechSynthesis:speech,
+  const onepassAudio = { duration: 2, currentTime: 0, paused:true, addEventListener(){}, pause(){this.paused=true;}, play(){this.paused=false;return Promise.resolve();}, removeAttribute(){}, load(){}, getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;}, attrs:{}, playbackRate:1, muted:false };
+  const context = { document:{getElementById(){return null;},querySelector(){return null;}}, Audio: function(){return audio;}, O:onepassAudio, ONEPASS:{status:'idle',generation:0,audioUrl:null}, onepassPaint(){}, onepassFail(){}, syncBgm(){}, window: {speechSynthesis:speech}, speechSynthesis:speech,
     SpeechSynthesisUtterance:function(text){this.text=text;}, performance:{now:()=>1000},
     setTimeout(){}, setInterval(fn){context.tick=fn;}, navigator:{}, render(){}, media(){}, paintProgress(){}, toastMsg(){},
-    store:{name:'김경민'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false,playToken:0}, BGM_TRACK:null, BRIEF_OLD:false,
+    store:{name:'테스트사용자'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false,playToken:0}, BGM_TRACK:null, BRIEF_OLD:false,
     BRIEF:{segments:[{id:'greeting',script:'안녕하세요.',personal_template:'안녕하세요, {name}님. 좋은 아침이에요!',audio:'hello.mp3',duration_sec:2},
       {id:'intro',script:'겉옷을 챙겨 주세요.',audio:'weather.mp3',duration_sec:3},
       {id:'outro',script:'힘내세요.',audio:'bye.mp3',duration_sec:2}]}};
@@ -28,10 +29,10 @@ function setup(korean = true) {
 }
 {
  const {context:c,spoken,audio}=setup();
- assert.equal(c.CH[0].s,'안녕하세요, 김경민님. 좋은 아침이에요!');
+ assert.equal(c.CH[0].s,'안녕하세요, 테스트사용자님. 좋은 아침이에요!');
  assert.equal(c.CH.length,3);c.play(0);
  assert.equal(c.mode(),'tts');assert.equal(audio.playCount,0);
- assert.equal(spoken[0].text,'안녕하세요, 김경민님.');
+ assert.equal(spoken[0].text,'안녕하세요, 테스트사용자님.');
  spoken[spoken.length-1].onend();
  assert.equal(c.P.ch,1);assert.equal(c.mode(),'audio');assert.equal(audio.playCount,1);
 }
