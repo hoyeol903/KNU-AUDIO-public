@@ -117,7 +117,7 @@ def test_postprocess_normalizes_quiet_and_loud_segments_and_adds_same_pause(tmp_
                                         check=True, capture_output=True, text=True)
         durations.append(float(probe_duration.stdout))
     assert max(measured_loudness) - min(measured_loudness) <= .8
-    assert all(2.8 <= duration <= 3.05 for duration in durations)
+    assert all(2.4 <= duration <= 2.65 for duration in durations)
     assert abs(durations[0] - durations[1]) <= .03
 
 
@@ -139,7 +139,7 @@ def test_postprocess_trims_only_edge_silence_and_keeps_phrase_pause(tmp_path):
                                     '-af', 'silencedetect=noise=-50dB:d=0.08', '-f', 'null', '-'],
                                    check=True, capture_output=True, text=True)
     silence_durations = [float(value) for value in re.findall(r'silence_duration: ([0-9.]+)', silence_probe.stderr)]
-    assert 2.55 <= duration <= 2.7
+    assert 2.15 <= duration <= 2.3
     assert any(.17 <= length <= .23 for length in silence_durations)
 
 
@@ -148,7 +148,7 @@ def test_audio_profile_includes_seed_and_quality_settings():
     assert CACHE_PROFILE['sampling']['do_sample'] is True
     assert CACHE_PROFILE['sampling']['subtalker_dosample'] is True
     assert CACHE_PROFILE['postprocess']['target_lufs'] == -19
-    assert CACHE_PROFILE['postprocess']['added_tail_silence_sec'] == .83
+    assert CACHE_PROFILE['postprocess']['added_tail_silence_sec'] == .43
 
 
 def test_each_generation_uses_repeatable_seed_without_changing_host_rng():
