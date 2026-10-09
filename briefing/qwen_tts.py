@@ -16,7 +16,7 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v4-uniform-gain-pause'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v5-uniform-gain-pause-fade'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
@@ -25,6 +25,8 @@ AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
                          preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
                          # 구간 끝에 붙이는 쉼. 인사→날씨→공지가 붙어서 들려 0.18초에서 0.25초 늘렸다(남겨 둔 0.08초와 합쳐 약 0.5초).
                          added_tail_silence_sec=.43,
+                         # 구간이 툭 시작하고 툭 끝나지 않게 양 끝의 소리 크기를 짧게 올리고 내린다(말소리에 흔히 쓰는 범위).
+                         fade_in_sec=.02, fade_out_sec=.10,
                          # loudnorm은 처리 방식에 따라 출력 표본화율이 달라진다(24kHz 또는 48kHz).
                          # 구간마다 달라지면 이어 붙인 MP3가 브라우저에서 경계에서 끊기므로 모델 출력과 같은 값으로 고정한다.
                          sample_rate=24000)
@@ -67,7 +69,10 @@ def _audio_filters(tempo):
                   f'start_silence={profile["preserved_start_silence_sec"]},areverse,'
                   f'silenceremove=start_periods=1:start_duration={profile["trim_end_duration_sec"]}:'
                   f'start_threshold={profile["trim_end_threshold_db"]}dB:'
-                  f'start_silence={profile["preserved_end_silence_sec"]},areverse')
+                  f'start_silence={profile["preserved_end_silence_sec"]},'
+                  # 뒤집힌 상태에서 앞을 올리면, 다시 뒤집었을 때 끝이 서서히 작아진다.
+                  f'afade=t=in:st=0:d={profile["fade_out_sec"]},areverse,'
+                  f'afade=t=in:st=0:d={profile["fade_in_sec"]}')
     return f'atempo={tempo},{trim_edges},apad=pad_dur={profile["added_tail_silence_sec"]}'
 
 

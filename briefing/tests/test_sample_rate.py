@@ -1,7 +1,7 @@
 from types import SimpleNamespace
 
 from briefing import app_export
-from briefing.qwen_tts import AUDIO_POSTPROCESS, CACHE_PROFILE, normalize_audio
+from briefing.qwen_tts import AUDIO_POSTPROCESS, CACHE_PROFILE, _audio_filters, normalize_audio
 
 
 def test_every_clip_is_encoded_at_the_same_sample_rate(tmp_path):
@@ -41,4 +41,12 @@ def test_every_clip_gets_the_same_kind_of_loudness_processing(tmp_path):
         assert 'loudnorm' not in filters and filters.endswith('alimiter=limit=0.7943:level=0')
     assert 'volume=8.50dB' in quiet and 'volume=-5.00dB' in loud
     assert 'volume=20.00dB' in chain('-70')  # 거의 무음인 구간을 과하게 키우지 않는다
+
+
+def test_clip_edges_fade_in_and_out_before_the_pause_is_added():
+    filters = _audio_filters(1.0).split(',')
+    # 끝 페이드는 뒤집힌 상태에서 걸고, 시작 페이드는 다시 뒤집은 뒤에 건다. 쉼(무음)은 맨 마지막에 붙는다.
+    assert filters[-5:] == [filters[-5], 'afade=t=in:st=0:d=0.1', 'areverse', 'afade=t=in:st=0:d=0.02', 'apad=pad_dur=0.43']
+    assert filters[-5].startswith('silenceremove=')
+    assert (AUDIO_POSTPROCESS['fade_in_sec'], AUDIO_POSTPROCESS['fade_out_sec'], AUDIO_POSTPROCESS['added_tail_silence_sec']) == (.02, .10, .43)
 
