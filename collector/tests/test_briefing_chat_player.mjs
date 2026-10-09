@@ -3,8 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const html = readFileSync(new URL('../../tools/knua-app.html', import.meta.url), 'utf8');
-const script = html.slice(html.indexOf('<script>') + 8, html.lastIndexOf('</script>'));
-new vm.Script(script); // Catch syntax errors in the entire app, too.
+for (const match of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]); // Catch syntax errors in the entire app, too.
 const helpers = html.slice(html.indexOf('function sentences('), html.indexOf('/* 말풍선 상태:'));
 const engine = html.slice(html.indexOf('function mode('), html.indexOf('function paintProgress('));
 let now = 0, tick, queue = [], painted = [];

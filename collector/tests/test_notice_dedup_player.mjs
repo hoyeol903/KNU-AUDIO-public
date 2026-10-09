@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const html=readFileSync(new URL('../../tools/knua-app.html',import.meta.url),'utf8');
-new vm.Script(html.slice(html.indexOf('<script>')+8,html.lastIndexOf('</script>')));
+for (const match of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
 const shared={id:'shared',channel_id:'shared',kind:'notice',channel_ids:['a','b'],script:'한 번 듣기',audio:'shared.mp3',duration_sec:2,items:[
  {channel_id:'a',postId:'a:1',title:'A',url:'https://a'}, {channel_id:'b',postId:'b:2',title:'B',url:'https://b'}]};
 const c=vm.createContext({BRIEF:{segments:[{id:'intro',script:'인사'},shared,{id:'outro',script:'끝'}]},store:{},dd:x=>x});
