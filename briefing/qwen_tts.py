@@ -16,7 +16,7 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v2-24k'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v3-uniform-gain'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
@@ -81,7 +81,7 @@ def seeded_rng(torch, runtime_device):
 
 
 def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
-    """Two-pass EBU R128 normalization with a uniform, conservative segment tail."""
+    """음량을 측정한 뒤 모든 구간에 같은 방식(고정 증폭 + 피크 리미터)으로 목표 음량에 맞춘다."""
     base = _audio_filters(tempo)
     target = 'I=-19:TP=-2:LRA=7'
     measurement = runner(
@@ -91,14 +91,18 @@ def normalize_audio(wav, mp3, tempo, *, runner=subprocess.run):
     if not matches:
         raise RuntimeError('FFmpeg 음량 측정 결과를 읽지 못했습니다.')
     stats = json.loads(matches[-1])
-    required = ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')
+    required = ('input_i', 'input_tp')
     if any(stats.get(key) in (None, '-inf', 'inf', 'nan') for key in required):
         raise RuntimeError('음성 구간의 음량을 안정적으로 측정하지 못했습니다.')
-    measured = ':'.join(f'measured_{key}={stats[source]}' for key, source in (
-        ('I', 'input_i'), ('TP', 'input_tp'), ('LRA', 'input_lra'), ('thresh', 'input_thresh')))
-    second_pass = f'{base},loudnorm={target}:{measured}:offset={stats["target_offset"]}:linear=true:print_format=summary'
+    # loudnorm 2차 처리는 구간에 따라 전체 음량만 올리거나(선형) 음량을 실시간으로 조절해(동적)
+    # 구간마다 소리 느낌과 표본화율이 달라졌다. 모든 구간에 같은 처리를 한다:
+    # 목표 음량까지 한 번에 올리고, 목표 최대치를 넘는 순간 피크만 리미터로 누른다.
+    profile = AUDIO_POSTPROCESS
+    gain = max(-20.0, min(20.0, profile['target_lufs'] - float(stats['input_i'])))
+    ceiling = 10 ** (profile['true_peak_db'] / 20)
+    second_pass = f'{base},volume={gain:.2f}dB,alimiter=limit={ceiling:.4f}:level=0'
     runner(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(wav), '-af', second_pass,
-            '-ar', str(AUDIO_POSTPROCESS['sample_rate']), '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
+            '-ar', str(profile['sample_rate']), '-codec:a', 'libmp3lame', '-b:a', '96k', str(mp3)],
            check=True, timeout=180, capture_output=True)
 
 
