@@ -14,7 +14,7 @@ class FakeSLM:
         return 'test-model-digest'
 
     def generate(self, payload, errors):
-        return '오늘 안내입니다.'
+        return '공지 안내는 5일이에요.'
 
 
 def segment():
@@ -45,11 +45,12 @@ def test_script_failure_is_recorded_without_overwriting_failure_details(tmp_path
     progress = ProgressRecorder(path)
     result = generate_segments([segment()], BrokenSLM(), tmp_path / 'cache', tmp_path / 'review.json', progress=progress)
 
-    assert result[0]['review']['status'] == 'revision-unchecked'
-    assert json.loads(path.read_text())['events'][-1]['status'] == 'completed'
+    assert result[0]['_skip_notice']
+    assert json.loads(path.read_text())['events'][-1]['status'] == 'skipped'
     report = json.loads((tmp_path / 'review.json').read_text())
-    assert report['status'] == 'revision-unchecked' and not report['skipped_notices']
-    assert len(report['segments'][0]['attempts']) == 1
+    assert report['status'] == 'partial' and report['skipped_notices']
+    assert len(report['segments'][0]['attempts']) == 3
+    assert report['segments'][0]['attempts'][-1]['attempt'] == 'source_fallback'
 
 
 def test_non_notice_revision_is_also_unchecked(tmp_path):
@@ -65,16 +66,20 @@ def test_revised_notice_reaches_tts_and_export(tmp_path, monkeypatch):
     data = json.loads((ROOT / 'data/raw/2026-10-03/items.json').read_text())
     channel = next(row for row in data['channels'] if len(row['notices']) >= 2)
     bad = channel['notices'][0]
-    bad['title'] = '검수 실패를 격리하는 테스트 공지'
+    bad['title'] = '검수 실패 공지'
     bad['body'] = '검수 실패 시험 내용입니다.'
+    bad['deadline'] = None
+    bad['dday'] = None
+    bad['reason'] = 'new'
+    data['channels'] = [dict(channel_id=channel['channel_id'], notices=[bad], meals=[])]
     input_path = tmp_path / 'items.json'
     input_path.write_text(json.dumps(data), encoding='utf-8')
 
     class OneBadSLM(FakeSLM):
         def generate(self, payload, errors):
-            if '검수 실패를 격리' in payload['title']:
-                return '원문에 없는 금액 999999원입니다.'
-            return '검수를 통과한 안내입니다.'
+            if '검수 실패' in payload['title']:
+                return '원문에 없는 금액 999999원입니다.' if not errors else '검수 실패 공지를 안내해요.'
+            return '공지 내용을 안내해요.'
 
     client = Mock()
     client.synthesize.return_value = b'mock audio'
@@ -110,8 +115,8 @@ def test_all_revised_notices_are_exported_with_empty_fallback(tmp_path, monkeypa
                    client=client, slm_client=AllBadSLM())
     manifest = json.loads((output / 'manifest.json').read_text())
     rows = app_export.app_segments(manifest, data, 'female')
-    assert not report['skipped_notices']
-    assert any(s['kind'] == 'notice' and s['review']['status'] == 'revision-unchecked' for s in manifest['segments'])
+    assert report['skipped_notices']
+    assert not any(s['kind'] == 'notice' for s in manifest['segments'])
     assert {'empty', 'outro'} <= {row['channel_id'] for row in rows}
 
 

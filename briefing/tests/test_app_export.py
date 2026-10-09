@@ -105,12 +105,11 @@ def test_declared_skips_only_matching_notice_and_all_skipped_keeps_fallback(tmp_
         app_export.app_segments(manifest, items, 'female')
 
 
-def test_personal_greeting_is_separate_and_legacy_intro_is_preserved(tmp_path):
+def test_legacy_personal_template_uses_generated_voice_in_combined_intro(tmp_path):
     _, _, manifest, items = sample(tmp_path)
     manifest['segments'][0]['personal_template'] = '안녕하세요, {name}님. 좋은 아침이에요!'
     rows = app_export.app_segments(manifest, items, 'female')
-    assert [r['id'] for r in rows[:2]] == ['greeting', 'intro']
-    assert rows[0]['personal_template'] == '안녕하세요, {name}님. 좋은 아침이에요!'
-    assert rows[0]['parts'] == ['audio/f-hi.mp3']  # 기기 음성이 없으면 기본 인사를 재생
-    assert rows[1]['script'] == '맑아요.'
-    assert rows[1]['parts'] == ['audio/f-w.mp3']  # 두 번 인사하지 않는다
+    assert rows[0]['id'] == 'intro'
+    assert 'personal_template' not in rows[0]
+    assert rows[0]['script'] == '안녕하세요. 맑아요.'
+    assert rows[0]['parts'] == ['audio/f-hi.mp3', 'audio/f-w.mp3']

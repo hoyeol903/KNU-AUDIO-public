@@ -828,9 +828,8 @@ function chapters(W){
   return ids.filter(function(id){ return seg[id]; }).map(function(id){
     var s = seg[id], b = W.boards.filter(function(x){ return x.id === id; })[0];
     var sec = s.duration > 0 ? s.duration : s.duration_sec;
-    var personalized = id === 'greeting' && s.personal_template && store.name;
-    var text = personalized ? s.personal_template.replace(/\{name\}/g, function(){ return String(store.name).trim().slice(0, 20); }) : s.script || '';
-    return { id: id, t: s.title || '', s: text, personalGreeting: !!personalized, baseScript: s.script || '', cues: s.cues || [], audio: s.audio || null, est: sec > 0 ? sec : Math.max(4, text.length * 0.135),
+    var text = s.script || '';
+    return { id: id, t: s.title || '', s: text, cues: s.cues || [], audio: s.audio || null, est: sec > 0 ? sec : Math.max(4, text.length * 0.135),
       cards: (s.cards || s.items || []).filter(function(k){ return !k.channel_id || W.boards.some(function(x){ return x.id === k.channel_id; }); }).map(function(k){
         var board = k.channel_id ? W.boards.filter(function(x){ return x.id === k.channel_id; })[0] : b;
         var p = board && k.postId ? board.today.filter(function(x){ return x.id === k.postId; })[0] : null;
@@ -871,7 +870,6 @@ A.addEventListener('pause', stopBgm);
 function audioUrl(a){ return /^(https?:)?\/\//.test(a) || a.charAt(0) === '/' ? a : 'data/briefing/' + a; }
 function mode(c, fresh){ c = c || CH[P.ch]; if (!c) return 'timer';
   if (!fresh && c === CH[P.ch] && P.activeMode) return P.activeMode;
-  if (c.personalGreeting && S.voice && window.speechSynthesis && voiceKo && !P.fallback) return 'tts';
   return c.audio ? 'audio' : (c.s && S.voice && window.speechSynthesis && !P.fallback ? 'tts' : 'timer'); }
 A.addEventListener('ended', function(){ if (P.playing) nextAuto(); });
 A.addEventListener('error', function(){ if (P.playing && mode() === 'audio') { nextAuto(); toastMsg('음성 파일을 불러오지 못한 구간은 건너뛰었어요.'); } });
@@ -882,7 +880,6 @@ if (window.speechSynthesis) { pickVoice(); speechSynthesis.onvoiceschanged = pic
 function speakChapter(from){
   var c = CH[P.ch], parts = sentences(c.s), first = Math.max(0, Math.min(from || 0, parts.length - 1));
   var gen = ++P.gen; P.voiceOk = false; P.speakAt = performance.now(); P.ttsSentence = first;
-  if (c.personalGreeting) c.est = Math.max(4, c.s.length * 0.135);
   P.chT = sentStart(c, first);
   try { speechSynthesis.cancel(); } catch (e) {}
   parts.slice(first).forEach(function(t, i){
@@ -912,10 +909,9 @@ function speakChapter(from){
 function stopVoice(){ P.gen++; try { if (window.speechSynthesis) speechSynthesis.cancel(); } catch (e) {} }
 function startChapter(resume){
   var c = CH[P.ch], m = mode(c, true);
-  P.activeMode = c.chatMode = m; c.spokenText = c.personalGreeting && m !== 'tts' ? c.baseScript : c.s;
+  P.activeMode = c.chatMode = m; c.spokenText = c.s;
   stopVoice();
   if (m !== 'audio') { A.pause(); if (m === 'tts') speakChapter(resume ? sentAt(c, P.chT) : 0); else stopBgm(); return; }
-  if (c.personalGreeting && S.voice && (!voiceKo || P.fallback)) toastMsg('기기 한국어 음성을 사용할 수 없어 기본 인사를 들려드릴게요.');
   if (m !== 'audio' && m !== 'tts') stopBgm();
   var src = audioUrl(c.audio);
   if (A.getAttribute('data-src') !== src) { A.setAttribute('data-src', src); A.src = src; }
@@ -941,7 +937,7 @@ function seekTo(ch, t){
   var c = CH[ch]; if (!c) return;
   P.ch = ch; P.chT = Math.max(0, Math.min(t, c.est - 0.05)); P.done = false; P.playing = true; P.started = true; P.last = performance.now();
   var m = mode(c, true);
-  P.activeMode = c.chatMode = m; c.spokenText = c.personalGreeting && m !== 'tts' ? c.baseScript : c.s;
+  P.activeMode = c.chatMode = m; c.spokenText = c.s;
   if (m === 'audio') { P.pend = P.chT; startChapter(true); if (A.readyState >= 1) applyPend(); }
   else if (m === 'tts') { A.pause(); stopVoice(); speakChapter(cueAt(c, P.chT)); }
   else { A.pause(); stopVoice(); stopBgm(); }
@@ -978,9 +974,6 @@ setInterval(function(){
   if (m === 'audio') { if (P.pend == null) P.chT = Math.min(A.currentTime, est); return paintProgress(); }
   if (m === 'tts' && !P.voiceOk && now - P.speakAt > 2500) {
     P.fallback = true; stopVoice();
-    if (CH[P.ch].personalGreeting && CH[P.ch].audio) {
-      P.chT = 0; startChapter(false); render(false); toastMsg('이름 인사를 재생하지 못해 기본 인사 음성으로 이어갈게요.'); return;
-    }
     m = P.activeMode = CH[P.ch].chatMode = 'timer';
     if (!warned) { warned = true; toastMsg('소리가 시작되지 않아 화면만 진행해요. 기기 음량, 무음 모드, 한국어 음성 설치를 확인해 주세요.'); }
   }
@@ -1737,7 +1730,7 @@ function tourEnd(){ S.tour = null; store.tour = 'done'; save(); var sc = documen
 /* 5 브리핑 재생 */
 /* 녹음 음성에는 실제 구간 경계를, 기기 음성에는 문장 시작 이벤트를 사용한다. */
 function sentences(t){ return String(t || '').split(/(?<=[.!?])\s+/).map(function(x){ return x.trim(); }).filter(Boolean); }
-function chatText(c){ return typeof c.spokenText === 'string' ? c.spokenText : c.personalGreeting && mode(c) !== 'tts' ? c.baseScript : c.s; }
+function chatText(c){ return typeof c.spokenText === 'string' ? c.spokenText : c.s; }
 function chatCues(c){
   var text = chatText(c) || '', ss, all, acc = 0;
   if ((c.chatMode || mode(c)) === 'audio') {

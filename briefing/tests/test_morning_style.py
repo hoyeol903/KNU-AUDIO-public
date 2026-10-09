@@ -1,5 +1,5 @@
 from briefing.build import ROOT, read_yaml
-from briefing.content import weather_script, create_segments
+from briefing.content import weather_script, create_segments, daily_variant
 from briefing.review import review
 from briefing.samples import create_samples
 from collector.store import load_collection_report
@@ -44,19 +44,20 @@ def test_three_preview_styles_keep_truth_and_do_not_call_tts(tmp_path):
     greetings, endings = set(), set()
     for draft in result['samples']:
         rows = draft['segments']
-        assert rows[0]['script'].startswith('안녕하세요, 김경민님. 좋은 아침이에요!')
+        assert rows[0]['script'].startswith('안녕하세요, 좋은 아침이에요!')
         assert '{name}' not in draft['script']
         assert '함께해 주셔서 고마워' not in draft['script']
         greetings.add(rows[0]['script']); endings.add(rows[-1]['script'])
     assert len(greetings) == 3
     assert endings == {'오늘도 좋은 하루 보내세요!'}
+    assert [daily_variant(f'2026-10-{day:02d}') for day in (7, 8, 9, 10)] == [2, 0, 1, 2]
     # 운영 생성은 같은 날 같은 변형으로 캐시를 재사용한다.
     first = create_segments(data, [], config, [])[0]
     second = create_segments(data, [], config, [])[0]
     assert [s['script'] for s in first] == [s['script'] for s in second]
 
 
-def test_preview_keeps_unchecked_revised_notice(tmp_path):
+def test_preview_skips_notice_when_both_drafts_fail_numeric_review(tmp_path):
     config = read_yaml(ROOT / 'config/briefing.yaml')
     data = load_collection_report(ROOT / 'data/raw/2026-10-06/items.json')
     class OneBad:
@@ -65,5 +66,5 @@ def test_preview_keeps_unchecked_revised_notice(tmp_path):
             if payload['kind'] == 'notice': return '원문에 없는 999999원입니다.'
             return '오늘의 안내입니다.'
     result = create_samples(data, [], config, [], provider=OneBad(), report_dir=tmp_path / 'reports')
-    assert result['status'] == 'passed' and not result['skipped_notices']
-    assert any(row['kind'] == 'notice' and row['script'] == '원문에 없는 999999원입니다.' for sample in result['samples'] for row in sample['segments'])
+    assert result['status'] == 'partial' and result['skipped_notices']
+    assert all(row['kind'] != 'notice' or row.get('skipped') for sample in result['samples'] for row in sample['segments'])

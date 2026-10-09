@@ -13,6 +13,13 @@ from datetime import date
 VOICE_NAMES = {'kr': 'MeloTTS 한국어 기본 목소리'}
 
 _FULL_DATE = re.compile(r'(?<!\d)(\d{4})\s*(?:년|[./-])\s*(\d{1,2})\s*(?:월|[./-])\s*(\d{1,2})\s*일?(?!\d)')
+_DATE_RANGE = re.compile(
+    r'(?<!\d)(?P<year>20\d{2})\s*(?:년|[./-])\s*'
+    r'(?P<month>\d{1,2})\s*(?:월|[./-])\s*(?P<start_day>\d{1,2})\s*일?\.?\s*'
+    r'(?:부터|[~∼〜～–—-])\s*'
+    r'(?:(?P<end_year>20\d{2})\s*(?:년|[./-])\s*)?'
+    r'(?:(?P<end_month>\d{1,2})\s*(?:월|[./-])\s*)?'
+    r'(?P<end_day>\d{1,2})\s*일?\.?\s*까지(?!\d)')
 _CLOCK = re.compile(r'(?<!\d)([01]?\d|2[0-3]):([0-5]\d)(?!\d)')
 _ACRONYMS = {
     'AI': '에이아이', 'HWP': '에이치더블유피', 'ICT': '아이씨티',
@@ -29,6 +36,22 @@ def _spoken_date(match):
     except ValueError:
         return match.group(0)
     return f'{year}년 {month}월 {day}일'
+
+
+def _spoken_date_range(match):
+    year, month, start_day = (int(match.group(name)) for name in ('year', 'month', 'start_day'))
+    end_year = int(match.group('end_year') or year)
+    end_month = int(match.group('end_month') or month)
+    end_day = int(match.group('end_day'))
+    try:
+        date(year, month, start_day)
+        date(end_year, end_month, end_day)
+    except ValueError:
+        return match.group(0)
+    start = f'{year}년 {month}월 {start_day}일'
+    end = (f'{end_month}월 {end_day}일' if end_year == year
+           else f'{end_year}년 {end_month}월 {end_day}일')
+    return f'{start}부터 {end}까지'
 
 
 def _spoken_clock(match):
@@ -56,6 +79,10 @@ def qwen_spoken_text(text):
     text = spoken_text(text)
     # Give common structured dates and 24-hour times Korean unit cues so the
     # speech model does not alternate between reading punctuation as decimals.
+    # Read the endpoint of a same-month range without expanding the month/year,
+    # and consume the punctuation before Korean particles. Generic date handling
+    # below then speaks remaining dates normally.
+    text = _DATE_RANGE.sub(_spoken_date_range, text)
     text = _FULL_DATE.sub(_spoken_date, text)
     text = _CLOCK.sub(_spoken_clock, text)
     text = _ACRONYM_RE.sub(lambda match: _ACRONYMS[match.group().upper()], text)

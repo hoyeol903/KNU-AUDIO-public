@@ -23,12 +23,12 @@ def test_duplicate_sources_generate_one_script_audio_and_keep_all_links(tmp_path
         c['notices'] = c['notices'][:1] if c in selected else []
     for i, c in enumerate(selected):
         n = c['notices'][0]
-        n.update(title=('[안내] ' if i == 0 else '') + '공통 모집', body='재학생을 모집합니다. 신청은 학교 홈페이지에서 합니다.',
+        n.update(title=('[안내] ' if i == 0 else '') + '로봇산업전 모집', body='로봇산업전 관람을 모집합니다. 신청은 학교 홈페이지에서 합니다.',
                  deadline=None, dday=None, reason='new')
     before = deepcopy(data)
     path = tmp_path/'items.json'; path.write_text(json.dumps(data))
     slm = Mock(); slm.identity.return_value='test'
-    slm.generate.return_value='재학생을 모집해요.'
+    slm.generate.return_value='로봇산업전 관람을 신청해요.'
     tts = Mock(); tts.synthesize.side_effect=lambda script, *a: script.encode()
     monkeypatch.setattr(b, 'audio_info', lambda raw: 1.0)
     b.build(path, output=tmp_path/'dist', cache=tmp_path/'cache', allow_archive=True, client=tts, slm_client=slm)
@@ -37,8 +37,9 @@ def test_duplicate_sources_generate_one_script_audio_and_keep_all_links(tmp_path
     manifest=json.loads((tmp_path/'dist/manifest.json').read_text())
     notices=[s for s in manifest['segments'] if s['kind']=='notice']
     assert len(notices)==1 and len(notices[0]['notice_refs'])==2
+    assert 'generation_evidence' not in notices[0] and 'fact_hints' not in notices[0]
     assert set(notices[0]['channel_ids']) == {c['channel_id'] for c in selected}
-    assert sum(call.args[0]=='재학생을 모집해요.' for call in tts.synthesize.call_args_list)==1
+    assert sum(call.args[0]=='로봇산업전 관람을 신청해요.' for call in tts.synthesize.call_args_list)==1
     assert data==before and json.loads(path.read_text())==before
     rows=app_export.export(tmp_path/'dist', tmp_path/'app', items_path=path, concat=lambda parts, target: target.write_bytes(b'joined'))
     shared=[s for s in rows if s.get('kind')=='notice']

@@ -34,6 +34,6 @@ bgm:
   volume: 0.1
 
 slm:
-  model: qwen3:4b
+  model: qwen3:4b-instruct-2507-q4_K_M
   url: http://127.0.0.1:11434
   timeout_seconds: 600
