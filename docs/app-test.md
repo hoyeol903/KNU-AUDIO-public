@@ -13,7 +13,7 @@ python -m http.server 8000 --directory output/app
 
 `python -m collector.preview`의 `http://127.0.0.1:8765/app`은 기존 로컬 API 화면으로 유지한다. 정적 앱의 하위 경로에서도 `./data.json` 기준 상대 경로를 사용한다. 날짜가 현재 한국 날짜와 다르면 화면은 자료 기준일을 표시한다.
 
-GitHub Pages의 branch 게시 폴더 선택은 저장소 루트 또는 `docs`만 지원하므로 `output/app`을 직접 게시 대상으로 고를 수 없다. 이 저장소에는 배포 설정을 추가하지 않았다. 게시할 때는 `output/app`을 Pages artifact로 업로드하는 별도 GitHub Actions workflow를 구성하고 Pages 설정에서 Actions 게시를 선택해야 한다. 기본 `GITHUB_TOKEN`으로 파일을 커밋해도 branch 방식 Pages 빌드가 자동 시작되지는 않는다. 자세한 내용은 [게시 소스 설정](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)과 [custom workflow 게시](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)를 참고한다.
+GitHub Pages의 Source는 **GitHub Actions**로 설정한다. 현재 `.github/workflows/deploy.yml`이 `output/app`의 배포용 파일을 Pages artifact로 업로드한다. 구체적인 실행 조건과 공개 파일은 아래 배포 안내를 참고한다. 기본 `GITHUB_TOKEN`으로 파일을 커밋하는 수집 작업은 push 트리거 대신 워크플로 완료 이벤트로 배포를 잇는다.
 
 ## 새 화면과 화면용 자료 (2026-10-03)
 
@@ -44,7 +44,7 @@ GitHub Pages의 branch 게시 폴더 선택은 저장소 루트 또는 `docs`만
                   "duration": 초, "script", "cards": [ { "kind": "날씨|마감 임박|학식|소식", "title", "desc", "url", "postId" } ] } ] }
 ```
 
-`audio`는 `data/briefing/` 기준 상대 경로다. `date`가 `meta.json`의 `asOf`와 다르거나 파일이 없으면 "브리핑 없는 날"로 보여준다. 재생 목록은 intro, 오늘 소식이 있는 내 게시판, 내 식당, outro 순서로 화면이 만든다. `audio`가 없고 `script`만 있는 구간은 브라우저 음성으로 읽는다. 화면은 `docs/contracts.md`의 `briefing.json` 이름(`channel_id`, `duration_sec`, `items`, `section`, `detail`)도 그대로 읽는다. 브리핑 담당용 안내는 `docs/briefing-handoff.md`, 예시는 `samples/briefing.example.json`이다.
+`audio`는 `data/briefing/` 기준 상대 경로다. `date`와 `meta.json`의 `asOf` 차이가 3일 이내이면 날짜가 다른 최신 음성도 받아들이고 그 음성 날짜를 표시한다. 파일이 없거나 허용 범위를 벗어나면 브리핑 없음으로 표시한다. 재생 목록은 intro, 오늘 소식이 있는 내 게시판, 내 식당, outro 순서로 화면이 만든다. `audio`가 없고 `script`만 있는 구간은 브라우저 음성으로 읽는다. 화면은 `docs/contracts.md`의 `briefing.json` 이름(`channel_id`, `duration_sec`, `items`, `section`, `detail`)도 그대로 읽는다. 브리핑 담당용 안내는 `docs/briefing-handoff.md`, 예시는 `samples/briefing.example.json`이다.
 
 주소 끝에 `?test`를 붙이면 테스트 패널(밝기, 바로 가기, 저장 지우기)이 보인다.
 
@@ -60,13 +60,13 @@ GitHub Pages의 branch 게시 폴더 선택은 저장소 루트 또는 `docs`만
 
 배포에 별도 Secret은 필요하지 않다.
 
-새 화면(`index.html`)과 그 자료(`data/`)만 올린다. 이전 시험 화면(`legacy.html`, `data.json`, `details/`)은 올리지 않는다. 배포한 사이트는 누구나 볼 수 있다.
+새 화면(`index.html`), 개인정보 안내(`privacy.html`)와 화면용 자료(`data/`)를 올린다. 이전 시험 화면(`legacy.html`, `data.json`, `details/`)은 올리지 않는다. 배포한 사이트는 누구나 볼 수 있다. 일시적인 Pages 배포 오류는 워크플로에서 한 번 다시 시도한다.
 
 
 ## 월 일정·교류 구역·저장 공지 (2026-10-07)
 
 - 캘린더의 월 전체 일정은 날짜순으로 처음 5개만 표시한다. 6개 이상이면 나머지 보기/접기로 펼치며 선택한 날짜의 일정은 별도로 유지한다.
-- 교류 탭은 스터디·과팅·소모임 구역으로 나뉜다. 구역을 누르면 각각의 예시 10개와 내 모임 목록으로 이동하고, 뒤로 버튼은 교류 첫 화면으로 돌아간다.
+- 교류 탭은 스터디·과팅·소모임 구역으로 나뉜다. 구역을 누르면 해당 분류의 공유 모집글과 내 모집글, 예시 목록으로 이동하고, 뒤로 버튼은 교류 첫 화면으로 돌아간다. 2026-10-09 기준 예시는 각 분류 1개, 총 3개다.
 - 공지 상세에서 `공지 저장`을 누르면 홈의 내 게시판 → 저장한 공지에 모인다. 다시 누르거나 저장 목록의 해제 버튼으로 뺀다. 저장한 최신 순서로 표시한다.
 - 저장 공지는 `knua-app-v1`의 `savedPosts`에 게시판 식별자, 제목, 날짜, 본문, 원문 링크를 보관한다. 최근 30개 목록에서 빠지거나 선택 학과가 바뀌어도 다시 열 수 있다. 본문 로딩 전에 저장했다면 로딩이 끝났을 때 보완한다. 브라우저 데이터 삭제 또는 처음부터 다시 기능은 저장 공지도 지운다. 다른 브라우저나 기기로 동기화하지 않는다.
 - 공지 저장 회귀 검사: `node collector/tests/test_saved_notices_player.mjs`.
