@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {handleCommunity} from './api.mjs';
 const sqlite = new DatabaseSync(':memory:');
 sqlite.exec(readFileSync(new URL('../migrations/0001_community.sql',import.meta.url),'utf8'));
+sqlite.exec(readFileSync(new URL('../migrations/0002_application_decisions.sql',import.meta.url),'utf8'));
 const db = {prepare(sql) { let args=[]; const statement=sqlite.prepare(sql); return {bind(...values) {args=values; return this;}, async first(){return statement.get(...args) || null;}, async all(){return {results:statement.all(...args)};}, async run(){return statement.run(...args);}};}};
 const owner='a'.repeat(64), other='b'.repeat(64), stranger='c'.repeat(64);
 async function call(path='', method='GET', body, token=owner, options={}) { const request=new Request('https://knu-audio.pages.dev/api/community/meetings'+path,{method,headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...options.headers},body:body===undefined?undefined:typeof body==='string'?body:JSON.stringify(body)}); const response=await handleCommunity(request,{COMMUNITY_DB:db}); return {status:response.status,body:await response.json()}; }
@@ -64,4 +65,41 @@ const cors=await handleCommunity(preflight,crossEnv);assert.equal(cors.status,20
 const crossRead=await handleCommunity(new Request('https://api.example.com/api/community/meetings',{headers:{Origin:ghOrigin}}),crossEnv);assert.equal(crossRead.status,200);assert.equal(crossRead.headers.get('Access-Control-Allow-Origin'),ghOrigin);
 const crossWrite=await handleCommunity(new Request('https://api.example.com/api/community/meetings',{method:'POST',headers:{Origin:ghOrigin,Authorization:'Bearer '+other,'Content-Type':'application/json'},body:JSON.stringify({...post,id:crypto.randomUUID()})}),crossEnv);assert.equal(crossWrite.status,201);assert.equal(crossWrite.headers.get('Access-Control-Allow-Origin'),ghOrigin);
 assert.equal((await handleCommunity(new Request('https://api.example.com/api/community/meetings',{headers:{Origin:'https://evil.example'}}),crossEnv)).status,403);
-console.log('Community API: sharing, private applications, ownership, validation, idempotency, pagination, rate limits and deletion passed.');
+// 수락·거절과 알림: 모집자는 새 신청을, 신청자는 수락·거절 결과와 사유를 알림으로 받는다.
+async function api(path, method='GET', body, token=owner) { const request=new Request('https://knu-audio.pages.dev/api/community/'+path,{method,headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body===undefined?undefined:JSON.stringify(body)}); const response=await handleCommunity(request,{COMMUNITY_DB:db}); return {status:response.status,body:await response.json()}; }
+const p2={...post,id:crypto.randomUUID(),title:'알림 시험 스터디'};
+assert.equal((await call('','POST',p2)).status,201);
+assert.equal((await api('notifications','GET',undefined,null)).status,401);
+assert.equal((await call('/'+p2.id+'/applications','POST',application,other)).status,200);
+r=await api('notifications');assert.equal(r.body.items.length,1);assert.equal(r.body.items[0].kind,'applied');assert.equal(r.body.items[0].name,'참가자');assert.equal(r.body.items[0].title,'알림 시험 스터디');
+assert.equal((await api('notifications','GET',undefined,other)).body.items.length,0);
+r=await call('/'+p2.id+'/applications');assert.equal(r.body.items[0].status,'pending');assert.match(r.body.items[0].ref,/^[a-f0-9]{32}$/);assert(!JSON.stringify(r.body).includes(other));
+const ref=r.body.items[0].ref;
+assert.equal((await api('notifications')).body.items.length,0); // 신청 내역을 열면 새 신청 알림은 확인한 것으로 둔다.
+assert.equal((await call('/'+p2.id+'/applications/'+ref,'PUT',{status:'rejected',reason:'x'},other)).status,403);
+assert.equal((await call('/'+p2.id+'/applications/'+ref,'PUT',{status:'maybe'})).status,400);
+assert.equal((await call('/'+p2.id+'/applications/'+'0'.repeat(32),'PUT',{status:'accepted'})).status,404);
+assert.equal((await call('/'+p2.id+'/applications/'+ref,'PUT',{status:'rejected',reason:'x'.repeat(301)})).status,400);
+assert.equal((await call('/'+p2.id+'/applications/'+ref,'PUT',{status:'rejected',reason:'인원이 다 찼어요'})).status,200);
+r=await api('notifications','GET',undefined,other);assert.equal(r.body.items.length,1);assert.equal(r.body.items[0].kind,'rejected');assert.equal(r.body.items[0].reason,'인원이 다 찼어요');
+r=await api('applications','GET',undefined,other);assert.equal(r.body.items[0].postId,p2.id);assert.equal(r.body.items[0].status,'rejected');assert.equal(r.body.items[0].unread,true);
+r=await call('/'+p2.id,'GET',undefined,other);assert.equal(r.body.item.myApplication.status,'rejected');assert.equal(r.body.item.myApplication.reason,'인원이 다 찼어요');
+assert.equal((await api('notifications','GET',undefined,other)).body.items.length,0); // 글을 열면 결과 알림은 확인한 것으로 둔다.
+assert.equal((await call('/'+p2.id,'GET',undefined,stranger)).body.item.myApplication,undefined);
+// 다시 신청하면 대기 상태로 돌아가고 모집자에게 새 신청 알림이 간다.
+assert.equal((await call('/'+p2.id+'/applications','POST',{...application,message:'다시 신청해요'},other)).status,200);
+r=await call('/'+p2.id,'GET',undefined,other);assert.equal(r.body.item.myApplication.status,'pending');assert.equal(r.body.item.myApplication.reason,'');
+assert.equal((await api('notifications')).body.items.length,1);
+assert.equal((await api('notifications/read','POST',{before:0})).status,400);
+assert.equal((await api('notifications/read','POST',{before:1})).status,200);
+assert.equal((await api('notifications')).body.items.length,1); // 읽음 시점 이후의 알림은 남는다.
+assert.equal((await api('notifications/read','POST',{before:Date.now()})).status,200);
+assert.equal((await api('notifications')).body.items.length,0);
+assert.equal((await call('/'+p2.id+'/applications/'+ref,'PUT',{status:'accepted',reason:''})).status,200);
+r=await api('notifications','GET',undefined,other);assert.equal(r.body.items.length,1);assert.equal(r.body.items[0].kind,'accepted');
+assert.equal((await api('notifications/read','POST',{before:Date.now()},other)).status,200);
+assert.equal((await api('notifications','GET',undefined,other)).body.items.length,0);
+r=await api('applications','GET',undefined,other);assert.equal(r.body.items[0].status,'accepted');assert.equal(r.body.items[0].unread,false);
+assert.equal((await call('/'+p2.id,'DELETE')).status,200);
+assert.equal((await api('applications','GET',undefined,other)).body.items.length,0); // 글이 지워지면 신청과 알림도 사라진다.
+console.log('Community API: sharing, private applications, decisions and notifications, ownership, validation, idempotency, pagination, rate limits and deletion passed.');

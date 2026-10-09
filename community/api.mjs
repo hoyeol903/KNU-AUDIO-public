@@ -59,6 +59,10 @@ async function rate(db, request, owner, action) {
   // Indexed expiry avoids accumulating a new row per browser per day.
   await db.prepare("DELETE FROM community_limits WHERE day < date('now', '-7 days')").run();
 }
+const decisions = ['accepted', 'rejected'];
+const titleOf = payload => JSON.parse(payload).title || '';
+// 모집자에게는 신청자 인증값 대신 글마다 다른 짧은 번호만 보여 준다.
+async function applicationRef(postId, applicant) { return (await hash(`${postId}:${applicant}`)).slice(0, 32); }
 function publicPost(row, owner) { return {...JSON.parse(row.payload), id: row.id, shared: true, mine: !!owner && row.owner_hash === owner, closed: !!row.closed, createdAt: row.created_at, updatedAt: row.updated_at, applicationCount: row.application_count || 0}; }
 async function rowById(db, id) { return db.prepare('SELECT * FROM community_posts WHERE id=?').bind(id).first(); }
 function allowedOrigin(request, env) {
@@ -87,6 +91,33 @@ async function routeCommunity(request, env) {
       if (origin && !allowedOrigin(request, env)) throw new Problem(403, '다른 사이트에서는 등록할 수 없어요.');
     }
     const owner = await identity(request, method !== 'GET');
+    if (parts[0] === 'applications' && parts.length === 1 && method === 'GET') {
+      // 내가 신청한 모집글과 수락·거절 결과.
+      if (!owner) throw new Problem(401, '신청자 인증이 필요해요.');
+      const result = await db.prepare('SELECT a.post_id, a.status, a.reason, a.decided_at, a.created_at, a.applicant_seen, p.payload, p.category, p.closed FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? ORDER BY a.created_at DESC LIMIT 100').bind(owner).all();
+      return json({items: result.results.map(r => ({postId: r.post_id, title: titleOf(r.payload), category: r.category, closed: !!r.closed, status: r.status, reason: r.reason, decidedAt: r.decided_at || null, createdAt: r.created_at, unread: r.status !== 'pending' && !r.applicant_seen}))});
+    }
+    if (parts[0] === 'notifications') {
+      if (!owner) throw new Problem(401, '알림을 확인하려면 인증이 필요해요.');
+      if (parts.length === 1 && method === 'GET') {
+        // 모집자: 아직 확인하지 않은 새 신청. 신청자: 아직 확인하지 않은 수락·거절 결과.
+        const incoming = await db.prepare('SELECT a.post_id, a.name, a.team, a.created_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE p.owner_hash=? AND a.owner_seen=0 ORDER BY a.created_at DESC LIMIT 50').bind(owner).all();
+        const decided = await db.prepare("SELECT a.post_id, a.status, a.reason, a.decided_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? AND a.applicant_seen=0 AND a.status<>'pending' ORDER BY a.decided_at DESC LIMIT 50").bind(owner).all();
+        const items = incoming.results.map(r => ({kind: 'applied', postId: r.post_id, title: titleOf(r.payload), name: r.name, team: r.team, at: r.created_at}))
+          .concat(decided.results.map(r => ({kind: r.status, postId: r.post_id, title: titleOf(r.payload), reason: r.reason, at: r.decided_at})))
+          .sort((a, b) => b.at - a.at);
+        return json({items});
+      }
+      if (parts.length === 2 && parts[1] === 'read' && method === 'POST') {
+        // 화면에 보여 준 시점(before)까지만 읽음 처리해, 그 사이 도착한 알림은 남긴다.
+        const before = Number((await readBody(request)).before);
+        if (!Number.isInteger(before) || before <= 0) throw new Problem(400, '읽음 시점을 확인해 주세요.');
+        await db.prepare('UPDATE community_applications SET owner_seen=1 WHERE owner_seen=0 AND created_at<=? AND post_id IN (SELECT id FROM community_posts WHERE owner_hash=?)').bind(before, owner).run();
+        await db.prepare("UPDATE community_applications SET applicant_seen=1 WHERE applicant_seen=0 AND status<>'pending' AND decided_at<=? AND applicant_hash=?").bind(before, owner).run();
+        return json({ok: true});
+      }
+      throw new Problem(405, '지원하지 않는 요청이에요.');
+    }
     if (parts[0] !== 'meetings') throw new Problem(404, '페이지를 찾을 수 없어요.');
     if (parts.length === 1 && method === 'GET') {
       const category = url.searchParams.get('category') || '';
@@ -121,7 +152,18 @@ async function routeCommunity(request, env) {
     const row = await rowById(db, id);
     if (!row) throw new Problem(404, '삭제되었거나 없는 모집글이에요.');
     if (parts.length === 2) {
-      if (method === 'GET') return json({item: publicPost(row, owner)});
+      if (method === 'GET') {
+        const item = publicPost(row, owner);
+        if (owner && row.owner_hash !== owner) {
+          // 신청자가 글을 열면 자기 신청 상태를 함께 보여 주고, 결과 알림은 확인한 것으로 둔다.
+          const mine = await db.prepare('SELECT status, reason, decided_at, applicant_seen FROM community_applications WHERE post_id=? AND applicant_hash=?').bind(id, owner).first();
+          if (mine) {
+            item.myApplication = {status: mine.status, reason: mine.reason, decidedAt: mine.decided_at || null};
+            if (!mine.applicant_seen) await db.prepare('UPDATE community_applications SET applicant_seen=1 WHERE post_id=? AND applicant_hash=?').bind(id, owner).run();
+          }
+        }
+        return json({item});
+      }
       if (row.owner_hash !== owner) throw new Problem(403, '작성자만 변경할 수 있어요.');
       if (method === 'DELETE') { await db.prepare('DELETE FROM community_posts WHERE id=? AND owner_hash=?').bind(id, owner).run(); return json({ok: true}); }
       if (method === 'PUT') {
@@ -135,8 +177,12 @@ async function routeCommunity(request, env) {
     if (parts.length === 3 && parts[2] === 'applications') {
       if (method === 'GET') {
         if (!owner || row.owner_hash !== owner) throw new Problem(403, '모집자만 신청 내역을 볼 수 있어요.');
-        const result = await db.prepare('SELECT name, team, message, contact, created_at FROM community_applications WHERE post_id=? ORDER BY created_at DESC LIMIT 100').bind(id).all();
-        return json({items: result.results});
+        const result = await db.prepare('SELECT applicant_hash, name, team, message, contact, created_at, status, reason, decided_at FROM community_applications WHERE post_id=? ORDER BY created_at DESC LIMIT 100').bind(id).all();
+        // 모집자가 신청 내역을 열었으면 이 글의 새 신청 알림은 확인한 것으로 둔다.
+        await db.prepare('UPDATE community_applications SET owner_seen=1 WHERE post_id=? AND owner_seen=0').bind(id).run();
+        const items = [];
+        for (const r of result.results) items.push({ref: await applicationRef(id, r.applicant_hash), name: r.name, team: r.team, message: r.message, contact: r.contact, created_at: r.created_at, status: r.status, reason: r.reason, decidedAt: r.decided_at || null});
+        return json({items});
       }
       if (row.owner_hash === owner) throw new Problem(400, '내 모집글에는 신청할 수 없어요.');
       if (method === 'POST') {
@@ -144,10 +190,25 @@ async function routeCommunity(request, env) {
         const body = await readBody(request), name = text(body, 'name', 30, true), message = text(body, 'message', 500), contact = contactLink(text(body, 'contact', 500)), team = text(body, 'team', 1);
         if (row.category === 'dating' && !['m', 'f'].includes(team)) throw new Problem(400, '신청하는 팀을 선택해 주세요.');
         await rate(db, request, owner, 'apply');
-        await db.prepare('INSERT INTO community_applications (post_id, applicant_hash, name, team, message, contact, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(post_id, applicant_hash) DO UPDATE SET name=excluded.name, team=excluded.team, message=excluded.message, contact=excluded.contact').bind(id, owner, name, team, message, contact, Date.now()).run();
+        await db.prepare("INSERT INTO community_applications (post_id, applicant_hash, name, team, message, contact, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(post_id, applicant_hash) DO UPDATE SET name=excluded.name, team=excluded.team, message=excluded.message, contact=excluded.contact, created_at=excluded.created_at, status='pending', reason='', decided_at=0, owner_seen=0, applicant_seen=1").bind(id, owner, name, team, message, contact, Date.now()).run();
         return json({ok: true});
       }
       if (method === 'DELETE') { await db.prepare('DELETE FROM community_applications WHERE post_id=? AND applicant_hash=?').bind(id, owner).run(); return json({ok: true}); }
+    }
+    if (parts.length === 4 && parts[2] === 'applications' && method === 'PUT') {
+      // 모집자가 신청을 수락·거절하고 사유를 남긴다. 신청자에게는 결과 알림이 생긴다.
+      if (row.owner_hash !== owner) throw new Problem(403, '모집자만 수락·거절할 수 있어요.');
+      if (!/^[a-f0-9]{32}$/.test(parts[3])) throw new Problem(404, '신청을 찾을 수 없어요.');
+      const body = await readBody(request), status = text(body, 'status', 10, true), reason = text(body, 'reason', 300);
+      if (!decisions.includes(status)) throw new Problem(400, '수락 또는 거절을 선택해 주세요.');
+      const rows = await db.prepare('SELECT applicant_hash FROM community_applications WHERE post_id=?').bind(id).all();
+      let applicant = null;
+      for (const r of rows.results) if (await applicationRef(id, r.applicant_hash) === parts[3]) { applicant = r.applicant_hash; break; }
+      if (!applicant) throw new Problem(404, '신청을 찾을 수 없어요. 신청자가 취소했을 수 있어요.');
+      await rate(db, request, owner, 'decide');
+      const now = Date.now();
+      await db.prepare('UPDATE community_applications SET status=?, reason=?, decided_at=?, owner_seen=1, applicant_seen=0 WHERE post_id=? AND applicant_hash=?').bind(status, reason, now, id, applicant).run();
+      return json({ok: true, status, reason, decidedAt: now});
     }
     throw new Problem(405, '지원하지 않는 요청이에요.');
   } catch (e) { return json({error: e instanceof Problem ? e.message : '공유 서버에 연결하지 못했어요. 잠시 후 다시 시도해 주세요.'}, e instanceof Problem ? e.status : 503); }
