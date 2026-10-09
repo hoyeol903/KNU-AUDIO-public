@@ -103,7 +103,7 @@ def test_retry_and_its_cache_skip_second_review(tmp_path, monkeypatch):
                source_text='100원', reference='')
     generate_segments([row], provider, tmp_path, tmp_path/'review.json')
     assert checker.call_count == 1
-    assert row['script'] == '888원입니다.'
+    assert row['script'] == '888원이에요.'  # 문장 끝 합니다체는 해요체로 보정된다
     assert row['review']['passed'] is None
     generate_segments([row], provider, tmp_path, tmp_path/'review.json')
     assert checker.call_count == 1 and provider.generate.call_count == 2

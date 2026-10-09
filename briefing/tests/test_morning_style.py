@@ -66,4 +66,4 @@ def test_preview_keeps_unchecked_revised_notice(tmp_path):
             return '오늘의 안내입니다.'
     result = create_samples(data, [], config, [], provider=OneBad(), report_dir=tmp_path / 'reports')
     assert result['status'] == 'passed' and not result['skipped_notices']
-    assert any(row['kind'] == 'notice' and row['script'] == '원문에 없는 999999원입니다.' for sample in result['samples'] for row in sample['segments'])
+    assert any(row['kind'] == 'notice' and row['script'] == '원문에 없는 999999원이에요.' for sample in result['samples'] for row in sample['segments'])

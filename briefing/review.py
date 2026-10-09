@@ -3,10 +3,12 @@ import re
 import unicodedata
 from decimal import Decimal, InvalidOperation
 
-VERSION = 'rules-12-length'
+VERSION = 'rules-13-local-phone'
 TIME = re.compile(r'(?:(오전|오후|아침|저녁|밤|낮)\s*)?(\d{1,2})\s*(?::\s*(\d{2})|시(?:\s*(\d{1,2})\s*분)?)')
 ISO_DATE = re.compile(r'(?<!\d)(\d{4})\s*[./-]\s*(\d{1,2})\s*[./-]\s*(\d{1,2})(?!\d)')
-PHONE = re.compile(r'(?<!\d)(?:\+?82[-. ]?)?0\d{1,3}[-. ]?\d{3,4}[-. ]?\d{4}(?!\d)')
+# 지역번호 없는 내선번호(950-2237)도 연락처로 본다. 2026-2027 같은 연도 범위는 제외한다.
+PHONE = re.compile(r'(?<!\d)(?:\+?82[-. ]?)?0\d{1,3}[-. ]?\d{3,4}[-. ]?\d{4}(?!\d)'
+                   r'|(?<![\d-])(?!(?:19|20)\d{2}-(?:19|20)\d{2}(?!\d))\d{3,4}-\d{4}(?![\d-])')
 MONEY = re.compile(r'(?<![\d.,])\d[\d,]*(?:\.\d+)?\s*(?:[백천만억]\s*(?:\d[\d,]*(?:\.\d+)?\s*)?)*원')
 PII = (
     re.compile(r'(?i)[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}'),
