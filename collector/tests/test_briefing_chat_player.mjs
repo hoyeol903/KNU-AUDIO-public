@@ -11,11 +11,11 @@ const audio = {paused:true, readyState:1, currentTime:0, attrs:{}, events:{},
   getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;},
   addEventListener(k,fn){this.events[k]=fn;}, pause(){this.paused=true;}, play(){this.paused=false;}};
 const speech = {getVoices:()=>[{lang:'ko-KR'}], cancel(){queue=[];}, speak(u){queue.push(u);}};
-const c = vm.createContext({console, A:audio, P:{ch:0,chT:0,gen:0,playing:false,last:0},
+const c = vm.createContext({console, document:{getElementById(){return null;},querySelector(){return null;}}, A:audio, O:{paused:true,addEventListener(){},pause(){this.paused=true;},removeAttribute(){},load(){},playbackRate:1,muted:false}, ONEPASS:{status:'idle',generation:0,audioUrl:null}, onepassPaint(){}, onepassFail(){}, P:{ch:0,chT:0,gen:0,playing:false,last:0},
   S:{voice:true,speed:1}, CH:[], window:{speechSynthesis:speech}, speechSynthesis:speech,
   SpeechSynthesisUtterance:class {constructor(text){this.text=text;}},
   performance:{now:()=>now}, setInterval:fn=>{tick=fn;}, navigator:{},
-  audioUrl:x=>x, startBgm(){}, stopBgm(){}, toastMsg(){}, render(){},
+  audioUrl:x=>x, startBgm(){}, syncBgm(){}, stopBgm(){}, toastMsg(){}, render(){},
   paintProgress(){painted.push(c.sentAt(c.CH[c.P.ch],c.P.chT));}});
 vm.runInContext(helpers, c);vm.runInContext(engine, c);
 const greeting={s:'안녕하세요, 정원님. 좋은 아침이에요! 소식을 전해요.',baseScript:'안녕하세요. 좋은 아침이에요! 소식을 전해요.',personalGreeting:true,audio:'greeting.mp3',est:8,cues:[]};

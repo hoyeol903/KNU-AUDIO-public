@@ -17,7 +17,7 @@ const html = readFileSync(new URL('../../tools/knua-app.html', import.meta.url),
 const engine = html.slice(html.indexOf('var A = new Audio();'), html.indexOf('function audioUrl('));
 const timers = [];
 const c = vm.createContext({Audio, setTimeout: fn => timers.push(fn), media: () => {}, render: () => {}, P: {playing: true, playToken: 1}, S: {voice: true, bgm: true},
-  BGM_TRACK: {audio: 'a'.repeat(64) + '.mp3', volume: 0.1}, mode: () => 'audio'});
+  O: new Audio(), ONEPASS: {status: 'idle'}, onepassPaint: () => {}, onepassFail: () => {}, BGM_TRACK: {audio: 'a'.repeat(64) + '.mp3', volume: 0.1}, mode: () => 'audio'});
 vm.runInContext(engine, c);
 assert.equal(c.B.loop, true);
 c.A.paused = false;

@@ -514,11 +514,13 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 <div class="panel-dim" id="panelDim"></div>
 <button class="fab" id="fab" aria-controls="panel"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>테스트</button>
 
+<script src="briefing-onepass.js"></script>
 <script>
 (function(){
 'use strict';
 /* ---------- 자료: collector.export_app 이 내보낸 data/ 아래 파일을 읽는다 ---------- */
-var DATA = null, BRIEF = null, BRIEF_OLD = false, POSTS = {}, BGM_TRACK = null;   /* meta.json, briefing/segments.json, boards/{id}.json */
+var DATA = null, BRIEF = null, BRIEF_OLD = false, POSTS = {}, BGM_TRACK = null, BRIEFING_SERVICE = null;   /* meta.json, briefing/segments.json, boards/{id}.json */
+var ONEPASS = { status: 'idle', generation: 0, signature: '', audioUrl: null, durationSec: 0 }, O = new Audio(); O.preload = 'none';
 var YEAR = null;   /* schedule.json: 캘린더용 학사일정 전체. 없으면 meta.json의 가까운 일정만 쓴다 */
 var TEST = /[?&]test\b/.test(location.search);
 /* 피드백 받는 주소. 보내기를 누르면 이 주소로 메일 앱이 열린다. */
@@ -643,12 +645,13 @@ function loadMeta(){
   S.loadPhase = 'loading'; render(true);
   getJson('data/meta.json').then(function(meta){
     /* 브리핑은 음성 담당이 만든다. 오늘 음성이 아직 없으면 3일 안의 가장 최근 음성을 날짜를 밝혀 들려준다. */
-    return Promise.all([getJson('data/briefing/segments.json').catch(function(){ return null; }), getJson('data/bgm/track.json').catch(function(){ return null; }), getJson('data/schedule.json').catch(function(){ return null; })]).then(function(files){
-      var brief = files[0], bgm = files[1], year = files[2];
+    return Promise.all([getJson('data/briefing/segments.json').catch(function(){ return null; }), getJson('data/bgm/track.json').catch(function(){ return null; }), getJson('data/schedule.json').catch(function(){ return null; }), getJson('data/briefing-service.json').catch(function(){ return null; })]).then(function(files){
+      var brief = files[0], bgm = files[1], year = files[2], service = files[3];
       YEAR = year && year.status === 'ok' && Array.isArray(year.items) && year.items.length ? year : null;
       DATA = meta; DATA.deptMap = index(meta.departments); DATA.boardMap = index(meta.boards);
       var briefOk = brief && Array.isArray(brief.segments) && /^\d{4}-\d{2}-\d{2}$/.test(brief.date) && Math.abs(days(meta.asOf, brief.date)) <= BRIEF_MAX_AGE;
       BRIEF = briefOk ? brief : null; BRIEF_OLD = !!BRIEF && brief.date !== meta.asOf;
+      BRIEFING_SERVICE = window.KnuOnePass && window.KnuOnePass.validConfig(service) ? service : null;
       BGM_TRACK = bgm && /^\d{4}-\d{2}-\d{2}$/.test(bgm.date) && bgm.date === seoulToday() && typeof bgm.audio === 'string' && /^[a-f0-9]{64}\.mp3$/.test(bgm.audio) ? bgm : null;
       POSTS = {};
       if (!profileOk()) S.route = 'start';
@@ -874,8 +877,12 @@ function chapters(W){
 }
 var W = null, CH = [];
 function refresh(){
-  if (!profileOk()) { W = null; CH = []; return; }
+  var oldSignature = ONEPASS.signature;
+  if (!profileOk()) { W = null; CH = []; invalidateOnepass(); return; }
   W = world(); CH = chapters(W); W.hasBrief = CH.length > 0;
+  var newSignature = BRIEF ? KnuOnePass.selectionSignature(BRIEF.date, CH) : '';
+  ONEPASS.signature = newSignature;
+  if (oldSignature && oldSignature !== newSignature) invalidateOnepass();
   if (P.ch >= CH.length) { P.ch = 0; P.chT = 0; }
 }
 function total(){ return CH.reduce(function(a, c){ return a + c.est; }, 0); }
@@ -887,19 +894,23 @@ var B = new Audio(), bgmEpoch = 0, bgmWanted = false;
 B.preload = 'none'; B.loop = true; B.volume = 0.1;
 function stopBgm(){ bgmWanted = false; bgmEpoch++; B.pause(); }
 function startBgm(gesture){
-  var m = mode(), sourceActive = m === 'audio' ? gesture || !A.paused : m === 'tts' && P.voiceOk;
-  if (!P.playing || !S.voice || !S.bgm || !BGM_TRACK || !BGM_TRACK.audio || !sourceActive) { stopBgm(); return; }
+  var m = mode(), sourceActive = !O.paused || (m === 'audio' ? gesture || !A.paused : m === 'tts' && P.voiceOk);
+  if ((!P.playing && ONEPASS.status !== 'playing') || !S.voice || !S.bgm || !BGM_TRACK || !BGM_TRACK.audio || !sourceActive) { stopBgm(); return; }
   bgmWanted = true;
   if (B.getAttribute('data-src') !== BGM_TRACK.audio) { B.setAttribute('data-src', BGM_TRACK.audio); B.src = 'data/bgm/' + BGM_TRACK.audio; }
   B.volume = Math.max(0, Math.min(1, Number(BGM_TRACK.volume) || 0.1));
   var epoch = ++bgmEpoch, result = B.play();
-  if (result && result.then) result.then(function(){ if (!bgmWanted || !P.playing || !S.voice || !S.bgm) B.pause(); }, function(){ if (epoch === bgmEpoch) stopBgm(); });
+  if (result && result.then) result.then(function(){ if (!bgmWanted || !P.playing && ONEPASS.status !== 'playing' || !S.voice || !S.bgm) B.pause(); }, function(){ if (epoch === bgmEpoch) stopBgm(); });
 }
-function syncBgm(){ if (P.playing && ((mode() === 'audio' && !A.paused) || (mode() === 'tts' && P.voiceOk))) startBgm(false); else stopBgm(); }
+function syncBgm(){ if (ONEPASS.status === 'playing' || P.playing && ((mode() === 'audio' && !A.paused) || (mode() === 'tts' && P.voiceOk))) startBgm(false); else stopBgm(); }
 B.addEventListener('error', stopBgm);
 A.addEventListener('playing', syncBgm);
 A.addEventListener('waiting', stopBgm);
 A.addEventListener('pause', stopBgm);
+O.addEventListener('playing', function(){ ONEPASS.status = 'playing'; onepassPaint(); syncBgm(); render(false); });
+O.addEventListener('pause', function(){ if (ONEPASS.status === 'playing') ONEPASS.status = 'ready'; onepassPaint(); syncBgm(); render(false); });
+O.addEventListener('ended', function(){ ONEPASS.status = 'ready'; onepassPaint(); stopBgm(); render(false); });
+O.addEventListener('error', function(){ if (ONEPASS.audioUrl) onepassFail(); });
 /* 이어폰을 빼거나 전화가 오는 등 기기가 음성을 멈추면 화면도 일시정지로 맞춘다. 구간을 바꾸는 중의 잠깐 멈춤은 무시한다. */
 A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { P.playing = false; stopBgm(); media(); render(false); } }, 400); });
 function audioUrl(a){ return /^(https?:)?\/\//.test(a) || a.charAt(0) === '/' ? a : 'data/briefing/' + a; }
@@ -944,6 +955,33 @@ function speakChapter(from){
   });
 }
 function stopVoice(){ P.gen++; try { if (window.speechSynthesis) speechSynthesis.cancel(); } catch (e) {} }
+function invalidateOnepass(){
+  ONEPASS.generation++; ONEPASS.status = 'idle'; ONEPASS.audioUrl = null; ONEPASS.durationSec = 0;
+  O.pause(); O.removeAttribute('src'); O.load(); onepassPaint();
+}
+function onepassPaint(){
+  var status = document.getElementById('onepassStatus'), button = document.querySelector('[data-act="onepassStart"]');
+  if (status) status.textContent = ONEPASS.status === 'requesting' ? '연속 음성을 준비하고 있어요' : ONEPASS.status === 'queued' ? 'GPU 작업을 기다리고 있어요' : ONEPASS.status === 'running' ? '음성을 만들고 있어요' : ONEPASS.status === 'playing' ? '연속 음성 재생 중 · ' + fmt(O.currentTime) : ONEPASS.status === 'failed' ? '연속 음성을 사용할 수 없어요. 기존 구간별 재생을 이용해 주세요.' : ONEPASS.audioUrl ? '준비됐어요 · ' + fmt(ONEPASS.durationSec || O.duration || 0) : '선택한 전체 대본을 Sohee 목소리로 한 번에 읽어요.';
+  if (button) { button.disabled = ['requesting','queued','running'].indexOf(ONEPASS.status) >= 0; button.textContent = ONEPASS.status === 'playing' ? '연속 음성 일시정지' : button.disabled ? '준비 중…' : ONEPASS.audioUrl ? '연속 음성 다시 듣기' : '전체를 한 번에 듣기'; }
+}
+function onepassFail(){ ONEPASS.status = 'failed'; ONEPASS.audioUrl = null; O.pause(); stopBgm(); onepassPaint(); render(false); }
+function onepassSegmented(){ if (!CH.length) return; play(0); nav('player'); }
+function onepassPlay(){
+  if (!BRIEFING_SERVICE || !BRIEF || !CH.length) return;
+  if (ONEPASS.status === 'playing') { O.pause(); return; }
+  if (ONEPASS.audioUrl && ONEPASS.status === 'ready') { O.currentTime = 0; O.playbackRate = S.speed; O.muted = !S.voice; O.play().catch(onepassFail); return; }
+  if (['requesting','queued','running'].indexOf(ONEPASS.status) >= 0) return;
+  var requestId = ++ONEPASS.generation; P.playing = false; A.pause(); stopBgm(); stopVoice();
+  ONEPASS.status = 'requesting'; onepassPaint();
+  KnuOnePass.create({ config: BRIEFING_SERVICE, date: BRIEF.date, segmentIds: CH.map(function(c){ return c.id; }),
+    onStatus: function(value){ if (requestId === ONEPASS.generation) { ONEPASS.status = value; onepassPaint(); } }
+  }).then(function(result){
+    if (requestId !== ONEPASS.generation) return;
+    ONEPASS.audioUrl = result.audioUrl; ONEPASS.durationSec = result.durationSec; ONEPASS.status = 'ready';
+    O.src = result.audioUrl; O.playbackRate = S.speed; O.muted = !S.voice; onepassPaint(); O.play().catch(onepassFail);
+  }).catch(function(){ if (requestId === ONEPASS.generation) onepassFail(); });
+}
+O.addEventListener('timeupdate', onepassPaint);
 function startChapter(resume){
   var c = CH[P.ch], m = mode(c, true);
   P.activeMode = c.chatMode = m; c.spokenText = c.personalGreeting && m !== 'tts' ? c.baseScript : c.s;
@@ -962,6 +1000,7 @@ function startChapter(resume){
 }
 function play(ch, restart){
   if (!CH.length) return;
+  invalidateOnepass();
   P.pend = null;
   var resume = ch == null && !restart && !P.done;
   if (ch != null) { P.ch = ch; P.chT = 0; }
@@ -971,7 +1010,7 @@ function play(ch, restart){
   startChapter(resume); media(); render();
 }
 function pause(){ P.playing = false; A.pause(); stopBgm(); stopVoice(); media(); render(); }
-function toggle(){ P.playing ? pause() : play(); }
+function toggle(){ if (ONEPASS.status === 'playing') { O.pause(); return; } P.playing ? pause() : play(); }
 /* 원하는 곳부터 듣기: 구간 ch의 t초부터 재생한다. 음성 파일은 그 자리로 옮기고, 브라우저 음성은 그 문장부터 다시 읽는다. */
 function seekTo(ch, t){
   var c = CH[ch]; if (!c) return;
@@ -1188,14 +1227,15 @@ function vHome(){
     '</div><button class="icon-btn" data-act="settings" aria-label="게시판 설정">' + IC.gear + '</button></div>';
   if (W.old) h += '<div class="span2 row" style="gap:10px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--tile);font-size:13.5px;line-height:20px;color:var(--ink2)"><span style="color:var(--amber-ink);margin-top:1px">' + IC.clock + '</span><span>오늘 자료가 아직 없어서 <b>기준일</b> 자료를 보여드려요. 아래 숫자와 소식은 모두 기준일 것이에요.</span></div>';
   if (W.hasBrief) {
-    var on = P.started, cur = CH[P.ch] || CH[0];
+    var onepassOn = !!BRIEFING_SERVICE && ONEPASS.status === 'playing', on = P.started || onepassOn, cur = CH[P.ch] || CH[0];
     h += '<div class="span2 herowrap ' + (P.playing ? 'playing' : 'idle') + '"><section class="hero">' +
-      (on ? '<span class="hero-lab">' + (P.playing ? '듣는 중' : '일시정지') + ' · <span class="js-elapsed num">' + fmt(elapsed()) + '</span> / ' + fmt(total()) + '</span><b class="hero-t">' + esc(cur.t) + '</b><div class="hero-bar"><i class="js-bar"></i></div>'
+      (on ? '<span class="hero-lab">' + (onepassOn ? 'C 목소리로 전체 브리핑 재생 중 · ' + fmt(O.currentTime) + ' / ' + fmt(O.duration || ONEPASS.durationSec) : (P.playing ? '듣는 중' : '일시정지') + ' · <span class="js-elapsed num">' + fmt(elapsed()) + '</span> / ' + fmt(total())) + '</span><b class="hero-t">' + esc(onepassOn ? '인사부터 마무리까지 한 목소리로 듣고 있어요' : cur.t) + '</b><div class="hero-bar"><i class="js-bar"></i></div>'
         : '<span class="hero-lab">' + briefLabel() + ' · ' + fmtKo(total()) + '</span><b class="hero-t">' + esc(BRIEF_OLD ? '오늘 브리핑을 만드는 중이에요. 지난 브리핑을 먼저 들을 수 있어요' : head) + '</b>') +
-      '<button class="hero-play" data-act="heroPlay" aria-label="' + (P.playing ? '일시정지' : '브리핑 재생') + '">' + (P.playing ? sz(IC.pause, 20) : sz(IC.play, 22)) + (P.playing ? '일시정지' : on ? '이어 듣기' : '재생') + '</button></section><img class="hb" src="' + HOBANU.dj + '" alt=""></div>';
+      '<button class="hero-play" data-act="heroPlay" aria-label="' + (P.playing || onepassOn ? '일시정지' : '브리핑 재생') + '">' + (P.playing || onepassOn ? sz(IC.pause, 20) : sz(IC.play, 22)) + (P.playing || onepassOn ? '일시정지' : BRIEFING_SERVICE ? 'C 목소리로 전체 듣기' : on ? '이어 듣기' : '재생') + '</button></section><img class="hb" src="' + HOBANU.dj + '" alt=""></div>';
   } else {
     h += '<div class="span2 herowrap rest"><section class="hero off"><span class="lab-s">오늘 브리핑</span><b style="font-size:18px;line-height:25px;font-weight:800;color:var(--ink2)">브리핑이 아직 준비되지 않았어요</b><span class="muted" style="font-size:13px;line-height:19px">아래 소식, 일정, 학식은 지금 볼 수 있어요.</span><button disabled class="hero-play" aria-label="브리핑 재생 (준비 중)">' + sz(IC.play, 22) + '준비 중</button></section>' + hobanu('empty', 'hb', false) + '</div>';
   }
+  if (W.hasBrief) h += '<section class="span2 tile col" style="gap:8px;padding:14px 16px"><div class="row" style="justify-content:space-between;gap:10px"><div class="col" style="gap:3px"><b style="font-size:14px">' + (BRIEFING_SERVICE ? 'C 목소리로 한 번에 듣기' : 'C 목소리 연속 재생 준비 중') + '</b><span class="muted" style="font-size:12px">' + (BRIEFING_SERVICE ? '선택한 인사부터 마무리까지 한 번에 합성해요.' : 'GPU 음성 서버가 연결되면 사용할 수 있어요.') + '</span></div>' + '<button class="ctl ghost num" data-act="speed" aria-label="재생 속도 ' + S.speed + '배" style="font-size:14px;font-weight:800">' + S.speed + 'x</button>' + (BRIEFING_SERVICE ? '<button class="btn-pri" data-act="onepassStart">전체를 한 번에 듣기</button>' : '<button class="btn-pri" data-act="onepassSegmented">구간별로 듣기</button>') + '</div>' + (BRIEFING_SERVICE ? '<span id="onepassStatus" class="muted" style="font-size:12px">전체 브리핑을 Sohee 목소리로 읽어요.</span>' + (ONEPASS.status === 'failed' ? '<button class="btn-pri" data-act="onepassSegmented">기존 구간별 음성 듣기</button>' : '') : '') + '</section>';
   if (W.weather) h += '<section class="span2 wx" aria-label="날씨"><span class="wx-ic">' + wxIcon(W.weather.summary) + '</span><b>' + esc(W.weather.summary) + '</b><span class="wx-dot"></span><b class="num">' + W.weather.min + '° / ' + W.weather.max + '°</b><span class="wx-rain num">' + IC.drop + '비 올 확률 ' + W.weather.rain + '%</span></section>';
   else h += '<section class="span2 wx fail-wx" aria-label="날씨">' + IC.warn + '<b>날씨</b><span>오늘 자료를 가져오지 못했습니다</span></section>';
   h += vWeek();
@@ -1911,7 +1951,9 @@ document.addEventListener('click', function(e){
     case 'settings': return openSettings();
     case 'collectionStatus': return nav('collection-status');
     case 'back': S.sheet = null; return nav(S.route === 'meeting-detail' ? 'meeting-list' : S.route === 'meeting-list' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
-    case 'heroPlay': if (!P.started) { play(0); return nav('player'); } return toggle();
+    case 'onepassStart': return onepassPlay();
+    case 'onepassSegmented': return onepassSegmented();
+    case 'heroPlay': if (BRIEFING_SERVICE) return onepassPlay(); if (!P.started) { play(0); return nav('player'); } return toggle();
     case 'openPlayer': return nav('player');
     case 'tab': {
       var to = el.getAttribute('data-to');
@@ -1959,8 +2001,8 @@ document.addEventListener('click', function(e){
     case 'meetDeleteShared': { var dp = COMMUNITY.detail; if (!dp || !dp.mine || COMMUNITY.busy || !confirm('이 모집글과 접수된 신청을 삭제할까요?')) return; COMMUNITY.busy = true; return communityRequest('meetings/' + dp.id,'DELETE').then(function(){ COMMUNITY.detail = null; nav('meeting-list'); toastMsg('모집글을 삭제했어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetCancel': { var ci = el.getAttribute('data-id'); if (COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + ci + '/applications','DELETE').then(function(){ store.communityApplied = Object.assign({},store.communityApplied); delete store.communityApplied[ci]; save(); toastMsg('신청을 취소했어요.'); openMeeting(ci); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetDel': store.meetMine = myMeets().filter(function(x){ return x.id !== el.getAttribute('data-id'); }); save(); return render(false);
-    case 'speed': S.speed = S.speed === 1 ? 1.25 : S.speed === 1.25 ? 1.5 : 1; A.playbackRate = S.speed; if (P.playing && mode() === 'tts') startChapter(true); return render(false);
-    case 'voice': S.voice = !S.voice; P.fallback = false; A.muted = !S.voice; if (P.playing) startChapter(true); else stopVoice(); return render(false);
+    case 'speed': S.speed = S.speed === 1 ? 1.25 : S.speed === 1.25 ? 1.5 : 1; A.playbackRate = S.speed; O.playbackRate = S.speed; if (P.playing && mode() === 'tts') startChapter(true); return render(false);
+    case 'voice': S.voice = !S.voice; P.fallback = false; A.muted = !S.voice; O.muted = !S.voice; if (P.playing) startChapter(true); else stopVoice(); return render(false);
     case 'bgm': S.bgm = !S.bgm; store.bgm = S.bgm; save(); syncBgm(); return render(false);
     case 'script': S.script = !S.script; S.follow = true; return render(true);
     case 'board': return openBoard(el.getAttribute('data-id'));
