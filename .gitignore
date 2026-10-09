@@ -20,4 +20,7 @@ output/daily-collection.json
 output/qwen-samples/
 
 # 개인 Cloudflare 계정의 배포 설정
+# 사용자 글과 신청 연락처가 담긴 서버 DB·백업
+*.sqlite
+*.sqlite-*
 community/wrangler.local.toml
