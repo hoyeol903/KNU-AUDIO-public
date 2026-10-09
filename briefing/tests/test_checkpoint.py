@@ -112,6 +112,7 @@ def test_batch_driver_links_checkpoints_and_only_returns_after_final_output(tmp_
     assert pushes[2]['kernel_sources']==[pushes[1]['id']]
     assert json.loads(expected.read_text())['kernel_id']==pushes[-1]['id']
     assert json.loads(expected.read_text())['kernel_version']==1
+    assert (output.parent/'current-kernel.txt').read_text()==pushes[-1]['id']
 
 
 def test_retry_finds_last_saved_batch_instead_of_interrupted_one(tmp_path,monkeypatch):
