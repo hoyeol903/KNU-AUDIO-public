@@ -60,6 +60,25 @@ export async function handleAdmin(request, env) {
           const result=await db.prepare('SELECT r.rowid AS position, r.reason, r.created_at, p.id, p.payload, p.hidden FROM community_reports r JOIN community_posts p ON p.id=r.post_id'+(cursor?' WHERE (r.created_at < ? OR (r.created_at = ? AND r.rowid < ?))':'')+' ORDER BY r.created_at DESC, r.rowid DESC LIMIT 31').bind(...(cursor?[time,time,position]:[])).all();
           const rows=result.results.slice(0,30), last=rows.at(-1);
           response=json({items:rows.map(r=>({post:{...JSON.parse(r.payload),id:r.id,hidden:!!r.hidden},reason:r.reason,reportedAt:r.created_at})),nextCursor:result.results.length>30?`${last.created_at}:${last.position}`:null});
+        } else if (path==='/admin/api/meetings' && method==='GET') {
+          const query=(url.searchParams.get('q') || '').trim(), cursor=url.searchParams.get('cursor') || '';
+          if(query.length>80) throw new Problem(400,'검색어는 80자 이내로 적어 주세요.');
+          if(cursor && !/^\d{1,16}:\d{1,16}$/.test(cursor)) throw new Problem(400,'목록 위치를 확인해 주세요.');
+          const [time,position]=cursor.split(':').map(Number);
+          if(cursor && (!Number.isSafeInteger(time)||!Number.isSafeInteger(position)||position<1)) throw new Problem(400,'목록 위치를 확인해 주세요.');
+          const where=[], args=[];
+          if(query){where.push("instr(lower(json_extract(payload,'$.title')),lower(?))>0");args.push(query);}
+          if(cursor){where.push('(created_at < ? OR (created_at = ? AND rowid < ?))');args.push(time,time,position);}
+          const result=await db.prepare('SELECT rowid AS position,id,payload,hidden,closed,created_at FROM community_posts'+(where.length?' WHERE '+where.join(' AND '):'')+' ORDER BY created_at DESC,rowid DESC LIMIT 31').bind(...args).all();
+          const rows=result.results.slice(0,30),last=rows.at(-1);
+          response=json({items:rows.map(r=>({...JSON.parse(r.payload),id:r.id,hidden:!!r.hidden,closed:!!r.closed,createdAt:r.created_at})),nextCursor:result.results.length>30?`${last.created_at}:${last.position}`:null});
+        } else if (/^\/admin\/api\/meetings\/[a-f0-9-]{36}$/.test(path) && method==='DELETE') {
+          const id=path.split('/').at(-1),body=await readBody(request);
+          if(body.confirmId!==id) throw new Problem(400,'삭제할 글을 다시 확인해 주세요.');
+          const row=await db.prepare('SELECT id FROM community_posts WHERE id=?').bind(id).first();
+          if(!row) throw new Problem(404,'모집글이 삭제되었거나 없어요.');
+          await db.prepare('DELETE FROM community_posts WHERE id=?').bind(id).run();
+          response=json({ok:true});
         } else if (/^\/admin\/api\/meetings\/[a-f0-9-]{36}$/.test(path) && method==='PUT') {
           const id=path.split('/').at(-1), body=await readBody(request);
           if(typeof body.hidden!=='boolean') throw new Problem(400,'숨김 상태를 확인해 주세요.');
