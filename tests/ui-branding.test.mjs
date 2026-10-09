@@ -38,7 +38,7 @@ function splash(reduced=false){
  let now=0,id=0,renders=0;const timers=new Map();
  const els={view:{},overlay:{},splash:{hidden:false,focus(){},contains:()=>false,classList:{add(){}}},splashSkip:{focus(){}}};
  const c=vm.createContext({$:key=>els[key],window:{matchMedia:()=>({matches:reduced})},document:{activeElement:null},
-  performance:{now:()=>now},render(){renders++},setTimeout(fn,ms){timers.set(++id,{at:now+ms,fn});return id},clearTimeout:id=>timers.delete(id)});
+  performance:{now:()=>now},render(){renders++},checkNotes(){},setTimeout(fn,ms){timers.set(++id,{at:now+ms,fn});return id},clearTimeout:id=>timers.delete(id)});
  vm.runInContext(html.slice(html.indexOf('var SPLASH ='),html.indexOf('/* ---------- 호반우:')),c);
  c.bootSplash();
  return {c,els,get renders(){return renders},advance(ms){const until=now+ms;for(;;){const first=[...timers].filter(([,v])=>v.at<=until).sort((a,b)=>a[1].at-b[1].at)[0];if(!first)break;const [key,v]=first;now=v.at;timers.delete(key);v.fn()}now=until}};
