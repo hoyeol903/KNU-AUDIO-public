@@ -49,3 +49,7 @@ DB 바인딩 이름은 `COMMUNITY_DB`. preview와 production DB는 분리한다.
 `node community/test_api.mjs` (Node 22.13 이상, 내장 SQLite 필요). 메모리 DB에서 타 브라우저 조회, 작성자 권한, 신청 정보 비공개, URL 검증, 재시도, 커서 페이지 이동, 등록 한도, 마감·삭제를 확인한다.
 
 로컬 브라우저 미리보기는 D1 바인딩을 포함한 `npx wrangler@4 pages dev output/app --d1 COMMUNITY_DB`를 사용한다. 초기 스키마 적용은 동일한 로컬 D1에 해야 한다. 단순 `python -m http.server`는 API가 없어 공유할 수 없다. 운영 반영 전에 독립된 두 브라우저로 등록→조회→신청→모집자 확인→수정→마감→취소를 검사한다.
+
+## Oracle Cloud에서 운영
+
+GitHub Pages와 Oracle 가상 서버를 연결하는 대안은 [Oracle 배포 안내](../community/oracle/README.md)를 참고한다. Node.js API와 SQLite 파일 DB, Caddy HTTPS, 영구 Docker 볼륨을 사용한다. 실제 계정·서버·API 주소를 설정하기 전에는 공유가 활성화되지 않는다.

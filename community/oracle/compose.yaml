@@ -1,0 +1,35 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: community/oracle/Dockerfile
+    restart: unless-stopped
+    environment:
+      COMMUNITY_ALLOWED_ORIGINS: https://hoyeol903.github.io
+      KNUA_TRUST_PROXY: '1'
+    volumes:
+      - community_db:/var/lib/knua
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:8080/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      KNUA_API_DOMAIN: ${KNUA_API_DOMAIN:?API 도메인을 .env에 입력하세요}
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  community_db:
+  caddy_data:
+  caddy_config:

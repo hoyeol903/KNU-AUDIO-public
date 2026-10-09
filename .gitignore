@@ -18,3 +18,8 @@ output/review.json
 output/briefing-report.json
 output/daily-collection.json
 output/qwen-samples/
+
+# 사용자 글과 신청 연락처가 담긴 서버 DB·백업
+*.sqlite
+*.sqlite-*
+community/wrangler.local.toml
