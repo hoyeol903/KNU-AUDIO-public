@@ -112,7 +112,7 @@ def test_publish_checks_freshness_before_replacing_and_records_copied_hashes(tmp
 
     record = kaggle.publish_output(tmp_path, artifact, expected_path)
 
-    assert sorted(path.name for path in target.iterdir()) == ['clip.mp3', 'segments.json', 'stale.mp3']
+    assert sorted(path.name for path in target.iterdir()) == ['audio-retention.json', 'clip.mp3', 'segments.json', 'stale.mp3']
     assert record['verified'] and record['kernel_version'] == 1
     assert record['app_file_sha256'] == {
         'clip.mp3': hashlib.sha256(b'verified audio').hexdigest(),
@@ -224,3 +224,15 @@ def test_publish_verifies_original_commit_when_same_day_collection_is_replaced(t
     expected_path.write_text(json.dumps(expected))
     with pytest.raises(ValueError, match='원래 수집 스냅샷'):
         kaggle.publish_output(tmp_path, artifact, expected_path)
+
+
+def test_publish_prunes_expired_audio_after_success(tmp_path, monkeypatch):
+    _, expected_path, artifact, manifest = _publish_fixture(tmp_path)
+    monkeypatch.setattr(kaggle, 'verify_output', Mock(return_value=manifest))
+    target = tmp_path / 'output/app/data/briefing'
+    target.mkdir()
+    (target / 'expired.mp3').write_bytes(b'old audio')
+    (target / 'audio-retention.json').write_text(json.dumps({'expired.mp3':'2000-01-01'}))
+    kaggle.publish_output(tmp_path, artifact, expected_path)
+    assert not (target / 'expired.mp3').exists()
+    assert (target / 'clip.mp3').exists()

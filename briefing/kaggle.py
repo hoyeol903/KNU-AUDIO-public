@@ -245,6 +245,7 @@ def publish_output(root, output_dir, expected_path):
         raise ValueError('Kaggle 결과 날짜가 올바르지 않습니다.')
     target = root / 'output/app/data/briefing'
     current_path = target / 'segments.json'
+    current = None
     if current_path.is_file():
         current = json.loads(current_path.read_text(encoding='utf-8'))
         current_day = current.get('date')
@@ -299,7 +300,7 @@ def publish_output(root, output_dir, expected_path):
     target.parent.mkdir(parents=True, exist_ok=True)
     run_record.parent.mkdir(parents=True, exist_ok=True)
     # This isolated checkout becomes visible only when the workflow pushes its verified commit.
-    # ponytail: retain old MP3s for old readers; prune if repository storage becomes a problem.
+    # 최신 음성 참조를 바꾼 뒤 보관 기간이 지난 파일만 정리한다.
     with tempfile.TemporaryDirectory(prefix='.kaggle-publish-', dir=target.parent) as temporary:
         temporary = Path(temporary)
         staged_app = temporary / 'briefing'
@@ -315,6 +316,8 @@ def publish_output(root, output_dir, expected_path):
             os.replace(staged_app / name, target / name)
         save_json(record, run_record)
         os.replace(staged_app / 'segments.json', target / 'segments.json')
+    from briefing.audio_retention import retain_audio
+    retain_audio(target, day, files, records=root / 'data/runs', previous=current)
     return record
 
 
