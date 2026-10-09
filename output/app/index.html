@@ -247,10 +247,6 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .tb.on{background:var(--wine-soft);color:var(--wine-ink)}
 .tb{position:relative}
 .tb-badge{position:absolute;top:2px;left:calc(50% + 5px);min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:#e5484d;color:#fff;font-size:11px;font-weight:800;line-height:18px;text-align:center;box-shadow:0 0 0 2px var(--dock)}
-.inbox-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;border-radius:20px;background:var(--tile);font-weight:800;font-size:16px;text-align:left}
-.inbox-btn .tb-badge{position:static;box-shadow:none;margin-left:auto}
-.note-row{display:flex;flex-direction:column;gap:4px;padding:12px 0;border-top:1px solid var(--line);text-align:left;width:100%}
-.note-row:first-of-type{border-top:0}
 .chip-btn.decide-ok{background:var(--wine);color:#fff}
 .chip-btn.decide-no{background:var(--bg)}
 .has-tabs .dock{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
@@ -263,9 +259,6 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .fb-hero.fb-big{min-height:150px}
 .fb-hero .fb-mascot{width:156px;height:156px;object-fit:contain;align-self:flex-end;margin:0 -18px -22px -10px}
 @media(max-width:359px){.fb-hero .fb-mascot{width:124px;height:124px}}
-.meet-hero{gap:8px;min-height:150px}
-.meet-hero .meet-mascot{width:112px;height:140px;object-fit:contain;align-self:flex-end;margin:0 -12px -20px 0}
-@media(max-width:359px){.meet-hero .meet-mascot{width:90px;height:120px}.meet-hero .fb-h{font-size:20px;line-height:28px}}
 .fb-k{font-size:12.5px;font-weight:700;color:var(--on-wine-muted)}
 .fb-h{margin:0;font-size:22px;line-height:30px;font-weight:800;letter-spacing:-.6px}
 .fb-s{font-size:13px;color:var(--on-wine-muted)}
@@ -450,9 +443,6 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .ym.now{border-color:var(--wine-ink)}
 .ym-h{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:48px;font-size:16px;font-weight:800;text-align:left}
 .ym .ev{font-size:14px;min-height:46px}
-.meet-section{border:1px solid var(--line);border-radius:24px;overflow:hidden}
-.meet-entry{display:flex;flex-direction:column;gap:12px;width:100%;padding:18px;text-align:left;background:var(--bg)}
-.meet-entry:active{background:var(--tile)}
 /* 과팅 (예시) */
 .mt-note{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--amber-bg);border:1px solid var(--amber-line);color:var(--amber-ink);font-size:13px;line-height:19px}
 .mt-card{border:1px solid var(--line);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:8px;background:var(--bg)}
@@ -509,6 +499,128 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .dept-avatar{width:44px;height:44px;object-fit:contain;flex-shrink:0;border-radius:50%;background:var(--wine-soft)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* ---------- 모임(커뮤니티) 화면: 정돈형. 색은 기존 변수만 쓴다(다크 모드 자동). ---------- */
+.cm .badge{height:22px;padding:0 8px;border-radius:11px;font-size:11.5px;font-weight:800}
+.cm-chev{color:var(--ph);flex-shrink:0}
+.cm-h1{margin:0;font-size:30px;line-height:36px;font-weight:800;letter-spacing:-.8px}
+.cm-h2{margin:0;font-size:24px;line-height:32px;font-weight:800;letter-spacing:-.5px;min-width:0;overflow-wrap:anywhere}
+.cm-sub{font-size:14px;color:var(--muted)}
+.cm-lab{font-size:13px;font-weight:700;color:var(--muted)}
+.cm-back{width:40px;height:40px;margin-left:-8px}
+.cm-empty{margin:0;padding:14px 0;font-size:14px;color:var(--muted)}
+.cm-help{margin:0;font-size:12.5px;line-height:19px;color:var(--muted)}
+.cm-foot-note{margin:0;font-size:12.5px;line-height:19px;color:var(--dis-ink)}
+.cm-more{align-self:flex-start;min-height:44px;padding:0 2px;font-size:14px;font-weight:750;color:var(--wine-ink)}
+.cm-alert{position:relative;overflow:hidden;border-radius:24px;background:var(--wine-soft);padding:18px 18px 18px 20px;display:flex;align-items:center;min-height:112px}
+.cm-alert img{position:absolute;right:-6px;bottom:-14px;width:118px;height:118px;object-fit:contain}
+.cm-alert .k{font-size:12px;font-weight:800;color:var(--wine-ink);letter-spacing:.4px}
+.cm-alert .t{font-size:17px;line-height:24px;font-weight:750}
+.inbox-btn{align-self:flex-start;height:34px;padding:0 12px 0 14px;border-radius:17px;background:var(--wine);color:#fff;font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:4px}
+.inbox-btn .tb-badge{position:static;box-shadow:none;margin-left:2px}
+.cm-refresh{display:inline-flex;align-items:center;gap:5px;min-height:36px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.meet-entry{display:flex;align-items:center;gap:14px;width:100%;padding:18px 0;border-top:1px solid var(--line);background:transparent;text-align:left}
+.meet-entry .nm{font-size:19px;font-weight:800}
+.meet-entry .ct{font-size:13px;font-weight:750;color:var(--wine-ink);white-space:nowrap;flex:none}
+.meet-entry .ds{font-size:13.5px;color:var(--muted)}
+.meet-entry .lt{font-size:13.5px;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cm-mine{height:34px;padding:0 12px;border-radius:17px;border:1px solid var(--line);font-size:13px;font-weight:700;color:var(--ink2);display:inline-flex;align-items:center;gap:6px;flex-shrink:0}
+.cm-mine i{width:14px;height:14px;border-radius:4px;border:1.5px solid var(--ph);display:flex;align-items:center;justify-content:center;color:transparent}
+.cm-mine[aria-pressed="true"]{border-color:var(--wine-ink);color:var(--wine-ink)}
+.cm-mine[aria-pressed="true"] i{background:var(--wine);border-color:var(--wine);color:#fff}
+.cm-round{width:34px;height:34px;border-radius:17px;border:1px solid var(--line);color:var(--ink2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cm-seg{display:grid;height:42px;padding:4px;border-radius:14px;background:var(--tile)}
+.cm-seg button{border-radius:10px;font-size:14px;font-weight:700;color:var(--muted)}
+.cm-seg button[aria-pressed="true"]{background:var(--bg);color:var(--ink);font-weight:800;box-shadow:0 2px 8px -2px rgba(26,20,23,.18)}
+.cm-seg.sm{height:44px;padding:3px;border-radius:12px}
+.cm-seg.sm button{border-radius:9px;font-size:13.5px}
+.cm-seg.pick{height:46px}
+.cm-seg.pick button{font-size:14.5px}
+.cm-seg.pick button[aria-pressed="true"]{color:var(--wine-ink)}
+.cm-filter{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cm-filter>span{width:34px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.cm-filter button{height:30px;padding:0 12px;border-radius:15px;border:1px solid var(--line);font-size:12.5px;font-weight:700}
+.cm-filter button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.meet-open.cm-row{display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+.cm-fold .cm-row:first-child{border-top:0;padding-top:4px}
+.cm-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12.5px;font-weight:700;color:var(--muted)}
+.cm-meta i{font-style:normal;color:var(--ph);opacity:.7}
+.cm-meta .badge{margin-left:auto}
+.cm-t{font-size:17px;line-height:24px;font-weight:750;overflow-wrap:anywhere}
+.cm-d{font-size:13.5px;color:var(--muted)}
+.cm-i{font-size:13.5px;line-height:20px;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.cm-st{font-size:12.5px;font-weight:750;color:var(--wine-ink)}
+.cm-fold{border-top:1px solid var(--line)}
+.cm-fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:15px 0;font-size:14px;font-weight:700;color:var(--ink2)}
+.cm-fold summary::-webkit-details-marker{display:none}
+.cm-fold summary em{font-style:normal;font-weight:600;color:var(--dis-ink)}
+.cm-fold[open] summary .cm-chev{transform:rotate(180deg)}
+.cm-fold.opt{border-bottom:1px solid var(--line)}
+.cm-fold.opt summary{min-height:48px;padding:0}
+.cm-fab{position:absolute;right:20px;z-index:8;height:52px;padding:0 20px 0 16px;border-radius:26px;background:var(--wine);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;gap:6px;box-shadow:0 16px 30px -12px rgba(139,30,63,.7)}
+.cm-fab:active{background:var(--wine-press)}
+.cm-backlink{display:inline-flex;align-items:center;gap:2px;min-height:40px;margin-left:-6px;font-size:15px;font-weight:700}
+.cm-pill{height:28px;padding:0 10px;border-radius:14px;background:var(--tile);color:var(--muted);font-size:12.5px;font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.cm-pill.on{background:var(--ok-bg);color:var(--ok-ink)}
+.cm-pill.on i{width:6px;height:6px;border-radius:3px;background:var(--sp-ok)}
+.cm-kind{font-size:13px;font-weight:700;color:var(--wine-ink)}
+.cm-title{margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.6px;overflow-wrap:anywhere}
+.cm-facts{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cm-facts>div{padding:12px 0;min-width:0}
+.cm-facts.long{grid-template-columns:1fr;border:0;margin-top:-6px;row-gap:12px}
+.cm-facts.long>div{padding:0}
+.cm-facts .k{font-size:12px;font-weight:700;color:var(--dis-ink)}
+.cm-facts .v{font-size:14.5px;font-weight:650;line-height:20px;white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-intro{margin:0;font-size:15px;line-height:25px;color:var(--ink2);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-nolink{padding:14px 16px;border-radius:14px;background:var(--tile);font-size:13.5px;color:var(--muted)}
+.cm-acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cm-acts button{height:64px;border-radius:16px;background:var(--tile);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:12.5px;font-weight:700}
+.cm-acts .del{color:var(--wine-ink)}
+.cm-sec{font-size:18px;font-weight:800}
+.cm-app{display:flex;flex-direction:column;gap:8px;padding:14px 0;border-top:1px solid var(--line)}
+.cm-app b{font-size:15.5px;font-weight:700;overflow-wrap:anywhere}
+.cm-app .tm{font-size:13px;color:var(--dis-ink)}
+.cm-app .msg{font-size:14px;line-height:21px;color:var(--ink2);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-app .no,.cm-app .ok{height:36px;padding:0 16px;border-radius:12px;font-size:13.5px;font-weight:750;flex-shrink:0}
+.cm-app .no{border:1px solid var(--line)}
+.cm-app .ok{background:var(--wine);color:#fff}
+.cm-app .chg{min-height:36px;font-size:13px;font-weight:700;color:var(--ink2);flex-shrink:0}
+.cm .rs{font-size:13.5px;line-height:20px;color:var(--muted);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-textlink .btn-pri{display:inline;height:auto;width:auto;padding:0;border-radius:0;background:none;box-shadow:none;color:var(--wine-ink);font-size:13px;font-weight:700}
+.cm-textlink .btn-pri::after{content:" ↗"}
+.cm-mine-card{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:18px;background:var(--tile);font-size:13.5px;line-height:20px;color:var(--ink2)}
+.cm-mine-card b{font-size:15px;color:var(--ink)}
+.cm-bar{position:absolute;left:0;right:0;bottom:0;z-index:8;padding:16px 20px 0;background:linear-gradient(transparent,var(--bg) 28%);display:flex;flex-direction:column;gap:8px}
+.cm-bar .btns{display:grid;grid-template-columns:1fr;gap:8px}
+.cm-bar .btns.two{grid-template-columns:1fr 1fr}
+.cm-bar .cancel{align-self:center;min-height:36px;padding:0 12px;font-size:13px;font-weight:700;color:var(--dis-ink)}
+.cm-ghost{display:flex;min-width:0}
+.cm-ghost .btn-pri{height:52px;border-radius:16px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:14.5px;font-weight:750;box-shadow:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;line-height:50px;padding:0 10px}
+.btn-pri.cm-save{height:54px;border-radius:16px;font-size:16px}
+.cm-bar .btn-pri.cm-save{height:52px;font-size:15px}
+.btn-pri.off{background:var(--tile2);color:var(--dis-ink);box-shadow:none}
+.note-row{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-top:1px solid var(--line);text-align:left;width:100%}
+.note-row .dot{width:8px;height:8px;border-radius:4px;background:#C8243F;margin-top:7px;flex:none}
+.note-row b{font-size:15px;line-height:22px;font-weight:700;overflow-wrap:anywhere}
+.note-row .ago{font-size:12.5px;color:var(--dis-ink)}
+.note-row>svg{align-self:center}
+.sheet.cm{border-radius:28px 28px 0 0}
+.sheet.cm .body{min-height:0}
+.cm-grab{display:block;width:36px;height:5px;border-radius:3px;background:var(--line);margin:8px auto 0;flex-shrink:0}
+.cm-sh-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 20px 4px;flex-shrink:0}
+.cm-sh-head h2{margin:0;font-size:20px;line-height:28px;font-weight:800}
+.cm-over{font-size:12.5px;font-weight:700;color:var(--wine-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cm-x{width:36px;height:36px;border-radius:18px;background:var(--tile);color:var(--ink2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cm-grp{font-size:12px;font-weight:800;letter-spacing:.6px;color:var(--wine-ink)}
+.cm-fl{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13px;font-weight:700;color:var(--ink2)}
+.cm-fr{font-size:12px;font-weight:600;color:var(--ph);white-space:nowrap}
+.cm-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sheet.cm .field{height:50px;border-radius:14px;padding:0 14px;font-size:15.5px}
+.sheet.cm textarea.field{height:auto;min-height:96px;padding:13px 14px;font-size:15px;line-height:22px}
+.cm-quote{margin:0;padding:12px 14px;border-radius:14px;background:var(--tile);font-size:14px;line-height:21px;color:var(--ink2);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm-warn{margin:-8px 0 0;font-size:12.5px;line-height:18px;color:var(--wine-ink)}
+.cm-foot{flex-shrink:0;display:flex;flex-direction:column;gap:10px;padding:12px 20px calc(30px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--bg)}
+.cm-hint{margin:0;font-size:12.5px;line-height:18px;color:var(--muted)}
+@media(max-width:359px){.cm-h1{font-size:26px}.cm-title{font-size:23px;line-height:31px}.cm-alert img{width:96px;height:96px}.cm-two{grid-template-columns:1fr}.cm-fab{right:14px}}
 .meet-open{display:block;width:100%;background:none;border:0;color:inherit;text-align:left;padding:0;font:inherit;cursor:pointer}.meet-open:focus-visible{outline:3px solid var(--wine);outline-offset:5px;border-radius:12px}.meet-open .mt-ft{display:flex}.meet-open .mt-t{overflow-wrap:anywhere}.sheet textarea.field{min-height:120px;height:auto;line-height:1.6}.sheet .field{max-width:100%;box-sizing:border-box}
 </style>
 
@@ -1515,7 +1627,6 @@ var MEET_SIZES = ['전체', '2:2', '3:3', '4:4'];
 /* 모집한 팀과 신청한 팀이 남자팀인지 여자팀인지 표시한다. */
 var MEET_TEAMS = { m: '남자팀', f: '여자팀' };
 function teamBadge(t){ return MEET_TEAMS[t] ? '<span class="badge ' + (t === 'm' ? 'b-sky' : 'b-new') + '">' + MEET_TEAMS[t] + '</span>' : ''; }
-function teamChips(sel, act){ return '<div class="chips" role="group" aria-label="우리 팀">' + ['m', 'f'].map(function(t){ return '<button class="chip-btn" data-act="' + act + '" data-t="' + t + '" aria-pressed="' + (sel === t) + '">' + MEET_TEAMS[t] + '</button>'; }).join('') + '</div>'; }
 function myMeets(){ return Array.isArray(store.meetMine) ? store.meetMine : []; }
 /* 공유 교류. 인증 토큰은 브라우저에만 보관하고 공개 응답에는 포함하지 않는다. */
 /* GitHub Pages의 공유 교류는 Cloudflare Workers + D1에 연결한다. */
@@ -1573,39 +1684,51 @@ function communityNotice(){
   if (COMMUNITY.status === 'error') return '<div class="mt-note" role="status"><span>' + esc(COMMUNITY.error) + ' 기존 예시는 둘러볼 수 있어요.</span></div>';
   return '<div class="mt-note" role="note"><span>공유 모집글은 다른 사용자도 볼 수 있어요. 작성·신청 내역 관리는 이 브라우저에서 할 수 있어요.</span></div>';
 }
+/* 모임 화면 전용 아이콘과 공통 조각. 화면 구성만 다루고 자료·요청 흐름은 건드리지 않는다. */
+var CM_IC = {
+  refresh: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg>',
+  edit: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>',
+  lock: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
+  trash: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
+  down: '<svg class="cm-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>'
+};
+/* 화면에 고정하는 버튼은 탭바 위에, 미니 플레이어가 떠 있으면 그 위에 둔다. */
+function cmLift(){ return W && P.started && W.hasBrief ? 176 : 100; }
+function cmSeg(act, attr, items, sel, cls, label){ return '<div class="cm-seg' + (cls ? ' ' + cls : '') + '" role="group" aria-label="' + label + '" style="grid-template-columns:repeat(' + items.length + ',minmax(0,1fr))">' + items.map(function(x){ return '<button data-act="' + act + '" data-' + attr + '="' + x[0] + '" aria-pressed="' + (sel === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>'; }
+function meetTitleOf(p){ return p.title || p.dept + ' ' + (MEET_TEAMS[p.team] || '') + ' ' + (p.size || '3:3').split(':')[0] + '명 모집'; }
 function meetCard(p, mine){
-  var category = meetCategory(p), dating = category === 'dating', shared = !!p.shared;
-  var title = p.title || p.dept + ' ' + (MEET_TEAMS[p.team] || '') + ' ' + (p.size || '3:3').split(':')[0] + '명 모집';
-  var intro = p.intro || p.note || '', capacity = dating ? '모집 인원 ' + esc(p.size) : '모집 인원 ' + esc(p.capacity) + '명';
-  return '<article class="mt-card' + (mine ? ' mine' : '') + '"><button class="meet-open" data-act="meetDetails" data-id="' + esc(p.id) + '" aria-label="' + esc(title) + ' 상세 보기"><span class="row" style="gap:6px;flex-wrap:wrap"><span class="badge b-tile">' + (shared ? mine ? '내 모집글' : '모집글' : mine ? '기존 개인 기록' : '예시') + '</span><span class="badge b-tile">' + MEET_CATEGORIES[category] + '</span>' + (dating ? teamBadge(p.team) : '') + '<span class="badge b-tile num">' + capacity + '</span><span class="muted" style="font-size:12.5px;font-weight:600">' + esc(p.college || '') + '</span></span><b class="mt-t">' + esc(title) + '</b>' +
-    (p.when ? '<span class="mt-m">' + esc([p.when,p.where].filter(Boolean).join(' · ')) + '</span>' : '') +
-    (intro ? '<span class="mt-p" style="display:block">' + esc(intro.slice(0,120)) + (intro.length > 120 ? '…' : '') + '</span>' : '') +
-    '<span class="mt-ft"><span class="muted" style="font-size:13px">' + (shared ? p.closed ? '모집 마감' : '신청 ' + (p.applicationCount || 0) + (dating ? '팀' : '명') : mine ? '이 브라우저의 개인 기록' : '모임 소개 예시') + '</span><span style="color:var(--wine-ink);font-weight:750">자세히 보기 ' + sz(IC.chev,16) + '</span></span></button></article>';
+  var category = meetCategory(p), dating = category === 'dating', shared = !!p.shared, title = meetTitleOf(p), intro = p.intro || p.note || '';
+  var meta = (dating ? [MEET_TEAMS[p.team], p.size, p.college] : [p.capacity ? p.capacity + '명' : '', p.dept || p.college]).filter(Boolean).map(esc).join('<i>·</i>');
+  var tag = shared ? mine ? '내 모집글' : '' : mine ? '개인 기록' : '예시';
+  var state = shared ? p.closed ? '모집 마감' : '신청 ' + (p.applicationCount || 0) + (dating ? '팀' : '명') : mine ? '이 브라우저의 개인 기록' : '모임 소개 예시';
+  return '<button class="meet-open cm-row" data-act="meetDetails" data-id="' + esc(p.id) + '" aria-label="' + esc(title) + ' 상세 보기"><span class="cm-meta">' + meta + (tag ? '<span class="badge ' + (shared ? 'b-new' : 'b-tile') + '">' + tag + '</span>' : '') + '</span><b class="cm-t">' + esc(title) + '</b>' +
+    (p.when || p.where ? '<span class="cm-d">' + esc([p.when,p.where].filter(Boolean).join(' · ')) + '</span>' : '') +
+    (intro ? '<span class="cm-i">' + esc(intro.slice(0,120)) + '</span>' : '') +
+    '<span class="cm-st">' + state + '</span></button>';
 }
 function vMeet(){
-  var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px">';
-  h += '<section class="fb-hero meet-hero"><div class="col" style="gap:4px;flex:1;min-width:0;position:relative"><span class="fb-k">교류</span><h1 class="fb-h">관심 있는 모임을 찾아요</h1><span class="fb-s">과팅, 스터디, 소모임을 둘러보고 내 모임을 만들어요.</span></div><img class="meet-mascot" src="data/hobanu/community.webp" alt="" width="112" height="140"></section>' + communityNotice();
-  h += '<button class="inbox-btn" data-act="meetInbox"><span>알림 · 내 신청</span>' + (NOTE.items.length ? '<span class="tb-badge">' + NOTE.items.length + '</span>' : '') + sz(IC.chev,20) + '</button>';
-  h += '<button class="chip-btn" data-act="meetRefresh">' + (COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : '모집글 새로고침') + '</button>';
+  var n = NOTE.items.length, h = '<div class="scr cm" style="padding:10px 20px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:22px">';
+  h += '<div class="col" style="gap:6px"><h1 class="cm-h1">모임</h1><span class="cm-sub">과팅, 스터디, 소모임을 둘러보고 내 모임을 만들어요.</span></div>';
+  h += '<section class="cm-alert"><div class="col" style="gap:10px;flex:1;min-width:0;position:relative;z-index:1;padding-right:92px"><span class="k">알림 · 내 신청</span><span class="t">' + (n ? '새 알림 ' + n + '개가 도착했어요' : '신청 현황과 알림을 확인해요') + '</span><button class="inbox-btn" data-act="meetInbox">확인하기' + noteBadge() + sz(IC.chev,14) + '</button></div><img src="data/hobanu/community.webp" alt="" width="118" height="118"></section>' + communityNotice();
+  h += '<div class="col"><div class="row" style="justify-content:space-between;padding-bottom:6px"><span class="cm-lab">카테고리</span><button class="cm-refresh" data-act="meetRefresh">' + CM_IC.refresh + (COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : '모집글 새로고침') + '</button></div>';
   var descriptions = {study:'같이 공부하고 꾸준히 성장해요',dating:'다른 학과 친구들과 만나요',club:'좋아하는 취미를 함께 즐겨요'};
   ['study','dating','club'].forEach(function(k){
-    var real = filterMeetings(COMMUNITY.rows,k), samples = filterMeetings(MEET_SAMPLES,k), rows = real.length ? real : samples;
-    h += '<section class="meet-section"><button class="meet-entry" data-act="meetCategory" data-k="' + k + '"><span class="row" style="justify-content:space-between"><b style="font-size:18px">' + MEET_CATEGORIES[k] + '</b><span class="badge b-tile">' + (COMMUNITY.counts[k] || 0) + '개 모집 중</span>' + sz(IC.chev,20) + '</span><span class="muted">' + descriptions[k] + '</span><span class="col" style="gap:8px">' + rows.slice(0,2).map(function(p){ return '<span style="font-size:14px">' + (!p.shared ? '[예시] ' : '') + esc(p.title || p.dept + ' ' + MEET_TEAMS[p.team] + ' 모집') + '</span>'; }).join('') + '</span><span style="font-size:13px;color:var(--wine-ink)">전체 보기</span></button></section>';
+    var real = filterMeetings(COMMUNITY.rows,k), latest = (real.length ? real : filterMeetings(MEET_SAMPLES,k))[0];
+    h += '<button class="meet-entry" data-act="meetCategory" data-k="' + k + '"><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="align-items:baseline;gap:8px"><b class="nm">' + MEET_CATEGORIES[k] + '</b><span class="ct num">' + (COMMUNITY.counts[k] || 0) + '개 모집 중</span></span><span class="ds">' + descriptions[k] + '</span>' + (latest ? '<span class="lt">최근 · ' + (!latest.shared ? '[예시] ' : '') + esc(meetTitleOf(latest)) + '</span>' : '') + '</span>' + sz(IC.chev,20).replace('<svg','<svg class="cm-chev"') + '</button>';
   });
-  return h + '</div></div>';
+  return h + '</div></div></div>';
 }
 function vMeetList(){
   var category = S.meetCategory || 'dating', f = S.meetSize, tm = S.meetTeam;
   var keep = function(p){ return (f === '전체' || p.size === f) && (tm === '전체' || p.team === tm); };
   var list = filterMeetings(COMMUNITY.rows,category).filter(keep), samples = filterMeetings(MEET_SAMPLES,category).filter(keep), drafts = filterMeetings(myMeets(),category).filter(keep);
-  var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px"><div class="row" style="gap:8px"><button class="icon-btn plain" data-act="back" aria-label="교류로 돌아가기">' + IC.back + '</button><h1 style="margin:0;font-size:26px">' + MEET_CATEGORIES[category] + '</h1></div>' + communityNotice();
-  h += '<div class="chips">' + Object.keys(MEET_CATEGORIES).map(function(k){ return '<button class="chip-btn" data-act="meetCategory" data-k="' + k + '" aria-pressed="' + (category === k) + '">' + MEET_CATEGORIES[k] + '</button>'; }).join('') + '</div><button class="btn-pri" data-act="meetNew">' + sz(IC.plus,18) + MEET_CATEGORIES[category] + ' 모집글 만들기</button>';
-  h += '<div class="chips"><button class="chip-btn" data-act="meetMineOnly" aria-pressed="' + !!S.meetMineOnly + '">내 모집글</button><button class="chip-btn" data-act="meetRefresh">새로고침</button></div>';
-  if (category === 'dating') h += '<div class="chips">' + MEET_SIZES.map(function(x){ return '<button class="chip-btn" data-act="meetSize" data-s="' + x + '" aria-pressed="' + (x === f) + '">' + x + '</button>'; }).join('') + '</div><div class="chips">' + [['전체','남녀 전체'],['m','남자팀'],['f','여자팀']].map(function(x){ return '<button class="chip-btn" data-act="meetTeam" data-t="' + x[0] + '" aria-pressed="' + (x[0] === tm) + '">' + x[1] + '</button>'; }).join('') + '</div>';
-  h += '<div class="col" style="gap:10px"><span class="lab-s">' + (S.meetMineOnly ? '내 모집글' : '공유 모집글') + '</span>' + list.map(function(p){ return meetCard(p,p.mine); }).join('') + (COMMUNITY.status === 'loading' ? '<p role="status">불러오는 중…</p>' : !list.length && COMMUNITY.status === 'ready' ? '<p class="muted">아직 모집글이 없어요. 첫 모임을 만들어 보세요.</p>' : '') + (COMMUNITY.cursor ? '<button class="chip-btn" data-act="meetMore">모집글 더 보기</button>' : '') + '</div>';
-  if (drafts.length) h += '<details id="meetDrafts" data-k="' + category + '"' + ((S.meetDraftsOpen || {})[category] ? ' open' : '') + '><summary class="lab-s">기존 개인 기록 ' + drafts.length + '개</summary><div class="col" style="gap:10px;padding-top:12px">' + drafts.map(function(p){ return meetCard(p,true); }).join('') + '</div></details>';
-  if (!S.meetMineOnly) h += '<details id="meetExamples" data-k="' + category + '"' + ((S.meetExamplesOpen || {})[category] === undefined ? !list.length ? ' open' : '' : S.meetExamplesOpen[category] ? ' open' : '') + '><summary class="lab-s">예시 ' + samples.length + '개 · 실제 모집이 아니에요</summary><div class="col" style="gap:10px;padding-top:12px">' + samples.map(function(p){ return meetCard(p,false); }).join('') + '</div></details>';
-  return h + '</div></div>';
+  var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + 70) + 'px"><div class="stg col" style="gap:16px"><div class="row" style="gap:6px"><button class="icon-btn plain cm-back" data-act="back" aria-label="모임으로 돌아가기">' + IC.back + '</button><h1 class="cm-h2" style="flex:1">' + MEET_CATEGORIES[category] + '</h1><button class="cm-mine" data-act="meetMineOnly" aria-pressed="' + !!S.meetMineOnly + '"><i>' + sz(IC.check,10) + '</i>내 모집글</button><button class="cm-round" data-act="meetRefresh" aria-label="모집글 새로고침">' + sz(CM_IC.refresh,15) + '</button></div>' + communityNotice();
+  h += cmSeg('meetCategory','k',['study','dating','club'].map(function(k){ return [k, MEET_CATEGORIES[k]]; }),category,'','카테고리');
+  if (category === 'dating') h += '<div class="col" style="gap:10px"><div class="cm-filter" role="group" aria-label="인원"><span>인원</span>' + MEET_SIZES.map(function(x){ return '<button data-act="meetSize" data-s="' + x + '" aria-pressed="' + (x === f) + '">' + x + '</button>'; }).join('') + '</div><div class="cm-filter" role="group" aria-label="팀"><span>팀</span>' + [['전체','남녀 전체'],['m','남자팀'],['f','여자팀']].map(function(x){ return '<button data-act="meetTeam" data-t="' + x[0] + '" aria-pressed="' + (x[0] === tm) + '">' + x[1] + '</button>'; }).join('') + '</div></div>';
+  h += '<div class="col"><span class="cm-lab" style="padding-bottom:4px">' + (S.meetMineOnly ? '내 모집글' : '공유 모집글') + ' <span class="num">' + list.length + '</span></span>' + list.map(function(p){ return meetCard(p,p.mine); }).join('') + (COMMUNITY.status === 'loading' ? '<p role="status" class="cm-empty">불러오는 중…</p>' : !list.length && COMMUNITY.status === 'ready' ? '<p class="cm-empty">아직 모집글이 없어요. 첫 모임을 만들어 보세요.</p>' : '') + (COMMUNITY.cursor ? '<button class="cm-more" data-act="meetMore">모집글 더 보기</button>' : '');
+  if (drafts.length) h += '<details class="cm-fold" id="meetDrafts" data-k="' + category + '"' + ((S.meetDraftsOpen || {})[category] ? ' open' : '') + '><summary><span>기존 개인 기록 ' + drafts.length + '개</span>' + CM_IC.down + '</summary><div class="col">' + drafts.map(function(p){ return meetCard(p,true); }).join('') + '</div></details>';
+  if (!S.meetMineOnly) h += '<details class="cm-fold" id="meetExamples" data-k="' + category + '"' + ((S.meetExamplesOpen || {})[category] === undefined ? !list.length ? ' open' : '' : S.meetExamplesOpen[category] ? ' open' : '') + '><summary><span>예시 ' + samples.length + '개 <em>· 실제 모집이 아니에요</em></span>' + CM_IC.down + '</summary><div class="col">' + samples.map(function(p){ return meetCard(p,false); }).join('') + '</div></details>';
+  return h + '</div></div></div><button class="cm-fab" style="bottom:calc(' + cmLift() + 'px + env(safe-area-inset-bottom,0px))" data-act="meetNew">' + sz(IC.plus,18) + '모집글 만들기</button>';
 }
 /* 앱 안 알림. 교류를 써 본 브라우저(인증값이 있는 경우)만 1분마다, 그리고 앱으로 돌아올 때 확인한다.
    모집자에게는 새 신청, 신청자에게는 수락·거절 결과가 온다. 휴대폰 푸시 알림은 아니다. */
@@ -1654,22 +1777,24 @@ function loadInbox(){
 }
 function vMeetInbox(){
   var I = COMMUNITY.inbox || { status: 'loading', notes: [], apps: [] };
-  var h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px"><div class="row" style="gap:8px"><button class="icon-btn plain" data-act="back" aria-label="교류로 돌아가기">' + IC.back + '</button><h1 style="margin:0;font-size:26px">알림 · 내 신청</h1></div>';
-  if (I.status === 'loading') return h + '<p role="status">불러오는 중…</p></div></div>';
-  if (I.status === 'error') return h + '<div class="mt-note" role="status"><span>' + esc(I.error) + '</span></div><button class="chip-btn" data-act="meetInbox">다시 불러오기</button></div></div>';
-  h += '<section class="tile col" style="gap:4px"><h2 style="font-size:18px;margin:0 0 6px">새 알림' + (I.notes.length ? ' ' + I.notes.length : '') + '</h2>';
-  h += I.notes.length ? I.notes.map(function(n){ return '<button class="note-row" data-act="meetDetails" data-id="' + esc(n.postId) + '"' + (n.kind === 'applied' ? ' data-open="applicants"' : '') + '><span class="row" style="gap:8px">' + (n.kind === 'applied' ? '<span class="badge b-new">새 신청</span>' : appStatusBadge(n.kind)) + '<span class="muted" style="font-size:12.5px">' + noteAgo(n.at) + '</span></span><b style="font-size:15px;overflow-wrap:anywhere">' + esc(noteText(n)) + '</b>' + (n.reason ? '<span class="muted" style="font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere">' + (n.kind === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(n.reason) + '</span>' : '') + '</button>'; }).join('') : '<p class="muted" style="margin:0">새 알림이 없어요.</p>';
-  h += '</section><section class="tile col" style="gap:4px"><h2 style="font-size:18px;margin:0 0 6px">내 신청' + (I.apps.length ? ' ' + I.apps.length : '') + '</h2>';
-  h += I.apps.length ? I.apps.map(function(a){ return '<button class="note-row" data-act="meetDetails" data-id="' + esc(a.postId) + '"><span class="row" style="gap:8px;flex-wrap:wrap">' + appStatusBadge(a.status) + '<span class="badge b-bg">' + (MEET_CATEGORIES[a.category] || '') + '</span>' + (a.closed ? '<span class="badge b-bg">모집 마감</span>' : '') + '<span class="muted" style="font-size:12.5px">' + noteAgo(a.decidedAt || a.createdAt) + '</span></span><b style="font-size:15px;overflow-wrap:anywhere">' + esc(a.title || '모집글') + '</b>' + (a.reason ? '<span class="muted" style="font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere">' + (a.status === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(a.reason) + '</span>' : '') + '</button>'; }).join('') : '<p class="muted" style="margin:0">아직 신청한 모임이 없어요.</p>';
-  return h + '</section><p class="muted" style="font-size:13px;margin:0">알림은 크누아를 열어 두었을 때 확인돼요. 신청·모집 기록은 이 브라우저에 연결돼 있어요.</p></div></div>';
+  var h = '<div class="scr cm" style="padding:6px 20px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:22px"><div class="row" style="gap:6px"><button class="icon-btn plain cm-back" data-act="back" aria-label="모임으로 돌아가기">' + IC.back + '</button><h1 class="cm-h2">알림 · 내 신청</h1></div>';
+  if (I.status === 'loading') return h + '<p role="status" class="cm-empty">불러오는 중…</p></div></div>';
+  if (I.status === 'error') return h + '<div class="mt-note" role="status"><span>' + esc(I.error) + '</span></div><button class="cm-more" data-act="meetInbox">다시 불러오기</button></div></div>';
+  var reason = function(text, rejected){ return text ? '<span class="rs">' + (rejected ? '거절 사유: ' : '모집자 메모: ') + esc(text) + '</span>' : ''; };
+  h += '<section class="col"><span class="cm-lab" style="padding-bottom:6px">새 알림' + (I.notes.length ? ' <span class="num">' + I.notes.length + '</span>' : '') + '</span>';
+  h += I.notes.length ? I.notes.map(function(n){ return '<button class="note-row" data-act="meetDetails" data-id="' + esc(n.postId) + '"' + (n.kind === 'applied' ? ' data-open="applicants"' : '') + '><i class="dot"></i><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="gap:8px">' + (n.kind === 'applied' ? '<span class="badge b-new">새 신청</span>' : appStatusBadge(n.kind)) + '<span class="ago">' + noteAgo(n.at) + '</span></span><b>' + esc(noteText(n)) + '</b>' + reason(n.reason, n.kind === 'rejected') + '</span></button>'; }).join('') : '<p class="cm-empty">새 알림이 없어요.</p>';
+  h += '</section><section class="col"><span class="cm-lab" style="padding-bottom:6px">내 신청' + (I.apps.length ? ' <span class="num">' + I.apps.length + '</span>' : '') + '</span>';
+  h += I.apps.length ? I.apps.map(function(a){ return '<button class="note-row" data-act="meetDetails" data-id="' + esc(a.postId) + '"><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="gap:8px;flex-wrap:wrap">' + appStatusBadge(a.status) + (a.closed ? '<span class="badge b-tile">모집 마감</span>' : '') + '<span class="ago">' + [MEET_CATEGORIES[a.category], noteAgo(a.decidedAt || a.createdAt)].filter(Boolean).join(' · ') + '</span></span><b>' + esc(a.title || '모집글') + '</b>' + reason(a.reason, a.status === 'rejected') + '</span>' + sz(IC.chev,18).replace('<svg','<svg class="cm-chev"') + '</button>'; }).join('') : '<p class="cm-empty">아직 신청한 모임이 없어요.</p>';
+  return h + '</section><p class="cm-foot-note">알림은 크누아를 열어 두었을 때 확인돼요. 신청·모집 기록은 이 브라우저에 연결돼 있어요.</p></div></div>';
 }
 function vDecideSheet(){
-  var D = S.decide, ok = D.status === 'accepted';
-  return '<div class="dim" data-act="decideClose"></div><div class="sheet mini" role="dialog" aria-modal="true" aria-label="신청 ' + (ok ? '수락' : '거절') + '"><div class="row" style="justify-content:space-between;padding:16px 20px 0"><h2 style="font-size:19px">' + esc(D.name) + '님 신청</h2><button class="icon-btn" data-act="decideClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:14px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))">' +
-    '<div class="chips" role="group" aria-label="결정">' + [['accepted','수락'],['rejected','거절']].map(function(x){ return '<button class="chip-btn" data-act="decideStatus" data-s="' + x[0] + '" aria-pressed="' + (D.status === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>' +
-    '<label class="col" style="gap:6px"><span class="row lab-s" style="justify-content:space-between">' + (ok ? '신청자에게 남길 메모 (선택)' : '거절 사유 (선택)') + '<span id="decideReasonN" class="num">' + (D.reason || '').length + '/300</span></span><textarea rows="4" id="decideReason" class="field" maxlength="300" placeholder="' + (ok ? '예: 오픈카톡으로 일정 안내드릴게요' : '예: 모집 인원이 다 찼어요') + '">' + esc(D.reason || '') + '</textarea></label>' +
-    '<p class="muted" style="font-size:13px;margin:0">결과와 ' + (ok ? '메모' : '사유') + '는 신청자에게 알림으로 전달돼요. 나중에 결정을 바꿀 수 있어요.</p>' +
-    '<button class="btn-pri" id="decideSave" data-act="decideSave"' + (D.busy ? ' disabled' : '') + '>' + (D.busy ? '저장 중…' : ok ? '수락하기' : '거절하기') + '</button></div></div>';
+  var D = S.decide, ok = D.status === 'accepted', post = COMMUNITY.detail, who = (COMMUNITY.applicants || []).filter(function(a){ return a.ref === D.ref; })[0];
+  return '<div class="dim" data-act="decideClose"></div><div class="sheet mini cm" role="dialog" aria-modal="true" aria-label="신청 ' + (ok ? '수락' : '거절') + '"><i class="cm-grab"></i><div class="cm-sh-head"><div class="col" style="gap:3px;min-width:0">' + (post ? '<span class="cm-over">' + esc(meetTitleOf(post)) + '</span>' : '') + '<h2>' + esc(D.name) + '님 신청</h2></div><button class="cm-x" data-act="decideClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:16px;padding:14px 20px calc(34px + env(safe-area-inset-bottom,0px))">' +
+    (who && who.message ? '<p class="cm-quote">' + esc(who.message) + '</p>' : '') +
+    cmSeg('decideStatus','s',[['accepted','수락'],['rejected','거절']],D.status,'pick','결정') +
+    '<label class="col" style="gap:6px"><span class="cm-fl">' + (ok ? '신청자에게 남길 메모' : '거절 사유') + '<span class="cm-fr">선택 · <span id="decideReasonN" class="num">' + (D.reason || '').length + '/300</span></span></span><textarea rows="3" id="decideReason" class="field" style="height:88px;min-height:88px" maxlength="300" placeholder="' + (ok ? '예: 오픈카톡으로 일정 안내드릴게요' : '예: 모집 인원이 다 찼어요') + '">' + esc(D.reason || '') + '</textarea></label>' +
+    '<p class="cm-help">결과와 ' + (ok ? '메모' : '사유') + '는 신청자에게 알림으로 전달돼요. 나중에 결정을 바꿀 수 있어요.</p>' +
+    '<button class="btn-pri cm-save" id="decideSave" data-act="decideSave"' + (D.busy ? ' disabled' : '') + '>' + (D.busy ? '저장 중…' : ok ? '수락하기' : '거절하기') + '</button></div></div>';
 }
 function loadApplicants(){
   var ap = COMMUNITY.detail; if (!ap || !ap.mine) return;
@@ -1684,30 +1809,41 @@ function saveDecision(){
   }).catch(function(e){ if (S.decide) S.decide.busy = false; toastMsg(e.message); });
 }
 function vMeetDetail(){
-  var p = COMMUNITY.detail, h = '<div class="scr" style="padding:14px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:16px"><button class="chip-btn" data-act="back">' + sz(IC.back,18) + '목록으로</button>';
-  if (!p) return h + '<p role="status">' + esc(COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : COMMUNITY.error || '모집글을 찾을 수 없어요.') + '</p></div></div>';
-  var category = meetCategory(p), dating = category === 'dating';
-  h += '<span class="lab-s">' + MEET_CATEGORIES[category] + (p.shared ? p.closed ? ' · 모집 마감' : ' · 모집 중' : ' · 예시 또는 개인 기록') + '</span><h1 style="font-size:25px;margin:0;overflow-wrap:anywhere">' + esc(p.title || p.dept + ' ' + (MEET_TEAMS[p.team] || '') + ' 모집') + '</h1><section class="tile col" style="gap:12px">';
-  [['모집 인원',dating ? p.size + ' · ' + (MEET_TEAMS[p.team] || '') : p.capacity + '명'],['일정',p.when],['장소',p.where],['소속',p.dept || p.college],['희망 상대',dating ? p.want : ''],['스터디 목표',p.goal],['주요 활동',p.activity],['참가 조건·준비물',p.requirements],['참가 비용',p.cost]].forEach(function(pair){ if (pair[1]) h += '<div class="col" style="gap:4px"><b class="lab-s">' + pair[0] + '</b><span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(pair[1]) + '</span></div>'; });
-  h += '</section><section class="tile col" style="gap:10px"><h2 style="font-size:18px;margin:0">' + (dating ? '우리 팀 소개' : dating === false && category === 'study' ? '스터디 소개·진행 방식' : '소모임 소개') + '</h2><p style="white-space:pre-wrap;overflow-wrap:anywhere;margin:0;line-height:1.7">' + esc(p.intro || p.note || '소개가 아직 없어요.') + '</p></section>';
-  if (!p.shared) {
-    h += '<section class="tile col" style="gap:12px"><h2 style="font-size:18px;margin:0">참가 문의 링크</h2><label class="col" style="gap:6px"><span class="lab-s">오픈카카오톡 링크</span><input class="field" type="text" value="" placeholder="아직 등록된 링크가 없어요" readonly aria-label="예시 오픈카카오톡 링크 미등록"></label><label class="col" style="gap:6px"><span class="lab-s">인스타그램 링크</span><input class="field" type="text" value="" placeholder="아직 등록된 링크가 없어요" readonly aria-label="예시 인스타그램 링크 미등록"></label></section><div class="mt-note">실제 모집글이 아니라 참가·신청할 수 없어요.</div>';
+  var p = COMMUNITY.detail, back = '<button class="cm-backlink" data-act="back">' + IC.back + '목록</button>';
+  if (!p) return '<div class="scr cm" style="padding:6px 20px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:18px"><div class="row">' + back + '</div><p role="status" class="cm-empty">' + esc(COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : COMMUNITY.error || '모집글을 찾을 수 없어요.') + '</p></div></div>';
+  var category = meetCategory(p), dating = category === 'dating', shared = !!p.shared;
+  var my = shared && !p.mine ? p.myApplication || null : null, applied = shared && !p.mine ? my || (store.communityApplied || {})[p.id] : null, st = my ? my.status : applied ? 'pending' : '';
+  var contact = shared && !p.closed ? contactButton(p.contact,'참가 문의') : '';
+  var canApply = shared && !p.mine && !p.closed && st !== 'accepted';
+  var bar = shared && !p.mine && (contact || canApply || applied);
+  var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + (bar ? 130 : 0)) + 'px"><div class="stg col" style="gap:18px"><div class="row" style="justify-content:space-between">' + back + (shared ? p.closed ? '<span class="cm-pill">모집 마감</span>' : '<span class="cm-pill on"><i></i>모집 중</span>' : '<span class="cm-pill">예시</span>') + '</div>';
+  h += '<div class="col" style="gap:6px"><span class="cm-kind">' + MEET_CATEGORIES[category] + (shared ? p.mine ? ' · 내 모집글' : '' : ' · 예시 또는 개인 기록') + '</span><h1 class="cm-title">' + esc(meetTitleOf(p)) + '</h1></div>';
+  if (st) h += '<section class="cm-mine-card"><span class="row" style="gap:8px"><b>내 신청</b>' + appStatusBadge(st) + '</span><span>' + (st === 'accepted' ? '모집자가 신청을 수락했어요.' : st === 'rejected' ? '모집자가 신청을 거절했어요.' : '신청을 접수했어요. 모집자가 수락하거나 거절하면 알림으로 알려 드려요.') + '</span>' + (my && my.reason ? '<span class="rs">' + (st === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(my.reason) + '</span>' : '') + '</section>';
+  var fact = function(pair){ return '<div class="col" style="gap:3px"><span class="k">' + pair[0] + '</span><span class="v">' + esc(pair[1]) + '</span></div>'; };
+  var short = [['모집 인원',dating ? p.size + ' · ' + (MEET_TEAMS[p.team] || '') : p.capacity + '명'],['일정',p.when],['장소',p.where],['소속',p.dept || p.college],['희망 상대',dating ? p.want : '']].filter(function(x){ return x[1]; });
+  var long = [['스터디 목표',p.goal],['주요 활동',p.activity],['참가 조건·준비물',p.requirements],['참가 비용',p.cost]].filter(function(x){ return x[1]; });
+  if (short.length) h += '<div class="cm-facts">' + short.map(fact).join('') + '</div>';
+  if (long.length) h += '<div class="cm-facts long">' + long.map(fact).join('') + '</div>';
+  h += '<p class="cm-intro">' + esc(p.intro || p.note || '소개가 아직 없어요.') + '</p>';
+  if (!shared) h += '<div class="cm-nolink">오픈카톡 · 인스타그램 — 아직 등록된 링크가 없어요</div><div class="mt-note">실제 모집글이 아니라 참가·신청할 수 없어요.</div>';
+  else if (p.mine) {
+    if (contact) h += '<div class="cm-textlink">' + contact + '</div>';
+    h += '<div class="cm-acts"><button data-act="meetEdit">' + CM_IC.edit + '수정</button><button data-act="meetToggleClosed">' + CM_IC.lock + (p.closed ? '모집 다시 열기' : '모집 마감') + '</button><button class="del" data-act="meetDeleteShared">' + CM_IC.trash + '삭제</button></div><p class="cm-help">작성자 권한은 이 브라우저에 저장돼요. 브라우저 데이터를 지우면 관리할 수 없어요.</p>';
+    h += '<section class="col"><div class="row" style="justify-content:space-between;align-items:baseline;padding-bottom:8px"><b class="cm-sec">신청 내역 <span class="num">' + (p.applicationCount || 0) + '</span></b><span class="cm-fr">최근 100개</span></div>';
+    if (!COMMUNITY.applicants) h += '<button class="cm-more" data-act="meetApplicants">신청 내역 보기</button>';
+    else h += COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){
+      var pending = a.status === 'pending' || !a.status, link = contactButton(a.contact,'신청자에게 연락');
+      return '<div class="cm-app"><span class="row" style="gap:8px"><b>' + esc(a.name) + '</b>' + (a.team ? '<span class="tm">' + MEET_TEAMS[a.team] + '</span>' : '') + '<span style="margin-left:auto">' + appStatusBadge(a.status) + '</span></span>' + (a.message ? '<span class="msg">' + esc(a.message) + '</span>' : '') +
+        '<div class="row" style="gap:8px"><span class="cm-textlink" style="flex:1;min-width:0">' + (link || '<span class="cm-fr">연락 링크를 남기지 않았어요.</span>') + '</span>' + (pending ? '<button class="no" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="rejected">거절</button><button class="ok" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="accepted">수락</button>' : '<button class="chg" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="' + (a.status === 'accepted' ? 'rejected' : 'accepted') + '">결정 바꾸기</button>') + '</div>' +
+        (a.reason ? '<span class="rs">' + (a.status === 'rejected' ? '거절 사유: ' : '메모: ') + esc(a.reason) + '</span>' : '') + '</div>';
+    }).join('') : '<p class="cm-empty">아직 신청이 없어요.</p>';
+    h += '</section>';
   }
-  else {
-    if (!p.closed) h += contactButton(p.contact,'참가 문의');
-    if (p.mine) {
-      h += '<p class="muted" style="font-size:13px">작성자 권한은 이 브라우저에 저장돼요. 브라우저 데이터를 지우면 관리할 수 없어요.</p><div class="chips"><button class="chip-btn" data-act="meetEdit">수정</button><button class="chip-btn" data-act="meetToggleClosed">' + (p.closed ? '모집 다시 열기' : '모집 마감') + '</button><button class="chip-btn" data-act="meetApplicants">신청 내역 (' + p.applicationCount + ')</button><button class="chip-btn" data-act="meetDeleteShared">삭제</button></div>';
-      if (COMMUNITY.applicants) h += '<section class="tile col" style="gap:14px"><h2 style="font-size:18px;margin:0">최근 신청 내역 (최대 100개)</h2>' + (COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){ return '<div class="col" style="gap:8px;border-top:1px solid var(--line);padding-top:12px"><span class="row" style="gap:8px;flex-wrap:wrap"><b>' + esc(a.name) + (a.team ? ' · ' + MEET_TEAMS[a.team] : '') + '</b>' + appStatusBadge(a.status) + '</span>' + (a.message ? '<span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(a.message) + '</span>' : '') + (a.reason ? '<span class="muted" style="font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere">' + (a.status === 'rejected' ? '거절 사유: ' : '메모: ') + esc(a.reason) + '</span>' : '') + (contactButton(a.contact,'신청자에게 연락') || '<span class="muted" style="font-size:13px">연락 링크를 남기지 않았어요.</span>') + '<div class="chips">' + (a.status === 'pending' || !a.status ? '<button class="chip-btn decide-ok" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="accepted">수락</button><button class="chip-btn decide-no" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="rejected">거절</button>' : '<button class="chip-btn decide-no" data-act="decideOpen" data-ref="' + esc(a.ref) + '" data-s="' + (a.status === 'accepted' ? 'rejected' : 'accepted') + '">결정 바꾸기</button>') + '</div></div>'; }).join('') : '<p>아직 신청이 없어요.</p>') + '</section>';
-    } else {
-      var my = p.myApplication || null, applied = my || (store.communityApplied || {})[p.id], st = my ? my.status : applied ? 'pending' : '';
-      if (st) h += '<section class="tile col" style="gap:8px"><span class="row" style="gap:8px"><b style="font-size:16px">내 신청</b>' + appStatusBadge(st) + '</span><span>' + (st === 'accepted' ? '모집자가 신청을 수락했어요.' : st === 'rejected' ? '모집자가 신청을 거절했어요.' : '신청을 접수했어요. 모집자가 수락하거나 거절하면 알림으로 알려 드려요.') + '</span>' + (my && my.reason ? '<span class="muted" style="white-space:pre-wrap;overflow-wrap:anywhere">' + (st === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(my.reason) + '</span>' : '') + '</section>';
-      if (!p.closed && st !== 'accepted') h += '<button class="btn-pri" data-act="meetApply" data-id="' + esc(p.id) + '">' + (st === 'rejected' ? '다시 신청하기' : applied ? '신청 내용 수정' : dating ? '우리 팀 신청하기' : '참가 신청하기') + '</button>';
-      if (applied) h += '<button class="chip-btn" data-act="meetCancel" data-id="' + esc(p.id) + '">신청 취소</button>';
-    }
-  }
-  return h + '</div></div>';
+  h += '</div></div>';
+  if (bar) h += '<div class="cm-bar" style="padding-bottom:calc(' + cmLift() + 'px + env(safe-area-inset-bottom,0px))">' + (contact || canApply ? '<div class="btns' + (contact && canApply ? ' two' : '') + '">' + (contact ? '<span class="cm-ghost">' + contact + '</span>' : '') + (canApply ? '<button class="btn-pri cm-save" data-act="meetApply" data-id="' + esc(p.id) + '">' + (st === 'rejected' ? '다시 신청하기' : applied ? '신청 내용 수정' : dating ? '우리 팀 신청하기' : '참가 신청하기') + '</button>' : '') + '</div>' : '') + (applied ? '<button class="cancel" data-act="meetCancel" data-id="' + esc(p.id) + '">신청 취소</button>' : '') + '</div>';
+  return h;
 }
-function meetField(id,label,v,max,ph,area){ return '<label class="col" style="gap:6px"><span class="row lab-s" style="justify-content:space-between">' + label + '<span id="' + id + 'N" class="num">' + (v || '').length + '/' + max + '</span></span>' + (area ? '<textarea rows="5" style="resize:vertical"' : '<input type="text"') + ' id="' + id + '" class="field" maxlength="' + max + '" placeholder="' + esc(ph) + '"' + (area ? '>' + esc(v || '') + '</textarea>' : ' value="' + esc(v || '') + '">') + '</label>'; }
+function meetField(id,label,v,max,ph,area,opt){ return '<label class="col" style="gap:6px"><span class="cm-fl">' + label + (opt ? '<span class="cm-fr">선택</span>' : '<span id="' + id + 'N" class="cm-fr num">' + (v || '').length + '/' + max + '</span>') + '</span>' + (area ? '<textarea rows="4" style="resize:vertical"' : '<input type="text"') + ' id="' + id + '" class="field" maxlength="' + max + '" placeholder="' + esc(ph) + '"' + (area ? '>' + esc(v || '') + '</textarea>' : ' value="' + esc(v || '') + '">') + '</label>'; }
 /* 저장에 필요한데 비었거나 받을 수 없는 항목. 저장 버튼이 꺼진 이유를 화면에 알려 줄 때도 쓴다. */
 function meetMissing(M){
   var miss = [], dating = M.category === 'dating', capacity = Number(M.capacity), need = function(t, id){ miss.push({ t: t, id: id }); };
@@ -1735,28 +1871,30 @@ function meetSync(){
   [['meetContactHint', meetContactHint(M)], ['meetHint', meetHint(M)]].forEach(function(x){ var el = $(x[0]); if (el) { el.textContent = x[1]; el.hidden = !x[1]; } });
 }
 function vMeetSheet(){
-  var M = S.meetSheet, apply = M.mode === 'apply', dating = M.category === 'dating', kind = MEET_CATEGORIES[M.category];
-  var h = '<div class="dim" data-act="meetClose"></div><div class="sheet mini" role="dialog" aria-modal="true" aria-label="' + kind + (apply ? ' 신청' : ' 모집글') + '"><div class="row" style="justify-content:space-between;padding:16px 20px 0"><h2 style="font-size:19px">' + kind + (apply ? ' 신청하기' : M.mode === 'edit' ? ' 모집글 수정' : ' 모집글 만들기') + '</h2><button class="icon-btn" data-act="meetClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:14px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))">';
+  var M = S.meetSheet, apply = M.mode === 'apply', dating = M.category === 'dating', kind = MEET_CATEGORIES[M.category], target = apply ? meetFind(M.id) : null;
+  var team = '<div class="col" style="gap:6px"><span class="cm-fl">우리 팀</span>' + cmSeg('meetTm','t',[['m',MEET_TEAMS.m],['f',MEET_TEAMS.f]],M.team,'sm','우리 팀') + '</div>';
+  var contactHint = meetContactHint(M), hint = meetHint(M);
+  var contact = meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크' : '참가 문의 인스타그램·오픈카톡 링크',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…',false,true) + '<p id="meetContactHint" role="status" class="cm-warn"' + (contactHint ? '' : ' hidden') + '>' + esc(contactHint) + '</p>';
+  var h = '<div class="dim" data-act="meetClose"></div><div class="sheet mini cm" role="dialog" aria-modal="true" aria-label="' + kind + (apply ? ' 신청' : ' 모집글') + '"><i class="cm-grab"></i><div class="cm-sh-head"><div class="col" style="gap:3px;min-width:0">' + (target ? '<span class="cm-over">' + esc(meetTitleOf(target)) + '</span>' : '') + '<h2>' + kind + (apply ? ' 신청하기' : M.mode === 'edit' ? ' 모집글 수정' : ' 모집글 만들기') + '</h2></div><button class="cm-x" data-act="meetClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:16px;padding:10px 20px 18px">';
   if (apply) {
     h += meetField('meetName',dating ? '팀 대표 이름·별명' : '이름·별명',M.name,30,'모집자에게 보여줄 이름');
-    if (dating) h += '<span class="lab-s">우리 팀</span>' + teamChips(M.team,'meetTm');
-    h += meetField('meetMsg',dating ? '우리 팀 소개·희망 일정 (선택)' : '참가 이유·가능한 일정 (선택)',M.msg,500,'모집자에게 전할 내용을 적어 주세요',true);
+    if (dating) h += team;
+    h += meetField('meetMsg',dating ? '우리 팀 소개·희망 일정' : '참가 이유·가능한 일정',M.msg,500,'모집자에게 전할 내용을 적어 주세요',true,true) + contact;
   } else {
-    h += meetField('meetTitle','모집글 제목',M.title,60,dating ? '예: 전자공학부 3:3 과팅' : kind === '스터디' ? '예: 토익 800점 목표 아침 스터디' : '예: 주말 사진 산책');
-    if (dating) h += '<span class="lab-s">우리 팀</span>' + teamChips(M.team,'meetTm') + '<span class="lab-s">팀별 인원</span><div class="chips">' + ['2:2','3:3','4:4'].map(function(x){ return '<button class="chip-btn" data-act="meetSz" data-s="' + x + '" aria-pressed="' + (M.size === x) + '">' + x + '</button>'; }).join('') + '</div>' + meetField('meetWant','희망 상대·학과 (선택)',M.want,100,'예: 학과 무관');
+    h += '<span class="cm-grp">기본 정보</span>' + meetField('meetTitle','모집글 제목',M.title,60,dating ? '예: 전자공학부 3:3 과팅' : kind === '스터디' ? '예: 토익 800점 목표 아침 스터디' : '예: 주말 사진 산책');
+    if (dating) h += '<div class="cm-two">' + team + '<div class="col" style="gap:6px"><span class="cm-fl">팀별 인원</span>' + cmSeg('meetSz','s',['2:2','3:3','4:4'].map(function(x){ return [x,x]; }),M.size,'sm','팀별 인원') + '</div></div>' + meetField('meetWant','희망 상대·학과',M.want,100,'예: 학과 무관',false,true);
     else {
-      h += '<label class="col" style="gap:6px"><span class="lab-s">모집 인원 (2~100명)</span><input id="meetCapacity" class="field" type="number" min="2" max="100" step="1" value="' + esc(M.capacity || '') + '"></label>';
+      h += '<label class="col" style="gap:6px"><span class="cm-fl">모집 인원<span class="cm-fr">2~100명</span></span><input id="meetCapacity" class="field" type="number" min="2" max="100" step="1" value="' + esc(M.capacity || '') + '"></label>';
       h += M.category === 'study' ? meetField('meetGoal','공부 주제·목표',M.goal,200,'예: 토익 800점, 매주 단어 시험') : meetField('meetActivity','주요 활동',M.activity,200,'예: 사진 촬영 후 함께 감상 나누기');
     }
-    h += meetField('meetIntro',dating ? '우리 팀 소개·만남 계획' : M.category === 'study' ? '스터디 설명·진행 방식' : '소모임 설명·활동 방식',M.intro,2000,'처음 보는 사람도 모임을 이해할 수 있게 자세히 적어 주세요',true);
-    h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시') + meetField('meetWhere','장소·온라인 여부 (선택)',M.where,100,'예: 중앙도서관 스터디룸');
-    h += meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물 (선택)' : dating ? '참가 조건 (선택)' : '참가 조건·준비물 (선택)',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true) + meetField('meetCost','참가 비용 (선택)',M.cost,100,'예: 무료 / 음료 각자 부담');
+    h += '<span class="cm-grp" style="margin-top:4px">모임 안내</span>' + meetField('meetIntro',dating ? '우리 팀 소개·만남 계획' : M.category === 'study' ? '스터디 설명·진행 방식' : '소모임 설명·활동 방식',M.intro,2000,'처음 보는 사람도 모임을 이해할 수 있게 자세히 적어 주세요',true);
+    h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시');
+    /* 값이 있거나 수정 중이거나 링크 오류가 있으면 펼쳐 둔다. 직접 펼친 상태도 다시 그릴 때 유지한다. */
+    var more = M.mode === 'edit' || M.where || M.requirements || M.cost || M.contact || contactHint || S.meetOptionalOpen;
+    h += '<details class="cm-fold opt" id="meetOptional"' + (more ? ' open' : '') + '><summary><span>장소 · 참가 조건 · 비용 · 연락 링크 <em>선택</em></span>' + CM_IC.down + '</summary><div class="col" style="gap:16px;padding:4px 0 6px">' + meetField('meetWhere','장소·온라인 여부',M.where,100,'예: 중앙도서관 스터디룸',false,true) + meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물' : dating ? '참가 조건' : '참가 조건·준비물',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true,true) + meetField('meetCost','참가 비용',M.cost,100,'예: 무료 / 음료 각자 부담',false,true) + contact + '</div></details>';
   }
-  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크 (선택)' : '참가 문의 인스타그램·오픈카톡 링크 (선택)',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
-  var contactHint = meetContactHint(M), hint = meetHint(M);
-  h += '<p id="meetContactHint" role="status" style="color:var(--wine-ink);font-size:13px;margin:-6px 0 0"' + (contactHint ? '' : ' hidden') + '>' + esc(contactHint) + '</p>';
-  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요. 링크를 남기지 않으면 모집자가 따로 연락하기 어려워요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p><p id="meetHint" class="muted" style="font-size:13px;line-height:19px;margin:0"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
-  return h;
+  h += '<p class="cm-help">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요. 링크를 남기지 않으면 모집자가 따로 연락하기 어려워요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" class="cm-warn"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p></div>';
+  return h + '<div class="cm-foot"><p id="meetHint" class="cm-hint"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri cm-save' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
 }
 function saveSharedMeeting(){
   var M = S.meetSheet; if (!M || COMMUNITY.busy) return;
@@ -1793,7 +1931,7 @@ var TAB_ROUTES = { saved: 'home', home: 'home', board: 'home', cafe: 'home', lis
 var DOCK_ROUTES = { saved: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1, 'meeting-detail': 1, 'meeting-inbox': 1 };
 function vTabs(route){
   var cur = TAB_ROUTES[route];
-  return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '교류'], ['feedback', '피드백']].map(function(t){
+  return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '모임'], ['feedback', '피드백']].map(function(t){
     var on = cur === t[0];
     return '<button class="tb' + (on ? ' on' : '') + '" data-act="tab" data-to="' + t[0] + '"' + (on ? ' aria-current="page"' : '') + '>' + TAB_IC[t[0]] + '<span>' + t[1] + '</span>' + (t[0] === 'meeting' ? noteBadge() : '') + '</button>';
   }).join('') + '</nav>';
@@ -1812,7 +1950,7 @@ var TOUR = [
   { sel: ['.herowrap .hero', '.herowrap .hb'], top: true, title: '재생 한 번이면 오늘 브리핑', body: '내 학과 공지와 마감, 날씨, 학식을 1~2분 동안 들려줘요. 화면을 꺼도 계속 들려요.' },
   { sel: ['.wx', '.week'], title: '날씨와 이번 주 일정', body: '학사일정은 저절로 들어와요. "일정 추가"를 누르면 내 일정도 넣을 수 있어요.' },
   { sel: ['.ml-hd', '.mlc'], title: '오늘 학식은 옆으로 넘겨요', body: '켜 둔 식당 메뉴판이 한 장씩 나와요. "식당 관리"에서 식당과 순서를 바꿔요.' },
-  { sel: ['.tabbar'], fixed: true, title: '아래 메뉴로 어디든', body: '홈, 캘린더, 교류, 피드백으로 바로 가요. 브리핑은 홈의 재생 카드에서 들어요.' }
+  { sel: ['.tabbar'], fixed: true, title: '아래 메뉴로 어디든', body: '홈, 캘린더, 모임, 피드백으로 바로 가요. 브리핑은 홈의 재생 카드에서 들어요.' }
 ];
 function vCoach(){
   var i = S.tour.i, n = TOUR.length, t = TOUR[i];
@@ -1990,7 +2128,7 @@ function renderPanel(){
   $('panel').innerHTML = '<div class="col" style="gap:4px"><h2>크누아 테스트</h2><p class="note">실제 내보낸 자료(data/)로 그린 화면이에요. 자료 상황은 data/meta.json 을 바꿔서 시험해요.</p></div>' +
     '<div class="grp"><span class="lab">자료</span><p class="note">' + (DATA ? '기준일 ' + esc(DATA.asOf) + ' · 확인 ' + esc(DATA.checkedAt) + ' · 브리핑 ' + (BRIEF ? '있음' : '없음') : '불러오기 전') + '</p></div>' +
     '<div class="grp"><span class="lab">화면 밝기</span><div class="chips">' + [['system', '기기 설정'], ['light', '밝게'], ['dark', '어둡게']].map(function(t){ return '<button class="chip-btn" data-act="theme" data-t="' + t[0] + '" aria-pressed="' + (S.theme === t[0]) + '">' + t[1] + '</button>'; }).join('') + '</div></div>' +
-    '<div class="grp"><span class="lab">바로 가기</span><div class="chips">' + [['start', '시작'], ['pick', '게시판 고르기'], ['home', '홈'], ['board', '게시판'], ['cafe', '식당'], ['player', '재생'], ['calendar', '캘린더'], ['meeting', '교류']].map(function(t){ return '<button class="chip-btn" data-act="jump" data-to="' + t[0] + '">' + t[1] + '</button>'; }).join('') + '</div></div>' +
+    '<div class="grp"><span class="lab">바로 가기</span><div class="chips">' + [['start', '시작'], ['pick', '게시판 고르기'], ['home', '홈'], ['board', '게시판'], ['cafe', '식당'], ['player', '재생'], ['calendar', '캘린더'], ['meeting', '모임']].map(function(t){ return '<button class="chip-btn" data-act="jump" data-to="' + t[0] + '">' + t[1] + '</button>'; }).join('') + '</div></div>' +
     '<div class="grp"><button class="opt" data-act="reset" style="justify-content:center">처음부터 다시 (저장 지우기)</button></div>';
 }
 function applyTheme(){ var r = document.documentElement; if (S.theme === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', S.theme); }
@@ -2008,7 +2146,7 @@ document.addEventListener('click', function(e){
     case 'splashSkip': return dismissSplash(true);
     case 'theme': S.theme = el.getAttribute('data-t'); store.theme = S.theme; save(); applyTheme(); return renderPanel();
     case 'reset': {
-      if (!window.confirm('이 브라우저에 저장한 이름, 학과·식당 선택, 저장한 공지와 화면 설정을 지우고 처음부터 시작할까요?\n교류 글과 작성자 인증은 유지됩니다.')) return;
+      if (!window.confirm('이 브라우저에 저장한 이름, 학과·식당 선택, 저장한 공지와 화면 설정을 지우고 처음부터 시작할까요?\n모임 글과 작성자 인증은 유지됩니다.')) return;
       try { localStorage.removeItem(KEY); } catch (x) { return toastMsg('저장 정보를 지우지 못했어요. 브라우저 저장 설정을 확인해 주세요.'); }
       pause(); window.location.reload(); return;
     }
@@ -2074,7 +2212,7 @@ document.addEventListener('click', function(e){
     case 'meetSize': S.meetSize = el.getAttribute('data-s'); return render(false);
     case 'meetTeam': S.meetTeam = el.getAttribute('data-t'); return render(false);
     case 'meetTm': { if (!S.meetSheet) return; S.meetSheet.team = el.getAttribute('data-t'); document.querySelectorAll('[data-act="meetTm"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); meetSync(); return; }
-    case 'meetNew': { S.meetSheet = { mode: 'new', category: S.meetCategory || 'dating', team: null, size: '3:3', when: '', where: '', want: '', title: '', intro: '', capacity: '', goal: '', activity: '', requirements: '', cost: '', contact: '' }; render(false); var mf = $('meetTitle'); if (mf) mf.focus(); return; }
+    case 'meetNew': { S.meetOptionalOpen = false; S.meetSheet = { mode: 'new', category: S.meetCategory || 'dating', team: null, size: '3:3', when: '', where: '', want: '', title: '', intro: '', capacity: '', goal: '', activity: '', requirements: '', cost: '', contact: '' }; render(false); var mf = $('meetTitle'); if (mf) mf.focus(); return; }
     case 'meetEdit': if (COMMUNITY.detail && COMMUNITY.detail.mine) { S.meetSheet = Object.assign({},COMMUNITY.detail,{mode:'edit'}); render(false); } return;
     case 'meetApply': { var mp = meetFind(el.getAttribute('data-id')); if (!mp || !mp.shared || mp.mine || mp.closed) return; S.meetSheet = Object.assign({mode:'apply',id:mp.id,category:meetCategory(mp),name:W.pf.name || '',msg:'',contact:'',team:null},(store.communityApplied || {})[mp.id] || {}); return render(false); }
     case 'meetSz': { if (!S.meetSheet) return; S.meetSheet.size = el.getAttribute('data-s'); document.querySelectorAll('[data-act="meetSz"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b === el)); }); return; }
@@ -2141,7 +2279,7 @@ document.addEventListener('input', function(e){
   }
   if (t.id === 'inPick') { S.pickQuery = t.value; var q = t.value.trim(); $('pickFound').innerHTML = pickFound(pickCandidates(q), q); }
 });
-document.addEventListener('toggle', function(e){ if (e.target.id === 'meetExamples' || e.target.id === 'meetDrafts') { var key = e.target.id === 'meetExamples' ? 'meetExamplesOpen' : 'meetDraftsOpen'; S[key] = S[key] || {}; S[key][e.target.getAttribute('data-k')] = e.target.open; } if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
+document.addEventListener('toggle', function(e){ if (e.target.id === 'meetExamples' || e.target.id === 'meetDrafts') { var key = e.target.id === 'meetExamples' ? 'meetExamplesOpen' : 'meetDraftsOpen'; S[key] = S[key] || {}; S[key][e.target.getAttribute('data-k')] = e.target.open; } if (e.target.id === 'meetOptional') S.meetOptionalOpen = e.target.open; if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
 document.addEventListener('keydown', function(e){
   if (e.key === 'Enter' && e.target.id === 'evTitle') { var sv = document.querySelector('[data-act="evSave"]'); if (sv && !sv.disabled) sv.click(); }
   if (e.target.id === 'seek' && CH.length) {
