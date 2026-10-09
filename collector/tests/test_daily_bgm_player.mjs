@@ -7,7 +7,7 @@ class Audio {
   constructor() { this.paused = true; this.src = ''; this.attrs = {}; this.events = {}; this.pending = []; }
   getAttribute(key) { return this.attrs[key]; }
   setAttribute(key, value) { this.attrs[key] = value; }
-  addEventListener(name, callback) { this.events[name] = callback; }
+  addEventListener(name, callback) { const previous = this.events[name]; this.events[name] = (...args) => { if (previous) previous(...args); callback(...args); }; }
   play() { return new Promise(resolve => this.pending.push(() => { this.paused = false; resolve(); })); }
   pause() { this.paused = true; }
   async resolveNext() { this.pending.shift()(); await Promise.resolve(); }
@@ -15,7 +15,8 @@ class Audio {
 
 const html = readFileSync(new URL('../../tools/knua-app.html', import.meta.url), 'utf8');
 const engine = html.slice(html.indexOf('var A = new Audio();'), html.indexOf('function audioUrl('));
-const c = vm.createContext({Audio, P: {playing: true}, S: {voice: true, bgm: true},
+const timers = [];
+const c = vm.createContext({Audio, setTimeout: fn => timers.push(fn), media: () => {}, render: () => {}, P: {playing: true, playToken: 1}, S: {voice: true, bgm: true},
   BGM_TRACK: {audio: 'a'.repeat(64) + '.mp3', volume: 0.1}, mode: () => 'audio'});
 vm.runInContext(engine, c);
 assert.equal(c.B.loop, true);
@@ -42,6 +43,15 @@ await c.B.resolveNext();
 assert.equal(c.B.paused, false);
 c.A.events.pause();
 assert.equal(c.B.paused, true);
+// Device pause updates the UI; a delayed pause from an older request does not.
+c.A.paused = true;
+c.P.playToken++;
+timers.shift()();
+assert.equal(c.P.playing, true);
+c.A.events.pause();
+timers.shift()();
+assert.equal(c.P.playing, false);
+c.P.playing = true; c.A.paused = false;
 
 c.S.voice = false;
 c.startBgm();
