@@ -1,0 +1,896 @@
+{
+  "channels": [
+    {
+      "channel_id": "notice-ddb70636c525",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-04f9a84e582c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7537783c05b0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-56d213db968e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f5bf5684020e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fd04b6b6208e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0158c1288046",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-541aff0da509",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-78e12cb6bc22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a6afbe817dd2",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8860bb9a4bc5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a267229666ef",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7ff56c3af3e0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8d0ba20b8a78",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ab33c8b6f3d1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-cd772685aa0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-eaa2bcd13c4a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f3ba4290e5dd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ca78d3fd3c51",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6c1f8a512fa4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b7eb69e8405d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74a3f719131b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-61c2fdac4b03",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2fdcd3cab366",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dc7fc6a93fe8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e3a4a5455384",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-12a353fc2eb8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-683cb3e528ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0ef73fec9014",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d42e73c1be80",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-30f51dd33791",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-750dff5618d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ddfc5b2ca163",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fe90b8f3beb7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-956827a355a7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ec96ad09ef78",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f4ac509b75c4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7dbc635b2399",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7e56cbeca2ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-73ffa1763744",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9b84b4adc47a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5015ce1e74b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2ae1ca96e3de",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9f20cdb4b423",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7502f997e5e7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-bbfcc8756400",
+      "meals": [],
+      "notices": [
+        {
+          "body": "급변하는 인공지능(AI) 기술 환경 속에서 사회복지학 연구의 혁신과 윤리적 과제를 함께 모색해 보는 ‘2026학년도 사회복지학부 학술 콜로키움 (2차)’을 개최합니다.\n이번 콜로키움에서는 전북대학교 사회복지학과 김윤영 교수님을 모시고 인공지능 시대가 가져올 학문적 패러다임의 변화와 향후 연구 방향에 대해 심도 있는 통찰을 나누고자 합니다.\n관심 있는 학생 여러분의 많은 참여를 바랍니다.\n[콜로키움 개요]\n- 주제: AI 이후의 연구: 혁신과 윤리의 경계에서 - 사회복지학의 새로운 연구 패러다임\n- 강사: 김윤영 교수 (전북대학교 사회복지학과)\n- 일시: 2026년 10월 15일(목) 11:30 ~ 13:00\n- 장소: 사회과학대학 310호\n- 대상: 사회복지학부 학부생, 대학원생 (타 학과(부) 학생 참여 가능)\n[참여 신청]\n- 신청 기한: ~ 2026년 10월 13일(화) 23:59까지\n- 신청 방법: https://url.kr/9f6ftd\n- 참여 혜택: 사전 신청자에 한해 점심식사 제공\n* 당일 참여도 가능합니다\n[문의처]\n- 사회복지학부 사무실: 사회과학대학 210호 / 053-950-5251",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": 3,
+          "deadline": "2026-10-13",
+          "id": "knu-knusw-knu1623026178:8940",
+          "posted_at": "2026-10-07",
+          "reason": "reminder",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-1268b7a10e0b",
+      "meals": [],
+      "notices": [
+        {
+          "body": "★추가접수★ 2026년 10월 외국어강좌 추가 접수 안내 (개강: 10월 1일)\n■ 개 강 일: 2026. 10. 1.(목)\n■ 추가접수기간: 2026. 10. 11.(일)까지\n■ 추가 모집 강좌\n* 일대일(1:1) 온라인 맞춤강좌\n- (원어민강사) 일본어, 중국어, 베트남어\n- (내국인강사) 영어, 스페인어, 독일어, 러시아어, 이탈리아어(유학준비반/회화반), 외국인을 위한 한국어\n개설 강좌에 관한 자세한 내용은 첨부파일 또는 [수강신청] 메뉴에서 확인 가능합니다.\n■ 접수방법\n- 온라인신청: lang.knu.ac.kr\n- 방문신청:언어교육센터1층 행정실\n- 전화신청: 053) 950-6731~2\n■ 문의: 053)950-6731~2\n■ 환불 규정(업무시간-평일09:00~18:00-중에만 가능)\n- 환불규정은 개강일(강좌별 상이) 기준으로 적용되며 자세한 사항은 [홈페이지]-[환불안내] 참조\n글로벌교육센터",
+          "channel_id": "notice-1268b7a10e0b",
+          "dday": 1,
+          "deadline": "2026-10-11",
+          "id": "knu-socio-soc1622181477:3949",
+          "posted_at": "2026-09-30",
+          "reason": "reminder",
+          "source": "사회학과 · 학부 공지사항",
+          "title": "[글로벌교육센터]★추가접수★ 2026년 10월 외국어강좌 추가 접수 안내 (개강: 10월 1일)",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NjUmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-8b73f625639c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afb535aeb941",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5e6a10e952e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9bcb92908bc9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3bb6de2335b3",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fe8857afa2d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0b9f7e3a61e0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f9d9ecdb1284",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2487b99aea65",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4c132ad6150a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-472ae4378387",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8666f6ab7bde",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f310e00db70c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-cc19e513d407",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5c34881a6cc",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-451c515734ae",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e0dc5a51576c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-aaa5e07a26eb",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-5489a94f38cd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2c006faa8fdd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-45a059e34b9c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-57321798a19a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d5e75aa6b2da",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-99ea5018f469",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6b16f01d1a75",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7fcf94c45b4e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-16f98ec95fc6",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-97fffffebd44",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9a2cb1c992c7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-06dffccf1c28",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-70d703a20086",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-848538cdce05",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9c2e2dbd2980",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1abc9573202c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f95f0e2ac40d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3834483dc081",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ef883ff42361",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a1540deb2a6f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74558916c320",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a1c0cc5412ca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7dfeec322405",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ad22d5b4a9e9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ecd686f730b2",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-5c6cbaba27ab",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-614324804939",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3c7bfc3da404",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7bb331bb8b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4b4549901a22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-68d5f9aa762f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-55ac86f2e763",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-392eeaadf103",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9a0b59b2a2b4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d1802616c625",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1cbb3d90d081",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e08af12e34e3",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-450caf336106",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8b2d3f025a39",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1d6a78636180",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b8ebd17a5dca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-c4b1c79994bd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-787893a88ff5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-278455937509",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2eb7684c7df1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1f235111f7dc",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6ef40bd632d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d7e3a598e69c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e187e9582e58",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afca571a7ef1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dd1ea15f1f4f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dfce5afb9336",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6c272c6c7db",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ccc3a94a1fa5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f14e44ae5bb9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9dbd1b2695c9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3d2a3e87207a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d13e4abb0470",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4a41e1328a3e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b46aed7f6b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ac0144f93d45",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-093d2d29fb09",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-101538fb6a8e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6fafb52e7377",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-459a4805de72",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "knu-academic",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-df44dd8507c1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b1133d4c8b3b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b34ee1a00417",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fefffa32e24c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6b04da14aae1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a363da417a07",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7414782e7dbb",
+      "meals": [],
+      "notices": []
+    }
+  ],
+  "collected_at": "2026-10-10T02:16:45.145197+09:00",
+  "date": "2026-10-10",
+  "errors": [
+    {
+      "message": "오늘 식단은 로컬에서 아직 수집하지 않았습니다",
+      "source": "meals"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-ddb70636c525"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-7537783c05b0"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-56d213db968e"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fd04b6b6208e"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-0158c1288046"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-8d0ba20b8a78"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-ab33c8b6f3d1"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-cd772685aa0f"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b7eb69e8405d"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-dc7fc6a93fe8"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-12a353fc2eb8"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-683cb3e528ee"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-0ef73fec9014"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-30f51dd33791"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-750dff5618d4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fe90b8f3beb7"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-7dbc635b2399"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-7e56cbeca2ee"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-73ffa1763744"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9b84b4adc47a"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9f20cdb4b423"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-8b73f625639c"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-afb535aeb941"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9bcb92908bc9"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-3bb6de2335b3"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fe8857afa2d4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-0b9f7e3a61e0"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-f9d9ecdb1284"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-4c132ad6150a"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-8666f6ab7bde"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b5c34881a6cc"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-451c515734ae"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-e0dc5a51576c"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-aaa5e07a26eb"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-5489a94f38cd"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-2c006faa8fdd"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-45a059e34b9c"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-57321798a19a"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b1133d4c8b3b"
+    }
+  ],
+  "schedule": [],
+  "weather": {
+    "rain_prob": 67,
+    "summary": "대체로 맑음",
+    "temp_max": 25.7,
+    "temp_min": 15.7
+  }
+}
