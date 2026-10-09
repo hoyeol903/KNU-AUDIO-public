@@ -898,8 +898,8 @@ function startBgm(gesture){
 function syncBgm(){ if (P.playing && ((mode() === 'audio' && !A.paused) || (mode() === 'tts' && P.voiceOk))) startBgm(false); else stopBgm(); }
 B.addEventListener('error', stopBgm);
 A.addEventListener('playing', syncBgm);
-A.addEventListener('waiting', stopBgm);
-A.addEventListener('pause', stopBgm);
+/* 배경음악은 구간이 바뀌며 음성이 잠깐 멈추거나(pause·ended) 다음 파일을 불러오는 동안(waiting)에도 계속 흐른다.
+   멈추는 때는 사용자 일시정지(pause()), 끝까지 들음(nextAuto), 기기가 음성을 멈춤(아래 pause 확인)뿐이다. */
 /* 이어폰을 빼거나 전화가 오는 등 기기가 음성을 멈추면 화면도 일시정지로 맞춘다. 구간을 바꾸는 중의 잠깐 멈춤은 무시한다. */
 A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { P.playing = false; stopBgm(); media(); render(false); } }, 400); });
 function audioUrl(a){ return /^(https?:)?\/\//.test(a) || a.charAt(0) === '/' ? a : 'data/briefing/' + a; }
@@ -958,7 +958,7 @@ function startChapter(resume){
   startBgm(true);
   var token = ++P.playToken, pr = A.play();
   /* 휴대폰이 재생을 거절하면(자동 재생 제한 등) 소리는 안 나는데 '재생 중'으로 남지 않게 되돌린다. 일시정지·구간 이동으로 끊긴 경우(AbortError)는 정상이다. */
-  if (pr && pr.catch) pr.catch(function(e){ if (A.paused) stopBgm(); if (e && e.name === 'AbortError') return; if (token === P.playToken && A.paused && P.playing) { P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
+  if (pr && pr.catch) pr.catch(function(e){ if (e && e.name === 'AbortError') return; if (A.paused && token === P.playToken) stopBgm(); if (token === P.playToken && A.paused && P.playing) { P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
 }
 function play(ch, restart){
   if (!CH.length) return;

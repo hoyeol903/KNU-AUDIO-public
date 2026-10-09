@@ -33,25 +33,30 @@ assert.equal(c.B.paused, false);
 await c.B.resolveNext();
 assert.equal(c.B.src, src);
 
-// A request completing after pause/waiting must never restart music alone.
+// Music keeps going while speech changes segments: the voice briefly pauses/ends and buffers the next file.
 c.startBgm();
-c.A.events.waiting();
-await c.B.resolveNext();
-assert.equal(c.B.paused, true);
-c.A.events.playing();
+c.A.events.waiting?.(); // 처리기가 없거나 있어도 음악을 멈추면 안 된다
 await c.B.resolveNext();
 assert.equal(c.B.paused, false);
 c.A.events.pause();
-assert.equal(c.B.paused, true);
-// Device pause updates the UI; a delayed pause from an older request does not.
+assert.equal(c.B.paused, false);
+// A segment change (newer play request) within the check window keeps both speech and music going.
 c.A.paused = true;
 c.P.playToken++;
 timers.shift()();
 assert.equal(c.P.playing, true);
+assert.equal(c.B.paused, false);
+// A real device pause (same request still current) pauses the UI and stops music.
 c.A.events.pause();
 timers.shift()();
 assert.equal(c.P.playing, false);
+assert.equal(c.B.paused, true);
 c.P.playing = true; c.A.paused = false;
+// A request completing after an explicit stop (user pause) must never restart music alone.
+c.startBgm();
+c.stopBgm();
+await c.B.resolveNext();
+assert.equal(c.B.paused, true);
 
 c.S.voice = false;
 c.startBgm();
