@@ -36,7 +36,9 @@ class DownloadBgmTest(unittest.TestCase):
                     return original[name], 'audio/mpeg'
 
                 with patch.object(downloader, 'get', side_effect=get), patch.object(downloader.time, 'sleep'):
+                    (downloader.DEST / 'previous-track.mp3').write_bytes(b'old')
                     downloader.main()
+                    self.assertFalse((downloader.DEST / 'previous-track.mp3').exists())
                     self.assertEqual(len(calls), 3)
                     catalog = json.loads((downloader.DEST / 'catalog.json').read_text(encoding='utf-8'))
                     self.assertEqual([row['title'] for row in catalog], [row['title'] for row in pieces])

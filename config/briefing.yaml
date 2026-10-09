@@ -22,11 +22,11 @@ tts:
   instructions:
     female: "차분하고 또렷한 아침 라디오 진행자처럼 자연스러운 한국어로 말해 주세요. 약간 밝고 생기 있게 말하되, 속도와 음량은 안정적으로 유지하고 들뜨거나 과장하지 마세요."
 bgm:
-  # 음악 파일은 사용 허락을 확인하기 전까지 저장소에 넣지 않는다. 확인되면 assets/ 아래 경로를 적는다.
+  # 앱 BGM은 tools.daily_bgm이 CC BY 4.0 원곡 30개 중 하루 한 곡을 선택한다.
   file: ''
   source_url: ''
-  attribution: '배경음악: Mas Cafe - Casa Rosa (사용자 제공 파일명 기준)'
-  license_note: 사용자 제공 음악. 이전 곡과 다른 파일이므로 공개 배포·재배포 조건은 별도 확인 필요.
+  attribution: ''
+  license_note: 'CC BY 4.0 · 곡별 출처와 수정 여부는 assets/bgm/catalog.json 및 ATTRIBUTION.txt 참고'
   volume: 0.1
 
 slm:

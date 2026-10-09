@@ -12,25 +12,38 @@ from mutagen.mp3 import MP3
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'assets' / 'bgm'
 TRACKS = [
-    ('Easy Lemon', 'USUAN1200076'), ('Bossa Antigua', 'USUAN1700069'),
-    ('Casa Bossa Nova', 'USUAN1600012'), ('Airport Lounge', 'USUAN1100806'),
-    ('Friday Morning', 'USUAN1100224'), ('Moonstone', 'USUAN1100145'),
-    ('Midsummer Sky', 'USUAN1100158'), ('Luminous Rain', 'USUAN1100169'),
-    ('Continue Life', 'USUAN1100282'), ('Sapphire Isle', 'USUAN1100087'),
-    ('Daybreak', 'USUAN1100266'), ('White', 'USUAN1100010'),
-    ('Meditation Impromptu 01', 'USUAN1100163'),
-    ('Meditation Impromptu 02', 'USUAN1100162'),
-    ('Meditation Impromptu 03', 'USUAN1100161'),
-    ('Comfortable Mystery', 'USUAN1100287'),
-    ('Comfortable Mystery 2', 'USUAN1100537'), ('Fresh Air', 'USUAN1500084'),
-    ('Summer Day', 'USUAN1200083'), ('Groove Grove', 'USUAN1200054'),
-    ('Thinking of You', 'USUAN1100637'),
-    ('On the Passing of Time', 'USUAN1100520'), ('Reawakening', 'USUAN1400017'),
-    ('Winter Reflections', 'USUAN1100580'), ('Calmant', 'USUAN1100859'),
-    ('Awaiting Return', 'USUAN1100318'), ('Starry', 'USUAN1100062'),
-    ('Winter Chimes', 'USUAN1100009'), ('Pride', 'USUAN1100106'),
-    ('Healing', 'USUAN1200048'),
+    ('Carefree', 'USUAN1400037'),
+    ('Life of Riley', 'USUAN1400054'),
+    ('Happy Alley', 'USUAN1100482'),
+    ('Wallpaper', 'USUAN1100843'),
+    ('Sunshine (version 2)', 'USUAN1100628'),
+    ('Montauk Point', 'USUAN1400013'),
+    ('Daily Beetle', 'USUAN1500025'),
+    ('Happy Bee', 'USUAN1300014'),
+    ('Thatched Villagers', 'USUAN1100720'),
+    ('Heartwarming', 'USUAN1100207'),
+    ('Two Together', 'USUAN1100031'),
+    ('Morning', 'USUAN2300003'),
+    ('Cheery Monday', 'USUAN1700065'),
+    ('Jazz Brunch', 'USUAN1700074'),
+    ('Apero Hour', 'USUAN1700070'),
+    ('Backbay Lounge', 'USUAN1700068'),
+    ('Samba Isobel', 'USUAN1700071'),
+    ('Verano Sensual', 'USUAN1900020'),
+    ('On Hold for You', 'USUAN2000019'),
+    ('Bleeping Demo', 'USUAN2000021'),
+    ('Aerosol of my Love', 'USUAN2000020'),
+    ('Tiki Bar Mixer', 'USUAN2000006'),
+    ('Island Meet and Greet', 'USUAN2000004'),
+    ('Del Rio Bravo', 'USUAN1900031'),
+    ('Almost Bliss', 'USUAN1900015'),
+    ('Local Forecast', 'USUAN1300010'),
+    ('Pamgaea', 'USUAN1300036'),
+    ('Beachfront Celebration', 'USUAN1200022'),
+    ('Paradise Found', 'USUAN2300000'),
+    ('Moonlight Beach', 'USUAN2000005'),
 ]
+
 LICENSE = 'https://creativecommons.org/licenses/by/4.0/'
 
 
@@ -95,6 +108,10 @@ def main():
     temp_catalog = DEST / 'catalog.json.tmp'
     temp_catalog.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     os.replace(temp_catalog, DEST / 'catalog.json')
+    kept = {row['file'] for row in result}
+    for path in DEST.glob('*.mp3'):
+        if path.name not in kept:
+            path.unlink()
     print(f'Completed {len(result)} tracks ({sum((DEST / row["file"]).stat().st_size for row in result):,} bytes)')
 
 
