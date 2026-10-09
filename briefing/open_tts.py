@@ -59,7 +59,8 @@ def qwen_spoken_text(text):
     text = _FULL_DATE.sub(_spoken_date, text)
     text = _CLOCK.sub(_spoken_clock, text)
     text = _ACRONYM_RE.sub(lambda match: _ACRONYMS[match.group().upper()], text)
-    return text
+    # 느낌표는 그 문장만 들뜨게 읽히게 한다. 화면 대본은 그대로 두고 음성 입력에서만 마침표로 바꾼다.
+    return re.sub(r'[!！]+', '.', text)
 
 
 def prepare_language_resources():

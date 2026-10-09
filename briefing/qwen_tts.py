@@ -16,14 +16,20 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v1'
-GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v2-calm'
+# 라이브러리 기본값(temperature 0.9, top_k 50, top_p 1.0)은 구간마다 톤·속도가 크게 달라진다.
+# 구간 사이 편차를 줄이려고 뽑기 범위를 좁힌다. 더 낮추면 단조로워질 수 있어 들어 보고 조정한다.
+GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True,
+                  temperature=0.65, top_k=30, top_p=0.9,
+                  subtalker_temperature=0.65, subtalker_top_k=30, subtalker_top_p=0.9)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
                          trim_start_duration_sec=.05, trim_end_duration_sec=.1,
                          trim_start_threshold_db=-55, trim_end_threshold_db=-50,
                          preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
-                         added_tail_silence_sec=.18)
+                         added_tail_silence_sec=.18,
+                         # 한 구간 안에서 갑자기 커지는 부분만 눌러 음량 폭을 좁힌다. 작은 소리는 키우지 않는다.
+                         compress_threshold_db=-22, compress_ratio=2.5, compress_attack_ms=15, compress_release_ms=250)
 CACHE_PROFILE = dict(sampling=GENERATION, seed=SEED, postprocess=AUDIO_POSTPROCESS)
 
 
@@ -64,7 +70,9 @@ def _audio_filters(tempo):
                   f'silenceremove=start_periods=1:start_duration={profile["trim_end_duration_sec"]}:'
                   f'start_threshold={profile["trim_end_threshold_db"]}dB:'
                   f'start_silence={profile["preserved_end_silence_sec"]},areverse')
-    return f'atempo={tempo},{trim_edges},apad=pad_dur={profile["added_tail_silence_sec"]}'
+    compress = (f'acompressor=threshold={profile["compress_threshold_db"]}dB:ratio={profile["compress_ratio"]}:'
+                f'attack={profile["compress_attack_ms"]}:release={profile["compress_release_ms"]}')
+    return f'atempo={tempo},{trim_edges},{compress},apad=pad_dur={profile["added_tail_silence_sec"]}'
 
 
 @contextmanager
