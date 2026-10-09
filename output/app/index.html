@@ -1128,6 +1128,7 @@ function vPick(){
     header(true, settings ? '<b style="font-size:17px;margin-right:auto;margin-left:4px">게시판 설정</b>' : '') +
     (settings ? '<button class="tile row" data-act="collectionStatus" style="justify-content:space-between;min-height:52px;width:100%;text-align:left"><b>수집 현황</b><span class="muted">오늘 게시판·식당 수집 상태</span></button>' +
       '<button class="tile row" data-act="tourAgain" style="justify-content:space-between;min-height:52px;width:100%;text-align:left"><b>사용법 다시 보기</b><span class="muted">홈에서 한 번 더 짚어 줘요</span></button>' : '') +
+    (settings ? '<button class="tile row" data-act="reset" style="justify-content:space-between;min-height:52px;width:100%;text-align:left"><b>처음부터 다시 시작</b><span class="muted">이름·선택·저장한 공지 초기화</span></button>' : '') +
     (settings ? bgmCreditSection() + '<a href="privacy.html" target="_blank" rel="noopener" class="muted" style="font-size:13px">방문 통계·개인정보 안내</a>' : '') +
     (settings ? '' : (pf.dept.avatar ? '<div style="display:flex;justify-content:center;margin-top:-8px"><span class="pop">' + avatar(pf.dept, 132, true) + '</span></div>' : '') + '<div class="col" style="gap:6px;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">들을 게시판을 확인하세요</h1><span class="muted" style="font-size:14px;line-height:21px">학과에 맞는 필수 게시판은 자동으로 들어가요. 더 듣고 싶은 곳만 추가하세요.</span></div>') +
     '<section class="col" style="gap:10px"><div class="row" style="gap:8px"><h2 style="margin:0;font-size:17px;font-weight:800">필수</h2><span class="lab-s">' + esc(pf.dept.college + ' · ' + pf.dept.dept) + '</span>' + (settings ? '<button data-act="changeDept" style="margin-left:auto;min-height:40px;font-size:13.5px;font-weight:800;color:var(--wine-ink)">학과 바꾸기</button>' : '') + '</div>' +
@@ -1918,7 +1919,11 @@ document.addEventListener('click', function(e){
   switch (a) {
     case 'splashSkip': return dismissSplash(true);
     case 'theme': S.theme = el.getAttribute('data-t'); store.theme = S.theme; save(); applyTheme(); return renderPanel();
-    case 'reset': try { localStorage.removeItem(KEY); } catch (x) {} store = {}; pause(); P.started = false; S.startName = ''; S.startDept = null; S.startQuery = ''; S.sheet = null; refresh(); openPanel(false); return nav('start');
+    case 'reset': {
+      if (!window.confirm('이 브라우저에 저장한 이름, 학과·식당 선택, 저장한 공지와 화면 설정을 지우고 처음부터 시작할까요?\n교류 글과 작성자 인증은 유지됩니다.')) return;
+      try { localStorage.removeItem(KEY); } catch (x) { return toastMsg('저장 정보를 지우지 못했어요. 브라우저 저장 설정을 확인해 주세요.'); }
+      pause(); window.location.reload(); return;
+    }
     case 'jump': {
       openPanel(false); var to = el.getAttribute('data-to'); S.sheet = null;
       if (to === 'start' || !W) return nav('start');
