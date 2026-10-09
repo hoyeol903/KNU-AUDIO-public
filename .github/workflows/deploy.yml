@@ -25,7 +25,7 @@ jobs:
     timeout-minutes: 10
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -41,4 +41,13 @@ jobs:
           path: site
       - name: 정적 앱 배포
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      # 방금 올린 묶음을 바로 찾지 못해 실패하는 일시 오류가 있어(2026-10-09) 잠시 뒤 한 번만 다시 시도한다.
+      - name: 재시도 전 대기
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - name: 정적 앱 배포 재시도
+        id: retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
