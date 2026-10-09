@@ -94,7 +94,7 @@ python -m tools.update_meals
 
 실서비스는 [https://hoyeol903.github.io/KNU-AUDIO-public/](https://hoyeol903.github.io/KNU-AUDIO-public/)입니다. 화면은 학과와 게시판을 고르고 다른 학과 공지와 여섯 식당 중 원하는 식당을 함께 볼 수 있으며, 생성된 음성 브리핑을 재생합니다.
 
-`.github/workflows/deploy.yml`은 `output/app/index.html`과 `output/app/data/`를 GitHub Pages에 올립니다. 앱 자료를 바꾼 기본 브랜치 push, 공지 수집 워크플로 완료, 또는 Actions의 `GitHub Pages 배포` 수동 실행으로 배포합니다. 저장소 Settings → Pages의 Source를 GitHub Actions로 설정합니다. 홈페이지 배포에 별도 API 키는 필요하지 않습니다.
+`.github/workflows/deploy.yml`은 `output/app/index.html`과 `output/app/data/`를 GitHub Pages에 올립니다. 앱 자료를 바꾼 기본 브랜치 push, 공지 수집 워크플로 완료, 또는 Actions의 `GitHub Pages 배포` 수동 실행으로 배포합니다. 저장소 Settings → Pages의 Source를 GitHub Actions로 설정합니다. 홈페이지 배포에 별도 API 키는 필요하지 않습니다. 교류의 상세 소개·참가 링크·예시 양식을 추가했으며, 실제 모집글 공유·신청은 별도 API와 DB를 연결해야 합니다. [교류 연결 안내](docs/community.md)를 참고하세요.
 
 하루 배경음악은 Kevin MacLeod의 Incompetech 공식 원본 MP3 30곡(CC BY 4.0) 중 하루 한 곡을 앱에 포함합니다. 출처 카탈로그와 원본 보관 안내는 [하루 배경음악](docs/daily-bgm.md)을 참고하세요.
 
