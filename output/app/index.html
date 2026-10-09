@@ -1024,13 +1024,34 @@ A.addEventListener('playing', syncBgm);
 /* 배경음악은 구간이 바뀌며 음성이 잠깐 멈추거나(pause·ended) 다음 파일을 불러오는 동안(waiting)에도 계속 흐른다.
    멈추는 때는 사용자 일시정지(pause()), 끝까지 들음(nextAuto), 기기가 음성을 멈춤(아래 pause 확인)뿐이다. */
 /* 이어폰을 빼거나 전화가 오는 등 기기가 음성을 멈추면 화면도 일시정지로 맞춘다. 구간을 바꾸는 중의 잠깐 멈춤은 무시한다. */
-A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { P.playing = false; stopBgm(); media(); render(false); } }, 400); });
+/* 음성 이용 통계: 고정 이벤트 이름만 보내고 사용자·게시판 정보는 보내지 않는다. */
+var AUDIO_USAGE = {started:false, active:false, skipped:false};
+function audioUsageEvent(name){
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.protocol === 'file:') return;
+  try { if (typeof gtag === 'function') gtag('event', name); } catch(e) {}
+}
+function audioUsageStart(){
+  if (!P.playing) return;
+  if (!AUDIO_USAGE.started) { AUDIO_USAGE.started=true; audioUsageEvent('briefing_start'); }
+  AUDIO_USAGE.active=true;
+}
+function audioUsagePause(){
+  if (!AUDIO_USAGE.active) return;
+  AUDIO_USAGE.active=false; audioUsageEvent('briefing_pause');
+}
+function audioUsageComplete(){
+  if (AUDIO_USAGE.started && AUDIO_USAGE.active && !AUDIO_USAGE.skipped) audioUsageEvent('briefing_complete');
+  AUDIO_USAGE.active=false;
+}
+A.addEventListener('playing', audioUsageStart);
+window.addEventListener('pagehide', audioUsagePause);
+A.addEventListener('pause', function(){ var token = P.playToken; setTimeout(function(){ if (P.playing && token === P.playToken && A.paused && !A.ended && mode() === 'audio' && P.pend == null) { audioUsagePause(); P.playing = false; stopBgm(); media(); render(false); } }, 400); });
 function audioUrl(a){ return /^(https?:)?\/\//.test(a) || a.charAt(0) === '/' ? a : 'data/briefing/' + a; }
 function mode(c, fresh){ c = c || CH[P.ch]; if (!c) return 'timer';
   if (!fresh && c === CH[P.ch] && P.activeMode) return P.activeMode;
   return c.audio ? 'audio' : (c.s && S.voice && window.speechSynthesis && !P.fallback ? 'tts' : 'timer'); }
 A.addEventListener('ended', function(){ if (P.playing) nextAuto(); });
-A.addEventListener('error', function(){ if (P.playing && mode() === 'audio') { nextAuto(); toastMsg('음성 파일을 불러오지 못한 구간은 건너뛰었어요.'); } });
+A.addEventListener('error', function(){ if (P.playing && mode() === 'audio') { AUDIO_USAGE.skipped=true; nextAuto(); toastMsg('음성 파일을 불러오지 못한 구간은 건너뛰었어요.'); } });
 A.addEventListener('loadedmetadata', function(){ var c = CH[P.ch]; if (c && c.audio && isFinite(A.duration) && A.duration > 0) c.est = A.duration; });
 var voiceKo = null, keep = [];
 function pickVoice(){ if (!window.speechSynthesis) return; var vs = speechSynthesis.getVoices(); voiceKo = vs.filter(function(v){ return /^ko/i.test(v.lang); })[0] || null; }
@@ -1045,7 +1066,7 @@ function speakChapter(from){
     u.lang = 'ko-KR'; if (voiceKo) u.voice = voiceKo; u.rate = Math.min(2, S.speed);
     u.onstart = function(){
       if (gen !== P.gen || !P.playing) return;
-      P.voiceOk = true; P.ttsSentence = k; P.chT = sentStart(c, k); P.last = performance.now();
+      audioUsageStart(); P.voiceOk = true; P.ttsSentence = k; P.chT = sentStart(c, k); P.last = performance.now();
       startBgm(); paintProgress();
     };
     u.onboundary = function(e){
@@ -1057,7 +1078,7 @@ function speakChapter(from){
     u.onend = function(){ if (gen === P.gen && P.playing && k === parts.length - 1) nextAuto(); };
     u.onerror = function(){
       if (gen !== P.gen || !P.playing) return;
-      P.fallback = true; P.chT = 0; startChapter(false); render(false);
+      AUDIO_USAGE.skipped=true; P.fallback = true; P.chT = 0; startChapter(false); render(false);
       toastMsg(c.audio ? '기기 음성을 재생하지 못해 기본 음성으로 이어갈게요.' : '기기 음성을 재생하지 못해 대본을 보여드릴게요.');
     };
     keep.push(u); if (keep.length > 30) keep.shift();
@@ -1078,23 +1099,26 @@ function startChapter(resume){
   startBgm(true);
   var token = ++P.playToken, pr = A.play();
   /* 휴대폰이 재생을 거절하면(자동 재생 제한 등) 소리는 안 나는데 '재생 중'으로 남지 않게 되돌린다. 일시정지·구간 이동으로 끊긴 경우(AbortError)는 정상이다. */
-  if (pr && pr.catch) pr.catch(function(e){ if (e && e.name === 'AbortError') return; if (A.paused && token === P.playToken) stopBgm(); if (token === P.playToken && A.paused && P.playing) { P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
+  if (pr && pr.catch) pr.catch(function(e){ if (e && e.name === 'AbortError') return; if (A.paused && token === P.playToken) stopBgm(); if (token === P.playToken && A.paused && P.playing) { audioUsagePause(); P.playing = false; media(); render(false); toastMsg('재생을 시작하지 못했어요. 재생 버튼을 한 번 더 눌러 주세요.'); } });
 }
 function play(ch, restart){
   if (!CH.length) return;
   P.pend = null;
+  if (!P.started || P.done) AUDIO_USAGE = {started:false,active:false,skipped:false};
   var resume = ch == null && !restart && !P.done;
-  if (ch != null) { P.ch = ch; P.chT = 0; }
+  if (ch != null) { if(ch !== 0 || ch !== P.ch || P.chT > 0) AUDIO_USAGE.skipped=true; P.ch = ch; P.chT = 0; }
   if (P.done) { P.ch = 0; P.chT = 0; P.done = false; }
   if (restart) P.chT = 0;
   P.playing = true; P.started = true; P.last = performance.now();
   startChapter(resume); media(); render();
 }
-function pause(){ P.playing = false; A.pause(); stopBgm(); stopVoice(); media(); render(); }
+function pause(){ audioUsagePause(); P.playing = false; A.pause(); stopBgm(); stopVoice(); media(); render(); }
 function toggle(){ P.playing ? pause() : play(); }
 /* 원하는 곳부터 듣기: 구간 ch의 t초부터 재생한다. 음성 파일은 그 자리로 옮기고, 브라우저 음성은 그 문장부터 다시 읽는다. */
 function seekTo(ch, t){
   var c = CH[ch]; if (!c) return;
+  if (!P.started || P.done) AUDIO_USAGE = {started:false,active:false,skipped:false};
+  AUDIO_USAGE.skipped=true;
   P.ch = ch; P.chT = Math.max(0, Math.min(t, c.est - 0.05)); P.done = false; P.playing = true; P.started = true; P.last = performance.now();
   var m = mode(c, true);
   P.activeMode = c.chatMode = m; c.spokenText = c.s;
@@ -1114,7 +1138,7 @@ function locate(sec){ for (var i = 0; i < CH.length; i++) { if (sec < CH[i].est 
 function go(delta){ var n = Math.min(CH.length - 1, Math.max(0, P.ch + delta)); if (delta < 0 && P.chT > 3 && delta === -1) n = P.ch; play(n); }
 function nextAuto(){
   if (P.ch < CH.length - 1) { P.ch++; P.chT = 0; startChapter(false); media(); render(); }
-  else { P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopBgm(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
+  else { audioUsageComplete(); P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopBgm(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
 }
 function media(){
   if (!('mediaSession' in navigator)) return;

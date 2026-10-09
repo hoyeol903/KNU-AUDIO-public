@@ -12,12 +12,12 @@ const audio = {paused:true, readyState:1, currentTime:0, attrs:{}, events:{},
   addEventListener(k,fn){this.events[k]=fn;}, pause(){this.paused=true;}, play(){this.paused=false;}};
 const speech = {getVoices:()=>[{lang:'ko-KR'}], cancel(){queue=[];}, speak(u){queue.push(u);}};
 const c = vm.createContext({console, A:audio, P:{ch:0,chT:0,gen:0,playing:false,last:0},
-  S:{voice:true,speed:1}, CH:[], window:{speechSynthesis:speech}, speechSynthesis:speech,
+  S:{voice:true,speed:1}, CH:[], location:{hostname:'127.0.0.1',protocol:'http:'}, window:{addEventListener(){},speechSynthesis:speech}, speechSynthesis:speech,
   SpeechSynthesisUtterance:class {constructor(text){this.text=text;}},
   performance:{now:()=>now}, setInterval:fn=>{tick=fn;}, navigator:{},
   audioUrl:x=>x, startBgm(){}, stopBgm(){}, toastMsg(){}, render(){},
   paintProgress(){painted.push(c.sentAt(c.CH[c.P.ch],c.P.chT));}});
-vm.runInContext(helpers, c);vm.runInContext(engine, c);
+vm.runInContext(html.slice(html.indexOf('var AUDIO_USAGE ='),html.indexOf("A.addEventListener('playing', audioUsageStart)")),c);vm.runInContext(helpers, c);vm.runInContext(engine, c);
 const greeting={s:'안녕하세요. 좋은 아침이에요! 소식을 전해요.',personal_template:'안녕하세요, {name}님.',audio:'greeting.mp3',est:8,cues:[]};
 c.CH=[greeting];c.play(0);
 assert.equal(c.mode(),'audio');

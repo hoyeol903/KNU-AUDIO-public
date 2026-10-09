@@ -16,7 +16,7 @@ class Audio {
 const html = readFileSync(new URL('../../tools/knua-app.html', import.meta.url), 'utf8');
 const engine = html.slice(html.indexOf('var A = new Audio();'), html.indexOf('function audioUrl('));
 const timers = [];
-const c = vm.createContext({Audio, setTimeout: fn => timers.push(fn), media: () => {}, render: () => {}, P: {playing: true, playToken: 1}, S: {voice: true, bgm: true},
+const c = vm.createContext({window:{addEventListener(){}},location:{hostname:'127.0.0.1',protocol:'http:'},Audio, setTimeout: fn => timers.push(fn), media: () => {}, render: () => {}, P: {playing: true, playToken: 1}, S: {voice: true, bgm: true},
   BGM_TRACK: {audio: 'a'.repeat(64) + '.mp3', volume: 0.1}, mode: () => 'audio'});
 vm.runInContext(engine, c);
 assert.equal(c.B.loop, true);

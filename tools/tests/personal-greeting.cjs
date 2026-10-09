@@ -15,7 +15,7 @@ function setup(korean = true) {
     addEventListener(){}, pause(){this.pauseCount++;}, play(){this.playCount++;return Promise.resolve();},
     getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;} };
   const speech = { getVoices(){return korean ? [{lang:'ko-KR'}] : [];}, cancel(){}, speak(u){spoken.push(u);} };
-  const context = { Audio: function(){return audio;}, window: {speechSynthesis:speech}, speechSynthesis:speech,
+  const context = { Audio: function(){return audio;}, location:{hostname:'127.0.0.1',protocol:'http:'}, window: {addEventListener(){},speechSynthesis:speech}, speechSynthesis:speech,
     SpeechSynthesisUtterance:function(text){this.text=text;}, performance:{now:()=>1000},
     setTimeout(){}, setInterval(fn){context.tick=fn;}, navigator:{}, render(){}, media(){}, paintProgress(){}, toastMsg(){},
     store:{name:'김경민'}, S:{voice:true,speed:1}, P:{ch:0,chT:0,gen:0,fallback:false,playToken:0}, BGM_TRACK:null, BRIEF_OLD:false,
