@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import worker from './worker.mjs';
+const origin='https://hoyeol903.github.io';
+const env={COMMUNITY_ALLOWED_ORIGINS:origin};
+assert.equal((await worker.fetch(new Request('https://api.example/'),env)).status,404);
+const response=await worker.fetch(new Request('https://api.example/api/community/meetings',{headers:{Origin:origin}}),env);
+assert.equal(response.status,503);assert.equal(response.headers.get('Access-Control-Allow-Origin'),origin);
+const preflight=await worker.fetch(new Request('https://api.example/api/community/meetings',{method:'OPTIONS',headers:{Origin:origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'authorization,content-type'}}),env);
+assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),origin);
+assert.equal((await worker.fetch(new Request('https://api.example/api/community/meetings',{headers:{Origin:'https://evil.example'}}),env)).status,403);
+console.log('Worker routing, missing DB error and GitHub Pages CORS/preflight passed');

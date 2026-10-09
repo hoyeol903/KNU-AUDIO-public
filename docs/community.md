@@ -1,6 +1,6 @@
 # 교류 모집글 공유
 
-이 저장소의 홈페이지는 GitHub Pages에 배포된다. GitHub Pages는 공유 API를 실행하지 않는다. 교류 상세·작성 화면과 예시는 바로 사용할 수 있으며, 실제 모집글 공유·신청은 별도로 배포한 Cloudflare Pages Functions API와 D1을 연결해야 한다. 글 제목을 누르면 상세 설명, 일정·장소, 참가 조건·비용, 인스타그램 또는 오픈카카오톡 참가 문의 링크를 볼 수 있다. 과팅은 팀·팀별 인원·희망 상대, 스터디는 공부 주제·목표, 소모임은 주요 활동을 입력한다.
+이 저장소의 홈페이지는 GitHub Pages에 배포된다. GitHub Pages는 공유 API를 실행하지 않는다. 교류 상세·작성 화면과 예시는 바로 사용할 수 있으며, 실제 모집글 공유·신청은 개인 계정의 Cloudflare Workers API와 D1에 연결한다. 글 제목을 누르면 상세 설명, 일정·장소, 참가 조건·비용, 인스타그램 또는 오픈카카오톡 참가 문의 링크를 볼 수 있다. 과팅은 팀·팀별 인원·희망 상대, 스터디는 공부 주제·목표, 소모임은 주요 활동을 입력한다.
 
 ## 공유와 작성자 권한
 
@@ -50,6 +50,27 @@ DB 바인딩 이름은 `COMMUNITY_DB`. preview와 production DB는 분리한다.
 
 로컬 브라우저 미리보기는 D1 바인딩을 포함한 `npx wrangler@4 pages dev output/app --d1 COMMUNITY_DB`를 사용한다. 초기 스키마 적용은 동일한 로컬 D1에 해야 한다. 단순 `python -m http.server`는 API가 없어 공유할 수 없다. 운영 반영 전에 독립된 두 브라우저로 등록→조회→신청→모집자 확인→수정→마감→취소를 검사한다.
 
+## 개인 Cloudflare 계정의 Workers + D1로 API만 배포
+
+홈페이지는 GitHub Pages에 유지하고 `community/worker.mjs`로 공유 API만 Workers에 배포할 수 있다. 팀장의 Cloudflare 계정 권한을 받지 않아도 된다. 배포하는 계정의 이메일 인증과 Workers·D1 권한은 필요하다. 새 프로필 화면의 이메일 재발송은 [Authentication → Two-Factor Authentication](https://dash.cloudflare.com/profile/access-management/authentication/two-factor)의 `Send verification email`에서 할 수 있다. 메일의 인증 링크를 완료해야 한다.
+
+```bash
+npx wrangler@4 login
+# DB가 없을 때만 새로 만든다. 기존 knua-community가 있으면 재사용한다.
+npx wrangler@4 d1 create knua-community
+cp community/wrangler.example.toml community/wrangler.local.toml
+# 실제 database_id와 필요한 경우 account_id를 local 설정에 입력한다.
+npx wrangler@4 d1 migrations apply COMMUNITY_DB --remote --config community/wrangler.local.toml
+npx wrangler@4 deploy --config community/wrangler.local.toml
+```
+
+`wrangler.local.toml`은 커밋하지 않는다. 배포 결과의 workers.dev 주소에 `/api/community/`를 붙여 홈페이지의 `window.KNUA_COMMUNITY_API_BASE`에 설정한다. 백엔드는 `COMMUNITY_ALLOWED_ORIGINS=https://hoyeol903.github.io`로 브라우저 요청을 허용한다. API가 실제 배포되지 않았거나 이메일 인증이 끝나지 않았으면 홈페이지를 연결 완료로 표시하지 않는다. API 토큰은 HTML에 넣지 않는다.
+
+`node community/test_worker.mjs`로 Workers 진입점의 경로 처리, API 미연결 오류, GitHub Pages preflight를 확인한다. 운영 검증은 별도 브라우저의 글 조회·작성자 권한·신청 정보 비공개를 확인한 뒤 테스트 글을 삭제한다.
+
+## 현재 GitHub Pages 연결
+
+GitHub Pages 기본 API 주소는 `https://knua-community-api.knua-public-pr73.workers.dev/api/community/`이다. `tools/knua-app.html`과 `output/app/index.html`에 함께 설정되어 있으며 `window.KNUA_COMMUNITY_API_BASE`로 재정의할 수 있다. 로컬·같은 출처의 Cloudflare Pages 기본 경로는 `/api/community/`이다.
 ## Oracle Cloud에서 운영
 
 GitHub Pages와 Oracle 가상 서버를 연결하는 대안은 [Oracle 배포 안내](../community/oracle/README.md)를 참고한다. Node.js API와 SQLite 파일 DB, Caddy HTTPS, 영구 Docker 볼륨을 사용한다. 실제 계정·서버·API 주소를 설정하기 전에는 공유가 활성화되지 않는다.
