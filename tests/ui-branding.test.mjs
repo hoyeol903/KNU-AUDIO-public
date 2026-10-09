@@ -4,7 +4,8 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const html=readFileSync(new URL('../tools/knua-app.html',import.meta.url),'utf8');
 function moods(weather={status:'ok',summary:'맑음',rain:0}) {
- const c=vm.createContext({DATA:{weather},P:{playing:true,done:false,ch:0,chT:0},CH:[]});
+ const c=vm.createContext({DATA:{weather},P:{playing:true,done:false,ch:0,chT:0},CH:[],S:{voice:false},window:{}});
+ vm.runInContext(html.slice(html.indexOf('function mode('),html.indexOf("A.addEventListener('ended'")),c);
  vm.runInContext(html.slice(html.indexOf('function sentences('),html.indexOf('function chStart(')),c);
  vm.runInContext(html.slice(html.indexOf('var HOB_MOODS ='),html.indexOf('function hobImage(')),c);
  return c;
@@ -35,7 +36,7 @@ test('일시정지는 기본 자세, 재생 완료는 마무리 인사',()=>{
 });
 function splash(reduced=false){
  let now=0,id=0,renders=0;const timers=new Map();
- const els={view:{},overlay:{},splash:{hidden:false,contains:()=>false,classList:{add(){}}},splashSkip:{focus(){}}};
+ const els={view:{},overlay:{},splash:{hidden:false,focus(){},contains:()=>false,classList:{add(){}}},splashSkip:{focus(){}}};
  const c=vm.createContext({$:key=>els[key],window:{matchMedia:()=>({matches:reduced})},document:{activeElement:null},
   performance:{now:()=>now},render(){renders++},setTimeout(fn,ms){timers.set(++id,{at:now+ms,fn});return id},clearTimeout:id=>timers.delete(id)});
  vm.runInContext(html.slice(html.indexOf('var SPLASH ='),html.indexOf('/* ---------- 호반우:')),c);
