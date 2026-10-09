@@ -5,6 +5,7 @@ import {handleCommunity} from './api.mjs';
 const sqlite = new DatabaseSync(':memory:');
 sqlite.exec(readFileSync(new URL('../migrations/0001_community.sql',import.meta.url),'utf8'));
 sqlite.exec(readFileSync(new URL('../migrations/0002_application_decisions.sql',import.meta.url),'utf8'));
+sqlite.exec(readFileSync(new URL('../migrations/0003_moderation.sql',import.meta.url),'utf8'));
 const db = {prepare(sql) { let args=[]; const statement=sqlite.prepare(sql); return {bind(...values) {args=values; return this;}, async first(){return statement.get(...args) || null;}, async all(){return {results:statement.all(...args)};}, async run(){return statement.run(...args);}};}};
 const owner='a'.repeat(64), other='b'.repeat(64), stranger='c'.repeat(64);
 async function call(path='', method='GET', body, token=owner, options={}) { const request=new Request('https://knu-audio.pages.dev/api/community/meetings'+path,{method,headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...options.headers},body:body===undefined?undefined:typeof body==='string'?body:JSON.stringify(body)}); const response=await handleCommunity(request,{COMMUNITY_DB:db}); return {status:response.status,body:await response.json()}; }
