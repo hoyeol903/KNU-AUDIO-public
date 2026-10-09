@@ -16,15 +16,15 @@ VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v4-uniform-gain-pause'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v5-uniform-gain-pause083'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
                          trim_start_duration_sec=.05, trim_end_duration_sec=.1,
                          trim_start_threshold_db=-55, trim_end_threshold_db=-50,
                          preserved_start_silence_sec=.05, preserved_end_silence_sec=.08,
-                         # 구간 끝에 붙이는 쉼. 인사→날씨→공지가 붙어서 들려 0.18초에서 0.25초 늘렸다(남겨 둔 0.08초와 합쳐 약 0.5초).
-                         added_tail_silence_sec=.43,
+                         # 구간 끝에 붙이는 쉼. 쉼 조절 화면에서 들어 보고 고른 값: 처음 0.18초에 0.65초를 더했다(남겨 둔 0.08초와 합쳐 약 0.9초).
+                         added_tail_silence_sec=.83,
                          # loudnorm은 처리 방식에 따라 출력 표본화율이 달라진다(24kHz 또는 48kHz).
                          # 구간마다 달라지면 이어 붙인 MP3가 브라우저에서 경계에서 끊기므로 모델 출력과 같은 값으로 고정한다.
                          sample_rate=24000)
