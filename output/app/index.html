@@ -255,6 +255,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 /* 피드백 */
 .fb-hero{position:relative;overflow:hidden;border-radius:28px;background:var(--wine);color:#fff;padding:20px;display:flex;align-items:center;gap:14px;min-height:124px;box-shadow:0 22px 44px -22px rgba(139,30,63,.6)}
 .fb-hero img{width:100px;height:auto;margin:-6px -12px -48px 0;flex-shrink:0}
+.cm-report{display:inline-flex;align-items:center;gap:5px;padding:8px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink2);font-size:12px;cursor:pointer}
 /* 피드백 호반우: 교류 칸 호반우(높이 140px)와 같은 크기로 보이게 한다. 그림이 여백 있는 정사각형이라 상자를 더 크게 잡는다. */
 .fb-hero.fb-big{min-height:150px}
 .fb-hero .fb-mascot{width:156px;height:156px;object-fit:contain;align-self:flex-end;margin:0 -18px -22px -10px}
@@ -1194,6 +1195,7 @@ function render(animate){
   if (W && S.sheet) ov += vSheet();
   if (W && S.evSheet && (S.route === 'home' || S.route === 'calendar')) ov += vEvSheet();
   if (W && S.meetSheet && (S.route === 'meeting' || S.route === 'meeting-list' || S.route === 'meeting-detail')) ov += vMeetSheet();
+  if (W && S.report && S.route === 'meeting-detail') ov += vReportSheet();
   if (W && S.decide && S.route === 'meeting-detail') ov += vDecideSheet();
   if (W && S.mealSheet && S.route === 'home') ov += vMealSheet();
   if (!SPLASH.active && W && route === 'home' && !S.tour && !store.tour && !S.mealSheet && !S.evSheet && !S.sheet) S.tour = { i: 0 };
@@ -1768,6 +1770,9 @@ function vMeetInbox(){
   h += I.apps.length ? I.apps.map(function(a){ return '<button class="note-row" data-act="meetDetails" data-id="' + esc(a.postId) + '"><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="gap:8px;flex-wrap:wrap">' + appStatusBadge(a.status) + (a.closed ? '<span class="badge b-tile">모집 마감</span>' : '') + '<span class="ago">' + [MEET_CATEGORIES[a.category], noteAgo(a.decidedAt || a.createdAt)].filter(Boolean).join(' · ') + '</span></span><b>' + esc(a.title || '모집글') + '</b>' + reason(a.reason, a.status === 'rejected') + '</span>' + sz(IC.chev,18).replace('<svg','<svg class="cm-chev"') + '</button>'; }).join('') : '<p class="cm-empty">아직 신청한 모임이 없어요.</p>';
   return h + '</section><p class="cm-foot-note">알림은 크누아를 열어 두었을 때 확인돼요. 신청·모집 기록은 이 브라우저에 연결돼 있어요.</p></div></div>';
 }
+function vReportSheet(){
+  return '<div class="dim" data-act="reportClose"></div><div class="sheet mini cm" role="dialog" aria-modal="true" aria-label="게시물 신고"><i class="cm-grab"></i><div class="cm-sh-head"><h2>게시물 신고</h2><button class="cm-x" data-act="reportClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:16px;padding:14px 20px 34px"><label class="col" style="gap:8px"><span>신고 사유</span><textarea id="reportReason" class="field" rows="4" maxlength="300" placeholder="신고 사유를 적어 주세요"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + esc(S.report.reason) + '</textarea></label><p class="cm-help">300자 이내로 적어 주세요. 개인정보는 넣지 마세요.</p><button class="btn-pri cm-save" data-act="reportSend"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '접수 중…' : '신고 접수하기') + '</button></div></div>';
+}
 function vDecideSheet(){
   var D = S.decide, ok = D.status === 'accepted', post = COMMUNITY.detail, who = (COMMUNITY.applicants || []).filter(function(a){ return a.ref === D.ref; })[0];
   return '<div class="dim" data-act="decideClose"></div><div class="sheet mini cm" role="dialog" aria-modal="true" aria-label="신청 ' + (ok ? '수락' : '거절') + '"><i class="cm-grab"></i><div class="cm-sh-head"><div class="col" style="gap:3px;min-width:0">' + (post ? '<span class="cm-over">' + esc(meetTitleOf(post)) + '</span>' : '') + '<h2>' + esc(D.name) + '님 신청</h2></div><button class="cm-x" data-act="decideClose" aria-label="닫기">' + IC.x + '</button></div><div class="body" style="gap:16px;padding:14px 20px calc(34px + env(safe-area-inset-bottom,0px))">' +
@@ -1808,7 +1813,7 @@ function vMeetDetail(){
   var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + (bar ? 130 : 0)) + 'px"><div class="stg col" style="gap:18px"><div class="row" style="justify-content:space-between">' + back + (shared ? p.closed ? '<span class="cm-pill">모집 마감</span>' : '<span class="cm-pill on"><i></i>모집 중</span>' : '<span class="cm-pill">개인 기록</span>') + '</div>';
   h += '<div class="col" style="gap:6px"><span class="cm-kind">' + MEET_CATEGORIES[category] + (shared ? p.mine ? ' · 내 모집글' : '' : ' · 개인 기록') + '</span><h1 class="cm-title">' + esc(meetTitleOf(p)) + '</h1></div>';
   if (shared && p.hidden) h += '<p role="status" class="cm-help">관리자가 숨긴 글이에요. 수정해도 숨김은 유지돼요.</p>';
-  if (shared && !p.mine) h += '<button class="cm-more" data-act="meetReport">이 글 신고하기</button>';
+
   if (st) h += '<section class="cm-mine-card"><span class="row" style="gap:8px"><b>내 신청</b>' + appStatusBadge(st) + '</span><span>' + (st === 'accepted' ? '모집자가 신청을 수락했어요.' : st === 'rejected' ? '모집자가 신청을 거절했어요.' : '신청을 접수했어요. 모집자가 수락하거나 거절하면 알림으로 알려 드려요.') + '</span>' + (my && my.reason ? '<span class="rs">' + (st === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(my.reason) + '</span>' : '') + '</section>';
   var fact = function(pair){ return '<div class="col" style="gap:3px"><span class="k">' + pair[0] + '</span><span class="v">' + esc(pair[1]) + '</span></div>'; };
   var short = [['모집 인원',dating ? p.size + ' · ' + (MEET_TEAMS[p.team] || '') : p.capacity + '명'],['일정',p.when],['장소',p.where],['소속',p.dept || p.college],['희망 상대',dating ? p.want : '']].filter(function(x){ return x[1]; });
@@ -1831,6 +1836,7 @@ function vMeetDetail(){
     if (COMMUNITY.applicantsCursor) h += '<button class="cm-more" data-act="meetApplicantsMore"' + (COMMUNITY.applicantsBusy ? ' disabled' : '') + '>' + (COMMUNITY.applicantsBusy ? '불러오는 중…' : '신청 내역 더 보기') + '</button>';
     h += '</section>';
   }
+  if (shared && !p.mine) h += '<div style="display:flex;justify-content:flex-end"><button class="cm-report" data-act="meetReport">⚑ 신고하기</button></div>';
   h += '</div></div>';
   if (bar) h += '<div class="cm-bar" style="padding-bottom:calc(' + cmLift() + 'px + env(safe-area-inset-bottom,0px))">' + (contact || canApply ? '<div class="btns' + (contact && canApply ? ' two' : '') + '">' + (contact ? '<span class="cm-ghost">' + contact + '</span>' : '') + (canApply ? '<button class="btn-pri cm-save" data-act="meetApply" data-id="' + esc(p.id) + '">' + (st === 'rejected' ? '다시 신청하기' : applied ? '신청 내용 수정' : dating ? '우리 팀 신청하기' : '참가 신청하기') + '</button>' : '') + '</div>' : '') + (applied ? '<button class="cancel" data-act="meetCancel" data-id="' + esc(p.id) + '">신청 취소</button>' : '') + '</div>';
   return h;
@@ -2218,7 +2224,9 @@ document.addEventListener('click', function(e){
     case 'meetApplicants': return loadApplicants();
     case 'meetApplicantsMore': return loadApplicants(true);
     case 'meetToggleClosed': { var cp = COMMUNITY.detail; if (!cp || !cp.mine || COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + cp.id,'PUT',Object.assign({},cp,{closed:!cp.closed})).then(function(data){ COMMUNITY.detail = data.item; toastMsg(data.item.closed ? '모집을 마감했어요.' : '모집을 다시 열었어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
-    case 'meetReport': { var rp = COMMUNITY.detail; if (!rp || !rp.shared || rp.mine || COMMUNITY.busy) return; var reason = prompt('신고 사유를 적어 주세요. 개인정보는 적지 마세요. (300자 이내)'); if (reason === null) return; reason = reason.trim(); if (!reason || reason.length > 300) return toastMsg('신고 사유를 1~300자로 적어 주세요.'); COMMUNITY.busy = true; return communityRequest('meetings/' + rp.id + '/reports','POST',{reason:reason}).then(function(){ toastMsg('신고를 접수했어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; }); }
+    case 'meetReport': if (COMMUNITY.detail && !COMMUNITY.detail.mine && !COMMUNITY.busy) { S.report = {id:COMMUNITY.detail.id,reason:''}; render(false); var ri=$('reportReason'); if(ri) ri.focus(); } return;
+    case 'reportClose': if (!COMMUNITY.busy) { S.report=null; render(false); } return;
+    case 'reportSend': { var rp=S.report; if(!rp || COMMUNITY.busy)return; var reason=rp.reason.trim(); if(!reason || reason.length>300)return toastMsg('신고 사유를 1~300자로 적어 주세요.'); COMMUNITY.busy=true; render(false); return communityRequest('meetings/'+rp.id+'/reports','POST',{reason:reason}).then(function(){S.report=null;toastMsg('신고를 접수했어요.');}).catch(function(e){toastMsg(e.message);}).finally(function(){COMMUNITY.busy=false;render(false);}); }
     case 'meetDeleteShared': { var dp = COMMUNITY.detail; if (!dp || !dp.mine || COMMUNITY.busy || !confirm('이 모집글과 접수된 신청을 삭제할까요?')) return; COMMUNITY.busy = true; return communityRequest('meetings/' + dp.id,'DELETE').then(function(){ COMMUNITY.detail = null; nav('meeting-list'); toastMsg('모집글을 삭제했어요.'); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetCancel': { var ci = el.getAttribute('data-id'); if (COMMUNITY.busy) return; COMMUNITY.busy = true; return communityRequest('meetings/' + ci + '/applications','DELETE').then(function(){ store.communityApplied = Object.assign({},store.communityApplied); delete store.communityApplied[ci]; save(); toastMsg('신청을 취소했어요.'); openMeeting(ci); }).catch(function(e){ toastMsg(e.message); }).finally(function(){ COMMUNITY.busy = false; render(false); }); }
     case 'meetDel': store.meetMine = myMeets().filter(function(x){ return x.id !== el.getAttribute('data-id'); }); save(); return render(false);
@@ -2265,6 +2273,7 @@ document.addEventListener('input', function(e){
   if (t.id === 'inDept') { S.startQuery = t.value; $('deptList').innerHTML = deptList(); }
   if (t.id === 'evTitle') { S.evTitle = t.value; $('evCount').textContent = t.value.length + '/40'; var sv = document.querySelector('[data-act="evSave"]'); if (sv) sv.disabled = !t.value.trim(); }
   if (t.id === 'evDate') S.evDate = t.value;
+  if (t.id === 'reportReason' && S.report) S.report.reason = t.value;
   if (t.id === 'decideReason' && S.decide) { S.decide.reason = t.value; $('decideReasonN').textContent = t.value.length + '/300'; }
   if (S.meetSheet && /^meet(When|Where|Want|Note|Msg|Title|Intro|Capacity|Goal|Activity|Requirements|Cost|Contact|Name)$/.test(t.id)) {
     S.meetSheet[t.id.slice(4).toLowerCase()] = t.value;
@@ -2281,7 +2290,7 @@ document.addEventListener('keydown', function(e){
     if (to != null) { e.preventDefault(); var dd2 = locate(Math.max(0, to)); if (dd2) { S.follow = true; seekTo(dd2.ch, dd2.t); } var kb = $('seek'); if (kb) kb.focus(); }
   }
   if (e.key === 'Escape' && S.tour) return tourEnd();
-  if (e.key === 'Escape') { if (S.meetSheet && !COMMUNITY.busy) { S.meetSheet = null; render(false); } if (S.mealSheet) { S.mealSheet = null; render(false); } if (S.evSheet) { S.evSheet = false; render(false); } if (S.sheet) { S.sheet = null; render(false); } openPanel(false); }
+  if (e.key === 'Escape') { if (S.report && !COMMUNITY.busy) { S.report=null; render(false); } if (S.meetSheet && !COMMUNITY.busy) { S.meetSheet = null; render(false); } if (S.mealSheet) { S.mealSheet = null; render(false); } if (S.evSheet) { S.evSheet = false; render(false); } if (S.sheet) { S.sheet = null; render(false); } openPanel(false); }
 });
 
 /* ---------- 시작 ---------- */
