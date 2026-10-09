@@ -1603,25 +1603,7 @@ function createLocalGroup(form, id, profile){
   return { id: id, category: form.category, title: form.title.trim().slice(0, 40), intro: form.intro.trim().slice(0, 120),
     capacity: Math.max(2, Math.min(100, parseInt(form.capacity, 10) || 0)), dept: profile.dept, college: profile.college };
 }
-/* 교류 예시는 실제 자료가 아니다. 신청 표시와 직접 만든 모임은 이 브라우저에만 저장된다. */
-var MEET_SAMPLES = [
-  { id: 's1', team: 'm', dept: '전자공학부', college: 'IT대학', size: '3:3', want: '인문대학', when: '10월 셋째 주 금요일 저녁', where: '북문 근처', note: '시험 끝난 기념으로 가볍게 저녁 먹어요.', apply: { m: 0, f: 4 } },
-  {"id": "study-1", "category": "study", "title": "토익 800점 목표 아침 스터디", "capacity": 5, "when": "매주 화·목 오전 9시", "where": "중앙도서관 스터디룸", "intro": "단어 시험과 LC·RC 문제 풀이를 함께 해요. 현재 점수와 관계없이 꾸준히 참여할 분을 찾아요.", "college": "전공 무관"},
-  {"id": "club-1", "category": "club", "title": "캠퍼스 저녁 산책 친구", "capacity": 8, "when": "매주 화요일 오후 6시", "where": "교내 산책로", "intro": "수업이 끝난 뒤 가볍게 걸으며 이야기해요. 걷는 속도는 모두에게 맞추고 우천 시에는 쉬어요.", "college": "전공 무관"}
-];
-/* 예시에도 실제 작성 양식의 항목을 제공한다. 연락 링크는 비워 두며 실제 계정으로 연결하지 않는다. */
-var MEET_STUDY_GOALS = ['토익 800점 목표 · 단어 시험과 LC·RC 풀이', '파이썬 기초와 작은 프로그램 만들기', '입문 알고리즘 문제 풀이와 풀이 설명', '일상 영어 회화 연습', '한국사 개념 정리와 기출문제 풀이', '극한·미분·적분 기초 복습', '경험 정리와 자기소개서 초안 피드백', '중국어 성조와 기초 회화', '공모전 아이디어와 기획안 작성', '각자 정한 학습 목표 달성과 공부 인증'];
-var MEET_STUDY_REQUIREMENTS = ['꾸준히 참여할 분 · 현재 점수 무관', '코딩 입문자 환영 · 개인 노트북', '입문자 환영 · 풀이를 공유할 분', '영어 회화 초보 환영', '시험 준비를 꾸준히 함께할 분', '기초를 복습하고 싶은 분 · 질문할 문제 지참', '자기소개서 초안 준비 · 개인정보는 가려서 공유', '중국어 입문자 환영', '관심 공모전과 아이디어를 함께 정할 분', '서로의 집중 시간을 존중할 분'];
-var MEET_CLUB_ACTIVITIES = ['캠퍼스 산책과 대화', '쉬운 보드게임 배우고 함께 즐기기', '휴대폰·카메라 사진 촬영과 감상', '한 달 한 권 읽고 독서 이야기 나누기', '배드민턴 기초 자세와 연습', '영화 관람과 감상 나누기', '걷기와 가벼운 달리기', '공강 시간에 함께 학식 먹기', '관심 전시 관람', '기타 기초 코드와 쉬운 곡 연습'];
-var MEET_CLUB_REQUIREMENTS = ['편한 신발 · 우천 시 쉬어요', '보드게임 초보 환영', '휴대폰 또는 카메라 · 인물 촬영 전 동의', '함께 고른 책 읽고 참여', '개인 라켓 지참 · 장소 이용 여부 사전 확인', '함께 볼 영화는 모임 전에 정해요', '체력에 맞춰 참여 · 비가 오면 쉬어요', '해당 점심시간에 참여할 수 있는 분', '전시와 입장료는 사전에 확인', '개인 기타 지참 · 연습 장소 사전 확인'];
-var MEET_CLUB_COSTS = ['참가비 없음', '카페 이용료 각자 부담', '참가비 없음 · 이동 비용 각자 부담', '책·음료 비용 각자 부담', '장소 이용료 발생 시 사전 안내', '영화표·음료 비용 각자 부담', '참가비 없음', '식사 비용 각자 부담', '입장료 발생 시 사전 안내 · 각자 부담', '장소 이용료 발생 시 사전 안내'];
-MEET_SAMPLES.forEach(function(p){
-  var k = meetCategory(p), i = parseInt(p.id.split('-')[1], 10) - 1;
-  p.contact = ''; p.kakaoLink = ''; p.instagramLink = '';
-  if (k === 'study') { p.goal = MEET_STUDY_GOALS[i]; p.requirements = MEET_STUDY_REQUIREMENTS[i]; p.cost = p.id === 'study-4' || p.id === 'study-7' ? '카페 음료 각자 부담' : '참가비 없음 · 개인 교재 등은 각자 준비'; }
-  else if (k === 'club') { p.activity = MEET_CLUB_ACTIVITIES[i]; p.requirements = MEET_CLUB_REQUIREMENTS[i]; p.cost = MEET_CLUB_COSTS[i]; }
-  else { p.title = p.dept + ' ' + (p.team === 'm' ? '남자팀' : '여자팀') + ' ' + p.size + ' 과팅'; p.intro = p.note; p.requirements = p.size + ' 인원으로 참여할 팀 · 상세 일정은 함께 조율'; p.cost = '식사·활동 비용 각자 부담'; }
-});
+/* 직접 만든 개인 기록과 신청 표시는 이 브라우저에만 저장된다. */
 
 var MEET_SIZES = ['전체', '2:2', '3:3', '4:4'];
 /* 모집한 팀과 신청한 팀이 남자팀인지 여자팀인지 표시한다. */
@@ -1641,7 +1623,7 @@ function communityToken(){
   } catch(e){ throw new Error('작성자 인증을 저장하지 못했어요. 브라우저 저장 설정을 확인해 주세요.'); }
 }
 function communityRequest(path, method, body){
-  if (!COMMUNITY_API_BASE) return Promise.reject(new Error('모집글 공유 API 연결을 준비 중이에요. 예시 상세는 볼 수 있어요.'));
+  if (!COMMUNITY_API_BASE) return Promise.reject(new Error('모집글 공유 API 연결을 준비 중이에요.'));
   var headers = { 'Content-Type': 'application/json' };
   try { headers.Authorization = 'Bearer ' + communityToken(); } catch(e){ if (method && method !== 'GET') return Promise.reject(e); }
   var controller = new AbortController(), timer = setTimeout(function(){ controller.abort(); }, 15000);
@@ -1661,7 +1643,7 @@ function loadCommunity(more){
     COMMUNITY.rows = more ? COMMUNITY.rows.concat(data.items) : data.items; COMMUNITY.counts = data.counts; COMMUNITY.cursor = data.nextCursor; COMMUNITY.status = 'ready';
   }).catch(function(e){ if (gen !== COMMUNITY.gen) return; COMMUNITY.status = 'error'; COMMUNITY.error = e.message; }).finally(function(){ if (gen === COMMUNITY.gen && communityRoute()) render(false); });
 }
-function meetFind(id){ return COMMUNITY.detail && COMMUNITY.detail.id === id ? COMMUNITY.detail : COMMUNITY.rows.concat(myMeets(), MEET_SAMPLES).filter(function(p){ return p.id === id; })[0]; }
+function meetFind(id){ return COMMUNITY.detail && COMMUNITY.detail.id === id ? COMMUNITY.detail : COMMUNITY.rows.concat(myMeets()).filter(function(p){ return p.id === id; })[0]; }
 function openMeeting(id){
   var p = meetFind(id); COMMUNITY.detail = p || null; COMMUNITY.applicants = null; S.meetId = id; S.decide = null;
   if (S.route !== 'meeting-detail') S.meetBack = S.route === 'meeting-inbox' ? 'meeting-inbox' : 'meeting-list';
@@ -1681,7 +1663,7 @@ function validMeetContact(value){
 }
 function contactButton(value, label){ value = meetContactUrl(value); return validMeetContact(value) ? '<a class="btn-pri" style="text-decoration:none;text-align:center" href="' + esc(value) + '" target="_blank" rel="noopener noreferrer">' + label + ' · ' + (new URL(value).hostname === 'open.kakao.com' ? '오픈카톡' : '인스타그램') + '</a>' : ''; }
 function communityNotice(){
-  if (COMMUNITY.status === 'error') return '<div class="mt-note" role="status"><span>' + esc(COMMUNITY.error) + ' 기존 예시는 둘러볼 수 있어요.</span></div>';
+  if (COMMUNITY.status === 'error') return '<div class="mt-note" role="status"><span>' + esc(COMMUNITY.error) + '</span></div>';
   return '<div class="mt-note" role="note"><span>공유 모집글은 다른 사용자도 볼 수 있어요. 작성·신청 내역 관리는 이 브라우저에서 할 수 있어요.</span></div>';
 }
 /* 모임 화면 전용 아이콘과 공통 조각. 화면 구성만 다루고 자료·요청 흐름은 건드리지 않는다. */
@@ -1699,8 +1681,8 @@ function meetTitleOf(p){ return p.title || p.dept + ' ' + (MEET_TEAMS[p.team] ||
 function meetCard(p, mine){
   var category = meetCategory(p), dating = category === 'dating', shared = !!p.shared, title = meetTitleOf(p), intro = p.intro || p.note || '';
   var meta = (dating ? [MEET_TEAMS[p.team], p.size, p.college] : [p.capacity ? p.capacity + '명' : '', p.dept || p.college]).filter(Boolean).map(esc).join('<i>·</i>');
-  var tag = shared ? mine ? '내 모집글' : '' : mine ? '개인 기록' : '예시';
-  var state = shared ? p.closed ? '모집 마감' : '신청 ' + (p.applicationCount || 0) + (dating ? '팀' : '명') : mine ? '이 브라우저의 개인 기록' : '모임 소개 예시';
+  var tag = shared ? mine ? '내 모집글' : '' : '개인 기록';
+  var state = shared ? p.closed ? '모집 마감' : '신청 ' + (p.applicationCount || 0) + (dating ? '팀' : '명') : '이 브라우저의 개인 기록';
   return '<button class="meet-open cm-row" data-act="meetDetails" data-id="' + esc(p.id) + '" aria-label="' + esc(title) + ' 상세 보기"><span class="cm-meta">' + meta + (tag ? '<span class="badge ' + (shared ? 'b-new' : 'b-tile') + '">' + tag + '</span>' : '') + '</span><b class="cm-t">' + esc(title) + '</b>' +
     (p.when || p.where ? '<span class="cm-d">' + esc([p.when,p.where].filter(Boolean).join(' · ')) + '</span>' : '') +
     (intro ? '<span class="cm-i">' + esc(intro.slice(0,120)) + '</span>' : '') +
@@ -1713,21 +1695,20 @@ function vMeet(){
   h += '<div class="col"><div class="row" style="justify-content:space-between;padding-bottom:6px"><span class="cm-lab">카테고리</span><button class="cm-refresh" data-act="meetRefresh">' + CM_IC.refresh + (COMMUNITY.status === 'loading' ? '모집글 불러오는 중…' : '모집글 새로고침') + '</button></div>';
   var descriptions = {study:'같이 공부하고 꾸준히 성장해요',dating:'다른 학과 친구들과 만나요',club:'좋아하는 취미를 함께 즐겨요'};
   ['study','dating','club'].forEach(function(k){
-    var real = filterMeetings(COMMUNITY.rows,k), latest = (real.length ? real : filterMeetings(MEET_SAMPLES,k))[0];
-    h += '<button class="meet-entry" data-act="meetCategory" data-k="' + k + '"><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="align-items:baseline;gap:8px"><b class="nm">' + MEET_CATEGORIES[k] + '</b><span class="ct num">' + (COMMUNITY.counts[k] || 0) + '개 모집 중</span></span><span class="ds">' + descriptions[k] + '</span>' + (latest ? '<span class="lt">최근 · ' + (!latest.shared ? '[예시] ' : '') + esc(meetTitleOf(latest)) + '</span>' : '') + '</span>' + sz(IC.chev,20).replace('<svg','<svg class="cm-chev"') + '</button>';
+    var latest = filterMeetings(COMMUNITY.rows,k)[0];
+    h += '<button class="meet-entry" data-act="meetCategory" data-k="' + k + '"><span class="col" style="gap:4px;flex:1;min-width:0"><span class="row" style="align-items:baseline;gap:8px"><b class="nm">' + MEET_CATEGORIES[k] + '</b><span class="ct num">' + (COMMUNITY.counts[k] || 0) + '개 모집 중</span></span><span class="ds">' + descriptions[k] + '</span>' + (latest ? '<span class="lt">최근 · ' + esc(meetTitleOf(latest)) + '</span>' : '') + '</span>' + sz(IC.chev,20).replace('<svg','<svg class="cm-chev"') + '</button>';
   });
   return h + '</div></div></div>';
 }
 function vMeetList(){
   var category = S.meetCategory || 'dating', f = S.meetSize, tm = S.meetTeam;
   var keep = function(p){ return (f === '전체' || p.size === f) && (tm === '전체' || p.team === tm); };
-  var list = filterMeetings(COMMUNITY.rows,category).filter(keep), samples = filterMeetings(MEET_SAMPLES,category).filter(keep), drafts = filterMeetings(myMeets(),category).filter(keep);
+  var list = filterMeetings(COMMUNITY.rows,category).filter(keep), drafts = filterMeetings(myMeets(),category).filter(keep);
   var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + 70) + 'px"><div class="stg col" style="gap:16px"><div class="row" style="gap:6px"><button class="icon-btn plain cm-back" data-act="back" aria-label="모임으로 돌아가기">' + IC.back + '</button><h1 class="cm-h2" style="flex:1">' + MEET_CATEGORIES[category] + '</h1><button class="cm-mine" data-act="meetMineOnly" aria-pressed="' + !!S.meetMineOnly + '"><i>' + sz(IC.check,10) + '</i>내 모집글</button><button class="cm-round" data-act="meetRefresh" aria-label="모집글 새로고침">' + sz(CM_IC.refresh,15) + '</button></div>' + communityNotice();
   h += cmSeg('meetCategory','k',['study','dating','club'].map(function(k){ return [k, MEET_CATEGORIES[k]]; }),category,'','카테고리');
   if (category === 'dating') h += '<div class="col" style="gap:10px"><div class="cm-filter" role="group" aria-label="인원"><span>인원</span>' + MEET_SIZES.map(function(x){ return '<button data-act="meetSize" data-s="' + x + '" aria-pressed="' + (x === f) + '">' + x + '</button>'; }).join('') + '</div><div class="cm-filter" role="group" aria-label="팀"><span>팀</span>' + [['전체','남녀 전체'],['m','남자팀'],['f','여자팀']].map(function(x){ return '<button data-act="meetTeam" data-t="' + x[0] + '" aria-pressed="' + (x[0] === tm) + '">' + x[1] + '</button>'; }).join('') + '</div></div>';
   h += '<div class="col"><span class="cm-lab" style="padding-bottom:4px">' + (S.meetMineOnly ? '내 모집글' : '공유 모집글') + ' <span class="num">' + list.length + '</span></span>' + list.map(function(p){ return meetCard(p,p.mine); }).join('') + (COMMUNITY.status === 'loading' ? '<p role="status" class="cm-empty">불러오는 중…</p>' : !list.length && COMMUNITY.status === 'ready' ? '<p class="cm-empty">아직 모집글이 없어요. 첫 모임을 만들어 보세요.</p>' : '') + (COMMUNITY.cursor ? '<button class="cm-more" data-act="meetMore">모집글 더 보기</button>' : '');
   if (drafts.length) h += '<details class="cm-fold" id="meetDrafts" data-k="' + category + '"' + ((S.meetDraftsOpen || {})[category] ? ' open' : '') + '><summary><span>기존 개인 기록 ' + drafts.length + '개</span>' + CM_IC.down + '</summary><div class="col">' + drafts.map(function(p){ return meetCard(p,true); }).join('') + '</div></details>';
-  if (!S.meetMineOnly) h += '<details class="cm-fold" id="meetExamples" data-k="' + category + '"' + ((S.meetExamplesOpen || {})[category] === undefined ? !list.length ? ' open' : '' : S.meetExamplesOpen[category] ? ' open' : '') + '><summary><span>예시 ' + samples.length + '개 <em>· 실제 모집이 아니에요</em></span>' + CM_IC.down + '</summary><div class="col">' + samples.map(function(p){ return meetCard(p,false); }).join('') + '</div></details>';
   return h + '</div></div></div><button class="cm-fab" style="bottom:calc(' + cmLift() + 'px + env(safe-area-inset-bottom,0px))" data-act="meetNew">' + sz(IC.plus,18) + '모집글 만들기</button>';
 }
 /* 앱 안 알림. 교류를 써 본 브라우저(인증값이 있는 경우)만 1분마다, 그리고 앱으로 돌아올 때 확인한다.
@@ -1816,8 +1797,8 @@ function vMeetDetail(){
   var contact = shared && !p.closed ? contactButton(p.contact,'참가 문의') : '';
   var canApply = shared && !p.mine && !p.closed && st !== 'accepted';
   var bar = shared && !p.mine && (contact || canApply || applied);
-  var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + (bar ? 130 : 0)) + 'px"><div class="stg col" style="gap:18px"><div class="row" style="justify-content:space-between">' + back + (shared ? p.closed ? '<span class="cm-pill">모집 마감</span>' : '<span class="cm-pill on"><i></i>모집 중</span>' : '<span class="cm-pill">예시</span>') + '</div>';
-  h += '<div class="col" style="gap:6px"><span class="cm-kind">' + MEET_CATEGORIES[category] + (shared ? p.mine ? ' · 내 모집글' : '' : ' · 예시 또는 개인 기록') + '</span><h1 class="cm-title">' + esc(meetTitleOf(p)) + '</h1></div>';
+  var h = '<div class="scr cm" style="padding:6px 20px ' + ((P.started ? 120 : 40) + (bar ? 130 : 0)) + 'px"><div class="stg col" style="gap:18px"><div class="row" style="justify-content:space-between">' + back + (shared ? p.closed ? '<span class="cm-pill">모집 마감</span>' : '<span class="cm-pill on"><i></i>모집 중</span>' : '<span class="cm-pill">개인 기록</span>') + '</div>';
+  h += '<div class="col" style="gap:6px"><span class="cm-kind">' + MEET_CATEGORIES[category] + (shared ? p.mine ? ' · 내 모집글' : '' : ' · 개인 기록') + '</span><h1 class="cm-title">' + esc(meetTitleOf(p)) + '</h1></div>';
   if (st) h += '<section class="cm-mine-card"><span class="row" style="gap:8px"><b>내 신청</b>' + appStatusBadge(st) + '</span><span>' + (st === 'accepted' ? '모집자가 신청을 수락했어요.' : st === 'rejected' ? '모집자가 신청을 거절했어요.' : '신청을 접수했어요. 모집자가 수락하거나 거절하면 알림으로 알려 드려요.') + '</span>' + (my && my.reason ? '<span class="rs">' + (st === 'rejected' ? '거절 사유: ' : '모집자 메모: ') + esc(my.reason) + '</span>' : '') + '</section>';
   var fact = function(pair){ return '<div class="col" style="gap:3px"><span class="k">' + pair[0] + '</span><span class="v">' + esc(pair[1]) + '</span></div>'; };
   var short = [['모집 인원',dating ? p.size + ' · ' + (MEET_TEAMS[p.team] || '') : p.capacity + '명'],['일정',p.when],['장소',p.where],['소속',p.dept || p.college],['희망 상대',dating ? p.want : '']].filter(function(x){ return x[1]; });
@@ -2279,7 +2260,7 @@ document.addEventListener('input', function(e){
   }
   if (t.id === 'inPick') { S.pickQuery = t.value; var q = t.value.trim(); $('pickFound').innerHTML = pickFound(pickCandidates(q), q); }
 });
-document.addEventListener('toggle', function(e){ if (e.target.id === 'meetExamples' || e.target.id === 'meetDrafts') { var key = e.target.id === 'meetExamples' ? 'meetExamplesOpen' : 'meetDraftsOpen'; S[key] = S[key] || {}; S[key][e.target.getAttribute('data-k')] = e.target.open; } if (e.target.id === 'meetOptional') S.meetOptionalOpen = e.target.open; if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
+document.addEventListener('toggle', function(e){ if (e.target.id === 'meetDrafts') { S.meetDraftsOpen = S.meetDraftsOpen || {}; S.meetDraftsOpen[e.target.getAttribute('data-k')] = e.target.open; } if (e.target.id === 'meetOptional') S.meetOptionalOpen = e.target.open; if (e.target.id === 'monthMore') S.calMoreMonth = e.target.open ? e.target.getAttribute('data-month') : null; }, true);
 document.addEventListener('keydown', function(e){
   if (e.key === 'Enter' && e.target.id === 'evTitle') { var sv = document.querySelector('[data-act="evSave"]'); if (sv && !sv.disabled) sv.click(); }
   if (e.target.id === 'seek' && CH.length) {

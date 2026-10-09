@@ -61,7 +61,7 @@ test('2.45초에 응답해도 사라지는 전환까지 2.5초 안에 끝난다'
 });
 
 function exchangeHelpers(){
- const start=html.indexOf('var MEET_CATEGORIES ='),end=html.indexOf('var MEET_SAMPLES =');
+ const start=html.indexOf('var MEET_CATEGORIES ='),end=html.indexOf('var MEET_SIZES =');
  const c=vm.createContext({});vm.runInContext(html.slice(start,end),c);return c;
 }
 function exchangeStorage(localStorage){

@@ -25,7 +25,9 @@ test('허브: 이름은 모임, 알림 카드와 세 카테고리, 배지용 inb
   assert.match(h, /새 알림 2개가 도착했어요/);
   assert.match(h, /class="inbox-btn" data-act="meetInbox">확인하기<span class="tb-badge"[^>]*>2<\/span><svg/);
   assert.deepEqual([...h.matchAll(/data-act="meetCategory" data-k="(\w+)"/g)].map(m => m[1]), ['study', 'dating', 'club']);
-  assert.match(h, /최근 · \[예시\] /); // 실제 글이 없으면 예시 제목
+  assert.ok(!/예시/.test(h) && !/최근 · /.test(h)); // 예시는 없앴다. 실제 글이 없으면 최근 줄을 비운다
+  c.COMMUNITY.rows = [post()];
+  assert.match(c.vMeet(), /최근 · 토익 아침 스터디/);
   assert.ok(acts(h).has('meetRefresh'));
 });
 
@@ -34,7 +36,7 @@ test('목록: 세그먼트·필터·내 모집글·새로고침·모집글 만�
   c.COMMUNITY.rows = [post({category: 'dating', team: 'm', size: '3:3', mine: true})]; c.COMMUNITY.cursor = 'next';
   const h = c.vMeetList();
   for (const act of ['back', 'meetCategory', 'meetMineOnly', 'meetRefresh', 'meetSize', 'meetTeam', 'meetDetails', 'meetMore', 'meetNew']) assert.ok(acts(h).has(act), act);
-  assert.match(h, /id="meetExamples" data-k="dating"/);
+  assert.ok(!/meetExamples|예시/.test(h));
   assert.match(h, /내 모집글<\/span><\/span><b class="cm-t">토익 아침 스터디/);
   assert.match(h, /신청 2팀/);
   assert.ok(h.indexOf('cm-fab') > h.lastIndexOf('</div>'), '모집글 만들기 버튼은 스크롤 영역 밖에 둔다');
@@ -54,7 +56,7 @@ test('상세(작성자): 수정·마감·삭제, 신청 내역 펼치기와 수�
   assert.ok(!acts(h).has('meetApplicants'));
 });
 
-test('상세(신청자·예시): 하단 고정 버튼과 내 신청 카드, 예시는 신청 불가 안내', () => {
+test('상세(신청자·개인 기록): 하단 고정 버튼과 내 신청 카드, 개인 기록은 신청 불가 안내', () => {
   const c = load(); c.S.route = 'meeting-detail'; c.COMMUNITY.detail = post();
   let h = c.vMeetDetail();
   assert.match(h, /class="cm-bar"[\s\S]*참가 문의 · 오픈카톡[\s\S]*data-act="meetApply" data-id="p1">참가 신청하기/);
@@ -66,9 +68,9 @@ test('상세(신청자·예시): 하단 고정 버튼과 내 신청 카드, 예�
   c.COMMUNITY.detail = post({closed: true, myApplication: {status: 'accepted'}});
   h = c.vMeetDetail();
   assert.ok(!acts(h).has('meetApply')); assert.match(h, /모집 마감/);
-  c.COMMUNITY.detail = c.MEET_SAMPLES[0];
+  c.COMMUNITY.detail = {id: 'd1', team: 'm', dept: '전자공학부', college: 'IT대학', size: '3:3', when: '금요일 저녁', note: '가볍게 저녁 먹어요'};
   h = c.vMeetDetail();
-  assert.match(h, /아직 등록된 링크가 없어요/); assert.match(h, /참가·신청할 수 없어요/); assert.ok(!/cm-bar/.test(h));
+  assert.match(h, /cm-pill">개인 기록/); assert.match(h, /참가·신청할 수 없어요/); assert.ok(!/cm-bar/.test(h)); assert.ok(!/예시/.test(h));
 });
 
 test('작성·신청 시트: 입력 id와 글자 수 자리, 선택 항목 접기, 저장 버튼', () => {
