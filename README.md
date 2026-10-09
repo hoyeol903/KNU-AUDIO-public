@@ -24,7 +24,7 @@
                                        └─▶ collector.export_app
                                              output/app/
                                                   │
-                                                  └─▶ Cloudflare Pages
+                                                  └─▶ GitHub Pages
 ```
 
 - `data/db/notices.json`: 누적 공지와 확인 기록
