@@ -206,3 +206,7 @@ python -m collector.run --retry-failed --write-items
 ### 모임 신고·관리자
 
 공유 모집글에서 신고하고, 모임 서버의 `/admin`에서 관리자가 숨김·해제할 수 있습니다. 서버 배포·계정 등록 후 사용할 수 있으며 [설정 안내](docs/community-admin.md)를 참고하세요.
+
+### 음성 보관
+
+게시된 음성은 새 브리핑을 올릴 때 마지막 사용일 기준 최근 14일치만 보관합니다. 최신 브리핑이 사용하는 음성은 항상 보존합니다. [보관 정책](docs/audio-retention.md)을 참고하세요.

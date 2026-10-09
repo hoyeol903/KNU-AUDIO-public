@@ -6,6 +6,7 @@ intro → 오늘 소식이 있는 내 게시판(하나도 없으면 empty) → �
 """
 import argparse
 import hashlib
+import json
 from pathlib import Path
 import shutil
 import subprocess
@@ -124,6 +125,8 @@ def export(dist=ROOT / 'dist', output=ROOT / 'output/app/data/briefing', *, voic
         raise ValueError('브리핑과 수집 자료의 날짜가 다릅니다')
     segments = app_segments(manifest, items, voice)
     output.mkdir(parents=True, exist_ok=True)
+    previous_path = output / 'segments.json'
+    previous = json.loads(previous_path.read_text(encoding='utf-8')) if previous_path.exists() else None
     kept = set()
     for segment in segments:
         parts = [dist / url for url in segment.pop('parts')]
@@ -140,9 +143,8 @@ def export(dist=ROOT / 'dist', output=ROOT / 'output/app/data/briefing', *, voic
         kept.add(name)
     # 화면은 segments.json을 마지막에 바꿔야 새 음성과 함께 본다. 지난 음성은 그 뒤에 지운다.
     save_json(dict(date=manifest['date'], voice=manifest['voices'][voice]['name'], segments=segments), output / 'segments.json')
-    for path in output.iterdir():
-        if path.is_file() and path.name not in kept and path.name != 'segments.json':
-            path.unlink()
+    from briefing.audio_retention import retain_audio
+    retain_audio(output, manifest['date'], kept, records=ROOT / 'data/runs', previous=previous)
     print(f"앱용 브리핑 내보냄: {output} · {manifest['date']} · 구간 {len(segments)}개")
     return segments
 

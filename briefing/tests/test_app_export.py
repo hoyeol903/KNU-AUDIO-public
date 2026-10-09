@@ -69,7 +69,7 @@ def test_groups_segments_the_way_the_app_plays_them(tmp_path):
     assert joined == [['f-hi.mp3', 'f-w.mp3'], ['f-n1.mp3', 'f-n2.mp3']]  # 한 구간에 음성이 여럿일 때만 잇는다
     assert rows[2]['audio'] == 'f-meal.mp3' and (output / 'f-meal.mp3').read_bytes() == b'audio/f-meal.mp3'
     assert all((output / row['audio']).is_file() for row in rows)
-    assert not (output / 'old.mp3').exists() and len(list(output.iterdir())) == 6
+    assert (output / 'old.mp3').exists() and (output / 'audio-retention.json').exists() and len(list(output.iterdir())) == 8
 
 
 def test_missing_notice_audio_or_other_date_stops_export(tmp_path):
