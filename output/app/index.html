@@ -271,6 +271,12 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .fb-tg[aria-pressed="true"]{background:var(--wine-soft);color:var(--wine-ink);box-shadow:inset 0 0 0 1.5px var(--wine-ink)}
 .fb-form{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px 14px 18px;border-radius:20px;background:var(--wine-soft)}
 .fb-form-go{flex-shrink:0;height:44px;padding:0 16px;border-radius:14px;background:var(--wine);color:#fff;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.fb-thanks{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:8px 8px 0}
+.fb-thanks-img{width:240px;height:240px;object-fit:contain;transform-origin:50% 100%;filter:drop-shadow(0 12px 16px rgba(0,0,0,.18));animation:fbBob 2.8s ease-in-out infinite}
+@keyframes fbBob{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-6px) rotate(1.5deg)}}
+.fb-thanks-t{margin-top:6px;font-size:24px;line-height:32px;font-weight:800;letter-spacing:-.6px}
+:root[data-theme="dark"] .fb-thanks-img{filter:drop-shadow(0 0 1px rgba(255,255,255,.45)) drop-shadow(0 12px 16px rgba(0,0,0,.4))}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fb-thanks-img{filter:drop-shadow(0 0 1px rgba(255,255,255,.45)) drop-shadow(0 12px 16px rgba(0,0,0,.4))}}
 .fb-ta{width:100%;box-sizing:border-box;min-height:112px;border-radius:18px;border:1.5px solid transparent;background:var(--tile);padding:14px 16px;font:inherit;font-size:15px;line-height:23px;color:var(--ink);resize:vertical;outline:none}
 .fb-ta:focus{border-color:var(--wine)}
 
@@ -516,7 +522,6 @@ var DATA = null, BRIEF = null, BRIEF_OLD = false, POSTS = {}, BGM_TRACK = null; 
 var YEAR = null;   /* schedule.json: 캘린더용 학사일정 전체. 없으면 meta.json의 가까운 일정만 쓴다 */
 var TEST = /[?&]test\b/.test(location.search);
 /* 피드백 받는 주소. 보내기를 누르면 이 주소로 메일 앱이 열린다. */
-var FEEDBACK_TO = 'fhsmdl@naver.com';
 /* 메일 앱이 없는 사용자도 남길 수 있게 구글 폼으로도 받는다. */
 var FEEDBACK_FORM = 'https://forms.gle/P3Ds4eUawQYaeDneA';
 
@@ -531,7 +536,6 @@ var S = {
   startName: '', startDept: null, startQuery: '', pickQuery: '', pickExtra: [], pickCafes: {},
   calDay: null, evSheet: false, evTitle: '', evDate: '',
   mealIdx: 0, mealSel: {}, mealSheet: null,
-  fb: { rate: 0, tags: [], text: '', sent: null },
   tour: null,
   follow: true, sentC: -1, sentI: -1, listKind: 'new', calView: 'month', calMonth: null, calSel: null, calMoreMonth: null, meetCategory: 'dating', meetSize: '전체', meetTeam: '전체', meetSheet: null,
   cafeTab: 0, cafeDate: null, checkOpen: false, loadPhase: 'loading', script: false, speed: 1, voice: true, bgm: store.bgm !== false, toast: null
@@ -698,6 +702,7 @@ function dismissSplash(immediate){
 
 /* ---------- 호반우: 원본 데이터의 구간 ID·카드 종류·날씨로만 선택 ---------- */
 var HOB_MOODS = {
+  feedback: { image: 'feedback', label: '피드백 감사해요' },
   greeting: { image: 'greeting', label: '반가워요' },
   rain: { image: 'rain', label: '우산을 챙겨요' },
   sun: { image: 'sun', label: '맑은 날씨예요' },
@@ -1698,31 +1703,13 @@ function vTabs(route){
     return '<button class="tb' + (on ? ' on' : '') + '" data-act="tab" data-to="' + t[0] + '"' + (on ? ' aria-current="page"' : '') + '>' + TAB_IC[t[0]] + '<span>' + t[1] + '</span></button>';
   }).join('') + '</nav>';
 }
-/* 피드백: 만족도 + 부분 + 한마디. 서버가 없어서 보내기는 메일 앱을 연다. */
-var FB_TAGS = ['브리핑 음성', '공지 정확도', '학식', '일정', '화면·디자인', '기능 제안'];
-function fbMail(){
-  var F = S.fb, pf = W && W.pf;
-  var subject = '[크누아 피드백] 만족도 ' + F.rate + ' / 5' + (F.tags.length ? ' · ' + F.tags.join(', ') : '');
-  var body = ['만족도: ' + F.rate + ' / 5', '부분: ' + (F.tags.length ? F.tags.join(', ') : '선택 안 함'), '', F.text.trim() || '(한마디 없음)', '', '---', '자료 기준일: ' + (DATA ? DATA.asOf : ''), '학과: ' + (pf ? pf.dept.college + ' · ' + pf.dept.dept : '')].join('\n');
-  return 'mailto:' + FEEDBACK_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-}
+/* 피드백: 구글 폼으로 받는다. 화면에는 폼 바로가기와 고마움을 전하는 호반우만 둔다. */
 function vFeedback(){
-  var F = S.fb;
   var h = '<div class="scr" style="padding:14px 16px 40px"><div class="stg col" style="gap:20px">';
   h += '<section class="fb-hero fb-big"><div class="col" style="gap:4px;flex:1;min-width:0;position:relative"><span class="fb-k">피드백</span><h1 class="fb-h">오늘 크누아 어땠어요?</h1><span class="fb-s">관리자가 직접 읽어요.</span></div><img class="fb-mascot" src="' + hobImage('news') + '" alt="" width="156" height="156"></section>';
-  h += '<section class="fb-form"><div class="col" style="gap:2px;min-width:0"><b style="font-size:15.5px">구글 폼으로 남기기</b><span class="muted" style="font-size:13px;line-height:19px">메일 앱 없이 바로 보낼 수 있어요.</span></div>' + ext(FEEDBACK_FORM, '폼 열기' + IC.ext(14), 'fb-form-go', '') + '</section>';
-  if (F.sent) {
-    return h + '<section class="col" style="align-items:center;gap:12px;text-align:center;padding:12px 8px 0"><img src="' + hobImage('outro') + '" alt="" style="width:96px;height:auto"><h2 style="margin:0;font-size:22px;font-weight:800">메일 앱을 열었어요</h2><p class="muted" style="margin:0;font-size:14.5px;line-height:22px">메일 앱에서 보내기를 눌러야 관리자에게 전달돼요.<br>보내 주셔서 고마워요.</p>' +
-      '<div class="row" style="gap:8px;padding-top:6px"><a class="btn-sec pressable" href="' + esc(F.sent) + '">메일 앱 다시 열기</a><button class="btn-sec" data-act="fbNew">새로 쓰기</button></div></section></div></div>';
-  }
-  h += '<div class="col" style="gap:10px"><span class="lab-s">만족도</span><div class="fb-rate" role="group" aria-label="만족도">' + [1, 2, 3, 4, 5].map(function(n){
-    return '<button class="fb-rt" data-act="fbRate" data-n="' + n + '" aria-pressed="' + (F.rate === n) + '" aria-label="만족도 ' + n + '점"><b class="num">' + n + '</b>' + ({ 1: '별로', 3: '보통', 5: '최고' }[n] || '') + '</button>';
-  }).join('') + '</div></div>';
-  h += '<div class="col" style="gap:10px"><span class="lab-s">어떤 부분이요? (여러 개)</span><div class="fb-tags">' + FB_TAGS.map(function(t){
-    return '<button class="fb-tg" data-act="fbTag" data-t="' + esc(t) + '" aria-pressed="' + (F.tags.indexOf(t) >= 0) + '">' + esc(t) + '</button>';
-  }).join('') + '</div></div>';
-  h += '<label class="col" style="gap:10px"><span class="row lab-s" style="justify-content:space-between">한마디 더 남기기 (선택)<span id="fbCount" class="num" style="font-weight:600">' + F.text.length + '/500</span></span><textarea id="fbText" class="fb-ta" maxlength="500" rows="4">' + esc(F.text) + '</textarea></label>';
-  h += '<div class="col" style="gap:10px"><button class="btn-pri" data-act="fbSend"' + (F.rate ? '' : ' disabled') + '>관리자에게 보내기</button><span class="muted" style="font-size:12.5px;line-height:18px;text-align:center">' + (F.rate ? '보내기를 누르면 메일 앱이 열려요. 이름은 보내지 않아요. 메일 앱이 없으면 위 구글 폼을 이용해 주세요.' : '만족도를 고르면 보낼 수 있어요.') + '</span></div>';
+  h += '<section class="fb-form"><div class="col" style="gap:2px;min-width:0"><b style="font-size:15.5px">구글 폼으로 남기기</b><span class="muted" style="font-size:13px;line-height:19px">좋았던 점, 불편한 점을 1분이면 남길 수 있어요.</span></div>' + ext(FEEDBACK_FORM, '폼 열기' + IC.ext(14), 'fb-form-go', '') + '</section>';
+  /* 그림은 tools/hobanu/feedback.webp 하나만 바꾸면 된다. 홈 브리핑 카드 호반우처럼 살짝 움직인다. */
+  h += '<section class="fb-thanks" aria-label="감사 인사"><img class="fb-thanks-img" src="' + hobImage('feedback') + '" alt="" width="240" height="240"><b class="fb-thanks-t">피드백 감사합니다!</b><span class="muted" style="font-size:14px;line-height:21px">남겨 주신 의견은 관리자가 직접 읽고 크누아를 고쳐 나갈게요.</span></section>';
   return h + '</div></div>';
 }
 /* 사용법 안내: 실제 홈 위에서 한 군데씩 짚어 준다. 한 번 보면 store.tour 에 남겨 다시 띄우지 않는다. */
@@ -1960,13 +1947,9 @@ document.addEventListener('click', function(e){
       if (to === 'cafe') return nav('cafe', { cafeTab: 0, cafeDate: null });
       return nav(to);
     }
-    case 'fbRate': S.fb.rate = +el.getAttribute('data-n'); return render(false);
-    case 'fbTag': { var tg = el.getAttribute('data-t'), ti = S.fb.tags.indexOf(tg); if (ti >= 0) S.fb.tags.splice(ti, 1); else S.fb.tags.push(tg); return render(false); }
-    case 'fbSend': { if (!S.fb.rate) return; var mail = fbMail(); S.fb.sent = mail; render(false); location.href = mail; return; }
     case 'tourNext': return tourStep(1);
     case 'tourEnd': return tourEnd();
     case 'tourAgain': S.tour = { i: 0 }; return nav('home');
-    case 'fbNew': S.fb = { rate: 0, tags: [], text: '', sent: null }; return render(false);
     case 'cardGo': { var cc = CH[P.ch]; if (!cc) return; S.cardI = Math.max(0, Math.min(cc.cards.length - 1, (S.cardI || 0) + +el.getAttribute('data-d'))); return render(false); }
     case 'dockClose': pause(); P.started = false; P.ch = 0; P.chT = 0; P.done = false; return render(false);
     case 'toggle': return toggle();
@@ -2044,7 +2027,6 @@ document.addEventListener('input', function(e){
   var t = e.target;
   if (t.id === 'inName') { S.startName = t.value; $('nameCount').textContent = t.value.length + '/20'; var b = document.querySelector('[data-act="startNext"]'); if (b) b.disabled = !(t.value.trim() && S.startDept != null); }
   if (t.id === 'inDept') { S.startQuery = t.value; $('deptList').innerHTML = deptList(); }
-  if (t.id === 'fbText') { S.fb.text = t.value; $('fbCount').textContent = t.value.length + '/500'; }
   if (t.id === 'evTitle') { S.evTitle = t.value; $('evCount').textContent = t.value.length + '/40'; var sv = document.querySelector('[data-act="evSave"]'); if (sv) sv.disabled = !t.value.trim(); }
   if (t.id === 'evDate') S.evDate = t.value;
   if (S.meetSheet && /^meet(When|Where|Want|Note|Msg|Title|Intro|Capacity|Goal|Activity|Requirements|Cost|Contact|Name)$/.test(t.id)) {
