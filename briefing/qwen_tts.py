@@ -27,6 +27,14 @@ AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
 CACHE_PROFILE = dict(sampling=GENERATION, seed=SEED, postprocess=AUDIO_POSTPROCESS)
 
 
+def gpu_count():
+    try:
+        import torch
+    except ImportError:
+        return 0
+    return torch.cuda.device_count()
+
+
 def cached_model_source(model, cache_root):
     """Use an already-downloaded HF snapshot directly, including offline builds."""
     dataset_path = os.environ.get('KNU_TTS_MODEL_PATH')

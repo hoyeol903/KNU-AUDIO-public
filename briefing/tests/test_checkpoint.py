@@ -155,3 +155,48 @@ def test_time_budget_always_finishes_at_least_one_audio(tmp_path, monkeypatch):
         b.build(path,cache=tmp_path/'cache',output=tmp_path/'dist',client=provider,allow_archive=True,audio_batch_seconds=60)
     assert provider.synthesize.call_count==1
 
+
+def test_second_gpu_takes_half_and_main_finishes_what_helper_left(tmp_path, monkeypatch):
+    from briefing import audio_shard
+    data=json.loads((b.ROOT/'data/raw/2026-10-03/items.json').read_text())
+    segments=[dict(id=str(i),kind='outro',title=str(i),script=f's{i}',channel_ids=[],audio={}) for i in range(7)]
+    monkeypatch.setattr(b,'create_segments',lambda *a:(deepcopy(segments),[]))
+    monkeypatch.setattr(b,'generate_segments',lambda s,*a,**kw:s)
+    monkeypatch.setattr(b,'prepare_bgm',lambda *a:None)
+    monkeypatch.setattr(b,'audio_info',lambda raw:1)
+    monkeypatch.setattr(audio_shard,'audio_info',lambda raw:1)
+    monkeypatch.setattr(b,'gpu_count',lambda:2)
+    main=Mock(); main.synthesize.side_effect=lambda script,*a:script.encode()
+    monkeypatch.setattr(b,'QwenTTS',lambda **kw:main)
+    helper=Mock()
+    def helper_synthesize(script,*a):
+        if script=='s3': raise RuntimeError('보조 실패')
+        return script.encode()
+    helper.synthesize.side_effect=helper_synthesize
+    def popen(command,cwd,env):
+        assert env['CUDA_VISIBLE_DEVICES']=='1' and command[1:3]==['-m','briefing.audio_shard']
+        audio_shard.run(command[3],provider=helper)
+        return Mock()
+    monkeypatch.setattr(b.subprocess,'Popen',popen)
+    path=tmp_path/'input.json';path.write_text(json.dumps(data))
+    report=b.build(path,cache=tmp_path/'cache',output=tmp_path/'dist',allow_archive=True)
+    assert sorted(c.args[0] for c in helper.synthesize.call_args_list)==['s1','s3','s5']
+    assert sorted(c.args[0] for c in main.synthesize.call_args_list)==['s0','s2','s3','s4','s6']
+    assert report['status']=='passed' and len(json.loads((tmp_path/'dist/manifest.json').read_text())['segments'])==7
+
+
+def test_single_gpu_does_not_start_helper(tmp_path, monkeypatch):
+    data=json.loads((b.ROOT/'data/raw/2026-10-03/items.json').read_text())
+    segments=[dict(id=str(i),kind='outro',title=str(i),script=f's{i}',channel_ids=[],audio={}) for i in range(3)]
+    monkeypatch.setattr(b,'create_segments',lambda *a:(deepcopy(segments),[]))
+    monkeypatch.setattr(b,'generate_segments',lambda s,*a,**kw:s)
+    monkeypatch.setattr(b,'prepare_bgm',lambda *a:None)
+    monkeypatch.setattr(b,'audio_info',lambda raw:1)
+    monkeypatch.setattr(b,'gpu_count',lambda:1)
+    main=Mock(); main.synthesize.side_effect=lambda script,*a:script.encode()
+    monkeypatch.setattr(b,'QwenTTS',lambda **kw:main)
+    monkeypatch.setattr(b.subprocess,'Popen',Mock(side_effect=AssertionError('보조를 띄우면 안 됩니다')))
+    path=tmp_path/'input.json';path.write_text(json.dumps(data))
+    b.build(path,cache=tmp_path/'cache',output=tmp_path/'dist',allow_archive=True)
+    assert main.synthesize.call_count==3
+

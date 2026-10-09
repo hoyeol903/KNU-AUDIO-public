@@ -24,6 +24,7 @@ def _gpu_info():
     name = torch.cuda.get_device_name(0)
     if 't4' not in name.casefold():
         raise RuntimeError(f'요청한 NVIDIA T4 GPU가 아닙니다: {name}')
+    print(f'보이는 GPU 수: {torch.cuda.device_count()}', flush=True)
     return dict(gpu_name=name, cuda_version=torch.version.cuda, torch_version=torch.__version__)
 
 

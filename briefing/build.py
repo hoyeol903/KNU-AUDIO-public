@@ -10,6 +10,7 @@ from pathlib import Path
 import resource
 import signal
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -20,7 +21,8 @@ from collector.store import SEOUL, load_collection_report, save_daily_items, sav
 from briefing.content import create_segments, digest
 from briefing.failure_notice import cell
 from briefing.open_tts import qwen_spoken_text
-from briefing.qwen_tts import QwenTTS, VOICES, VOICE_NAMES, MODE, MODEL as QWEN_MODEL, CACHE_VERSION, CACHE_PROFILE
+from briefing.qwen_tts import (QwenTTS, VOICES, VOICE_NAMES, MODE, MODEL as QWEN_MODEL, CACHE_VERSION,
+                               CACHE_PROFILE, gpu_count)
 from briefing.slm import Ollama, generate_segments
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -161,6 +163,18 @@ def audio_key(script, voice, config):
                                  instruct=instructions.get(role, ''), generation=CACHE_PROFILE), sort_keys=True))
 
 
+def start_gpu_helper(shard, config, cache, budget):
+    """두 번째 GPU만 보이는 별도 프로세스로 음성 일부를 만든다. 시드가 같아 결과는 GPU와 무관하다."""
+    spec = Path(cache) / 'gpu-helper.json'
+    spec.write_text(json.dumps(dict(
+        jobs=[dict(script=job['script'], voice=job['voice'], path=str(job['path'])) for job in shard],
+        model=config['model'], tempo=config['tempo'], instructions=config.get('tts', {}).get('instructions', {}),
+        budget=budget), ensure_ascii=False), encoding='utf-8')
+    print(f'두 번째 GPU에서 음성 {len(shard)}개를 함께 만듭니다.', flush=True)
+    return subprocess.Popen([sys.executable, '-m', 'briefing.audio_shard', str(spec)], cwd=ROOT,
+                            env=dict(os.environ, CUDA_VISIBLE_DEVICES='1'))
+
+
 def prepare_bgm(config):
     bgm = config['bgm']
     if not bgm.get('file'):
@@ -271,39 +285,56 @@ def build(input_path, *, text_only=False, plan=False, output=None, cache=None, a
                 if progress:
                     progress.update('voice-check', 'completed', role, index, len(voices))
             audio_started = time.monotonic()
-            for index, identity in enumerate(missing, 1):
-                # 시간 기준 묶음은 한 개 이상 만든 뒤에만 끊어, 느린 음성 하나로 진행이 멈추지 않게 한다.
-                if (audio_batch_size is not None and index > audio_batch_size
-                        or audio_batch_seconds is not None and index > 1
-                        and time.monotonic() - audio_started >= audio_batch_seconds):
-                    raise AudioBatchComplete()
-                job = jobs[identity]
-                unit = f'{index}/{len(missing)}:{identity[0]}'
-                if progress:
-                    progress.update('audio', 'started', unit, index - 1, len(missing))
-                try:
-                    raw = provider.synthesize(job['script'], job['voice'], config['model'], config['tempo'])
-                    audio_info(raw)
-                    atomic_bytes(job['path'], raw)
-                except Exception as exc:
-                    failed.add(identity)
-                    affected = [s for s in segments if audio_key(s['script'], voices[identity[0]], config) == identity[1]]
-                    entries = []
-                    for segment in affected:
-                        entries.append(dict(
-                            segment_id=segment['id'], kind=segment['kind'], title=segment['title'],
-                            channel_ids=segment['channel_ids'], notice_refs=segment.get('notice_refs', []),
-                            voice=identity[0], error_type=type(exc).__name__, message=cell(exc),
-                            retry='대본을 짧게 나눈 뒤 재실행' if '길이 상한' in str(exc) else '원인 확인 후 재실행'))
-                    failed_audio[':'.join(identity)] = entries
-                    report['audio_failures'].extend(entries)
-                    report['status'] = 'partial'
-                    save_json(report, ROOT / 'output/briefing-report.json')
+            # GPU가 두 장이면 절반을 두 번째 GPU의 보조 프로세스에 맡긴다. 보조가 못 만든 음성은 아래 반복문이 이어서 처리한다.
+            helper, shard = None, []
+            if (client is None and len(missing) > 1 and config.get('tts', {}).get('device', 'auto') != 'cpu'
+                    and gpu_count() > 1):
+                shard = missing[1::2]
+                helper = start_gpu_helper([jobs[key] for key in shard], config, cache, audio_batch_seconds)
+
+            def pending():
+                yield from (missing[0::2] if helper else missing)
+                if helper:
+                    helper.wait()
+                    yield from (key for key in shard if not jobs[key]['path'].exists())
+            try:
+                for index, identity in enumerate(pending(), 1):
+                    # 시간 기준 묶음은 한 개 이상 만든 뒤에만 끊어, 느린 음성 하나로 진행이 멈추지 않게 한다.
+                    if (audio_batch_size is not None and index > audio_batch_size
+                            or audio_batch_seconds is not None and index > 1
+                            and time.monotonic() - audio_started >= audio_batch_seconds):
+                        raise AudioBatchComplete()
+                    job = jobs[identity]
+                    unit = f'{index}/{len(missing)}:{identity[0]}'
                     if progress:
-                        progress.update('audio', 'failed', unit, index, len(missing))
-                    continue
-                if progress:
-                    progress.update('audio', 'completed', unit, index, len(missing))
+                        progress.update('audio', 'started', unit, index - 1, len(missing))
+                    try:
+                        raw = provider.synthesize(job['script'], job['voice'], config['model'], config['tempo'])
+                        audio_info(raw)
+                        atomic_bytes(job['path'], raw)
+                    except Exception as exc:
+                        failed.add(identity)
+                        affected = [s for s in segments if audio_key(s['script'], voices[identity[0]], config) == identity[1]]
+                        entries = []
+                        for segment in affected:
+                            entries.append(dict(
+                                segment_id=segment['id'], kind=segment['kind'], title=segment['title'],
+                                channel_ids=segment['channel_ids'], notice_refs=segment.get('notice_refs', []),
+                                voice=identity[0], error_type=type(exc).__name__, message=cell(exc),
+                                retry='대본을 짧게 나눈 뒤 재실행' if '길이 상한' in str(exc) else '원인 확인 후 재실행'))
+                        failed_audio[':'.join(identity)] = entries
+                        report['audio_failures'].extend(entries)
+                        report['status'] = 'partial'
+                        save_json(report, ROOT / 'output/briefing-report.json')
+                        if progress:
+                            progress.update('audio', 'failed', unit, index, len(missing))
+                        continue
+                    if progress:
+                        progress.update('audio', 'completed', unit, index, len(missing))
+            finally:
+                # 묶음 시간이 차거나 오류로 나가도 보조가 만들던 음성까지 저장된 뒤 checkpoint를 남긴다.
+                if helper:
+                    helper.wait()
             retained = []
             for segment in segments:
                 if any((role, audio_key(segment['script'], voice, config)) in failed for role, voice in voices.items()):
