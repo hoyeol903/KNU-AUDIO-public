@@ -662,7 +662,7 @@ var S = {
   mealIdx: 0, mealSel: {}, mealSheet: null,
   tour: null,
   follow: true, sentC: -1, sentI: -1, listKind: 'new', calView: 'month', calMonth: null, calSel: null, calMoreMonth: null, meetCategory: 'dating', meetSize: '전체', meetTeam: '전체', meetSheet: null,
-  cafeTab: 0, cafeDate: null, checkOpen: false, loadPhase: 'loading', script: false, speed: 1, voice: true, bgm: store.bgm !== false, toast: null
+  cafeTab: 0, cafeDate: null, loadPhase: 'loading', script: false, speed: 1, voice: true, bgm: store.bgm !== false, toast: null
 };
 var P = { playing: false, started: false, ch: 0, chT: 0, last: 0, gen: 0, voiceOk: false, speakAt: 0, fallback: false, done: false, pend: null, playToken: 0 };
 /* 호반우 그림. 바꾸거나 빼려면 여기만 고친다. head: 오늘 날짜 위, dj: 오늘 브리핑 카드, djhead: 대본 말풍선, body: 일정 없는 날 */
@@ -1353,7 +1353,6 @@ function vHome(){
     h += '<button data-act="board" data-id="' + esc(b.id) + '" class="btile' + (n ? ' hot' : '') + '"><span style="font-size:14.5px;line-height:20px;font-weight:700">' + esc(b.name) + '</span><span class="row" style="justify-content:space-between;align-items:flex-end;gap:6px;width:100%"><span class="col" style="gap:2px"><b class="pop num" style="font-size:30px;line-height:34px;font-weight:800;color:' + (n ? 'var(--wine-ink)' : 'var(--muted)') + '">' + (b.collected ? n : '–') + '</b><span class="muted" style="font-size:12px">' + (b.collected ? '수집한 공지 ' + (b.saved != null ? b.saved : '[N]') + '개' : '수집된 공지 없음') + '</span></span><span class="badge b-bg" style="font-size:11.5px;padding:0 8px">' + (b.required ? IC.lock(11) + '필수' : '선택') + '</span></span></button>';
   });
   h += '<button data-act="settings" style="border:1.5px dashed var(--line);border-radius:24px;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:700;color:var(--muted)">' + sz(IC.plus, 22) + '게시판 설정</button>';
-  if (W.checks.length) h += '<section class="span2 col" style="border:1px solid var(--line);border-radius:24px;padding:4px 16px 4px"><button data-act="checks" aria-expanded="' + S.checkOpen + '" class="row" style="min-height:48px;gap:8px;width:100%;font-size:15px;font-weight:800">확인할 내용<span class="badge b-due" style="height:20px;padding:0 8px">' + W.checks.length + '</span><span style="margin-left:auto;transition:transform .25s;transform:rotate(' + (S.checkOpen ? 180 : 0) + 'deg)">' + IC.down + '</span></button>' + (S.checkOpen ? W.checks.map(function(c){ return '<span style="padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;color:' + (/^\[/.test(c) ? 'var(--ph)' : 'var(--ink2)') + '">' + esc(c) + '</span>'; }).join('') : '') + '</section>';
   return h + '</div></div>';
 }
 function newsRow(p){
@@ -2283,7 +2282,6 @@ document.addEventListener('click', function(e){
       save(); S.evSheet = false; S.calDay = dv; if (S.route === 'calendar') { S.calSel = dv; S.calMonth = dv.slice(0, 7); } return toastMsg(md(dv) + ' 일정을 추가했어요');
     }
     case 'evDel': store.events = myEvents().filter(function(x){ return x.id !== el.getAttribute('data-id'); }); save(); return render(false);
-    case 'checks': S.checkOpen = !S.checkOpen; return render(false);
     case 'retry': return loadMeta();
     case 'retryBoard': POSTS[S.boardId] = null; loadBoard(S.boardId); return render(false);
   }
