@@ -662,7 +662,7 @@ var S = {
   mealIdx: 0, mealSel: {}, mealSheet: null,
   tour: null,
   follow: true, sentC: -1, sentI: -1, listKind: 'new', calView: 'month', calMonth: null, calSel: null, calMoreMonth: null, meetCategory: 'dating', meetSize: '전체', meetTeam: '전체', meetSheet: null,
-  cafeTab: 0, cafeDate: null, checkOpen: false, loadPhase: 'loading', script: false, speed: 1, voice: true, bgm: store.bgm !== false, toast: null
+  cafeTab: 0, cafeDate: null, loadPhase: 'loading', script: false, speed: 1, voice: true, bgm: store.bgm !== false, toast: null
 };
 var P = { playing: false, started: false, ch: 0, chT: 0, last: 0, gen: 0, voiceOk: false, speakAt: 0, fallback: false, done: false, pend: null, playToken: 0 };
 /* 호반우 그림. 바꾸거나 빼려면 여기만 고친다. head: 오늘 날짜 위, dj: 오늘 브리핑 카드, djhead: 대본 말풍선, body: 일정 없는 날 */
@@ -966,7 +966,7 @@ function findPost(b, id){
 /* 재생 목록: intro + 오늘 소식이 있는 내 게시판 + 내 식당 + outro. 구간 id는 게시판·식당 id와 같다. */
 var BRIEF_MAX_AGE = 3;
 /* 홈·재생 화면 제목: 오늘 음성이면 "오늘 브리핑", 지난 음성이면 그 날짜를 밝힌다. */
-function briefLabel(){ return BRIEF_OLD ? md(BRIEF.date) + ' 브리핑' : (W && W.old ? '기준일' : '오늘') + ' 브리핑'; }
+function briefLabel(){ return BRIEF_OLD ? md(BRIEF.date) + ' 브리핑' : '오늘의 브리핑'; }
 function chapters(W){
   if (!BRIEF) return [];
   /* 팀 계약(docs/contracts.md)의 이름(channel_id, duration_sec, items, section, detail)도 그대로 읽는다. */
@@ -1309,10 +1309,10 @@ function collectionStatusCard(){
   var failures = failedBoards.map(function(b){
     return '<li><b>' + esc(b.name) + '</b>: ' + esc((b.reasons || []).join(' · ') || '수집 오류') + '</li>';
   }).join('');
-  return '<section class="span2 tile col" style="gap:7px"><div class="row" style="justify-content:space-between;gap:8px"><b>' + (c.date === seoulToday() ? '오늘 수집 현황' : '기준일 수집 현황') + '</b><span class="muted" style="font-size:12px">기준일 ' + esc(c.date) + '</span></div>' +
+  return '<section class="span2 tile col" style="gap:7px"><div class="row" style="justify-content:space-between;gap:8px"><b>' + (c.date === seoulToday() ? '오늘 수집 현황' : md(c.date) + ' 수집 현황') + '</b><span class="muted" style="font-size:12px">자료 날짜 ' + esc(c.date) + '</span></div>' +
     '<span class="muted" style="font-size:13px">마지막 수집 ' + esc(last) + '</span>' +
     '<span style="font-size:13.5px">전체 필수 게시판 ' + Number(c.todaySuccess || 0) + '/' + Number(c.physicalBoards || 0) + ' 성공 · ' + Number(c.todayFailed || 0) + ' 실패 · ' + Number(c.todayNotCollected || 0) + ' 미수집</span>' +
-    '<span style="font-size:13.5px">식단 ' + Number(m.todaySuccess || 0) + '/' + Number(m.total || 0) + ' ' + (c.date === seoulToday() ? '오늘 확인' : '기준일 확인') + ' · ' + Number(m.todayFailed || 0) + ' 실패 · ' + Number(m.todayNotCollected || 0) + ' 미수집</span>' +
+    '<span style="font-size:13.5px">식단 ' + Number(m.todaySuccess || 0) + '/' + Number(m.total || 0) + ' ' + (c.date === seoulToday() ? '오늘 확인' : md(c.date) + ' 확인') + ' · ' + Number(m.todayFailed || 0) + ' 실패 · ' + Number(m.todayNotCollected || 0) + ' 미수집</span>' +
     (failures ? '<details style="font-size:13px"><summary>실패 게시판 ' + failedBoards.length + '곳</summary><ul style="margin:8px 0 0;padding-left:20px">' + failures + '</ul></details>' : '') + '</section>';
 }
 function vCollectionStatus(){
@@ -1322,15 +1322,15 @@ function vCollectionStatus(){
 function vHome(){
   if (S.loadPhase === 'loading') return vLoading();
   if (S.loadPhase === 'error') return vError();
-  var pf = W.pf, pre = W.old ? '기준일 ' : '';
+  var pf = W.pf, pre = '';
   var busy = W.today.length > 0;
   var head = busy ? '새 글 ' + W.newCount + '건, 마감 알림 ' + W.dueCount + '건을 담았어요' : W.fail ? '인사와 게시판 소식 위주예요' : '오늘은 날씨, 일정, 학식 위주예요';
-  if (W.old) head = busy ? head : '기준일 날씨, 일정, 학식이에요';
+  if (W.old) head = busy ? head : '날씨, 일정, 학식을 담았어요';
   var h = '<div class="scr" style="padding-bottom:' + (P.started ? 120 : 40) + 'px"><div class="stg grid2">';
   h += '<div class="span2 row" style="gap:12px;padding:6px 2px 4px 4px">' + avatar(pf.dept, 52) + '<div class="col" style="gap:6px;flex:1;min-width:0"><h1 style="margin:0;font-size:24px;line-height:32px;font-weight:800;letter-spacing:-.7px">' + esc(pf.name) + '님, 안녕하세요</h1>' +
-    (W.old ? '<span class="badge b-due" style="align-self:flex-start">' + sz(IC.clock, 12) + '기준일 ' + DATA.asOf + ' · ' + DATA.checkedAt + '</span>' : '<span class="muted" style="font-size:13px;line-height:18px">' + DATA.asOf + ' · ' + DATA.checkedAt + ' · ' + esc(pf.dept.college) + ' · ' + esc(pf.dept.dept) + '</span>') +
+    (W.old ? '<span class="badge b-due" style="align-self:flex-start">' + sz(IC.clock, 12) + '마지막 업데이트 ' + DATA.asOf + ' · ' + DATA.checkedAt + '</span>' : '<span class="muted" style="font-size:13px;line-height:18px">' + DATA.asOf + ' · ' + DATA.checkedAt + ' · ' + esc(pf.dept.college) + ' · ' + esc(pf.dept.dept) + '</span>') +
     '</div><button class="icon-btn" data-act="settings" aria-label="게시판 설정">' + IC.gear + '</button></div>';
-  if (W.old) h += '<div class="span2 row" style="gap:10px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--tile);font-size:13.5px;line-height:20px;color:var(--ink2)"><span style="color:var(--amber-ink);margin-top:1px">' + IC.clock + '</span><span>오늘 자료가 아직 없어서 <b>기준일</b> 자료를 보여드려요. 아래 숫자와 소식은 모두 기준일 것이에요.</span></div>';
+  if (W.old) h += '<div class="span2 row" style="gap:10px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--tile);font-size:13.5px;line-height:20px;color:var(--ink2)"><span style="color:var(--amber-ink);margin-top:1px">' + IC.clock + '</span><span>오늘 자료를 준비 중이에요. <b>' + esc(md(DATA.asOf)) + '</b> 자료를 먼저 보여드려요.</span></div>';
   if (W.hasBrief) {
     var on = P.started, cur = CH[P.ch] || CH[0];
     h += '<div class="span2 herowrap ' + (P.playing ? 'playing' : 'idle') + '"><section class="hero">' +
@@ -1344,16 +1344,15 @@ function vHome(){
   else h += '<section class="span2 wx fail-wx" aria-label="날씨">' + IC.warn + '<b>날씨</b><span>오늘 자료를 가져오지 못했습니다</span></section>';
   h += vWeek();
   h += '<section class="span2 tile stats" aria-label="오늘 숫자, 누르면 모아 봐요">' + [['new', pre + '새 글', W.newCount], ['due', pre + '마감 알림', W.dueCount], ['sched', pre + '학사일정', W.schedule ? W.schedule.length : '–']].map(function(s, i){ return '<button class="col" data-act="statList" data-k="' + s[0] + '" aria-label="' + s[1] + ' ' + s[2] + '개, 모아 보기"><span>' + s[1] + '</span><b class="pop num" style="color:' + (i === 1 && s[2] ? 'var(--wine-ink)' : 'var(--ink)') + '">' + s[2] + '</b></button>'; }).join('') + '</section>';
-  if (busy) h += '<section class="span2 col" style="background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:4px 16px 6px"><div class="row" style="justify-content:space-between;height:48px"><h2 style="margin:0;font-size:17px;font-weight:800">' + (W.old ? '기준일' : '오늘') + ' 소식 <span style="color:var(--wine-ink)">' + W.today.length + '</span></h2></div>' + W.today.slice(0, 4).map(newsRow).join('') + (W.today.length > 4 ? '<span class="muted" style="font-size:13px;padding:10px 0;border-top:1px solid var(--line)">나머지 ' + (W.today.length - 4) + '건은 아래 게시판에서 볼 수 있어요</span>' : '') + '</section>';
+  if (busy) h += '<section class="span2 col" style="background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:4px 16px 6px"><div class="row" style="justify-content:space-between;height:48px"><h2 style="margin:0;font-size:17px;font-weight:800">' + '오늘의 소식 <span style="color:var(--wine-ink)">' + W.today.length + '</span></h2></div>' + W.today.slice(0, 4).map(newsRow).join('') + (W.today.length > 4 ? '<span class="muted" style="font-size:13px;padding:10px 0;border-top:1px solid var(--line)">나머지 ' + (W.today.length - 4) + '건은 아래 게시판에서 볼 수 있어요</span>' : '') + '</section>';
   h += vMeals();
-  h += '<div class="span2 row" style="justify-content:space-between;padding:10px 4px 0"><h2 class="h-sec">내 게시판</h2><span class="lab-s" style="font-weight:600">' + (W.old ? '기준일' : '오늘') + ' 새 글</span></div>';
+  h += '<div class="span2 row" style="justify-content:space-between;padding:10px 4px 0"><h2 class="h-sec">내 게시판</h2><span class="lab-s" style="font-weight:600">' + '오늘의 새 글</span></div>';
   h += '<button class="btile hot" data-act="savedPosts" aria-label="저장한 공지 ' + savedPosts().length + '개 보기"><span style="font-size:14.5px;font-weight:750">저장한 공지</span><b class="pop num" style="font-size:30px;line-height:34px;color:var(--wine-ink)">' + savedPosts().length + '</b><span class="muted" style="font-size:12px">다시 볼 공지를 모았어요</span></button>';
   W.boards.forEach(function(b){
     var n = b.today.length;
     h += '<button data-act="board" data-id="' + esc(b.id) + '" class="btile' + (n ? ' hot' : '') + '"><span style="font-size:14.5px;line-height:20px;font-weight:700">' + esc(b.name) + '</span><span class="row" style="justify-content:space-between;align-items:flex-end;gap:6px;width:100%"><span class="col" style="gap:2px"><b class="pop num" style="font-size:30px;line-height:34px;font-weight:800;color:' + (n ? 'var(--wine-ink)' : 'var(--muted)') + '">' + (b.collected ? n : '–') + '</b><span class="muted" style="font-size:12px">' + (b.collected ? '수집한 공지 ' + (b.saved != null ? b.saved : '[N]') + '개' : '수집된 공지 없음') + '</span></span><span class="badge b-bg" style="font-size:11.5px;padding:0 8px">' + (b.required ? IC.lock(11) + '필수' : '선택') + '</span></span></button>';
   });
   h += '<button data-act="settings" style="border:1.5px dashed var(--line);border-radius:24px;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:700;color:var(--muted)">' + sz(IC.plus, 22) + '게시판 설정</button>';
-  if (W.checks.length) h += '<section class="span2 col" style="border:1px solid var(--line);border-radius:24px;padding:4px 16px 4px"><button data-act="checks" aria-expanded="' + S.checkOpen + '" class="row" style="min-height:48px;gap:8px;width:100%;font-size:15px;font-weight:800">확인할 내용<span class="badge b-due" style="height:20px;padding:0 8px">' + W.checks.length + '</span><span style="margin-left:auto;transition:transform .25s;transform:rotate(' + (S.checkOpen ? 180 : 0) + 'deg)">' + IC.down + '</span></button>' + (S.checkOpen ? W.checks.map(function(c){ return '<span style="padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;color:' + (/^\[/.test(c) ? 'var(--ph)' : 'var(--ink2)') + '">' + esc(c) + '</span>'; }).join('') : '') + '</section>';
   return h + '</div></div>';
 }
 function newsRow(p){
@@ -1378,9 +1377,9 @@ function vBoard(){
     h += '<section class="col" style="margin-top:40px;align-items:center;gap:14px;text-align:center;padding:0 12px"><span style="width:72px;height:72px;border-radius:24px;background:var(--tile);color:var(--muted);display:flex;align-items:center;justify-content:center">' + IC.inbox + '</span><b style="font-size:19px">수집된 공지 없음</b><span class="muted" style="font-size:14px;line-height:21px">아직 이 게시판을 수집하지 않았어요.<br>다음 수집부터 여기에 글이 모여요.</span>' + ext(b.url, '학교 게시판에서 보기' + IC.ext(15), '', 'margin-top:6px;height:48px;padding:0 20px;border-radius:16px;background:var(--wine);color:#fff;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:800') + '</section>';
     return h + '</div></div>';
   }
-  h += '<section class="col" style="gap:10px"><div class="row" style="gap:8px"><h2 style="margin:0;font-size:17px;font-weight:800">' + (W.old ? '기준일 ' : '오늘 ') + '소식</h2><span style="font-size:13px;font-weight:800;color:var(--wine-ink)">' + b.today.length + '</span></div>';
+  h += '<section class="col" style="gap:10px"><div class="row" style="gap:8px"><h2 style="margin:0;font-size:17px;font-weight:800">' + '오늘의 소식</h2><span style="font-size:13px;font-weight:800;color:var(--wine-ink)">' + b.today.length + '</span></div>';
   if (b.today.length) h += b.today.map(function(p){ return '<button data-act="post" data-id="' + esc(p.id) + '" data-b="' + esc(b.id) + '" style="position:relative;overflow:hidden;background:var(--wine-soft);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:10px;text-align:left;width:100%"><span class="sheen"></span><span class="row" style="gap:6px">' + (p.tag === 'new' ? '<span class="badge" style="background:var(--wine);color:#fff">새 글</span>' : '<span class="badge b-due">마감 알림</span>') + (p.dday != null ? '<span class="badge b-due">마감 ' + dd(p.dday) + '</span>' : '') + '</span><b class="title-wrap" style="font-size:16px;line-height:23px;font-weight:700">' + esc(p.title) + '</b><span class="muted num' + (p.date ? '' : ' ph') + '" style="font-size:13px">' + esc(p.date || '게시일 미확인') + '</span></button>'; }).join('');
-  else h += '<div class="tile col" style="gap:4px"><b style="font-size:15px;line-height:22px">' + (W.old ? '기준일에' : '오늘') + ' 이 게시판에 알릴 글이 없어요</b><span class="muted" style="font-size:13.5px;line-height:20px">새 글도, 3일 안에 마감되는 글도 없어요. 최근 글은 아래에 있어요.</span></div>';
+  else h += '<div class="tile col" style="gap:4px"><b style="font-size:15px;line-height:22px">' + (W.old ? md(DATA.asOf) + '에' : '오늘') + ' 이 게시판에 알릴 글이 없어요</b><span class="muted" style="font-size:13.5px;line-height:20px">새 글도, 3일 안에 마감되는 글도 없어요. 최근 글은 아래에 있어요.</span></div>';
   h += '</section><section class="col"><div class="row" style="justify-content:space-between;padding-bottom:4px"><h2 style="margin:0;font-size:17px;font-weight:800">최근 글</h2><span class="lab-s" style="font-weight:600">최신순 30개</span></div>';
   var rows = POSTS[b.id];
   if (rows === 'error') return h + '<div class="fail" style="gap:12px"><b style="font-size:14.5px;line-height:21px">글 목록을 불러오지 못했습니다</b><button class="btn-sec" data-act="retryBoard" style="align-self:flex-start;background:var(--bg);color:var(--ink)">' + sz(IC.replay, 18) + '다시 시도</button></div></section></div></div>';
@@ -1441,7 +1440,7 @@ function vMealCard(x, i, when){
     '<div class="mlc-ft">' + go + (price != null ? '<span class="mlc-pr">' + won(price) + '</span>' : '') + '</div></article>';
 }
 function vMeals(){
-  var list = W.cafes, when = W.old ? '기준일' : '오늘';
+  var list = W.cafes, when = W.old ? md(DATA.asOf) : '오늘';
   var h = '<section class="span2 mealbox" aria-label="오늘의 학식"><div class="ml-hd"><h2 style="margin:0;font-size:17px;font-weight:800">오늘의 학식</h2><button class="ml-lnk" data-act="mealManage">식당 관리' + mlChev() + '</button></div>';
   if (!list.length) return h + '<div class="none" style="margin-bottom:6px"><b style="font-size:15.5px">켜 둔 식당이 없어요</b><span class="muted" style="font-size:13.5px">식당 관리에서 식당을 켜면 여기에 나와요.</span></div></section>';
   h += '<div class="ml-rail" id="mlRail">' + list.map(function(x, i){ return vMealCard(x, i, when); }).join('') + '</div>';
@@ -1511,13 +1510,13 @@ function mealCard(c, label, list, one){
 function vCafe(){
   var list = W.cafes, i = Math.min(S.cafeTab, Math.max(0, list.length - 1));
   var top = '<div class="scr" style="padding:12px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:18px">' + header(true);
-  function title(date){ return '<div class="row" style="justify-content:space-between;align-items:baseline;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">오늘의 학식</h1><span class="lab-s num" style="font-weight:600">' + (date === DATA.asOf && W.old ? '기준일 ' : '') + esc(date) + '</span></div>'; }
+  function title(date){ return '<div class="row" style="justify-content:space-between;align-items:baseline;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">오늘의 학식</h1><span class="lab-s num" style="font-weight:600">' + esc(date) + '</span></div>'; }
   if (!list.length) return top + title(DATA.asOf) + '<div class="none"><b style="font-size:16px">켜 둔 식당이 없어요</b><span class="muted" style="font-size:13.5px">게시판 설정에서 식당을 켜면 여기에 나와요.</span><button class="btn-sec" data-act="settings">게시판 설정</button></div></div></div>';
   var x = list[i], c = x.c;
-  /* 날짜 고르기: 수집한 주간 표에 있는 날짜만 고를 수 있다. 고르지 않으면 기준일을 보여준다. */
+  /* 날짜 고르기: 수집한 주간 표에 있는 날짜만 고를 수 있다. 고르지 않으면 자료 날짜의 메뉴를 보여준다. */
   var days = c.days || [], day = days.filter(function(d){ return d.date === S.cafeDate && d.date !== DATA.asOf; })[0];
   var v = day ? { date: day.date, state: day.status === 'failed' ? 'fail' : day.status === 'ok' ? 'ok' : 'none', hours: day.hours, groups: day.groups } : { date: DATA.asOf, state: x.state, hours: c.hours, groups: c.groups };
-  var when = v.date !== DATA.asOf ? '이 날' : W.old ? '기준일' : '오늘', future = v.date > seoulToday();
+  var when = v.date !== DATA.asOf ? '이 날' : W.old ? md(DATA.asOf) : '오늘', future = v.date > seoulToday();
   var h = top + title(v.date);
   /* 식당이 셋을 넘으면 칸이 좁아지므로 누름 단추 줄로 바꾼다. */
   if (list.length > 3) h += '<div class="chips" role="tablist">' + list.map(function(x, k){ return '<button class="chip-btn" role="tab" aria-selected="' + (k === i) + '" aria-pressed="' + (k === i) + '" data-act="cafeTab" data-i="' + k + '">' + esc(x.c.name) + '</button>'; }).join('') + '</div>';
@@ -1540,12 +1539,12 @@ function vCafe(){
 /* 홈 숫자 칸(새 글·마감 알림·학사일정)을 누르면 그것만 모아 본다. */
 var LIST_KIND = { new: '새 글', due: '마감 알림', sched: '학사일정' };
 function vList(){
-  var k = LIST_KIND[S.listKind] ? S.listKind : 'new', when = W.old ? '기준일' : '오늘';
+  var k = LIST_KIND[S.listKind] ? S.listKind : 'new', when = W.old ? md(DATA.asOf) : '오늘';
   var posts = W.today.filter(function(p){ return p.tag === k; }), sch = W.schedule || [];
   var n = k === 'sched' ? (W.schedule ? sch.length : null) : posts.length;
   var desc = { new: when + ' 내 게시판에 처음 올라온 글이에요.', due: '마감이 3일 전·1일 전·당일인 글이에요.', sched: when + '부터 3일 안에 시작하거나 진행 중인 학사일정이에요.' }[k];
   var h = '<div class="scr" style="padding:12px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:18px">' + header(true);
-  h += '<div class="col" style="gap:6px;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">' + (W.old ? '기준일 ' : '') + LIST_KIND[k] + (n != null ? ' <span style="color:var(--wine-ink)">' + n + '</span>' : '') + '</h1><span class="muted" style="font-size:13.5px;line-height:20px">' + desc + '</span></div>';
+  h += '<div class="col" style="gap:6px;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">' + '오늘의 ' + LIST_KIND[k] + (n != null ? ' <span style="color:var(--wine-ink)">' + n + '</span>' : '') + '</h1><span class="muted" style="font-size:13.5px;line-height:20px">' + desc + '</span></div>';
   h += '<div class="chips" role="group" aria-label="모아 볼 것">' + ['new', 'due', 'sched'].map(function(x){ return '<button class="chip-btn" data-act="statList" data-k="' + x + '" aria-pressed="' + (x === k) + '">' + LIST_KIND[x] + '</button>'; }).join('') + '</div>';
   if (k === 'sched') {
     if (!W.schedule) h += '<div class="fail"><b>학사일정</b><span>' + when + ' 자료를 가져오지 못했습니다</span></div>';
@@ -2145,7 +2144,7 @@ function vDock(){
 function renderPanel(){
   if (!TEST) return;
   $('panel').innerHTML = '<div class="col" style="gap:4px"><h2>크누아 테스트</h2><p class="note">실제 내보낸 자료(data/)로 그린 화면이에요. 자료 상황은 data/meta.json 을 바꿔서 시험해요.</p></div>' +
-    '<div class="grp"><span class="lab">자료</span><p class="note">' + (DATA ? '기준일 ' + esc(DATA.asOf) + ' · 확인 ' + esc(DATA.checkedAt) + ' · 브리핑 ' + (BRIEF ? '있음' : '없음') : '불러오기 전') + '</p></div>' +
+    '<div class="grp"><span class="lab">자료</span><p class="note">' + (DATA ? '자료 날짜 ' + esc(DATA.asOf) + ' · 확인 ' + esc(DATA.checkedAt) + ' · 브리핑 ' + (BRIEF ? '있음' : '없음') : '불러오기 전') + '</p></div>' +
     '<div class="grp"><span class="lab">화면 밝기</span><div class="chips">' + [['system', '기기 설정'], ['light', '밝게'], ['dark', '어둡게']].map(function(t){ return '<button class="chip-btn" data-act="theme" data-t="' + t[0] + '" aria-pressed="' + (S.theme === t[0]) + '">' + t[1] + '</button>'; }).join('') + '</div></div>' +
     '<div class="grp"><span class="lab">바로 가기</span><div class="chips">' + [['start', '시작'], ['pick', '게시판 고르기'], ['home', '홈'], ['board', '게시판'], ['cafe', '식당'], ['player', '재생'], ['calendar', '캘린더'], ['meeting', '모임']].map(function(t){ return '<button class="chip-btn" data-act="jump" data-to="' + t[0] + '">' + t[1] + '</button>'; }).join('') + '</div></div>' +
     '<div class="grp"><button class="opt" data-act="reset" style="justify-content:center">처음부터 다시 (저장 지우기)</button></div>';
@@ -2283,7 +2282,6 @@ document.addEventListener('click', function(e){
       save(); S.evSheet = false; S.calDay = dv; if (S.route === 'calendar') { S.calSel = dv; S.calMonth = dv.slice(0, 7); } return toastMsg(md(dv) + ' 일정을 추가했어요');
     }
     case 'evDel': store.events = myEvents().filter(function(x){ return x.id !== el.getAttribute('data-id'); }); save(); return render(false);
-    case 'checks': S.checkOpen = !S.checkOpen; return render(false);
     case 'retry': return loadMeta();
     case 'retryBoard': POSTS[S.boardId] = null; loadBoard(S.boardId); return render(false);
   }
