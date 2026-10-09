@@ -631,7 +631,7 @@ def create_segments(data, catalog, config, events, *, variant=None):
             if not deadline:
                 terms = [t for t in terms if not any(w in t for w in ('마감', '기한', '임박'))]
             segment['style_instruction'] = NOTICE_STYLES[variant]
-            segment['constraints'] = dict(max_chars=50, sentence_count=(1, 2), topic_terms=terms,
+            segment['constraints'] = dict(sentence_count=(1, 2), topic_terms=terms,
                                           no_contacts=True, title_only=not bool(notice['body']),
                                           deadline_unverified=not bool(deadline),
                                           verified_deadline=deadline_phrase or None,

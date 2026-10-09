@@ -57,7 +57,7 @@ def test_notice_source_and_deadline_metadata_are_preserved(data, config):
     segment = next(s for s in create_segments(data, [], config, [])[0] if s['kind'] == 'notice')
     assert segment['source_text'] == notice['title'] + '\n' + notice['body']
     assert segment['deadline_verified'] and segment['notice_id'] == notice['id']
-    assert segment['constraints']['max_chars'] == 50
+    assert 'max_chars' not in segment['constraints']
     assert segment['constraints']['sentence_count'] == (1, 2)
 
 
@@ -206,20 +206,19 @@ def test_corrections_and_cache_are_rechecked(tmp_path):
     assert provider.generate.call_count == 3
 
 
-def test_notice_gate_checks_spoken_length_topic_and_every_sentence_ending():
+def test_notice_gate_checks_topic_and_every_sentence_ending_without_fixed_char_cap():
     segment = dict(kind='notice', title='로봇산업전 사전등록 안내', source_text='로봇산업전 안내',
                    reference='로봇산업전 사전등록 안내', required=[],
-                   constraints=dict(max_chars=50, sentence_count=(1, 2), topic_terms=['로봇산업전']))
+                   constraints=dict(sentence_count=(1, 2), topic_terms=['로봇산업전']))
     assert not _script_errors('로봇산업전 사전등록을 안내해요.', segment)
     assert _script_errors('로봇산업전 사전등록을 안내합니다.', segment)
     assert _script_errors('로봇산업전 안내예요. 자세한 내용은 확인 바랍니다.', segment)
     segment['source_text'] = 'AI'
     segment['title'] = '안내'
     segment['constraints']['topic_terms'] = []
-    long_spoken = 'AI' + '가' * 48
-    assert sum(not c.isspace() for c in long_spoken) <= 50
-    assert sum(not c.isspace() for c in qwen_spoken_text(long_spoken)) > 50
-    assert any('음성 표기' in error for error in _script_errors(long_spoken, segment))
+    long_spoken = 'AI' + '가' * 80 + ' 안내해요.'
+    assert sum(not c.isspace() for c in long_spoken) > 50
+    assert not _script_errors(long_spoken, segment)
 
 
 def test_ollama_payload_and_truncated_output():

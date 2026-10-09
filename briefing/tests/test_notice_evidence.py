@@ -61,7 +61,7 @@ def test_notice_gate_rejects_missing_bound_deadline_time_or_submission_details()
     evidence = notice_generation_evidence(body, '학부 프로그램 신청 안내')
     segment = dict(kind='notice', title='학부 프로그램 신청 안내', source_text='full original',
                    generation_evidence=evidence,
-                   constraints={'max_chars': 50, 'sentence_count': (1, 2),
+                   constraints={'sentence_count': (1, 2),
                                 'required_source_facts': notice_required_anchors(evidence)})
 
     assert _script_errors('학부 프로그램 신청자는 10월 10일 16시까지 이메일로 신청해요.', segment)
@@ -79,7 +79,7 @@ def test_event_gate_accepts_supported_date_time_place_and_rejects_swapped_facts(
     evidence = notice_generation_evidence(body, title)
     segment = dict(kind='notice', title=title, source_text=title + '\n' + body,
                    generation_evidence=evidence,
-                   constraints={'max_chars': 50, 'sentence_count': (1, 2),
+                   constraints={'sentence_count': (1, 2),
                                 'required_source_facts': notice_required_anchors(evidence)})
     correct = '교직과정 이수자는 10월 15일 14시부터 15시까지 글로벌플라자에서 적성·인성검사를 받아요.'
     swapped = '교직과정 이수자는 10월 15일 15시부터 16시까지 다른 장소에서 적성·인성검사를 받아요.'
