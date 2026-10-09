@@ -61,6 +61,9 @@ def run_batches(root, expected_path, kernel_dir, output, logs, *, resume_kernel=
         kernel = expected['kernel_id']
         pushed = cli(['kernels', 'push', '--path', str(kernel_dir), '--accelerator', 'NvidiaTeslaT4'])
         version = kaggle.parse_kernel_version(pushed.stdout + pushed.stderr)
+        # 워크플로가 취소되면 이 커널을 삭제해 GPU 사용을 멈춘다.
+        output.parent.mkdir(parents=True, exist_ok=True)
+        (output.parent / 'current-kernel.txt').write_text(kernel)
         if os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:
                 stream.write(f'kernel_id={kernel}\nkernel_version={version}\n')

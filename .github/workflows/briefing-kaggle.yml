@@ -55,6 +55,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: 시작 시각 기록
+        run: echo "JOB_STARTED=$(date +%s)" >> "$GITHUB_ENV"
       - name: 고정 버전 Kaggle CLI 설치
         run: python -m pip install --disable-pip-version-check -r requirements.txt 'kaggle==2.2.4' 'mutagen>=1.47,<2'
       - name: 날짜와 최소 코드·자료 스냅샷 준비
@@ -120,6 +122,24 @@ jobs:
           else
             echo 'Kaggle가 버전 번호를 반환하지 않아 실행 산출물을 특정하지 못했습니다.' > "$KAGGLE_LOGS"
           fi
+      # Kaggle 커널은 GitHub 실행을 취소해도 계속 돌며 GPU 한도를 쓴다. 커널을 삭제하면 실행도 멈춘다(2026-10-09 확인).
+      - name: 취소되면 실행 중인 Kaggle 커널 삭제
+        if: cancelled()
+        run: |
+          # 6시간 제한으로 끝난 실행은 커널을 남겨 '완료된 Kaggle 음성 자동 게시'가 이어받게 한다.
+          if [ $(( $(date +%s) - JOB_STARTED )) -ge 21000 ]; then
+            echo '시간 제한으로 끝난 실행이라 커널을 남깁니다.'; exit 0
+          fi
+          kernel="$(cat .cache/kaggle/current-kernel.txt 2>/dev/null || true)"
+          if [ -z "$kernel" ]; then echo '올린 커널이 없습니다.'; exit 0; fi
+          state="$(kaggle kernels status "$kernel" 2>&1 | tail -1)"
+          # 이미 끝난 커널은 이어가기에 쓰는 저장 결과이므로 지우지 않는다.
+          case "$state" in
+            *RUNNING*|*QUEUED*) kaggle kernels delete -y "$kernel"; echo "실행 중이던 커널을 삭제했습니다: $kernel" ;;
+            *) echo "실행 중이 아니어서 남깁니다: $state"; exit 0 ;;
+          esac
+          # 삭제한 실행을 자동 게시 워크플로가 기다리지 않게 한다.
+          echo cancelled > .cache/kaggle/publish-requested.txt
       - name: 비공개 검증 artifact 보관
         if: always()
         uses: actions/upload-artifact@v7
