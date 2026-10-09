@@ -69,7 +69,7 @@ segments: [ {
 } ]
 ```
 
-- 이 파일은 `briefing.app_export`가 생성하며 Cloudflare Pages 앱이 읽는다. 이전 `web/public/briefings/<날짜>/briefing.json` 경로를 사용하지 않는다.
+- 이 파일은 `briefing.app_export`가 생성하며 GitHub Pages로 배포한 앱이 읽는다. 이전 `web/public/briefings/<날짜>/briefing.json` 경로를 사용하지 않는다.
 - `segments[].audio`는 이 폴더 안 MP3 파일명이다. 한 앱 구간에 여러 내부 대본이 합쳐질 수 있다.
 - `cues`는 합쳐진 MP3에서 원래 음성 파일별 대본과 시작·끝 초를 보존한다. 문장별 정렬 값이 아니다. 없는 이전 출력은 녹음 전체를 한 말풍선으로 표시하며 글자 수로 문장 전환을 추정하지 않는다. 이름 인사는 실제 기기 음성의 문장 시작 이벤트로 표시한다. 기본 인사 MP3로 대체하면 화면에도 이름 없는 `script`를 표시한다.
 - 공통 인사·날씨·이벤트는 `intro`, 개인화 가능한 이름 없는 인사는 선택적 `greeting`, 마무리는 `outro`로 전달한다. 실제 학생 이름은 포함하지 않는다.

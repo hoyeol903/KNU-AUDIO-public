@@ -27,9 +27,10 @@
 cron-job.org의 `KNU-AUDIO 매일 수집` 작업(8595508)이 매일 **01:07 Asia/Seoul**에 GitHub의 `workflow_dispatch`를 호출한다. 수집은 GitHub Actions에서 계속 실행한다. GitHub 자체 `schedule`은 제거했으며, 이전 변수 `ENABLE_COLLECTION`은 더 이상 수집을 제어하지 않는다. 기존 HTTP 규칙을 유지하고 DB를 갱신하는 실행은 동시에 하나만 진행한다. 대기 후 최신 기본 브랜치에서 시작한다.
 
 - 예약 관리: https://console.cron-job.org/jobs/8595508 — `Enable job`을 끄면 자동 수집을 중지한다. Actions의 수동 실행은 유지한다.
-- 요청: `POST https://api.github.com/repos/hoyeol903/KNU-AUDIO/actions/workflows/collect.yml/dispatches`, JSON 본문 `{"ref":"main","inputs":{"collection_mode":"full","retry_report":""}}`.
+- 요청: `POST https://api.github.com/repos/hoyeol903/KNU-AUDIO-public/actions/workflows/collect.yml/dispatches`, JSON 본문 `{"ref":"main","inputs":{"collection_mode":"full","retry_report":""}}`.
 - 헤더: `Accept: application/vnd.github+json`, `Content-Type: application/json`, `Authorization: Bearer <토큰>`. 실제 토큰은 예약 서비스에만 저장하며 저장소·로그·문서에 넣지 않는다.
-- 토큰은 `KNU-AUDIO-cron`, KNU-AUDIO만 선택, Actions Read and write, Metadata Read-only. 현재 만료일은 **2026-11-06**이다. 만료 전에 사용자가 재발급하고 예약 서비스의 Authorization 값을 교체해야 한다. GitHub 토큰 설정: https://github.com/settings/personal-access-tokens
+- 토큰은 `KNU-AUDIO-cron`, KNU-AUDIO-public만 선택, Actions Read and write, Metadata Read-only. 현재 만료일은 **2026-11-06**이다. 만료 전에 사용자가 재발급하고 예약 서비스의 Authorization 값을 교체해야 한다. GitHub 토큰 설정: https://github.com/settings/personal-access-tokens
+- 아래 연결 테스트는 이전 비공개 저장소 기준이다. 공개 저장소로 옮긴 뒤 예약 서비스의 요청 주소와 토큰의 저장소 선택을 위 값으로 바꿔야 하며, 바꾼 뒤의 연결 확인은 아직 이 문서에 기록되지 않았다.
 - 2026-10-07 연결 테스트에서 HTTP 204(1.78초)를 받았고 [실제 수집](https://github.com/hoyeol903/KNU-AUDIO/actions/runs/37573281219)이 13:49 한국시간에 시작됐다. 이는 연결 성공 확인이며 수집 완료나 정시 예약 실행의 보장은 아니다.
 - 예약 서비스의 성공은 GitHub가 요청을 접수했다는 뜻이다. 수집 실패는 GitHub 실행 보고서와 기존 이슈 알림에서 확인한다. 401/403이면 토큰 만료·저장소 선택·Actions 쓰기 권한을 확인한다.
 

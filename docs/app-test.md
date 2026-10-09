@@ -48,19 +48,19 @@ GitHub Pages의 branch 게시 폴더 선택은 저장소 루트 또는 `docs`만
 
 주소 끝에 `?test`를 붙이면 테스트 패널(밝기, 바로 가기, 저장 지우기)이 보인다.
 
-## 배포: Cloudflare Pages (2026-10-03)
+## 배포: GitHub Pages (2026-10-09)
 
-저장소가 비공개라 GitHub Pages 대신 Cloudflare Pages(`knu-audio` 프로젝트, https://knu-audio.pages.dev)에 올린다. Cloudflare에 저장소를 연결하지 않고 GitHub Actions(`.github/workflows/deploy.yml`)가 파일을 직접 올린다.
+공개 저장소로 옮기면서 GitHub Pages(https://hoyeol903.github.io/KNU-AUDIO-public/)에 올린다. GitHub Actions(`.github/workflows/deploy.yml`)가 파일을 직접 올리며, 저장소 Settings → Pages의 Source는 GitHub Actions다. 이전 Cloudflare Pages 사이트(`knu-audio.pages.dev`)는 더 이상 이 저장소에서 배포하지 않는다.
 
 | 언제 | 설명 |
 | --- | --- |
 | `main`에서 `output/app/`이 바뀐 push | PR 머지 포함 |
 | "매일 경북대 자료 수집" 워크플로 완료 | 자동 커밋은 push 트리거를 시작시키지 않아 완료 이벤트로 잇는다 |
-| 수동 실행 | Actions 탭 → "Cloudflare Pages 배포" → Run workflow |
+| 수동 실행 | Actions 탭 → "GitHub Pages 배포" → Run workflow |
 
-저장소 Secret `CLOUDFLARE_API_TOKEN`(Cloudflare Pages 편집 권한)이 필요하다.
+배포에 별도 Secret은 필요하지 않다.
 
-새 화면(`index.html`)과 그 자료(`data/`)만 올린다. 이전 시험 화면(`legacy.html`, `data.json`, `details/`)은 올리지 않는다. 주소(`*.pages.dev`)를 아는 사람은 누구나 볼 수 있다.
+새 화면(`index.html`)과 그 자료(`data/`)만 올린다. 이전 시험 화면(`legacy.html`, `data.json`, `details/`)은 올리지 않는다. 배포한 사이트는 누구나 볼 수 있다.
 
 
 ## 월 일정·교류 구역·저장 공지 (2026-10-07)
