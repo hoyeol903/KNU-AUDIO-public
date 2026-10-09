@@ -210,3 +210,7 @@ python -m collector.run --retry-failed --write-items
 ### 음성 보관
 
 게시된 음성은 새 브리핑을 올릴 때 마지막 사용일 기준 최근 14일치만 보관합니다. 최신 브리핑이 사용하는 음성은 항상 보존합니다. [보관 정책](docs/audio-retention.md)을 참고하세요.
+
+### 음성 이용 통계
+
+기존 Google Analytics에 재생 시작·끝까지 들음·중간 멈춤을 기록합니다. 이름·학과·공지 내용은 보내지 않습니다. [통계 확인 방법](docs/audio-analytics.md)을 참고하세요.
