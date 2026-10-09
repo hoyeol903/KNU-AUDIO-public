@@ -9,7 +9,7 @@ const engine = html.slice(html.indexOf('function mode('), html.indexOf('function
 let now = 0, tick, queue = [], painted = [];
 const audio = {paused:true, readyState:1, currentTime:0, attrs:{}, events:{},
   getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;},
-  addEventListener(k,fn){this.events[k]=fn;}, pause(){this.paused=true;}, play(){this.paused=false;}};
+  load(){}, addEventListener(k,fn){this.events[k]=fn;}, pause(){this.paused=true;}, play(){this.paused=false;}};
 const speech = {getVoices:()=>[{lang:'ko-KR'}], cancel(){queue=[];}, speak(u){queue.push(u);}};
 const c = vm.createContext({console, A:audio, P:{ch:0,chT:0,gen:0,playing:false,last:0},
   S:{voice:true,speed:1}, CH:[], window:{speechSynthesis:speech}, speechSynthesis:speech,

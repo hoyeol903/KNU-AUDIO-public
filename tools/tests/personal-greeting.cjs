@@ -12,7 +12,7 @@ const cues = script.slice(script.indexOf('function sentences(t)'), script.indexO
 function setup(korean = true) {
   const spoken = [];
   const audio = { duration: 2, currentTime: 0, playCount: 0, pauseCount: 0, attrs: {},
-    addEventListener(){}, pause(){this.pauseCount++;}, play(){this.playCount++;return Promise.resolve();},
+    load(){}, addEventListener(){}, pause(){this.pauseCount++;}, play(){this.playCount++;return Promise.resolve();},
     getAttribute(k){return this.attrs[k];}, setAttribute(k,v){this.attrs[k]=v;} };
   const speech = { getVoices(){return korean ? [{lang:'ko-KR'}] : [];}, cancel(){}, speak(u){spoken.push(u);} };
   const context = { Audio: function(){return audio;}, window: {speechSynthesis:speech}, speechSynthesis:speech,

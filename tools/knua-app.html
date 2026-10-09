@@ -891,7 +891,7 @@ function syncBgm(){
   var at = isFinite(A.currentTime) ? A.currentTime : P.chT;
   var playing = P.playing;
   P.playToken++; A.pause();
-  A.setAttribute('data-src', src); A.src = src;
+  A.setAttribute('data-src', src); A.src = src; A.load();
   P.chT = at; P.pend = at; A.muted = !S.voice;
   if (playing) { startChapter(true); if (A.readyState >= 1) applyPend(); }
 }
@@ -951,7 +951,7 @@ function startChapter(resume){
   stopVoice();
   if (m !== 'audio') { A.pause(); if (m === 'tts') speakChapter(resume ? sentAt(c, P.chT) : 0); return; }
   var src = audioUrl(S.bgm && c.audio_bgm && !c.bgmFailed ? c.audio_bgm : c.audio);
-  if (A.getAttribute('data-src') !== src) { A.setAttribute('data-src', src); A.src = src; }
+  if (A.getAttribute('data-src') !== src) { A.setAttribute('data-src', src); A.src = src; A.load(); }
   else if (!resume) { try { A.currentTime = 0; } catch (e) {} }
   A.playbackRate = S.speed; A.muted = !S.voice;
   var token = ++P.playToken, pr = A.play();
@@ -982,8 +982,10 @@ function seekTo(ch, t){
   media(); render(false);
 }
 /* 다른 구간 파일로 옮길 때는 파일 길이를 안 뒤에야 위치를 바꿀 수 있다. */
-function applyPend(){ if (P.pend == null) return; try { A.currentTime = P.pend; } catch (e) {} P.pend = null; }
+function applyPend(){ if (P.pend == null || A.readyState < 2 || !A.seekable.length) return; try { A.currentTime = P.pend; P.pend = null; } catch (e) {} }
 A.addEventListener('loadedmetadata', applyPend);
+A.addEventListener('loadeddata', applyPend);
+A.addEventListener('canplay', applyPend);
 function audioProgress(){ if (CH[P.ch] && mode() === 'audio' && P.pend == null) { P.chT = Math.min(A.currentTime, CH[P.ch].est); paintProgress(); } }
 A.addEventListener('timeupdate', audioProgress);
 A.addEventListener('seeked', audioProgress);
