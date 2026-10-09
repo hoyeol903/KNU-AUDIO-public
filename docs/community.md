@@ -1,6 +1,6 @@
 # 교류 모집글 공유
 
-이 저장소의 홈페이지는 GitHub Pages에 배포된다. GitHub Pages는 공유 API를 실행하지 않는다. 교류 상세·작성 화면과 예시는 바로 사용할 수 있으며, 실제 모집글 공유·신청은 별도로 배포한 Cloudflare Pages Functions API와 D1을 연결해야 한다. 글 제목을 누르면 상세 설명, 일정·장소, 참가 조건·비용, 인스타그램 또는 오픈카카오톡 참가 문의 링크를 볼 수 있다. 과팅은 팀·팀별 인원·희망 상대, 스터디는 공부 주제·목표, 소모임은 주요 활동을 입력한다.
+이 저장소의 홈페이지는 GitHub Pages에 배포된다. GitHub Pages는 공유 API를 실행하지 않는다. 교류 상세·작성 화면과 예시는 바로 사용할 수 있으며, 실제 모집글 공유·신청은 개인 계정의 Cloudflare Workers API와 D1에 연결한다. 글 제목을 누르면 상세 설명, 일정·장소, 참가 조건·비용, 인스타그램 또는 오픈카카오톡 참가 문의 링크를 볼 수 있다. 과팅은 팀·팀별 인원·희망 상대, 스터디는 공부 주제·목표, 소모임은 주요 활동을 입력한다.
 
 ## 공유와 작성자 권한
 
@@ -67,3 +67,7 @@ npx wrangler@4 deploy --config community/wrangler.local.toml
 `wrangler.local.toml`은 커밋하지 않는다. 배포 결과의 workers.dev 주소에 `/api/community/`를 붙여 홈페이지의 `window.KNUA_COMMUNITY_API_BASE`에 설정한다. 백엔드는 `COMMUNITY_ALLOWED_ORIGINS=https://hoyeol903.github.io`로 브라우저 요청을 허용한다. API가 실제 배포되지 않았거나 이메일 인증이 끝나지 않았으면 홈페이지를 연결 완료로 표시하지 않는다. API 토큰은 HTML에 넣지 않는다.
 
 `node community/test_worker.mjs`로 Workers 진입점의 경로 처리, API 미연결 오류, GitHub Pages preflight를 확인한다. 운영 검증은 별도 브라우저의 글 조회·작성자 권한·신청 정보 비공개를 확인한 뒤 테스트 글을 삭제한다.
+
+## 현재 GitHub Pages 연결
+
+GitHub Pages 기본 API 주소는 `https://knua-community-api.knua-public-pr73.workers.dev/api/community/`이다. `tools/knua-app.html`과 `output/app/index.html`에 함께 설정되어 있으며 `window.KNUA_COMMUNITY_API_BASE`로 재정의할 수 있다. 로컬·같은 출처의 Cloudflare Pages 기본 경로는 `/api/community/`이다.

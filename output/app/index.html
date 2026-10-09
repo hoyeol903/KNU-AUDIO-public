@@ -1495,8 +1495,8 @@ function teamBadge(t){ return MEET_TEAMS[t] ? '<span class="badge ' + (t === 'm'
 function teamChips(sel, act){ return '<div class="chips" role="group" aria-label="우리 팀">' + ['m', 'f'].map(function(t){ return '<button class="chip-btn" data-act="' + act + '" data-t="' + t + '" aria-pressed="' + (sel === t) + '">' + MEET_TEAMS[t] + '</button>'; }).join('') + '</div>'; }
 function myMeets(){ return Array.isArray(store.meetMine) ? store.meetMine : []; }
 /* 공유 교류. 인증 토큰은 브라우저에만 보관하고 공개 응답에는 포함하지 않는다. */
-/* GitHub Pages에서는 별도 API를 연결하기 전까지 공유 기능을 준비 중으로 표시한다. */
-var COMMUNITY_API_BASE = window.KNUA_COMMUNITY_API_BASE || (/\.github\.io$/.test(location.hostname) ? '' : '/api/community/');
+/* GitHub Pages의 공유 교류는 Cloudflare Workers + D1에 연결한다. */
+var COMMUNITY_API_BASE = window.KNUA_COMMUNITY_API_BASE || (/\.github\.io$/.test(location.hostname) ? 'https://knua-community-api.knua-public-pr73.workers.dev/api/community/' : '/api/community/');
 var COMMUNITY = { rows: [], counts: {}, cursor: null, status: 'idle', error: '', category: '', mine: false, gen: 0, busy: false, detail: null, applicants: null };
 function communityToken(){
   var key = 'knua-community-device-v1', token;
