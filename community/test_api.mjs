@@ -24,7 +24,7 @@ assert.equal((await call('','POST',{...post,id:crypto.randomUUID(),capacity:2.5}
 assert.equal((await call('','POST',post,null)).status,401);
 assert.equal((await call('','POST',post,owner,{headers:{Origin:'https://evil.example'}})).status,403);
 const application={name:'참가자',message:'화요일 가능해요',contact:'https://www.instagram.com/testparticipant/',team:''};
-assert.equal((await call('/'+post.id+'/applications','POST',{...application,contact:''},other)).status,400); // 신청은 모집자가 연락할 링크가 필수.
+assert.equal((await call('/'+post.id+'/applications','POST',{...application,contact:'https://example.com/me'},other)).status,400); // 링크를 적었다면 인스타그램·오픈카톡만.
 assert.equal((await call('/'+post.id+'/applications','POST',application,other)).status,200);
 assert.equal((await call('/'+post.id+'/applications','POST',application,other)).status,200);
 assert.equal((await call('/'+post.id,'GET',undefined,other)).body.item.applicationCount,1);
@@ -35,6 +35,10 @@ assert.equal((await call('/'+post.id+'/applications','DELETE',undefined,stranger
 assert.equal((await call('/'+post.id)).body.item.applicationCount,1);
 assert.equal((await call('/'+post.id+'/applications','DELETE',undefined,other)).status,200);
 assert.equal((await call('/'+post.id)).body.item.applicationCount,0);
+// 신청 연락 링크도 선택이다. 비워도 신청되고 모집자에게는 빈 값으로 보인다.
+assert.equal((await call('/'+post.id+'/applications','POST',{...application,contact:''},stranger)).status,200);
+r=await call('/'+post.id+'/applications');assert.equal(r.body.items.length,1);assert.equal(r.body.items[0].contact,'');
+assert.equal((await call('/'+post.id+'/applications','DELETE',undefined,stranger)).status,200);
 assert.equal((await call('/'+post.id,'PUT',{...post,closed:true})).status,200);
 assert.equal((await call()).body.items.length,0);
 assert.equal((await call('?mine=1')).body.items.length,1);
