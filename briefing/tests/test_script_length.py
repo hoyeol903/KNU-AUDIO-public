@@ -1,6 +1,6 @@
 from briefing.review import review, revision_feedback
 from briefing.content import NOTICE_STYLES, daily_variant
-from briefing.slm import fit_length, generate_segments, normalize_notice_endings, _script_payload
+from briefing.slm import Ollama, fit_length, generate_segments, normalize_notice_endings, _script_payload
 
 
 def notice(limit=40, **extra):
@@ -68,4 +68,20 @@ def test_notice_style_rotates_daily_and_reaches_the_model():
     assert daily_variant('2026-10-09') == daily_variant('2026-10-09')
     assert _script_payload(dict(notice(), style_instruction=NOTICE_STYLES[1]))['style_instruction'] == NOTICE_STYLES[1]
     assert 'style_instruction' not in _script_payload(notice())
+
+
+def test_prompt_states_the_character_limit_as_a_number():
+    sent = {}
+    class Session:
+        def post(self, url, json, timeout):
+            sent.update(json)
+            class Response:
+                def raise_for_status(self): pass
+                def json(self): return dict(done=True, response='{"script": "장학금 신청이 열렸어요."}')
+            return Response()
+    client = Ollama(dict(model='m'), session=Session())
+    client.generate(_script_payload(notice(140)), [])
+    assert sent['prompt'].startswith('대본은 공백 포함 140자 이내로 쓰세요.') and sent['prompt'].rstrip().endswith('140자 이내여야 합니다.')
+    client.generate(_script_payload(dict(notice(), constraints={})), [])
+    assert '자 이내' not in sent['prompt']
 
