@@ -1,8 +1,8 @@
 /* Pages Functions + D1. Browser capability tokens are hashed; no admin key is sent to clients. */
 const categories = ['dating', 'study', 'club'];
-const json = (data, status = 200) => new Response(JSON.stringify(data), {status, headers: {'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff'}});
-class Problem extends Error { constructor(status, message) { super(message); this.status = status; } }
-function text(body, key, max, required = false) {
+export const json = (data, status = 200) => new Response(JSON.stringify(data), {status, headers: {'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff'}});
+export class Problem extends Error { constructor(status, message) { super(message); this.status = status; } }
+export function text(body, key, max, required = false) {
   const value = body[key] == null ? '' : body[key];
   if (typeof value !== 'string' || value.length > max || /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(value)) throw new Problem(400, `${key} 입력을 확인해 주세요.`);
   const result = value.trim();
@@ -32,13 +32,13 @@ export function validatePost(body) {
   }
   return p;
 }
-async function hash(value) { return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)))).map(x => x.toString(16).padStart(2, '0')).join(''); }
+export async function hash(value) { return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)))).map(x => x.toString(16).padStart(2, '0')).join(''); }
 async function identity(request, required = false) {
   const match = /^Bearer ([a-f0-9]{64})$/.exec(request.headers.get('Authorization') || '');
   if (!match && required) throw new Problem(401, '작성자 인증을 준비하지 못했어요. 브라우저 저장 설정을 확인해 주세요.');
   return match ? hash(match[1]) : '';
 }
-async function readBody(request) {
+export async function readBody(request) {
   if (!(request.headers.get('Content-Type') || '').includes('application/json')) throw new Problem(415, 'JSON 요청만 가능해요.');
   if (Number(request.headers.get('Content-Length')) > 16000) throw new Problem(413, '입력 내용이 너무 길어요.');
   const reader = request.body?.getReader(); if (!reader) throw new Problem(400, '입력 내용이 없어요.');
@@ -50,8 +50,8 @@ async function readBody(request) {
 async function rate(db, request, owner, action) {
   const day = new Date().toISOString().slice(0, 10);
   const ip = request.headers.get('CF-Connecting-IP');
-  const keys = [[`device:${owner}:${action}`, action === 'post' ? 20 : 100]];
-  if (ip) keys.push([`ip:${await hash(ip)}:${action}`, action === 'post' ? 100 : 500]);
+  const keys = [[`device:${owner}:${action}`, action === 'post' ? 20 : action === 'report' ? 10 : 100]];
+  if (ip) keys.push([`ip:${await hash(ip)}:${action}`, action === 'post' ? 100 : action === 'report' ? 50 : 500]);
   for (const [key, max] of keys) {
     const row = await db.prepare('INSERT INTO community_limits (key, day, count) VALUES (?, ?, 1) ON CONFLICT(key) DO UPDATE SET day=excluded.day, count=CASE WHEN community_limits.day=excluded.day THEN community_limits.count+1 ELSE 1 END RETURNING count').bind(key, day).first();
     if (row.count > max) throw new Problem(429, '오늘 등록 횟수를 초과했어요. 내일 다시 시도해 주세요.');
@@ -63,7 +63,7 @@ const decisions = ['accepted', 'rejected'];
 const titleOf = payload => JSON.parse(payload).title || '';
 // 모집자에게는 신청자 인증값 대신 글마다 다른 짧은 번호만 보여 준다.
 async function applicationRef(postId, applicant) { return (await hash(`${postId}:${applicant}`)).slice(0, 32); }
-function publicPost(row, owner) { return {...JSON.parse(row.payload), id: row.id, shared: true, mine: !!owner && row.owner_hash === owner, closed: !!row.closed, createdAt: row.created_at, updatedAt: row.updated_at, applicationCount: row.application_count || 0}; }
+function publicPost(row, owner) { return {...JSON.parse(row.payload), id: row.id, shared: true, mine: !!owner && row.owner_hash === owner, closed: !!row.closed, hidden: !!row.hidden, createdAt: row.created_at, updatedAt: row.updated_at, applicationCount: row.application_count || 0}; }
 async function rowById(db, id) { return db.prepare('SELECT * FROM community_posts WHERE id=?').bind(id).first(); }
 function allowedOrigin(request, env) {
   const origin = request.headers.get('Origin');
@@ -94,15 +94,15 @@ async function routeCommunity(request, env) {
     if (parts[0] === 'applications' && parts.length === 1 && method === 'GET') {
       // 내가 신청한 모집글과 수락·거절 결과.
       if (!owner) throw new Problem(401, '신청자 인증이 필요해요.');
-      const result = await db.prepare('SELECT a.post_id, a.status, a.reason, a.decided_at, a.created_at, a.applicant_seen, p.payload, p.category, p.closed FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? ORDER BY a.created_at DESC LIMIT 100').bind(owner).all();
+      const result = await db.prepare('SELECT a.post_id, a.status, a.reason, a.decided_at, a.created_at, a.applicant_seen, p.payload, p.category, p.closed FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? AND p.hidden=0 ORDER BY a.created_at DESC LIMIT 100').bind(owner).all();
       return json({items: result.results.map(r => ({postId: r.post_id, title: titleOf(r.payload), category: r.category, closed: !!r.closed, status: r.status, reason: r.reason, decidedAt: r.decided_at || null, createdAt: r.created_at, unread: r.status !== 'pending' && !r.applicant_seen}))});
     }
     if (parts[0] === 'notifications') {
       if (!owner) throw new Problem(401, '알림을 확인하려면 인증이 필요해요.');
       if (parts.length === 1 && method === 'GET') {
         // 모집자: 아직 확인하지 않은 새 신청. 신청자: 아직 확인하지 않은 수락·거절 결과.
-        const incoming = await db.prepare('SELECT a.post_id, a.name, a.team, a.created_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE p.owner_hash=? AND a.owner_seen=0 ORDER BY a.created_at DESC LIMIT 50').bind(owner).all();
-        const decided = await db.prepare("SELECT a.post_id, a.status, a.reason, a.decided_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? AND a.applicant_seen=0 AND a.status<>'pending' ORDER BY a.decided_at DESC LIMIT 50").bind(owner).all();
+        const incoming = await db.prepare('SELECT a.post_id, a.name, a.team, a.created_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE p.owner_hash=? AND p.hidden=0 AND a.owner_seen=0 ORDER BY a.created_at DESC LIMIT 50').bind(owner).all();
+        const decided = await db.prepare("SELECT a.post_id, a.status, a.reason, a.decided_at, p.payload FROM community_applications a JOIN community_posts p ON p.id=a.post_id WHERE a.applicant_hash=? AND p.hidden=0 AND a.applicant_seen=0 AND a.status<>'pending' ORDER BY a.decided_at DESC LIMIT 50").bind(owner).all();
         const items = incoming.results.map(r => ({kind: 'applied', postId: r.post_id, title: titleOf(r.payload), name: r.name, team: r.team, at: r.created_at}))
           .concat(decided.results.map(r => ({kind: r.status, postId: r.post_id, title: titleOf(r.payload), reason: r.reason, at: r.decided_at})))
           .sort((a, b) => b.at - a.at);
@@ -127,12 +127,12 @@ async function routeCommunity(request, env) {
       const [time, id] = cursor.split(':');
       const mine = url.searchParams.get('mine') === '1';
       if (mine && !owner) throw new Problem(401, '작성자 인증이 필요해요.');
-      let sql = mine ? 'SELECT * FROM community_posts WHERE owner_hash=?' : 'SELECT * FROM community_posts WHERE closed=0', args = mine ? [owner] : [];
+      let sql = mine ? 'SELECT * FROM community_posts WHERE owner_hash=?' : 'SELECT * FROM community_posts WHERE closed=0 AND hidden=0', args = mine ? [owner] : [];
       if (category) { sql += ' AND category=?'; args.push(category); }
       if (cursor) { sql += ' AND (created_at < ? OR (created_at = ? AND id < ?))'; args.push(Number(time), Number(time), id); }
       sql += ' ORDER BY created_at DESC, id DESC LIMIT 31';
       const result = await db.prepare(sql).bind(...args).all(), rows = result.results.slice(0, 30);
-      const counts = await db.prepare('SELECT category, COUNT(*) AS count FROM community_posts WHERE closed=0 GROUP BY category').all();
+      const counts = await db.prepare('SELECT category, COUNT(*) AS count FROM community_posts WHERE closed=0 AND hidden=0 GROUP BY category').all();
       const last = rows.at(-1);
       return json({items: rows.map(r => publicPost(r, owner)), counts: Object.fromEntries(counts.results.map(r => [r.category, r.count])), nextCursor: result.results.length > 30 ? `${last.created_at}:${last.id}` : null});
     }
@@ -151,6 +151,15 @@ async function routeCommunity(request, env) {
     if (!id || !/^[a-f0-9-]{36}$/.test(id)) throw new Problem(404, '모집글을 찾을 수 없어요.');
     const row = await rowById(db, id);
     if (!row) throw new Problem(404, '삭제되었거나 없는 모집글이에요.');
+    if (row.hidden && row.owner_hash !== owner && !(parts.length === 3 && parts[2] === 'applications' && method === 'DELETE')) throw new Problem(404, '관리자가 숨긴 모집글이거나 없는 글이에요.');
+    if (parts.length === 3 && parts[2] === 'reports' && method === 'POST') {
+      const reason = text(await readBody(request), 'reason', 300, true);
+      const old = await db.prepare('SELECT post_id FROM community_reports WHERE post_id=? AND reporter_hash=?').bind(id, owner).first();
+      if (old) return json({ok: true});
+      await rate(db, request, owner, 'report');
+      await db.prepare('INSERT INTO community_reports (post_id, reporter_hash, reason, created_at) VALUES (?, ?, ?, ?) ON CONFLICT(post_id, reporter_hash) DO NOTHING').bind(id, owner, reason, Date.now()).run();
+      return json({ok: true}, 201);
+    }
     if (parts.length === 2) {
       if (method === 'GET') {
         const item = publicPost(row, owner);
@@ -192,7 +201,7 @@ async function routeCommunity(request, env) {
       }
       if (row.owner_hash === owner) throw new Problem(400, '내 모집글에는 신청할 수 없어요.');
       if (method === 'POST') {
-        if (row.closed) throw new Problem(409, '모집이 마감되었어요.');
+        if (row.hidden || row.closed) throw new Problem(409, '모집이 숨겨졌거나 마감되었어요.');
         const body = await readBody(request), name = text(body, 'name', 30, true), message = text(body, 'message', 500), contact = contactLink(text(body, 'contact', 500)), team = text(body, 'team', 1);
         if (row.category === 'dating' && !['m', 'f'].includes(team)) throw new Problem(400, '신청하는 팀을 선택해 주세요.');
         await rate(db, request, owner, 'apply');

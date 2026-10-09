@@ -202,3 +202,7 @@ python -m collector.run --retry-failed --write-items
 호반우 그림(`tools/hobanu/`, `tools/avatars/`)은 팀이 생성형 AI로 직접 만든 이미지입니다. 외부 모델과 라이브러리는 [THIRD-PARTY.md](THIRD-PARTY.md)를 참고하세요. `.env`, API 토큰과 모델 가중치는 커밋하지 않습니다.
 
 운영 저장소는 **hoyeol903/KNU-AUDIO-public**입니다. 기존 `KNU-AUDIO`는 비공개 기록 보관용이며 과거 Git 이력·PR·Actions 기록·artifact를 이 공개 저장소로 옮기지 않습니다.
+
+### 모임 신고·관리자
+
+공유 모집글에서 신고하고, 모임 서버의 `/admin`에서 관리자가 숨김·해제할 수 있습니다. 서버 배포·계정 등록 후 사용할 수 있으며 [설정 안내](docs/community-admin.md)를 참고하세요.
