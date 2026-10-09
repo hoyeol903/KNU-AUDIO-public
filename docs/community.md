@@ -52,7 +52,7 @@ DB 바인딩 이름은 `COMMUNITY_DB`. preview와 production DB는 분리한다.
 
 ## 개인 Cloudflare 계정의 Workers + D1로 API만 배포
 
-홈페이지는 GitHub Pages에 유지하고 `community/worker.mjs`로 공유 API만 Workers에 배포할 수 있다. 팀장의 Cloudflare 계정 권한을 받지 않아도 된다. 배포하는 계정의 이메일 인증과 Workers·D1 권한은 필요하다.
+홈페이지는 GitHub Pages에 유지하고 `community/worker.mjs`로 공유 API만 Workers에 배포할 수 있다. 팀장의 Cloudflare 계정 권한을 받지 않아도 된다. 배포하는 계정의 이메일 인증과 Workers·D1 권한은 필요하다. 새 프로필 화면의 이메일 재발송은 [Authentication → Two-Factor Authentication](https://dash.cloudflare.com/profile/access-management/authentication/two-factor)의 `Send verification email`에서 할 수 있다. 메일의 인증 링크를 완료해야 한다.
 
 ```bash
 npx wrangler@4 login
