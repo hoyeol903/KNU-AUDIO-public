@@ -177,12 +177,18 @@ async function routeCommunity(request, env) {
     if (parts.length === 3 && parts[2] === 'applications') {
       if (method === 'GET') {
         if (!owner || row.owner_hash !== owner) throw new Problem(403, '모집자만 신청 내역을 볼 수 있어요.');
-        const result = await db.prepare('SELECT applicant_hash, name, team, message, contact, created_at, status, reason, decided_at FROM community_applications WHERE post_id=? ORDER BY created_at DESC LIMIT 100').bind(id).all();
-        // 모집자가 신청 내역을 열었으면 이 글의 새 신청 알림은 확인한 것으로 둔다.
-        await db.prepare('UPDATE community_applications SET owner_seen=1 WHERE post_id=? AND owner_seen=0').bind(id).run();
-        const items = [];
-        for (const r of result.results) items.push({ref: await applicationRef(id, r.applicant_hash), name: r.name, team: r.team, message: r.message, contact: r.contact, created_at: r.created_at, status: r.status, reason: r.reason, decidedAt: r.decided_at || null});
-        return json({items});
+        const cursor = url.searchParams.get('cursor') || '';
+        if (cursor && !/^\d{1,16}:\d{1,16}$/.test(cursor)) throw new Problem(400, '신청 목록 위치를 확인해 주세요.');
+        const [time, position] = cursor.split(':').map(Number);
+        if (cursor && (!Number.isSafeInteger(time) || !Number.isSafeInteger(position) || position < 1)) throw new Problem(400, '신청 목록 위치를 확인해 주세요.');
+        const boundary = cursor ? ' AND (created_at < ? OR (created_at = ? AND rowid < ?))' : '';
+        const result = await db.prepare('SELECT rowid AS position, applicant_hash, name, team, message, contact, created_at, status, reason, decided_at FROM community_applications WHERE post_id=?' + boundary + ' ORDER BY created_at DESC, rowid DESC LIMIT 31').bind(id, ...(cursor ? [time, time, position] : [])).all();
+        const rows = result.results.slice(0, 30), items = [];
+        // 조회한 신청만 읽음 처리하고, 조회 후 새로 제출된 신청은 남긴다.
+        if (rows.length) await db.prepare('UPDATE community_applications SET owner_seen=1 WHERE post_id=? AND (applicant_hash, created_at) IN (' + rows.map(() => '(?, ?)').join(',') + ')').bind(id, ...rows.flatMap(r => [r.applicant_hash, r.created_at])).run();
+        for (const r of rows) items.push({ref: await applicationRef(id, r.applicant_hash), name: r.name, team: r.team, message: r.message, contact: r.contact, created_at: r.created_at, status: r.status, reason: r.reason, decidedAt: r.decided_at || null});
+        const last = rows.at(-1);
+        return json({items, nextCursor: result.results.length > 30 ? `${last.created_at}:${last.position}` : null});
       }
       if (row.owner_hash === owner) throw new Problem(400, '내 모집글에는 신청할 수 없어요.');
       if (method === 'POST') {
