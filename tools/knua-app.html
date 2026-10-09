@@ -1609,7 +1609,7 @@ function vMeetDetail(){
     if (!p.closed) h += contactButton(p.contact,'참가 문의');
     if (p.mine) {
       h += '<p class="muted" style="font-size:13px">작성자 권한은 이 브라우저에 저장돼요. 브라우저 데이터를 지우면 관리할 수 없어요.</p><div class="chips"><button class="chip-btn" data-act="meetEdit">수정</button><button class="chip-btn" data-act="meetToggleClosed">' + (p.closed ? '모집 다시 열기' : '모집 마감') + '</button><button class="chip-btn" data-act="meetApplicants">신청 내역 (' + p.applicationCount + ')</button><button class="chip-btn" data-act="meetDeleteShared">삭제</button></div>';
-      if (COMMUNITY.applicants) h += '<section class="tile col" style="gap:14px"><h2 style="font-size:18px;margin:0">최근 신청 내역 (최대 100개)</h2>' + (COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){ return '<div class="col" style="gap:8px;border-top:1px solid var(--line);padding-top:12px"><b>' + esc(a.name) + (a.team ? ' · ' + MEET_TEAMS[a.team] : '') + '</b><span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(a.message) + '</span>' + contactButton(a.contact,'신청자에게 연락') + '</div>'; }).join('') : '<p>아직 신청이 없어요.</p>') + '</section>';
+      if (COMMUNITY.applicants) h += '<section class="tile col" style="gap:14px"><h2 style="font-size:18px;margin:0">최근 신청 내역 (최대 100개)</h2>' + (COMMUNITY.applicants.length ? COMMUNITY.applicants.map(function(a){ return '<div class="col" style="gap:8px;border-top:1px solid var(--line);padding-top:12px"><b>' + esc(a.name) + (a.team ? ' · ' + MEET_TEAMS[a.team] : '') + '</b><span style="white-space:pre-wrap;overflow-wrap:anywhere">' + esc(a.message) + '</span>' + (contactButton(a.contact,'신청자에게 연락') || '<span class="muted" style="font-size:13px">연락 링크를 남기지 않았어요.</span>') + '</div>'; }).join('') : '<p>아직 신청이 없어요.</p>') + '</section>';
     } else {
       var applied = (store.communityApplied || {})[p.id];
       if (!p.closed) h += '<button class="btn-pri" data-act="meetApply" data-id="' + esc(p.id) + '">' + (applied ? '신청 내용 수정' : dating ? '우리 팀 신청하기' : '참가 신청하기') + '</button>';
@@ -1633,12 +1633,12 @@ function meetMissing(M){
     if (!(M.intro || '').trim()) need('설명', 'meetIntro');
     if (!(M.when || '').trim()) need(dating ? '희망 날짜·시간' : '모임 요일·시간', 'meetWhen');
   }
-  if ((M.mode === 'apply' || (M.contact || '').trim()) && !validMeetContact(M.contact)) need('인스타그램·오픈카톡 링크', 'meetContact');
+  if ((M.contact || '').trim() && !validMeetContact(M.contact)) need('인스타그램·오픈카톡 링크', 'meetContact');
   return miss;
 }
 function meetReady(M){ return !COMMUNITY.busy && !meetMissing(M).length; }
 function meetContactHint(M){ return (M.contact || '').trim() && !validMeetContact(M.contact) ? '인스타그램(instagram.com)이나 오픈카톡(open.kakao.com) 링크만 올릴 수 있어요.' : ''; }
-function meetHint(M){ var miss = meetMissing(M); return COMMUNITY.busy || !miss.length ? '' : '저장하려면 확인해 주세요: ' + miss.map(function(x){ return x.t; }).join(' · '); }
+function meetHint(M){ var miss = meetMissing(M); return COMMUNITY.busy || !miss.length ? '' : (M.mode === 'apply' ? '보내려면' : '저장하려면') + ' 확인해 주세요: ' + miss.map(function(x){ return x.t; }).join(' · '); }
 /* 입력할 때마다 화면 전체를 다시 그리지 않고 버튼과 안내만 맞춘다(입력 중 커서 유지). */
 function meetSync(){
   var M = S.meetSheet; if (!M) return;
@@ -1663,10 +1663,10 @@ function vMeetSheet(){
     h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시') + meetField('meetWhere','장소·온라인 여부 (선택)',M.where,100,'예: 중앙도서관 스터디룸');
     h += meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물 (선택)' : dating ? '참가 조건 (선택)' : '참가 조건·준비물 (선택)',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true) + meetField('meetCost','참가 비용 (선택)',M.cost,100,'예: 무료 / 음료 각자 부담');
   }
-  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크' : '참가 문의 인스타그램·오픈카톡 링크 (선택)',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
+  h += meetField('meetContact',apply ? '모집자가 연락할 인스타그램·오픈카톡 링크 (선택)' : '참가 문의 인스타그램·오픈카톡 링크 (선택)',M.contact,500,'https://open.kakao.com/o/… 또는 https://www.instagram.com/…');
   var contactHint = meetContactHint(M), hint = meetHint(M);
   h += '<p id="meetContactHint" role="status" style="color:var(--wine-ink);font-size:13px;margin:-6px 0 0"' + (contactHint ? '' : ' hidden') + '>' + esc(contactHint) + '</p>';
-  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p><p id="meetHint" class="muted" style="font-size:13px;line-height:19px;margin:0"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
+  h += '<p class="muted" style="font-size:13px;margin:0">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요. 링크를 남기지 않으면 모집자가 따로 연락하기 어려워요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" style="color:var(--wine-ink);margin:0"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p><p id="meetHint" class="muted" style="font-size:13px;line-height:19px;margin:0"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';
   return h;
 }
 function saveSharedMeeting(){

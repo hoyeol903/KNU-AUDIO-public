@@ -141,7 +141,7 @@ async function routeCommunity(request, env) {
       if (row.owner_hash === owner) throw new Problem(400, '내 모집글에는 신청할 수 없어요.');
       if (method === 'POST') {
         if (row.closed) throw new Problem(409, '모집이 마감되었어요.');
-        const body = await readBody(request), name = text(body, 'name', 30, true), message = text(body, 'message', 500), contact = contactLink(text(body, 'contact', 500, true)), team = text(body, 'team', 1);
+        const body = await readBody(request), name = text(body, 'name', 30, true), message = text(body, 'message', 500), contact = contactLink(text(body, 'contact', 500)), team = text(body, 'team', 1);
         if (row.category === 'dating' && !['m', 'f'].includes(team)) throw new Problem(400, '신청하는 팀을 선택해 주세요.');
         await rate(db, request, owner, 'apply');
         await db.prepare('INSERT INTO community_applications (post_id, applicant_hash, name, team, message, contact, created_at) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(post_id, applicant_hash) DO UPDATE SET name=excluded.name, team=excluded.team, message=excluded.message, contact=excluded.contact').bind(id, owner, name, team, message, contact, Date.now()).run();
