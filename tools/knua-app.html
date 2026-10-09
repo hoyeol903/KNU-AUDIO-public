@@ -1488,35 +1488,8 @@ function createLocalGroup(form, id, profile){
 /* 교류 예시는 실제 자료가 아니다. 신청 표시와 직접 만든 모임은 이 브라우저에만 저장된다. */
 var MEET_SAMPLES = [
   { id: 's1', team: 'm', dept: '전자공학부', college: 'IT대학', size: '3:3', want: '인문대학', when: '10월 셋째 주 금요일 저녁', where: '북문 근처', note: '시험 끝난 기념으로 가볍게 저녁 먹어요.', apply: { m: 0, f: 4 } },
-  { id: 's2', team: 'f', dept: '국어국문학과', college: '인문대학', size: '2:2', want: '공과대학', when: '다음 주 화요일 저녁', where: '동문 카페', note: '보드게임 카페 좋아하시는 분 환영해요!', apply: { m: 2, f: 0 } },
-  { id: 's3', team: 'f', dept: '간호학과', college: '간호대학', size: '4:4', want: '상관없어요', when: '10월 마지막 주 토요일', where: '동성로', note: '다 같이 방탈출 가실 분 구해요.', apply: { m: 6, f: 0 } },
-  { id: 's4', team: 'm', dept: '경영학부', college: '경상대학', size: '3:3', want: '자연과학대학', when: '중간고사 끝나고 평일 저녁', where: '정문 근처', note: '맛집 탐방 좋아하는 새내기들이에요.', apply: { m: 0, f: 3 } },
-  { id: 's5', team: 'm', dept: '컴퓨터학부', college: 'AI대학', size: '2:2', want: '사범대학', when: '이번 주 목요일 저녁', where: '쪽문 근처', note: '조용히 이야기 나누는 분위기를 좋아해요.', apply: { m: 0, f: 1 } },
-  { id: 's6', team: 'f', dept: '디자인학과', college: '예술대학', size: '3:3', want: 'IT대학', when: '11월 첫째 주 금요일', where: '북문 근처', note: '전시 보고 저녁 먹는 코스 어때요?', apply: { m: 5, f: 0 } },
-  { id: 's7', team: 'f', dept: '영어영문학과', college: '인문대학', size: '4:4', want: '공과대학', when: '다음 주 수요일 저녁', where: '북문 근처', note: '볼링 한 게임 치고 밥 먹어요.', apply: { m: 2, f: 0 } },
-  { id: 's8', team: 'm', dept: '기계공학부', college: '공과대학', size: '3:3', want: '생활과학대학', when: '10월 넷째 주 금요일', where: '동문 근처', note: '노래방 좋아하는 분들 환영해요!', apply: { m: 0, f: 7 } },
-  { id: 's9', team: 'f', dept: '수학과', college: '자연과학대학', size: '2:2', want: '상관없어요', when: '평일 점심도 좋아요', where: '학생식당', note: '부담 없이 학식 같이 먹어요.', apply: { m: 0, f: 0 } },
-  { id: 's10', team: 'm', dept: '정치외교학과', college: '사회과학대학', size: '3:3', want: '예술대학', when: '11월 둘째 주 토요일', where: '동성로', note: '영화 보고 카페 가요.', apply: { m: 1, f: 2 } },
   {"id": "study-1", "category": "study", "title": "토익 800점 목표 아침 스터디", "capacity": 5, "when": "매주 화·목 오전 9시", "where": "중앙도서관 스터디룸", "intro": "단어 시험과 LC·RC 문제 풀이를 함께 해요. 현재 점수와 관계없이 꾸준히 참여할 분을 찾아요.", "college": "전공 무관"},
-  {"id": "study-2", "category": "study", "title": "파이썬 입문부터 함께해요", "capacity": 6, "when": "매주 수요일 오후 6시", "where": "교내 스터디룸", "intro": "변수와 반복문부터 작은 프로그램 만들기까지 같이 공부해요. 코딩을 처음 시작하는 분도 환영해요.", "college": "전공 무관"},
-  {"id": "study-3", "category": "study", "title": "알고리즘 하루 한 문제", "capacity": 4, "when": "매주 월요일 오후 7시", "where": "온라인·교내 스터디룸", "intro": "평일에는 각자 한 문제씩 풀고, 모이는 날 서로의 풀이를 설명해요. 입문 난이도부터 시작해요.", "college": "전공 무관"},
-  {"id": "study-4", "category": "study", "title": "영어 회화 점심 한 시간", "capacity": 6, "when": "매주 금요일 낮 12시", "where": "북문 근처 카페", "intro": "일상 주제를 정해 편하게 영어로 이야기해요. 틀려도 괜찮아요. 카페 음료는 각자 부담해요.", "college": "전공 무관"},
-  {"id": "study-5", "category": "study", "title": "한국사능력검정시험 같이 준비해요", "capacity": 5, "when": "매주 토요일 오전 10시", "where": "중앙도서관 스터디룸", "intro": "개념을 나눠 정리하고 기출문제를 함께 풀어요. 공부 계획을 지켜 나갈 분을 모집해요.", "college": "전공 무관"},
-  {"id": "study-6", "category": "study", "title": "미적분 기초 문제 풀이", "capacity": 4, "when": "매주 화요일 오후 5시", "where": "교내 스터디룸", "intro": "극한, 미분, 적분의 기초를 복습해요. 모르는 문제를 가져와 풀이 과정을 함께 정리해요.", "college": "전공 무관"},
-  {"id": "study-7", "category": "study", "title": "전공 무관 취업 자소서 스터디", "capacity": 5, "when": "매주 목요일 오후 7시", "where": "북문 근처 카페", "intro": "경험을 정리하고 자기소개서 초안을 서로 읽어 줘요. 개인정보와 지원 기업명은 가려서 공유해요.", "college": "전공 무관"},
-  {"id": "study-8", "category": "study", "title": "중국어 첫걸음 회화 모임", "capacity": 6, "when": "매주 월요일 오후 6시", "where": "교내 스터디룸", "intro": "성조와 기본 인사부터 천천히 연습해요. 매주 짧은 대화를 하나씩 익히는 입문 스터디예요.", "college": "전공 무관"},
-  {"id": "study-9", "category": "study", "title": "공모전 기획안 함께 써요", "capacity": 4, "when": "매주 수요일 오후 7시", "where": "교내 스터디룸", "intro": "관심 있는 공모전을 골라 아이디어와 기획안을 만들어 봐요. 주제와 역할은 첫 모임에서 정해요.", "college": "전공 무관"},
-  {"id": "study-10", "category": "study", "title": "시험기간 조용한 공부 인증", "capacity": 8, "when": "평일 오후 7시·주말 시간 협의", "where": "중앙도서관·온라인", "intro": "각자 공부할 과목과 목표를 정하고 시작과 마무리를 인증해요. 서로의 집중 시간을 존중해요.", "college": "전공 무관"},
-  {"id": "club-1", "category": "club", "title": "캠퍼스 저녁 산책 친구", "capacity": 8, "when": "매주 화요일 오후 6시", "where": "교내 산책로", "intro": "수업이 끝난 뒤 가볍게 걸으며 이야기해요. 걷는 속도는 모두에게 맞추고 우천 시에는 쉬어요.", "college": "전공 무관"},
-  {"id": "club-2", "category": "club", "title": "보드게임 한 판 하실 분", "capacity": 6, "when": "격주 금요일 오후 6시", "where": "북문 근처 보드게임 카페", "intro": "쉬운 게임부터 같이 배워요. 처음 오시는 분도 환영하고 카페 이용료는 각자 부담해요.", "college": "전공 무관"},
-  {"id": "club-3", "category": "club", "title": "주말 사진 산책", "capacity": 6, "when": "격주 토요일 오후 2시", "where": "교내·대구 시내", "intro": "휴대폰이나 카메라로 일상을 찍어요. 장비 제한 없이 참여하고 인물 촬영은 먼저 동의를 구해요.", "college": "전공 무관"},
-  {"id": "club-4", "category": "club", "title": "한 달 한 권 독서 모임", "capacity": 8, "when": "매월 마지막 주 수요일 오후 7시", "where": "북문 근처 카페", "intro": "함께 고른 책을 읽고 인상 깊었던 부분을 나눠요. 책과 음료 비용은 각자 부담해요.", "college": "전공 무관"},
-  {"id": "club-5", "category": "club", "title": "배드민턴 초보끼리 함께", "capacity": 8, "when": "매주 목요일 오후 6시", "where": "교내 이용 가능한 운동 공간", "intro": "기본 자세부터 같이 연습해요. 라켓은 개인 지참이며 장소 이용 가능 여부는 모임 전에 확인해요.", "college": "전공 무관"},
-  {"id": "club-6", "category": "club", "title": "영화 보고 감상 나누기", "capacity": 6, "when": "격주 토요일 오후·시간 협의", "where": "대구 시내 영화관·카페", "intro": "함께 고른 영화를 보고 짧게 감상을 나눠요. 영화표와 음료는 각자 부담해요.", "college": "전공 무관"},
-  {"id": "club-7", "category": "club", "title": "가볍게 시작하는 러닝", "capacity": 10, "when": "매주 월·수 오후 7시", "where": "교내 운동장 주변", "intro": "걷기와 달리기를 섞어 무리 없이 시작해요. 개인 체력에 맞춰 참여하고 비가 오면 쉬어요.", "college": "전공 무관"},
-  {"id": "club-8", "category": "club", "title": "학식 같이 먹는 점심 모임", "capacity": 6, "when": "매주 화·목 낮 12시", "where": "교내 학생식당", "intro": "공강 시간에 혼자 밥 먹기 아쉬운 분들 모여요. 식사 비용은 각자 부담하고 학과는 상관없어요.", "college": "전공 무관"},
-  {"id": "club-9", "category": "club", "title": "전시 구경하는 주말", "capacity": 6, "when": "매월 둘째 주 토요일 오후", "where": "대구 시내 전시장", "intro": "관심 있는 전시를 함께 고르고 둘러봐요. 입장료가 있는 전시는 금액을 먼저 확인하고 정해요.", "college": "전공 무관"},
-  {"id": "club-10", "category": "club", "title": "어쿠스틱 기타 같이 연습해요", "capacity": 5, "when": "매주 금요일 오후 5시", "where": "이용 가능한 교내 연습 공간", "intro": "기초 코드와 쉬운 곡을 같이 연습해요. 기타는 개인 지참이며 연습 장소는 사전에 확인해요.", "college": "전공 무관"}
+  {"id": "club-1", "category": "club", "title": "캠퍼스 저녁 산책 친구", "capacity": 8, "when": "매주 화요일 오후 6시", "where": "교내 산책로", "intro": "수업이 끝난 뒤 가볍게 걸으며 이야기해요. 걷는 속도는 모두에게 맞추고 우천 시에는 쉬어요.", "college": "전공 무관"}
 ];
 /* 예시에도 실제 작성 양식의 항목을 제공한다. 연락 링크는 비워 두며 실제 계정으로 연결하지 않는다. */
 var MEET_STUDY_GOALS = ['토익 800점 목표 · 단어 시험과 LC·RC 풀이', '파이썬 기초와 작은 프로그램 만들기', '입문 알고리즘 문제 풀이와 풀이 설명', '일상 영어 회화 연습', '한국사 개념 정리와 기출문제 풀이', '극한·미분·적분 기초 복습', '경험 정리와 자기소개서 초안 피드백', '중국어 성조와 기초 회화', '공모전 아이디어와 기획안 작성', '각자 정한 학습 목표 달성과 공부 인증'];
