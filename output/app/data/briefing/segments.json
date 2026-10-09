@@ -19,16 +19,16 @@
       "title": "아침 인사"
     },
     {
-      "audio": "830881e87d66bdabf8e708d0bb987ed1b5ea1521132e09f6cfc824bdd47dd2ad.mp3",
+      "audio": "51007df75a253a239857cf40cd8f0d3c904e5472e199b5ef4d1e7e96e786871a.mp3",
       "channel_id": "intro",
       "cues": [
         {
-          "end_sec": 14.328,
+          "end_sec": 10.68,
           "start_sec": 0,
-          "text": "아침에 선선한 날씨가 되어 얇은 겉옷 하나 준비해 주세요. 일교차가 큰 날씨라서 입고 벗기 편한 옷이 좋을 것 같아요. 낮에는 바깥 바람이 쐬기 좋을 것 같아요."
+          "text": "아침에 선선한 날씨로 얇은 겉옷 하나 준비해요. 일교차가 크니 입고 벗기 쉬운 옷이 좋을 것 같아요. 낮에는 바깥바람이 쐬기 좋을 것 같아요."
         }
       ],
-      "duration_sec": 14.328,
+      "duration_sec": 10.68,
       "id": "intro",
       "items": [
         {
@@ -40,23 +40,23 @@
           "url": null
         }
       ],
-      "script": "아침에 선선한 날씨가 되어 얇은 겉옷 하나 준비해 주세요. 일교차가 큰 날씨라서 입고 벗기 편한 옷이 좋을 것 같아요. 낮에는 바깥 바람이 쐬기 좋을 것 같아요.",
+      "script": "아침에 선선한 날씨로 얇은 겉옷 하나 준비해요. 일교차가 크니 입고 벗기 쉬운 옷이 좋을 것 같아요. 낮에는 바깥바람이 쐬기 좋을 것 같아요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "d4c18d58aeb565f345924879b2092e0341c9282ceb65537b60a77152a5717483.mp3",
+      "audio": "47bc598811b520604b677631b5e00e1fa81b3971657ad07dab4926c81d3dfa29.mp3",
       "channel_id": "28e140eb8bb646d858044ec0",
       "channel_ids": [
         "notice-04f9a84e582c"
       ],
       "cues": [
         {
-          "end_sec": 27.912,
+          "end_sec": 17.928,
           "start_sec": 0,
-          "text": "2026학년도 2학기 중간고사 시간표 안내\n\n이번 중간고사 시간표는 추후 변경될 수 있으니, 반드시 수업 담당 교수님과 LMS 공지사항을 확인해 주세요. 시간표에 없어도 되는 과목은 담당 교수님께 직접 문의해 주세요. 수업 강의실과 시험장소가 달라질 수 있으니, 수강과목, 담당 교수, 시험 일시, 장소를 꼭 확인해 주세요."
+          "text": "2026학년도 2학기 중간고사 시간표 안내입니다. 본 일정은 추후 변경될 수 있으니 반드시 수업 담당교수님과 LMS 공지사항을 확인해 주세요. 시간표에 없는 과목은 담당교수님께 직접 문의해 주세요."
         }
       ],
-      "duration_sec": 27.912,
+      "duration_sec": 17.928,
       "id": "28e140eb8bb646d858044ec0",
       "items": [
         {
@@ -81,11 +81,11 @@
           "url": "https://home.knu.ac.kr/HOME/it/sub.htm?mode=view&mv_data=aWR4PTcxMSZzdGFydFBhZ2U9MCZsaXN0Tm89MTUxJnRhYmxlPWV4X2Jic19kYXRhX2l0Jm5hdl9jb2RlPWl0MTc5MDA1MDAzMiZjb2RlPUtaMGNSNDlNZnY4RSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 2학기 중간고사 시간표 안내\n\n이번 중간고사 시간표는 추후 변경될 수 있으니, 반드시 수업 담당 교수님과 LMS 공지사항을 확인해 주세요. 시간표에 없어도 되는 과목은 담당 교수님께 직접 문의해 주세요. 수업 강의실과 시험장소가 달라질 수 있으니, 수강과목, 담당 교수, 시험 일시, 장소를 꼭 확인해 주세요.",
+      "script": "2026학년도 2학기 중간고사 시간표 안내입니다. 본 일정은 추후 변경될 수 있으니 반드시 수업 담당교수님과 LMS 공지사항을 확인해 주세요. 시간표에 없는 과목은 담당교수님께 직접 문의해 주세요.",
       "title": "2026학년도 2학기 중간고사 시간표 안내"
     },
     {
-      "audio": "b1902d11bbf12d2a9d582896934297ba28aa55eb60ee867151df01b69229a59c.mp3",
+      "audio": "36a3687112456d1ebfa3ff05b2de7c687e7395f1f2bbe8e5834f9784450e2a95.mp3",
       "channel_id": "e75da15fec9ecc380b11e097",
       "channel_ids": [
         "notice-f5bf5684020e",
@@ -93,12 +93,12 @@
       ],
       "cues": [
         {
-          "end_sec": 43.248,
+          "end_sec": 19.872,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가별로 인도네시아와 베트남에서 1,600,000원의 학생참가비가 부과됩니다. 단원 지원서, 활동동의서, 개인정보수집이용동의서, 질병확인서 등 필수 서류를 준비해 주세요. 면접 일정은 별도로 안내될 예정이니, 학교에서 추천을 받기 위해 준비해 주세요."
+          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 시작됩니다. 신청 마감은 10월 12일까지로, 인도네시아와 베트남 파견국에서 1,600,000원의 학생참가비가 부과됩니다."
         }
       ],
-      "duration_sec": 43.248,
+      "duration_sec": 19.872,
       "id": "e75da15fec9ecc380b11e097",
       "items": [
         {
@@ -141,23 +141,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MDMmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDg5JnRhYmxlPWV4X2Jic19kYXRhX3BoeXNpY3MmbmF2X2NvZGU9cGh5MTY0NTU5MjE5NyZjb2RlPUtadERWUGlDQjdVcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가별로 인도네시아와 베트남에서 1,600,000원의 학생참가비가 부과됩니다. 단원 지원서, 활동동의서, 개인정보수집이용동의서, 질병확인서 등 필수 서류를 준비해 주세요. 면접 일정은 별도로 안내될 예정이니, 학교에서 추천을 받기 위해 준비해 주세요.",
+      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 시작됩니다. 신청 마감은 10월 12일까지로, 인도네시아와 베트남 파견국에서 1,600,000원의 학생참가비가 부과됩니다.",
       "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "75d8b76c94aa463e18ec54c3352c6047312ac56ad4689f78a0b7c03d40ced739.mp3",
+      "audio": "c52de1f856ec02fb825a17656b5ee28e30ea41d4317aacb3f1e37d4e898a20f9.mp3",
       "channel_id": "7d9c9aaf153d496ce5a69acb",
       "channel_ids": [
         "notice-a6afbe817dd2"
       ],
       "cues": [
         {
-          "end_sec": 41.448,
+          "end_sec": 23.496,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 [BI 및 핀테크 융합전공]에서 진행하는 2026년 SW중심대학사업 재학생 대상 설문조사에 대한 정보를 알려드릴게요. 조사 대상은 2026년도 SW융합전공 재학생이며, 제출 기한은 10월 12일(월) 12:00까지입니다. 설문지는 국제경상관 317호 경영학부사무실에서 제출 가능하며, 모아찍기, 양면, 스테이플러는 불가능합니다. 설문지 파일은 첨부해 드렸으니 참고해 주세요. 감사합니다."
+          "text": "SW중심대학사업이 2026년도 SW융합전공 재학생 대상 설문조사를 진행합니다. 10월 12일(월) 12시까지 국제경상관 317호 경영학부사무실로 설문지를 제출해 주세요. 첨부된 설문지(2026)를 사용해 주시면 됩니다."
         }
       ],
-      "duration_sec": 41.448,
+      "duration_sec": 23.496,
       "id": "7d9c9aaf153d496ce5a69acb",
       "items": [
         {
@@ -182,11 +182,11 @@
           "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTEmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 [BI 및 핀테크 융합전공]에서 진행하는 2026년 SW중심대학사업 재학생 대상 설문조사에 대한 정보를 알려드릴게요. 조사 대상은 2026년도 SW융합전공 재학생이며, 제출 기한은 10월 12일(월) 12:00까지입니다. 설문지는 국제경상관 317호 경영학부사무실에서 제출 가능하며, 모아찍기, 양면, 스테이플러는 불가능합니다. 설문지 파일은 첨부해 드렸으니 참고해 주세요. 감사합니다.",
+      "script": "SW중심대학사업이 2026년도 SW융합전공 재학생 대상 설문조사를 진행합니다. 10월 12일(월) 12시까지 국제경상관 317호 경영학부사무실로 설문지를 제출해 주세요. 첨부된 설문지(2026)를 사용해 주시면 됩니다.",
       "title": "[BI 및 핀테크 융합전공] 2026년 SW중심대학사업 재학생 대상 설문조사(~10/12,12:00)"
     },
     {
-      "audio": "0d869f8228cf5ab8bbcac76511aeb29e7f76f8d60489a53fa178b0cdcd684feb.mp3",
+      "audio": "ea70c0c4bd02caa06312e1c8bc20a790fc152ee5669fd229338bb1243bd41b46.mp3",
       "channel_id": "12b07156cfb830fc0b9ee2c4",
       "channel_ids": [
         "notice-a6afbe817dd2",
@@ -199,12 +199,12 @@
       ],
       "cues": [
         {
-          "end_sec": 38.976,
+          "end_sec": 15.168,
           "start_sec": 0,
-          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 2026년 10월 14일 수요일 15시부터 복지관 4층 강의실에서 진행되며, 본교 재학생 및 2024년도 이후 졸업생 70명이 참가 가능합니다. 신청은 KNUCUBE를 통해 선착순으로 접수됩니다. 행사에서는 선발제도 및 향후 변경사항을 안내하고, 전년도 합격자 합격 수기 발표와 질의 응답이 이루어집니다."
+          "text": "오늘 아침, 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 복지관 4층 강의실에서 10월 14일 수요일 15시부터 18시까지 진행됩니다."
         }
       ],
-      "duration_sec": 38.976,
+      "duration_sec": 15.168,
       "id": "12b07156cfb830fc0b9ee2c4",
       "items": [
         {
@@ -337,23 +337,23 @@
           "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgyOCZzdGFydFBhZ2U9MCZsaXN0Tm89NzExJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
         }
       ],
-      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 2026년 10월 14일 수요일 15시부터 복지관 4층 강의실에서 진행되며, 본교 재학생 및 2024년도 이후 졸업생 70명이 참가 가능합니다. 신청은 KNUCUBE를 통해 선착순으로 접수됩니다. 행사에서는 선발제도 및 향후 변경사항을 안내하고, 전년도 합격자 합격 수기 발표와 질의 응답이 이루어집니다.",
+      "script": "오늘 아침, 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 복지관 4층 강의실에서 10월 14일 수요일 15시부터 18시까지 진행됩니다.",
       "title": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회 개최 안내"
     },
     {
-      "audio": "1e2d753661e59cdb08fda263932d8a124d41ec4c209d239d00163df0e0db10a2.mp3",
+      "audio": "7c72b1169f8b1b840a2c139329932f70bed4d8c27cd131e7e56969812f8c054f.mp3",
       "channel_id": "10b8242d1d6fd099dd7efda5",
       "channel_ids": [
         "notice-ca78d3fd3c51"
       ],
       "cues": [
         {
-          "end_sec": 27.768,
+          "end_sec": 20.904,
           "start_sec": 0,
-          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청이 가능합니다. 세부 일정과 프로그램은 붙임 파일에서 확인할 수 있습니다. 마음 건강을 관리하는 데 도움이 되는 이 캠프에 많은 참여 부탁드립니다."
+          "text": "학생상담센터가 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 참가대상은 대학원 재학생 및 수료후 등록생입니다. 모집 기간은 9월 30일부터 10월 12일까지입니다. 자세한 내용은 학생상담센터 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 27.768,
+      "duration_sec": 20.904,
       "id": "10b8242d1d6fd099dd7efda5",
       "items": [
         {
@@ -378,23 +378,23 @@
           "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcwJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청이 가능합니다. 세부 일정과 프로그램은 붙임 파일에서 확인할 수 있습니다. 마음 건강을 관리하는 데 도움이 되는 이 캠프에 많은 참여 부탁드립니다.",
+      "script": "학생상담센터가 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 참가대상은 대학원 재학생 및 수료후 등록생입니다. 모집 기간은 9월 30일부터 10월 12일까지입니다. 자세한 내용은 학생상담센터 홈페이지에서 확인해 주세요.",
       "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "31e8af9e867d7fa01b7c6cdf51f046f266bbeb3fd5766ed018fdf3167c8dda93.mp3",
+      "audio": "b68e48b8310ebc6b45cb193f2002c0238f1faeb3b5aa65ad466f6d5547a233be.mp3",
       "channel_id": "b0a7e5d0d0a786465bbb9112",
       "channel_ids": [
         "notice-ddfc5b2ca163"
       ],
       "cues": [
         {
-          "end_sec": 39.0,
+          "end_sec": 21.936,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 학생상담센터에서 진행하는 '2026학년도 하반기 대학원생 마음건강증진캠프' 참가자 모집 안내를 알려드릴게요. 대학원 재학생과 수료 후 등록생이 참가 가능하며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 이 캠프는 대학원생들의 심신회복 및 대학원생활 적응력을 향상시키기 위해 마련되었으니, 관심 있는 학생들께서는 학생상담센터로 문의해 보세요. 추가로, 캠프 운영 계획서가 첨부되어 있으니 참고하시기 바랍니다."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청 가능합니다. 모집 기간 내에 참여해 주시면 감사하겠습니다."
         }
       ],
-      "duration_sec": 39.0,
+      "duration_sec": 21.936,
       "id": "b0a7e5d0d0a786465bbb9112",
       "items": [
         {
@@ -419,23 +419,23 @@
           "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MTAmbGlzdE5vPTcxNSZ0YWJsZT1leF9iYnNfZGF0YV9yb2JvdCZuYXZfY29kZT1yb2IxNjIzNjMyMzA3JmNvZGU9MnJUODE4UGxYVDN0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 학생상담센터에서 진행하는 '2026학년도 하반기 대학원생 마음건강증진캠프' 참가자 모집 안내를 알려드릴게요. 대학원 재학생과 수료 후 등록생이 참가 가능하며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 이 캠프는 대학원생들의 심신회복 및 대학원생활 적응력을 향상시키기 위해 마련되었으니, 관심 있는 학생들께서는 학생상담센터로 문의해 보세요. 추가로, 캠프 운영 계획서가 첨부되어 있으니 참고하시기 바랍니다.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청 가능합니다. 모집 기간 내에 참여해 주시면 감사하겠습니다.",
       "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "6738e15cf759dc76af454b09aa4d8522d2cb3c4f0032d60fcfd8261ffc243567.mp3",
+      "audio": "1007993e6553b9738be66ac56457003e9c787d13f74975adfb29ebe8c6ab594f.mp3",
       "channel_id": "c5120cdba3e201a58d769d3e",
       "channel_ids": [
         "notice-956827a355a7"
       ],
       "cues": [
         {
-          "end_sec": 51.36,
+          "end_sec": 20.112,
           "start_sec": 0,
-          "text": "이번 아침 방송에서 소개할 '마이AI랩'은 AI를 활용해 지역과 기업의 문제를 직접 해결하는 프로젝트를 모집하는 활동입니다. 2~4명의 팀이 지역 현안이나 기업 현안을 선정해 AI로 해결해보는 프로그램으로, 총 20팀이 참여할 예정입니다. 10팀은 지역 현안을, 10팀은 기업 현안을 해결하는 방식입니다. 프로그램은 라운드테이블, AI 특강, 고급 AI 실습, 멘토링, 데모데이 등으로 진행되며, 팀 활동비와 상금이 총 2,000만원 상당으로 지원됩니다. 신청은 대구테크노파크 스포츠산업지원센터에서 진행되며, 온라인으로 접수할 수 있는 링크가 있습니다. 더 자세한 정보는 [링크]에서 확인해 보세요."
+          "text": "아침 라디오에서 '마이AI랩' 참가팀 모집 공지사항을 소개합니다. AI로 지역·기업 문제를 해결하는 팀을 20팀까지 모집 중이에요. 지역 현안 10팀과 기업 현안 10팀으로 구성되며, 대구테크노파크 스포츠산업지원센터에서 오프라인으로 진행됩니다."
         }
       ],
-      "duration_sec": 51.36,
+      "duration_sec": 20.112,
       "id": "c5120cdba3e201a58d769d3e",
       "items": [
         {
@@ -460,23 +460,23 @@
           "url": "https://home.knu.ac.kr/HOME/lis/sub.htm?mode=view&mv_data=aWR4PTExOTUmc3RhcnRQYWdlPTAmbGlzdE5vPTUzMiZ0YWJsZT1leF9iYnNfZGF0YV9saXMmbmF2X2NvZGU9bGlzMTYyMjQ2MDEwOCZjb2RlPVFFbm1SWGZsYzVGVSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "이번 아침 방송에서 소개할 '마이AI랩'은 AI를 활용해 지역과 기업의 문제를 직접 해결하는 프로젝트를 모집하는 활동입니다. 2~4명의 팀이 지역 현안이나 기업 현안을 선정해 AI로 해결해보는 프로그램으로, 총 20팀이 참여할 예정입니다. 10팀은 지역 현안을, 10팀은 기업 현안을 해결하는 방식입니다. 프로그램은 라운드테이블, AI 특강, 고급 AI 실습, 멘토링, 데모데이 등으로 진행되며, 팀 활동비와 상금이 총 2,000만원 상당으로 지원됩니다. 신청은 대구테크노파크 스포츠산업지원센터에서 진행되며, 온라인으로 접수할 수 있는 링크가 있습니다. 더 자세한 정보는 [링크]에서 확인해 보세요.",
+      "script": "아침 라디오에서 '마이AI랩' 참가팀 모집 공지사항을 소개합니다. AI로 지역·기업 문제를 해결하는 팀을 20팀까지 모집 중이에요. 지역 현안 10팀과 기업 현안 10팀으로 구성되며, 대구테크노파크 스포츠산업지원센터에서 오프라인으로 진행됩니다.",
       "title": "[활동비 지원] AI로 우리 지역·기업의 변화를 만드는 ‘마이AI랩’ 참가팀 모집"
     },
     {
-      "audio": "93ff3b818afa4d0b854acfa0c6510f1ef6d42108a68ed1f362460c008e314fe2.mp3",
+      "audio": "89a976ea8ff204829770c08df3ba644c8f82ef578e8cdfe7b707c8055080fd00.mp3",
       "channel_id": "50b2f4d1e3e8c9f248fa10dc",
       "channel_ids": [
         "notice-ec96ad09ef78"
       ],
       "cues": [
         {
-          "end_sec": 23.424,
+          "end_sec": 19.488,
           "start_sec": 0,
-          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 참여 가능합니다. 이 캠프는 심신회복과 대학원생활 적응력을 높이기 위한 프로그램으로, 일정과 세부 내용을 확인해 주세요."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 대학원 재학생 및 수료후 등록생이 참가 가능하며, 모집 기간은 9월 30일부터 10월 12일까지입니다. 마음건강을 높이려면 많은 참여 부탁드립니다."
         }
       ],
-      "duration_sec": 23.424,
+      "duration_sec": 19.488,
       "id": "50b2f4d1e3e8c9f248fa10dc",
       "items": [
         {
@@ -501,23 +501,23 @@
           "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMTkmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MDYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 참여 가능합니다. 이 캠프는 심신회복과 대학원생활 적응력을 높이기 위한 프로그램으로, 일정과 세부 내용을 확인해 주세요.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 대학원 재학생 및 수료후 등록생이 참가 가능하며, 모집 기간은 9월 30일부터 10월 12일까지입니다. 마음건강을 높이려면 많은 참여 부탁드립니다.",
       "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "a014e2c92d70f3683810aec8666bcbd848085b3191da166b4eca2aa021e474ae.mp3",
+      "audio": "c4d87afc8ff340133c2b5a3cf0ed4cd3e2335a8ff4cd5a024a925204dffad1fa.mp3",
       "channel_id": "8f91c928e6263dd607d92deb",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 75.12,
+          "end_sec": 6.888,
           "start_sec": 0,
-          "text": "안녕하세요, KNU 학생 여러분! 오늘 아침 방송에서 알려드릴게요. 2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 운영됩니다. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의·토론과 팀워크 행동 실습이 포함된 특강입니다. 강연자는 조안나(참커뮤니케이션 대표)님이 주최합니다. 대구캠퍼스는 11월 10일(화) 12:15부터 우당교육관 201호에서, 상주캠퍼스는 11월 12일(목) 12:15부터 복지회관 201호에서 진행됩니다. 신청대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청을 해주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 오늘 아침부터 준비해 보세요!"
+          "text": "2026학년도 소통·팀워크 강화 특강 '통(通)하는 팀플레이'가 운영됩니다."
         }
       ],
-      "duration_sec": 75.12,
+      "duration_sec": 6.888,
       "id": "8f91c928e6263dd607d92deb",
       "items": [
         {
@@ -542,23 +542,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3Mjcmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMDcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, KNU 학생 여러분! 오늘 아침 방송에서 알려드릴게요. 2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 운영됩니다. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의·토론과 팀워크 행동 실습이 포함된 특강입니다. 강연자는 조안나(참커뮤니케이션 대표)님이 주최합니다. 대구캠퍼스는 11월 10일(화) 12:15부터 우당교육관 201호에서, 상주캠퍼스는 11월 12일(목) 12:15부터 복지회관 201호에서 진행됩니다. 신청대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청을 해주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 오늘 아침부터 준비해 보세요!",
+      "script": "2026학년도 소통·팀워크 강화 특강 '통(通)하는 팀플레이'가 운영됩니다.",
       "title": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내"
     },
     {
-      "audio": "2249fb54f49e6ba8bf1b971b0520d0a819a90f5528c6ed4ae65afb6b91068bfb.mp3",
+      "audio": "3821cb063efadc5f82e7f4b44321196f1df9554d805fe6c9333b35e09f0571aa.mp3",
       "channel_id": "b7fcd682222afec6c11c96ea",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 28.92,
+          "end_sec": 14.976,
           "start_sec": 0,
-          "text": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 이 행사에서는 비교과 프로그램의 우수 성과를 공유하고 확산하는 데 초점을 맞추어 학생 여러분의 참여를 기대합니다. 행사 정보는 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다. (https://knusemi.knu.ac.kr/content/requisition/program.html?pg=vv&pg_seq=49&page=1)"
+          "text": "반도체특성화대학사업단이 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 여러분의 참여를 부탁드립니다."
         }
       ],
-      "duration_sec": 28.92,
+      "duration_sec": 14.976,
       "id": "b7fcd682222afec6c11c96ea",
       "items": [
         {
@@ -583,23 +583,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3Mjgmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMDcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 이 행사에서는 비교과 프로그램의 우수 성과를 공유하고 확산하는 데 초점을 맞추어 학생 여러분의 참여를 기대합니다. 행사 정보는 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다. (https://knusemi.knu.ac.kr/content/requisition/program.html?pg=vv&pg_seq=49&page=1)",
+      "script": "반도체특성화대학사업단이 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 여러분의 참여를 부탁드립니다.",
       "title": "[반도체특성화대학사업단] 제1회 SEMI-PLAY 페스티벌 개최 안내"
     },
     {
-      "audio": "d4e7e48929f8c73347b1d3cf751afaba19b924b3e9778956bb63246cb6432f23.mp3",
+      "audio": "f1281818eeffb688205d725031dbdc7d92744d360c522567227bbbdafaa936d9.mp3",
       "channel_id": "ece7b748685ca22379344813",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 85.896,
+          "end_sec": 16.296,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침은 [반도체특성화대학사업단]이 주최하는 제8회 반도체특성화 취업역량 강화교육(캠프)에 대한 정보를 알려드릴게요. 이 교육은 삼성전자와 SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 대상으로 합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 하며, 교육은 2026년 11월 3일(화) 9시부터 18시까지 진행됩니다. A반은 9시부터 12시 30분까지, B반은 13시 30분부터 18시까지로 구성되어 있습니다.\n\n정원은 A반 10명, B반 12명으로 선착순 모집되며, 신청 기간은 2026년 10월 8일(목) 13시부터 28일(수) 18시까지입니다. 신청은 QR코드를 통해 하며, 장소는 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행됩니다.\n\n이번 교육에서는 실제 반도체 기업 면접을 연습하는 실전 모의면접과 피드백을 제공하며, 강사진으로는 전)삼성그룹 채용인사임원인 나*무 선생님과 삼성전자 반도체 엔지니어인 유*영 선생님 등이 참여합니다.\n\n더 궁금한 점이 있다면, 경북대학교 렛유인에듀로 문의해 주세요. 오늘 아침부터 준비해 보세요!"
+          "text": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 제8회 반도체 취업역량 강화교육이 2026년 11월 3일(화) 09:00부터 18:00까지 진행됩니다. 면접 준비 학생이라면 반드시 참여해 보세요."
         }
       ],
-      "duration_sec": 85.896,
+      "duration_sec": 16.296,
       "id": "ece7b748685ca22379344813",
       "items": [
         {
@@ -624,23 +624,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3Mjkmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMDcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 오늘 아침은 [반도체특성화대학사업단]이 주최하는 제8회 반도체특성화 취업역량 강화교육(캠프)에 대한 정보를 알려드릴게요. 이 교육은 삼성전자와 SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 대상으로 합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 하며, 교육은 2026년 11월 3일(화) 9시부터 18시까지 진행됩니다. A반은 9시부터 12시 30분까지, B반은 13시 30분부터 18시까지로 구성되어 있습니다.\n\n정원은 A반 10명, B반 12명으로 선착순 모집되며, 신청 기간은 2026년 10월 8일(목) 13시부터 28일(수) 18시까지입니다. 신청은 QR코드를 통해 하며, 장소는 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행됩니다.\n\n이번 교육에서는 실제 반도체 기업 면접을 연습하는 실전 모의면접과 피드백을 제공하며, 강사진으로는 전)삼성그룹 채용인사임원인 나*무 선생님과 삼성전자 반도체 엔지니어인 유*영 선생님 등이 참여합니다.\n\n더 궁금한 점이 있다면, 경북대학교 렛유인에듀로 문의해 주세요. 오늘 아침부터 준비해 보세요!",
+      "script": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 제8회 반도체 취업역량 강화교육이 2026년 11월 3일(화) 09:00부터 18:00까지 진행됩니다. 면접 준비 학생이라면 반드시 참여해 보세요.",
       "title": "[반도체특성화대학사업단] 제8회 반도체특성화 취업역량 강화교육 개최 <면접>"
     },
     {
-      "audio": "351f9fd39e5d2a47d965c2087242393a8334ecdf88f1f27012597619105d532f.mp3",
+      "audio": "adc41357e2642da153a54ffbeb0880b121db5ad053f2960d51067dd95fcbd5e2.mp3",
       "channel_id": "75bd6616f9c9ce558f1c0af7",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 61.104,
+          "end_sec": 22.752,
           "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(서울대학교) 수학 안내입니다. 수학을 희망하는 학생은 추천기한 2026년 10월 19일 월요일 18시까지 학사과로 공문 제출해 주세요. 학생 신청 기한은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 처리 가능합니다. 수학추천자 명단(교류대학 서식) 및 수학지원서(통합정보시스템에서 다운로드)를 준비해 주세요. 교류 신청은 통합정보시스템에서 '학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학신청' 경로로 입력 후 저장하면 되고, 승인은 '학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학생관리' 경로에서 처리됩니다. 추가로 PDF미리보기를 통해 자세한 내용을 확인할 수 있습니다."
+          "text": "2026학년도 겨울계절수업 타대학(서울대학교) 수학 안내입니다. 수학을 희망하는 학생은 10월 19일 18시까지 학사과로 공문 제출해 주세요. 추천서류는 수학추천자 명단(교류대학 서식)과 수학지원서(통합정보시스템에서 다운로드)입니다."
         }
       ],
-      "duration_sec": 61.104,
+      "duration_sec": 22.752,
       "id": "75bd6616f9c9ce558f1c0af7",
       "items": [
         {
@@ -665,23 +665,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MzAmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMDUmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학(서울대학교) 수학 안내입니다. 수학을 희망하는 학생은 추천기한 2026년 10월 19일 월요일 18시까지 학사과로 공문 제출해 주세요. 학생 신청 기한은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 처리 가능합니다. 수학추천자 명단(교류대학 서식) 및 수학지원서(통합정보시스템에서 다운로드)를 준비해 주세요. 교류 신청은 통합정보시스템에서 '학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학신청' 경로로 입력 후 저장하면 되고, 승인은 '학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학생관리' 경로에서 처리됩니다. 추가로 PDF미리보기를 통해 자세한 내용을 확인할 수 있습니다.",
+      "script": "2026학년도 겨울계절수업 타대학(서울대학교) 수학 안내입니다. 수학을 희망하는 학생은 10월 19일 18시까지 학사과로 공문 제출해 주세요. 추천서류는 수학추천자 명단(교류대학 서식)과 수학지원서(통합정보시스템에서 다운로드)입니다.",
       "title": "2026학년도 겨울계절수업 타대학(서울대학교) 수학 안내"
     },
     {
-      "audio": "2a99e84c74adea07215930dfdc03d7eea01c45d02698f889ff7c13a0ffa5e64f.mp3",
+      "audio": "b95d3ed79b8c0b1d6842f44ae65affb83aaf52f032eb3543f5646a375e455971.mp3",
       "channel_id": "e8a61ff2e4ef11758445858b",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 10.992,
+          "end_sec": 11.712,
           "start_sec": 0,
-          "text": "2026학년도 2학기 대학원 물리학과 설명회가 2회 진행됩니다. 기념품도 배부할 예정이니, 학생 여러분의 많은 참여 부탁드립니다."
+          "text": "2026학년도 2학기 대학원 물리학과 설명회가 2회 진행됩니다. 기념품을 배부할 예정이니 학생 여러분의 많은 참여 부탁드립니다."
         }
       ],
-      "duration_sec": 10.992,
+      "duration_sec": 11.712,
       "id": "e8a61ff2e4ef11758445858b",
       "items": [
         {
@@ -706,23 +706,23 @@
           "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MzImc3RhcnRQYWdlPTAmbGlzdE5vPTMxMDcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 2학기 대학원 물리학과 설명회가 2회 진행됩니다. 기념품도 배부할 예정이니, 학생 여러분의 많은 참여 부탁드립니다.",
+      "script": "2026학년도 2학기 대학원 물리학과 설명회가 2회 진행됩니다. 기념품을 배부할 예정이니 학생 여러분의 많은 참여 부탁드립니다.",
       "title": "2026학년도 2학기 대학원 물리학과 설명회 개최 안내(기념품 배부)"
     },
     {
-      "audio": "bda99eb924f93d968bad809a5de798ce459702f3f79f762fe7ca41042c514567.mp3",
+      "audio": "91e76ef72cef6e8db259af7549c51db991a470ce495d201111393b9b87c10824.mp3",
       "channel_id": "3ca9c4edd41a255b35bd36ae",
       "channel_ids": [
         "notice-7502f997e5e7"
       ],
       "cues": [
         {
-          "end_sec": 103.464,
+          "end_sec": 23.424,
           "start_sec": 0,
-          "text": "2026년도 9월 안전점검의 날 시행 알림\n2026년도 . 9월 안전점검의 날 시행을 다음과 같이 안내하오니 협조하여 주시기 바랍니다.\n가. 안전점검일: 2026. 9. 4.(화)\n나. 9월 주요 중점사항: 강풍 대비 행동요령 및 전동킥보드 이용 안전수칙\n<강풍 대비 행동요령 및 전동킥보드 이용 안전수칙>\n[강풍 대비 행동요령]\n■ 문과 창문을 잘 닫아 움직이지 않도록 하고 외부활동 자제\n■ 노후된 창문은 사전에 보강하고 안전필름 부착\n■ 운전 중에는 인접한 차와 안전 거리를 유지하고, 강한 돌풍은 차를 차선 밖으로 밀어낼 수 있으므로 주의\n■ 외부활동 중 강풍 시 안전한 건물 내부로 대피\n■ 강풍으로 파손된 전기시설 등 위험 상황을 발견했을 때에는 감전 위험이 있으니 접근하거나 만지지 말고 119나 시․군․구청에 연락\n[전동킥보드 이용 안전수칙]\n■ 안전모 착용 필수 및 승차정원 준수\n■ 보도 주행 금지, 차도 및 자전거도로 주행(우측 가장자리 이용)\n■ 교통 법규 준수 및 주행 중 갑작스런 방향 전환·급가속 금지\n■ 주행 중 스마트폰 사용 및 음악 청취 금지"
+          "text": "2026년 9월 안전점검은 9월 4일(화)에 시행됩니다. 강풍 대비 행동요령과 전동킥보드 안전수칙을 확인해 주세요. 문과 창과 외부활동 자제, 노후 창문 보강, 운전 시 안전 거리 유지, 강풍 시 대피, 전기시설 파손 시 119에 연락이 필요합니다."
         }
       ],
-      "duration_sec": 103.464,
+      "duration_sec": 23.424,
       "id": "3ca9c4edd41a255b35bd36ae",
       "items": [
         {
@@ -747,23 +747,23 @@
           "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?mode=view&mv_data=aWR4PTYwNyZzdGFydFBhZ2U9MCZsaXN0Tm89MTUzJnRhYmxlPWV4X2Jic19kYXRhX2Nvc3MmbmF2X2NvZGU9Y29zMTYyMzE5OTc3OCZjb2RlPWJzZFV1WEtZbDBJUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026년도 9월 안전점검의 날 시행 알림\n2026년도 . 9월 안전점검의 날 시행을 다음과 같이 안내하오니 협조하여 주시기 바랍니다.\n가. 안전점검일: 2026. 9. 4.(화)\n나. 9월 주요 중점사항: 강풍 대비 행동요령 및 전동킥보드 이용 안전수칙\n<강풍 대비 행동요령 및 전동킥보드 이용 안전수칙>\n[강풍 대비 행동요령]\n■ 문과 창문을 잘 닫아 움직이지 않도록 하고 외부활동 자제\n■ 노후된 창문은 사전에 보강하고 안전필름 부착\n■ 운전 중에는 인접한 차와 안전 거리를 유지하고, 강한 돌풍은 차를 차선 밖으로 밀어낼 수 있으므로 주의\n■ 외부활동 중 강풍 시 안전한 건물 내부로 대피\n■ 강풍으로 파손된 전기시설 등 위험 상황을 발견했을 때에는 감전 위험이 있으니 접근하거나 만지지 말고 119나 시․군․구청에 연락\n[전동킥보드 이용 안전수칙]\n■ 안전모 착용 필수 및 승차정원 준수\n■ 보도 주행 금지, 차도 및 자전거도로 주행(우측 가장자리 이용)\n■ 교통 법규 준수 및 주행 중 갑작스런 방향 전환·급가속 금지\n■ 주행 중 스마트폰 사용 및 음악 청취 금지",
+      "script": "2026년 9월 안전점검은 9월 4일(화)에 시행됩니다. 강풍 대비 행동요령과 전동킥보드 안전수칙을 확인해 주세요. 문과 창과 외부활동 자제, 노후 창문 보강, 운전 시 안전 거리 유지, 강풍 시 대피, 전기시설 파손 시 119에 연락이 필요합니다.",
       "title": "2026년도 9월 안전점검의 날 시행 알림"
     },
     {
-      "audio": "c6029e91099df88bd01a9cd6964343b2afcaa608e72f0531a8ecd335b351bf55.mp3",
+      "audio": "7839a1f5370863bc696e6f9daa179891cc4d467f900e19fd07d71318e9f76519.mp3",
       "channel_id": "536681c7eb54f9730d5beb21",
       "channel_ids": [
         "notice-7502f997e5e7"
       ],
       "cues": [
         {
-          "end_sec": 47.544,
+          "end_sec": 16.608,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 2026년 10월 안전점검의 날 시행 알림이 있습니다. 10월 6일(화)에 등산 시 안전수칙과 축제 관람 안전수칙을 확인해 주세요. 등산 전에는 최소한 구호물품을 준비하고, 산악 위치표지판으로 위치를 파악해 두는 것이 중요합니다. 조난 시 왔던 길로 되돌아가 대기하는 방법도 꼭 알아두세요. 축제 관람 시에는 비상 대피 통로를 확인하고, 안내에 따라 질서 있게 이동하는 것이 안전합니다. 위험 상황이 발생하면 즉시 안전요원이나 119에 연락해 주세요. 오늘은 이와 같이 안전 점검을 준비해 주세요. 감사합니다."
+          "text": "안녕하세요, 2026년 10월 6일 화요일 안전점검의 날이 시행됩니다. 등산 시 구호물품과 산악 위치표지판으로 위치를 파악해 두세요. 조난 시 왔던 길로 되돌아가 대기하며 체온 유지가 중요합니다."
         }
       ],
-      "duration_sec": 47.544,
+      "duration_sec": 16.608,
       "id": "536681c7eb54f9730d5beb21",
       "items": [
         {
@@ -788,23 +788,23 @@
           "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?mode=view&mv_data=aWR4PTYwOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTU0JnRhYmxlPWV4X2Jic19kYXRhX2Nvc3MmbmF2X2NvZGU9Y29zMTYyMzE5OTc3OCZjb2RlPWJzZFV1WEtZbDBJUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 2026년 10월 안전점검의 날 시행 알림이 있습니다. 10월 6일(화)에 등산 시 안전수칙과 축제 관람 안전수칙을 확인해 주세요. 등산 전에는 최소한 구호물품을 준비하고, 산악 위치표지판으로 위치를 파악해 두는 것이 중요합니다. 조난 시 왔던 길로 되돌아가 대기하는 방법도 꼭 알아두세요. 축제 관람 시에는 비상 대피 통로를 확인하고, 안내에 따라 질서 있게 이동하는 것이 안전합니다. 위험 상황이 발생하면 즉시 안전요원이나 119에 연락해 주세요. 오늘은 이와 같이 안전 점검을 준비해 주세요. 감사합니다.",
+      "script": "안녕하세요, 2026년 10월 6일 화요일 안전점검의 날이 시행됩니다. 등산 시 구호물품과 산악 위치표지판으로 위치를 파악해 두세요. 조난 시 왔던 길로 되돌아가 대기하며 체온 유지가 중요합니다.",
       "title": "2026년 10월 안전점검의 날 시행 알림"
     },
     {
-      "audio": "340b93a0a5e96afeb7afb0066be9e9b60837985e54fe9b6718c580270275063d.mp3",
+      "audio": "8278d046f36b13c76b1bcfdb1c3c20b9f21059746ce5216676268e2ecb5984c7.mp3",
       "channel_id": "3afc868dcba4a7db56fef1e2",
       "channel_ids": [
         "notice-b5e6a10e952e"
       ],
       "cues": [
         {
-          "end_sec": 54.072,
+          "end_sec": 22.008,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일 월요일까지입니다. 인도네시아와 베트남 학생참가비는 각각 1,600,000원이에요. 대학지원금은 0원이며, 대학자체 지원금이 없음을 알려드립니다. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수)와 사회취약계층/자격증 등 각종 증빙서류(해당자만)입니다. 면접은 대학 추천을 위해 실시되며 일정은 별도 안내가 될 예정입니다. 부착된 공고 및 서식 등은 각 1부입니다."
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행됩니다. 신청 마감은 10월 12일까지이며, 아시아권 국가별로 인도네시아와 베트남 학생은 160만 원의 학생참가비를 납부합니다. 면접 일정은 별도로 안내될 예정입니다."
         }
       ],
-      "duration_sec": 54.072,
+      "duration_sec": 22.008,
       "id": "3afc868dcba4a7db56fef1e2",
       "items": [
         {
@@ -829,23 +829,23 @@
           "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTIxODcmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일 월요일까지입니다. 인도네시아와 베트남 학생참가비는 각각 1,600,000원이에요. 대학지원금은 0원이며, 대학자체 지원금이 없음을 알려드립니다. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수)와 사회취약계층/자격증 등 각종 증빙서류(해당자만)입니다. 면접은 대학 추천을 위해 실시되며 일정은 별도 안내가 될 예정입니다. 부착된 공고 및 서식 등은 각 1부입니다.",
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행됩니다. 신청 마감은 10월 12일까지이며, 아시아권 국가별로 인도네시아와 베트남 학생은 160만 원의 학생참가비를 납부합니다. 면접 일정은 별도로 안내될 예정입니다.",
       "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "341e48486a209dc227b5e37948a10c0b531009c9239938136e7a04797b3cd1f0.mp3",
+      "audio": "d20d4b113294df77f523404f6845c9e91a9b6848ac8d70ad32bd3e8c67f3a844.mp3",
       "channel_id": "c2f6f2acc7c97db09cabb5c4",
       "channel_ids": [
         "notice-472ae4378387"
       ],
       "cues": [
         {
-          "end_sec": 57.264,
+          "end_sec": 8.256,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침은 KNU 학부 학생 여러분이 주목해야 할 소식이 있습니다. 2026학년도 소통과 팀워크 역량을 강화하는 특강 '통하는 팀플레이'가 개최됩니다. 이 특강은 협력의 대화를 주제로 하며, 효과적인 의사소통 및 협업 전략을 학습하고 실습하는 시간을 제공합니다. 강연은 조안나(참커뮤니케이션 대표)가 진행하며, 대구캠퍼스는 11월 10일 화요일 12시 15분부터 우당교육관 201호, 상주캠퍼스는 11월 12일 목요일 12시 15분부터 복지회관 201호에서 진행됩니다. 신청은 KNUCUBE를 통해 사전 신청이 가능하며, 캠퍼스별로 선착순 50명까지 모집됩니다. 참여자에게 푸드박스가 제공되니, 많은 참여 부탁드립니다."
+          "text": "오늘 아침 학부생 여러분, 안녕하세요! 학부에서 2026학년도 '통하는 팀플레이' 특강을 개최합니다."
         }
       ],
-      "duration_sec": 57.264,
+      "duration_sec": 8.256,
       "id": "c2f6f2acc7c97db09cabb5c4",
       "items": [
         {
@@ -870,23 +870,23 @@
           "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Mzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI4MTYmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 오늘 아침은 KNU 학부 학생 여러분이 주목해야 할 소식이 있습니다. 2026학년도 소통과 팀워크 역량을 강화하는 특강 '통하는 팀플레이'가 개최됩니다. 이 특강은 협력의 대화를 주제로 하며, 효과적인 의사소통 및 협업 전략을 학습하고 실습하는 시간을 제공합니다. 강연은 조안나(참커뮤니케이션 대표)가 진행하며, 대구캠퍼스는 11월 10일 화요일 12시 15분부터 우당교육관 201호, 상주캠퍼스는 11월 12일 목요일 12시 15분부터 복지회관 201호에서 진행됩니다. 신청은 KNUCUBE를 통해 사전 신청이 가능하며, 캠퍼스별로 선착순 50명까지 모집됩니다. 참여자에게 푸드박스가 제공되니, 많은 참여 부탁드립니다.",
+      "script": "오늘 아침 학부생 여러분, 안녕하세요! 학부에서 2026학년도 '통하는 팀플레이' 특강을 개최합니다.",
       "title": "[학부] 2026학년도 소통.팀워크 역량 강화 특강 '통하는 팀플레이' 개최 안내"
     },
     {
-      "audio": "39600b20c841df560c5d07657bbe57a9db689d36f74599ce988456186ecb7229.mp3",
+      "audio": "8c79dff2111aa2a058e5603f933cb8046d5aad2ffb8a64c8064d2b437bf5a134.mp3",
       "channel_id": "c9e33524eda3f18ee85aae1a",
       "channel_ids": [
         "notice-472ae4378387"
       ],
       "cues": [
         {
-          "end_sec": 19.056,
+          "end_sec": 12.864,
           "start_sec": 0,
-          "text": "이번 주 수요일 아침, 대학원 학생 여러분께 특별한 소식이 있습니다. 2026학년도 하반기 IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나 신청을 위해 아래 링크를 통해 참여해 보세요. https://forms.gle/YeomCTuPgotG45kU8"
+          "text": "대학원 학생 여러분, 2026학년도 하반기 IWC 대학원생 영어 논문 세미나 신청이 진행됩니다. 세미나 접수는 https://forms.gle/YeomCTuPgotG45kU8로 해주세요."
         }
       ],
-      "duration_sec": 19.056,
+      "duration_sec": 12.864,
       "id": "c9e33524eda3f18ee85aae1a",
       "items": [
         {
@@ -911,23 +911,23 @@
           "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Mzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI4MTcmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "이번 주 수요일 아침, 대학원 학생 여러분께 특별한 소식이 있습니다. 2026학년도 하반기 IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나 신청을 위해 아래 링크를 통해 참여해 보세요. https://forms.gle/YeomCTuPgotG45kU8",
+      "script": "대학원 학생 여러분, 2026학년도 하반기 IWC 대학원생 영어 논문 세미나 신청이 진행됩니다. 세미나 접수는 https://forms.gle/YeomCTuPgotG45kU8로 해주세요.",
       "title": "[대학원]「2026학년도 하반기 IWC 대학원생 영어 논문 세미나」안내"
     },
     {
-      "audio": "013e3a60abeab682976e318e8f7345eebf7df0b57ddb2b62e8c8de513fffdecf.mp3",
+      "audio": "9fe30367dff93f6ad7a40c2984bb5b3ed15a825fb9f271f66f8c27df1909c90c.mp3",
       "channel_id": "d94681fab7bad30f758741de",
       "channel_ids": [
         "notice-472ae4378387"
       ],
       "cues": [
         {
-          "end_sec": 20.952,
+          "end_sec": 18.504,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침 방송입니다. [대학원]2026학년도 2학도 도서관에서 '체계적 문헌고찰 온라인 특강'을 2학기 실시합니다. 세부 내용은 도서관 웹사이트에서 확인해 주세요. https://kudos.knu.ac.kr/pages/sub.htm?nav_code=kud1647232740"
+          "text": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 온라인 특강은 2026년 3월 15일부터 3월 31일까지 매주 수요일 10시부터 12시까지 진행됩니다."
         }
       ],
-      "duration_sec": 20.952,
+      "duration_sec": 18.504,
       "id": "d94681fab7bad30f758741de",
       "items": [
         {
@@ -952,23 +952,23 @@
           "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI4MTgmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 오늘 아침 방송입니다. [대학원]2026학년도 2학도 도서관에서 '체계적 문헌고찰 온라인 특강'을 2학기 실시합니다. 세부 내용은 도서관 웹사이트에서 확인해 주세요. https://kudos.knu.ac.kr/pages/sub.htm?nav_code=kud1647232740",
+      "script": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 온라인 특강은 2026년 3월 15일부터 3월 31일까지 매주 수요일 10시부터 12시까지 진행됩니다.",
       "title": "[대학원]2026학년도 2학기 도서관 「체계적 문헌고찰 온라인 특강」 실시 안내"
     },
     {
-      "audio": "6bf31e51cfab600e9da3d8954c752baed88a0eefaf48c7bd6538090dda49fa26.mp3",
+      "audio": "400616d2ea50cc096a79b43cb87f7c382742d446cc699e5128fb487382cd57f5.mp3",
       "channel_id": "0b53f866f0f3be1366b8b00a",
       "channel_ids": [
         "notice-6b16f01d1a75"
       ],
       "cues": [
         {
-          "end_sec": 39.96,
+          "end_sec": 23.496,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 파견국이 인도네시아와 베트남인 학생들은 1,600,000원의 학생참가비를 내야 해요. 대학지원금은 없으며, 필수 서류로는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서가 필요해요. 면접 일정은 별도로 안내할 예정이에요. 참고로, 단원 모집 공고 및 서식은 끝부분에서 확인할 수 있어요."
+          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행됩니다. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견됩니다. 학생참가비는 1,600,000원이며 대학지원금은 없으니 참고해 주세요."
         }
       ],
-      "duration_sec": 39.96,
+      "duration_sec": 23.496,
       "id": "0b53f866f0f3be1366b8b00a",
       "items": [
         {
@@ -993,23 +993,23 @@
           "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTExMzcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 파견국이 인도네시아와 베트남인 학생들은 1,600,000원의 학생참가비를 내야 해요. 대학지원금은 없으며, 필수 서류로는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서가 필요해요. 면접 일정은 별도로 안내할 예정이에요. 참고로, 단원 모집 공고 및 서식은 끝부분에서 확인할 수 있어요.",
+      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행됩니다. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견됩니다. 학생참가비는 1,600,000원이며 대학지원금은 없으니 참고해 주세요.",
       "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "f2f1884f421f74a9a6ca2e4d6a44a6231c0100ac7f359ebb69727950c3e729fa.mp3",
+      "audio": "de5af64d8a0713eb26821c50b624e301d0ec47f1e10cce3e684a8bd8b00344dc.mp3",
       "channel_id": "0b6876be69e46ab863563b41",
       "channel_ids": [
         "notice-6b16f01d1a75"
       ],
       "cues": [
         {
-          "end_sec": 22.704,
+          "end_sec": 21.312,
           "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학 수학 신청 안내입니다. 서울대학교 학생은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 신청 가능합니다. 안내문은 첨부파일에서 확인할 수 있습니다. PDF 미리보기를 통해 자세한 내용을 확인해 보세요."
+          "text": "2026학년도 겨울계절수업 타대학 수학 신청이 진행 중입니다. 서울대학교 학생은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 신청해야 합니다. 안내문은 첨부파일에서 확인 가능합니다. PDF 미리보기를 통해 자세한 내용을 확인해 보세요."
         }
       ],
-      "duration_sec": 22.704,
+      "duration_sec": 21.312,
       "id": "0b6876be69e46ab863563b41",
       "items": [
         {
@@ -1034,23 +1034,23 @@
           "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyMzQmc3RhcnRQYWdlPTAmbGlzdE5vPTExNDQmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학 수학 신청 안내입니다. 서울대학교 학생은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 신청 가능합니다. 안내문은 첨부파일에서 확인할 수 있습니다. PDF 미리보기를 통해 자세한 내용을 확인해 보세요.",
+      "script": "2026학년도 겨울계절수업 타대학 수학 신청이 진행 중입니다. 서울대학교 학생은 2026년 10월 16일 금요일 13시까지 통합정보시스템에서 신청해야 합니다. 안내문은 첨부파일에서 확인 가능합니다. PDF 미리보기를 통해 자세한 내용을 확인해 보세요.",
       "title": "2026학년도 겨울계절수업 타대학 수학 안내(업데이트 예정)"
     },
     {
-      "audio": "24ea6b6bbea6078b7118d35ea5f84dbeab7c305c7a5cec9888fdd9c124ac0377.mp3",
+      "audio": "a0dd080350c870eaeddf773db4cb55e1db644f2f56615cd05d5a5f2596136467.mp3",
       "channel_id": "c8608879ac443ec569b743ff",
       "channel_ids": [
         "notice-7fcf94c45b4e"
       ],
       "cues": [
         {
-          "end_sec": 21.336,
+          "end_sec": 14.976,
           "start_sec": 0,
-          "text": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 이 행사에서는 비교과 프로그램의 우수 성과를 공유하고 확산해 학생들의 참여를 기대합니다. 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다."
+          "text": "반도체특성화대학사업단이 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 및 반도체에 관심 있는 분들의 참여를 부탁드립니다."
         }
       ],
-      "duration_sec": 21.336,
+      "duration_sec": 14.976,
       "id": "c8608879ac443ec569b743ff",
       "items": [
         {
@@ -1075,23 +1075,23 @@
           "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTczOCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk0JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 이 행사에서는 비교과 프로그램의 우수 성과를 공유하고 확산해 학생들의 참여를 기대합니다. 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다.",
+      "script": "반도체특성화대학사업단이 제1회 SEMI-PLAY 페스티벌 'Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 및 반도체에 관심 있는 분들의 참여를 부탁드립니다.",
       "title": "[반도체특성화대학사업단] 제1회 SEMI-PLAY 페스티벌 개최 안내"
     },
     {
-      "audio": "97fb62effe0c47202d28c40f4e7e8b064fa619a3e41bc1bc14105acf765d43d2.mp3",
+      "audio": "ab87750b68b6c84b71a296c1bbba9e655ec096fa50e6f2aa0257ac4591916865.mp3",
       "channel_id": "3d9877cc9cb77a309b5c213a",
       "channel_ids": [
         "notice-7fcf94c45b4e"
       ],
       "cues": [
         {
-          "end_sec": 100.872,
+          "end_sec": 15.72,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침은 [반도체특성화대학사업단] 제8회 반도체특성화 취업역량 강화교육 개최 <면접>에 대한 정보를 알려드릴게요. 삼성전자와 SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 위해 취업역량 강화교육 캠프가 진행됩니다. 이 교육은 경북대학교 반도체특성화대학사업단 트랙 참여 장학생들에게 실제 면접과 유사한 모의면접 및 피드백을 제공합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 합니다. 교육은 2026년 11월 3일(화) 09:00부터 18:00까지 진행되며, A반은 09:00~12:30, B반은 13:30~18:00으로 나뉘어 진행됩니다. 정원은 A반 10명, B반 12명으로 선착순 모집되며, 취소자 발생 시 대기자 순으로 우선 선발됩니다.\n\n신청 기간은 2026년 10월 8일(목) 13:00부터 10월 28일(수) 18:00까지 17일간입니다. 신청은 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행되며, 다과가 제공됩니다. 신청은 QR코드를 통해 하세요.\n\n이 교육을 통해 면접 준비를 철저히 할 수 있을 거예요. 지금 바로 신청해 보세요!"
+          "text": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 제8회 취업역량 강화교육(면접 캠프)이 2026년 11월 3일 09:00부터 경북대학교 글로벌 플라자 세미나실에서 진행됩니다."
         }
       ],
-      "duration_sec": 100.872,
+      "duration_sec": 15.72,
       "id": "3d9877cc9cb77a309b5c213a",
       "items": [
         {
@@ -1116,23 +1116,23 @@
           "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTczOSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk1JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 오늘 아침은 [반도체특성화대학사업단] 제8회 반도체특성화 취업역량 강화교육 개최 <면접>에 대한 정보를 알려드릴게요. 삼성전자와 SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 위해 취업역량 강화교육 캠프가 진행됩니다. 이 교육은 경북대학교 반도체특성화대학사업단 트랙 참여 장학생들에게 실제 면접과 유사한 모의면접 및 피드백을 제공합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 합니다. 교육은 2026년 11월 3일(화) 09:00부터 18:00까지 진행되며, A반은 09:00~12:30, B반은 13:30~18:00으로 나뉘어 진행됩니다. 정원은 A반 10명, B반 12명으로 선착순 모집되며, 취소자 발생 시 대기자 순으로 우선 선발됩니다.\n\n신청 기간은 2026년 10월 8일(목) 13:00부터 10월 28일(수) 18:00까지 17일간입니다. 신청은 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행되며, 다과가 제공됩니다. 신청은 QR코드를 통해 하세요.\n\n이 교육을 통해 면접 준비를 철저히 할 수 있을 거예요. 지금 바로 신청해 보세요!",
+      "script": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 제8회 취업역량 강화교육(면접 캠프)이 2026년 11월 3일 09:00부터 경북대학교 글로벌 플라자 세미나실에서 진행됩니다.",
       "title": "[반도체특성화대학사업단] 제8회 반도체특성화 취업역량 강화교육 개최 <면접>"
     },
     {
-      "audio": "84a73dec2be5bfd56c750b1a88cea51635251c3a7c575fcc51017bc9c4083281.mp3",
+      "audio": "a456f0e4f7f6c759748b16852335388d595bcb13a9a6d3af75eb344e30323e01.mp3",
       "channel_id": "6ca5aefd3d44af414847586b",
       "channel_ids": [
         "notice-ef883ff42361"
       ],
       "cues": [
         {
-          "end_sec": 16.512,
+          "end_sec": 15.36,
           "start_sec": 0,
-          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 사전 등록을 통해 참여하실 수 있으며, 등록 마감은 10월 20일까지입니다. 자세한 내용은 홈페이지에서 확인해 주세요."
+          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 15일(토)에 개최됩니다. 자세한 내용은 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 16.512,
+      "duration_sec": 15.36,
       "id": "6ca5aefd3d44af414847586b",
       "items": [
         {
@@ -1157,23 +1157,23 @@
           "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMTcmc3RhcnRQYWdlPTAmbGlzdE5vPTE2OTcmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 사전 등록을 통해 참여하실 수 있으며, 등록 마감은 10월 20일까지입니다. 자세한 내용은 홈페이지에서 확인해 주세요.",
+      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 15일(토)에 개최됩니다. 자세한 내용은 홈페이지에서 확인해 주세요.",
       "title": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회 개최 안내"
     },
     {
-      "audio": "173b58c264ceea40036889649630072407c2907389ff80dbe0eca8296f436117.mp3",
+      "audio": "25555bbf424885aad88d72b2a75728370bd2e24ac74fd5553c19a786aad88c4e.mp3",
       "channel_id": "780f8f9200fc82f9e63fe733",
       "channel_ids": [
         "notice-7dfeec322405"
       ],
       "cues": [
         {
-          "end_sec": 51.48,
+          "end_sec": 20.88,
           "start_sec": 0,
-          "text": "오늘 아침, 우리 대학에서 진행하는 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'에 대해 알려드릴게. 11월 10일 화요일 12시 15분부터 우당교육관 201호에서 조안나(참커뮤니케이션 대표)가 진행하는 이 특강은 협력의 대화를 주제로 한 효과적인 의사소통 및 협업 전략 강의와 팀워크 실습이 포함된 프로그램이야. 학부생 여러분은 KNUCUBE 사이트에서 사전 신청을 통해 참여할 수 있고, 신청은 캠퍼스별로 선착순 50명까지 가능해. 특강에 참가하면 푸드박스가 제공되니, 관심이 있으면 빠르게 준비해 보자. 오늘 아침부터 시작하는 이 특강, 참여해 보는 건 어떨까?"
+          "text": "오늘 아침, 우리 대학 '통(通)하는 팀플레이' 특강이 11월 10일 화요일 12시 15분부터 우당교육관 201호에서 진행됩니다. 조안나(참커뮤니케이션 대표)가 강의를 진행하며, 학부생 50명까지 선착순으로 신청 가능합니다."
         }
       ],
-      "duration_sec": 51.48,
+      "duration_sec": 20.88,
       "id": "780f8f9200fc82f9e63fe733",
       "items": [
         {
@@ -1198,23 +1198,23 @@
           "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM2MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcyJnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "오늘 아침, 우리 대학에서 진행하는 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'에 대해 알려드릴게. 11월 10일 화요일 12시 15분부터 우당교육관 201호에서 조안나(참커뮤니케이션 대표)가 진행하는 이 특강은 협력의 대화를 주제로 한 효과적인 의사소통 및 협업 전략 강의와 팀워크 실습이 포함된 프로그램이야. 학부생 여러분은 KNUCUBE 사이트에서 사전 신청을 통해 참여할 수 있고, 신청은 캠퍼스별로 선착순 50명까지 가능해. 특강에 참가하면 푸드박스가 제공되니, 관심이 있으면 빠르게 준비해 보자. 오늘 아침부터 시작하는 이 특강, 참여해 보는 건 어떨까?",
+      "script": "오늘 아침, 우리 대학 '통(通)하는 팀플레이' 특강이 11월 10일 화요일 12시 15분부터 우당교육관 201호에서 진행됩니다. 조안나(참커뮤니케이션 대표)가 강의를 진행하며, 학부생 50명까지 선착순으로 신청 가능합니다.",
       "title": "소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내(11/10)"
     },
     {
-      "audio": "1a2e0d0c0efacc969c5c957d9094e9de4a4b759bb7a2595e99da3c50435cd9a8.mp3",
+      "audio": "8f9a3557739b23f89a6b53531869ff7702be5597df4215dab1b866473c605ffe.mp3",
       "channel_id": "50b6ff70c6490d0a948ed234",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 27.408,
+          "end_sec": 20.28,
           "start_sec": 0,
-          "text": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내\n\n오늘 아침, 학교에서 진행하는 2026학년도 소통·팀워크 역량 강화 특강에 대한 운영 안내를 알려드릴게요. 이 특강은 학생들이 소통과 팀워크 역량을 강화할 수 있도록 마련된 프로그램이에요. 세부 내용은 학교 홈페이지에서 확인해 주세요."
+          "text": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내입니다. 오늘부터 3주간 매주 수요일 10시에 진행됩니다. 참가 신청은 학생회 홈페이지에서 26일까지 마감됩니다."
         }
       ],
-      "duration_sec": 27.408,
+      "duration_sec": 20.28,
       "id": "50b6ff70c6490d0a948ed234",
       "items": [
         {
@@ -1239,23 +1239,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwMiZzdGFydFBhZ2U9MCZsaXN0Tm89Nzg3JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내\n\n오늘 아침, 학교에서 진행하는 2026학년도 소통·팀워크 역량 강화 특강에 대한 운영 안내를 알려드릴게요. 이 특강은 학생들이 소통과 팀워크 역량을 강화할 수 있도록 마련된 프로그램이에요. 세부 내용은 학교 홈페이지에서 확인해 주세요.",
+      "script": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내입니다. 오늘부터 3주간 매주 수요일 10시에 진행됩니다. 참가 신청은 학생회 홈페이지에서 26일까지 마감됩니다.",
       "title": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내"
     },
     {
-      "audio": "d0eb1930f3ae7b2fec639c29434de6bbcae5f6d4c96511688dd27cf26927e2f1.mp3",
+      "audio": "c217ac32bf73015a77caa29c4212d8afffe4eb4d33fb451187956e67d5033dcc.mp3",
       "channel_id": "76b5421af20f5abc0a97aecc",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 36.576,
+          "end_sec": 19.92,
           "start_sec": 0,
-          "text": "2026학년도 2학기 교직 적성 및 인성검사(2차) 신청 안내입니다. 교직과정 이수예정자(사범대학, 교육대학원 포함)는 10월 14일부터 16일까지 매일 10시부터 17시까지 통합정보시스템에서 신청 가능합니다. 신청 기한이 조기 종료될 수 있으니 참고해 주세요. 검사 일정은 10월 29일 저녁 7시부터 7시 50분입니다. 문의는 교무처 학사과로 하세요. [붙임 2] 참조 후 신청해 주세요."
+          "text": "2026학년도 2학기 교직 적성 및 인성검사(2차) 신청이 10월 14일부터 16일까지 매일 10시부터 17시까지 진행됩니다. 교직과정 이수예정자(사범대학, 교육대학원 포함)는 휴학 및 수료생도 신청 가능합니다."
         }
       ],
-      "duration_sec": 36.576,
+      "duration_sec": 19.92,
       "id": "76b5421af20f5abc0a97aecc",
       "items": [
         {
@@ -1280,23 +1280,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwMyZzdGFydFBhZ2U9MCZsaXN0Tm89Nzg4JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 2학기 교직 적성 및 인성검사(2차) 신청 안내입니다. 교직과정 이수예정자(사범대학, 교육대학원 포함)는 10월 14일부터 16일까지 매일 10시부터 17시까지 통합정보시스템에서 신청 가능합니다. 신청 기한이 조기 종료될 수 있으니 참고해 주세요. 검사 일정은 10월 29일 저녁 7시부터 7시 50분입니다. 문의는 교무처 학사과로 하세요. [붙임 2] 참조 후 신청해 주세요.",
+      "script": "2026학년도 2학기 교직 적성 및 인성검사(2차) 신청이 10월 14일부터 16일까지 매일 10시부터 17시까지 진행됩니다. 교직과정 이수예정자(사범대학, 교육대학원 포함)는 휴학 및 수료생도 신청 가능합니다.",
       "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 신청 안내"
     },
     {
-      "audio": "420a8193f77485b0e9e881c122256a9a9783aa65279485f96f6da2d83f1d30db.mp3",
+      "audio": "268609cd32bca26f831d7744ba9f0955766d0901d8e851967134996204074dd5.mp3",
       "channel_id": "69553260ef99e15833d7f777",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 65.352,
+          "end_sec": 21.648,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘 경북대학교에서 개최하는 '개교 80주년 기념 첨성인 대학원생 논문 경진대회'에 대한 안내를 드리고자 합니다. 이 대회는 대학원생이 재학 중 성취한 학문 성과를 발표할 수 있는 기회를 제공하며, 독창성과 탁월성을 가진 대학원생을 선발해 연구 활동을 장려합니다. 총상금은 5450만 원으로, BK21사업 참여자와 일반·전문·특수대학원생을 2개 부문으로 나눠 시상합니다. 참가자격은 '26. 10. 1.자 기준 경북대학교 대학원생'이며, 논문 제출은 미발표작만 가능합니다. 접수 기간은 '26. 8. 3.부터 10. 16.까지'로, 구글폼(https://forms.gle/2PZWuhvvJYHR9ovB9)을 통해 신청할 수 있습니다. 문의는 연구진흥과로 하세요. 대회 일정과 시상 내역은 홈페이지에서 확인하시기 바랍니다."
+          "text": "개교 80주년 기념 첨성인 대학원생 논문 경진대회가 개최됩니다. 2026년 8월 3일부터 10월 16일까지 논문 접수를 진행하며, 11월 6일 1차 심사 결과를 발표하고 11월 13일 09:30에 구두 발표를 진행합니다."
         }
       ],
-      "duration_sec": 65.352,
+      "duration_sec": 21.648,
       "id": "69553260ef99e15833d7f777",
       "items": [
         {
@@ -1321,23 +1321,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwNCZzdGFydFBhZ2U9MCZsaXN0Tm89Nzg5JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘 경북대학교에서 개최하는 '개교 80주년 기념 첨성인 대학원생 논문 경진대회'에 대한 안내를 드리고자 합니다. 이 대회는 대학원생이 재학 중 성취한 학문 성과를 발표할 수 있는 기회를 제공하며, 독창성과 탁월성을 가진 대학원생을 선발해 연구 활동을 장려합니다. 총상금은 5450만 원으로, BK21사업 참여자와 일반·전문·특수대학원생을 2개 부문으로 나눠 시상합니다. 참가자격은 '26. 10. 1.자 기준 경북대학교 대학원생'이며, 논문 제출은 미발표작만 가능합니다. 접수 기간은 '26. 8. 3.부터 10. 16.까지'로, 구글폼(https://forms.gle/2PZWuhvvJYHR9ovB9)을 통해 신청할 수 있습니다. 문의는 연구진흥과로 하세요. 대회 일정과 시상 내역은 홈페이지에서 확인하시기 바랍니다.",
+      "script": "개교 80주년 기념 첨성인 대학원생 논문 경진대회가 개최됩니다. 2026년 8월 3일부터 10월 16일까지 논문 접수를 진행하며, 11월 6일 1차 심사 결과를 발표하고 11월 13일 09:30에 구두 발표를 진행합니다.",
       "title": "개교 80주년 기념 첨성인 대학원생 논문 경진대회 개최 안내"
     },
     {
-      "audio": "adcdd3aa58aa7ed0ade39228e3335d8e0ad853a8aed070ba59f922e835e8f4a4.mp3",
+      "audio": "2ec46e8eb60d21ba64202ae2441b160a9c1b67166b8751ea932e5749272e9d3c.mp3",
       "channel_id": "555548f64789d9c9da9da746",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 90.672,
+          "end_sec": 20.568,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침은 [이름]이 진행합니다. 오늘은 경북대학교에서 서울대학교와 함께하는 「KNU in the World Program」 참가학생 모집을 알려드릴게요.\n\n이 프로그램은 국내 사전교육과 해외 현지 프로젝트를 연계해 학생들이 싱가포르의 교육·산업·사회 분야를 직접 탐방하고, 글로벌 이슈에 대한 이해와 문제해결 역량을 강화하는 PBL 프로그램입니다.\n\n파견기간은 국내 사전교육이 '27. 1. 4일부터 6일까지 서울대학교에서 진행되고, 해외 프로그램은 '27. 1. 10일부터 22일까지 싱가포르에서 진행됩니다.\n\n모집인원은 경북대학교 학부 재학생 16명이며, 지원자격으로는 영어로 진행되는 강의 참여가 가능한 자(TOEIC 700점 이상), 직전학기 성적 평점평균 3.0 이상(4.3만점 기준), 해외여행 결격사유가 없는 자 등이 필요합니다.\n\n신청기간은 2026년 10월 21일부터 11월 3일까지이며, 학점은 계절학기 일반선택 3학점으로 인정됩니다.\n\n세부 내용과 신청 방법은 첨부 계획안을 참고해 주세요. 문의는 경북대 진로취업과로 연락해 주세요.\n\n이상입니다. 오늘 아침까지, 감사합니다."
+          "text": "서울대와 함께하는 'KNU in the World Program' 참가학생 모집합니다. 경북대 학부 재학생 16명을 선정해 싱가포르 교육·산업·사회 분야 현장에서 글로벌 PBL 프로젝트를 진행합니다. 국내 사전교육은 2027. 1."
         }
       ],
-      "duration_sec": 90.672,
+      "duration_sec": 20.568,
       "id": "555548f64789d9c9da9da746",
       "items": [
         {
@@ -1362,23 +1362,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwNSZzdGFydFBhZ2U9MCZsaXN0Tm89NzkwJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "안녕하세요, 오늘 아침은 [이름]이 진행합니다. 오늘은 경북대학교에서 서울대학교와 함께하는 「KNU in the World Program」 참가학생 모집을 알려드릴게요.\n\n이 프로그램은 국내 사전교육과 해외 현지 프로젝트를 연계해 학생들이 싱가포르의 교육·산업·사회 분야를 직접 탐방하고, 글로벌 이슈에 대한 이해와 문제해결 역량을 강화하는 PBL 프로그램입니다.\n\n파견기간은 국내 사전교육이 '27. 1. 4일부터 6일까지 서울대학교에서 진행되고, 해외 프로그램은 '27. 1. 10일부터 22일까지 싱가포르에서 진행됩니다.\n\n모집인원은 경북대학교 학부 재학생 16명이며, 지원자격으로는 영어로 진행되는 강의 참여가 가능한 자(TOEIC 700점 이상), 직전학기 성적 평점평균 3.0 이상(4.3만점 기준), 해외여행 결격사유가 없는 자 등이 필요합니다.\n\n신청기간은 2026년 10월 21일부터 11월 3일까지이며, 학점은 계절학기 일반선택 3학점으로 인정됩니다.\n\n세부 내용과 신청 방법은 첨부 계획안을 참고해 주세요. 문의는 경북대 진로취업과로 연락해 주세요.\n\n이상입니다. 오늘 아침까지, 감사합니다.",
+      "script": "서울대와 함께하는 'KNU in the World Program' 참가학생 모집합니다. 경북대 학부 재학생 16명을 선정해 싱가포르 교육·산업·사회 분야 현장에서 글로벌 PBL 프로젝트를 진행합니다. 국내 사전교육은 2027. 1.",
       "title": "서울대학교와 함께하는 「KNU in the World Program」 참가학생 모집"
     },
     {
-      "audio": "3ac6e4834cc0ab16786703c465059377335e42b2af302ef71520d037281378d6.mp3",
+      "audio": "e04689f8bb09fed4beb0df8b885f9ed2f7b6e6c402d2317d42d32e0a7722ceae.mp3",
       "channel_id": "ac27b6e53da200e94746eb30",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 58.176,
+          "end_sec": 10.752,
           "start_sec": 0,
-          "text": "수요기반 교양교과목 개발 사업을 통해 학생들의 다양한 관심 분야를 반영할 수 있도록 '내가 듣고 싶은 교양수업 공모전'을 진행합니다. 공모 주제는 '우리 대학에서 이런 교양수업을 듣고 싶습니다', 기간은 2026년 10월 1일부터 29일까지 4주간입니다. 대상은 학부 재학생 4명 이상으로 구성된 팀이며, 사업 기간 중 재학생이어야 합니다. 제안 내용은 학생들이 개설하고 싶은 새로운 교양교과목을 기술하고, 지원으로는 상장과 장학금이 제공됩니다. 제출 서류는 참가 신청서, 교양교과목 제안서, 개인정보 수집 동의서, 재학증명서(2026년 10월 1일 이후 발급)입니다. 신청은 메일로 제출하며 문의처는 기초교육센터입니다. PDF 미리보기 파일이 첨부되어 있습니다."
+          "text": "수요기반 교양교과목 개발 사업에 참여하는 '내가 듣고 싶은 교양수업 공모전'이 진행됩니다. 학부 재학생 4명 이상 팀으로 제안하면, 2026. 10."
         }
       ],
-      "duration_sec": 58.176,
+      "duration_sec": 10.752,
       "id": "ac27b6e53da200e94746eb30",
       "items": [
         {
@@ -1403,23 +1403,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzkxJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "수요기반 교양교과목 개발 사업을 통해 학생들의 다양한 관심 분야를 반영할 수 있도록 '내가 듣고 싶은 교양수업 공모전'을 진행합니다. 공모 주제는 '우리 대학에서 이런 교양수업을 듣고 싶습니다', 기간은 2026년 10월 1일부터 29일까지 4주간입니다. 대상은 학부 재학생 4명 이상으로 구성된 팀이며, 사업 기간 중 재학생이어야 합니다. 제안 내용은 학생들이 개설하고 싶은 새로운 교양교과목을 기술하고, 지원으로는 상장과 장학금이 제공됩니다. 제출 서류는 참가 신청서, 교양교과목 제안서, 개인정보 수집 동의서, 재학증명서(2026년 10월 1일 이후 발급)입니다. 신청은 메일로 제출하며 문의처는 기초교육센터입니다. PDF 미리보기 파일이 첨부되어 있습니다.",
+      "script": "수요기반 교양교과목 개발 사업에 참여하는 '내가 듣고 싶은 교양수업 공모전'이 진행됩니다. 학부 재학생 4명 이상 팀으로 제안하면, 2026. 10.",
       "title": "수요기반 교양교과목 개발 관련「내가 듣고 싶은 교양수업 공모전」안내"
     },
     {
-      "audio": "ebedf91a0e744f9e1624b0d7f47c065698c4e3af35cd9d4aaf51b05bdcd7f8b9.mp3",
+      "audio": "2ea4f020b5a65b17908bf72775491746423c684250eaf383f05e710e680a392d.mp3",
       "channel_id": "3026070aef42fb19fa57ef86",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 59.76,
+          "end_sec": 22.944,
           "start_sec": 0,
-          "text": "안녕하세요, 경북대 학생 여러분! 오늘은 2026년 3차 학생 대상 재난안전 현장 체험교육에 대한 정보를 알려드릴게요. 참석 대상은 경북대 학생이며, 선착순 모집이 진행됩니다. 일정은 2026년 11월 5일 목요일 12시부터 17시까지로, 약 40명이 참가할 예정입니다. 신청 마감은 2:00까지로, 이메일이나 QR코드를 통해 신청할 수 있어요. 교육 장소는 대구시민안전테마파크에서 진행되며, 심폐소생술, 화재탈출, 소화전 화재 진화 등 실제 재난 상황을 체험할 수 있습니다. 참가자에게는 기념품, 점심 식사, 단체버스, 연구활동종사자에게는 2학기 연구실 안전교육 2시간 인정이 제공됩니다. 신청은 2026년 10월 30일까지 진행해 주세요. 안전을 책임지는 우리 학교의 일원이 되어 주세요!"
+          "text": "안녕하세요, 경북대 학생 여러분! 2026년 3차 재난안전 현장 체험교육이 11월 5일 목요일 12시부터 17시까지 대구시민안전테마파크에서 진행됩니다. 선착순 모집으로 10월 30일 18시까지 신청서를 담당자 이메일 또는 QR코드로 제출해 주세요."
         }
       ],
-      "duration_sec": 59.76,
+      "duration_sec": 22.944,
       "id": "3026070aef42fb19fa57ef86",
       "items": [
         {
@@ -1444,23 +1444,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwNyZzdGFydFBhZ2U9MCZsaXN0Tm89NzkyJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "안녕하세요, 경북대 학생 여러분! 오늘은 2026년 3차 학생 대상 재난안전 현장 체험교육에 대한 정보를 알려드릴게요. 참석 대상은 경북대 학생이며, 선착순 모집이 진행됩니다. 일정은 2026년 11월 5일 목요일 12시부터 17시까지로, 약 40명이 참가할 예정입니다. 신청 마감은 2:00까지로, 이메일이나 QR코드를 통해 신청할 수 있어요. 교육 장소는 대구시민안전테마파크에서 진행되며, 심폐소생술, 화재탈출, 소화전 화재 진화 등 실제 재난 상황을 체험할 수 있습니다. 참가자에게는 기념품, 점심 식사, 단체버스, 연구활동종사자에게는 2학기 연구실 안전교육 2시간 인정이 제공됩니다. 신청은 2026년 10월 30일까지 진행해 주세요. 안전을 책임지는 우리 학교의 일원이 되어 주세요!",
+      "script": "안녕하세요, 경북대 학생 여러분! 2026년 3차 재난안전 현장 체험교육이 11월 5일 목요일 12시부터 17시까지 대구시민안전테마파크에서 진행됩니다. 선착순 모집으로 10월 30일 18시까지 신청서를 담당자 이메일 또는 QR코드로 제출해 주세요.",
       "title": "2026년 3차 학생 대상 재난안전 현장 체험교육 계획"
     },
     {
-      "audio": "d2124628bcecbf39bf97cf979c0ee986257a7993c5e5d5d9283038a3f8626d76.mp3",
+      "audio": "19b2f368820029ff858fad26cd9167454eb5bfdc5c765d08ccc8b8576c1c102e.mp3",
       "channel_id": "7acd719ed5605c80841ddf78",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 4.968,
+          "end_sec": 15.336,
           "start_sec": 0,
-          "text": "2026학년도 학생의료공제회 독감 예방접종비 지원사업 안내"
+          "text": "2026학년도 학생의료공제회 독감 예방접종비 지원사업 안내입니다. 지원 대상은 학생이며, 접종비 지원이 가능합니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 4.968,
+      "duration_sec": 15.336,
       "id": "7acd719ed5605c80841ddf78",
       "items": [
         {
@@ -1485,23 +1485,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwOCZzdGFydFBhZ2U9MTAmbGlzdE5vPTc4NSZ0YWJsZT1leF9iYnNfZGF0YV9mYXNoaW9uJm5hdl9jb2RlPWZhczE2MjMxMzQ0NDQmY29kZT1rSU90TU9xcm5raUomc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026학년도 학생의료공제회 독감 예방접종비 지원사업 안내",
+      "script": "2026학년도 학생의료공제회 독감 예방접종비 지원사업 안내입니다. 지원 대상은 학생이며, 접종비 지원이 가능합니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요.",
       "title": "2026학년도 학생의료공제회 독감 예방접종비 지원사업 안내"
     },
     {
-      "audio": "dd6f13a43fea783402527b30467db26660faf687b797cea08365393b4d1a2959.mp3",
+      "audio": "c6af41221db512974022d66c607cf5c86150f30a6100d3de1f26be1088c66b3b.mp3",
       "channel_id": "33ba3d0d98e3dc6f35bb816b",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 57.216,
+          "end_sec": 19.368,
           "start_sec": 0,
-          "text": "경상북도에서 2026년 9월 30일까지 경북·대구 대학생을 대상으로 미국 J1비자로 해외인턴을 파견하는 '2026 경북 청년 해외인턴 지원사업'을 상시모집합니다. 모집인원은 30명으로, 학업과 실무를 겸비한 글로벌 인재 양성에 초점을 둡니다. 신청은 경상북도경제진흥원 일자리종합지원팀 정유진 차장에게 문의하거나 e-mail로 서류를 제출하면 되며, 필수 서류로는 학교 성적증명서, 재학증명서, 영어성적증명서 등이 있습니다. 지원금은 출국항공료와 비자발급비(80~100%)를 지원하며, 비자발급 및 출국 후 서류를 제출해 신청할 수 있습니다. 세부 조건과 절차는 공고문에서 확인해 주세요."
+          "text": "2026 경북 청년 해외인턴 지원사업이 상시모집 중입니다. 미국 J1비자로 12개월 근무하며, 경북·대구 대학생 30명을 모집합니다. 서류전형 후 화상면접을 거쳐 합격자에게 비자 수속을 지원합니다."
         }
       ],
-      "duration_sec": 57.216,
+      "duration_sec": 19.368,
       "id": "33ba3d0d98e3dc6f35bb816b",
       "items": [
         {
@@ -1526,23 +1526,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzkzJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "경상북도에서 2026년 9월 30일까지 경북·대구 대학생을 대상으로 미국 J1비자로 해외인턴을 파견하는 '2026 경북 청년 해외인턴 지원사업'을 상시모집합니다. 모집인원은 30명으로, 학업과 실무를 겸비한 글로벌 인재 양성에 초점을 둡니다. 신청은 경상북도경제진흥원 일자리종합지원팀 정유진 차장에게 문의하거나 e-mail로 서류를 제출하면 되며, 필수 서류로는 학교 성적증명서, 재학증명서, 영어성적증명서 등이 있습니다. 지원금은 출국항공료와 비자발급비(80~100%)를 지원하며, 비자발급 및 출국 후 서류를 제출해 신청할 수 있습니다. 세부 조건과 절차는 공고문에서 확인해 주세요.",
+      "script": "2026 경북 청년 해외인턴 지원사업이 상시모집 중입니다. 미국 J1비자로 12개월 근무하며, 경북·대구 대학생 30명을 모집합니다. 서류전형 후 화상면접을 거쳐 합격자에게 비자 수속을 지원합니다.",
       "title": "「2026 경북 청년 해외인턴 지원사업」 상시모집 안내"
     },
     {
-      "audio": "7f728f6bfc195748588fd18eb6dc7ef76de9823897d0a3709651cf201408dcf9.mp3",
+      "audio": "4d3602ed7d545fbbf3a3c41338e3730c1be8e6bed5da4f57ba99c8ad81ef0765.mp3",
       "channel_id": "e70c8572ce1b3577567e464d",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 5.232,
+          "end_sec": 13.152,
           "start_sec": 0,
-          "text": "2026-2학기 대학원생 요가 프로그램 신청 안내"
+          "text": "2026-2학기 대학원생 요가 프로그램 신청 안내입니다. 신청 기한은 2026년 4월 15일까지로, 대학원생이라면 누구나 참여 가능합니다. 신청은 학사팀 홈페이지에서 진행됩니다."
         }
       ],
-      "duration_sec": 5.232,
+      "duration_sec": 13.152,
       "id": "e70c8572ce1b3577567e464d",
       "items": [
         {
@@ -1567,23 +1567,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkxMCZzdGFydFBhZ2U9MCZsaXN0Tm89Nzk0JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026-2학기 대학원생 요가 프로그램 신청 안내",
+      "script": "2026-2학기 대학원생 요가 프로그램 신청 안내입니다. 신청 기한은 2026년 4월 15일까지로, 대학원생이라면 누구나 참여 가능합니다. 신청은 학사팀 홈페이지에서 진행됩니다.",
       "title": "2026-2학기 대학원생 요가 프로그램 신청 안내"
     },
     {
-      "audio": "82b8a603e77359dbb16a7ea1464c3cf368212fa4c4f3ada66a2404e985498f43.mp3",
+      "audio": "247644fec7e8c8ee70587e928304fa00eb1d432305faaa631b4ec1e548267910.mp3",
       "channel_id": "67b45c043efea101706841ad",
       "channel_ids": [
         "notice-ad22d5b4a9e9"
       ],
       "cues": [
         {
-          "end_sec": 78.792,
+          "end_sec": 21.792,
           "start_sec": 0,
-          "text": "2026학년도 MY CTL 리워드 프로그램 모집 안내\n\n교수학습센터에서 진행하는 2026학년도 학습지원 프로그램에 관심 있는 학생 여러분!\n\n이번 프로그램은 2024학년도 CTL 서포터즈 학생들이 직접 제안한 의견을 반영해 만든 프로그램이니,\n재학생 여러분의 많은 참여 부탁드립니다.\n\n■ 신청대상: 학부 재학생 (휴학생 및 수업 연한 초과자 제외)\n■ 신청기간: 2026. 11. 23.(월) ~ 12. 31.(목)\n■ 신청방법: KNUCUBE→역량개발→비교과프로그램을 통해 온라인 접수\n■ 신청링크: https://buly.kr/6XpDlZ7\n■ 참여혜택: 1인당 장학금 10만원\n■ 프로그램 참여 인정 기간: 2026년 3월 ~ 12월"
+          "text": "안녕하세요, 오늘 아침 방송입니다. 교수학습센터에서 진행하는 2026학년도 MY CTL 리워드 프로그램 모집을 알려드릴게요. 학부 재학생이면 2026년 11월 23일부터 12월 31일까지 온라인으로 신청 가능해요."
         }
       ],
-      "duration_sec": 78.792,
+      "duration_sec": 21.792,
       "id": "67b45c043efea101706841ad",
       "items": [
         {
@@ -1608,23 +1608,23 @@
           "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkxMSZzdGFydFBhZ2U9MCZsaXN0Tm89Nzk1JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 MY CTL 리워드 프로그램 모집 안내\n\n교수학습센터에서 진행하는 2026학년도 학습지원 프로그램에 관심 있는 학생 여러분!\n\n이번 프로그램은 2024학년도 CTL 서포터즈 학생들이 직접 제안한 의견을 반영해 만든 프로그램이니,\n재학생 여러분의 많은 참여 부탁드립니다.\n\n■ 신청대상: 학부 재학생 (휴학생 및 수업 연한 초과자 제외)\n■ 신청기간: 2026. 11. 23.(월) ~ 12. 31.(목)\n■ 신청방법: KNUCUBE→역량개발→비교과프로그램을 통해 온라인 접수\n■ 신청링크: https://buly.kr/6XpDlZ7\n■ 참여혜택: 1인당 장학금 10만원\n■ 프로그램 참여 인정 기간: 2026년 3월 ~ 12월",
+      "script": "안녕하세요, 오늘 아침 방송입니다. 교수학습센터에서 진행하는 2026학년도 MY CTL 리워드 프로그램 모집을 알려드릴게요. 학부 재학생이면 2026년 11월 23일부터 12월 31일까지 온라인으로 신청 가능해요.",
       "title": "2026학년도 MY CTL 리워드 프로그램 모집 안내"
     },
     {
-      "audio": "d592e5f629f9a4867721a889a1d83309b7facc6412646a116ff0ec97c9bb593d.mp3",
+      "audio": "8abb28e3e4534d17005e15fc8745b3476c26d67a6212864663e55099bb818b69.mp3",
       "channel_id": "d3c32fbec027ab8c30950b94",
       "channel_ids": [
         "notice-e1ec1bf0eb87"
       ],
       "cues": [
         {
-          "end_sec": 25.536,
+          "end_sec": 22.776,
           "start_sec": 0,
-          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 모집 기간은 9월 30일부터 10월 12일까지이며, 대학원 재학생 및 수료 후 등록생이 대상입니다. 캠프 일정과 프로그램 구성에 대한 세부 내용은 붙임으로 확인해 주세요. 많은 참여 부탁드립니다."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청 가능합니다. 모집 기간은 2026년 9월 30일(수)부터 10월 12일(월)까지입니다."
         }
       ],
-      "duration_sec": 25.536,
+      "duration_sec": 22.776,
       "id": "d3c32fbec027ab8c30950b94",
       "items": [
         {
@@ -1649,11 +1649,11 @@
           "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzA0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
         }
       ],
-      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 모집 기간은 9월 30일부터 10월 12일까지이며, 대학원 재학생 및 수료 후 등록생이 대상입니다. 캠프 일정과 프로그램 구성에 대한 세부 내용은 붙임으로 확인해 주세요. 많은 참여 부탁드립니다.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 대학원 재학생 및 수료후 등록생이면 9월 30일부터 10월 12일까지 신청 가능합니다. 모집 기간은 2026년 9월 30일(수)부터 10월 12일(월)까지입니다.",
       "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내(수정)"
     },
     {
-      "audio": "ba36a9b665d1cd4aa724b0ad81ad7a4c0ef3e7775f1de5cd18e11c1c9f90397c.mp3",
+      "audio": "3d2590f7b13bd2e32c2946f882ce39e5c306111e34d5683cc1410de02b72f5dd.mp3",
       "channel_id": "e8f353c3bedb7cf86cc965c7",
       "channel_ids": [
         "notice-d1802616c625",
@@ -1662,12 +1662,12 @@
       ],
       "cues": [
         {
-          "end_sec": 64.512,
+          "end_sec": 20.688,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내에 대한 정보를 알려드릴게요. 신청 마감은 2026년 10월 12일 월요일까지입니다. 인도네시아와 베트남 학생참가비는 모두 1,600,000원이며, 대학지원금은 0원입니다. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수)와 사회취약계층/자격증 등 각종 증빙서류(해당자만)입니다. 면접 일정은 대학 추천을 위해 별도로 안내될 예정입니다. 추가로, 붙임으로 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등이 제공됩니다."
+          "text": "안녕하세요, 오늘 아침 방송입니다. 2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남 학생은 160만 원의 학생참가비를 납부해야 해요."
         }
       ],
-      "duration_sec": 64.512,
+      "duration_sec": 20.688,
       "id": "e8f353c3bedb7cf86cc965c7",
       "items": [
         {
@@ -1728,23 +1728,23 @@
           "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내에 대한 정보를 알려드릴게요. 신청 마감은 2026년 10월 12일 월요일까지입니다. 인도네시아와 베트남 학생참가비는 모두 1,600,000원이며, 대학지원금은 0원입니다. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수)와 사회취약계층/자격증 등 각종 증빙서류(해당자만)입니다. 면접 일정은 대학 추천을 위해 별도로 안내될 예정입니다. 추가로, 붙임으로 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등이 제공됩니다.",
+      "script": "안녕하세요, 오늘 아침 방송입니다. 2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남 학생은 160만 원의 학생참가비를 납부해야 해요.",
       "title": "[안내]2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "f49bfa98df8224fd76dd1d8fc4cacdb63068c473ad815c84c8f6c6f38069084f.mp3",
+      "audio": "a1625035fe59de7f551d8e49d81aa3f4d87ae3f5362bb55434ce057b6ec70558.mp3",
       "channel_id": "58d08853e2718e85f1b288f1",
       "channel_ids": [
         "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 47.976,
+          "end_sec": 25.632,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 파견국이 인도네시아와 베트남인 학생들은 160만 원의 학생참가비를 내야 해요. 대학 지원금은 없으니 주의해요. 필수 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서가 있어요. 면접 일정은 별도로 안내할게요. 참고로, 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식이 첨부되어 있어요."
+          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중입니다. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견됩니다. 학생참가비는 1,600,000원이며, 대학지원금은 없으니 참고해 주세요."
         }
       ],
-      "duration_sec": 47.976,
+      "duration_sec": 25.632,
       "id": "58d08853e2718e85f1b288f1",
       "items": [
         {
@@ -1769,23 +1769,23 @@
           "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0MDkmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDQxJnRhYmxlPWV4X2Jic19kYXRhX2VsZWN0cmljJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmY29kZT1xaDhpeHc3OThhblkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 파견국이 인도네시아와 베트남인 학생들은 160만 원의 학생참가비를 내야 해요. 대학 지원금은 없으니 주의해요. 필수 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서가 있어요. 면접 일정은 별도로 안내할게요. 참고로, 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식이 첨부되어 있어요.",
+      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중입니다. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견됩니다. 학생참가비는 1,600,000원이며, 대학지원금은 없으니 참고해 주세요.",
       "title": "2026년 제 55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "e487508f9e2d3956bfe09b747346179d725c7d4212a5613357883a5eb840cac1.mp3",
+      "audio": "770e67c18222e41af192a3c161ea0c35bcd28298757c47a7517a5f84c489df92.mp3",
       "channel_id": "f82242299ccedf559db2a61a",
       "channel_ids": [
         "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 46.848,
+          "end_sec": 20.568,
           "start_sec": 0,
-          "text": "다음 중간고사 시간표를 확인해주세요. 2026학년도 2학기 전기공학과 중간고사 시간표입니다.\n\n** 본 일정은 추후 부득이하게 변경될 수 있으니, 반드시 수업 담당교수님 및 LMS 공지사항 등을 통해 다시 한번 확인해 주세요.\n\n▶ 본 시간표에 공지되지 않은 과목은 반드시 담당교수님과 연락해 중간고사 관련 내용을 확인하세요.\n\n▶ 수업 강의실과 시험장소가 다를 수 있으니, 수강과목, 담당교수, 시험일시, 장소를 필히 확인해 주세요.\n\n※ 문의 : 950-7810 (IT대학5호관 413호)"
+          "text": "2026학년도 2학기 전기공학과 중간고사 시간표입니다. 본 일정은 추후 변경될 수 있으니, 수업 담당 교수님과 LMS 공지사항을 다시 확인해 주세요. 시간표에 없는 과목은 반드시 담당 교수님께 문의해 주세요."
         }
       ],
-      "duration_sec": 46.848,
+      "duration_sec": 20.568,
       "id": "f82242299ccedf559db2a61a",
       "items": [
         {
@@ -1810,23 +1810,23 @@
           "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNTYmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "다음 중간고사 시간표를 확인해주세요. 2026학년도 2학기 전기공학과 중간고사 시간표입니다.\n\n** 본 일정은 추후 부득이하게 변경될 수 있으니, 반드시 수업 담당교수님 및 LMS 공지사항 등을 통해 다시 한번 확인해 주세요.\n\n▶ 본 시간표에 공지되지 않은 과목은 반드시 담당교수님과 연락해 중간고사 관련 내용을 확인하세요.\n\n▶ 수업 강의실과 시험장소가 다를 수 있으니, 수강과목, 담당교수, 시험일시, 장소를 필히 확인해 주세요.\n\n※ 문의 : 950-7810 (IT대학5호관 413호)",
+      "script": "2026학년도 2학기 전기공학과 중간고사 시간표입니다. 본 일정은 추후 변경될 수 있으니, 수업 담당 교수님과 LMS 공지사항을 다시 확인해 주세요. 시간표에 없는 과목은 반드시 담당 교수님께 문의해 주세요.",
       "title": "[시험]2026학년도 2학기 전기공학과 중간고사 시간표"
     },
     {
-      "audio": "84a73dec2be5bfd56c750b1a88cea51635251c3a7c575fcc51017bc9c4083281.mp3",
+      "audio": "a456f0e4f7f6c759748b16852335388d595bcb13a9a6d3af75eb344e30323e01.mp3",
       "channel_id": "4ad5d987f12c7a52f2f130c6",
       "channel_ids": [
         "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 16.512,
+          "end_sec": 15.36,
           "start_sec": 0,
-          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 사전 등록을 통해 참여하실 수 있으며, 등록 마감은 10월 20일까지입니다. 자세한 내용은 홈페이지에서 확인해 주세요."
+          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 15일(토)에 개최됩니다. 자세한 내용은 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 16.512,
+      "duration_sec": 15.36,
       "id": "4ad5d987f12c7a52f2f130c6",
       "items": [
         {
@@ -1851,23 +1851,23 @@
           "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNTcmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 개최됩니다. 사전 등록을 통해 참여하실 수 있으며, 등록 마감은 10월 20일까지입니다. 자세한 내용은 홈페이지에서 확인해 주세요.",
+      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 15일(토)에 개최됩니다. 자세한 내용은 홈페이지에서 확인해 주세요.",
       "title": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회 개최 안내"
     },
     {
-      "audio": "0c87e95448e9749b9c62a049cf54f60edd20d05a1822f26a7130bd85847d5e64.mp3",
+      "audio": "bb3bbbf222a18d703d371bdae36237c6c9140fe5631a06ac3911761bc9557936.mp3",
       "channel_id": "1a044ccc877176286b4ea948",
       "channel_ids": [
         "notice-450caf336106"
       ],
       "cues": [
         {
-          "end_sec": 6.6,
+          "end_sec": 11.52,
           "start_sec": 0,
-          "text": "2027년도 지역인재 7급 수습직원 선발 시험 대비 사전 설명회 안내"
+          "text": "2027년도 지역인재 7급 수습직원 선발 시험 대비 사전 설명회가 진행됩니다. 구체적인 일정과 장소는 추후 안내될 예정입니다."
         }
       ],
-      "duration_sec": 6.6,
+      "duration_sec": 11.52,
       "id": "1a044ccc877176286b4ea948",
       "items": [
         {
@@ -1892,23 +1892,23 @@
           "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTMwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MjEwJnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2027년도 지역인재 7급 수습직원 선발 시험 대비 사전 설명회 안내",
+      "script": "2027년도 지역인재 7급 수습직원 선발 시험 대비 사전 설명회가 진행됩니다. 구체적인 일정과 장소는 추후 안내될 예정입니다.",
       "title": "2027년도 지역인재 7급 수습직원 선발 시험 대비 사전 설명회 안내"
     },
     {
-      "audio": "76eebe1c99441677f51c54ffe2baef67c3e03d15546dcaa43f9267ea5a9cf112.mp3",
+      "audio": "ced19994c9c66ac301b1532ced3ff85fdc25da17e54c147290b8d401849f21ea.mp3",
       "channel_id": "29f031ca8be4b2f118597634",
       "channel_ids": [
         "notice-ccc3a94a1fa5"
       ],
       "cues": [
         {
-          "end_sec": 47.232,
+          "end_sec": 17.736,
           "start_sec": 0,
-          "text": "환경분야 정부지원금 부정수급 집중신고기간이 10월 1일부터 31일까지 운영됩니다. 국민권익위원회에서 환경분야 국가 재정 누수 방지와 부정수급 신고를 촉진하기 위해 이 기간 동안 환경분야 정부지원금 부정수급 행위를 집중적으로 신고할 수 있습니다. 신고는 국민권익위원회 누리집(acrc.go.kr)에서 '정책·정보' → '부패방지 자료실' → '공공재정환수법'에서 확인할 수 있으며, 구체적인 신고 방법은 붙임 파일을 참조해 주세요. 기간 내 신고를 진행해 주시기 바랍니다."
+          "text": "환경분야 정부지원금 부정수급 집중신고기간이 10월 1일부터 31일까지 운영됩니다. 국민권익위원회에서 환경분야 국가 재정 누수 방지와 부정수급 신고를 촉진하기 위해 신고 접수를 진행합니다."
         }
       ],
-      "duration_sec": 47.232,
+      "duration_sec": 17.736,
       "id": "29f031ca8be4b2f118597634",
       "items": [
         {
@@ -1933,23 +1933,23 @@
           "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxMzAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NDkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "환경분야 정부지원금 부정수급 집중신고기간이 10월 1일부터 31일까지 운영됩니다. 국민권익위원회에서 환경분야 국가 재정 누수 방지와 부정수급 신고를 촉진하기 위해 이 기간 동안 환경분야 정부지원금 부정수급 행위를 집중적으로 신고할 수 있습니다. 신고는 국민권익위원회 누리집(acrc.go.kr)에서 '정책·정보' → '부패방지 자료실' → '공공재정환수법'에서 확인할 수 있으며, 구체적인 신고 방법은 붙임 파일을 참조해 주세요. 기간 내 신고를 진행해 주시기 바랍니다.",
+      "script": "환경분야 정부지원금 부정수급 집중신고기간이 10월 1일부터 31일까지 운영됩니다. 국민권익위원회에서 환경분야 국가 재정 누수 방지와 부정수급 신고를 촉진하기 위해 신고 접수를 진행합니다.",
       "title": "환경분야 정부지원금 부정수급 집중신고기간 운영 안내"
     },
     {
-      "audio": "3ec6da7f2773fb6211a981f7372e079be7c69fc80a4005833d380dd192902c56.mp3",
+      "audio": "d5d7b9ea2a2069031b32f15eb98c2b2e5ccb5b57a01e457a8c18fa0dafd860da.mp3",
       "channel_id": "c5d8e2db4869e8a9a075fe54",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 39.432,
+          "end_sec": 22.896,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 아시아권 국가로 인도네시아와 베트남에서 파견될 수 있는 학생들이 모집 중이에요. 단원 신청 시 필요한 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이 필요해요. 면접 일정은 별도로 안내될 예정이에요. 더 궁금한 점이 있으면 언제든지 알려주세요."
+          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 인도네시아와 베트남 파견국으로 1,600,000원의 학생참가비가 부과되며, 대학 지원금은 없어요."
         }
       ],
-      "duration_sec": 39.432,
+      "duration_sec": 22.896,
       "id": "c5d8e2db4869e8a9a075fe54",
       "items": [
         {
@@ -1974,23 +1974,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNTkmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTUwJnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 아시아권 국가로 인도네시아와 베트남에서 파견될 수 있는 학생들이 모집 중이에요. 단원 신청 시 필요한 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이 필요해요. 면접 일정은 별도로 안내될 예정이에요. 더 궁금한 점이 있으면 언제든지 알려주세요.",
+      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 인도네시아와 베트남 파견국으로 1,600,000원의 학생참가비가 부과되며, 대학 지원금은 없어요.",
       "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내(~10/12)"
     },
     {
-      "audio": "d2a5f8eca45be3c27f8f30cc081e3e0ac43cabc8aa32516f61d57b8bd39dfe09.mp3",
+      "audio": "94d45b44319be3b97951dfd58a56765424ae6a19b356582900a0251931f0946f.mp3",
       "channel_id": "8ea0a64321442b0adc086521",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 27.408,
+          "end_sec": 16.848,
           "start_sec": 0,
-          "text": "2026년 2학기 강의 개선을 위한 중간 설문을 10월 20일까지 참여해 주세요. 설문은 학생들의 피드백을 통해 강의 개선에 도움을 주고자 합니다. 설문 참여 방법은 학내 홈페이지에서 '2026.2학기 강의 개선 중간 설문'을 검색해 참여해 주세요. 추가로 PDF 미리보기 파일이 첨부되어 있습니다. 감사합니다."
+          "text": "2026년 2학기 강의 개선을 위한 중간 설문을 10월 20일까지 참여해 주세요. 설문은 학습 만족도와 강의 개선 방향을 파악하기 위해 진행됩니다. 설문 입력 설명서는 첨부파일에서 확인할 수 있습니다."
         }
       ],
-      "duration_sec": 27.408,
+      "duration_sec": 16.848,
       "id": "8ea0a64321442b0adc086521",
       "items": [
         {
@@ -2015,23 +2015,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNjgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTUmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026년 2학기 강의 개선을 위한 중간 설문을 10월 20일까지 참여해 주세요. 설문은 학생들의 피드백을 통해 강의 개선에 도움을 주고자 합니다. 설문 참여 방법은 학내 홈페이지에서 '2026.2학기 강의 개선 중간 설문'을 검색해 참여해 주세요. 추가로 PDF 미리보기 파일이 첨부되어 있습니다. 감사합니다.",
+      "script": "2026년 2학기 강의 개선을 위한 중간 설문을 10월 20일까지 참여해 주세요. 설문은 학습 만족도와 강의 개선 방향을 파악하기 위해 진행됩니다. 설문 입력 설명서는 첨부파일에서 확인할 수 있습니다.",
       "title": "2026.2학기 강의 개선을 위한 중간 설문 시행 안내(~10/20)"
     },
     {
-      "audio": "980f264cecab7acaa1db66c6d2a50e5420a5f9ee627598733fcdcd219423875b.mp3",
+      "audio": "4b85e99a554a793290b222402683103dbd18f1a25e12333d5ae6c4573cb04db1.mp3",
       "channel_id": "4380db428ad9e4fbc4bd4500",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 54.744,
+          "end_sec": 24.096,
           "start_sec": 0,
-          "text": "안녕하세요, 여러분. 오늘은 2026학년도 학습컨설팅 운영 재안내에 대한 정보를 알려드릴게요. 교수학습센터에서는 학부생 및 대학원생을 대상으로 2026년 3월 9일부터 2027년 1월 29일까지 매주 월요일부터 수요일까지 10시부터 11시, 15시부터 16시에 학습컨설팅을 운영합니다. 운영 내용은 학습유형검사(ILS)와 학습전략검사(MLST-Ⅱ) 결과를 바탕으로 맞춤형 학습방법을 제안하는 것이에요. 신청은 교수학습센터 홈페이지(ctl.knu.ac.kr)에서 사전 예약이 가능하며, QR 코드와 URL 주소도 함께 제공해 드렸습니다. 많은 참여 부탁드립니다."
+          "text": "2026학년도 학습컨설팅 운영 재안내입니다. 교수학습센터에서 학부생 및 대학원생을 대상으로 2026. 3. 9일부터 2027. 1. 29일까지 매주 월요일부터 수요일까지 10시부터 11시, 15시부터 16시까지 운영합니다."
         }
       ],
-      "duration_sec": 54.744,
+      "duration_sec": 24.096,
       "id": "4380db428ad9e4fbc4bd4500",
       "items": [
         {
@@ -2056,23 +2056,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTYmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "안녕하세요, 여러분. 오늘은 2026학년도 학습컨설팅 운영 재안내에 대한 정보를 알려드릴게요. 교수학습센터에서는 학부생 및 대학원생을 대상으로 2026년 3월 9일부터 2027년 1월 29일까지 매주 월요일부터 수요일까지 10시부터 11시, 15시부터 16시에 학습컨설팅을 운영합니다. 운영 내용은 학습유형검사(ILS)와 학습전략검사(MLST-Ⅱ) 결과를 바탕으로 맞춤형 학습방법을 제안하는 것이에요. 신청은 교수학습센터 홈페이지(ctl.knu.ac.kr)에서 사전 예약이 가능하며, QR 코드와 URL 주소도 함께 제공해 드렸습니다. 많은 참여 부탁드립니다.",
+      "script": "2026학년도 학습컨설팅 운영 재안내입니다. 교수학습센터에서 학부생 및 대학원생을 대상으로 2026. 3. 9일부터 2027. 1. 29일까지 매주 월요일부터 수요일까지 10시부터 11시, 15시부터 16시까지 운영합니다.",
       "title": "2026학년도 학습컨설팅 운영 재안내"
     },
     {
-      "audio": "6f87fa39b58c44e91c061321f7bf46c18329c307addc0eee969b54434557bc7f.mp3",
+      "audio": "0392536f54b15e3109a3c2f3c1a8a41fe386cd99921439021f250f20609cf500.mp3",
       "channel_id": "8e1c8a2e688edce4fae1f1f5",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 14.736,
+          "end_sec": 13.224,
           "start_sec": 0,
-          "text": "학생의료공제회에서 2026학년도 독감 예방접종비 지원 안내가 있습니다. 지원 기한은 10월 30일까지입니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요."
+          "text": "학생의료공제회에서 2026학년도 독감 예방접종비 지원을 안내합니다. 지원 기한은 10월 30일까지입니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 14.736,
+      "duration_sec": 13.224,
       "id": "8e1c8a2e688edce4fae1f1f5",
       "items": [
         {
@@ -2097,23 +2097,64 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzImc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTcmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "학생의료공제회에서 2026학년도 독감 예방접종비 지원 안내가 있습니다. 지원 기한은 10월 30일까지입니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요.",
+      "script": "학생의료공제회에서 2026학년도 독감 예방접종비 지원을 안내합니다. 지원 기한은 10월 30일까지입니다. 자세한 내용은 학생의료공제회 홈페이지에서 확인해 주세요.",
       "title": "[학생의료공제회]2026학년도 학생의료공제회 독감 예방접종비 지원 안내(~10/30)"
     },
     {
-      "audio": "17d68685d50f119702d49b9805b5e97c6f403d31c37611c089192ba10688d2b7.mp3",
+      "audio": "f63b7744523fe503431ada2da805a22ac589daede0a3f4b9f7550240c8e0c495.mp3",
+      "channel_id": "434a69402b74a8ab4410e076",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.0,
+          "start_sec": 0,
+          "text": "2026년 10월 도서관 국내 전자자원 온라인 교육이 진행됩니다. 다음 교육 일정을 확인해 보세요."
+        }
+      ],
+      "duration_sec": 9.0,
+      "id": "434a69402b74a8ab4410e076",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-08",
+          "postId": "knu-hanmun-han1624361542:7374",
+          "section": "소식",
+          "title": "2026년 10월 도서관 국내 전자자원 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7374",
+          "posted_at": "2026-10-08",
+          "reason": "new",
+          "title": "2026년 10월 도서관 국내 전자자원 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026년 10월 도서관 국내 전자자원 온라인 교육이 진행됩니다. 다음 교육 일정을 확인해 보세요.",
+      "title": "2026년 10월 도서관 국내 전자자원 온라인 교육 안내"
+    },
+    {
+      "audio": "478c71e4850085148ba28501ea6d00ba24e6eda4c67fb28454d44f0092c2c659.mp3",
       "channel_id": "17fe2445bcbcb89163fc9157",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 45.24,
+          "end_sec": 19.824,
           "start_sec": 0,
-          "text": "국립대학육성사업을 통해 진행 중인 수요기반 교양교과목 개발 사업에 참여해 주세요. 오늘부터 10월 29일까지 4주간 '내가 듣고 싶은 교양수업 공모전'이 열려 있습니다. 학부 재학생 4명 이상의 팀이 참여 가능하며, 제출서류는 참가신청서, 교양교과목 제안서, 개인정보 수집이용 동의서, 재학증명서 등입니다. 신청은 메일로 진행되며, 문의는 기초교육센터(☏)로 가능합니다. 공모전 결과는 2026년 12월에 발표될 예정이니, 관심 있는 학생들이 빠르게 준비해 보세요."
+          "text": "국립대학육성사업에 따라 '내가 듣고 싶은 교양수업 공모전'이 진행됩니다. 학부 재학생 4명 이상 팀으로 제안할 수 있으며, 2026년 10월 1일부터 29일까지 제출 가능합니다. 상장과 장학금이 지원되며, 서류는 메일로 제출해 주세요."
         }
       ],
-      "duration_sec": 45.24,
+      "duration_sec": 19.824,
       "id": "17fe2445bcbcb89163fc9157",
       "items": [
         {
@@ -2138,23 +2179,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NTkmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "국립대학육성사업을 통해 진행 중인 수요기반 교양교과목 개발 사업에 참여해 주세요. 오늘부터 10월 29일까지 4주간 '내가 듣고 싶은 교양수업 공모전'이 열려 있습니다. 학부 재학생 4명 이상의 팀이 참여 가능하며, 제출서류는 참가신청서, 교양교과목 제안서, 개인정보 수집이용 동의서, 재학증명서 등입니다. 신청은 메일로 진행되며, 문의는 기초교육센터(☏)로 가능합니다. 공모전 결과는 2026년 12월에 발표될 예정이니, 관심 있는 학생들이 빠르게 준비해 보세요.",
+      "script": "국립대학육성사업에 따라 '내가 듣고 싶은 교양수업 공모전'이 진행됩니다. 학부 재학생 4명 이상 팀으로 제안할 수 있으며, 2026년 10월 1일부터 29일까지 제출 가능합니다. 상장과 장학금이 지원되며, 서류는 메일로 제출해 주세요.",
       "title": "[국립대학육성사업] 수요기반 교양교과목 개발 관련 「내가 듣고 싶은 교양수업 공모전」안내(~10/29)"
     },
     {
-      "audio": "430895e75924c3f77533b87199f2974f8e6c4e54f87d29209ed4d1e1c658f055.mp3",
+      "audio": "deacf2da6932a818553ebf251e9c331cc00f363c5bf2e4a48ece491adf7b6ced.mp3",
       "channel_id": "bb1a97deecf5aecda4126570",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 83.952,
+          "end_sec": 16.728,
           "start_sec": 0,
-          "text": "2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내(11/23~12/31)\n\n교수학습센터에서 학습지원 프로그램 참여 확대 및 학생 역량 강화를 위해 2026학년도 MY CTL 리워드 프로그램 참여자를 모집합니다.\n\n신청대상: 학부 재학생(휴학생 및 수업 연한 초과자 제외)\n운영내용: 2026학년도 교수학습센터 학습지원 프로그램 참여자 중 상위 참여 학생에게 10만원 장학금 지급\n신청기간: 2026. 11. 23(월) ~ 12. 31(목)\n신청방법: [붙임2] 신청서 작성 후, KNUCUBE(knucube.knu.ac.kr) 온라인 접수\n참여혜택: 1인당 10만원 장학금 지원\n\n붙임 1. 2026학년도 MY CTL 리워드 프로그램 모집 안내\n붙임 2. 2026학년도 MY CTL 리워드 프로그램 신청서\n붙임 3. 2026학년도 MY CTL 리워드 프로그램 포스터(PDF)\n\n※ 학습지원 프로그램 참여 인정 기간: 2026. 3. ∼ 12.\n※ 신청서 작성 시 참여수기 필수 작성, 미작성 시 심사대상에서 제외"
+          "text": "2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내입니다. 학부 재학생이 11월 23일부터 12월 31일까지 신청할 수 있습니다. 참여하면 10만원 장학금을 지원받을 수 있습니다."
         }
       ],
-      "duration_sec": 83.952,
+      "duration_sec": 16.728,
       "id": "bb1a97deecf5aecda4126570",
       "items": [
         {
@@ -2179,23 +2220,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NjAmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내(11/23~12/31)\n\n교수학습센터에서 학습지원 프로그램 참여 확대 및 학생 역량 강화를 위해 2026학년도 MY CTL 리워드 프로그램 참여자를 모집합니다.\n\n신청대상: 학부 재학생(휴학생 및 수업 연한 초과자 제외)\n운영내용: 2026학년도 교수학습센터 학습지원 프로그램 참여자 중 상위 참여 학생에게 10만원 장학금 지급\n신청기간: 2026. 11. 23(월) ~ 12. 31(목)\n신청방법: [붙임2] 신청서 작성 후, KNUCUBE(knucube.knu.ac.kr) 온라인 접수\n참여혜택: 1인당 10만원 장학금 지원\n\n붙임 1. 2026학년도 MY CTL 리워드 프로그램 모집 안내\n붙임 2. 2026학년도 MY CTL 리워드 프로그램 신청서\n붙임 3. 2026학년도 MY CTL 리워드 프로그램 포스터(PDF)\n\n※ 학습지원 프로그램 참여 인정 기간: 2026. 3. ∼ 12.\n※ 신청서 작성 시 참여수기 필수 작성, 미작성 시 심사대상에서 제외",
+      "script": "2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내입니다. 학부 재학생이 11월 23일부터 12월 31일까지 신청할 수 있습니다. 참여하면 10만원 장학금을 지원받을 수 있습니다.",
       "title": "2026학년도 MY CTL 리워드 프로그램 참여자 모집 안내(11/23~12/31)"
     },
     {
-      "audio": "4341f26c66b58272aab3a4ec05796c0f99ab9a457a7fa578408b5bb1b43ec254.mp3",
+      "audio": "dc1c67484a93f4e30201e93be45f71b1d73fd8d99892b38fc2ac9ce063f2f417.mp3",
       "channel_id": "40c38fc0983db4f9010f1a97",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 53.688,
+          "end_sec": 17.184,
           "start_sec": 0,
-          "text": "안녕하세요, 경북대 학생 여러분! 오늘은 2026년 3차 학생 재난안전 현장 체험교육 신청 안내를 알려드릴게요. 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 심폐소생술, 화재탈출, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등 실전 체험 교육이 진행됩니다. 참가는 선착순으로 10월 30일까지 신청 가능하며, 신청서는 담당자 이메일이나 QR코드를 통해 제출할 수 있어요. 교육비는 무료이지만, 연구활동종사자라면 2학기 연구실 안전교육 2시간 인정이 가능하고, 점심 식사와 단체버스도 제공됩니다. 신청은 홈페이지에서 바로 가능하니, 재난 대응 역량을 향상시키기 위해 꼭 참여해 보세요!"
+          "text": "2026년 3차 학생 재난안전 현장 체험교육 신청 마감은 10월 30일까지입니다. 경북대 학생들이 11월 5일 12시부터 대구시민안전테마파크에서 심폐소생술, 화재탈출 등 실무 체험을 진행합니다."
         }
       ],
-      "duration_sec": 53.688,
+      "duration_sec": 17.184,
       "id": "40c38fc0983db4f9010f1a97",
       "items": [
         {
@@ -2220,23 +2261,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczODEmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NjEmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "안녕하세요, 경북대 학생 여러분! 오늘은 2026년 3차 학생 재난안전 현장 체험교육 신청 안내를 알려드릴게요. 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 심폐소생술, 화재탈출, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등 실전 체험 교육이 진행됩니다. 참가는 선착순으로 10월 30일까지 신청 가능하며, 신청서는 담당자 이메일이나 QR코드를 통해 제출할 수 있어요. 교육비는 무료이지만, 연구활동종사자라면 2학기 연구실 안전교육 2시간 인정이 가능하고, 점심 식사와 단체버스도 제공됩니다. 신청은 홈페이지에서 바로 가능하니, 재난 대응 역량을 향상시키기 위해 꼭 참여해 보세요!",
+      "script": "2026년 3차 학생 재난안전 현장 체험교육 신청 마감은 10월 30일까지입니다. 경북대 학생들이 11월 5일 12시부터 대구시민안전테마파크에서 심폐소생술, 화재탈출 등 실무 체험을 진행합니다.",
       "title": "2026년 3차 학생 재난안전 현장 체험교육 신청 안내(~10/30)"
     },
     {
-      "audio": "72af2fb73bfbfb89adcc524cf69a8a03be9ce6dd1f7252c59265ba54a8b6f05c.mp3",
+      "audio": "652be338cc78b13871212e4c5efdfbcd5e8fdfcbf4c9fb154f0f198f80df0318.mp3",
       "channel_id": "21bdb13e1d79ea907e0d9a28",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 63.912,
+          "end_sec": 19.584,
           "start_sec": 0,
-          "text": "전국 지역인재 7급 수습직원 선발시험 변경사항 안내해요. 인사혁신처에서 2027년 이후로 추천 학과성적 요건을 상위 10%에서 상위 15%로 조정했어요. 필기시험은 당해 연도 PSAT 심화 시험 성적을 활용할 예정이에요. 다만, PSAT 심화 원서를 접수하지 않으면 전국 지역인재 7급 원서 접수가 불가능하니 주의해요. 일정은 12월 중 공고 후 1월 중 서류전형, 3월 중 필기, 5월 중 면접으로 진행될 예정이지만 변동이 있을 수 있답니다. 참고로, 인사혁신처와 교육부의 공고 기한은 2026년 9월 28일과 29일이에요. 추가로 궁금한 점이 있으면 인사혁신처 홈페이지에서 확인해 보세요."
+          "text": "전국 지역인재 7급 수습직원 선발시험 변경사항 안내입니다. 2027년 이후 추천 학과성적 요건이 상위 15% 이내로 조정됩니다. 필기시험은 당해 연도 PSAT 심화 시험 성적을 활용할 예정이에요."
         }
       ],
-      "duration_sec": 63.912,
+      "duration_sec": 19.584,
       "id": "21bdb13e1d79ea907e0d9a28",
       "items": [
         {
@@ -2261,23 +2302,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczODImc3RhcnRQYWdlPTAmbGlzdE5vPTI5NjImdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "전국 지역인재 7급 수습직원 선발시험 변경사항 안내해요. 인사혁신처에서 2027년 이후로 추천 학과성적 요건을 상위 10%에서 상위 15%로 조정했어요. 필기시험은 당해 연도 PSAT 심화 시험 성적을 활용할 예정이에요. 다만, PSAT 심화 원서를 접수하지 않으면 전국 지역인재 7급 원서 접수가 불가능하니 주의해요. 일정은 12월 중 공고 후 1월 중 서류전형, 3월 중 필기, 5월 중 면접으로 진행될 예정이지만 변동이 있을 수 있답니다. 참고로, 인사혁신처와 교육부의 공고 기한은 2026년 9월 28일과 29일이에요. 추가로 궁금한 점이 있으면 인사혁신처 홈페이지에서 확인해 보세요.",
+      "script": "전국 지역인재 7급 수습직원 선발시험 변경사항 안내입니다. 2027년 이후 추천 학과성적 요건이 상위 15% 이내로 조정됩니다. 필기시험은 당해 연도 PSAT 심화 시험 성적을 활용할 예정이에요.",
       "title": "전국 지역인재 7급 수습직원 선발시험 향후 변경사항 안내"
     },
     {
-      "audio": "f6ed303c821dc55d42979af04d20a2e8d706d723d35c769446e269bc8619f8ac.mp3",
+      "audio": "ee8f71c04bf651ec2100964c2b21bedf448a3fcaf45cd618b985d7e28591339c.mp3",
       "channel_id": "5efc7b3f59931ea314075a09",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 33.768,
+          "end_sec": 25.8,
           "start_sec": 0,
-          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 14일 수요일 15시부터 복지관 4층 강의실에서 개최됩니다. 본교 재학생 및 2024년도 이후 졸업생 70명이 참여 가능하며, KNUCUBE를 통해 선착순으로 신청해야 합니다. 행사에서는 선발제도 및 변경사항, 전년도 합격자 합격 수기 발표와 질의응답이 진행될 예정입니다."
+          "text": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 14일 수요일 15시부터 복지관 4층 강의실에서 개최됩니다. 본교 재학생 및 2024년 이후 졸업생 70명이 참가 가능하며, KNUCUBE를 통해 선착순 신청이 가능합니다."
         }
       ],
-      "duration_sec": 33.768,
+      "duration_sec": 25.8,
       "id": "5efc7b3f59931ea314075a09",
       "items": [
         {
@@ -2302,23 +2343,23 @@
           "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczODMmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NjMmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 14일 수요일 15시부터 복지관 4층 강의실에서 개최됩니다. 본교 재학생 및 2024년도 이후 졸업생 70명이 참여 가능하며, KNUCUBE를 통해 선착순으로 신청해야 합니다. 행사에서는 선발제도 및 변경사항, 전년도 합격자 합격 수기 발표와 질의응답이 진행될 예정입니다.",
+      "script": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회가 10월 14일 수요일 15시부터 복지관 4층 강의실에서 개최됩니다. 본교 재학생 및 2024년 이후 졸업생 70명이 참가 가능하며, KNUCUBE를 통해 선착순 신청이 가능합니다.",
       "title": "2027년도 전국 지역인재 7급 수습직원 선발시험 대비 사전 설명회 개최 안내(10/14)"
     },
     {
-      "audio": "d0f34eef1109697829a1720762d2a1cd930c35b92765dabbdf74d15c2c5bf210.mp3",
+      "audio": "6acfae608e84da211eb16e837ce1be5091f10da6259f88e2a9a26d6b1433af8c.mp3",
       "channel_id": "e6a3bcdc3fe6d62b0c39845f",
       "channel_ids": [
         "notice-d13e4abb0470"
       ],
       "cues": [
         {
-          "end_sec": 34.824,
+          "end_sec": 22.224,
           "start_sec": 0,
-          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 이 캠프는 대학원생들의 심신회복과 대학원생활 적응력을 향상시키기 위해 진행됩니다. 참가대상은 대학원 재학생 및 수료후 등록생이며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 자세한 내용은 붙임 2026학년도 하반기 대학원생 마음건강증진캠프 운영계획을 확인해 주세요."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 참가대상은 대학원 재학생 및 수료후 등록생이며, 모집 기간은 9월 30일부터 10월 12일까지입니다. 자세한 내용은 학생상담센터 홈페이지에서 확인해 주세요."
         }
       ],
-      "duration_sec": 34.824,
+      "duration_sec": 22.224,
       "id": "e6a3bcdc3fe6d62b0c39845f",
       "items": [
         {
@@ -2343,23 +2384,23 @@
           "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1ODcmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzUmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작합니다. 이 캠프는 대학원생들의 심신회복과 대학원생활 적응력을 향상시키기 위해 진행됩니다. 참가대상은 대학원 재학생 및 수료후 등록생이며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 자세한 내용은 붙임 2026학년도 하반기 대학원생 마음건강증진캠프 운영계획을 확인해 주세요.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 참가대상은 대학원 재학생 및 수료후 등록생이며, 모집 기간은 9월 30일부터 10월 12일까지입니다. 자세한 내용은 학생상담센터 홈페이지에서 확인해 주세요.",
       "title": "[대학원]학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "e9a2fe88e8ae8a46804b624c56bf8cfc7df3314d3045afee04d97e5f5b4d7926.mp3",
+      "audio": "6ef3ed6d0a064709380de432d1b6815e9ec2171b053b3eb35b3d26273bd2048f.mp3",
       "channel_id": "97fc6c3b19e75b9c3583557f",
       "channel_ids": [
         "notice-4a41e1328a3e"
       ],
       "cues": [
         {
-          "end_sec": 51.744,
+          "end_sec": 22.896,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 학사 관련 소식이 있어요. 2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견될 수 있습니다. 학생참가비는 각 1,600,000원이며, 대학지원금은 없어요. 필수 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이에요. 면접 일정은 별도로 안내될 예정이에요. 더 궁금한 점이 있으면 학사팀에 문의해 보세요. 오늘도 건강하고 행복한 하루 보내세요."
+          "text": "안녕하세요, 오늘 아침 방송입니다. 학사에서 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집을 안내합니다. 신청 마감은 10월 12일까지로, 인도네시아와 베트남 파견국에서 1,600,000원의 학생참가비가 부과됩니다."
         }
       ],
-      "duration_sec": 51.744,
+      "duration_sec": 22.896,
       "id": "97fc6c3b19e75b9c3583557f",
       "items": [
         {
@@ -2384,23 +2425,23 @@
           "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNDImc3RhcnRQYWdlPTEwJmxpc3RObz0yMDk3JnRhYmxlPWV4X2Jic19kYXRhX3B1YWQmbmF2X2NvZGU9cHVhMTYyMzAyOTUxOSZjb2RlPTlYdFQwbWc1SExpMyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 학사 관련 소식이 있어요. 2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지로, 아시아권 국가인 인도네시아와 베트남으로 파견될 수 있습니다. 학생참가비는 각 1,600,000원이며, 대학지원금은 없어요. 필수 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이에요. 면접 일정은 별도로 안내될 예정이에요. 더 궁금한 점이 있으면 학사팀에 문의해 보세요. 오늘도 건강하고 행복한 하루 보내세요.",
+      "script": "안녕하세요, 오늘 아침 방송입니다. 학사에서 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집을 안내합니다. 신청 마감은 10월 12일까지로, 인도네시아와 베트남 파견국에서 1,600,000원의 학생참가비가 부과됩니다.",
       "title": "[학사] 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "68a4672dd5e447c94904ab2801ce8f44a85eb4f898733ea4df5c86bdccf18dc8.mp3",
+      "audio": "48d76fba9f7a10201dcdc2b855c992712256601925e6cbac0da58b24e0b22c0f.mp3",
       "channel_id": "cbd3e57c9943cd18c22245f7",
       "channel_ids": [
         "notice-4a41e1328a3e"
       ],
       "cues": [
         {
-          "end_sec": 75.672,
+          "end_sec": 13.392,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침 방송에서 알려드릴게요. 우리 대학에서 2026학년도 소통·팀워크 역량 강화를 위해 '통(通)하는 팀플레이' 특강을 운영합니다. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의와 팀워크 행동 실습이 포함됩니다. 강연자는 조안나(참커뮤니케이션 대표)입니다. 대구캠퍼스는 11월 10일 화요일 12:15부터 13:45까지 우당교육관 201호, 상주캠퍼스는 11월 12일 목요일 12:15부터 13:45까지 복지회관 201호에서 진행됩니다. 신청대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청해 주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 많은 참여 부탁드립니다."
+          "text": "안녕하세요, 오늘 아침 방송입니다. 2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 진행됩니다."
         }
       ],
-      "duration_sec": 75.672,
+      "duration_sec": 13.392,
       "id": "cbd3e57c9943cd18c22245f7",
       "items": [
         {
@@ -2425,23 +2466,64 @@
           "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNTgmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMDkmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "안녕하세요, 오늘 아침 방송에서 알려드릴게요. 우리 대학에서 2026학년도 소통·팀워크 역량 강화를 위해 '통(通)하는 팀플레이' 특강을 운영합니다. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의와 팀워크 행동 실습이 포함됩니다. 강연자는 조안나(참커뮤니케이션 대표)입니다. 대구캠퍼스는 11월 10일 화요일 12:15부터 13:45까지 우당교육관 201호, 상주캠퍼스는 11월 12일 목요일 12:15부터 13:45까지 복지회관 201호에서 진행됩니다. 신청대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청해 주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 많은 참여 부탁드립니다.",
+      "script": "안녕하세요, 오늘 아침 방송입니다. 2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 진행됩니다.",
       "title": "[학사] 2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 안내"
     },
     {
-      "audio": "b780f4db1da3226303c4d69156f25d7bd0d71d119c86e78c22b889aca8297b55.mp3",
+      "audio": "bbc13e55a8ab3c3549c9aef48ba89614d1541bc68ad4f5a8b2d65a21b0d5bcee.mp3",
+      "channel_id": "aff7dbcce13709b95a67402f",
+      "channel_ids": [
+        "notice-4a41e1328a3e"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.68,
+          "start_sec": 0,
+          "text": "10/14(수) 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 본교 사전설명회가 진행됩니다."
+        }
+      ],
+      "duration_sec": 10.68,
+      "id": "aff7dbcce13709b95a67402f",
+      "items": [
+        {
+          "channel_id": "notice-4a41e1328a3e",
+          "dday": null,
+          "detail": "행정학부 · 공지사항 · 2026-10-08",
+          "postId": "knu-puad-pua1623029519:4059",
+          "section": "소식",
+          "title": "10/14(수) 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 본교 사전설명회 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNTkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMTAmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-4a41e1328a3e",
+          "deadline": null,
+          "postId": "knu-puad-pua1623029519:4059",
+          "posted_at": "2026-10-08",
+          "reason": "new",
+          "title": "10/14(수) 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 본교 사전설명회 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNTkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMTAmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "10/14(수) 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 본교 사전설명회가 진행됩니다.",
+      "title": "10/14(수) 2027년도 전국 지역인재 7급 수습직원 선발시험 대비 본교 사전설명회 안내"
+    },
+    {
+      "audio": "824db2ca922d45108d558b15b57c9ed3eddd132054a87b60d92e789f13e0af7f.mp3",
       "channel_id": "b303965dd314a79b5ceed08d",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 50.016,
+          "end_sec": 25.656,
           "start_sec": 0,
-          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작했어요. 대상은 내국인 대학원생 50명과 외국인 대학원생 2차 30명이에요. 일정은 10월 30일부터 11월 14일까지로, 프로그램은 사유원 체험, 대인관계 특강, 구암서원 선비문화체험, 춤 배우기, 스트레스 특강, 다식 및 도예 체험, 요가 및 피클볼 배우기 등이 포함돼요. 모집 기간은 9월 30일부터 10월 12일까지예요. 참가 신청은 학생상담센터에서 가능해요. 참고로, 2026학년도 하반기 대학원생 마음건강증진캠프 운영계획서가 첨부되어 있어요."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 모집합니다. 내국인 대학원생은 10월 30일부터 31일까지 50명, 외국인은 11월 6일과 13일에 각 30명씩 참가 가능합니다. 모집 기간은 9월 30일부터 10월 12일까지입니다."
         }
       ],
-      "duration_sec": 50.016,
+      "duration_sec": 25.656,
       "id": "b303965dd314a79b5ceed08d",
       "items": [
         {
@@ -2466,23 +2548,23 @@
           "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTEwJmxpc3RObz0zODc2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작했어요. 대상은 내국인 대학원생 50명과 외국인 대학원생 2차 30명이에요. 일정은 10월 30일부터 11월 14일까지로, 프로그램은 사유원 체험, 대인관계 특강, 구암서원 선비문화체험, 춤 배우기, 스트레스 특강, 다식 및 도예 체험, 요가 및 피클볼 배우기 등이 포함돼요. 모집 기간은 9월 30일부터 10월 12일까지예요. 참가 신청은 학생상담센터에서 가능해요. 참고로, 2026학년도 하반기 대학원생 마음건강증진캠프 운영계획서가 첨부되어 있어요.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 모집합니다. 내국인 대학원생은 10월 30일부터 31일까지 50명, 외국인은 11월 6일과 13일에 각 30명씩 참가 가능합니다. 모집 기간은 9월 30일부터 10월 12일까지입니다.",
       "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "84050e1902956c6bc9ddf4bf3f965f0e90fe31d9738193d5cc027ce6c7e110b7.mp3",
+      "audio": "263a89e922f0188e21da2a449ab9e3d6fc0e79fe45af021ace1e303af165814e.mp3",
       "channel_id": "63b5b19d6a020082cccfdc33",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 70.608,
+          "end_sec": 22.2,
           "start_sec": 0,
-          "text": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내\n\n오늘 아침, IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나는 2026학년도 하반기 IWC 대학원생을 대상으로 하며, 영어 논문 작성 및 발표에 관한 내용을 다룹니다. 세미나 일정은 2026년 10월 15일(토) 오후 2시부터 4시까지로, IWC 학생회관 2층에서 진행됩니다. 세미나에 참가하려면 사전 등록이 필요하며, 등록은 IWC 학생회관 홈페이지에서 가능합니다. 세미나 후에는 영어 논문 작성에 대한 피드백을 받을 수 있으니, 관심 있는 학생들은 참가해 보시기 바랍니다.\n\n참가 신청은 IWC 학생회관 홈페이지에서 2026년 10월 1일부터 10월 15일까지 진행됩니다. 세미나 관련 문의는 IWC 학생회관 [개인정보 가림]로 연락해 주세요."
+          "text": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내입니다. 세미나는 2026년 9월 15일 금요일 오후 2시에 진행됩니다. 참가를 원하는 학생은 9월 10일까지 IWC 홈페이지에서 신청해 주세요."
         }
       ],
-      "duration_sec": 70.608,
+      "duration_sec": 22.2,
       "id": "63b5b19d6a020082cccfdc33",
       "items": [
         {
@@ -2507,23 +2589,23 @@
           "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwODQmc3RhcnRQYWdlPTAmbGlzdE5vPTM4ODcmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내\n\n오늘 아침, IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나는 2026학년도 하반기 IWC 대학원생을 대상으로 하며, 영어 논문 작성 및 발표에 관한 내용을 다룹니다. 세미나 일정은 2026년 10월 15일(토) 오후 2시부터 4시까지로, IWC 학생회관 2층에서 진행됩니다. 세미나에 참가하려면 사전 등록이 필요하며, 등록은 IWC 학생회관 홈페이지에서 가능합니다. 세미나 후에는 영어 논문 작성에 대한 피드백을 받을 수 있으니, 관심 있는 학생들은 참가해 보시기 바랍니다.\n\n참가 신청은 IWC 학생회관 홈페이지에서 2026년 10월 1일부터 10월 15일까지 진행됩니다. 세미나 관련 문의는 IWC 학생회관 [개인정보 가림]로 연락해 주세요.",
+      "script": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내입니다. 세미나는 2026년 9월 15일 금요일 오후 2시에 진행됩니다. 참가를 원하는 학생은 9월 10일까지 IWC 홈페이지에서 신청해 주세요.",
       "title": "「2026학년도 하반기 IWC 대학원생 영어 논문 세미나」안내"
     },
     {
-      "audio": "1a2e0d0c0efacc969c5c957d9094e9de4a4b759bb7a2595e99da3c50435cd9a8.mp3",
+      "audio": "8f9a3557739b23f89a6b53531869ff7702be5597df4215dab1b866473c605ffe.mp3",
       "channel_id": "66be7b9918cfd22bb92f05fb",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 27.408,
+          "end_sec": 20.28,
           "start_sec": 0,
-          "text": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내\n\n오늘 아침, 학교에서 진행하는 2026학년도 소통·팀워크 역량 강화 특강에 대한 운영 안내를 알려드릴게요. 이 특강은 학생들이 소통과 팀워크 역량을 강화할 수 있도록 마련된 프로그램이에요. 세부 내용은 학교 홈페이지에서 확인해 주세요."
+          "text": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내입니다. 오늘부터 3주간 매주 수요일 10시에 진행됩니다. 참가 신청은 학생회 홈페이지에서 26일까지 마감됩니다."
         }
       ],
-      "duration_sec": 27.408,
+      "duration_sec": 20.28,
       "id": "66be7b9918cfd22bb92f05fb",
       "items": [
         {
@@ -2548,23 +2630,23 @@
           "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwODUmc3RhcnRQYWdlPTAmbGlzdE5vPTM4ODgmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내\n\n오늘 아침, 학교에서 진행하는 2026학년도 소통·팀워크 역량 강화 특강에 대한 운영 안내를 알려드릴게요. 이 특강은 학생들이 소통과 팀워크 역량을 강화할 수 있도록 마련된 프로그램이에요. 세부 내용은 학교 홈페이지에서 확인해 주세요.",
+      "script": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내입니다. 오늘부터 3주간 매주 수요일 10시에 진행됩니다. 참가 신청은 학생회 홈페이지에서 26일까지 마감됩니다.",
       "title": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내"
     },
     {
-      "audio": "45ba7a7e1f59ac811416eb01e572e232e5f9064a4db1d7c0c73730480ef50d0c.mp3",
+      "audio": "bedaf2df5b6e59f40d13187e53e3cfd3ad627272cc2f20e5d827ed8ef0ccabbc.mp3",
       "channel_id": "340c6e73da8dc33154a67d49",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 12.216,
+          "end_sec": 11.712,
           "start_sec": 0,
-          "text": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 자세한 내용은 도서관 웹사이트에서 확인해 주세요."
+          "text": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 참가 신청은 3월 15일까지 도서관 웹사이트에서 진행됩니다."
         }
       ],
-      "duration_sec": 12.216,
+      "duration_sec": 11.712,
       "id": "340c6e73da8dc33154a67d49",
       "items": [
         {
@@ -2589,23 +2671,23 @@
           "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwODYmc3RhcnRQYWdlPTAmbGlzdE5vPTM4ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 자세한 내용은 도서관 웹사이트에서 확인해 주세요.",
+      "script": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 참가 신청은 3월 15일까지 도서관 웹사이트에서 진행됩니다.",
       "title": "2026학년도 2학기 도서관 「체계적 문헌고찰 온라인 특강」 실시 안내"
     },
     {
-      "audio": "c63ede2777e78a961b382c10ad75424ce015da7ee14cccf4baf8f6e3402cc506.mp3",
+      "audio": "6e3687ce3fa72e7ad3e9f700fd5ffb75774637d9d6f99b85df3162e1d44d9e07.mp3",
       "channel_id": "25d77e8065e821902715a37d",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 8.568,
+          "end_sec": 11.832,
           "start_sec": 0,
-          "text": "2026학년도 경북대학교 자연과학대학 기초과학축전 행사 안내\n첨부파일중 PDF미리보기"
+          "text": "2026학년도 경북대학교 자연과학대학 기초과학축전 행사 안내입니다. 첨부파일에서 PDF 미리보기를 확인해 보세요."
         }
       ],
-      "duration_sec": 8.568,
+      "duration_sec": 11.832,
       "id": "25d77e8065e821902715a37d",
       "items": [
         {
@@ -2630,23 +2712,23 @@
           "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwODcmc3RhcnRQYWdlPTAmbGlzdE5vPTM4OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 경북대학교 자연과학대학 기초과학축전 행사 안내\n첨부파일중 PDF미리보기",
+      "script": "2026학년도 경북대학교 자연과학대학 기초과학축전 행사 안내입니다. 첨부파일에서 PDF 미리보기를 확인해 보세요.",
       "title": "2026학년도 경북대학교 자연과학대학 기초과학축전 행사 안내"
     },
     {
-      "audio": "bf8f955da82fb415399ec79562c689f35f5215b77a4b5ff38a1343f9cf2cb959.mp3",
+      "audio": "6535c0d948bc9803b4bafab40a872266023a5539446591ec26d7d3c498c3a6e4.mp3",
       "channel_id": "efc1f62ead1e9b01b7e2d593",
       "channel_ids": [
         "knu-academic"
       ],
       "cues": [
         {
-          "end_sec": 74.76,
+          "end_sec": 21.168,
           "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)을 확인해 주세요. 학점교류 대학에서 수학 안내문이 도착하는 대로 업데이트됩니다.\n\n1. 신청 자격\n- 본교 재적생\n- 수학 희망자로서 학과(부)장 추천을 받은 학생\n- 2027년 2월 졸업예정자(추천 제한)\n\n2. 대학별 안내문: 붙임 문서 참조\n\n3. 통합정보시스템 신청 기한: 대학별 신청 기한까지(기한 엄수)\n\n4. 수학 승인 결과 확인 방법: 수학 승인 결과 통보 일자 이후 소속 학과(부) 사무실 문의\n\n5. 유의 사항\n- 재이수 경우 취득가능성 A-까지\n- 수강신청 가능학점: 6학점 이내(원격수업 포함)\n- 학생 신청 후 '학과 승인 → 대학 승인 → 학사과 승인' 진행\n- 대학별 수학추천자 서식 내 개인정보 제공 동의 필수\n\n6. 서울대학교 신청 기한: 2026. 10. 16.(금) 13:00까지"
+          "text": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)입니다. 학점교류 대학에서 수학 안내문이 도착하는 대로 업데이트됩니다. 신청 자격은 본교 재적생, 학과(부)장 추천 학생, 2027년 2월 졸업예정자(추천 제한)입니다."
         }
       ],
-      "duration_sec": 74.76,
+      "duration_sec": 21.168,
       "id": "efc1f62ead1e9b01b7e2d593",
       "items": [
         {
@@ -2671,23 +2753,23 @@
           "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?menu_idx=42&bbs_cde=stu_812&note_div=top&bltn_no=11791447922667"
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)을 확인해 주세요. 학점교류 대학에서 수학 안내문이 도착하는 대로 업데이트됩니다.\n\n1. 신청 자격\n- 본교 재적생\n- 수학 희망자로서 학과(부)장 추천을 받은 학생\n- 2027년 2월 졸업예정자(추천 제한)\n\n2. 대학별 안내문: 붙임 문서 참조\n\n3. 통합정보시스템 신청 기한: 대학별 신청 기한까지(기한 엄수)\n\n4. 수학 승인 결과 확인 방법: 수학 승인 결과 통보 일자 이후 소속 학과(부) 사무실 문의\n\n5. 유의 사항\n- 재이수 경우 취득가능성 A-까지\n- 수강신청 가능학점: 6학점 이내(원격수업 포함)\n- 학생 신청 후 '학과 승인 → 대학 승인 → 학사과 승인' 진행\n- 대학별 수학추천자 서식 내 개인정보 제공 동의 필수\n\n6. 서울대학교 신청 기한: 2026. 10. 16.(금) 13:00까지",
+      "script": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)입니다. 학점교류 대학에서 수학 안내문이 도착하는 대로 업데이트됩니다. 신청 자격은 본교 재적생, 학과(부)장 추천 학생, 2027년 2월 졸업예정자(추천 제한)입니다.",
       "title": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)"
     },
     {
-      "audio": "357eeec55806893b8f85148b00bef919b76f06a6a3def9b1b4015098a240200b.mp3",
+      "audio": "bbb41247769ba436d5a97c216283b5384ca537fb7741743d0ea3fab69e82eb21.mp3",
       "channel_id": "aa331f201612cea6ab93f080",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 76.104,
+          "end_sec": 19.752,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침은 [체험 안전 교육 안내] 2026년 3차 학생 재난안전 현장 체험교육이 진행되는 날이에요. 경북대 학생 여러분, 재난 발생 시 대응 역량을 향상시키기 위해 2026년 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 3차 학생 재난안전 현장 체험교육이 열리고 있어요. 참가는 선착순으로 약 40명까지 모집되며, 신청 마감은 10월 30일까지입니다. 신청은 담당자 이메일로 신청서를 제출하거나 QR코드를 통해 진행할 수 있어요. 교육 내용으로는 심폐소생술, 화재탈출 체험, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등이 포함됩니다. 참가자에게는 연구활동종사자에게는 2학기 연구실 안전교육 2시간 인정, 공적결석 인정(교수 사전 승인 필수), 텀블러 기념품 제공, 점심 식사 및 단체버스가 무료로 제공됩니다. 궁금한 점이 있으면 언제든지 문의해 주세요. 감사합니다."
+          "text": "학생 재난안전 현장 체험교육 3차는 2026년 11월 5일 12시부터 17시까지 본관 앞에서 진행됩니다. 선착순 40명 모집, 10월 30일까지 신청 가능합니다. 교육 신청은 담당자 이메일 또는 QR코드로 가능하며, 비용은 무료입니다."
         }
       ],
-      "duration_sec": 76.104,
+      "duration_sec": 19.752,
       "id": "aa331f201612cea6ab93f080",
       "items": [
         {
@@ -2712,23 +2794,23 @@
           "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105684&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "안녕하세요, 오늘 아침은 [체험 안전 교육 안내] 2026년 3차 학생 재난안전 현장 체험교육이 진행되는 날이에요. 경북대 학생 여러분, 재난 발생 시 대응 역량을 향상시키기 위해 2026년 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 3차 학생 재난안전 현장 체험교육이 열리고 있어요. 참가는 선착순으로 약 40명까지 모집되며, 신청 마감은 10월 30일까지입니다. 신청은 담당자 이메일로 신청서를 제출하거나 QR코드를 통해 진행할 수 있어요. 교육 내용으로는 심폐소생술, 화재탈출 체험, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등이 포함됩니다. 참가자에게는 연구활동종사자에게는 2학기 연구실 안전교육 2시간 인정, 공적결석 인정(교수 사전 승인 필수), 텀블러 기념품 제공, 점심 식사 및 단체버스가 무료로 제공됩니다. 궁금한 점이 있으면 언제든지 문의해 주세요. 감사합니다.",
+      "script": "학생 재난안전 현장 체험교육 3차는 2026년 11월 5일 12시부터 17시까지 본관 앞에서 진행됩니다. 선착순 40명 모집, 10월 30일까지 신청 가능합니다. 교육 신청은 담당자 이메일 또는 QR코드로 가능하며, 비용은 무료입니다.",
       "title": "[체험 안전 교육 안내] 2026년 3차 학생 재난안전 현장 체험교육 안내 및 교육 신청 안내"
     },
     {
-      "audio": "95682c42b783787f09faa6d1d37454931ea56d831600891e8c9b23c58af49d60.mp3",
+      "audio": "dae6c61c3179e035a6bab9be50a0031cddd747f0240fff50820cf4f63108cb23.mp3",
       "channel_id": "781a73797655ad3cd4019f48",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 33.768,
+          "end_sec": 15.624,
           "start_sec": 0,
-          "text": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌을 개최합니다. 이 페스티벌은 우리 사업단 및 KIAT에서 운영하는 비교과 프로그램의 우수 성과를 공유하고 확산하는 자리로, 참여 학생 및 반도체에 관심 있는 학생분들의 많은 참여를 부탁드립니다. 세부 정보는 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다. (https://knusemi.knu.ac.kr/content/requisition/program.html?pg=vv&pg_seq=49&page=1)"
+          "text": "반도체특성화대학사업단이 '제1회 SEMI-PLAY 페스티벌: Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 및 반도체에 관심 있는 분들의 참여를 부탁드립니다."
         }
       ],
-      "duration_sec": 33.768,
+      "duration_sec": 15.624,
       "id": "781a73797655ad3cd4019f48",
       "items": [
         {
@@ -2753,23 +2835,23 @@
           "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105685&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "반도체특성화대학사업단에서 제1회 SEMI-PLAY 페스티벌을 개최합니다. 이 페스티벌은 우리 사업단 및 KIAT에서 운영하는 비교과 프로그램의 우수 성과를 공유하고 확산하는 자리로, 참여 학생 및 반도체에 관심 있는 학생분들의 많은 참여를 부탁드립니다. 세부 정보는 경북대학교 반도체특성화대학사업단 홈페이지에서 확인할 수 있습니다. (https://knusemi.knu.ac.kr/content/requisition/program.html?pg=vv&pg_seq=49&page=1)",
+      "script": "반도체특성화대학사업단이 '제1회 SEMI-PLAY 페스티벌: Show Your Journey, Share Your Growth'를 개최합니다. 우수 성과 공유 및 확산을 위해 학생 및 반도체에 관심 있는 분들의 참여를 부탁드립니다.",
       "title": "[반도체특성화대학사업단] 제1회 SEMI-PLAY 페스티벌 개최 안내"
     },
     {
-      "audio": "744abc219744963f8d22a9143f21613725b56100a8e963208ab5f0fcfe57c7d7.mp3",
+      "audio": "32e4ffbe1c421958be7358c5f12c5d5c14a558f2c3d904457d1411f1bfc1d3ff.mp3",
       "channel_id": "137b38160fe8b8007efe9cd3",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 114.456,
+          "end_sec": 17.112,
           "start_sec": 0,
-          "text": "안녕하세요, 여러분! 오늘은 경북대학교 반도체특성화대학사업단에서 진행하는 제8회 반도체특성화 취업역량 강화교육에 대한 정보를 알려드릴게요. 이 교육은 삼성전자, SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 대상으로 합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 하며, 교육은 2026년 11월 3일(화) 09:00부터 18:00까지 진행됩니다. A반은 09:00~12:30, B반은 13:30~18:00으로 나뉘어져 있고, 정원은 A반 10명, B반 12명입니다.\n\n신청 기간은 2026년 10월 8일(목) 13:00부터 28일(수) 18:00까지로, 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행됩니다. 신청은 QR코드를 통해 하면 되고, 신청 마감 후 단톡방에서 Q&A를 운영할 예정이에요.\n\n이번 교육에서는 실제 반도체 기업 면접을 모방한 실전 모의면접과 피드백을 제공합니다. 강사진으로는 전) 삼성그룹 채용인사임원인 나*무 선생님, 전) 삼성전자 반도체 엔지니어인 유*영 선생님, 전) 삼성그룹 채용면접관인 안*형 선생님, 그리고 전) 삼성SDS 엔지니어인 주*훈 선생님 등이 참여합니다.\n\n이번 교육을 통해 면접 준비를 체계적으로 할 수 있을 거예요. 신청이 가능하면 빠르게 참여해 보세요. 궁금한 점이 있다면, 경북대학교 렛유인에듀로 문의해 주세요."
+          "text": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 안녕하세요. 제8회 반도체 취업역량 강화교육(면접 캠프)이 2026년 11월 3일 화요일 9시부터 18시까지 진행됩니다."
         }
       ],
-      "duration_sec": 114.456,
+      "duration_sec": 17.112,
       "id": "137b38160fe8b8007efe9cd3",
       "items": [
         {
@@ -2794,23 +2876,23 @@
           "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105686&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "안녕하세요, 여러분! 오늘은 경북대학교 반도체특성화대학사업단에서 진행하는 제8회 반도체특성화 취업역량 강화교육에 대한 정보를 알려드릴게요. 이 교육은 삼성전자, SK하이닉스 등 반도체 기업에 면접을 준비하는 학생들을 대상으로 합니다.\n\n참가 자격은 경북대 반도체특성화대학사업단 트랙(I, II, III) 참여 장학생이어야 하며, 교육은 2026년 11월 3일(화) 09:00부터 18:00까지 진행됩니다. A반은 09:00~12:30, B반은 13:30~18:00으로 나뉘어져 있고, 정원은 A반 10명, B반 12명입니다.\n\n신청 기간은 2026년 10월 8일(목) 13:00부터 28일(수) 18:00까지로, 경북대학교 글로벌 플라자 세미나실 209호, 309호에서 진행됩니다. 신청은 QR코드를 통해 하면 되고, 신청 마감 후 단톡방에서 Q&A를 운영할 예정이에요.\n\n이번 교육에서는 실제 반도체 기업 면접을 모방한 실전 모의면접과 피드백을 제공합니다. 강사진으로는 전) 삼성그룹 채용인사임원인 나*무 선생님, 전) 삼성전자 반도체 엔지니어인 유*영 선생님, 전) 삼성그룹 채용면접관인 안*형 선생님, 그리고 전) 삼성SDS 엔지니어인 주*훈 선생님 등이 참여합니다.\n\n이번 교육을 통해 면접 준비를 체계적으로 할 수 있을 거예요. 신청이 가능하면 빠르게 참여해 보세요. 궁금한 점이 있다면, 경북대학교 렛유인에듀로 문의해 주세요.",
+      "script": "경북대 반도체특성화대학사업단 트랙 참여 장학생 여러분, 안녕하세요. 제8회 반도체 취업역량 강화교육(면접 캠프)이 2026년 11월 3일 화요일 9시부터 18시까지 진행됩니다.",
       "title": "[반도체특성화대학사업단] 제8회 반도체특성화 취업역량 강화교육 개최 <면접>"
     },
     {
-      "audio": "d9ee4f42ca338ed245a6d08f3b20e029f600099df636412263247544f1e1c507.mp3",
+      "audio": "a0e490f8176c6f83081baea616c6bb44df49e48bbfbefccc30731cedda903694.mp3",
       "channel_id": "3c1802146ff89a16097e5cfc",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 13.368,
+          "end_sec": 14.208,
           "start_sec": 0,
-          "text": "2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 교수학습센터에서 운영됩니다. 세부 내용은 교수학습센터 홈페이지에서 확인해 주세요."
+          "text": "2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 교수학습센터에서 운영됩니다. 세부 일정과 참가 방법은 교내 공지사항에서 확인해 주세요."
         }
       ],
-      "duration_sec": 13.368,
+      "duration_sec": 14.208,
       "id": "3c1802146ff89a16097e5cfc",
       "items": [
         {
@@ -2835,23 +2917,23 @@
           "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105687&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 교수학습센터에서 운영됩니다. 세부 내용은 교수학습센터 홈페이지에서 확인해 주세요.",
+      "script": "2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'가 교수학습센터에서 운영됩니다. 세부 일정과 참가 방법은 교내 공지사항에서 확인해 주세요.",
       "title": "2026학년도 소통·팀워크 역량 강화 특강 '통(通)하는 팀플레이'운영 안내(교수학습센터 주관)"
     },
     {
-      "audio": "75d29469f2362cd34191ab14af5c86c5110e636ca7d2a375230a493d26531b0a.mp3",
+      "audio": "5e4ba2cb1530d499048f8ae5988d2835b2ea98adbd5c271a9543fcc33c820ddf.mp3",
       "channel_id": "c976a103cf021d5996889080",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 97.008,
+          "end_sec": 10.272,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침 방송입니다. 오늘은 경북대학교에서 진행하는 2026 프랑스·일본·중국 L-HUSS 국제화 프로그램 참가자 모집 정보를 알려드릴게요. 프로그램은 2027년 1월 중순에 일정을 진행하며, 9박 10일 내외로 구성됩니다. 참가 장소는 프랑스(파리, 릴), 일본(간사이 지역 일대), 중국(항주, 소흥)에서 진행될 예정이에요. 대상은 HUSS 사업에 관심 있는 경북대학교 재학생이자, 로컬시너지 융합전공, 전공지원 예정자, 참여학과 우대입니다. 혜택으로는 탐방비 사업단 부담과 5마일리지 장학금이 지급됩니다. 신청은 포스터의 QR코드를 스캔해 신청서를 제출하는 방식이며, 접수 마감은 2026년 10월 8일(목) 16:00까지입니다. 서류 발표는 2026년 10월 13일(화) 14:00에 진행되며, 면접 일정은 추후 공지될 예정입니다. 참고로, 참여 학생은 결과물 제출 및 성과활용확산세미나 참여가 필수사항이에요. 문의는 인문사회융합인재양성사업단(~3)으로 연락해 주세요. 오늘은 여기까지입니다. 안녕히 가세요."
+          "text": "2026년 10월 8일 목요일 16시까지 경북대학교 재학생이 L-HUSS 국제화 프로그램 신청 가능합니다."
         }
       ],
-      "duration_sec": 97.008,
+      "duration_sec": 10.272,
       "id": "c976a103cf021d5996889080",
       "items": [
         {
@@ -2876,23 +2958,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13655&page=2"
         }
       ],
-      "script": "안녕하세요, 오늘 아침 방송입니다. 오늘은 경북대학교에서 진행하는 2026 프랑스·일본·중국 L-HUSS 국제화 프로그램 참가자 모집 정보를 알려드릴게요. 프로그램은 2027년 1월 중순에 일정을 진행하며, 9박 10일 내외로 구성됩니다. 참가 장소는 프랑스(파리, 릴), 일본(간사이 지역 일대), 중국(항주, 소흥)에서 진행될 예정이에요. 대상은 HUSS 사업에 관심 있는 경북대학교 재학생이자, 로컬시너지 융합전공, 전공지원 예정자, 참여학과 우대입니다. 혜택으로는 탐방비 사업단 부담과 5마일리지 장학금이 지급됩니다. 신청은 포스터의 QR코드를 스캔해 신청서를 제출하는 방식이며, 접수 마감은 2026년 10월 8일(목) 16:00까지입니다. 서류 발표는 2026년 10월 13일(화) 14:00에 진행되며, 면접 일정은 추후 공지될 예정입니다. 참고로, 참여 학생은 결과물 제출 및 성과활용확산세미나 참여가 필수사항이에요. 문의는 인문사회융합인재양성사업단(~3)으로 연락해 주세요. 오늘은 여기까지입니다. 안녕히 가세요.",
+      "script": "2026년 10월 8일 목요일 16시까지 경북대학교 재학생이 L-HUSS 국제화 프로그램 신청 가능합니다.",
       "title": "2026 프랑스·일본·중국 L-HUSS 국제화 프로그램 참가자 모집 (10/8(목) 16:00 마감)"
     },
     {
-      "audio": "105d0d0716121348ba1d6e5a0cabe2eb289fcb11a5c3c33ce6656ba68fa30ab2.mp3",
+      "audio": "630492e1a534e5ab406c687a713e8342e3310bd26d4a1660eb1fe193a31c07a8.mp3",
       "channel_id": "b7e709e28d4b097521e532ed",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 77.736,
+          "end_sec": 16.536,
           "start_sec": 0,
-          "text": "2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내\n\n경북대학교 인재상 수립에 따라 첨성인 역량(첨단, 성찰, 인성)을 갖춘 우수 학생들을 선발해 학위수여식에서 인증서를 수여할 예정입니다. 신청은 KNUCUBE 시스템을 통해 2027년 1월 4일부터 11일까지 진행되며, 선발자 확정은 2월 초, 인증서 수여는 2월 말에 예정됩니다.\n\n선발 기준은 다음과 같습니다.\n- 첨단 역량(창의/융합): 공모전·경진대회 입상, 논문 게재, 특허 출원·등록, 또는 전공 관련 공인 자격증 취득 중 1가지 이상\n- 성찰 역량(비판/탐색): 진로취업과 프로그램 2개 이상 참여 또는 학습지원센터 프로그램 2개 이상 참여\n- 인성 역량(소통/책임): 국내외 봉사활동 50시간 이상(KNUCUBE 등록), 국제교류과 국제화 프로그램 2개 이상 참여, 공인 영어 성적 증명 1가지 이상\n\n2027년 2월 19일 학위수여식에서 우수 선발자에게 시상이 이루어집니다.\n\n[붙임] 2026학년도 2학기 첨성인 아너스 클럽 운영 계획 1부"
+          "text": "2026학년도 2학기 첨성인 아너스 클럽 신청이 시작됩니다. 첨성인 역량(첨단, 성찰, 인성)을 갖춘 학생이 4가지 이상 요건을 충족하면 신청 가능합니다."
         }
       ],
-      "duration_sec": 77.736,
+      "duration_sec": 16.536,
       "id": "b7e709e28d4b097521e532ed",
       "items": [
         {
@@ -2917,23 +2999,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13656&page=2"
         }
       ],
-      "script": "2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내\n\n경북대학교 인재상 수립에 따라 첨성인 역량(첨단, 성찰, 인성)을 갖춘 우수 학생들을 선발해 학위수여식에서 인증서를 수여할 예정입니다. 신청은 KNUCUBE 시스템을 통해 2027년 1월 4일부터 11일까지 진행되며, 선발자 확정은 2월 초, 인증서 수여는 2월 말에 예정됩니다.\n\n선발 기준은 다음과 같습니다.\n- 첨단 역량(창의/융합): 공모전·경진대회 입상, 논문 게재, 특허 출원·등록, 또는 전공 관련 공인 자격증 취득 중 1가지 이상\n- 성찰 역량(비판/탐색): 진로취업과 프로그램 2개 이상 참여 또는 학습지원센터 프로그램 2개 이상 참여\n- 인성 역량(소통/책임): 국내외 봉사활동 50시간 이상(KNUCUBE 등록), 국제교류과 국제화 프로그램 2개 이상 참여, 공인 영어 성적 증명 1가지 이상\n\n2027년 2월 19일 학위수여식에서 우수 선발자에게 시상이 이루어집니다.\n\n[붙임] 2026학년도 2학기 첨성인 아너스 클럽 운영 계획 1부",
+      "script": "2026학년도 2학기 첨성인 아너스 클럽 신청이 시작됩니다. 첨성인 역량(첨단, 성찰, 인성)을 갖춘 학생이 4가지 이상 요건을 충족하면 신청 가능합니다.",
       "title": "2026학년도 2학기 첨성인 아너스 클럽 운영 계획 안내"
     },
     {
-      "audio": "b271f5b89874528158769ceac5e8774b78a624b9abe0dc5ece76f5dfaa9c6165.mp3",
+      "audio": "49576ebd720a0f38447f2435e912692ad8807ae271cd82f070037820a2bd1289.mp3",
       "channel_id": "8bb245e3349a3f7822e94551",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 47.952,
+          "end_sec": 15.912,
           "start_sec": 0,
-          "text": "2026학년도 2학기 강의 개선을 위한 중간 설문 시행 안내\n\n오늘 아침, 학생중심 교육혁신을 위한 학사제도 개선과제 중 강의 개선 요구 사항을 반영하기 위해 중간 설문을 시행합니다. 2026년 10월 7일부터 20일까지 학부 및 대학원 3,676강좌(수강생 26,921명)에 대한 온라인 설문을 진행합니다. 설문 결과는 11월 2일부터 13일까지 교수님들이 반영계획서를 작성하고, 11월 18일부터 12월 1일까지 학생들이 확인할 수 있습니다. 세부 내용은 붙임 1, 2에서 확인해 주세요."
+          "text": "2026학년도 2학기 강의 개선 중간 설문을 시행합니다. 학부 및 대학원 3,676강좌(26,921명)에 대한 설문은 10월 7일부터 20일까지 진행됩니다."
         }
       ],
-      "duration_sec": 47.952,
+      "duration_sec": 15.912,
       "id": "8bb245e3349a3f7822e94551",
       "items": [
         {
@@ -2958,23 +3040,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13657&page=2"
         }
       ],
-      "script": "2026학년도 2학기 강의 개선을 위한 중간 설문 시행 안내\n\n오늘 아침, 학생중심 교육혁신을 위한 학사제도 개선과제 중 강의 개선 요구 사항을 반영하기 위해 중간 설문을 시행합니다. 2026년 10월 7일부터 20일까지 학부 및 대학원 3,676강좌(수강생 26,921명)에 대한 온라인 설문을 진행합니다. 설문 결과는 11월 2일부터 13일까지 교수님들이 반영계획서를 작성하고, 11월 18일부터 12월 1일까지 학생들이 확인할 수 있습니다. 세부 내용은 붙임 1, 2에서 확인해 주세요.",
+      "script": "2026학년도 2학기 강의 개선 중간 설문을 시행합니다. 학부 및 대학원 3,676강좌(26,921명)에 대한 설문은 10월 7일부터 20일까지 진행됩니다.",
       "title": "2026학년도 2학기 강의 개선을 위한 중간 설문 시행 안내"
     },
     {
-      "audio": "90c539c3dc8d9fc4cf2fdf4ee78d61ead8b63e3afca9c4e1af7ce24b70327890.mp3",
+      "audio": "7d10e64fb9022b30f4c1293c4e2170b683d1491d6be91dc9f5a0d28ba895e09b.mp3",
       "channel_id": "5893fa3a63643bc81a8e4e9b",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 77.352,
+          "end_sec": 12.816,
           "start_sec": 0,
-          "text": "안녕하세요, KNU 학생 여러분! 오늘은 2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」에 대한 운영 안내를 알려드릴게요. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의와 팀워크 행동 실습이 포함됩니다. 강연자는 조안나(참커뮤니케이션 대표)님이 진행합니다. 대구캠퍼스는 11월 10일(화) 12:15부터 13:45까지 우당교육관 201호, 상주캠퍼스는 11월 12일(목) 12:15부터 13:45까지 복지회관 201호에서 진행됩니다. 신청 대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집 인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청해 주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 오늘은 많은 참여 부탁드려요!"
+          "text": "2026학년도 소통·팀워크 강화 특강 '통(通)하는 팀플레이'가 운영됩니다. 조안나(참커뮤니케이션 대표)가 강의합니다."
         }
       ],
-      "duration_sec": 77.352,
+      "duration_sec": 12.816,
       "id": "5893fa3a63643bc81a8e4e9b",
       "items": [
         {
@@ -2999,23 +3081,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13658&page=2"
         }
       ],
-      "script": "안녕하세요, KNU 학생 여러분! 오늘은 2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」에 대한 운영 안내를 알려드릴게요. 주제는 '협력의 대화'로, 효과적인 의사소통 및 협업 전략 관련 강의와 팀워크 행동 실습이 포함됩니다. 강연자는 조안나(참커뮤니케이션 대표)님이 진행합니다. 대구캠퍼스는 11월 10일(화) 12:15부터 13:45까지 우당교육관 201호, 상주캠퍼스는 11월 12일(목) 12:15부터 13:45까지 복지회관 201호에서 진행됩니다. 신청 대상은 본교 학부생이며, 참여자에게 푸드박스가 제공됩니다. 모집 인원은 캠퍼스별 선착순 50명이니, KNUCUBE(https://knucube.knu.ac.kr)에서 사전 신청해 주세요. 신청 방법은 로그인 후 '역량개발' 메뉴에서 '비교과프로그램'을 선택해 프로그램 검색 후 신청하는 거예요. 오늘은 많은 참여 부탁드려요!",
+      "script": "2026학년도 소통·팀워크 강화 특강 '통(通)하는 팀플레이'가 운영됩니다. 조안나(참커뮤니케이션 대표)가 강의합니다.",
       "title": "2026학년도 소통·팀워크 역량 강화 특강 「통(通)하는 팀플레이」 운영 안내"
     },
     {
-      "audio": "8c438383ef538ce443392f99f3cfdc6cf975ddd83b061b3809c676747540c0ae.mp3",
+      "audio": "505f0ddcf0f206759ce4463224927374862bc9a3cae3f3f9d1721e6e7f65d0fc.mp3",
       "channel_id": "705a54ad9ee267f3a2a2e55a",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 71.112,
+          "end_sec": 17.544,
           "start_sec": 0,
-          "text": "2026년 3차 학생 재난안전 현장 체험교육이 진행됩니다. 경북대 학생 여러분, 2026년 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 심폐소생술, 화재탈출, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등 현장 체험 교육이 진행됩니다. 선착순 모집으로 10월 30일까지 신청서를 담당자 이메일로 제출하거나 QR코드를 통해 신청할 수 있습니다. 교육은 무료이며, 참석자에게 연구활동종사자 2학기 안전교육 2시간 인정, 공적결석 인정(교수님 사전 승인 필요), 텀블러 기념품 제공, 점심 식사 및 단체버스가 제공됩니다. 교육장 이동은 본관 앞에서 12시에 45인승 버스로 이동합니다. 기관은 대구 동구 팔공산로 1155번지 대구시민안전테마파크입니다."
+          "text": "2026년 3차 학생 재난안전 현장 체험교육이 11월 5일(목) 12시부터 본관에서 단체버스로 대구시민안전테마파크로 이동해 심폐소생술, 화재탈출, 완강기 대피 등 체험교육을 진행합니다."
         }
       ],
-      "duration_sec": 71.112,
+      "duration_sec": 17.544,
       "id": "705a54ad9ee267f3a2a2e55a",
       "items": [
         {
@@ -3040,23 +3122,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13659"
         }
       ],
-      "script": "2026년 3차 학생 재난안전 현장 체험교육이 진행됩니다. 경북대 학생 여러분, 2026년 11월 5일(목) 12시부터 17시까지 대구시민안전테마파크에서 심폐소생술, 화재탈출, 완강기 대피, 소화전 화재 진화, 모노레일 비상탈출 등 현장 체험 교육이 진행됩니다. 선착순 모집으로 10월 30일까지 신청서를 담당자 이메일로 제출하거나 QR코드를 통해 신청할 수 있습니다. 교육은 무료이며, 참석자에게 연구활동종사자 2학기 안전교육 2시간 인정, 공적결석 인정(교수님 사전 승인 필요), 텀블러 기념품 제공, 점심 식사 및 단체버스가 제공됩니다. 교육장 이동은 본관 앞에서 12시에 45인승 버스로 이동합니다. 기관은 대구 동구 팔공산로 1155번지 대구시민안전테마파크입니다.",
+      "script": "2026년 3차 학생 재난안전 현장 체험교육이 11월 5일(목) 12시부터 본관에서 단체버스로 대구시민안전테마파크로 이동해 심폐소생술, 화재탈출, 완강기 대피 등 체험교육을 진행합니다.",
       "title": "2026년 3차 학생 재난안전 현장 체험교육 안내 및 교육신청 안내"
     },
     {
-      "audio": "82e677f25657a7ea3e75d19c8b3b99f5db2fd943275c463c2c65dd64a0ba434a.mp3",
+      "audio": "b33c53297b19c1087e0033de0c16600e573c9b24855c825e61569ebc110d0fb6.mp3",
       "channel_id": "c8931e374300bb556ee46500",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 135.048,
+          "end_sec": 11.472,
           "start_sec": 0,
-          "text": "2026학년도 2학기 교직 적성 및 인성검사(2차) 시행 안내\n\n2026학년도 2학기 교직 적성 및 인성검사(2차)를 다음 기간 내 신청하여 검사받아 주세요.\n\n가. 검사 개요\n1) 검사 대상: 270명(교직과정 이수자: 사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 10. 29.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 11. 6.(금) 예정\n- 부적격자 경우, 별도 온라인 교육 이수 필요(추후 별도 안내 예정)\n\n나. 신청 방법\n1) 신청 기간: 2026. 10. 14.(수) ~ 10. 16.(금) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n- 기준연도 2012년 이전 학생: 적격 판정 1회\n- 기준연도 2013년 이후 학생: 적격 판정 2회\n\n3. 2027년 2월 또는 8월 졸업예정자 중 기준을 충족하지 못한 학생은 반드시 신청해 주세요."
+          "text": "2026학년도 2학기 교직 적성 및 인성검사(2차)는 10월 29일 19시부터 글로벌플라자 5개 검사장에서 시행됩니다."
         }
       ],
-      "duration_sec": 135.048,
+      "duration_sec": 11.472,
       "id": "c8931e374300bb556ee46500",
       "items": [
         {
@@ -3081,23 +3163,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13660"
         }
       ],
-      "script": "2026학년도 2학기 교직 적성 및 인성검사(2차) 시행 안내\n\n2026학년도 2학기 교직 적성 및 인성검사(2차)를 다음 기간 내 신청하여 검사받아 주세요.\n\n가. 검사 개요\n1) 검사 대상: 270명(교직과정 이수자: 사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 10. 29.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 11. 6.(금) 예정\n- 부적격자 경우, 별도 온라인 교육 이수 필요(추후 별도 안내 예정)\n\n나. 신청 방법\n1) 신청 기간: 2026. 10. 14.(수) ~ 10. 16.(금) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n- 기준연도 2012년 이전 학생: 적격 판정 1회\n- 기준연도 2013년 이후 학생: 적격 판정 2회\n\n3. 2027년 2월 또는 8월 졸업예정자 중 기준을 충족하지 못한 학생은 반드시 신청해 주세요.",
+      "script": "2026학년도 2학기 교직 적성 및 인성검사(2차)는 10월 29일 19시부터 글로벌플라자 5개 검사장에서 시행됩니다.",
       "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 시행 안내"
     },
     {
-      "audio": "d3902a5f21eb7c518c2ef3c4c52ed2f5db8f5e022d61cf8c48f52211afecd9a5.mp3",
+      "audio": "3df70bc18ca769b92ca3c717b4d18ac973ecde22136e41d0db40a06502b0cf6f.mp3",
       "channel_id": "c6cc4803c84d093b68f33718",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 103.272,
+          "end_sec": 13.656,
           "start_sec": 0,
-          "text": "2026학년도 학습컨설팅 운영 재안내\n교수학습센터에서는 2026학년도 학습컨설팅을 다음과 같이 운영하오니 많은 학생들의 참여 바랍니다.\n가. 대상: 학부생 및 대학원생\n나. 운영기간: 2026. 3. 9.(월) ~ 2027. 1. 29.(금)\n※ 매주 10회 실시 (월요일~수요일) 10:00, 15:00, (목요일~금요일) 11:00, 15:00\n다. 운영내용: 학습유형검사(ILS), 학습전략검사(MLST-Ⅱ) 결과 및 학생의 학습경험을 토대로 맞춤형 학습방법 제안\n라. 신청방법: 교수학습센터 홈페이지(ctl.knu.ac.kr)를 통해 사전 예약\nQR 코드\nURL 주소\n붙임 참조\nhttps://ctl.knu.ac.kr/web/ctl_learning/ctl_learning_consult.php\n마. 협조사항: 각 대학 및 학과 홈페이지 공지사항 등록 및 안내 요청"
+          "text": "2026학년도 학습컨설팅은 교수학습센터에서 학부생 및 대학원생 대상으로 2026. 3. 9월부터 2027. 1. 29일까지 운영됩니다."
         }
       ],
-      "duration_sec": 103.272,
+      "duration_sec": 13.656,
       "id": "c6cc4803c84d093b68f33718",
       "items": [
         {
@@ -3122,23 +3204,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13661"
         }
       ],
-      "script": "2026학년도 학습컨설팅 운영 재안내\n교수학습센터에서는 2026학년도 학습컨설팅을 다음과 같이 운영하오니 많은 학생들의 참여 바랍니다.\n가. 대상: 학부생 및 대학원생\n나. 운영기간: 2026. 3. 9.(월) ~ 2027. 1. 29.(금)\n※ 매주 10회 실시 (월요일~수요일) 10:00, 15:00, (목요일~금요일) 11:00, 15:00\n다. 운영내용: 학습유형검사(ILS), 학습전략검사(MLST-Ⅱ) 결과 및 학생의 학습경험을 토대로 맞춤형 학습방법 제안\n라. 신청방법: 교수학습센터 홈페이지(ctl.knu.ac.kr)를 통해 사전 예약\nQR 코드\nURL 주소\n붙임 참조\nhttps://ctl.knu.ac.kr/web/ctl_learning/ctl_learning_consult.php\n마. 협조사항: 각 대학 및 학과 홈페이지 공지사항 등록 및 안내 요청",
+      "script": "2026학년도 학습컨설팅은 교수학습센터에서 학부생 및 대학원생 대상으로 2026. 3. 9월부터 2027. 1. 29일까지 운영됩니다.",
       "title": "2026학년도 학습컨설팅 운영 재안내"
     },
     {
-      "audio": "4ded60c168d3a878c95ad235a52da782d058c5b4bd684acd9912b7d2e094f963.mp3",
+      "audio": "9cdff586950a471803ce26774c61f92afaf5b57281afbefe12b113e8dba27fe1.mp3",
       "channel_id": "2e9f048be2612e6eae900a8b",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 78.024,
+          "end_sec": 17.16,
           "start_sec": 0,
-          "text": "2026학년도 MY CTL 리워드 프로그램 모집 안내\n\n교수학습센터에서는 학습지원 프로그램 참여 확대 및 학생 역량 강화를 위해 2026학년도 MY CTL 리워드 프로그램 참여자를 모집합니다.\n\n신청대상은 학부 재학생입니다. 휴학생 및 수업 연한 초과자는 제외됩니다.\n\n2026학년도 교수학습센터 학습지원 프로그램 참여자 중 상위 학생에게 1인당 10만원 장학금을 지급합니다. 학습지원 프로그램 참여 인정 기간은 2026년 3월부터 12월까지입니다.\n\n신청기간은 2026년 11월 23일부터 12월 31일까지입니다. 신청 방법은 [붙임2] 신청서를 작성한 후, KNUCUBE(knucube.knu.ac.kr)를 통해 온라인 접수합니다. 신청서 작성 시 참여수기 필수 작성으로, 미작성 시 심사대상에서 제외됩니다.\n\n붙임 1~4: 2026학년도 MY CTL 리워드 프로그램 관련 자료 4부."
+          "text": "2026학년도 MY CTL 리워드 프로그램 모집 안내입니다. 교수학습센터에서 학부 재학생 중 2026학년도 학습지원 프로그램 참여자 중 상위 학생에게 10만원 장학금을 지급합니다."
         }
       ],
-      "duration_sec": 78.024,
+      "duration_sec": 17.16,
       "id": "2e9f048be2612e6eae900a8b",
       "items": [
         {
@@ -3163,23 +3245,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13662"
         }
       ],
-      "script": "2026학년도 MY CTL 리워드 프로그램 모집 안내\n\n교수학습센터에서는 학습지원 프로그램 참여 확대 및 학생 역량 강화를 위해 2026학년도 MY CTL 리워드 프로그램 참여자를 모집합니다.\n\n신청대상은 학부 재학생입니다. 휴학생 및 수업 연한 초과자는 제외됩니다.\n\n2026학년도 교수학습센터 학습지원 프로그램 참여자 중 상위 학생에게 1인당 10만원 장학금을 지급합니다. 학습지원 프로그램 참여 인정 기간은 2026년 3월부터 12월까지입니다.\n\n신청기간은 2026년 11월 23일부터 12월 31일까지입니다. 신청 방법은 [붙임2] 신청서를 작성한 후, KNUCUBE(knucube.knu.ac.kr)를 통해 온라인 접수합니다. 신청서 작성 시 참여수기 필수 작성으로, 미작성 시 심사대상에서 제외됩니다.\n\n붙임 1~4: 2026학년도 MY CTL 리워드 프로그램 관련 자료 4부.",
+      "script": "2026학년도 MY CTL 리워드 프로그램 모집 안내입니다. 교수학습센터에서 학부 재학생 중 2026학년도 학습지원 프로그램 참여자 중 상위 학생에게 10만원 장학금을 지급합니다.",
       "title": "2026학년도 MY CTL 리워드 프로그램 모집 안내"
     },
     {
-      "audio": "465d448015a963432ca9a305a9cff2ac373b9068ed59494ae8c73b03a38103ba.mp3",
+      "audio": "816233b654b597cd2a1ba3c6be0bae6ebe75332ca5c1a50206769305758913d8.mp3",
       "channel_id": "9d0278a878a7558d8af5de2d",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 93.264,
+          "end_sec": 16.728,
           "start_sec": 0,
-          "text": "안녕하세요, 아침 방송입니다. 오늘은 [국립대학육성] 수요기반 교양교과목 개발 사업과 관련해 '내가 듣고 싶은 교양수업 공모전'에 대한 안내를 전해드리려고 해요. 학생들이 관심 있는 분야를 바탕으로 새로운 교양수업을 개설해 보려는 공모전이 진행 중이에요.\n\n공모 주제는 '우리 대학에서 이런 교양수업을 듣고 싶습니다'입니다. 참여 기간은 2026년 10월 1일부터 10월 29일까지, 총 4주간이에요. 대상은 학부 재학생 4명 이상으로 구성된 팀이어야 하며, 사업 기간 중 재학 중이어야 합니다.\n\n공모 내용은 학생들의 수요를 반영한 새로운 교양교과목 제안서를 제출하는 거예요. 지원 내용으로는 상장(총장상, 교무처장상)과 장학금이 있습니다. 제출 서류는 참가신청서, 교양교과목 제안서, 개인정보 수집이용 및 제공 동의서, 재학증명서(2026년 10월 1일 이후 발급)가 필요해요.\n\n신청은 공모 기간 내 메일로 제출하면 되고, 문의처는 기초교육센터입니다. 참고로, 붙임 1과 2번 서식이 함께 제공되니, 세부 사항은 기초교육센터에서 확인해 보세요.\n\n이번 공모전에 참여해 보시면, 학생들의 의견을 반영한 교양수업 개발이 가능할 거예요. 많은 참여 부탁드립니다."
+          "text": "안녕하세요, 아침 방송입니다. 오늘은 [국립대학육성] 수요기반 교양교과목 개발 사업 관련 '내가 듣고 싶은 교양수업 공모전' 안내를 알려드릴게요. 학부 재학생 4명 이상 팀으로 참여 가능하며, 2026. 10."
         }
       ],
-      "duration_sec": 93.264,
+      "duration_sec": 16.728,
       "id": "9d0278a878a7558d8af5de2d",
       "items": [
         {
@@ -3204,23 +3286,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13663"
         }
       ],
-      "script": "안녕하세요, 아침 방송입니다. 오늘은 [국립대학육성] 수요기반 교양교과목 개발 사업과 관련해 '내가 듣고 싶은 교양수업 공모전'에 대한 안내를 전해드리려고 해요. 학생들이 관심 있는 분야를 바탕으로 새로운 교양수업을 개설해 보려는 공모전이 진행 중이에요.\n\n공모 주제는 '우리 대학에서 이런 교양수업을 듣고 싶습니다'입니다. 참여 기간은 2026년 10월 1일부터 10월 29일까지, 총 4주간이에요. 대상은 학부 재학생 4명 이상으로 구성된 팀이어야 하며, 사업 기간 중 재학 중이어야 합니다.\n\n공모 내용은 학생들의 수요를 반영한 새로운 교양교과목 제안서를 제출하는 거예요. 지원 내용으로는 상장(총장상, 교무처장상)과 장학금이 있습니다. 제출 서류는 참가신청서, 교양교과목 제안서, 개인정보 수집이용 및 제공 동의서, 재학증명서(2026년 10월 1일 이후 발급)가 필요해요.\n\n신청은 공모 기간 내 메일로 제출하면 되고, 문의처는 기초교육센터입니다. 참고로, 붙임 1과 2번 서식이 함께 제공되니, 세부 사항은 기초교육센터에서 확인해 보세요.\n\n이번 공모전에 참여해 보시면, 학생들의 의견을 반영한 교양수업 개발이 가능할 거예요. 많은 참여 부탁드립니다.",
+      "script": "안녕하세요, 아침 방송입니다. 오늘은 [국립대학육성] 수요기반 교양교과목 개발 사업 관련 '내가 듣고 싶은 교양수업 공모전' 안내를 알려드릴게요. 학부 재학생 4명 이상 팀으로 참여 가능하며, 2026. 10.",
       "title": "[국립대학육성] 수요기반 교양교과목 개발 관련 「내가 듣고 싶은 교양수업 공모전」 안내"
     },
     {
-      "audio": "0db9cfb6e613fd0800f8ae37083c731f3ebd2784f9e2743039f9472aca5314ed.mp3",
+      "audio": "f97e3a20c60d66ce9c299a33f7d4c839b61323f0c0c4b510efd28fea22a70ff7.mp3",
       "channel_id": "9151fbc4c875501e129ffd95",
       "channel_ids": [
         "notice-6b04da14aae1"
       ],
       "cues": [
         {
-          "end_sec": 47.712,
+          "end_sec": 18.888,
           "start_sec": 0,
-          "text": "졸업예정자 분, 학위논문 제출 일정을 확인해 주세요. 1학기 경우 3월 말까지 논문 주제(중국어학, 문학 및 어문학 연계한 중국문화 관련 주제)를 학과사무실에 보고하고, 5월 말까지 초고를 완성해야 합니다. 6월 초에 지도교수를 배정받은 후 7월 중순까지 최종 완성본을 제출해 주세요. 2학기 경우 9월 말까지 주제 보고, 11월 말까지 초고 완성, 12월 초 지도교수 배정 후 1월 중순까지 최종 완성본을 학과사무실에 제출해 주세요. 논문 작성 요령은 붙임문서에서 참고해 주세요."
+          "text": "졸업예정자 분, 학위논문 제출 일정 알려드릴게요. 1학기 경우 3월 말 주제 보고, 5월 말 초고 완성, 6월 초 지도교수 배정, 7월 중순 최종본 제출입니다."
         }
       ],
-      "duration_sec": 47.712,
+      "duration_sec": 18.888,
       "id": "9151fbc4c875501e129ffd95",
       "items": [
         {
@@ -3245,23 +3327,23 @@
           "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13664"
         }
       ],
-      "script": "졸업예정자 분, 학위논문 제출 일정을 확인해 주세요. 1학기 경우 3월 말까지 논문 주제(중국어학, 문학 및 어문학 연계한 중국문화 관련 주제)를 학과사무실에 보고하고, 5월 말까지 초고를 완성해야 합니다. 6월 초에 지도교수를 배정받은 후 7월 중순까지 최종 완성본을 제출해 주세요. 2학기 경우 9월 말까지 주제 보고, 11월 말까지 초고 완성, 12월 초 지도교수 배정 후 1월 중순까지 최종 완성본을 학과사무실에 제출해 주세요. 논문 작성 요령은 붙임문서에서 참고해 주세요.",
+      "script": "졸업예정자 분, 학위논문 제출 일정 알려드릴게요. 1학기 경우 3월 말 주제 보고, 5월 말 초고 완성, 6월 초 지도교수 배정, 7월 중순 최종본 제출입니다.",
       "title": "졸업예정자 졸업자격 전공영역 학위논문 제출 안내"
     },
     {
-      "audio": "67b0911261f8fd71c23203f06bc19b6f36fe5ccb12fddc92721772d7447a9563.mp3",
+      "audio": "2ef6c29f3a350b9ba836892b28a8dacd35cdc7c484440a2d8b41169f37cc628f.mp3",
       "channel_id": "cc741412f14711517c9ef3ad",
       "channel_ids": [
         "notice-a363da417a07"
       ],
       "cues": [
         {
-          "end_sec": 42.0,
+          "end_sec": 19.296,
           "start_sec": 0,
-          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 인도네시아와 베트남 학생은 각각 1,600,000원의 학생참가비를 부담해야 하며, 대학지원금은 없어요. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이 필수입니다. 면접 일정은 대학 추천을 위해 별도로 안내될 예정이에요. 단원 모집 공고 및 서식은 부착된 문서에서 확인할 수 있습니다."
+          "text": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중입니다. 신청 마감은 10월 12일까지로, 아시아권 국가 학생은 160만 원의 학생참가비를 납부합니다."
         }
       ],
-      "duration_sec": 42.0,
+      "duration_sec": 19.296,
       "id": "cc741412f14711517c9ef3ad",
       "items": [
         {
@@ -3286,23 +3368,23 @@
           "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTIzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89Mjg3NSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1rbnUxNjcwNTgzNzQ4JmNvZGU9bm90aWNlMDAxJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=%7C%7C"
         }
       ],
-      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중이에요. 신청 마감은 10월 12일까지입니다. 인도네시아와 베트남 학생은 각각 1,600,000원의 학생참가비를 부담해야 하며, 대학지원금은 없어요. 제출 서류는 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서 등이 필수입니다. 면접 일정은 대학 추천을 위해 별도로 안내될 예정이에요. 단원 모집 공고 및 서식은 부착된 문서에서 확인할 수 있습니다.",
+      "script": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집이 진행 중입니다. 신청 마감은 10월 12일까지로, 아시아권 국가 학생은 160만 원의 학생참가비를 납부합니다.",
       "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "d6f8b8efab711591c4e39dfb02c9bc32594a5d77ee25293df3337bbe3c67cbc5.mp3",
+      "audio": "d281b1d71bb8a023de021f8474942ac6d2abd5ec769c28a138239acd187166f0.mp3",
       "channel_id": "cafa6793a3469e8d4952490a",
       "channel_ids": [
         "notice-a363da417a07"
       ],
       "cues": [
         {
-          "end_sec": 36.312,
+          "end_sec": 15.816,
           "start_sec": 0,
-          "text": "안녕하세요, 오늘 아침 방송입니다. 학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작했어요. 대학원 재학생과 수료후 등록생이 참가 가능하며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 이 캠프는 심신회복과 대학원생활 적응력을 높이기 위한 프로그램이에요. 더 궁금한 점이 있으면 학생상담센터로 문의해 보세요. 오늘도 건강한 하루 보내시길 바랍니다."
+          "text": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 대학원 재학생 및 수료후 등록생이 참가 가능하며, 모집 기간은 9월 30일부터 10월 12일까지입니다."
         }
       ],
-      "duration_sec": 36.312,
+      "duration_sec": 15.816,
       "id": "cafa6793a3469e8d4952490a",
       "items": [
         {
@@ -3327,23 +3409,23 @@
           "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgzJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
         }
       ],
-      "script": "안녕하세요, 오늘 아침 방송입니다. 학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집을 시작했어요. 대학원 재학생과 수료후 등록생이 참가 가능하며, 모집 기간은 2026년 9월 30일부터 10월 12일까지입니다. 이 캠프는 심신회복과 대학원생활 적응력을 높이기 위한 프로그램이에요. 더 궁금한 점이 있으면 학생상담센터로 문의해 보세요. 오늘도 건강한 하루 보내시길 바랍니다.",
+      "script": "학생상담센터에서 2026학년도 하반기 대학원생 마음건강증진캠프를 개최합니다. 대학원 재학생 및 수료후 등록생이 참가 가능하며, 모집 기간은 9월 30일부터 10월 12일까지입니다.",
       "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
-      "audio": "7c0bc76227103c0d72741304c8952b5feba2ad08ae3a54b978d58ba292297372.mp3",
+      "audio": "ce036b19cbe40ef002a377d17334e99b21bdc71faf42e1950a17ee83b198b750.mp3",
       "channel_id": "529bc838067927a286de45c7",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 90.24,
+          "end_sec": 26.952,
           "start_sec": 0,
-          "text": "인재원(2026.11.1.~12.31.) 학생동 단체이용 신청 안내\n\n안녕하세요, 아침 방송입니다. 오늘은 학생동 단체이용 신청 관련 정보를 알려드릴게요.\n\n인재원에서 2026년 11월 1일부터 12월 31일까지 학생동을 운영할 계획이에요. 신청은 10월 6일부터 10월 12일까지 17시까지 가능해요.\n\n이용 대상은 본교 재학생이에요. 대학 행사나 동아리 행사의 경우, 대학에서 취합해 공문으로 접수하거나, 동아리가 메일로 신청하면 되는 거예요.\n\n사용료는 10인실이 5만 원, 14인실이 7만 원, 20인실이 10만 원이에요. 세미나실은 시간당 5만 원이지만, 학교가 승인한 행사라면 무료로 이용할 수 있어요.\n\n입실 시간은 오후 3시, 퇴실은 오전 11시로 해야 돼요. 토요일도 이용 가능하지만, 주말에 행사 예약은 개인 직접 해야 해요.\n\n이용 전 반드시 인재원 홈페이지에서 신청서를 확인해 주세요. 추가로 궁금한 점이 있다면, 인재원 홈페이지의 '학생동 이용에 관한 질문&답변'을 참고해 보세요.\n\n이상입니다. 오늘은 여기까지예요."
+          "text": "인재원(2026.11.1.~12.31.) 학생동 단체이용 신청 안내입니다. 학생동 운영 기간은 2026년 11월 1일부터 12월 31일까지입니다. 신청서는 10월 6일부터 12일까지 17시까지 접수 가능하며, 대상자 확정은 10월 15일에 발표됩니다."
         }
       ],
-      "duration_sec": 90.24,
+      "duration_sec": 26.952,
       "id": "529bc838067927a286de45c7",
       "items": [
         {
@@ -3368,23 +3450,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4495&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "인재원(2026.11.1.~12.31.) 학생동 단체이용 신청 안내\n\n안녕하세요, 아침 방송입니다. 오늘은 학생동 단체이용 신청 관련 정보를 알려드릴게요.\n\n인재원에서 2026년 11월 1일부터 12월 31일까지 학생동을 운영할 계획이에요. 신청은 10월 6일부터 10월 12일까지 17시까지 가능해요.\n\n이용 대상은 본교 재학생이에요. 대학 행사나 동아리 행사의 경우, 대학에서 취합해 공문으로 접수하거나, 동아리가 메일로 신청하면 되는 거예요.\n\n사용료는 10인실이 5만 원, 14인실이 7만 원, 20인실이 10만 원이에요. 세미나실은 시간당 5만 원이지만, 학교가 승인한 행사라면 무료로 이용할 수 있어요.\n\n입실 시간은 오후 3시, 퇴실은 오전 11시로 해야 돼요. 토요일도 이용 가능하지만, 주말에 행사 예약은 개인 직접 해야 해요.\n\n이용 전 반드시 인재원 홈페이지에서 신청서를 확인해 주세요. 추가로 궁금한 점이 있다면, 인재원 홈페이지의 '학생동 이용에 관한 질문&답변'을 참고해 보세요.\n\n이상입니다. 오늘은 여기까지예요.",
+      "script": "인재원(2026.11.1.~12.31.) 학생동 단체이용 신청 안내입니다. 학생동 운영 기간은 2026년 11월 1일부터 12월 31일까지입니다. 신청서는 10월 6일부터 12일까지 17시까지 접수 가능하며, 대상자 확정은 10월 15일에 발표됩니다.",
       "title": "인재원(2026.11.1.~12.31.) 학생동 단체이용 신청 안내"
     },
     {
-      "audio": "c2bc09da7ffa255e47e0e029729dd1a90b455383a83114a086af4db9af7c0890.mp3",
+      "audio": "8b392eb07306dd79e568e37991c06f0d9402c68ba9b6b4bd1268071089fa32f7.mp3",
       "channel_id": "f92b89821b7532251c1b933e",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 63.84,
+          "end_sec": 23.376,
           "start_sec": 0,
-          "text": "2026학년도 대학과 교육수요조사 안내입니다. 본교는 대학원 교육과정의 질을 높이고 5단계 BK21 사업을 준비하기 위해 대학원 교육과정 운영 전반에 대한 인식과 다중전공·마이크로디그리·트랙 등 수요 및 개선 의견을 파악하기 위한 설문조사를 실시합니다. 조사 대상은 대학원 재학생, 교수, 졸업생, 기업체 관계자(경북대학교 산하 기관 제외)이며, 2026년 10월 7일 수요일부터 10월 20일 화요일까지 진행됩니다. 설문은 34문항(대학원생용), 30문항(교원용), 19문항(졸업생용), 11문항(기업체용)으로 구성되며, 완료자 전원에게 5천원 상당의 커피 쿠폰을 제공합니다. 문의는 교무과(전화: 950-2076)로 하시면 됩니다. 많은 관심과 참여 부탁드립니다."
+          "text": "2026학년도 대학원 교육수요조사 안내입니다. 본교가 대학원 교육과정의 질을 높이고 5단계 BK21사업을 준비하기 위해 수요 조사를 실시합니다. 대학원 재학생, 교수, 졸업생, 기업체 관계자(경북대학교 산하 기관 제외)는 2026. 10."
         }
       ],
-      "duration_sec": 63.84,
+      "duration_sec": 23.376,
       "id": "f92b89821b7532251c1b933e",
       "items": [
         {
@@ -3409,23 +3491,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4496&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 대학과 교육수요조사 안내입니다. 본교는 대학원 교육과정의 질을 높이고 5단계 BK21 사업을 준비하기 위해 대학원 교육과정 운영 전반에 대한 인식과 다중전공·마이크로디그리·트랙 등 수요 및 개선 의견을 파악하기 위한 설문조사를 실시합니다. 조사 대상은 대학원 재학생, 교수, 졸업생, 기업체 관계자(경북대학교 산하 기관 제외)이며, 2026년 10월 7일 수요일부터 10월 20일 화요일까지 진행됩니다. 설문은 34문항(대학원생용), 30문항(교원용), 19문항(졸업생용), 11문항(기업체용)으로 구성되며, 완료자 전원에게 5천원 상당의 커피 쿠폰을 제공합니다. 문의는 교무과(전화: 950-2076)로 하시면 됩니다. 많은 관심과 참여 부탁드립니다.",
+      "script": "2026학년도 대학원 교육수요조사 안내입니다. 본교가 대학원 교육과정의 질을 높이고 5단계 BK21사업을 준비하기 위해 수요 조사를 실시합니다. 대학원 재학생, 교수, 졸업생, 기업체 관계자(경북대학교 산하 기관 제외)는 2026. 10.",
       "title": "2026학년도 대학원 교육수요조사 안내"
     },
     {
-      "audio": "a108b675e526b3d7af7473476a5885f28f42870452ec4e011ea8a9390554d461.mp3",
+      "audio": "4a9665b005e7c11800b547fa7be776f4d3cdf754d18c2dcc507b0c1b00e68747.mp3",
       "channel_id": "18c01b68665db8ac64299ec7",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 83.832,
+          "end_sec": 12.192,
           "start_sec": 0,
-          "text": "다음 아침 라디오에서 전해드릴 소식입니다. 대구 지역 미래산업 및 지역사회 문제해결을 위한 '2026년 KNU-대구앵커 청년 연구자 창업 아이디어 경진대회(LAB to MARKET)'가 진행됩니다. 모집 기간은 2026년 10월 6일 화요일부터 10월 21일 수요일까지 18시까지입니다. 선정 규모는 예비 창업자 및 초기 창업기업 15개 사입니다. 신청 자격으로는 개인 또는 팀이 참여할 수 있으며, 개인 신청 시 대구 청년 연구자 요건을 충족해야 하며, 팀 신청 시 팀원 중 50% 이상이 해당 요건을 충족해야 합니다. 대구 청년 연구자로는 만 39세 이하(공고일 기준), 대학원 석사 재학생 이상, 주민등록상 주소지가 대구광역시인 자가 해당됩니다. 사업화 지원금은 최대 1,000만원 또는 700만원이 지급됩니다. 자세한 내용은 학교의 진로취업과 홈페이지에서 확인할 수 있습니다. 문의는 ㈜뉴키즈인베스트먼트(운영사)로 가능합니다. 이 소식을 전해드렸습니다."
+          "text": "KNU-대구앵커 청년 연구자 창업 아이디어 경진대회(LAB to MARKET)가 2026년 10월 6일부터 21일까지 진행됩니다."
         }
       ],
-      "duration_sec": 83.832,
+      "duration_sec": 12.192,
       "id": "18c01b68665db8ac64299ec7",
       "items": [
         {
@@ -3450,23 +3532,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4497&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "다음 아침 라디오에서 전해드릴 소식입니다. 대구 지역 미래산업 및 지역사회 문제해결을 위한 '2026년 KNU-대구앵커 청년 연구자 창업 아이디어 경진대회(LAB to MARKET)'가 진행됩니다. 모집 기간은 2026년 10월 6일 화요일부터 10월 21일 수요일까지 18시까지입니다. 선정 규모는 예비 창업자 및 초기 창업기업 15개 사입니다. 신청 자격으로는 개인 또는 팀이 참여할 수 있으며, 개인 신청 시 대구 청년 연구자 요건을 충족해야 하며, 팀 신청 시 팀원 중 50% 이상이 해당 요건을 충족해야 합니다. 대구 청년 연구자로는 만 39세 이하(공고일 기준), 대학원 석사 재학생 이상, 주민등록상 주소지가 대구광역시인 자가 해당됩니다. 사업화 지원금은 최대 1,000만원 또는 700만원이 지급됩니다. 자세한 내용은 학교의 진로취업과 홈페이지에서 확인할 수 있습니다. 문의는 ㈜뉴키즈인베스트먼트(운영사)로 가능합니다. 이 소식을 전해드렸습니다.",
+      "script": "KNU-대구앵커 청년 연구자 창업 아이디어 경진대회(LAB to MARKET)가 2026년 10월 6일부터 21일까지 진행됩니다.",
       "title": "『2026년 ‘KNU-대구앵커’ 청년 연구자 창업 아이디어 경진대회(LAB to MARKET)』"
     },
     {
-      "audio": "84050e1902956c6bc9ddf4bf3f965f0e90fe31d9738193d5cc027ce6c7e110b7.mp3",
+      "audio": "263a89e922f0188e21da2a449ab9e3d6fc0e79fe45af021ace1e303af165814e.mp3",
       "channel_id": "51c40ecaa4ad628eca666880",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 70.608,
+          "end_sec": 22.2,
           "start_sec": 0,
-          "text": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내\n\n오늘 아침, IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나는 2026학년도 하반기 IWC 대학원생을 대상으로 하며, 영어 논문 작성 및 발표에 관한 내용을 다룹니다. 세미나 일정은 2026년 10월 15일(토) 오후 2시부터 4시까지로, IWC 학생회관 2층에서 진행됩니다. 세미나에 참가하려면 사전 등록이 필요하며, 등록은 IWC 학생회관 홈페이지에서 가능합니다. 세미나 후에는 영어 논문 작성에 대한 피드백을 받을 수 있으니, 관심 있는 학생들은 참가해 보시기 바랍니다.\n\n참가 신청은 IWC 학생회관 홈페이지에서 2026년 10월 1일부터 10월 15일까지 진행됩니다. 세미나 관련 문의는 IWC 학생회관 [개인정보 가림]로 연락해 주세요."
+          "text": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내입니다. 세미나는 2026년 9월 15일 금요일 오후 2시에 진행됩니다. 참가를 원하는 학생은 9월 10일까지 IWC 홈페이지에서 신청해 주세요."
         }
       ],
-      "duration_sec": 70.608,
+      "duration_sec": 22.2,
       "id": "51c40ecaa4ad628eca666880",
       "items": [
         {
@@ -3491,23 +3573,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4498&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내\n\n오늘 아침, IWC 대학원생 영어 논문 세미나가 진행됩니다. 세미나는 2026학년도 하반기 IWC 대학원생을 대상으로 하며, 영어 논문 작성 및 발표에 관한 내용을 다룹니다. 세미나 일정은 2026년 10월 15일(토) 오후 2시부터 4시까지로, IWC 학생회관 2층에서 진행됩니다. 세미나에 참가하려면 사전 등록이 필요하며, 등록은 IWC 학생회관 홈페이지에서 가능합니다. 세미나 후에는 영어 논문 작성에 대한 피드백을 받을 수 있으니, 관심 있는 학생들은 참가해 보시기 바랍니다.\n\n참가 신청은 IWC 학생회관 홈페이지에서 2026년 10월 1일부터 10월 15일까지 진행됩니다. 세미나 관련 문의는 IWC 학생회관 [개인정보 가림]로 연락해 주세요.",
+      "script": "2026학년도 하반기 IWC 대학원생 영어 논문 세미나 안내입니다. 세미나는 2026년 9월 15일 금요일 오후 2시에 진행됩니다. 참가를 원하는 학생은 9월 10일까지 IWC 홈페이지에서 신청해 주세요.",
       "title": "「2026학년도 하반기 IWC 대학원생 영어 논문 세미나」안내"
     },
     {
-      "audio": "d727eec5beb7c86c22a78e8a99b4a292ee39623b747359aa92559c5d397d1f13.mp3",
+      "audio": "4d561c9778b40dae16ea864747c6a74cac9257b4f0ff0616cdb3c0e6aa1ea595.mp3",
       "channel_id": "d7e1cb2f3d0e923505a9d00a",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 14.712,
+          "end_sec": 14.088,
           "start_sec": 0,
-          "text": "2026학년도 하반기 BK21 FOUR 논문작성 집중 프로그램 SMaRt KNU 논문캠프 안내입니다. 오늘부터 시작되는 프로그램에 참여하고 싶은 학생들은 자세한 내용을 확인해 보세요."
+          "text": "2026학년도 하반기 BK21 FOUR 논문작성 집중 프로그램 SMaR: KNU 논문캠프가 시작됩니다. 학생 여러분, 논문 준비에 집중할 수 있는 기회가 되길 바랍니다."
         }
       ],
-      "duration_sec": 14.712,
+      "duration_sec": 14.088,
       "id": "d7e1cb2f3d0e923505a9d00a",
       "items": [
         {
@@ -3532,23 +3614,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4500&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 하반기 BK21 FOUR 논문작성 집중 프로그램 SMaRt KNU 논문캠프 안내입니다. 오늘부터 시작되는 프로그램에 참여하고 싶은 학생들은 자세한 내용을 확인해 보세요.",
+      "script": "2026학년도 하반기 BK21 FOUR 논문작성 집중 프로그램 SMaR: KNU 논문캠프가 시작됩니다. 학생 여러분, 논문 준비에 집중할 수 있는 기회가 되길 바랍니다.",
       "title": "2026학년도 하반기 BK21 FOUR 논문작성 집중 프로그램 SMaRt KNU 논문캠프 안내"
     },
     {
-      "audio": "45ba7a7e1f59ac811416eb01e572e232e5f9064a4db1d7c0c73730480ef50d0c.mp3",
+      "audio": "bedaf2df5b6e59f40d13187e53e3cfd3ad627272cc2f20e5d827ed8ef0ccabbc.mp3",
       "channel_id": "0583674e7acdf1154f782a9d",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 12.216,
+          "end_sec": 11.712,
           "start_sec": 0,
-          "text": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 자세한 내용은 도서관 웹사이트에서 확인해 주세요."
+          "text": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 참가 신청은 3월 15일까지 도서관 웹사이트에서 진행됩니다."
         }
       ],
-      "duration_sec": 12.216,
+      "duration_sec": 11.712,
       "id": "0583674e7acdf1154f782a9d",
       "items": [
         {
@@ -3573,23 +3655,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4501&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 자세한 내용은 도서관 웹사이트에서 확인해 주세요.",
+      "script": "2026학년도 2학기 도서관에서 '체계적 문헌고찰 온라인 특강'을 실시합니다. 참가 신청은 3월 15일까지 도서관 웹사이트에서 진행됩니다.",
       "title": "2026학년도 2학기 도서관 「체계적 문헌고찰 온라인 특강」 실시 안내"
     },
     {
-      "audio": "774c99cd3735ecb4182a628a1c0802bd373ecccac67d9563535bb28880884353.mp3",
+      "audio": "dbdafcf390efc67631fb350a8b33ffdd9399da6c720a97499fce38ff110c5ccf.mp3",
       "channel_id": "60f28c948720c542599648c2",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 15.912,
+          "end_sec": 16.344,
           "start_sec": 0,
-          "text": "2026학년도 2학기 복학 및 휴학 신청 안내\n\n안녕하세요, 오늘 아침 방송입니다. 2026학년도 2학기 복학 및 휴학 신청 관련 안내가 있습니다. 본문 내용은 확인해 주시기 바랍니다."
+          "text": "2026학년도 2학기 복학 및 휴학 신청 기한은 2026년 4월 30일까지입니다. 복학은 2학기 시작 전, 휴학은 2학기 중에 완료해야 합니다. 학생회 홈페이지에서 신청해 주세요."
         }
       ],
-      "duration_sec": 15.912,
+      "duration_sec": 16.344,
       "id": "60f28c948720c542599648c2",
       "items": [
         {
@@ -3614,23 +3696,23 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4502&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 2학기 복학 및 휴학 신청 안내\n\n안녕하세요, 오늘 아침 방송입니다. 2026학년도 2학기 복학 및 휴학 신청 관련 안내가 있습니다. 본문 내용은 확인해 주시기 바랍니다.",
+      "script": "2026학년도 2학기 복학 및 휴학 신청 기한은 2026년 4월 30일까지입니다. 복학은 2학기 시작 전, 휴학은 2학기 중에 완료해야 합니다. 학생회 홈페이지에서 신청해 주세요.",
       "title": "2026학년도 2학기 복학 및 휴학 신청 안내"
     },
     {
-      "audio": "f76f90916b12d7ada01c81fa04d127cbcc5de10b7c345880757f1a2fd5e56779.mp3",
+      "audio": "753a912fec8b93582c816e2da177feecf9601c86fa2a49a60452f66ac87e7ee5.mp3",
       "channel_id": "2bd9f25bbbc3543c7b3e5650",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 25.176,
+          "end_sec": 13.608,
           "start_sec": 0,
-          "text": "2026년 3차 학생 재난안전 현장 체험교육 신청이 오늘부터 가능해요. 교육 내용은 재난 대응 방법과 응급 상황 처리 등 실습을 통해 진행됩니다. 신청 마감은 3월 31일까지로, 학교 홈페이지에서 확인해 주세요. 추가 문의는 학생지원센터로 연락해 주세요."
+          "text": "2026년 3차 학생 재난안전 현장 체험교육 신청을 안내해요. 교육 신청은 학교 홈페이지에서 2026년 4월 15일까지 진행됩니다."
         }
       ],
-      "duration_sec": 25.176,
+      "duration_sec": 13.608,
       "id": "2bd9f25bbbc3543c7b3e5650",
       "items": [
         {
@@ -3655,7 +3737,7 @@
           "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4503&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026년 3차 학생 재난안전 현장 체험교육 신청이 오늘부터 가능해요. 교육 내용은 재난 대응 방법과 응급 상황 처리 등 실습을 통해 진행됩니다. 신청 마감은 3월 31일까지로, 학교 홈페이지에서 확인해 주세요. 추가 문의는 학생지원센터로 연락해 주세요.",
+      "script": "2026년 3차 학생 재난안전 현장 체험교육 신청을 안내해요. 교육 신청은 학교 홈페이지에서 2026년 4월 15일까지 진행됩니다.",
       "title": "2026년 3차 학생 재난안전 현장 체험교육 안내 및 교육신청 홍보 안내"
     },
     {
