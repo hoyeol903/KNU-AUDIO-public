@@ -1,0 +1,14 @@
+# 실제 값으로 복사한 wrangler.local.toml은 커밋하지 않습니다.
+name = "knua-community-api"
+main = "worker.mjs"
+compatibility_date = "2026-10-09"
+workers_dev = true
+
+[vars]
+COMMUNITY_ALLOWED_ORIGINS = "https://hoyeol903.github.io"
+
+[[d1_databases]]
+binding = "COMMUNITY_DB"
+database_name = "knua-community"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "../migrations"
