@@ -22,8 +22,8 @@ test('공유 공지 한 번, 개별 공지 제외',()=>{
   assert.equal(ids.filter(id=>id==='shared').length,1);
   assert(!ids.includes('biz'));
 });
-test('빈 선택도 정해진 순서와 공통 구간 유지',()=>{
-  assert.deepEqual(selectPlaylist(manifest,[]).map(s=>s.id), ['hello','weather','empty1','empty2','events','bye']);
+test('빈 선택은 공지 없음 안내 없이 공통 구간만 유지',()=>{
+  assert.deepEqual(selectPlaylist(manifest,[]).map(s=>s.id), ['hello','weather','empty2','events','bye']);
 });
 test('500명 선택은 합성 요청 없이 독립적으로 계산',()=>{
   for(let i=0;i<500;i++) {
