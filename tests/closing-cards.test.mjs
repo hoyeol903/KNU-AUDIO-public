@@ -18,7 +18,7 @@ test('응원·마무리 구간은 대본으로 카드 한 장을 만든다', () 
   assert.deepEqual(Array.from(list, c => c.id), ['n1', 'message', 'outro']);
   const [, cheer, end] = Array.from(list, c => c.cards);
   assert.deepEqual([cheer.length, cheer[0].kind, cheer[0].t, cheer[0].quote], [1, '크누아의 응원', '밥 챙겨요.', true]);
-  assert.equal(end[0].d, '10월 10일 토요일 · 소식 1건 · 30초');
+  assert.equal(end[0].d, '10월 10일 토요일 · 소식 1건');
   assert.equal(end[0].again, true);
 });
 
@@ -26,7 +26,7 @@ test('들을 소식이 없으면 공지 없음 카드가 나오고 마무리에 
   const list = chapters([notice, ...tail], [{id: 'biz', today: []}]);
   assert.deepEqual(Array.from(list, c => c.id), ['empty', 'message', 'outro']);
   assert.equal(list[0].cards[0].d, '내 게시판 기준');
-  assert.equal(list[2].cards[0].d, '10월 10일 토요일 · 30초');
+  assert.equal(list[2].cards[0].d, '10월 10일 토요일');
 });
 
 test('카드 종류마다 바탕색이 있고 밝은·어두운 화면 값이 모두 있다', () => {
