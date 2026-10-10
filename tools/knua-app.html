@@ -1272,14 +1272,19 @@ function vStart(){
 function centerStartField(el){
   var sc = el.closest('.scr'); if (!sc || !window.matchMedia('(pointer:coarse)').matches) return;
   var vv = window.visualViewport, top = vv ? vv.offsetTop : 0, height = vv ? vv.height : window.innerHeight;
-  sc.style.paddingBottom = (140 + Math.max(0, window.innerHeight - height)) + 'px';
+  /* 자판이 뜨기 전에는 가려질 높이를 알 수 없다. 여백이 모자라면 칸이 중간에 멈췄다가 자판이 뜬 뒤 다시 올라가므로,
+     누르는 순간 화면 절반만큼 미리 여백을 두고 한 번에 올린다. 입력 중에 여백을 줄이면 화면이 튀므로 늘리기만 한다. */
+  var room = 140 + Math.max(window.innerHeight * 0.5, window.innerHeight - height);
+  if (room > (parseFloat(sc.style.paddingBottom) || 0)) sc.style.paddingBottom = room + 'px';
   var r = el.getBoundingClientRect();
   sc.scrollTop += r.top - (top + 90);
 }
 function centerFocusedStartField(){ var a = document.activeElement; if (a && (a.id === 'inName' || a.id === 'inDept')) centerStartField(a); }
-/* 자판은 누른 뒤 조금 있다가 올라온다. 바로 한 번, 올라온 뒤(크기 변화·잠시 후) 다시 맞춘다. */
+/* 누르는 순간 제자리에 올려 두면 브라우저가 칸을 따로 옮기지 않는다. 자판이 올라온 뒤에는 어긋났을 때만 다시 맞춘다. */
 document.addEventListener('focusin', function(e){ if (e.target.id === 'inName' || e.target.id === 'inDept') { centerStartField(e.target); setTimeout(centerFocusedStartField, 350); } });
 if (window.visualViewport) window.visualViewport.addEventListener('resize', centerFocusedStartField);
+/* 입력을 마치면 늘려 둔 여백을 되돌린다. 이름에서 학과로 바로 넘어갈 때는 그대로 둔다. */
+document.addEventListener('focusout', function(e){ if (e.target.id !== 'inName' && e.target.id !== 'inDept') return; setTimeout(function(){ var a = document.activeElement, sc = e.target.closest('.scr'); if (sc && !(a && (a.id === 'inName' || a.id === 'inDept'))) sc.style.paddingBottom = '140px'; }, 0); });
 
 /* 4-2 게시판 고르기 */
 function vPick(){
