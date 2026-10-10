@@ -114,3 +114,12 @@ def test_legacy_personal_template_is_ignored_and_intro_uses_fixed_voice_audio(tm
     assert rows[0]['script'] == '안녕하세요. 맑아요.'
     assert rows[0]['parts'] == ['audio/f-hi.mp3', 'audio/f-w.mp3']
     assert 'personal_template' not in rows[0]
+
+
+def test_export_keeps_fixed_message_before_outro(tmp_path):
+    _, _, manifest, items = sample(tmp_path)
+    manifest['segments'].insert(-1, segment('message', '크누아의 응원', '응원합니다!', 'message', 5))
+    rows = app_export.app_segments(manifest, items, 'female')
+    assert [row['channel_id'] for row in rows][-2:] == ['message', 'outro']
+    assert rows[-2]['script'] == '응원합니다!'
+    assert rows[-2]['items'] == []

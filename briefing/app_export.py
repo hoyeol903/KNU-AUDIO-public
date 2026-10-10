@@ -1,7 +1,7 @@
 """python -m briefing.app_export: 생성한 브리핑(dist/)을 앱 화면이 읽는 자리와 형식으로 옮긴다.
 
 앱(tools/knua-app.html)은 output/app/data/briefing/segments.json 한 장을 읽고, 구간을
-intro → 오늘 소식이 있는 내 게시판(하나도 없으면 empty) → 내 식당 → outro 순서로 이어 재생한다. 구간 하나에 음성 파일은 하나다.
+intro → 오늘 소식이 있는 내 게시판(하나도 없으면 empty) → 내 식당 → message → outro 순서로 이어 재생한다. 구간 하나에 음성 파일은 하나다.
 공지는 공지별 파일을 공유하고 식단과 공통 안내는 필요한 단위로 묶는다. 이전 게시판별 출력도 지원한다.
 """
 import argparse
@@ -108,7 +108,7 @@ def app_segments(manifest, items, voice):
             if meals:
                 result.append(merged(channel_id, name, meals, [card('학식', name, s['script']) for s in meals] if lost else [card('학식', name, ' · '.join(channel['meals'][0]['menu']))]))
     # 내 게시판에 오늘 소식이 하나도 없는 사람에게 앱이 대신 들려주는 구간.
-    for sid, title, kind in [('empty', '공지 안내', 'empty_notices'), ('outro', '마무리', 'outro')]:
+    for sid, title, kind in [('empty', '공지 안내', 'empty_notices'), ('message', '크누아의 응원', 'message'), ('outro', '마무리', 'outro')]:
         parts = [s for s in source if s['kind'] == kind]
         if parts:
             result.append(merged(sid, title, parts, []))

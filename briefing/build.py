@@ -68,6 +68,9 @@ def read_yaml(path):
 
 
 def validate_config(config, events):
+    if 'fixed_message' in config and (not isinstance(config['fixed_message'], str)
+                                     or not 1 <= len(config['fixed_message'].strip()) <= 2000):
+        raise ValueError('고정 멘트는 1~2000자의 문장이어야 합니다.')
     for key in ('greeting', 'outro', 'weather_region', 'model'):
         if not isinstance(config.get(key), str) or not config[key].strip():
             raise ValueError(f'설정 누락: {key}')

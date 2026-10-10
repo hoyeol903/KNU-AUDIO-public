@@ -148,7 +148,7 @@ try {
     selected = new Set((Array.isArray(saved.selected) ? saved.selected : []).filter(id => manifest.channels.some(c => c.id === id)));
   } catch {}
   const now = new Intl.DateTimeFormat('sv-SE', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  $('date').textContent=`자료 기준일 ${manifest.date} · 공통 인사 → 날씨 → 공지 → 학식 → D-day → 마무리`;
+  $('date').textContent=`자료 기준일 ${manifest.date} · 공통 인사 → 날씨 → 공지 → 학식 → D-day → 응원 멘트 → 마무리`;
   const notices = [];
   if (manifest.date !== now) notices.push(`오늘 자료가 아닌 ${manifest.date} 자료예요. 날짜와 D-day는 자료 기준일 기준입니다.`);
   if (manifest.mode === 'text-only') notices.push('대본 미리보기입니다. 음성은 아직 준비되지 않았어요.');

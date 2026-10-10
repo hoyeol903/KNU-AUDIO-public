@@ -47,3 +47,12 @@ function setup(korean = true) {
  c.S.voice=false;c.startChapter(true);assert.equal(c.A.muted,true);
 }
 console.log('고정 생성 인사·예전 이름 template 무시·일시정지·무음: 통과');
+
+{
+ const {context:c}=setup();
+ c.BRIEF.segments.splice(-1,0,{id:'empty',script:'오늘은 따로 알려드릴 공지사항이 없어요.',audio:'empty.mp3',duration_sec:3},{id:'message',script:'응원합니다!',audio:'message.mp3',duration_sec:4});
+ assert.deepEqual(Array.from(c.chapters({boards:[],cafes:[]}),x=>x.id),['greeting','intro','empty','message','outro']);
+ c.BRIEF.segments.push({id:'notice-a',kind:'notice',channel_ids:['a'],script:'공지예요.',audio:'notice.mp3',duration_sec:3});
+ const ids=Array.from(c.chapters({boards:[{id:'a',today:[{}]}],cafes:[]}),x=>x.id);
+ assert.deepEqual(ids,['greeting','intro','notice-a','message','outro']);
+}

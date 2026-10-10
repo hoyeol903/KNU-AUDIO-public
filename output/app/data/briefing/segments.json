@@ -114,20 +114,36 @@
       "title": "[글로벌교육센터]★추가접수★ 2026년 10월 외국어강좌 추가 접수 안내 (개강: 10월 1일)"
     },
     {
-      "audio": "a29868360a0c30a60add1a171a12244f54761377a397af05244aaacea4f08f40.mp3",
+      "audio": "4fb37489263f6930f783cea540f76b124de2bb8b0f4c1464ebef4392e2717d41.mp3",
       "channel_id": "empty",
       "cues": [
         {
-          "end_sec": 7.656,
+          "end_sec": 3.456,
           "start_sec": 0,
-          "text": "선택한 채널에서 이번에 안내할 공지는 없어요. 채널의 수집 상태도 확인해 주세요."
+          "text": "오늘은 따로 알려드릴 공지사항이 없어요."
         }
       ],
-      "duration_sec": 7.656,
+      "duration_sec": 3.456,
       "id": "empty",
       "items": [],
-      "script": "선택한 채널에서 이번에 안내할 공지는 없어요. 채널의 수집 상태도 확인해 주세요.",
+      "script": "오늘은 따로 알려드릴 공지사항이 없어요.",
       "title": "공지 안내"
+    },
+    {
+      "audio": "57027026826d174de549a3b6a6f9f17945429f65edd997d0dc1e32f24dc0d4ba.mp3",
+      "channel_id": "message",
+      "cues": [
+        {
+          "end_sec": 8.568,
+          "start_sec": 0,
+          "text": "시험 준비도 좋지만, 밥과 잠도 챙겨주세요. 오늘의 공부가 좋은 결과로 이어지길 크누아가 응원하겠습니다!"
+        }
+      ],
+      "duration_sec": 8.568,
+      "id": "message",
+      "items": [],
+      "script": "시험 준비도 좋지만, 밥과 잠도 챙겨주세요. 오늘의 공부가 좋은 결과로 이어지길 크누아가 응원하겠습니다!",
+      "title": "크누아의 응원"
     },
     {
       "audio": "a7543fd91af1e58ac8c5b812dacb8ce844f49a236c7074bc9c9f549076db8fc0.mp3",

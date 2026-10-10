@@ -163,7 +163,7 @@ def create_segments(data, catalog, config, events, *, variant=None):
         row['reference'] = script
         row['source_text'] = script
         row['required'] = [script]
-        row['generation'] = 'fixed' if kind in {'greeting', 'outro', 'empty_notices', 'empty_meals'} else 'slm'
+        row['generation'] = 'fixed' if kind in {'greeting', 'message', 'outro', 'empty_notices', 'empty_meals'} else 'slm'
         segments.append(row)
         return row
 
@@ -272,7 +272,7 @@ def create_segments(data, catalog, config, events, *, variant=None):
             row = add('meal', names[cid], f'{names[cid]}의 오늘 메뉴는 확인하지 못했어요. 식당 안내를 확인해 주세요.', [cid])
             row['generation'] = 'fixed'
 
-    add('empty_notices', '공지 안내', '선택한 채널에서 이번에 안내할 공지는 없어요. 채널의 수집 상태도 확인해 주세요.')
+    add('empty_notices', '공지 안내', '오늘은 따로 알려드릴 공지사항이 없어요.')
     add('empty_meals', '학식 안내', '오늘은 선택한 학식 안내가 없어요. 식당을 선택하면 준비된 메뉴 안내를 들을 수 있어요.')
     upcoming = []
     # 수집 일정 가운데 시험·축제만 자동 포함. 대학원 전용 일정은 공통 방송에서 제외.
@@ -296,6 +296,8 @@ def create_segments(data, catalog, config, events, *, variant=None):
     row = add('events', '학교 이벤트 D-day', text, events=event_items)
     if not event_items:
         row['generation'] = 'fixed'
+    if config.get('fixed_message'):
+        add('message', '크누아의 응원', config['fixed_message'])
     outros = config.get('outro_variants', [])
     add('outro', '마무리 인사', outros[variant % len(outros)] if outros else config['outro'])
     return segments, warnings
