@@ -1,4 +1,4 @@
-"""Official Qwen3-TTS CustomVoice adapter, shared model for both speakers."""
+"""Qwen3-TTS Base 모델로, 저장해 둔 참고 음성의 목소리를 모든 구간에 고정해 읽는다."""
 from pathlib import Path
 import math
 import os
@@ -10,13 +10,19 @@ import json
 from contextlib import contextmanager
 
 from briefing.open_tts import qwen_spoken_text
-from briefing.model_cache import MODEL, verify_model_directory
+from briefing.model_cache import MODEL as DATASET_MODEL, verify_model_directory
+
+# ponytail: 실행할 때마다 Hugging Face에서 받는다(약 30초). 받지 못하는 날이 생기면 Kaggle 데이터셋에 올려 model_cache 검증을 붙인다.
+MODEL = 'Qwen/Qwen3-TTS-12Hz-1.7B-Base'
+# 참고 음성: 이전 CustomVoice 모델의 기본 화자 Sohee가 읽은 인사말(실존 인물의 녹음이 아니다). 대본과 음성이 일치해야 한다.
+REFERENCES = {'female': (Path(__file__).resolve().parents[1] / 'assets/voice/sohee-reference.flac',
+                         '안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요.')}
 
 VOICES = {'female': 'Sohee', 'male': 'Aiden'}
 VOICE_NAMES = {'female': '여자 · Sohee (한국어)', 'male': '남자 · Aiden'}
 MODE = 'slm-qwen3-tts'
 # Bump when model/version/normalization or generation parameters change.
-CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-customvoice-instruct-seeded-normalized-v5-uniform-gain-pause-fade'
+CACHE_VERSION = 'qwen-tts-0.3.0-1.7b-base-clone-sohee-seeded-normalized-v6'
 GENERATION = dict(max_new_tokens=2048, do_sample=True, subtalker_dosample=True)
 SEED = 20261007
 AUDIO_POSTPROCESS = dict(target_lufs=-19, true_peak_db=-2, loudness_range=7,
@@ -45,7 +51,7 @@ def cached_model_source(model, cache_root):
     """Use an already-downloaded HF snapshot directly, including offline builds."""
     dataset_path = os.environ.get('KNU_TTS_MODEL_PATH')
     if dataset_path:
-        if model != MODEL:
+        if model != DATASET_MODEL:
             raise ValueError('연결된 모델과 요청한 음성 모델이 다릅니다.')
         print('Kaggle에 저장된 음성 모델을 검증합니다. 다운로드하지 않습니다.', flush=True)
         return verify_model_directory(dataset_path)
@@ -117,14 +123,18 @@ class QwenTTS:
         if device not in {'auto', 'cpu', 'cuda:0'}:
             raise ValueError('tts.device는 auto, cpu, cuda:0 중 하나여야 합니다.')
         self.device = device
+        # Base 모델은 말투 지시문을 받지 않는다. 호출하는 쪽과의 호환을 위해 인자만 받는다.
         self.instructions = instructions or {}
         self.runtime_device = None
         self.model = None
         self.loaded_id = None
+        self.prompts = {}
 
     def verify(self, voice, role, model):
-        if model != MODEL or VOICES.get(role) != voice:
-            raise ValueError('Qwen3-TTS 1.7B CustomVoice의 Sohee·Aiden 설정을 사용하세요.')
+        if model != MODEL or VOICES.get(role) != voice or role not in REFERENCES:
+            raise ValueError('Qwen3-TTS 1.7B Base와 참고 음성이 있는 목소리(female)를 사용하세요.')
+        if not REFERENCES[role][0].is_file():
+            raise RuntimeError('참고 음성 파일이 없습니다: ' + str(REFERENCES[role][0]))
         if not shutil.which('ffmpeg'):
             raise RuntimeError('MP3 변환용 ffmpeg가 필요합니다. START-HERE.md를 확인하세요.')
 
@@ -160,15 +170,24 @@ class QwenTTS:
         )
         self.runtime_device = device
         self.loaded_id = model
-        speakers = {s.lower() for s in self.model.get_supported_speakers()}
-        languages = {s.lower() for s in self.model.get_supported_languages()}
-        if not {v.lower() for v in VOICES.values()} <= speakers or 'korean' not in languages:
+        languages = {s.lower() for s in self.model.get_supported_languages() or []}
+        if 'korean' not in languages:
             self.model = None
             self.loaded_id = None
-            raise RuntimeError('설치된 모델의 한국어 또는 화자 지원이 설정과 다릅니다.')
+            raise RuntimeError('설치된 모델이 한국어를 지원하지 않습니다.')
+
+    def _prompt(self, role):
+        """참고 음성은 한 번만 분석해 두고 모든 구간에 같은 목소리로 쓴다."""
+        if role not in self.prompts:
+            import soundfile as sf
+            path, text = REFERENCES[role]
+            audio, rate = sf.read(str(path), dtype='float32')
+            self.prompts[role] = self.model.create_voice_clone_prompt(ref_audio=(audio, rate), ref_text=text)
+        return self.prompts[role]
 
     def synthesize(self, text, voice, model, tempo):
-        if voice not in VOICES.values() or model != MODEL:
+        role = next((name for name, speaker in VOICES.items() if speaker == voice), None)
+        if role not in REFERENCES or model != MODEL:
             raise ValueError('지원하지 않는 Qwen3-TTS 모델/화자입니다.')
         if not isinstance(tempo, (int, float)) or not math.isfinite(tempo) or not .5 <= tempo <= 2:
             raise ValueError('합성 속도는 0.5~2 사이여야 합니다.')
@@ -180,10 +199,8 @@ class QwenTTS:
         # reproducible, and model sampling cannot perturb the build's other RNG use.
         with seeded_rng(torch, self.runtime_device):
             with torch.inference_mode():
-                role = next((name for name, speaker in VOICES.items() if speaker == voice), None)
-                wavs, sr = self.model.generate_custom_voice(
-                    text=qwen_spoken_text(text), language='Korean', speaker=voice,
-                    instruct=self.instructions.get(role) or None, **GENERATION)
+                wavs, sr = self.model.generate_voice_clone(
+                    text=qwen_spoken_text(text), language='Korean', voice_clone_prompt=self._prompt(role), **GENERATION)
         if len(wavs) != 1 or sr <= 0:
             raise RuntimeError('Qwen3-TTS가 유효한 음성을 반환하지 않았습니다.')
         wave = np.asarray(wavs[0])

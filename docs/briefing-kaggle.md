@@ -33,7 +33,7 @@
 
 `Kaggle GPU 브리핑 생성` workflow는 수동 실행과 수집 완료 후 연결을 지원합니다. 기존 CPU workflow와 수집 예약 시각은 유지합니다. 저장소의 **Settings → Secrets and variables → Actions**에 Kaggle의 `KAGGLE_API_TOKEN`을 secret으로 등록하고, Kaggle 계정 이름이 `muyahoyeol`과 다르면 `KAGGLE_USERNAME` 변수를 추가하세요. 토큰 문자열은 로그나 코드에 넣지 않습니다.
 
-음성은 Qwen3-TTS 1.7B CustomVoice를 사용합니다. 여성 Sohee에는 `config/briefing.yaml`의 아침 라디오 지시를 전달하고, 남성 Aiden에는 해당 여성 지시를 전달하지 않습니다. 모델 크기 때문에 실제 end-to-end 확인은 Kaggle T4에서 진행해야 합니다. 로컬의 짧은 샘플은 모델 설정과 대본 입력 확인용이며 전체 브리핑의 말투·발음 품질이나 2분 재생 목표를 보장하지 않습니다.
+음성은 Qwen3-TTS 1.7B Base(`Qwen/Qwen3-TTS-12Hz-1.7B-Base`)를 사용합니다(2026-10-10 변경). 저장소의 참고 음성 `assets/voice/sohee-reference.flac`(이전 CustomVoice 모델의 기본 화자 Sohee가 읽은 인사말, 약 7초)과 그 대본을 주고, 모든 구간을 그 목소리로 고정해 읽습니다. 같은 8개 구간을 지금 방식·VoiceDesign·Base 두 가지로 만들어 들어 본 뒤 고른 방식입니다. Base 모델은 말투 지시문을 받지 않아 `tts.instructions` 설정은 없앴습니다. 모델 크기 때문에 실제 end-to-end 확인은 Kaggle T4에서 진행해야 합니다.
 
 수집 직후 자동 실행은 저장소 변수 `ENABLE_KAGGLE_BRIEFING=true`로 켭니다. 기본값은 미설정(꺼짐)이며, 활성화에는 `KAGGLE_API_TOKEN` secret도 필요합니다. 수집 시작 시각보다 새로 생성된 스냅샷과 앱 기준일이 일치할 때만 GPU 실행을 시작합니다. 같은 날짜의 직전 자료와 날씨·공지·식단·일정이 모두 같으면 음성 생성을 건너뜁니다. 수집 시각과 오류 목록만 달라진 경우는 새 자료로 보지 않습니다. 부분 수집 오류는 허용하지만 오래된 자료, 날짜 불일치, 누락된 자료는 막습니다. 수동 GPU 실행은 `publish=true`가 기본값이며, 기본 브랜치에서만 게시합니다. 원래 수집 입력 해시가 GPU 입력과 같고 이미 게시된 음성보다 최신인 결과를 게시합니다. 수집 앱 날짜가 다음 날로 넘어가도 게시할 수 있습니다. 게시 job은 수집 writer와 직렬화하고 커밋 후 배포 workflow를 요청합니다.
 
@@ -63,6 +63,8 @@ GitHub 생성 작업이 대기 제한 등으로 실패·중단되면 `완료된 
 - 한도를 넘기려고 여러 계정을 돌려 쓰는 것이 Kaggle 약관에 맞는지는 저장소에서 보증하지 않는다. 사용 전에 약관을 확인한다.
 
 ## 음성 모델을 Kaggle에 미리 저장
+
+> 2026-10-10 변경: Base 모델은 이 데이터셋에 없어서, 실행할 때마다 Hugging Face에서 받습니다(약 30초). 아래 데이터셋은 이전 CustomVoice 모델용이며 지금은 읽지 않습니다. Hugging Face에서 받지 못하는 날이 생기면 Base 모델도 데이터셋으로 올려 검증을 붙여야 합니다.
 
 음성 작업은 비공개 데이터셋 `muyahoyeol/knu-audio-qwen3-tts-17b-0c0e3051`을 입력으로 연결한다. 공식 `Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice`의 revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`를 그대로 저장하며 모델·토크나이저는 약 4.52GB이다. 모델 카드와 Apache-2.0 LICENSE도 포함한다. 학교 자료나 API 토큰은 넣지 않는다. 가중치 파일은 GitHub에 커밋하지 않는다.
 

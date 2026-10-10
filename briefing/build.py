@@ -97,8 +97,6 @@ def validate_config(config, events):
         raise ValueError('tts.instructions는 female/male 화자별 문장 설정이어야 합니다')
     if any(not isinstance(value, str) for value in instructions.values()):
         raise ValueError('tts.instructions의 값은 문자열이어야 합니다')
-    if 'female' in voices and not instructions.get('female', '').strip():
-        raise ValueError('여성 Sohee 화자의 tts.instructions.female 문장을 설정하세요')
     if not isinstance(events, list):
         raise ValueError('events.yaml은 행사 목록이어야 합니다')
     for event in events:

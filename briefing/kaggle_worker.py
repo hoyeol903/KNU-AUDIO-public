@@ -194,9 +194,7 @@ def run(root, bundle_sha):
         print(f'저장된 음성·대본 복원: {context["resume_kernel"]}', flush=True)
     os.environ['HF_HOME'] = env['HF_HOME']
     try:
-        from briefing.model_cache import find_model_directory
-        os.environ['KNU_TTS_MODEL_PATH'] = str(find_model_directory('/kaggle/input'))
-        print('Kaggle 모델 데이터셋 연결 확인. 음성 모델 다운로드를 생략합니다.', flush=True)
+        print('음성 모델(Base)은 실행 중 Hugging Face에서 받습니다.', flush=True)
         slm_client = prepare_slm(root, items, cache, runtime_dir, env, github_path)
         build(source_input, output=root / 'dist', cache=cache,
               allow_archive=True, progress=recorder,

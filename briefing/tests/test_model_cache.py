@@ -5,7 +5,9 @@ from pathlib import Path
 import pytest
 
 from briefing import model_cache
-from briefing.qwen_tts import MODEL, cached_model_source
+from briefing.qwen_tts import MODEL as BASE_MODEL, cached_model_source
+
+MODEL = model_cache.MODEL  # 데이터셋에 들어 있는 이전 CustomVoice 모델
 
 
 def fixture(root, monkeypatch):
@@ -63,7 +65,7 @@ def test_missing_mount_and_wrong_requested_model_are_explicit_errors(tmp_path, m
         cached_model_source('wrong', tmp_path)
 
 
-def test_tts_loader_receives_verified_dataset_directory(tmp_path, monkeypatch):
+def test_tts_loader_refuses_the_old_dataset_model_for_the_base_model(tmp_path, monkeypatch):
     import sys
     from types import SimpleNamespace
     from unittest.mock import Mock
@@ -76,6 +78,7 @@ def test_tts_loader_receives_verified_dataset_directory(tmp_path, monkeypatch):
     monkeypatch.setitem(sys.modules, 'torch', SimpleNamespace(
         cuda=SimpleNamespace(is_available=lambda: False), float32='float32'))
     monkeypatch.setitem(sys.modules, 'qwen_tts', SimpleNamespace(Qwen3TTSModel=factory))
-    QwenTTS()._load(MODEL)
-    factory.from_pretrained.assert_called_once_with(
-        str(directory), device_map='cpu', dtype='float32', attn_implementation='eager')
+    # 데이터셋에는 이전 CustomVoice 모델이 들어 있다. 지금 쓰는 Base 모델 대신 읽히면 안 된다.
+    with pytest.raises(ValueError, match='다릅니다'):
+        QwenTTS()._load(BASE_MODEL)
+    factory.from_pretrained.assert_not_called()

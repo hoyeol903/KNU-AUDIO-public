@@ -14,14 +14,12 @@ event_keywords:
 - 대동제
 event_horizon_days: 60
 max_events: 3
-model: Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+model: Qwen/Qwen3-TTS-12Hz-1.7B-Base
 tempo: 1.0
 # 만들 목소리. 앱은 한 목소리만 쓰므로 하나만 만든다. 둘 다 만들려면 [female, male].
 voices: [female]
 tts:
   device: auto
-  instructions:
-    female: "차분하고 또렷한 아침 라디오 진행자처럼 자연스러운 한국어로 말해 주세요. 약간 밝고 생기 있게 말하되, 속도와 음량은 안정적으로 유지하고 들뜨거나 과장하지 마세요."
 bgm:
   # 앱 BGM은 tools.daily_bgm이 CC BY 4.0 원곡 30개 중 하루 한 곡을 선택한다.
   file: ''
