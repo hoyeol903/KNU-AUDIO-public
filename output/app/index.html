@@ -1027,7 +1027,18 @@ function elapsed(){ var t = 0; for (var i = 0; i < P.ch; i++) t += CH[i].est; re
 var A = new Audio(); A.preload = 'auto';
 var B = new Audio(), bgmEpoch = 0, bgmWanted = false;
 B.preload = 'none'; B.loop = true; B.volume = 0.1;
-function stopBgm(){ bgmWanted = false; bgmEpoch++; B.pause(); }
+/* 여운 중에 음악이 멈추면(일시정지·음악 끄기·오류) 브리핑도 거기서 끝난다. */
+function stopBgm(){ bgmWanted = false; bgmEpoch++; B.pause(); if (tailAt != null) finish(); }
+/* 대본이 끝나면 음악만 TAIL_SEC초 더 들려주고 서서히 줄여 끝낸다. 화면이 꺼져도 세도록 타이머 대신 음악의 timeupdate를 쓴다.
+   iOS는 음량을 코드로 바꿀 수 없어 대본 때 크기 그대로 들리다 끝난다. */
+var TAIL_SEC = 8, TAIL_VOL = 0.3, tailAt = null, tailBase = 0;
+function tailStep(){
+  if (tailAt == null) return;
+  var t = (performance.now() - tailAt) / 1000, top = Math.max(tailBase, TAIL_VOL);
+  if (t >= TAIL_SEC) return finish();
+  B.volume = t < 1 ? tailBase + (top - tailBase) * t : Math.min(top, top * (TAIL_SEC - t) / 2);
+}
+B.addEventListener('timeupdate', tailStep);
 function startBgm(gesture){
   var m = mode(), sourceActive = m === 'audio' ? gesture || !A.paused : m === 'tts' && P.voiceOk;
   if (!P.playing || !S.voice || !S.bgm || !BGM_TRACK || !BGM_TRACK.audio || !sourceActive) { stopBgm(); return; }
@@ -1041,7 +1052,7 @@ function syncBgm(){ if (P.playing && ((mode() === 'audio' && !A.paused) || (mode
 B.addEventListener('error', stopBgm);
 A.addEventListener('playing', syncBgm);
 /* 배경음악은 구간이 바뀌며 음성이 잠깐 멈추거나(pause·ended) 다음 파일을 불러오는 동안(waiting)에도 계속 흐른다.
-   멈추는 때는 사용자 일시정지(pause()), 끝까지 들음(nextAuto), 기기가 음성을 멈춤(아래 pause 확인)뿐이다. */
+   멈추는 때는 사용자 일시정지(pause()), 끝까지 들은 뒤의 여운이 끝남(finish), 기기가 음성을 멈춤(아래 pause 확인)뿐이다. */
 /* 이어폰을 빼거나 전화가 오는 등 기기가 음성을 멈추면 화면도 일시정지로 맞춘다. 구간을 바꾸는 중의 잠깐 멈춤은 무시한다. */
 /* 음성 이용 통계: 고정 이벤트 이름만 보내고 사용자·게시판 정보는 보내지 않는다. */
 var AUDIO_USAGE = {started:false, active:false, skipped:false};
@@ -1122,7 +1133,7 @@ function startChapter(resume){
 }
 function play(ch, restart){
   if (!CH.length) return;
-  P.pend = null;
+  P.pend = null; tailAt = null;
   if (!P.started || P.done) AUDIO_USAGE = {started:false,active:false,skipped:false};
   var resume = ch == null && !restart && !P.done;
   if (ch != null) { if(ch !== 0 || ch !== P.ch || P.chT > 0) AUDIO_USAGE.skipped=true; P.ch = ch; P.chT = 0; }
@@ -1136,6 +1147,7 @@ function toggle(){ P.playing ? pause() : play(); }
 /* 원하는 곳부터 듣기: 구간 ch의 t초부터 재생한다. 음성 파일은 그 자리로 옮기고, 브라우저 음성은 그 문장부터 다시 읽는다. */
 function seekTo(ch, t){
   var c = CH[ch]; if (!c) return;
+  tailAt = null;
   if (!P.started || P.done) AUDIO_USAGE = {started:false,active:false,skipped:false};
   AUDIO_USAGE.skipped=true;
   P.ch = ch; P.chT = Math.max(0, Math.min(t, c.est - 0.05)); P.done = false; P.playing = true; P.started = true; P.last = performance.now();
@@ -1156,9 +1168,12 @@ A.addEventListener('seeked', audioProgress);
 function locate(sec){ for (var i = 0; i < CH.length; i++) { if (sec < CH[i].est || i === CH.length - 1) return { ch: i, t: Math.max(0, Math.min(sec, CH[i].est)) }; sec -= CH[i].est; } return null; }
 function go(delta){ var n = Math.min(CH.length - 1, Math.max(0, P.ch + delta)); if (delta < 0 && P.chT > 3 && delta === -1) n = P.ch; play(n); }
 function nextAuto(){
+  if (tailAt != null) return;
   if (P.ch < CH.length - 1) { P.ch++; P.chT = 0; startChapter(false); media(); render(); }
-  else { audioUsageComplete(); P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopBgm(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
+  else if (bgmWanted && !B.paused) { audioUsageComplete(); P.chT = CH[P.ch].est; tailBase = B.volume; tailAt = performance.now(); }
+  else finish();
 }
+function finish(){ tailAt = null; audioUsageComplete(); P.playing = false; P.done = true; P.chT = CH[P.ch].est; A.pause(); stopBgm(); stopVoice(); media(); render(); toastMsg('브리핑을 다 들었어요. 들은 소식은 홈에 있어요.'); }
 function media(){
   if (!('mediaSession' in navigator)) return;
   try {
