@@ -562,8 +562,8 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .cm-fold summary::-webkit-details-marker{display:none}
 .cm-fold summary em{font-style:normal;font-weight:600;color:var(--dis-ink)}
 .cm-fold[open] summary .cm-chev{transform:rotate(180deg)}
-.cm-fold.opt{border-bottom:1px solid var(--line)}
-.cm-fold.opt summary{min-height:48px;padding:0}
+.cm-fold.cm-opt{border-bottom:1px solid var(--line)}
+.cm-fold.cm-opt summary{min-height:48px;padding:0}
 .cm-fab{position:absolute;right:20px;z-index:8;height:52px;padding:0 20px 0 16px;border-radius:26px;background:var(--wine);color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;gap:6px;box-shadow:0 16px 30px -12px rgba(139,30,63,.7)}
 .cm-fab:active{background:var(--wine-press)}
 .cm-backlink{display:inline-flex;align-items:center;gap:2px;min-height:40px;margin-left:-6px;font-size:15px;font-weight:700}
@@ -1967,7 +1967,7 @@ function vMeetSheet(){
     h += meetField('meetWhen',dating ? '희망 날짜·시간' : '모임 요일·시간',M.when,100,'예: 매주 화·목 오전 9시');
     /* 값이 있거나 수정 중이거나 링크 오류가 있으면 펼쳐 둔다. 직접 펼친 상태도 다시 그릴 때 유지한다. */
     var more = M.mode === 'edit' || M.where || M.requirements || M.cost || M.contact || contactHint || S.meetOptionalOpen;
-    h += '<details class="cm-fold opt" id="meetOptional"' + (more ? ' open' : '') + '><summary><span>장소 · 참가 조건 · 비용 · 연락 링크 <em>선택</em></span>' + CM_IC.down + '</summary><div class="col" style="gap:16px;padding:4px 0 6px">' + meetField('meetWhere','장소·온라인 여부',M.where,100,'예: 중앙도서관 스터디룸',false,true) + meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물' : dating ? '참가 조건' : '참가 조건·준비물',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true,true) + meetField('meetCost','참가 비용',M.cost,100,'예: 무료 / 음료 각자 부담',false,true) + contact + '</div></details>';
+    h += '<details class="cm-fold cm-opt" id="meetOptional"' + (more ? ' open' : '') + '><summary><span>장소 · 참가 조건 · 비용 · 연락 링크 <em>선택</em></span>' + CM_IC.down + '</summary><div class="col" style="gap:16px;padding:4px 0 6px">' + meetField('meetWhere','장소·온라인 여부',M.where,100,'예: 중앙도서관 스터디룸',false,true) + meetField('meetRequirements',M.category === 'study' ? '참가 수준·준비물' : dating ? '참가 조건' : '참가 조건·준비물',M.requirements,500,'예: 초보 환영, 개인 교재 지참',true,true) + meetField('meetCost','참가 비용',M.cost,100,'예: 무료 / 음료 각자 부담',false,true) + contact + '</div></details>';
   }
   h += '<p class="cm-help">' + (apply ? '이름·소개·연락 링크는 모집자에게만 전달돼요. 링크를 남기지 않으면 모집자가 따로 연락하기 어려워요.' : '모집글과 참가 문의 링크는 다른 사용자에게 공개돼요.') + '</p><p id="meetFormError" role="alert" class="cm-warn"' + (M.error ? '' : ' hidden') + '>' + esc(M.error || '') + '</p></div>';
   return h + '<div class="cm-foot"><p id="meetHint" class="cm-hint"' + (hint ? '' : ' hidden') + '>' + esc(hint) + '</p><button class="btn-pri cm-save' + (meetReady(M) ? '' : ' off') + '" id="meetSave" data-act="meetSave"' + (COMMUNITY.busy ? ' disabled' : '') + '>' + (COMMUNITY.busy ? '저장 중…' : apply ? '신청 보내기' : '공유 모집글 저장') + '</button></div></div>';

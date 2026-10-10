@@ -79,7 +79,7 @@ test('작성·신청 시트: 입력 id와 글자 수 자리, 선택 항목 접�
   let h = c.vMeetSheet();
   for (const id of ['meetTitle', 'meetTitleN', 'meetWant', 'meetIntro', 'meetIntroN', 'meetWhen', 'meetWhere', 'meetRequirements', 'meetCost', 'meetContact', 'meetContactHint', 'meetFormError', 'meetHint', 'meetSave']) assert.match(h, new RegExp('id="' + id + '"'), id);
   for (const act of ['meetClose', 'meetTm', 'meetSz', 'meetSave']) assert.ok(acts(h).has(act), act);
-  assert.match(h, /<details class="cm-fold opt" id="meetOptional">/); // 새 글은 접힌 상태
+  assert.match(h, /<details class="cm-fold cm-opt" id="meetOptional">/); // 새 글은 접힌 상태
   assert.match(h, /id="meetSave" data-act="meetSave"/); assert.match(h, /cm-save off/);
   assert.ok(h.indexOf('class="cm-foot"') > h.indexOf('id="meetFormError"'), '저장 버튼은 스크롤 영역 밖');
   c.S.meetSheet = {...c.S.meetSheet, contact: 'kakao.me/x'};
@@ -107,4 +107,9 @@ test('알림·내 신청과 수락·거절 시트', () => {
   assert.match(h, /수요일 저녁 좋아요/); assert.match(h, /id="decideReason"/); assert.match(h, /id="decideReasonN" class="num">0\/300/);
   assert.match(h, /id="decideSave" data-act="decideSave">수락하기/);
   assert.deepEqual([...h.matchAll(/data-act="decideStatus" data-s="(\w+)" aria-pressed="(\w+)"/g)].map(m => m[1] + m[2]), ['acceptedtrue', 'rejectedfalse']);
+});
+
+test('접는 구역은 앱의 다른 스타일과 겹치는 클래스(.opt 가로 배치)를 쓰지 않는다', () => {
+  for (const [, cls] of html.matchAll(/<details class="([^"]+)"/g)) assert.ok(!cls.split(' ').includes('opt'), cls);
+  assert.match(html, /<details class="cm-fold cm-opt" id="meetOptional"/);
 });
