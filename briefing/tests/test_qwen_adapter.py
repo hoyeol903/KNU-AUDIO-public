@@ -16,7 +16,8 @@ from briefing import build as b
 def test_roles_and_model_are_checked_before_generation(monkeypatch):
     monkeypatch.setattr('briefing.qwen_tts.shutil.which', lambda name: '/bin/ffmpeg')
     tts=QwenTTS()
-    for role, speaker in VOICES.items(): tts.verify(speaker, role, MODEL)
+    tts.verify('Sohee', 'female', MODEL)
+    with pytest.raises(ValueError): tts.verify('Aiden', 'male', MODEL)  # 참고 음성이 없는 목소리
     with pytest.raises(ValueError): tts.verify('Sohee', 'male', MODEL)
     with pytest.raises(ValueError): tts.verify('Aiden', 'male', 'old-model')
     with pytest.raises(ValueError): QwenTTS(device='invented')
@@ -65,34 +66,41 @@ def test_new_provider_cannot_reuse_old_melo_audio():
     assert b.audio_key('좋은 아침이에요','Sohee',config) != b.audio_key('좋은 아침이에요','Aiden',config)
     config2=dict(config,model='other-revision')
     assert b.audio_key('좋은 아침이에요','Sohee',config) != b.audio_key('좋은 아침이에요','Sohee',config2)
-    config3={**config,'tts':{**config['tts'],'instructions':{
-        **config['tts']['instructions'],'female':'다른 지시 문장'}}}
-    assert b.audio_key('좋은 아침이에요','Sohee',config) != b.audio_key('좋은 아침이에요','Sohee',config3)
-    assert '1.7b' in CACHE_VERSION
+    assert '1.7b-base-clone' in CACHE_VERSION
 
 
-def test_custom_voice_receives_per_speaker_instruction(monkeypatch, tmp_path):
+def kaggle_sources():
+    from briefing import kaggle
+    return kaggle._source_files(kaggle.ROOT, '2026-10-10')
+
+
+def test_every_segment_is_cloned_from_the_same_reference_voice(monkeypatch, tmp_path):
     torch = pytest.importorskip('torch')
-    instruction='차분하고 또렷한 아침 라디오 진행자처럼 말해 주세요.'
     model=Mock()
-    model.generate_custom_voice.return_value=([np.full(2400,.05,dtype=np.float32)],24000)
-    tts=QwenTTS(instructions={'female':instruction})
+    model.create_voice_clone_prompt.return_value='prompt'
+    model.generate_voice_clone.return_value=([np.full(2400,.05,dtype=np.float32)],24000)
+    tts=QwenTTS()
     tts.model=model; tts.loaded_id=MODEL; tts.runtime_device='cpu'
     monkeypatch.setattr('briefing.qwen_tts.normalize_audio',
                         lambda wav, mp3, tempo: Path(mp3).write_bytes(b'mp3'))
     assert tts.synthesize('좋은 아침이에요','Sohee',MODEL,1.0)==b'mp3'
-    assert model.generate_custom_voice.call_args.kwargs['instruct']==instruction
-    assert model.generate_custom_voice.call_args.kwargs['speaker']=='Sohee'
-    assert tts.synthesize('좋은 아침이에요','Aiden',MODEL,1.0)==b'mp3'
-    assert model.generate_custom_voice.call_args.kwargs['instruct'] is None
+    assert tts.synthesize('오늘도 좋은 하루 보내세요!','Sohee',MODEL,1.0)==b'mp3'
+    model.create_voice_clone_prompt.assert_called_once()  # 참고 음성은 한 번만 분석한다
+    reference=model.create_voice_clone_prompt.call_args.kwargs
+    assert reference['ref_audio'][1]==24000 and reference['ref_text'].startswith('안녕하세요')
+    assert all(call.kwargs['voice_clone_prompt']=='prompt' and call.kwargs['language']=='Korean'
+               for call in model.generate_voice_clone.call_args_list)
+    with pytest.raises(ValueError): tts.synthesize('좋은 아침이에요','Aiden',MODEL,1.0)
 
 
-def test_config_selects_17b_and_requires_female_instruction():
+def test_config_selects_the_base_model_and_reference_voice_exists():
+    from briefing.qwen_tts import REFERENCES
     config=b.read_yaml(b.ROOT/'config/briefing.yaml')
     b.validate_config(config,[])
-    config['tts']['instructions']['female']=' '
-    with pytest.raises(ValueError,match='instructions.female'):
-        b.validate_config(config,[])
+    assert config['model'] == MODEL == 'Qwen/Qwen3-TTS-12Hz-1.7B-Base'
+    path, text = REFERENCES['female']
+    assert path.is_file() and text == config['greeting']  # 참고 음성은 인사말을 읽은 것이다
+    assert path in kaggle_sources()
 
 
 @pytest.mark.skipif(shutil.which('ffmpeg') is None, reason='FFmpeg is needed to measure audio normalization')

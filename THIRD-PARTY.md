@@ -14,8 +14,8 @@
 
 권리 확인 필요: `Mas Cafe - Casa Rosa.mp3`는 이전 사용자 제공 파일로 현재 작업 트리에는 없지만 `knu-audio-qwen3-staging/assets/Mas Cafe - Casa Rosa.mp3` 경로가 Git 이력에 남아 있다. 이전 문서에 재배포 허락 범위가 확인되지 않았다고 기록되어 있다. 이 파일의 저장소 이력 공개 및 서비스 재생 권한을 확인하기 전에는 전체 Git 이력을 공개하지 않는다. 현재 Incompetech 30곡의 라이선스와 이 과거 파일의 권리는 별도로 취급한다. 이 기록은 허가가 확인됐다는 뜻이 아니다.
 
-- 현재 음성 모델: Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice, Apache-2.0. https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- 현재 음성 모델: Qwen/Qwen3-TTS-12Hz-1.7B-Base, Apache-2.0. https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - 현재 음성 라이브러리: qwen-tts 0.1.1, Apache-2.0. https://github.com/QwenLM/Qwen3-TTS
-- Sohee·Aiden은 모델의 기본 화자입니다. 한국어는 Korean으로 명시합니다. 현재 1.7B CustomVoice에는 고정된 스타일 지시를 사용합니다.
+- 참고 음성 `assets/voice/sohee-reference.flac`은 Qwen3-TTS 1.7B CustomVoice(Apache-2.0)의 기본 화자 Sohee로 이 프로젝트가 생성한 합성 음성입니다. 실존 인물의 녹음이 아니며, Base 모델이 이 목소리를 따라 모든 구간을 읽습니다. 한국어는 Korean으로 명시합니다.
 
 공개 저장소는 정리한 최신 스냅샷으로 시작하며 위의 과거 사용자 제공 음악 파일과 기존 Git 이력은 포함하지 않습니다. 해당 파일이 포함된 기존 저장소는 비공개로 보관합니다.

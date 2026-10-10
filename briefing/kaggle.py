@@ -56,6 +56,7 @@ def _source_files(root, day):
     files.extend((root / 'requirements.txt', root / 'requirements-tts.txt',
                   root / 'scripts/start-ollama-ci.sh', root / 'data/channels.yaml',
                   root / 'data/departments.yaml'))
+    files.append(root / 'assets/voice/sohee-reference.flac')
     files.extend(path for path in (root / 'web/player').iterdir() if path.is_file())
     files.append(root / 'data/raw' / day / 'items.json')
     missing = [path for path in files if not path.is_file()]
