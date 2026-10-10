@@ -2,16 +2,19 @@ import {json, Problem, text, hash, readBody} from './api.mjs';
 import {adminPage} from './admin-page.mjs';
 import {fixedMessage} from './fixed-message.mjs';
 const COOKIE = '__Secure-knua-admin', TTL = 8 * 60 * 60 * 1000;
+// Cloudflare Workers의 PBKDF2는 반복 100,000회까지만 지원한다. 넘으면 로그인할 때마다 오류가 난다.
+const ITERATIONS = 100000;
 const hex = bytes => Array.from(bytes).map(x => x.toString(16).padStart(2, '0')).join('');
 function same(a, b) { let difference = a.length ^ b.length; for (let i=0; i<a.length; i++) difference |= a.charCodeAt(i) ^ (b.charCodeAt(i) || 0); return difference === 0; }
 function credentials(env) {
-  if (!env.ADMIN_USERNAME || !/^pbkdf2-sha256:210000:[a-f0-9]{32}:[a-f0-9]{64}$/.test(env.ADMIN_PASSWORD_HASH || '')) throw new Problem(503, '관리자 계정을 아직 설정하지 않았어요.');
+  if (/^pbkdf2-sha256:210000:/.test(env.ADMIN_PASSWORD_HASH || '')) throw new Problem(503, '관리자 비밀번호를 다시 등록해 주세요. 예전 방식의 비밀번호는 서버에서 확인할 수 없어요.');
+  if (!env.ADMIN_USERNAME || !new RegExp('^pbkdf2-sha256:' + ITERATIONS + ':[a-f0-9]{32}:[a-f0-9]{64}$').test(env.ADMIN_PASSWORD_HASH || '')) throw new Problem(503, '관리자 계정을 아직 설정하지 않았어요.');
   return hash(env.ADMIN_USERNAME + '\n' + env.ADMIN_PASSWORD_HASH);
 }
 async function passwordMatches(password, stored) {
   const [, , salt, expected] = stored.split(':');
   const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
-  const actual = await crypto.subtle.deriveBits({name:'PBKDF2', hash:'SHA-256', salt:Uint8Array.from(salt.match(/../g), x=>parseInt(x,16)), iterations:210000}, key, 256);
+  const actual = await crypto.subtle.deriveBits({name:'PBKDF2', hash:'SHA-256', salt:Uint8Array.from(salt.match(/../g), x=>parseInt(x,16)), iterations:ITERATIONS}, key, 256);
   return same(hex(new Uint8Array(actual)), expected);
 }
 async function limitLogin(db, request) {
@@ -99,7 +102,11 @@ export async function handleAdmin(request, env) {
         } else throw new Problem(404,'관리자 기능을 찾을 수 없어요.');
       }
     }
-  } catch(e) { response=json({error:e instanceof Problem?e.message:'관리자 서버에 연결하지 못했어요.'},e instanceof Problem?e.status:503); }
+  } catch(e) {
+    // 예상하지 못한 오류는 wrangler tail로 원인을 볼 수 있게 남긴다(사용자에게는 일반 안내만).
+    if (!(e instanceof Problem)) console.error('admin error', e && e.name, e && e.message);
+    response=json({error:e instanceof Problem?e.message:'관리자 서버에 연결하지 못했어요.'},e instanceof Problem?e.status:503);
+  }
   response.headers.set('Cache-Control','no-store');response.headers.set('X-Content-Type-Options','nosniff');response.headers.set('X-Frame-Options','DENY');response.headers.set('Referrer-Policy','no-referrer');
   return response;
 }

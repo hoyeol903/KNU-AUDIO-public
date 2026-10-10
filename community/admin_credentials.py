@@ -6,13 +6,16 @@ from pathlib import Path
 import secrets
 import subprocess
 
+ITERATIONS = 100000
+
 
 def password_hash(password):
     if not 12 <= len(password) <= 256:
         raise ValueError('비밀번호는 12~256자로 정해 주세요.')
     salt = secrets.token_bytes(16)
-    digest = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 210000)
-    return f'pbkdf2-sha256:210000:{salt.hex()}:{digest.hex()}'
+    # Cloudflare Workers의 PBKDF2는 반복 100,000회까지만 지원한다(admin.mjs의 ITERATIONS와 같아야 한다).
+    digest = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, ITERATIONS)
+    return f'pbkdf2-sha256:{ITERATIONS}:{salt.hex()}:{digest.hex()}'
 
 
 def main():
