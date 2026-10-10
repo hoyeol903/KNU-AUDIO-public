@@ -167,6 +167,8 @@ jobs:
             .cache/kaggle/publish-requested.txt
             .cache/kaggle/resume.json
             .cache/kaggle/output/briefing-artifacts/**
+            # 패키지 설치·GPU 확인처럼 진단 파일을 남기기 전에 실패하면 커널 로그만 원인을 알려 준다.
+            .cache/kaggle/output/*.log
             .cache/kaggle/kaggle-logs.txt
   publish:
     needs: kaggle-briefing
