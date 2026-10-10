@@ -72,6 +72,8 @@ jobs:
         run: |
           python -m briefing.kaggle_account --minimum "$MIN_GPU_HOURS" --resume-kernel "$RESUME_KERNEL" \
             --run-id "$RUN_ID" --run-attempt "$RUN_ATTEMPT"
+      - name: 관리자 고정 멘트 읽기
+        run: python -m briefing.fixed_message
       - name: 날짜와 최소 코드·자료 스냅샷 준비
         id: package
         env:

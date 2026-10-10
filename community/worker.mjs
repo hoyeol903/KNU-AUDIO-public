@@ -1,9 +1,11 @@
 import {handleCommunity} from './api.mjs';
 import {handleAdmin} from './admin.mjs';
+import {publicFixedMessage} from './fixed-message.mjs';
 
 export default {
   async fetch(request, env) {
     const path = new URL(request.url).pathname;
+    if (path === '/api/community/fixed-message') return publicFixedMessage(request, env);
     if (path === '/admin' || path.startsWith('/admin/')) return handleAdmin(request, env);
     if (!path.startsWith('/api/community/')) {
       return new Response(JSON.stringify({error: '페이지를 찾을 수 없어요.'}), {

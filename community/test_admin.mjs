@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
+import vm from 'node:vm';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import {pbkdf2Sync} from 'node:crypto';
 import worker from './worker.mjs';
 const sqlite=new DatabaseSync(':memory:');
-for(const file of ['0001_community.sql','0002_application_decisions.sql','0003_moderation.sql'])sqlite.exec(readFileSync(new URL('../migrations/'+file,import.meta.url),'utf8'));
+for(const file of ['0001_community.sql','0002_application_decisions.sql','0003_moderation.sql','0004_fixed_message.sql'])sqlite.exec(readFileSync(new URL('../migrations/'+file,import.meta.url),'utf8'));
 const db={prepare(sql){let args=[];const stmt=sqlite.prepare(sql);return{bind(...v){args=v;return this;},async first(){return stmt.get(...args)||null;},async all(){return{results:stmt.all(...args)};},async run(){return stmt.run(...args);}};}};
 const salt='ab'.repeat(16),password='a strong test password',stored='pbkdf2-sha256:210000:'+salt+':'+pbkdf2Sync(password,Buffer.from(salt,'hex'),210000,32,'sha256').toString('hex');
 const env={COMMUNITY_DB:db,ADMIN_USERNAME:'manager',ADMIN_PASSWORD_HASH:stored};
@@ -18,6 +19,21 @@ assert.equal((await call(admin+'login','POST',{username:'manager',password:'wron
 assert.equal((await call(admin+'login','POST',{username:'manager',password},{Origin:'https://evil.example'})).status,403);
 let r=await call(admin+'login','POST',{username:'manager',password});assert.equal(r.status,200);assert.deepEqual(r.body,{ok:true});cookie=r.headers.get('Set-Cookie').split(';')[0];assert.match(r.headers.get('Set-Cookie'),/HttpOnly; Secure; SameSite=Strict/);
 assert(!JSON.stringify(sqlite.prepare('SELECT * FROM community_admin_sessions').get()).includes(cookie.split('=')[1]));
+
+assert.equal((await call(admin+'fixed-message')).status,200);
+const initial=await call('/api/community/fixed-message');assert.match(initial.body.text,/시험 준비/);
+assert.equal((await call('/api/community/fixed-message','PUT',{text:'익명 변경'})).status,405);
+assert.equal((await call(admin+'fixed-message','PUT',{text:'수정',updatedAt:0},{Origin:'https://evil.example'})).status,403);
+assert.equal((await call(admin+'fixed-message','PUT',{text:' ',updatedAt:0})).status,400);
+assert.equal((await call(admin+'fixed-message','PUT',{text:'가'.repeat(501),updatedAt:0})).status,400);
+assert.equal((await call(admin+'fixed-message','PUT',{text:'다음 방송에서 응원해요.'})).status,400);
+const saved=await call(admin+'fixed-message','PUT',{text:' 다음 방송에서 응원해요. ',updatedAt:0});
+assert.equal(saved.status,200);assert.equal(saved.body.text,'다음 방송에서 응원해요.');assert(saved.body.updatedAt>0);
+assert.equal((await call(admin+'fixed-message','PUT',{text:'오래된 화면으로 덮어쓰기',updatedAt:0})).status,409);
+assert.deepEqual((await call('/api/community/fixed-message')).body,saved.body);
+assert.equal((await call(admin+'fixed-message','GET',undefined,{Cookie:''})).status,401);
+assert.equal((await call(admin+'fixed-message','PUT',{text:'익명 변경',updatedAt:saved.body.updatedAt},{Cookie:''})).status,401);
+
 const id=crypto.randomUUID(),post={id,category:'study',title:'테스트 모집',intro:'같이 공부',when:'화요일',where:'도서관',capacity:3,goal:'함께 공부',contact:''};
 const meetings='/api/community/meetings';
 assert.equal((await call(meetings,'POST',post,{Authorization:'Bearer '+owner})).status,201);
@@ -52,4 +68,6 @@ sqlite.prepare('UPDATE community_admin_sessions SET expires_at=0').run();assert.
 r=await call(admin+'login','POST',{username:'manager',password});cookie=r.headers.get('Set-Cookie').split(';')[0];assert.equal((await call(admin+'logout','POST')).status,200);assert.equal((await call(admin+'session')).status,401);
 for(let i=0;i<10;i++)await call(admin+'login','POST',{username:'manager',password:'wrong'},{'CF-Connecting-IP':'test-rate'});assert.equal((await call(admin+'login','POST',{username:'manager',password},{'CF-Connecting-IP':'test-rate'})).status,429);
 const page=await worker.fetch(new Request('https://api.example/admin'),env);assert.match(page.headers.get('Content-Security-Policy'),/frame-ancestors 'none'/);const html=await page.text();assert(!html.includes('__NONCE__'));assert(!html.includes('innerHTML'));assert(!html.includes('localStorage'));
+new vm.Script(html.match(/<script[^>]*>([\s\S]*?)<\/script>/)[1]);
+assert(html.includes('id="fixedForm"') && html.includes('maxlength="500"') && html.includes('다음 정기 음성 생성'));
 console.log('관리자 인증·CSRF·로그인 제한·세션 만료·신고 페이지 나누기·숨김·해제 통과');
