@@ -260,3 +260,9 @@ collector.run의 최종 보고서는 기존 channels와 request_count에 started
 - `empty`는 “오늘은 따로 알려드릴 공지사항이 없어요.”이며, 사용자에게 재생할 공지가 없을 때만 한 번 듣는다.
 - `message`는 `config/briefing.yaml`의 `fixed_message`를 그대로 읽는 공통 구간이다. 대본 모델에 보내지 않으며, 다른 고정 안내처럼 음성 캐시를 재사용한다.
 - 공지 없음 안내는 수집 성공을 뜻하지 않는다. 수집 오류·미확인 여부는 기존 수집 상태에 별도로 유지한다.
+
+### 관리자 고정 멘트 저장
+
+`GET /api/community/fixed-message`는 `{ text, updatedAt }`를 반환한다. `text`는 1~500자이며 방송할 문장만 공개한다. `PUT /admin/api/fixed-message`는 같은 형식을 관리자 세션·출처 검증 후 저장하며, `updatedAt`이 현재 저장본과 다르면 409로 거절한다.
+
+음성 생성 전 `briefing.fixed_message`가 저장 문장을 설정에 반영한다. 그 설정 스냅샷으로 대본과 음성을 생성하므로 진행 중 수정은 다음 실행에 반영된다. 조회 실패를 경고로 기록하고 마지막 게시 `message` 문장을 유지한다. 이 작업은 저장소의 기본 YAML을 커밋하지 않는다.

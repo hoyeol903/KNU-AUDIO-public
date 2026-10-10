@@ -1,5 +1,6 @@
 import {json, Problem, text, hash, readBody} from './api.mjs';
 import {adminPage} from './admin-page.mjs';
+import {fixedMessage} from './fixed-message.mjs';
 const COOKIE = '__Secure-knua-admin', TTL = 8 * 60 * 60 * 1000;
 const hex = bytes => Array.from(bytes).map(x => x.toString(16).padStart(2, '0')).join('');
 function same(a, b) { let difference = a.length ^ b.length; for (let i=0; i<a.length; i++) difference |= a.charCodeAt(i) ^ (b.charCodeAt(i) || 0); return difference === 0; }
@@ -49,6 +50,15 @@ export async function handleAdmin(request, env) {
         const token=sessionToken(request), session=token ? await db.prepare('SELECT credential_hash, expires_at FROM community_admin_sessions WHERE token_hash=?').bind(await hash(token)).first() : null;
         if (!session || session.expires_at<=Date.now() || !same(session.credential_hash,credential)) throw new Problem(401,'관리자 로그인이 필요해요.');
         if (path==='/admin/api/session' && method==='GET') response=json({ok:true});
+        else if (path==='/admin/api/fixed-message' && method==='GET') response=json(await fixedMessage(db));
+        else if (path==='/admin/api/fixed-message' && method==='PUT') {
+          const body=await readBody(request), value=text(body,'text',500,true);
+          if(!Number.isSafeInteger(body.updatedAt) || body.updatedAt<0) throw new Problem(400,'저장된 멘트를 다시 불러와 주세요.');
+          const updatedAt=Math.max(Date.now(),body.updatedAt+1);
+          const row=await db.prepare('UPDATE community_fixed_message SET text=?, updated_at=? WHERE id=1 AND updated_at=? RETURNING text, updated_at').bind(value,updatedAt,body.updatedAt).first();
+          if(!row) throw new Problem(409,'다른 곳에서 멘트가 바뀌었어요. 새로고침 후 다시 수정해 주세요.');
+          response=json({text:row.text,updatedAt:row.updated_at});
+        }
         else if (path==='/admin/api/logout' && method==='POST') {
           await db.prepare('DELETE FROM community_admin_sessions WHERE token_hash=?').bind(await hash(token)).run();
           response=json({ok:true});response.headers.set('Set-Cookie',cookie('',0));

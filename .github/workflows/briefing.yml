@@ -64,6 +64,8 @@ jobs:
           sudo apt-get install -y -q ffmpeg sox libsox-dev zstd
           # 그래픽카드가 없으므로 CPU용 torch를 받는다.
           python -m pip install -r requirements-tts.txt --extra-index-url https://download.pytorch.org/whl/cpu
+      - name: 관리자 고정 멘트 읽기
+        run: python -m briefing.fixed_message
       - name: 대본 모델 실행
         run: bash scripts/start-ollama-ci.sh
       - name: 대본과 음성 생성
