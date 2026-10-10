@@ -7,7 +7,7 @@ import worker from './worker.mjs';
 const sqlite=new DatabaseSync(':memory:');
 for(const file of ['0001_community.sql','0002_application_decisions.sql','0003_moderation.sql','0004_fixed_message.sql'])sqlite.exec(readFileSync(new URL('../migrations/'+file,import.meta.url),'utf8'));
 const db={prepare(sql){let args=[];const stmt=sqlite.prepare(sql);return{bind(...v){args=v;return this;},async first(){return stmt.get(...args)||null;},async all(){return{results:stmt.all(...args)};},async run(){return stmt.run(...args);}};}};
-const salt='ab'.repeat(16),password='a strong test password',stored='pbkdf2-sha256:210000:'+salt+':'+pbkdf2Sync(password,Buffer.from(salt,'hex'),210000,32,'sha256').toString('hex');
+const salt='ab'.repeat(16),password='a strong test password',stored='pbkdf2-sha256:100000:'+salt+':'+pbkdf2Sync(password,Buffer.from(salt,'hex'),100000,32,'sha256').toString('hex');
 const env={COMMUNITY_DB:db,ADMIN_USERNAME:'manager',ADMIN_PASSWORD_HASH:stored};
 const owner='a'.repeat(64),other='b'.repeat(64);let cookie='';
 async function call(path,method='GET',body,headers={}){const r=await worker.fetch(new Request('https://api.example'+path,{method,headers:{'Content-Type':'application/json',Origin:'https://api.example',Cookie:cookie,...headers},body:body===undefined?undefined:JSON.stringify(body)}),env);return{status:r.status,body:await r.json(),headers:r.headers};}
@@ -70,4 +70,8 @@ for(let i=0;i<10;i++)await call(admin+'login','POST',{username:'manager',passwor
 const page=await worker.fetch(new Request('https://api.example/admin'),env);assert.match(page.headers.get('Content-Security-Policy'),/frame-ancestors 'none'/);const html=await page.text();assert(!html.includes('__NONCE__'));assert(!html.includes('innerHTML'));assert(!html.includes('localStorage'));
 new vm.Script(html.match(/<script[^>]*>([\s\S]*?)<\/script>/)[1]);
 assert(html.includes('id="fixedForm"') && html.includes('maxlength="500"') && html.includes('다음 정기 음성 생성'));
+// 예전 210,000회 방식으로 등록한 비밀번호는 Workers에서 확인할 수 없으니 다시 등록하라고 안내한다.
+env.ADMIN_PASSWORD_HASH='pbkdf2-sha256:210000:'+salt+':'+pbkdf2Sync(password,Buffer.from(salt,'hex'),210000,32,'sha256').toString('hex');
+r=await call(admin+'login','POST',{username:'manager',password});assert.equal(r.status,503);assert.match(r.body.error,/다시 등록/);
+env.ADMIN_PASSWORD_HASH=stored;
 console.log('관리자 인증·CSRF·로그인 제한·세션 만료·신고 페이지 나누기·숨김·해제 통과');
