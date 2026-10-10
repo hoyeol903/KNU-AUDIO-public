@@ -9,12 +9,12 @@ const manifest = {
   segments:[segment('hello','greeting'), segment('weather','weather'), segment('common','notice',['common']),
     segment('cs','notice',['cs'],1),segment('biz','notice',['biz'],0),segment('shared','notice',['cs','biz'],3),
     segment('meal1','meal',['cafeteria']),segment('empty1','empty_notices'),segment('empty2','empty_meals'),
-    segment('events','events'),segment('bye','outro')]
+    segment('events','events'),segment('message','message'),segment('bye','outro')]
 };
 test('학과별 필수 채널, 다른 학과 제외', () => {
   assert.deepEqual(requiredChannels(manifest,'computer'), ['common','cs']);
   const ids=selectPlaylist(manifest,['common','cs','cafeteria']).map(s=>s.id);
-  assert.deepEqual(ids,['hello','weather','cs','shared','common','meal1','events','bye']);
+  assert.deepEqual(ids,['hello','weather','cs','shared','common','meal1','events','message','bye']);
   assert(!ids.includes('biz'));
 });
 test('공유 공지 한 번, 개별 공지 제외',()=>{
@@ -22,8 +22,8 @@ test('공유 공지 한 번, 개별 공지 제외',()=>{
   assert.equal(ids.filter(id=>id==='shared').length,1);
   assert(!ids.includes('biz'));
 });
-test('빈 선택은 공지 없음 안내 없이 공통 구간만 유지',()=>{
-  assert.deepEqual(selectPlaylist(manifest,[]).map(s=>s.id), ['hello','weather','empty2','events','bye']);
+test('빈 선택은 공지 없음 안내와 응원 멘트를 듣는다',()=>{
+  assert.deepEqual(selectPlaylist(manifest,[]).map(s=>s.id), ['hello','weather','empty1','empty2','events','message','bye']);
 });
 test('500명 선택은 합성 요청 없이 독립적으로 계산',()=>{
   for(let i=0;i<500;i++) {
@@ -31,4 +31,10 @@ test('500명 선택은 합성 요청 없이 독립적으로 계산',()=>{
     const ids=selectPlaylist(manifest,['common',channel]).map(s=>s.id);
     assert(ids.includes(channel)); assert(!ids.includes(other));
   }
+});
+
+test('선택한 공지를 모두 제외하면 공지 없음 안내가 한 번 나온다',()=>{
+  const ids=selectPlaylist(manifest,['cs'],['cs','shared']).map(s=>s.id);
+  assert.equal(ids.filter(id=>id==='empty1').length,1);
+  assert.deepEqual(ids.slice(-2),['message','bye']);
 });

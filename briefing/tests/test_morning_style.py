@@ -67,3 +67,25 @@ def test_preview_keeps_unchecked_revised_notice(tmp_path):
     result = create_samples(data, [], config, [], provider=OneBad(), report_dir=tmp_path / 'reports')
     assert result['status'] == 'passed' and not result['skipped_notices']
     assert any(row['kind'] == 'notice' and row['script'] == '원문에 없는 999999원입니다.' for sample in result['samples'] for row in sample['segments'])
+
+
+def test_fixed_exam_message_is_not_sent_to_the_script_model():
+    config = read_yaml(ROOT / 'config/briefing.yaml')
+    data = load_collection_report(ROOT / 'data/raw/2026-10-06/items.json')
+    rows, _ = create_segments(data, [], config, [])
+    empty = next(row for row in rows if row['kind'] == 'empty_notices')
+    assert empty['script'] == '오늘은 따로 알려드릴 공지사항이 없어요.'
+    assert empty['generation'] == 'fixed'
+    assert rows[-2]['kind'] == 'message'
+    assert rows[-2]['script'] == config['fixed_message']
+    assert rows[-2]['generation'] == 'fixed'
+    assert rows[-1]['kind'] == 'outro'
+
+
+def test_fixed_message_rejects_invalid_config():
+    import pytest
+    from briefing.build import validate_config
+    config = read_yaml(ROOT / 'config/briefing.yaml')
+    for value in [None, 12, '', ' ']:
+        with pytest.raises(ValueError, match='고정 멘트'):
+            validate_config(dict(config, fixed_message=value), [])

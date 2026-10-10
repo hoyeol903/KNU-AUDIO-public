@@ -1,4 +1,4 @@
-export const ORDER = ['greeting', 'weather', 'notice', 'meal', 'events', 'outro'];
+export const ORDER = ['greeting', 'weather', 'notice', 'meal', 'events', 'message', 'outro'];
 
 export function requiredChannels(manifest, departmentId) {
   const department = manifest.departments.find(d => d.id === departmentId);
@@ -15,8 +15,8 @@ export function selectPlaylist(manifest, selectedIds, excludedNotices = []) {
   const meals = manifest.segments.filter(s => s.kind === 'meal' && s.channel_ids.some(id => selected.has(id)));
   return [
     ...manifest.segments.filter(s => ['greeting', 'weather'].includes(s.kind)),
-    ...notices,
+    ...(notices.length ? notices : manifest.segments.filter(s => s.kind === 'empty_notices')),
     ...(meals.length ? meals : manifest.segments.filter(s => s.kind === 'empty_meals')),
-    ...manifest.segments.filter(s => ['events', 'outro'].includes(s.kind)),
+    ...manifest.segments.filter(s => ['events', 'message', 'outro'].includes(s.kind)),
   ];
 }

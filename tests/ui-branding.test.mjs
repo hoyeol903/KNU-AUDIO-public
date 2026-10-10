@@ -13,7 +13,7 @@ function moods(weather={status:'ok',summary:'맑음',rain:0}) {
 test('브리핑 ID, 종류와 문장 위치에 따라 호반우가 바뀐다',()=>{
  const c=moods();
  for(const [segment,expected] of [
-  [{id:'greeting'},'greeting'],[{id:'empty'},'empty'],[{id:'outro'},'outro'],
+  [{id:'greeting'},'greeting'],[{id:'empty'},'empty'],[{id:'outro'},'outro'],[{id:'message'},'message'],
   [{id:'meal-46'},'meal'],[{cards:[{kind:'학식'}]},'meal'],
   [{id:'notice-a',cards:[{kind:'소식'},{kind:'마감 임박'}]},'deadline'],
   [{id:'notice-a',cards:[{kind:'소식'}]},'news']
