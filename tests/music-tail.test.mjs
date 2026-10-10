@@ -17,7 +17,7 @@ function load(music = true) {
     P: {playing: true, started: true, done: false, ch: 0, chT: 0, playToken: 1}, S: {voice: true, bgm: music}, CH: [{est: 5}],
     BGM_TRACK: {audio: 'a'.repeat(64) + '.mp3', volume: 0.1}});
   c.performance = {now: () => c.now}; c.toastMsg = m => c.toasts.push(m);
-  vm.runInContext(cut('var A = new Audio();', 'function audioUrl(') + cut('function play(ch, restart)', '/* 원하는 곳부터 듣기') + cut('function nextAuto()', 'function media()'), c);
+  vm.runInContext(cut('function tailLen()', '/* ---------- 재생 엔진') + cut('var A = new Audio();', 'function audioUrl(') + cut('function play(ch, restart)', '/* 원하는 곳부터 듣기') + cut('function nextAuto()', 'function media()'), c);
   c.A.paused = false; c.startBgm(true);
   return c;
 }
@@ -45,4 +45,13 @@ test('여운 중 일시정지는 끝으로 처리하고, 다시 듣기는 여운
   c = load(); c.nextAuto(); c.play(0);
   at(c, 9);
   assert.deepEqual([c.P.playing, c.P.done, c.toasts.length], [true, false, 0]);
+});
+
+test('전체 길이와 지나간 시간에 여운 8초가 들어간다', () => {
+  const c = load(); c.P.chT = 5;
+  assert.deepEqual([c.total(), c.elapsed()], [13, 5]);
+  c.nextAuto(); at(c, 3); assert.equal(c.elapsed(), 8);
+  at(c, 8); assert.deepEqual([c.P.done, c.elapsed()], [true, 13]);
+  const quiet = load(false); quiet.P.chT = 5; quiet.nextAuto();
+  assert.deepEqual([quiet.total(), quiet.elapsed()], [5, 5]); // 음악을 끄면 여운이 없다
 });
