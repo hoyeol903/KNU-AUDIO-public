@@ -6,7 +6,9 @@ const html = fs.readFileSync(path.join(__dirname, '../knua-app.html'), 'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 new vm.Script(script); // 앱 전체 문법
 assert.equal(html, fs.readFileSync(path.join(__dirname, '../../output/app/index.html'), 'utf8'));
-const chapters = script.slice(script.indexOf('function chapters(W)'), script.indexOf('var W = null, CH = []'));
+// 마무리 카드가 전체 길이를 적으므로 fmtKo도 함께 싣는다.
+const chapters = script.slice(script.indexOf('function fmtKo('), script.indexOf('function ext(')) +
+  script.slice(script.indexOf('function chapters(W)'), script.indexOf('var W = null, CH = []'));
 const engine = script.slice(script.indexOf('var A = new Audio()'), script.indexOf('/* ---------- 화면 ---------- */'));
 const cues = script.slice(script.indexOf('function sentences(t)'), script.indexOf('/* 말풍선 상태:'));
 function setup(korean = true) {

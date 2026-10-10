@@ -24,19 +24,19 @@ gtag('config', 'G-RLJ8SEF3JF', {
 :root{
   --page:#F3EFF0;--bg:#FFFFFF;--tile:#F7F4F5;--tile2:#EFE9EB;--ink:#1A1417;--ink2:#4A3F44;--muted:#6E6267;--line:#EAE3E6;
   --wine:#8B1E3F;--wine-press:#6F1732;--wine-ink:#8B1E3F;--wine-soft:#FBEFF3;--wine-lock:#C9939F;--on-wine-muted:#F4CDD9;
-  --amber-bg:#FFF0DF;--amber-ink:#8A4700;--amber-line:#F3D3AE;--ok-bg:#E9F5EE;--ok-ink:#1D5D37;--sky-bg:#E8F0FB;--sky-ink:#1F4774;--sky-dot:#4A86D0;--sp-new:#8B1E3F;--sp-due:#9A4F00;--sp-sky:#2D5F99;--sp-ok:#2E6B47;--paper:#FBF8F3;--paper-line:#ECE4D8;
+  --amber-bg:#FFF0DF;--amber-ink:#8A4700;--amber-line:#F3D3AE;--ok-bg:#E9F5EE;--ok-ink:#1D5D37;--sky-bg:#E8F0FB;--sky-ink:#1F4774;--sky-dot:#4A86D0;--sp-new:#8B1E3F;--sp-due:#9A4F00;--sp-sky:#2D5F99;--sp-ok:#2E6B47;--sp-cheer:#6B3A6E;--sp-end:#353352;--sp-calm:#4F5B66;--paper:#FBF8F3;--paper-line:#ECE4D8;
   --dis-ink:#8E8287;--ph:#A3979C;--scrim:rgba(26,20,23,.42);--sk:#EFE9EB;--sk-hi:#F9F6F7;--frame:#E3DCDF;--dock:rgba(255,255,255,.86);
   --font:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --page:#060506;--bg:#0E0C0D;--tile:#1A1618;--tile2:#241F21;--ink:#F5EFF1;--ink2:#DCD1D5;--muted:#AB9DA3;--line:#2E282B;
   --wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
-  --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--paper:#1C1819;--paper-line:#332C2E;
+  --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--sp-cheer:#57305A;--sp-end:#2A2842;--sp-calm:#3E4851;--paper:#1C1819;--paper-line:#332C2E;
   --dis-ink:#8C7F85;--ph:#6F6468;--scrim:rgba(0,0,0,.62);--sk:#1E1A1C;--sk-hi:#2A2427;--frame:#2A2427;--dock:rgba(30,25,28,.86);color-scheme:dark}}
 :root[data-theme="dark"]{
   --page:#060506;--bg:#0E0C0D;--tile:#1A1618;--tile2:#241F21;--ink:#F5EFF1;--ink2:#DCD1D5;--muted:#AB9DA3;--line:#2E282B;
   --wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
-  --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--paper:#1C1819;--paper-line:#332C2E;
+  --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--sp-cheer:#57305A;--sp-end:#2A2842;--sp-calm:#3E4851;--paper:#1C1819;--paper-line:#332C2E;
   --dis-ink:#8C7F85;--ph:#6F6468;--scrim:rgba(0,0,0,.62);--sk:#1E1A1C;--sk-hi:#2A2427;--frame:#2A2427;--dock:rgba(30,25,28,.86);color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -211,6 +211,13 @@ svg{flex-shrink:0}
 .sp:after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.08);pointer-events:none}
 @keyframes spIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
 .sp-new{background:var(--sp-new)}.sp-due{background:var(--sp-due)}.sp-sky{background:var(--sp-sky)}.sp-ok{background:var(--sp-ok)}
+/* 공지가 아닌 인사말 구간(응원·마무리·공지 없음)의 카드. 원 장식의 자리로 뜻을 나눈다. */
+.sp-cheer{background:var(--sp-cheer)}.sp-end{background:var(--sp-end)}.sp-calm{background:var(--sp-calm)}
+.sp-cheer:after{width:190px;height:190px;top:-70px}
+.sp-end:after{width:220px;height:220px;top:auto;bottom:-150px;right:-40px;background:rgba(255,255,255,.07)}
+.sp-calm:after{width:150px;height:150px;top:-50px;right:-40px;box-sizing:border-box;background:none;border:1.5px solid rgba(255,255,255,.16)}
+.sp-q{position:relative;font-size:46px;line-height:22px;height:20px;font-weight:800;opacity:.38;padding-top:10px}
+.sp-cheer .sp-m{margin-top:auto}
 .sp-kind{height:26px;padding:0 10px;border-radius:999px;background:rgba(255,255,255,.18);font-size:12px;font-weight:800;display:inline-flex;align-items:center}
 .sp-idx{font-size:12.5px;font-weight:700;opacity:.85}
 .sp-t{position:relative;font-size:19px;line-height:27px;font-weight:800;letter-spacing:-.5px;overflow-wrap:anywhere}
@@ -984,7 +991,7 @@ function chapters(W){
   });
   if (!news.length) news.push('empty');
   var ids = ['greeting', 'intro'].concat(news, W.cafes.map(function(x){ return x.c.id; }), ['message', 'outro']);
-  return ids.filter(function(id){ return seg[id]; }).map(function(id){
+  var list = ids.filter(function(id){ return seg[id]; }).map(function(id){
     var s = seg[id], b = W.boards.filter(function(x){ return x.id === id; })[0];
     var sec = s.duration > 0 ? s.duration : s.duration_sec;
     var text = s.script || '';
@@ -997,6 +1004,15 @@ function chapters(W){
           dday: p ? (p.dday != null ? dd(p.dday) : '') : k.dday != null && k.dday >= 0 ? dd(k.dday) : '' };
       }) };
   });
+  /* 인사말 구간은 내보낸 카드가 없어 대본으로 한 장을 만든다. 마무리에는 오늘 들은 양을 적는다. */
+  var count = list.reduce(function(a, c){ return a + (news.indexOf(c.id) < 0 || c.id === 'empty' ? 0 : seg[c.id].kind === 'notice' ? 1 : c.cards.length); }, 0);
+  var sum = list.reduce(function(a, c){ return a + c.est; }, 0), day = BRIEF.date || '';
+  var note = { message: '— 크누아가 전해요', empty: '내 게시판 기준',
+    outro: [day ? +day.slice(5, 7) + '월 ' + +day.slice(8, 10) + '일 ' + wday(day) + '요일' : '', count ? '소식 ' + count + '건' : '', fmtKo(sum)].filter(Boolean).join(' · ') };
+  list.forEach(function(c){
+    if (!c.cards.length && note[c.id] && c.s) c.cards = [{ kind: c.t, t: c.s, d: note[c.id], url: null, post: null, dday: '', quote: c.id === 'message', again: c.id === 'outro' }];
+  });
+  return list;
 }
 var W = null, CH = [];
 function refresh(){
@@ -2101,7 +2117,7 @@ function vChat(){
   return h + '</section>';
 }
 /* 요약 카드: 한 번에 한 장, 뒤에 남은 카드가 겹쳐 보인다. 종류마다 바탕색이 다르다. */
-var SPOT = { '소식': 'sp-new', '마감 임박': 'sp-due', '날씨': 'sp-sky', '학식': 'sp-ok' };
+var SPOT = { '소식': 'sp-new', '마감 임박': 'sp-due', '날씨': 'sp-sky', '학식': 'sp-ok', '크누아의 응원': 'sp-cheer', '마무리': 'sp-end', '공지 안내': 'sp-calm' };
 function vSpot(c){
   var n = c.cards.length;
   if (S.cardCh !== P.ch) { S.cardCh = P.ch; S.cardI = 0; }
@@ -2109,10 +2125,10 @@ function vSpot(c){
   var nav = n > 1 ? '<span class="row" style="gap:6px"><button class="nv" data-act="cardGo" data-d="-1" aria-label="이전 카드"' + (i ? '' : ' disabled') + '>' + sz(IC.back, 18) + '</button><button class="nv" data-act="cardGo" data-d="1" aria-label="다음 카드"' + (i < n - 1 ? '' : ' disabled') + '>' + IC.chev + '</button></span>' : '<span class="lab-s" style="font-weight:600">' + (n ? n + '개' : '없음') + '</span>';
   var h = '<section class="col" style="gap:12px"><div class="row" style="justify-content:space-between;min-height:44px"><b style="font-size:15px;font-weight:800">이 구간에서 말한 것</b>' + nav + '</div>';
   if (!n) return h + '<div class="tile muted" style="font-size:13.5px;border-radius:18px;padding:14px 16px">이 구간은 요약 카드가 없어요.</div></section>';
-  var left = n - 1 - i, acts = (k.post ? '<button class="sp-a1" data-act="post" data-id="' + esc(k.post.id) + '" data-b="' + esc(k.post.board.id) + '">자세히</button>' : '') + (k.url ? ext(k.url, '원문 보기' + IC.ext(13), 'sp-a2', '') : '');
+  var left = n - 1 - i, acts = (k.post ? '<button class="sp-a1" data-act="post" data-id="' + esc(k.post.id) + '" data-b="' + esc(k.post.board.id) + '">자세히</button>' : '') + (k.url ? ext(k.url, '원문 보기' + IC.ext(13), 'sp-a2', '') : '') + (k.again ? '<button class="sp-a2" data-act="seg" data-i="0">처음부터 다시 듣기</button>' : '');
   h += '<div class="spstack' + (left ? '' : ' last') + '">' + (left > 1 ? '<span class="sp-g2"></span>' : '') + (left > 0 ? '<span class="sp-g1"></span>' : '') +
     '<article class="sp ' + (SPOT[k.kind] || 'sp-new') + '" id="spCard" aria-label="' + (i + 1) + ' / ' + n + '"><div class="row" style="justify-content:space-between;position:relative"><span class="sp-kind">' + esc(k.kind || '') + (k.dday ? ' · ' + esc(k.dday) : '') + '</span><span class="sp-idx num">' + (i + 1) + ' / ' + n + '</span></div>' +
-    '<b class="sp-t">' + esc(k.t) + '</b>' + (k.d ? '<span class="sp-m">' + esc(k.d) + '</span>' : '') + (acts ? '<div class="sp-acts">' + acts + '</div>' : '') + '</article></div>';
+    (k.quote ? '<span class="sp-q" aria-hidden="true">“</span>' : '') + '<b class="sp-t">' + esc(k.t) + '</b>' + (k.d ? '<span class="sp-m">' + esc(k.d) + '</span>' : '') + (acts ? '<div class="sp-acts">' + acts + '</div>' : '') + '</article></div>';
   return h + '</section>';
 }
 /* 카드를 옆으로 밀어 넘긴다. */

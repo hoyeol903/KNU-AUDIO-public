@@ -7,6 +7,8 @@ for (const match of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new v
 const shared={id:'shared',channel_id:'shared',kind:'notice',channel_ids:['a','b'],script:'한 번 듣기',audio:'shared.mp3',duration_sec:2,items:[
  {channel_id:'a',postId:'a:1',title:'A',url:'https://a'}, {channel_id:'b',postId:'b:2',title:'B',url:'https://b'}]};
 const c=vm.createContext({BRIEF:{segments:[{id:'intro',script:'인사'},shared,{id:'outro',script:'끝'}]},store:{},dd:x=>x});
+// 마무리 카드가 전체 길이를 적으므로 그 도우미도 함께 싣는다.
+vm.runInContext(html.slice(html.indexOf('function fmtKo('),html.indexOf('function ext(')),c);
 vm.runInContext(html.slice(html.indexOf('function chapters('),html.indexOf('var W = null, CH = [];')),c);
 const board=id=>({id,today:[{id:id+':'+(id==='a'?1:2),dday:null}]});
 for(const ids of [['a'],['b'],['a','b'],['b','a']]){
