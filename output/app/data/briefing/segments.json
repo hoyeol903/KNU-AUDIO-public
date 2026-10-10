@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "segments": [
     {
-      "audio": "4cd80f08725ffcec162ef16197b65418ded8809532857259218259c40b38e874.mp3",
+      "audio": "fba7fcf70f99873fdb9c4b6c16ca812b350fced6f94731f64c44a3f300adbc41.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -11,81 +11,264 @@
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 15.744,
+          "end_sec": 12.0,
           "start_sec": 6.984,
-          "text": "비가 온다고 해요. 우산을 준비하고, 발걸음은 조심해 주세요. 낮에는 겉옷을 벗을 수 있게 준비해 주세요."
+          "text": "비가 올 수 있으니 우산을 챙기고, 길이 미끄러울 수 있어 조심하세요."
         }
       ],
-      "duration_sec": 15.744,
+      "duration_sec": 12.0,
       "id": "intro",
       "items": [
         {
           "dday": null,
-          "detail": "최저 15.7° / 최고 25.7° · 비 올 확률 67%",
+          "detail": "최저 17.9° / 최고 25.1° · 비 올 확률 71%",
           "postId": null,
           "section": "날씨",
-          "title": "대체로 맑음",
+          "title": "부분적으로 흐림",
           "url": null
         }
       ],
-      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 비가 온다고 해요. 우산을 준비하고, 발걸음은 조심해 주세요. 낮에는 겉옷을 벗을 수 있게 준비해 주세요.",
+      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 비가 올 수 있으니 우산을 챙기고, 길이 미끄러울 수 있어 조심하세요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "626c2eb021fe59d0c21b6d97612a45c0c000be34c7f19c7286ead13c9eee2385.mp3",
-      "channel_id": "e73abf236d8ec20759477885",
+      "audio": "8b1492fedf12b8d4f2622d2c4c177983c977fcf9fef2cca726967e0201f51d18.mp3",
+      "channel_id": "e75da15fec9ecc380b11e097",
       "channel_ids": [
-        "notice-bbfcc8756400"
+        "notice-f5bf5684020e",
+        "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 11.256,
+          "end_sec": 12.312,
           "start_sec": 0,
-          "text": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 310호에서. 신청은 10월 13일 23시 59분까지. https://url.kr/9f6ftd"
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 신청 마감은 10월 12일까지입니다. 필수 서류는 제출 후 면접 일정을 별도로 안내해요."
         }
       ],
-      "duration_sec": 11.256,
-      "id": "e73abf236d8ec20759477885",
+      "duration_sec": 12.312,
+      "id": "e75da15fec9ecc380b11e097",
       "items": [
         {
-          "channel_id": "notice-bbfcc8756400",
+          "channel_id": "notice-f5bf5684020e",
           "dday": null,
-          "detail": "사회복지학부 · 학부 공지사항 · 2026-10-07",
-          "postId": "knu-knusw-knu1623026178:8940",
+          "detail": "간호학과 · 학부 공지사항 · 2026-09-18",
+          "postId": "knu-nurse-nur1624533209:5004",
           "section": "마감 임박",
-          "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzgmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "detail": "물리학과 · 공지사항 · 2026-09-18",
+          "postId": "knu-physics-phy1645592197:4703",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MDMmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDg5JnRhYmxlPWV4X2Jic19kYXRhX3BoeXNpY3MmbmF2X2NvZGU9cGh5MTY0NTU5MjE5NyZjb2RlPUtadERWUGlDQjdVcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-bbfcc8756400",
-          "deadline": "2026-10-13",
-          "postId": "knu-knusw-knu1623026178:8940",
-          "posted_at": "2026-10-07",
+          "channel_id": "notice-f5bf5684020e",
+          "deadline": "2026-10-12",
+          "postId": "knu-nurse-nur1624533209:5004",
+          "posted_at": "2026-09-18",
           "reason": "reminder",
-          "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwMDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI3NzgmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "channel_id": "notice-f4ac509b75c4",
+          "deadline": "2026-10-12",
+          "postId": "knu-physics-phy1645592197:4703",
+          "posted_at": "2026-09-18",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MDMmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDg5JnRhYmxlPWV4X2Jic19kYXRhX3BoeXNpY3MmbmF2X2NvZGU9cGh5MTY0NTU5MjE5NyZjb2RlPUtadERWUGlDQjdVcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 310호에서. 신청은 10월 13일 23시 59분까지. https://url.kr/9f6ftd",
-      "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내"
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 신청 마감은 10월 12일까지입니다. 필수 서류는 제출 후 면접 일정을 별도로 안내해요.",
+      "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
     },
     {
-      "audio": "59d078fe526fe640a69f339e5737529b45020692072e4e1bbb7052e5f953a52c.mp3",
+      "audio": "68be319bd20cf57633c0ccbf29382c547a2a6abc21f97ef7203a22fdb471227f.mp3",
+      "channel_id": "7d9c9aaf153d496ce5a69acb",
+      "channel_ids": [
+        "notice-a6afbe817dd2"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.264,
+          "start_sec": 0,
+          "text": "2026년 SW융합전공 재학생은 10월 12일 12시까지 국제경상관 317호에서 설문지를 제출하세요. 모아찍기, 양면, 스테이플러 불가."
+        }
+      ],
+      "duration_sec": 12.264,
+      "id": "7d9c9aaf153d496ce5a69acb",
+      "items": [
+        {
+          "channel_id": "notice-a6afbe817dd2",
+          "dday": null,
+          "detail": "경영학부 · 학부 공지사항 · 2026-09-30",
+          "postId": "knu-kbiz-kbi1623370557:5849",
+          "section": "마감 임박",
+          "title": "[BI 및 핀테크 융합전공] 2026년 SW중심대학사업 재학생 대상 설문조사(~10/12,12:00)",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTEmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-a6afbe817dd2",
+          "deadline": "2026-10-12",
+          "postId": "knu-kbiz-kbi1623370557:5849",
+          "posted_at": "2026-09-30",
+          "reason": "reminder",
+          "title": "[BI 및 핀테크 융합전공] 2026년 SW중심대학사업 재학생 대상 설문조사(~10/12,12:00)",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTEmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2026년 SW융합전공 재학생은 10월 12일 12시까지 국제경상관 317호에서 설문지를 제출하세요. 모아찍기, 양면, 스테이플러 불가.",
+      "title": "[BI 및 핀테크 융합전공] 2026년 SW중심대학사업 재학생 대상 설문조사(~10/12,12:00)"
+    },
+    {
+      "audio": "877f834dc651a3b9276a5d0115b23192550b95f73b49c006147d022b8e8181a6.mp3",
+      "channel_id": "10b8242d1d6fd099dd7efda5",
+      "channel_ids": [
+        "notice-ca78d3fd3c51"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.536,
+          "start_sec": 0,
+          "text": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프 참가자를 모집해요. 모집 기간은 9월 30일부터 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 10.536,
+      "id": "10b8242d1d6fd099dd7efda5",
+      "items": [
+        {
+          "channel_id": "notice-ca78d3fd3c51",
+          "dday": null,
+          "detail": "국어교육과 · 공지사항 · 2026-09-30",
+          "postId": "knu-koredu-kor1622459695:268",
+          "section": "마감 임박",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcwJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ca78d3fd3c51",
+          "deadline": "2026-10-12",
+          "postId": "knu-koredu-kor1622459695:268",
+          "posted_at": "2026-09-30",
+          "reason": "reminder",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89MTcwJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프 참가자를 모집해요. 모집 기간은 9월 30일부터 10월 12일까지입니다.",
+      "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "ef4bae5d684424a5d7dcb1c85e436a0abf8b44ff07d173f0bf5ad6a17908ddb1.mp3",
+      "channel_id": "b0a7e5d0d0a786465bbb9112",
+      "channel_ids": [
+        "notice-ddfc5b2ca163"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.88,
+          "start_sec": 0,
+          "text": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 모집해요. 참가자 모집 기간은 9월 30일부터 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 11.88,
+      "id": "b0a7e5d0d0a786465bbb9112",
+      "items": [
+        {
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "detail": "로봇공학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-robot-rob1623632307:808",
+          "section": "마감 임박",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MTAmbGlzdE5vPTcxNSZ0YWJsZT1leF9iYnNfZGF0YV9yb2JvdCZuYXZfY29kZT1yb2IxNjIzNjMyMzA3JmNvZGU9MnJUODE4UGxYVDN0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ddfc5b2ca163",
+          "deadline": "2026-10-12",
+          "postId": "knu-robot-rob1623632307:808",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgwOCZzdGFydFBhZ2U9MTAmbGlzdE5vPTcxNSZ0YWJsZT1leF9iYnNfZGF0YV9yb2JvdCZuYXZfY29kZT1yb2IxNjIzNjMyMzA3JmNvZGU9MnJUODE4UGxYVDN0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 모집해요. 참가자 모집 기간은 9월 30일부터 10월 12일까지입니다.",
+      "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "325164fef072d41c9a2bb9910cef6bc3cbb9015e8fce4db134f6f003ea256c1c.mp3",
+      "channel_id": "50b2f4d1e3e8c9f248fa10dc",
+      "channel_ids": [
+        "notice-ec96ad09ef78"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.304,
+          "start_sec": 0,
+          "text": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 10월 12일까지 모집해요."
+        }
+      ],
+      "duration_sec": 8.304,
+      "id": "50b2f4d1e3e8c9f248fa10dc",
+      "items": [
+        {
+          "channel_id": "notice-ec96ad09ef78",
+          "dday": null,
+          "detail": "물리교육과 · 공지사항 · 2026-10-01",
+          "postId": "knu-physed-phy1623371316:5019",
+          "section": "마감 임박",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMTkmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MDYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ec96ad09ef78",
+          "deadline": "2026-10-12",
+          "postId": "knu-physed-phy1623371316:5019",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMTkmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MDYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 10월 12일까지 모집해요.",
+      "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "d8d172a5fe54f140d533c16a95f1250de5af7e325e45f60d06bbe2e88c23eeca.mp3",
       "channel_id": "46589f4b415b2b3781d60483",
       "channel_ids": [
         "notice-1268b7a10e0b"
       ],
       "cues": [
         {
-          "end_sec": 11.88,
+          "end_sec": 12.696,
           "start_sec": 0,
-          "text": "2026년 10월 외국어강좌 추가접수 시작, 10월 11일까지. 일대일 온라인 강좌 모집. 신청은 lang.knu.ac.kr에서 가능해요."
+          "text": "2026년 10월 외국어강좌 추가접수 시작, 10월 11일까지. 일대일 온라인 강좌 모집. 신청은 lang.knu.ac.kr 또는 언어교육센터1층에서 가능해요."
         }
       ],
-      "duration_sec": 11.88,
+      "duration_sec": 12.696,
       "id": "46589f4b415b2b3781d60483",
       "items": [
         {
@@ -110,8 +293,497 @@
           "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NjUmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026년 10월 외국어강좌 추가접수 시작, 10월 11일까지. 일대일 온라인 강좌 모집. 신청은 lang.knu.ac.kr에서 가능해요.",
+      "script": "2026년 10월 외국어강좌 추가접수 시작, 10월 11일까지. 일대일 온라인 강좌 모집. 신청은 lang.knu.ac.kr 또는 언어교육센터1층에서 가능해요.",
       "title": "[글로벌교육센터]★추가접수★ 2026년 10월 외국어강좌 추가 접수 안내 (개강: 10월 1일)"
+    },
+    {
+      "audio": "880641ecb9193fa638630b19a782626555a7015476118e0363d98a06dbd36171.mp3",
+      "channel_id": "3afc868dcba4a7db56fef1e2",
+      "channel_ids": [
+        "notice-b5e6a10e952e"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.76,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 8.76,
+      "id": "3afc868dcba4a7db56fef1e2",
+      "items": [
+        {
+          "channel_id": "notice-b5e6a10e952e",
+          "dday": null,
+          "detail": "생물학과 · 공지사항 · 2026-09-18",
+          "postId": "knu-bio-bio1616117151:2476",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTIxODcmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-b5e6a10e952e",
+          "deadline": "2026-10-12",
+          "postId": "knu-bio-bio1616117151:2476",
+          "posted_at": "2026-09-18",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTIxODcmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다.",
+      "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "e4d4191aa1325438f02ea20db3d7364ad998baee5b63e3f6e799d856b28bb4bf.mp3",
+      "channel_id": "0b53f866f0f3be1366b8b00a",
+      "channel_ids": [
+        "notice-6b16f01d1a75"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.616,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청마감은 10월 12일까지입니다. 필수서류는 제출서류에 포함됩니다."
+        }
+      ],
+      "duration_sec": 11.616,
+      "id": "0b53f866f0f3be1366b8b00a",
+      "items": [
+        {
+          "channel_id": "notice-6b16f01d1a75",
+          "dday": null,
+          "detail": "식품자원경제학과 · 공지사항 · 2026-09-18",
+          "postId": "knu-knuagec-knu1623134126:3227",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTExMzcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-6b16f01d1a75",
+          "deadline": "2026-10-12",
+          "postId": "knu-knuagec-knu1623134126:3227",
+          "posted_at": "2026-09-18",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTExMzcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청마감은 10월 12일까지입니다. 필수서류는 제출서류에 포함됩니다.",
+      "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "c3796532241ee6aca3b74cdd61c86535145d1570ad0a289d0fb58ab4a92d108b.mp3",
+      "channel_id": "d3c32fbec027ab8c30950b94",
+      "channel_ids": [
+        "notice-e1ec1bf0eb87"
+      ],
+      "cues": [
+        {
+          "end_sec": 5.688,
+          "start_sec": 0,
+          "text": "대학원생 마음건강증진캠프 참가자 모집 기간은 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 5.688,
+      "id": "d3c32fbec027ab8c30950b94",
+      "items": [
+        {
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "detail": "의생명융합공학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-bcst2-bcs1611061294:819",
+          "section": "마감 임박",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내(수정)",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzA0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-e1ec1bf0eb87",
+          "deadline": "2026-10-12",
+          "postId": "knu-bcst2-bcs1611061294:819",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내(수정)",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgxOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzA0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        }
+      ],
+      "script": "대학원생 마음건강증진캠프 참가자 모집 기간은 10월 12일까지입니다.",
+      "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내(수정)"
+    },
+    {
+      "audio": "880641ecb9193fa638630b19a782626555a7015476118e0363d98a06dbd36171.mp3",
+      "channel_id": "e8f353c3bedb7cf86cc965c7",
+      "channel_ids": [
+        "notice-d1802616c625",
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.76,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 8.76,
+      "id": "e8f353c3bedb7cf86cc965c7",
+      "items": [
+        {
+          "channel_id": "notice-d1802616c625",
+          "dday": null,
+          "detail": "자율전공학부 · 공지사항 · 2026-09-22",
+          "postId": "knu-udm-udm1623371432:1619",
+          "section": "마감 임박",
+          "title": "[안내]2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2MTkmc3RhcnRQYWdlPTEwJmxpc3RObz05MDcmdGFibGU9ZXhfYmJzX2RhdGFfdWRtJm5hdl9jb2RlPXVkbTE2MjMzNzE0MzImY29kZT13QmJLaFhZMWxGMEomc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-09-21",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "detail": "컴퓨터학부 · 공지사항 · 2026-09-21",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-d1802616c625",
+          "deadline": "2026-10-12",
+          "postId": "knu-udm-udm1623371432:1619",
+          "posted_at": "2026-09-22",
+          "reason": "reminder",
+          "title": "[안내]2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2MTkmc3RhcnRQYWdlPTEwJmxpc3RObz05MDcmdGFibGU9ZXhfYmJzX2RhdGFfdWRtJm5hdl9jb2RlPXVkbTE2MjMzNzE0MzImY29kZT13QmJLaFhZMWxGMEomc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "deadline": "2026-10-12",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "deadline": "2026-10-12",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다.",
+      "title": "[안내]2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "1a27d13125da7e08750b64efb9a360f776f3117dc389b966c90d3f673d1889f5.mp3",
+      "channel_id": "58d08853e2718e85f1b288f1",
+      "channel_ids": [
+        "notice-1cbb3d90d081"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.472,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청마감은 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 8.472,
+      "id": "58d08853e2718e85f1b288f1",
+      "items": [
+        {
+          "channel_id": "notice-1cbb3d90d081",
+          "dday": null,
+          "detail": "전기공학과 · 공지사항 · 2026-09-21",
+          "postId": "knu-electric-ele1622787198:7409",
+          "section": "마감 임박",
+          "title": "2026년 제 55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0MDkmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDQxJnRhYmxlPWV4X2Jic19kYXRhX2VsZWN0cmljJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmY29kZT1xaDhpeHc3OThhblkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-1cbb3d90d081",
+          "deadline": "2026-10-12",
+          "postId": "knu-electric-ele1622787198:7409",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "title": "2026년 제 55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0MDkmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDQxJnRhYmxlPWV4X2Jic19kYXRhX2VsZWN0cmljJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmY29kZT1xaDhpeHc3OThhblkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청마감은 10월 12일까지입니다.",
+      "title": "2026년 제 55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "56ad4a0de9cb548dcbdaf32835c6053f2a5d668f3e35a9fcf756fe9b8c290982.mp3",
+      "channel_id": "c5d8e2db4869e8a9a075fe54",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.376,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 안내. 신청마감 10월 12일까지. 필수서류 제출 및 면접 참가 필요."
+        }
+      ],
+      "duration_sec": 11.376,
+      "id": "c5d8e2db4869e8a9a075fe54",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-09-23",
+          "postId": "knu-hanmun-han1624361542:7359",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내(~10/12)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNTkmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTUwJnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": "2026-10-12",
+          "postId": "knu-hanmun-han1624361542:7359",
+          "posted_at": "2026-09-23",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내(~10/12)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczNTkmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTUwJnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 안내. 신청마감 10월 12일까지. 필수서류 제출 및 면접 참가 필요.",
+      "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내(~10/12)"
+    },
+    {
+      "audio": "3c61a4a678007d98cdaff234416c08497414643a61dd7fc2d2020dffeeea13cc.mp3",
+      "channel_id": "e6a3bcdc3fe6d62b0c39845f",
+      "channel_ids": [
+        "notice-d13e4abb0470"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.344,
+          "start_sec": 0,
+          "text": "대학원생 마음건강증진캠프 참가자 모집, 9월 30일부터 10월 12일까지 진행돼요."
+        }
+      ],
+      "duration_sec": 7.344,
+      "id": "e6a3bcdc3fe6d62b0c39845f",
+      "items": [
+        {
+          "channel_id": "notice-d13e4abb0470",
+          "dday": null,
+          "detail": "해양학전공 · 공지사항 · 2026-10-01",
+          "postId": "knu-ocean-oce1623632597:1587",
+          "section": "마감 임박",
+          "title": "[대학원]학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1ODcmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzUmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-d13e4abb0470",
+          "deadline": "2026-10-12",
+          "postId": "knu-ocean-oce1623632597:1587",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "[대학원]학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1ODcmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzUmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "대학원생 마음건강증진캠프 참가자 모집, 9월 30일부터 10월 12일까지 진행돼요.",
+      "title": "[대학원]학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "e73f57902dcd29a481ac152f5bf66dd89132110c4bc7c82ed2ec0f99ece3a9d6.mp3",
+      "channel_id": "97fc6c3b19e75b9c3583557f",
+      "channel_ids": [
+        "notice-4a41e1328a3e"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.312,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 안내. 신청마감은 10월 12일까지입니다."
+        }
+      ],
+      "duration_sec": 9.312,
+      "id": "97fc6c3b19e75b9c3583557f",
+      "items": [
+        {
+          "channel_id": "notice-4a41e1328a3e",
+          "dday": null,
+          "detail": "행정학부 · 공지사항 · 2026-09-21",
+          "postId": "knu-puad-pua1623029519:4042",
+          "section": "마감 임박",
+          "title": "[학사] 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNDImc3RhcnRQYWdlPTEwJmxpc3RObz0yMDk3JnRhYmxlPWV4X2Jic19kYXRhX3B1YWQmbmF2X2NvZGU9cHVhMTYyMzAyOTUxOSZjb2RlPTlYdFQwbWc1SExpMyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-4a41e1328a3e",
+          "deadline": "2026-10-12",
+          "postId": "knu-puad-pua1623029519:4042",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "title": "[학사] 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNDImc3RhcnRQYWdlPTEwJmxpc3RObz0yMDk3JnRhYmxlPWV4X2Jic19kYXRhX3B1YWQmbmF2X2NvZGU9cHVhMTYyMzAyOTUxOSZjb2RlPTlYdFQwbWc1SExpMyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 안내. 신청마감은 10월 12일까지입니다.",
+      "title": "[학사] 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "325164fef072d41c9a2bb9910cef6bc3cbb9015e8fce4db134f6f003ea256c1c.mp3",
+      "channel_id": "b303965dd314a79b5ceed08d",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.304,
+          "start_sec": 0,
+          "text": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 10월 12일까지 모집해요."
+        }
+      ],
+      "duration_sec": 8.304,
+      "id": "b303965dd314a79b5ceed08d",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-chem-che1622521080:7065",
+          "section": "마감 임박",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTEwJmxpc3RObz0zODc2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": "2026-10-12",
+          "postId": "knu-chem-che1622521080:7065",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTEwJmxpc3RObz0zODc2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "학생상담센터는 2026학년도 하반기 대학원생 마음건강증진캠프를 10월 12일까지 모집해요.",
+      "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "908c9defa8d97a92530a7642297392f5f90a789439a3ec7969c41fd486a2ae39.mp3",
+      "channel_id": "cc741412f14711517c9ef3ad",
+      "channel_ids": [
+        "notice-a363da417a07"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.336,
+          "start_sec": 0,
+          "text": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다. 필수 서류는 단원지원서와 질병확인서입니다."
+        }
+      ],
+      "duration_sec": 12.336,
+      "id": "cc741412f14711517c9ef3ad",
+      "items": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "dday": null,
+          "detail": "의학과 · 공지 · 2026-09-22",
+          "postId": "knu-med-notice001:25923",
+          "section": "마감 임박",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTIzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89Mjg3NSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1rbnUxNjcwNTgzNzQ4JmNvZGU9bm90aWNlMDAxJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=%7C%7C"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "deadline": "2026-10-12",
+          "postId": "knu-med-notice001:25923",
+          "posted_at": "2026-09-22",
+          "reason": "reminder",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTIzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89Mjg3NSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1rbnUxNjcwNTgzNzQ4JmNvZGU9bm90aWNlMDAxJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=%7C%7C"
+        }
+      ],
+      "script": "2026년 제55기 동계 WFK PAS 청년봉사단 단원 모집 신청 마감은 10월 12일까지입니다. 필수 서류는 단원지원서와 질병확인서입니다.",
+      "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+    },
+    {
+      "audio": "a34113554a107ef90ae2f3c7605aaf505d4971586a0b2dc426f4bf67ed42f000.mp3",
+      "channel_id": "cafa6793a3469e8d4952490a",
+      "channel_ids": [
+        "notice-a363da417a07"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.144,
+          "start_sec": 0,
+          "text": "대학원생은 10월 12일까지 학생상담센터에 참가 신청을 해야 합니다."
+        }
+      ],
+      "duration_sec": 6.144,
+      "id": "cafa6793a3469e8d4952490a",
+      "items": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "dday": null,
+          "detail": "의학과 · 공지 · 2026-10-01",
+          "postId": "knu-med-notice001:25933",
+          "section": "마감 임박",
+          "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgzJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "deadline": "2026-10-12",
+          "postId": "knu-med-notice001:25933",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgzJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ],
+      "script": "대학원생은 10월 12일까지 학생상담센터에 참가 신청을 해야 합니다.",
+      "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
     },
     {
       "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
