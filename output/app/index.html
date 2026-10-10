@@ -729,7 +729,7 @@ function addDays(d, n){ return new Date(Date.parse(d) + n * 864e5).toISOString()
 function wday(d){ return WD[new Date(Date.parse(d)).getUTCDay()]; }
 /* 내 일정은 이름·학과처럼 이 브라우저(store.events)에만 둔다. 지난 일정은 보이지 않는다. */
 function myEvents(){ var t = seoulToday(); return (Array.isArray(store.events) ? store.events : []).filter(function(e){ return e && e.date >= t && e.title; }); }
-function schedOn(d){ return (W.schedule || []).filter(function(s){ return s.start <= d && d <= (s.end || s.start); }); }
+function schedOn(d){ return calOn(calItems(), d); }
 function evRow(e, withDate){ return '<div class="ev"><span class="badge b-new">내 일정</span><b class="title-wrap">' + esc(e.title) + '</b>' + (withDate ? '<span class="muted num" style="font-size:13px">' + md(e.date) + '</span>' : '') + '<button class="icon-btn plain" data-act="evDel" data-id="' + esc(e.id) + '" aria-label="' + esc(e.title) + ' 지우기">' + IC.x + '</button></div>'; }
 function vWeek(){
   var t = seoulToday(), wk = [], i;
@@ -741,13 +741,13 @@ function vWeek(){
     var lab = (k ? '' : '오늘, ') + +d.slice(5, 7) + '월 ' + +d.slice(8, 10) + '일 ' + wday(d) + '요일' + (sc + me ? ', 일정 ' + (sc + me) + '개' : '');
     return '<button class="day' + (k ? '' : ' today') + (d === sel ? ' sel' : '') + '" data-act="calDay" data-d="' + d + '" aria-pressed="' + (d === sel) + '" aria-label="' + lab + '"><span class="w">' + (k ? wday(d) : '<img src="' + HOBANU.head + '" alt="">') + '</span><span class="n num">' + +d.slice(8, 10) + '</span><span class="dots">' + (sc ? '<i class="d-s"></i>' : '') + (me ? '<i class="d-m"></i>' : '') + '</span></button>';
   }).join('') + '</div>';
-  if (!W.schedule) h += '<div class="wk-fail" role="status"><b>학사일정</b><span>오늘 자료를 가져오지 못했습니다</span></div>';
+  if (!YEAR && !W.schedule) h += '<div class="wk-fail" role="status"><b>학사일정</b><span>오늘 자료를 가져오지 못했습니다</span></div>';
   var rows = schedOn(sel).map(function(s){ var v = sched(s); return '<div class="ev"><span class="badge b-sky">학사일정</span><b class="title-wrap">' + esc(s.title) + '</b><span class="badge b-ok">' + esc(v.status) + '</span></div>'; })
     .concat(mine.filter(function(e){ return e.date === sel; }).map(function(e){ return evRow(e, false); }));
   h += '<div class="col" style="padding:0 4px">' + (rows.length ? rows.join('') : '<div class="ev wk-none"><img src="' + hobImage('empty') + '" alt=""><span class="muted" style="font-size:14px">이 날은 일정이 없어요</span></div>') + '</div>';
   var outS = (W.schedule || []).filter(function(s){ return s.start > last || (s.end || s.start) < t; }), outM = mine.filter(function(e){ return e.date > last; });
   if (outS.length || outM.length) h += '<div class="col" style="padding:0 4px"><span class="lab-s" style="padding:12px 0 6px">그 밖의 일정</span>' + outS.map(function(s){ var v = sched(s); return '<div class="ev"><span class="badge b-sky">학사일정</span><b class="title-wrap">' + esc(s.title) + '</b><span class="muted num" style="font-size:13px">' + esc(v.range) + '</span><span class="badge b-ok">' + esc(v.status) + '</span></div>'; }).join('') + outM.map(function(e){ return evRow(e, true); }).join('') + '</div>';
-  if (W.schedule && !W.schedule.length) h += '<span class="muted" style="font-size:12.5px;padding:10px 4px 4px">가까운 학사일정이 없어요</span>';
+  if ((YEAR || W.schedule) && !wk.some(function(d){ return schedOn(d).length; })) h += '<span class="muted" style="font-size:12.5px;padding:10px 4px 4px">이번 주 학사일정이 없어요</span>';
   return h + '</section>';
 }
 function vEvSheet(){
