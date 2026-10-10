@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-10",
+  "asOf": "2026-10-11",
   "boards": [
     {
       "collected": true,
@@ -46,7 +46,15 @@
       "id": "notice-f5bf5684020e",
       "name": "간호학과 · 학부 공지사항",
       "saved": 82,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-18",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-nurse-nur1624533209:5004",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209"
     },
     {
@@ -86,7 +94,15 @@
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
       "saved": 51,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-30",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-kbiz-kbi1623370557:5849",
+          "title": "[BI 및 핀테크 융합전공] 2026년 SW중심대학사업 재학생 대상 설문조사(~10/12,12:00)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
     },
     {
@@ -158,7 +174,15 @@
       "id": "notice-ca78d3fd3c51",
       "name": "국어교육과 · 공지사항",
       "saved": 65,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-30",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-koredu-kor1622459695:268",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?nav_code=kor1622459695"
     },
     {
@@ -270,7 +294,15 @@
       "id": "notice-ddfc5b2ca163",
       "name": "로봇공학과 · 공지사항",
       "saved": 104,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-robot-rob1623632307:808",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
     },
     {
@@ -294,7 +326,15 @@
       "id": "notice-ec96ad09ef78",
       "name": "물리교육과 · 공지사항",
       "saved": 45,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-physed-phy1623371316:5019",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316"
     },
     {
@@ -302,7 +342,15 @@
       "id": "notice-f4ac509b75c4",
       "name": "물리학과 · 공지사항",
       "saved": 78,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-18",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4703",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
     },
     {
@@ -374,15 +422,7 @@
       "id": "notice-bbfcc8756400",
       "name": "사회복지학부 · 학부 공지사항",
       "saved": 78,
-      "today": [
-        {
-          "date": "2026-10-07",
-          "deadline": "2026-10-13",
-          "kind": "deadline",
-          "postId": "knu-knusw-knu1623026178:8940",
-          "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178"
     },
     {
@@ -430,7 +470,15 @@
       "id": "notice-b5e6a10e952e",
       "name": "생물학과 · 공지사항",
       "saved": 74,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-18",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-bio-bio1616117151:2476",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
     },
     {
@@ -606,7 +654,15 @@
       "id": "notice-6b16f01d1a75",
       "name": "식품자원경제학과 · 공지사항",
       "saved": 46,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-18",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-knuagec-knu1623134126:3227",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
     },
     {
@@ -750,7 +806,15 @@
       "id": "notice-e1ec1bf0eb87",
       "name": "의생명융합공학과 · 공지사항",
       "saved": 98,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-bcst2-bcs1611061294:819",
+          "title": "[안내] 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내(수정)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
     },
     {
@@ -758,7 +822,22 @@
       "id": "notice-a363da417a07",
       "name": "의학과 · 공지",
       "saved": 68,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-med-notice001:25933",
+          "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        },
+        {
+          "date": "2026-09-22",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-med-notice001:25923",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
     },
     {
@@ -766,7 +845,15 @@
       "id": "notice-b34ee1a00417",
       "name": "인공지능시스템학과 · 공지사항",
       "saved": 95,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-21",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -846,7 +933,15 @@
       "id": "notice-d1802616c625",
       "name": "자율전공학부 · 공지사항",
       "saved": 67,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-22",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-udm-udm1623371432:1619",
+          "title": "[안내]2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432"
     },
     {
@@ -854,7 +949,15 @@
       "id": "notice-1cbb3d90d081",
       "name": "전기공학과 · 공지사항",
       "saved": 71,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-21",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-electric-ele1622787198:7409",
+          "title": "2026년 제 55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
     },
     {
@@ -1030,7 +1133,15 @@
       "id": "notice-fefffa32e24c",
       "name": "컴퓨터학부 · 공지사항",
       "saved": 95,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-21",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29452",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://computer.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -1062,7 +1173,15 @@
       "id": "notice-3d2a3e87207a",
       "name": "한문학과 · 학부 공지사항",
       "saved": 88,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-23",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-hanmun-han1624361542:7359",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내(~10/12)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
     },
     {
@@ -1070,7 +1189,15 @@
       "id": "notice-d13e4abb0470",
       "name": "해양학전공 · 공지사항",
       "saved": 46,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-ocean-oce1623632597:1587",
+          "title": "[대학원]학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
     },
     {
@@ -1078,7 +1205,15 @@
       "id": "notice-4a41e1328a3e",
       "name": "행정학부 · 공지사항",
       "saved": 75,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-21",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-puad-pua1623029519:4042",
+          "title": "[학사] 2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
     },
     {
@@ -1094,7 +1229,15 @@
       "id": "notice-ac0144f93d45",
       "name": "화학과 · 공지사항",
       "saved": 94,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-12",
+          "kind": "deadline",
+          "postId": "knu-chem-che1622521080:7065",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
     },
     {
@@ -3061,11 +3204,11 @@
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "02:16",
+  "checkedAt": "01:32",
   "collection": {
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "failedBoards": [],
-    "lastCollectedAt": "2026-10-10T02:16:44+09:00",
+    "lastCollectedAt": "2026-10-11T01:32:27+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -4863,10 +5006,6 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7537783c05b0",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
       "source": "notice-56d213db968e",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -5011,7 +5150,143 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-d5e75aa6b2da",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-99ea5018f469",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-2c006faa8fdd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9a2cb1c992c7",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-06dffccf1c28",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-70d703a20086",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-848538cdce05",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-f95f0e2ac40d",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-3834483dc081",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-a1540deb2a6f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-74558916c320",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-a1c0cc5412ca",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-ecd686f730b2",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-5c6cbaba27ab",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-614324804939",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7bb331bb8b0f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-4b4549901a22",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-68d5f9aa762f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-55ac86f2e763",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9a0b59b2a2b4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-1d6a78636180",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-c4b1c79994bd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-787893a88ff5",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-392eeaadf103",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d6ef40bd632d",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e187e9582e58",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-afca571a7ef1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-dd1ea15f1f4f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-dfce5afb9336",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d6c272c6c7db",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9dbd1b2695c9",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b46aed7f6b0f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-093d2d29fb09",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-6fafb52e7377",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-459a4805de72",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -5332,14 +5607,20 @@
     }
   ],
   "schedule": {
-    "items": [],
-    "status": "empty"
+    "items": [
+      {
+        "end": "2026-10-15",
+        "start": "2026-10-14",
+        "title": "[대학원] 논문심사료 납부 : 10.14.~10.15."
+      }
+    ],
+    "status": "ok"
   },
   "weather": {
-    "max": 25.7,
-    "min": 15.7,
-    "rain": 67,
+    "max": 25.1,
+    "min": 17.9,
+    "rain": 71,
     "status": "ok",
-    "summary": "대체로 맑음"
+    "summary": "부분적으로 흐림"
   }
 }
