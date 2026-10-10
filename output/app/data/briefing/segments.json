@@ -2,21 +2,21 @@
   "date": "2026-10-10",
   "segments": [
     {
-      "audio": "645a391164c326ec8d46493d62eebbc521fd88ac7cc374923a2275c4affc0da9.mp3",
+      "audio": "4cd80f08725ffcec162ef16197b65418ded8809532857259218259c40b38e874.mp3",
       "channel_id": "intro",
       "cues": [
         {
-          "end_sec": 7.272,
+          "end_sec": 6.984,
           "start_sec": 0,
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 16.8,
-          "start_sec": 7.272,
+          "end_sec": 15.744,
+          "start_sec": 6.984,
           "text": "비가 온다고 해요. 우산을 준비하고, 발걸음은 조심해 주세요. 낮에는 겉옷을 벗을 수 있게 준비해 주세요."
         }
       ],
-      "duration_sec": 16.8,
+      "duration_sec": 15.744,
       "id": "intro",
       "items": [
         {
@@ -32,19 +32,19 @@
       "title": "인사·날씨"
     },
     {
-      "audio": "76eb6d790e61e997afd009854f124f1ca000b5d96f5cde28ddb18e0dd8240eac.mp3",
+      "audio": "626c2eb021fe59d0c21b6d97612a45c0c000be34c7f19c7286ead13c9eee2385.mp3",
       "channel_id": "e73abf236d8ec20759477885",
       "channel_ids": [
         "notice-bbfcc8756400"
       ],
       "cues": [
         {
-          "end_sec": 12.96,
+          "end_sec": 11.256,
           "start_sec": 0,
-          "text": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 사회과학대학 310호에서 진행. 신청은 10월 13일 23시 59분까지 https://url.kr/9f6ftd로."
+          "text": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 310호에서. 신청은 10월 13일 23시 59분까지. https://url.kr/9f6ftd"
         }
       ],
-      "duration_sec": 12.96,
+      "duration_sec": 11.256,
       "id": "e73abf236d8ec20759477885",
       "items": [
         {
@@ -69,23 +69,23 @@
           "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 사회과학대학 310호에서 진행. 신청은 10월 13일 23시 59분까지 https://url.kr/9f6ftd로.",
+      "script": "김윤영 교수님 강연, 2026년 10월 15일 11시 30분 310호에서. 신청은 10월 13일 23시 59분까지. https://url.kr/9f6ftd",
       "title": "2026학년도 사회복지학부 학술 콜로키움 (2차) 개최 안내"
     },
     {
-      "audio": "7158b64489e53f5492398513afe2baa7534cc155966eba213e75cad4cdf441f6.mp3",
+      "audio": "59d078fe526fe640a69f339e5737529b45020692072e4e1bbb7052e5f953a52c.mp3",
       "channel_id": "46589f4b415b2b3781d60483",
       "channel_ids": [
         "notice-1268b7a10e0b"
       ],
       "cues": [
         {
-          "end_sec": 17.832,
+          "end_sec": 11.88,
           "start_sec": 0,
           "text": "2026년 10월 외국어강좌 추가접수 시작, 10월 11일까지. 일대일 온라인 강좌 모집. 신청은 lang.knu.ac.kr에서 가능해요."
         }
       ],
-      "duration_sec": 17.832,
+      "duration_sec": 11.88,
       "id": "46589f4b415b2b3781d60483",
       "items": [
         {
@@ -114,48 +114,48 @@
       "title": "[글로벌교육센터]★추가접수★ 2026년 10월 외국어강좌 추가 접수 안내 (개강: 10월 1일)"
     },
     {
-      "audio": "4fb37489263f6930f783cea540f76b124de2bb8b0f4c1464ebef4392e2717d41.mp3",
+      "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
       "channel_id": "empty",
       "cues": [
         {
-          "end_sec": 3.456,
+          "end_sec": 3.144,
           "start_sec": 0,
           "text": "오늘은 따로 알려드릴 공지사항이 없어요."
         }
       ],
-      "duration_sec": 3.456,
+      "duration_sec": 3.144,
       "id": "empty",
       "items": [],
       "script": "오늘은 따로 알려드릴 공지사항이 없어요.",
       "title": "공지 안내"
     },
     {
-      "audio": "57027026826d174de549a3b6a6f9f17945429f65edd997d0dc1e32f24dc0d4ba.mp3",
+      "audio": "c20a87c5a07c4ec57625dc4e9cc6dbe98c90f913e3645ddb3b7649cd03a116e2.mp3",
       "channel_id": "message",
       "cues": [
         {
-          "end_sec": 8.568,
+          "end_sec": 8.256,
           "start_sec": 0,
           "text": "시험 준비도 좋지만, 밥과 잠도 챙겨주세요. 오늘의 공부가 좋은 결과로 이어지길 크누아가 응원하겠습니다!"
         }
       ],
-      "duration_sec": 8.568,
+      "duration_sec": 8.256,
       "id": "message",
       "items": [],
       "script": "시험 준비도 좋지만, 밥과 잠도 챙겨주세요. 오늘의 공부가 좋은 결과로 이어지길 크누아가 응원하겠습니다!",
       "title": "크누아의 응원"
     },
     {
-      "audio": "a7543fd91af1e58ac8c5b812dacb8ce844f49a236c7074bc9c9f549076db8fc0.mp3",
+      "audio": "aca49a912cb9a8e0c94a9202bcf60ced0d71689496f90ab18fc9ae0247bd71a3.mp3",
       "channel_id": "outro",
       "cues": [
         {
-          "end_sec": 2.16,
+          "end_sec": 2.328,
           "start_sec": 0,
           "text": "오늘도 좋은 하루 보내세요!"
         }
       ],
-      "duration_sec": 2.16,
+      "duration_sec": 2.328,
       "id": "outro",
       "items": [],
       "script": "오늘도 좋은 하루 보내세요!",
