@@ -1,6 +1,11 @@
 {
   "channels": [
     {
+      "channel_id": "knu-academic",
+      "meals": [],
+      "notices": []
+    },
+    {
       "channel_id": "notice-ddb70636c525",
       "meals": [],
       "notices": []
@@ -45,16 +50,6 @@
     },
     {
       "channel_id": "notice-0158c1288046",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-541aff0da509",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-78e12cb6bc22",
       "meals": [],
       "notices": []
     },
@@ -332,6 +327,11 @@
       "notices": []
     },
     {
+      "channel_id": "notice-b1133d4c8b3b",
+      "meals": [],
+      "notices": []
+    },
+    {
       "channel_id": "notice-afb535aeb941",
       "meals": [],
       "notices": []
@@ -435,11 +435,6 @@
       "notices": []
     },
     {
-      "channel_id": "notice-2c006faa8fdd",
-      "meals": [],
-      "notices": []
-    },
-    {
       "channel_id": "notice-45a059e34b9c",
       "meals": [],
       "notices": []
@@ -456,6 +451,11 @@
     },
     {
       "channel_id": "notice-99ea5018f469",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2c006faa8fdd",
       "meals": [],
       "notices": []
     },
@@ -581,6 +581,54 @@
       ]
     },
     {
+      "channel_id": "notice-a363da417a07",
+      "meals": [],
+      "notices": [
+        {
+          "body": "태평양아시아협회(이하 “PAS”)의 2026년 제55기(동계) WFK PAS 청년봉사단 단원을 모집하고 있습니다.\n가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
+          "channel_id": "notice-a363da417a07",
+          "dday": 0,
+          "deadline": "2026-10-12",
+          "id": "knu-med-notice001:25923",
+          "posted_at": "2026-09-22",
+          "reason": "reminder",
+          "source": "의학과 · 공지",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTIzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89Mjg3NSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1rbnUxNjcwNTgzNzQ4JmNvZGU9bm90aWNlMDAxJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=%7C%7C"
+        },
+        {
+          "body": "학생상담센터에서는 대학원생들의 심신회복 및 대학원생활 적응력 향상을 지원하기 위하여 「2026학년도 하반기 대학원생 마음건강증진캠프」를 개최하오니 대학원생들은 많은 관심과 참여 바랍니다.\n1. 2026 하반기 대학원생 마음건강증진캠프 일정 및 프로그램 구성\n2. 참가대상: 대학원 재학생, 수료후 등록생\n3. 모집 기간: 2026. 9. 30.(수) ~ 2026. 10. 12.(월)",
+          "channel_id": "notice-a363da417a07",
+          "dday": 0,
+          "deadline": "2026-10-12",
+          "id": "knu-med-notice001:25933",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "source": "의학과 · 공지",
+          "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgzJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b34ee1a00417",
+      "meals": [],
+      "notices": [
+        {
+          "body": "가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": 0,
+          "deadline": "2026-10-12",
+          "id": "knu-computer-sub6_1_a:29452",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        }
+      ]
+    },
+    {
       "channel_id": "notice-ecd686f730b2",
       "meals": [],
       "notices": []
@@ -617,11 +665,6 @@
     },
     {
       "channel_id": "notice-55ac86f2e763",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-392eeaadf103",
       "meals": [],
       "notices": []
     },
@@ -667,6 +710,11 @@
       ]
     },
     {
+      "channel_id": "notice-df44dd8507c1",
+      "meals": [],
+      "notices": []
+    },
+    {
       "channel_id": "notice-e08af12e34e3",
       "meals": [],
       "notices": []
@@ -697,7 +745,17 @@
       "notices": []
     },
     {
+      "channel_id": "notice-6b04da14aae1",
+      "meals": [],
+      "notices": []
+    },
+    {
       "channel_id": "notice-787893a88ff5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-392eeaadf103",
       "meals": [],
       "notices": []
     },
@@ -750,6 +808,29 @@
       "channel_id": "notice-d6c272c6c7db",
       "meals": [],
       "notices": []
+    },
+    {
+      "channel_id": "notice-7414782e7dbb",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fefffa32e24c",
+      "meals": [],
+      "notices": [
+        {
+          "body": "가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": 0,
+          "deadline": "2026-10-12",
+          "id": "knu-computer-sub6_1_a:29452",
+          "posted_at": "2026-09-21",
+          "reason": "reminder",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+        }
+      ]
     },
     {
       "channel_id": "notice-ccc3a94a1fa5",
@@ -864,116 +945,455 @@
       "notices": []
     },
     {
-      "channel_id": "knu-academic",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-df44dd8507c1",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-b1133d4c8b3b",
-      "meals": [],
-      "notices": []
-    },
-    {
-      "channel_id": "notice-b34ee1a00417",
-      "meals": [],
-      "notices": [
+      "channel_id": "meal-46",
+      "meals": [
         {
-          "body": "가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
-          "channel_id": "notice-b34ee1a00417",
-          "dday": 0,
-          "deadline": "2026-10-12",
-          "id": "knu-computer-sub6_1_a:29452",
-          "posted_at": "2026-09-21",
-          "reason": "reminder",
-          "source": "인공지능시스템학과 · 공지사항",
-          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
+          "menu": [
+            "백미밥",
+            "닭곰탕",
+            "고추장불고기★",
+            "우렁강된장볶음",
+            "양배추쌈&쌈장",
+            "수정과/포기김치"
+          ],
+          "place": "GP감꽃식당",
+          "time": "11:15~13:30"
         }
-      ]
-    },
-    {
-      "channel_id": "notice-fefffa32e24c",
-      "meals": [],
-      "notices": [
-        {
-          "body": "가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
-          "channel_id": "notice-fefffa32e24c",
-          "dday": 0,
-          "deadline": "2026-10-12",
-          "id": "knu-computer-sub6_1_a:29452",
-          "posted_at": "2026-09-21",
-          "reason": "reminder",
-          "source": "컴퓨터학부 · 공지사항",
-          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29452"
-        }
-      ]
-    },
-    {
-      "channel_id": "notice-6b04da14aae1",
-      "meals": [],
+      ],
       "notices": []
     },
     {
-      "channel_id": "notice-a363da417a07",
-      "meals": [],
-      "notices": [
+      "channel_id": "meal-35",
+      "meals": [
         {
-          "body": "태평양아시아협회(이하 “PAS”)의 2026년 제55기(동계) WFK PAS 청년봉사단 단원을 모집하고 있습니다.\n가. 신청마감: 2026. 10. 12.(월)까지\n나. 참가비\n구분\n파견국\n학생참가비\n대학지원금\n비고\n아시아권\n인도네시아\n1,600,000원\n0\n대학자체 지원금 없음\n베트남\n1,600,000원\n0\n다. 제출서류: 단원지원서, 활동동의서, 개인정보수집이용동의서, 초상권및지식재산권이용동의서, 질병확인서(이상 필수제출), 사회취약계층/자격증 등 각종 증빙서류(해당자만)\n라. 면접일정: 대학 추천을 위해 면접 실시(일정은 별도 안내)\n붙임 제55기(동계) WFK PAS 청년봉사단 단원 모집 공고 및 서식 등 각 1부. 끝.",
-          "channel_id": "notice-a363da417a07",
-          "dday": 0,
-          "deadline": "2026-10-12",
-          "id": "knu-med-notice001:25923",
-          "posted_at": "2026-09-22",
-          "reason": "reminder",
-          "source": "의학과 · 공지",
-          "title": "2026년 제55기(동계) WFK PAS 청년봉사단 단원 모집 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTIzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89Mjg3NSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1rbnUxNjcwNTgzNzQ4JmNvZGU9bm90aWNlMDAxJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=%7C%7C"
+          "menu": [
+            "중식세트★",
+            "흰밥",
+            "두부된장국",
+            "배추김치"
+          ],
+          "place": "정보센터식당",
+          "time": "11:00~13:30"
         },
         {
-          "body": "학생상담센터에서는 대학원생들의 심신회복 및 대학원생활 적응력 향상을 지원하기 위하여 「2026학년도 하반기 대학원생 마음건강증진캠프」를 개최하오니 대학원생들은 많은 관심과 참여 바랍니다.\n1. 2026 하반기 대학원생 마음건강증진캠프 일정 및 프로그램 구성\n2. 참가대상: 대학원 재학생, 수료후 등록생\n3. 모집 기간: 2026. 9. 30.(수) ~ 2026. 10. 12.(월)",
-          "channel_id": "notice-a363da417a07",
-          "dday": 0,
-          "deadline": "2026-10-12",
-          "id": "knu-med-notice001:25933",
-          "posted_at": "2026-10-01",
-          "reason": "reminder",
-          "source": "의학과 · 공지",
-          "title": "(대학원) 학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTMzJnN0YXJ0UGFnZT0wJmxpc3RObz0yODgzJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+          "menu": [
+            "대파갈비살덮밥",
+            "캐플쥬스"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "불고기비빔밥★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "순살돈가스★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "치즈돈가스★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "고구마돈가스★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "왕돈가스★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "왕치즈돈가스★"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "라면"
+          ],
+          "place": "정보센터식당",
+          "time": "13:00~17:00"
+        },
+        {
+          "menu": [
+            "우동"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "우동밥"
+          ],
+          "place": "정보센터식당",
+          "time": null
+        },
+        {
+          "menu": [
+            "흰밥",
+            "유부김치국",
+            "인도식티카마살라커리",
+            "치킨스테이크",
+            "바나나",
+            "무비트피클"
+          ],
+          "place": "정보센터식당",
+          "time": "17:00~19:00"
         }
-      ]
+      ],
+      "notices": []
     },
     {
-      "channel_id": "notice-7414782e7dbb",
-      "meals": [],
+      "channel_id": "meal-85",
+      "meals": [
+        {
+          "menu": [
+            "정식",
+            "흑미밥/쌀밥",
+            "재첩국",
+            "돈육양념찜★",
+            "동그랑땡전&양념장★",
+            "열무된장무침",
+            "직접담근김치",
+            "온국수"
+          ],
+          "place": "공학관교직원식당(외부업체)",
+          "time": "11:30~13:30"
+        },
+        {
+          "menu": [
+            "정식",
+            "기장밥/쌀밥",
+            "부대찌개★",
+            "간장치킨",
+            "양념물어묵",
+            "팽이미역줄기볶음",
+            "직접담근김치",
+            "도시락김"
+          ],
+          "place": "공학관교직원식당(외부업체)",
+          "time": "17:00~19:00"
+        }
+      ],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-86",
+      "meals": [
+        {
+          "menu": [
+            "육회비빔밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "통다리살오븐구이&매콤볶음밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "산더미오리주물럭(2인)"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "등심돈가스&제육볶음★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "참치덮밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "훈제오리덮밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "따로소고기국밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "순두부찌개정식★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "대패삼겹즉석떡볶이(2인)★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "양푼이돈육양념찜★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "꼬마부대찌개★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "뚝배기알밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "치즈뚝배기알밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "양푼이비빔밥&된장찌개"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "뚝배기치즈김치볶음밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "떡라면"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "떡라면&밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "만두라면★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "만두라면&밥★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "최루탄라면"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "최루탄라면&밥★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": "10:00~14:30"
+        },
+        {
+          "menu": [
+            "등심돈가스&스프★"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "따로소고기국밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "뚝배기알밥"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        },
+        {
+          "menu": [
+            "육회비빔밥",
+            "17:00~1900"
+          ],
+          "place": "공학관학생식당(외부업체)",
+          "time": null
+        }
+      ],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-bokji",
+      "meals": [
+        {
+          "menu": [
+            "흰밥",
+            "순살감자탕★",
+            "닭데리야끼볶음",
+            "소떡소떡꼬치구이★",
+            "비빔야채짬뽕",
+            "포기김치"
+          ],
+          "place": "복지관 교직원식당",
+          "time": "11:15~13:30"
+        }
+      ],
+      "notices": []
+    },
+    {
+      "channel_id": "meal-37",
+      "meals": [
+        {
+          "menu": [
+            "천원의 아침밥",
+            "유부무국",
+            "봉추찜닭덮밥",
+            "삶은계란",
+            "포도주스",
+            "배추김치"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "중국식계란",
+            "볶음밥",
+            "&해물짬뽕면★",
+            "흰밥",
+            "두부된장국",
+            "배추김치"
+          ],
+          "place": "카페테리아 첨성",
+          "time": "11:00~13:30"
+        },
+        {
+          "menu": [
+            "참치비빔밥"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "더진국",
+            "수육국밥★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "더진국",
+            "순대수육국밥★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "순살돈가스★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": "11:00~15:30"
+        },
+        {
+          "menu": [
+            "치즈돈가스★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "고구마돈가스★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "왕돈가스★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "치즈왕돈가스★"
+          ],
+          "place": "카페테리아 첨성",
+          "time": null
+        },
+        {
+          "menu": [
+            "라면"
+          ],
+          "place": "카페테리아 첨성",
+          "time": "9:00~11:00,13:00~15:30"
+        }
+      ],
       "notices": []
     }
   ],
-  "collected_at": "2026-10-12T01:35:07.295463+09:00",
+  "collected_at": "2026-10-12T08:21:04.554285+09:00",
   "date": "2026-10-12",
   "errors": [
-    {
-      "message": "오늘 식단은 로컬에서 아직 수집하지 않았습니다",
-      "source": "meals"
-    },
-    {
-      "message": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f23c2ae2690>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)",
-      "source": "notice-6b04da14aae1"
-    },
-    {
-      "message": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=3: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=3 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f23c37bb9d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=3)",
-      "source": "notice-6b04da14aae1"
-    },
-    {
-      "message": "요청 실패: https://dent.knu.ac.kr/sub/board.html?bid=k1news: HTTPSConnectionPool(host='dent.knu.ac.kr', port=443): Max retries exceeded with url: /sub/board.html?bid=k1news (Caused by ConnectTimeoutError(<HTTPSConnection(host='dent.knu.ac.kr', port=443) at 0x7f23c5551a50>, 'Connection to dent.knu.ac.kr timed out. (connect timeout=10)')) (https://dent.knu.ac.kr/sub/board.html?bid=k1news)",
-      "source": "notice-7414782e7dbb"
-    },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-ddb70636c525"
@@ -1068,6 +1488,10 @@
     },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b1133d4c8b3b"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-afb535aeb941"
     },
     {
@@ -1120,10 +1544,6 @@
     },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
-      "source": "notice-2c006faa8fdd"
-    },
-    {
-      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-45a059e34b9c"
     },
     {
@@ -1137,6 +1557,10 @@
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-99ea5018f469"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-2c006faa8fdd"
     },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
@@ -1204,10 +1628,6 @@
     },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
-      "source": "notice-392eeaadf103"
-    },
-    {
-      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-9a0b59b2a2b4"
     },
     {
@@ -1221,6 +1641,10 @@
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
       "source": "notice-787893a88ff5"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-392eeaadf103"
     },
     {
       "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
@@ -1267,16 +1691,12 @@
       "source": "notice-459a4805de72"
     },
     {
-      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
-      "source": "notice-b1133d4c8b3b"
+      "message": "경상대학 · 공지사항: 저장 자료가 없거나 게시판 연결을 확정할 수 없습니다",
+      "source": "notice-541aff0da509"
     },
     {
-      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
-      "source": "notice-6b04da14aae1"
-    },
-    {
-      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
-      "source": "notice-7414782e7dbb"
+      "message": "경상대학 자율학부 · 공지사항: 저장 자료가 없거나 게시판 연결을 확정할 수 없습니다",
+      "source": "notice-78e12cb6bc22"
     }
   ],
   "schedule": [
