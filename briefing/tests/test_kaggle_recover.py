@@ -62,4 +62,5 @@ def test_recovery_workflow_keeps_waiting_separate_from_serialized_publication():
     assert workflow['jobs']['publish']['concurrency']['group'] == 'knu-collector-writer'
     assert 'concurrency' not in workflow['jobs']['recover']
     event = workflow.get('on', workflow.get(True))
-    assert event['workflow_run']['workflows'] == ['Kaggle GPU 브리핑 생성']
+    assert 'workflow_run' not in event
+    assert 'run_id' in event['workflow_dispatch']['inputs']

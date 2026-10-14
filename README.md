@@ -165,7 +165,7 @@ python -m collector.run --retry-failed --write-items
 
 ### GitHub Pages와 공유 API
 
-`.github/workflows/deploy.yml`이 `output/app/index.html`, 개인정보 안내와 `output/app/data/`를 GitHub Pages에 올립니다. 앱 자료가 바뀐 main push, 수집 워크플로 완료, 또는 수동 실행으로 배포하며, 일시적인 Pages 배포 오류는 한 번 다시 시도합니다. 저장소 **Settings → Pages → Source**는 **GitHub Actions**로 설정합니다.
+`.github/workflows/deploy.yml`이 `output/app/index.html`, 개인정보 안내와 `output/app/data/`를 GitHub Pages에 올립니다. 앱 자료가 바뀐 main push, 수집 워크플로 완료, 또는 수동 실행으로 배포하며, 일일 브리핑의 게시·배포 실패는 30분 뒤 한 번 재시도하고 최종 결과만 한국어로 알립니다. 저장소 **Settings → Pages → Source**는 **GitHub Actions**로 설정합니다.
 
 현재 홈페이지는 [hoyeol903.github.io/KNU-AUDIO-public](https://hoyeol903.github.io/KNU-AUDIO-public/)입니다. 홈페이지 배포에는 별도 Cloudflare Secret이 필요하지 않습니다. 공유 API는 `community/worker.mjs`와 D1의 `COMMUNITY_DB` 바인딩을 사용하며, API 주소와 허용 출처 설정은 [모임 연결 안내](docs/community.md)에 있습니다.
 

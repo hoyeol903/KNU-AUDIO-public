@@ -1,4 +1,5 @@
 name: GitHub Pages 배포
+run-name: "브리핑 배포 | 원본=${{ inputs.briefing_run_id || '없음' }} | 재시도=${{ inputs.final_retry && '예' || '아니오' }}"
 
 "on":
   push:
@@ -9,6 +10,15 @@ name: GitHub Pages 배포
     workflows: ['매일 경북대 자료 수집']
     types: [completed]
   workflow_dispatch:
+    inputs:
+      briefing_run_id:
+        description: 최종 알림에 사용할 원래 음성 실행 번호
+        type: string
+        required: false
+      final_retry:
+        description: 30분 후 마지막 배포 재시도 여부
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -17,7 +27,7 @@ permissions:
 
 concurrency:
   group: knu-pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -25,7 +35,7 @@ jobs:
     timeout-minutes: 10
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -41,13 +51,4 @@ jobs:
           path: site
       - name: 정적 앱 배포
         id: deployment
-        continue-on-error: true
-        uses: actions/deploy-pages@v4
-      # 방금 올린 묶음을 바로 찾지 못해 실패하는 일시 오류가 있어(2026-10-09) 잠시 뒤 한 번만 다시 시도한다.
-      - name: 재시도 전 대기
-        if: steps.deployment.outcome == 'failure'
-        run: sleep 30
-      - name: 정적 앱 배포 재시도
-        id: retry
-        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4

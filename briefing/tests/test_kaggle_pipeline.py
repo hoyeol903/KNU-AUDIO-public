@@ -96,6 +96,8 @@ def _publish_fixture(root):
     expected_path.write_text(json.dumps(expected))
     artifact = root / 'artifact'
     (artifact / 'app').mkdir(parents=True)
+    (artifact / 'dist').mkdir()
+    (artifact / 'dist/manifest.json').write_text(json.dumps({'audio_failures': [], 'skipped_notices': []}))
     (artifact / 'app/segments.json').write_text(json.dumps(
         {'date': DAY, 'segments': [{'audio': 'clip.mp3'}]}))
     (artifact / 'app/clip.mp3').write_bytes(b'verified audio')
@@ -236,3 +238,13 @@ def test_publish_prunes_expired_audio_after_success(tmp_path, monkeypatch):
     kaggle.publish_output(tmp_path, artifact, expected_path)
     assert not (target / 'expired.mp3').exists()
     assert (target / 'clip.mp3').exists()
+
+
+def test_publish_records_partial_failures_for_final_notice(tmp_path, monkeypatch):
+    expected, expected_path, artifact, manifest = _publish_fixture(tmp_path)
+    monkeypatch.setattr(kaggle, 'verify_output', Mock(return_value=manifest))
+    (artifact / 'dist/manifest.json').write_text(json.dumps({
+        'audio_failures': [{'segment_id': 'failed'}], 'skipped_notices': [{'id': 'excluded'}]}))
+    record = kaggle.publish_output(tmp_path, artifact, expected_path)
+    assert record['audio_failures'] == 1
+    assert record['skipped_notices'] == 1

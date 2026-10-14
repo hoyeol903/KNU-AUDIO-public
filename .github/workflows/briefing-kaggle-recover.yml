@@ -1,9 +1,7 @@
 name: 완료된 Kaggle 음성 자동 게시
+run-name: "브리핑 복구 | 원본=${{ inputs.run_id }} | 재시도=예"
 
 "on":
-  workflow_run:
-    workflows: ['Kaggle GPU 브리핑 생성']
-    types: [completed]
   workflow_dispatch:
     inputs:
       run_id:
@@ -77,6 +75,7 @@ jobs:
     env:
       TZ: Asia/Seoul
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      RUN_ID: ${{ inputs.run_id }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -105,6 +104,7 @@ jobs:
           git add -- output/app/data/briefing "data/runs/briefing-kaggle-$day.json"
           if git diff --cached --quiet; then
             echo '이미 게시된 결과입니다.'
+            gh workflow run deploy.yml --ref "$DEFAULT_BRANCH" -f briefing_run_id="$RUN_ID" -f final_retry=true
             exit 0
           fi
           git commit -m "Kaggle GPU 브리핑 $day 게시"
@@ -113,4 +113,4 @@ jobs:
           git diff --exit-code -- output/app/data/briefing data/runs
           git diff --cached --exit-code
           git push origin "HEAD:$DEFAULT_BRANCH"
-          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH" -f briefing_run_id="$RUN_ID" -f final_retry=true
