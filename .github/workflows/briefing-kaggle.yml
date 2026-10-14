@@ -1,4 +1,5 @@
 name: Kaggle GPU 브리핑 생성
+run-name: "브리핑 생성 | 수집=${{ inputs.collection_run_id || '없음' }} | 게시=${{ inputs.publish && '예' || '아니오' }}"
 
 on:
   workflow_dispatch:
@@ -8,6 +9,10 @@ on:
         required: false
         type: string
         default: ''
+      collection_run_id:
+        description: 원래 수집 실행 번호
+        required: false
+        type: string
       source_sha:
         description: '브리핑에 사용할 저장소 commit SHA'
         required: false
@@ -212,6 +217,7 @@ jobs:
           git add -- output/app/data/briefing "data/runs/briefing-kaggle-$day.json"
           if git diff --cached --quiet; then
             echo '이미 게시된 결과입니다.'
+            gh workflow run deploy.yml --ref "$DEFAULT_BRANCH" -f briefing_run_id="${{ github.run_id }}"
             exit 0
           fi
           git commit -m "Kaggle GPU 브리핑 $day 게시"
@@ -220,40 +226,4 @@ jobs:
           git diff --exit-code -- output/app/data/briefing data/runs
           git diff --cached --exit-code
           git push origin "HEAD:$DEFAULT_BRANCH"
-          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"
-  notify:
-    needs: [kaggle-briefing, publish]
-    if: always() && !cancelled()
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: read
-      issues: write
-    env:
-      GH_TOKEN: ${{ github.token }}
-      GH_REPO: ${{ github.repository }}
-      GH_OWNER: ${{ github.repository_owner }}
-      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-      FAILURE_STAGE: ${{ needs.kaggle-briefing.outputs.failure_stage }}
-      GENERATION_RESULT: ${{ needs.kaggle-briefing.result }}
-      PUBLICATION_RESULT: ${{ needs.publish.result }}
-      PUBLISH_REQUESTED: ${{ inputs.publish }}
-    steps:
-      - uses: actions/checkout@v7
-      - name: 실패 목록과 진단 자료 받기
-        if: needs.kaggle-briefing.outputs.artifact_id != ''
-        uses: actions/download-artifact@v8
-        with:
-          artifact-ids: ${{ needs.kaggle-briefing.outputs.artifact_id }}
-          path: .cache/kaggle
-      - name: 실패 목록 메일 알림
-        if: always()
-        run: |
-          python -m briefing.failure_notice
-          if [ ! -s briefing-notice.md ]; then exit 0; fi
-          number=$(gh issue list --state open --search 'in:title "브리핑 실패 알림"' --limit 100 --json number,title -q '[.[] | select(.title == "브리핑 실패 알림")][0].number // empty')
-          if [ -z "$number" ]; then
-            gh issue create --title '브리핑 실패 알림' --body-file briefing-notice.md
-          else
-            gh issue comment "$number" --body-file briefing-notice.md
-          fi
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH" -f briefing_run_id="${{ github.run_id }}"

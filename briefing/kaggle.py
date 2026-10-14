@@ -289,7 +289,10 @@ def publish_output(root, output_dir, expected_path):
             raise ValueError('Kaggle 앱 브리핑에 잘못된 음성 경로가 있습니다.')
         files.add(relative.as_posix())
     file_hashes = {name: sha256_file(source_app / name) for name in sorted(files)}
+    dist = json.loads((output_dir / 'dist/manifest.json').read_text(encoding='utf-8'))
     record = dict(
+        audio_failures=len(dist.get('audio_failures', [])),
+        skipped_notices=len(dist.get('skipped_notices', [])),
         input_date=day, verified=True, run_id=manifest['run_id'], run_attempt=manifest['run_attempt'],
         github_sha=manifest['github_sha'], kernel_id=manifest['kernel_id'],
         kernel_version=expected.get('kernel_version'), gpu=manifest['gpu_name'],
