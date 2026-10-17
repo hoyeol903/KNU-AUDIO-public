@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "boards": [
     {
       "collected": true,
@@ -46,29 +46,7 @@
       "id": "notice-f5bf5684020e",
       "name": "간호학과 · 학부 공지사항",
       "saved": 90,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-nurse-nur1624533209:5049",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-nurse-nur1624533209:5050",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 시행 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-nurse-nur1624533209:5051",
-          "title": "2026학년도 2학기 중간고사 시행 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209"
     },
     {
@@ -108,15 +86,7 @@
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
       "saved": 55,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-kbiz-kbi1623370557:5860",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
     },
     {
@@ -172,7 +142,15 @@
       "id": "notice-eaa2bcd13c4a",
       "name": "관광학과 · 공지사항",
       "saved": 39,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-13",
+          "deadline": "2026-10-19",
+          "kind": "deadline",
+          "postId": "knu-tour-tou1616116950:865",
+          "title": "「GKL 지역상생 볼런투어」 참가자를 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950"
     },
     {
@@ -212,15 +190,7 @@
       "id": "notice-74a3f719131b",
       "name": "기계공학부 · 학부 공지사항",
       "saved": 69,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-me-me1623370438:6874",
-          "title": "시험관련 야간 강의실 개방 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
     },
     {
@@ -236,15 +206,7 @@
       "id": "notice-2fdcd3cab366",
       "name": "노어노문학과 · 학부 공지사항",
       "saved": 49,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knurussian-knu1742773842:3246",
-          "title": "(주한 러시아 대사 초청 특강 안내) 러시아의 대외정책과 러시아·대한민국 협력"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?nav_code=knu1742773842"
     },
     {
@@ -318,39 +280,11 @@
       "saved": 113,
       "today": [
         {
-          "date": "2026-10-16",
-          "deadline": "2026-10-30",
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:824",
-          "title": "[안내] (앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-12-11",
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:827",
-          "title": "[대학원] 2026학년도 2학기 대학원 학위논문 심사 및 결과보고서(~12.11. 17시) 제출 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:825",
-          "title": "[안내] 2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:826",
-          "title": "[안내] 2026학년도 KNU 논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:828",
-          "title": "[안내] KNU 80 인피니티 챌린지] 「KNU-M 창업캠프(ROBOT)」참가 학생 모집 안내"
+          "date": "2026-10-12",
+          "deadline": "2026-10-21",
+          "kind": "deadline",
+          "postId": "knu-robot-rob1623632307:822",
+          "title": "[안내] 2026학년도 2학기 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
@@ -384,36 +318,7 @@
       "id": "notice-f4ac509b75c4",
       "name": "물리학과 · 공지사항",
       "saved": 89,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4745",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4743",
-          "title": "2026학년도 KNU 논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4744",
-          "title": "2026학년도 겨울계절수업 타대학(경상국립대학교 학부) 수학 안내"
-        },
-        {
-          "date": "2026-10-01",
-          "deadline": "2026-10-20",
-          "kind": "deadline",
-          "postId": "knu-physics-phy1645592197:4724",
-          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
     },
     {
@@ -517,22 +422,7 @@
       "id": "notice-b1133d4c8b3b",
       "name": "생명공학부 · 공지사항",
       "saved": 47,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-biotech-sub6_1:321",
-          "title": "2026학년도 겨울계절수업 타대학 수학 안내문(통합)"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-biotech-sub6_1:322",
-          "title": "2026학년도 2학기 대학원 학위논문 심사위원 위촉 및 심사 안내"
-        }
-      ],
+      "today": [],
       "url": "http://biotech.knu.ac.kr/bbs/board.php?bo_table=sub6_1"
     },
     {
@@ -548,29 +438,7 @@
       "id": "notice-b5e6a10e952e",
       "name": "생물학과 · 공지사항",
       "saved": 79,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2489",
-          "title": "(졸업예정자해당) [SK바이오사이언스] 2026년 하반기 신입사원 공개채용 우수인재 추천 관련"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2490",
-          "title": "(졸업예정자해당) 삼성전자 SSAFY 17기 모집 안내"
-        },
-        {
-          "date": "2026-10-01",
-          "deadline": "2026-10-20",
-          "kind": "deadline",
-          "postId": "knu-bio-bio1616117151:2482",
-          "title": "[대학원]G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
     },
     {
@@ -642,22 +510,7 @@
       "id": "notice-472ae4378387",
       "name": "수학과 · 공지사항",
       "saved": 2827,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3453",
-          "title": "[공통]2026학년도 KNU 논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3454",
-          "title": "[공통](앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
     },
     {
@@ -673,15 +526,7 @@
       "id": "notice-f310e00db70c",
       "name": "스마트모빌리티공학과 · 공지사항",
       "saved": 49,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:458",
-          "title": "[대학원 공지] 2026학년도 2학기 대학원 학위논문 심사 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?nav_code=mob1692863999"
     },
     {
@@ -777,15 +622,7 @@
       "id": "notice-6b16f01d1a75",
       "name": "식품자원경제학과 · 공지사항",
       "saved": 49,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-knuagec-knu1623134126:3240",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
     },
     {
@@ -913,15 +750,7 @@
       "id": "notice-7dfeec322405",
       "name": "응용화학공학부 · 공지사항",
       "saved": 58,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-knuce-knu1762850029:372",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
     },
     {
@@ -930,27 +759,6 @@
       "name": "의류학과 · 공지사항",
       "saved": 71,
       "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:917",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:916",
-          "title": "2026년 대구광역시 저소득주민 장학생 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:918",
-          "title": "(가칭) Agentic AI 기반 학습설계 및 진로성장 지원 플랫폼 서비스 명칭 선호도 조사"
-        },
         {
           "date": "2026-09-30",
           "deadline": "2026-10-18",
@@ -966,36 +774,7 @@
       "id": "notice-e1ec1bf0eb87",
       "name": "의생명융합공학과 · 공지사항",
       "saved": 105,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-30",
-          "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:832",
-          "title": "[안내] (앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-12-11",
-          "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:835",
-          "title": "[대학원] 2026학년도 2학기 대학원 학위논문 심사 및 결과보고서(~12.11. 17시) 제출 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:833",
-          "title": "[안내] 2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:834",
-          "title": "[안내] 2026학년도 KNU 논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
     },
     {
@@ -1003,22 +782,7 @@
       "id": "notice-a363da417a07",
       "name": "의학과 · 공지",
       "saved": 78,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-med-notice001:25950",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-med-notice001:25951",
-          "title": "(대학원) 2026학년도 KNU논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        }
-      ],
+      "today": [],
       "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
     },
     {
@@ -1026,15 +790,7 @@
       "id": "notice-b34ee1a00417",
       "name": "인공지능시스템학과 · 공지사항",
       "saved": 105,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29474",
-          "title": "[SW교육원] 2026학년도 겨울계절수업 전남대학교 [인공지능기초] 교과목 학습성과 우수자 선발 프로그램 참여자 모집(10/23 금 13:00까지)"
-        }
-      ],
+      "today": [],
       "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -1122,15 +878,7 @@
       "id": "notice-1cbb3d90d081",
       "name": "전기공학과 · 공지사항",
       "saved": 77,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7453",
-          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
     },
     {
@@ -1138,22 +886,7 @@
       "id": "notice-df44dd8507c1",
       "name": "전자공학부 · 공지사항",
       "saved": 178,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105713",
-          "title": "[KNU 80 인피니티 챌린지] 「KNU-M 창업캠프(ROBOT)」참가 학생 모집"
-        },
-        {
-          "date": "2026-10-06",
-          "deadline": "2026-10-20",
-          "kind": "deadline",
-          "postId": "knu-see-notice:105670",
-          "title": "[소프트웨어중심대학] 2026년 2학기 SW연계부전공 신청 접수"
-        }
-      ],
+      "today": [],
       "url": "https://see.knu.ac.kr/content/board/notice.html"
     },
     {
@@ -1185,15 +918,7 @@
       "id": "notice-1d6a78636180",
       "name": "정보·컴퓨터교육과 · 공지사항",
       "saved": 31,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-comedu-com1744781375:35",
-          "title": "[인공지능혁신융합대학사업단] 2026 겨울 계절학기 전남대학교 학점교류 신청(~10/19 17시까지) (10/15 수강과목 및 신청안내문 수정)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?nav_code=com1744781375"
     },
     {
@@ -1217,57 +942,7 @@
       "id": "notice-6b04da14aae1",
       "name": "중어중문학과 · 공지사항",
       "saved": 81,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-23",
-          "kind": "new",
-          "postId": "knu-chinese-notice:13669",
-          "title": "2026학년도 중어중문학과 동계방학 중국 상해사범대학 어학연수 신청 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-29",
-          "kind": "new",
-          "postId": "knu-chinese-notice:13674",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-30",
-          "kind": "new",
-          "postId": "knu-chinese-notice:13675",
-          "title": "(앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13670",
-          "title": "2026학년도 중어중문학과 현직자 특강 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13671",
-          "title": "SSAFY에서 AI도, 취업 경쟁력도 완성하세요, SSAFY 17기 모집시작!"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13672",
-          "title": "SSAFY에서 AI도, 취업 경쟁력도 완성하세요, SSAFY 17기 모집시작!"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13673",
-          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice"
     },
     {
@@ -1371,43 +1046,7 @@
       "id": "notice-7414782e7dbb",
       "name": "치의학과 · 공지사항",
       "saved": 78,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4515",
-          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4516",
-          "title": "2026학년도 KNU 논문작성 부트캠프 연계 특강 「논문 작성의 첫 걸음」 실시 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4517",
-          "title": "「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4518",
-          "title": "2026학년도 겨울계절수업 타대학(경상국립대학교 학부) 수학 안내"
-        },
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4519",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
     },
     {
@@ -1415,15 +1054,7 @@
       "id": "notice-fefffa32e24c",
       "name": "컴퓨터학부 · 공지사항",
       "saved": 105,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29474",
-          "title": "[SW교육원] 2026학년도 겨울계절수업 전남대학교 [인공지능기초] 교과목 학습성과 우수자 선발 프로그램 참여자 모집(10/23 금 13:00까지)"
-        }
-      ],
+      "today": [],
       "url": "https://computer.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -1463,15 +1094,7 @@
       "id": "notice-d13e4abb0470",
       "name": "해양학전공 · 공지사항",
       "saved": 46,
-      "today": [
-        {
-          "date": "2026-10-01",
-          "deadline": "2026-10-20",
-          "kind": "deadline",
-          "postId": "knu-ocean-oce1623632597:1585",
-          "title": "[대학원] G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
     },
     {
@@ -1495,22 +1118,7 @@
       "id": "notice-ac0144f93d45",
       "name": "화학과 · 공지사항",
       "saved": 105,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7102",
-          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내"
-        },
-        {
-          "date": "2026-10-02",
-          "deadline": "2026-10-20",
-          "kind": "deadline",
-          "postId": "knu-chem-che1622521080:7073",
-          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
     },
     {
@@ -1526,15 +1134,7 @@
       "id": "notice-101538fb6a8e",
       "name": "환경공학과 · 학부 공지사항",
       "saved": 41,
-      "today": [
-        {
-          "date": "2026-10-16",
-          "deadline": "2026-10-28",
-          "kind": "new",
-          "postId": "knu-env-env1624500229:1114",
-          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229"
     },
     {
@@ -1556,2908 +1156,79 @@
   ],
   "cafes": [
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "백미밥",
-                "닭곰탕",
-                "고추장불고기★",
-                "우렁강된장볶음",
-                "양배추쌈&쌈장",
-                "수정과/포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "갈릭베이컨밥★",
-                "얼큰조개국",
-                "돈육바베큐폭찹★",
-                "로제파스타",
-                "토스트피자",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "꼬막톳영양밥",
-                "부추계란국",
-                "짜장제육볶음★",
-                "고등어김치무조림",
-                "감자고로케&케찹",
-                "도시락김/포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "백미밥",
-                "소고기쌀국수",
-                "닭살데리야끼볶음",
-                "깐풍잡채볼어묵★",
-                "옥수수코우슬로",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "강황밥",
-                "순살감자탕★",
-                "단호박카레★",
-                "아몬드닭강정",
-                "콩나물무침/그린샐러드",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-46",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "GP감꽃 식당",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=46"
     },
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:30~13:30",
-              "label": "중식",
-              "menu": [
-                "정식",
-                "흑미밥/쌀밥",
-                "재첩국",
-                "돈육양념찜★",
-                "동그랑땡전&양념장★",
-                "열무된장무침",
-                "직접담근김치",
-                "온국수"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "정식",
-                "기장밥/쌀밥",
-                "부대찌개★",
-                "간장치킨",
-                "양념물어묵",
-                "팽이미역줄기볶음",
-                "직접담근김치",
-                "도시락김"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:30~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:30~13:30",
-              "label": "중식",
-              "menu": [
-                "정식",
-                "기장밥/쌀밥",
-                "소고기강된장찌개",
-                "닭불고기",
-                "모듬야채튀김&초간장",
-                "숙주나물무침",
-                "직접담근김치",
-                "온국수"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "정식",
-                "흑미밥/쌀밥",
-                "맑은콩나물국",
-                "바베큐폭찹★",
-                "쫄짜장면★",
-                "양파초졸임",
-                "직접담근김치",
-                "도시락김"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:30~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:30~13:30",
-              "label": "중식",
-              "menu": [
-                "정식",
-                "흑미밥/쌀밥",
-                "어묵무국",
-                "함박스테이크&소스★",
-                "크림수제비뇨끼★",
-                "브로컬리숙회&초고추장",
-                "직접담근김치",
-                "온국수"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "정식",
-                "기장밥/쌀밥",
-                "참치김치찌개",
-                "단호박닭찜",
-                "고기산적간장조림★",
-                "단배추겉절이",
-                "무우말랭이",
-                "도시락김"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:30~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:30~13:30",
-              "label": "중식",
-              "menu": [
-                "정식",
-                "기장밥/쌀밥",
-                "피홍합탕",
-                "닭후르츠탕수육",
-                "순대매콤볶음★",
-                "오이맛살무침",
-                "직접담근김치",
-                "온국수"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "정식",
-                "흑미밥/쌀밥",
-                "만두국★",
-                "생선까스&타르타르",
-                "참치두부조림",
-                "새우살무우볶음",
-                "직접담근김치",
-                "도시락김"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:30~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:30~13:30",
-              "label": "중식",
-              "menu": [
-                "정식",
-                "흑미밥/쌀밥",
-                "조개살부추국",
-                "돼지고기파채불고기★",
-                "미트볼데리야끼조림★",
-                "양배추숙쌈&쌈장",
-                "직접담근김치",
-                "온국수"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "정식",
-                "기장밥/쌀밥",
-                "유부다시마국",
-                "깐풍기",
-                "후랑크소세지볶음",
-                "애느타리부추무침",
-                "직접담근김치",
-                "도시락김"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:30~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-85",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "공학관 교직원 식당",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=85"
     },
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "육회비빔밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "통다리살오븐구이&매콤볶음밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "산더미오리주물럭(2인)"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "등심돈가스&제육볶음★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "참치덮밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "훈제오리덮밥"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "따로소고기국밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순두부찌개정식★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "대패삼겹즉석떡볶이(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이돈육양념찜★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈뚝배기알밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이비빔밥&된장찌개"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기치즈김치볶음밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면"
-              ],
-              "price": 3000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면&밥"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면★"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "최루탄라면"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": "10:00~14:30",
-              "label": "중식",
-              "menu": [
-                "최루탄라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "따로소고기국밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "육회비빔밥",
-                "17:00~1900"
-              ],
-              "price": 6500
-            }
-          ],
-          "hours": "10:00~14:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "쟁반수육★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치킨난반&매콤볶음밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "돼지고기김치구이(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "땡초우동&주먹밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치킨마요/매운치킨마요"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "따로소고기국밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "된장찌개정식"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "삼겹살김치전골(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이돈육양념찜★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈뚝배기알밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이비빔밥&된장찌개"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "불고기치즈뚝배기★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면"
-              ],
-              "price": 3000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면&밥"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면★"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "최루탄라면"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": "10:00~14:30",
-              "label": "중식",
-              "menu": [
-                "최루탄라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "따로소고기국밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "불고기치즈뚝배기★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "치킨난반&매콤볶음밥",
-                "17:00~1900"
-              ],
-              "price": 6500
-            }
-          ],
-          "hours": "10:00~14:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "육회비빔밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "통다리살오븐구이&매콤볶음밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "산더미오리주물럭(2인)"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "등심돈가스&제육볶음★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "참치덮밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "불고기바베큐덮밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순두부찌개정식"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "대패삼겹즉석떡볶이(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이돈육양념찜★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈뚝배기알밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이비빔밥&된장찌개"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기치즈김치볶음밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면"
-              ],
-              "price": 3000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면&밥"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면★"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "최루탄라면"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": "10:00~14:30",
-              "label": "중식",
-              "menu": [
-                "최루탄라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "불고기바베큐덮밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "꼬마삼겹김치찌개★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "등심돈가스&제육볶음★",
-                "17:00~1900"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "10:00~14:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "쟁반수육★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치킨난반&매콤볶음밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "돼지고기김치구이(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "땡초우동&주먹밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "오므라이스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "된장찌개정식★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "삼겹살김치전골(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이돈육양념찜★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈뚝배기알밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이비빔밥&된장찌개"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "불고기치즈뚝배기★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면"
-              ],
-              "price": 3000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면&밥"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면★"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "최루탄라면"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": "10:00~14:30",
-              "label": "중식",
-              "menu": [
-                "최루탄라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "땡초우동&주먹밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "양푼이돈육양념찜★",
-                "17:00~1900"
-              ],
-              "price": 5500
-            }
-          ],
-          "hours": "10:00~14:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "육회비빔밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "통다리살오븐구이&매콤볶음밥"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "산더미오리주물럭(2인)"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "등심돈가스&제육볶음★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "참치덮밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "닭찜덮밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순두부찌개정식★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "대패삼겹즉석떡볶이(2인)★"
-              ],
-              "price": 12000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이돈육양념찜★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기알밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈뚝배기알밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "양푼이비빔밥&된장찌개"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "뚝배기치즈김치볶음밥"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면"
-              ],
-              "price": 3000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "떡라면&밥"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면★"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "만두라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "최루탄라면"
-              ],
-              "price": 3500
-            },
-            {
-              "head": 1,
-              "hours": "10:00~14:30",
-              "label": "중식",
-              "menu": [
-                "최루탄라면&밥★"
-              ],
-              "price": 4000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "등심돈가스&스프★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "특돼지국밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "꼬마부대찌개★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "석식",
-              "menu": [
-                "통다리살오븐구이&매콤볶음밥",
-                "17:00~1900"
-              ],
-              "price": 6500
-            }
-          ],
-          "hours": "10:00~14:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-86",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "공학관 학생 식당",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=86"
     },
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "흰밥",
-                "순살감자탕★",
-                "닭데리야끼볶음",
-                "소떡소떡꼬치구이★",
-                "비빔야채짬뽕",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "취나물밥*양념장",
-                "시래기된장국",
-                "콩나물불고기★",
-                "두부간장조림",
-                "만두유린기★",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "흰밥",
-                "육개장",
-                "바싹불고기★",
-                "새우까스",
-                "&스위트칠리소스",
-                "열무보리나물",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "옥수수밥",
-                "두부김치찌개",
-                "순살허니치킨",
-                "눈꽃치즈",
-                "라구리가토니★",
-                "오이생크림샐러드",
-                "깍두기"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 0,
-              "hours": "11:15~13:30",
-              "label": "중식",
-              "menu": [
-                "흰밥",
-                "떡국",
-                "해물야끼우동★",
-                "백순대들깨볶음★",
-                "도토리묵",
-                "육수말이",
-                "포기김치"
-              ],
-              "price": 6000
-            }
-          ],
-          "hours": "11:15~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-bokji",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "복지관 교직원 식당",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=36"
     },
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "중식세트★",
-                "흰밥",
-                "두부된장국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "대파갈비살덮밥",
-                "캐플쥬스"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "불고기비빔밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕치즈돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "13:00~17:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 0,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "흰밥",
-                "유부김치국",
-                "인도식티카마살라커리",
-                "치킨스테이크",
-                "바나나",
-                "무비트피클"
-              ],
-              "price": 2000
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "수육★&메밀막국수",
-                "흰밥",
-                "어묵무국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "차돌된장뚝배기"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "육회비빔밥"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕치즈돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "13:00~17:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 0,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "흰밥",
-                "미소된장국",
-                "대만식돼지고기덮밥★",
-                "찐만두★&초간장",
-                "홍콩식망고쥬스",
-                "배추김치"
-              ],
-              "price": 2000
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "큐브스테이크오므라이스★",
-                "흰밥",
-                "콩나물국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "나시고랭",
-                "하와이안피자★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "닭가슴살비빔밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕치즈돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "13:00~17:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 0,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "흰밥",
-                "나가사끼만두전골★",
-                "오꼬노미야끼★",
-                "곤약젤리",
-                "깍두기"
-              ],
-              "price": 2000
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "누룽지닭백숙",
-                "흰밥",
-                "콩가루배춧국",
-                "배추김치"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우삼겹짬뽕파스타",
-                "마늘빵"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "오삼비빔밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕치즈돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "13:00~17:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 0,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "흰밥",
-                "매콤어묵국",
-                "마라샹궈★&계란볶음밥",
-                "유자꿔바로우★",
-                "요구르트",
-                "단무지"
-              ],
-              "price": 2000
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 1,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "우동정식★",
-                "흰밥",
-                "감자다시마국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "타워버거스테이크★",
-                "야채볶음밥"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "제육치즈돌솥★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕치즈돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "13:00~17:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "우동밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 0,
-              "hours": "17:00~19:00",
-              "label": "석식",
-              "menu": [
-                "흰밥",
-                "얼갈이된장국",
-                "바베큐폭립오므라이스★",
-                "던킨도넛",
-                "배추김치"
-              ],
-              "price": 2000
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-35",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "정보센터 식당",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=35"
     },
     {
-      "days": [
-        {
-          "date": "2026-10-12",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "조식",
-              "menu": [
-                "천원의 아침밥",
-                "유부무국",
-                "봉추찜닭덮밥",
-                "삶은계란",
-                "포도주스",
-                "배추김치"
-              ],
-              "price": 1000
-            },
-            {
-              "head": 3,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "중국식계란",
-                "볶음밥",
-                "&해물짬뽕면★",
-                "흰밥",
-                "두부된장국",
-                "배추김치"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "참치비빔밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "수육국밥★"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "순대수육국밥★"
-              ],
-              "price": 7000
-            },
-            {
-              "head": 1,
-              "hours": "11:00~15:30",
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "9:00~11:00,13:00~15:30",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-13",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "조식",
-              "menu": [
-                "천원의 아침밥",
-                "흰밥",
-                "육개장",
-                "버섯돼지불백★",
-                "타코야키",
-                "메밀막국수",
-                "요구르트",
-                "배추김치"
-              ],
-              "price": 1000
-            },
-            {
-              "head": 4,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "알리고치즈감자",
-                "바베큐조림&",
-                "크로와상&",
-                "샐러드★",
-                "흰밥",
-                "들깨미역국",
-                "배추김치"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "육회비빔밥"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "수육국밥★"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "순대수육국밥★"
-              ],
-              "price": 7000
-            },
-            {
-              "head": 1,
-              "hours": "11:00~15:30",
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "9:00~11:00,13:00~15:30",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-14",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "조식",
-              "menu": [
-                "천원의 아침밥",
-                "흰밥",
-                "떡국",
-                "빨간치킨마요",
-                "소떡소떡★",
-                "짜요짜요",
-                "배추김치"
-              ],
-              "price": 1000
-            },
-            {
-              "head": 3,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "필라프",
-                "&불고기베이크",
-                "&스프",
-                "흰밥",
-                "콩가루배추국",
-                "배추김치"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "닭불고기비빔밥"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "수육국밥★"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "순대수육국밥★"
-              ],
-              "price": 7000
-            },
-            {
-              "head": 1,
-              "hours": "11:00~15:30",
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "9:00~11:00,13:00~15:30",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-15",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "조식",
-              "menu": [
-                "천원의 아침밥",
-                "(大)순대국밥★",
-                "돈가스★",
-                "*데미그라스소스",
-                "감자고추장조림",
-                "부추무침",
-                "깍두기"
-              ],
-              "price": 1000
-            },
-            {
-              "head": 2,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "로제함박",
-                "스테이크★",
-                "흰밥",
-                "맑은콩나물국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "오삼비빔밥★"
-              ],
-              "price": 5500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "수육국밥★"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "순대수육국밥★"
-              ],
-              "price": 7000
-            },
-            {
-              "head": 1,
-              "hours": "11:00~15:00",
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "9:00~11:00,13:00~15:00",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-16",
-          "groups": [
-            {
-              "head": 1,
-              "hours": null,
-              "label": "조식",
-              "menu": [
-                "천원의 아침밥",
-                "흰밥",
-                "수제비국",
-                "돈육칠리",
-                "바베큐조림★",
-                "왕새우튀김",
-                "&허니머스타드",
-                "야채계란찜",
-                "도시락김",
-                "배추김치"
-              ],
-              "price": 1000
-            },
-            {
-              "head": 2,
-              "hours": "11:00~13:30",
-              "label": "중식",
-              "menu": [
-                "참치마요밥버거&",
-                "떡볶이",
-                "흰밥",
-                "오징어무국",
-                "배추김치"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "불고기비빔밥★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "수육국밥★"
-              ],
-              "price": 6500
-            },
-            {
-              "head": 2,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "더진국",
-                "순대수육국밥★"
-              ],
-              "price": 7000
-            },
-            {
-              "head": 1,
-              "hours": "11:00~15:30",
-              "label": "중식",
-              "menu": [
-                "순살돈가스★"
-              ],
-              "price": 4500
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "고구마돈가스★"
-              ],
-              "price": 5000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": null,
-              "label": "중식",
-              "menu": [
-                "치즈왕돈가스★"
-              ],
-              "price": 6000
-            },
-            {
-              "head": 1,
-              "hours": "9:00~11:00,13:00~15:30",
-              "label": "중식",
-              "menu": [
-                "라면"
-              ],
-              "price": 2800
-            }
-          ],
-          "hours": "11:00~13:30",
-          "status": "ok"
-        },
-        {
-          "date": "2026-10-17",
-          "groups": [],
-          "hours": null,
-          "status": "empty"
-        }
-      ],
+      "days": [],
       "groups": [],
       "hours": null,
       "id": "meal-37",
-      "menuFrom": "2026-10-12",
+      "menuFrom": null,
       "name": "카페테리아 첨성",
-      "status": "empty",
+      "status": "failed",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "03:06",
+  "checkedAt": "01:34",
   "collection": {
-    "date": "2026-10-17",
+    "date": "2026-10-18",
     "failedBoards": [
       {
-        "name": "섬유시스템공학과 · 학사 공지사항",
+        "name": "물리학과 · 공지사항",
         "reasons": [
-          "공지 상세 구조가 없습니다"
+          "공지 목록 구조가 없습니다"
         ],
-        "source_board_id": "knu-textileng-tex1623029574"
+        "source_board_id": "knu-physics-phy1645592197"
       }
     ],
-    "lastCollectedAt": "2026-10-17T03:06:08+09:00",
+    "lastCollectedAt": "2026-10-18T01:34:12+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -6251,36 +3022,244 @@
       "text": "오늘 식단은 로컬에서 아직 수집하지 않았습니다"
     },
     {
-      "source": "notice-f9d9ecdb1284",
-      "text": "공지 상세 구조가 없습니다 (https://home.knu.ac.kr/HOME/textileng/sub.htm?mode=view&mv_data=aWR4PTI0MyZzdGFydFBhZ2U9MCZsaXN0Tm89NzQmdGFibGU9ZXhfYmJzX2RhdGFfdGV4dGlsZW5nJm5hdl9jb2RlPXRleDE2MjMwMjk1NzQmY29kZT1ObHBGak9ra2JPaGwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+      "source": "notice-f4ac509b75c4",
+      "text": "공지 목록 구조가 없습니다 (https://home.knu.ac.kr/HOME/physics/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S1p0RFZQaUNCN1VwJm5hdl9jb2RlPXBoeTE2NDU1OTIxOTcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||)"
     },
     {
-      "source": "notice-472ae4378387",
-      "text": "knu-math-mat1623029308:3454: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "knu-academic",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4515: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-ddb70636c525",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4516: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-7537783c05b0",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4517: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-fd04b6b6208e",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4518: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-0158c1288046",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4519: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-8d0ba20b8a78",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-ac0144f93d45",
-      "text": "knu-chem-che1622521080:7102: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-ab33c8b6f3d1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-cd772685aa0f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b7eb69e8405d",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-dc7fc6a93fe8",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-12a353fc2eb8",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-683cb3e528ee",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-0ef73fec9014",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-30f51dd33791",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-750dff5618d4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-fe90b8f3beb7",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-73ffa1763744",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9b84b4adc47a",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-8b73f625639c",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-afb535aeb941",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9bcb92908bc9",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-3bb6de2335b3",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-fe8857afa2d4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-0b9f7e3a61e0",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-4c132ad6150a",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-8666f6ab7bde",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b5c34881a6cc",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e0dc5a51576c",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-aaa5e07a26eb",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-5489a94f38cd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-45a059e34b9c",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d5e75aa6b2da",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-2c006faa8fdd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7fcf94c45b4e",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9a2cb1c992c7",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-06dffccf1c28",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-848538cdce05",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9c2e2dbd2980",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-3834483dc081",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-a1540deb2a6f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-a1c0cc5412ca",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-614324804939",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7bb331bb8b0f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-4b4549901a22",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-55ac86f2e763",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9a0b59b2a2b4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e08af12e34e3",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-787893a88ff5",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-392eeaadf103",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-278455937509",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-2eb7684c7df1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d6ef40bd632d",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e187e9582e58",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-afca571a7ef1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-dd1ea15f1f4f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-dfce5afb9336",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9dbd1b2695c9",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b46aed7f6b0f",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-093d2d29fb09",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-93ddd4d44cec",
@@ -6605,15 +3584,20 @@
         "end": null,
         "start": "2026-10-19",
         "title": "[대학원] 학위논문 심사 시작 : 10.19."
+      },
+      {
+        "end": "2026-10-27",
+        "start": "2026-10-21",
+        "title": "중간고사 기간 (10.21.~10.27.)"
       }
     ],
     "status": "ok"
   },
   "weather": {
-    "max": 24.5,
-    "min": 13.8,
-    "rain": 0,
+    "max": 24.7,
+    "min": 15.3,
+    "rain": 100,
     "status": "ok",
-    "summary": "대체로 맑음"
+    "summary": "강한 비"
   }
 }
