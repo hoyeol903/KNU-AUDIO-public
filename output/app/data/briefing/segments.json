@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "segments": [
     {
-      "audio": "fd93eafe064aeedcbca5931bf87742c4a0d0b7f11e07170c9c3873c0d42b92b4.mp3",
+      "audio": "5d525d96ff29e60fa2507f0dca7d4dfa1324d81a858f37f9b2d94f49c94b7bba.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -11,40 +11,40 @@
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 11.52,
+          "end_sec": 11.928,
           "start_sec": 6.984,
-          "text": "우산은 가방에 넣어 두고, 비가 오는 길에는 천천히 걸어 주세요."
+          "text": "비가 온다고 해요. 우산을 준비하고 발걸음은 조심해 주세요."
         }
       ],
-      "duration_sec": 11.52,
+      "duration_sec": 11.928,
       "id": "intro",
       "items": [
         {
           "dday": null,
-          "detail": "최저 15.3° / 최고 24.7° · 비 올 확률 100%",
+          "detail": "최저 16.7° / 최고 21.2° · 비 올 확률 96%",
           "postId": null,
           "section": "날씨",
-          "title": "강한 비",
+          "title": "비",
           "url": null
         }
       ],
-      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 우산은 가방에 넣어 두고, 비가 오는 길에는 천천히 걸어 주세요.",
+      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 비가 온다고 해요. 우산을 준비하고 발걸음은 조심해 주세요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "d81d1e1702e89aa62550913b453dace67d822aff612207e1774be8bad70ab55b.mp3",
+      "audio": "191a36d377e243196d9e4693f4fb12ea28010ce6afdbcc3b48a7c26e53a272f3.mp3",
       "channel_id": "48c1dd21ff5ce7dc1447cbc7",
       "channel_ids": [
         "notice-eaa2bcd13c4a"
       ],
       "cues": [
         {
-          "end_sec": 8.664,
+          "end_sec": 9.144,
           "start_sec": 0,
-          "text": "GKL 지역상생 볼런투어 참가자 모집 안내\n신청기간 10월 19일까지, 신청링크: https://forms.gle/KjQN4rmPTBrgDLT6A"
+          "text": "GKL 지역상생 볼런투어 참가자 모집 안내. 신청기간 10월 19일까지. 신청링크: https://forms.gle/KjQN4rmPTBrgDLT6A"
         }
       ],
-      "duration_sec": 8.664,
+      "duration_sec": 9.144,
       "id": "48c1dd21ff5ce7dc1447cbc7",
       "items": [
         {
@@ -69,172 +69,232 @@
           "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?mode=view&mv_data=aWR4PTg2NSZzdGFydFBhZ2U9MCZsaXN0Tm89MzQ4JnRhYmxlPWV4X2Jic19kYXRhX3RvdXImbmF2X2NvZGU9dG91MTYxNjExNjk1MCZjb2RlPUYzYlJTRTlxT3hKWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "GKL 지역상생 볼런투어 참가자 모집 안내\n신청기간 10월 19일까지, 신청링크: https://forms.gle/KjQN4rmPTBrgDLT6A",
+      "script": "GKL 지역상생 볼런투어 참가자 모집 안내. 신청기간 10월 19일까지. 신청링크: https://forms.gle/KjQN4rmPTBrgDLT6A",
       "title": "「GKL 지역상생 볼런투어」 참가자를 모집 안내"
     },
     {
-      "audio": "0fdef6e270f2858ac334e49a123b2c907f1dc069b3cf7b8e17b4238ceb4941c8.mp3",
-      "channel_id": "c2eb891cf7c7e0edc354062b",
+      "audio": "059b4409d58feab02d9668edc004cc1064a99c23a29dea72bf81e031f471dd23.mp3",
+      "channel_id": "29cf23991198198939490aae",
       "channel_ids": [
-        "notice-ddfc5b2ca163"
+        "notice-f4ac509b75c4",
+        "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 15.216,
+          "end_sec": 6.384,
           "start_sec": 0,
-          "text": "2026학년도 2학기 로봇및스마트시스템공학과 진학설명회는 10월 22일 12시, 첨단기술융합대학 2층 203호에서 열려요. 사전신청은 10월 21일 18시까지 https://forms.gle/QmiS4ej7M4V8c9KG8로 해주세요."
+          "text": "석·박사과정생은 10월 20일까지 G-램프사업단에 이메일로 지원서 제출하세요."
         }
       ],
-      "duration_sec": 15.216,
-      "id": "c2eb891cf7c7e0edc354062b",
+      "duration_sec": 6.384,
+      "id": "29cf23991198198939490aae",
       "items": [
         {
-          "channel_id": "notice-ddfc5b2ca163",
+          "channel_id": "notice-f4ac509b75c4",
           "dday": null,
-          "detail": "로봇공학과 · 공지사항 · 2026-10-12",
-          "postId": "knu-robot-rob1623632307:822",
+          "detail": "물리학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-physics-phy1645592197:4724",
           "section": "마감 임박",
-          "title": "[안내] 2026학년도 2학기 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgyMiZzdGFydFBhZ2U9MCZsaXN0Tm89NzM1JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMTgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-02",
+          "postId": "knu-chem-che1622521080:7073",
+          "section": "마감 임박",
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNzMmc3RhcnRQYWdlPTIwJmxpc3RObz0zODgwJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-ddfc5b2ca163",
-          "deadline": "2026-10-21",
-          "postId": "knu-robot-rob1623632307:822",
-          "posted_at": "2026-10-12",
+          "channel_id": "notice-f4ac509b75c4",
+          "deadline": "2026-10-20",
+          "postId": "knu-physics-phy1645592197:4724",
+          "posted_at": "2026-10-01",
           "reason": "reminder",
-          "title": "[안내] 2026학년도 2학기 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgyMiZzdGFydFBhZ2U9MCZsaXN0Tm89NzM1JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026학년도 2학기 로봇및스마트시스템공학과 진학설명회는 10월 22일 12시, 첨단기술융합대학 2층 203호에서 열려요. 사전신청은 10월 21일 18시까지 https://forms.gle/QmiS4ej7M4V8c9KG8로 해주세요.",
-      "title": "[안내] 2026학년도 2학기 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내"
-    },
-    {
-      "audio": "160cc418efdbe73b136c3cd857999fb05da6d671b62bee314048f4b019260544.mp3",
-      "channel_id": "95cb1f32dc1d9105bf764d95",
-      "channel_ids": [
-        "notice-bbfcc8756400"
-      ],
-      "cues": [
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3MjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMTgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
         {
-          "end_sec": 8.136,
-          "start_sec": 0,
-          "text": "2026학년도 우양재단 동행 장학생 신청 기한 10월 18일까지. 온라인 접수로 하루도 빠르게 진행해요."
-        }
-      ],
-      "duration_sec": 8.136,
-      "id": "95cb1f32dc1d9105bf764d95",
-      "items": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "dday": null,
-          "detail": "사회복지학부 · 학부 공지사항 · 2026-10-02",
-          "postId": "knu-knusw-knu1623026178:8935",
-          "section": "마감 임박",
-          "title": "2026학년도 우양재단 동행 장학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5MzUmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDYwJnRhYmxlPWV4X2Jic19kYXRhX2tudXN3Jm5hdl9jb2RlPWtudTE2MjMwMjYxNzgmY29kZT1uUkk5MFpFdjNFZFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "deadline": "2026-10-18",
-          "postId": "knu-knusw-knu1623026178:8935",
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": "2026-10-20",
+          "postId": "knu-chem-che1622521080:7073",
           "posted_at": "2026-10-02",
           "reason": "reminder",
-          "title": "2026학년도 우양재단 동행 장학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5MzUmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDYwJnRhYmxlPWV4X2Jic19kYXRhX2tudXN3Jm5hdl9jb2RlPWtudTE2MjMwMjYxNzgmY29kZT1uUkk5MFpFdjNFZFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNzMmc3RhcnRQYWdlPTIwJmxpc3RObz0zODgwJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 우양재단 동행 장학생 신청 기한 10월 18일까지. 온라인 접수로 하루도 빠르게 진행해요.",
-      "title": "2026학년도 우양재단 동행 장학생 모집 안내"
+      "script": "석·박사과정생은 10월 20일까지 G-램프사업단에 이메일로 지원서 제출하세요.",
+      "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
     },
     {
-      "audio": "f238a38fcb91b0930ff523773a7e9cd58b2e19752650f7668ceee0603a82bd7a.mp3",
-      "channel_id": "69f7a34b04cadc77274c29b2",
+      "audio": "0943b61df73dd6ac5262518079afcad5c3dcd662d4c0d1ce578941cf693ae39a.mp3",
+      "channel_id": "f6dba38c219525d69c47d465",
       "channel_ids": [
-        "notice-2487b99aea65"
+        "notice-b5e6a10e952e"
       ],
       "cues": [
         {
-          "end_sec": 8.832,
+          "end_sec": 6.576,
           "start_sec": 0,
-          "text": "내일배움카드를 가진 학생들은 10월 18일까지 신청 가능해요. 대학졸업자나 졸업예정자만 참여 가능해요."
+          "text": "석·박사과정생은 10월 20일까지 G-램프사업단에 지원서를 이메일로 제출하세요."
         }
       ],
-      "duration_sec": 8.832,
-      "id": "69f7a34b04cadc77274c29b2",
+      "duration_sec": 6.576,
+      "id": "f6dba38c219525d69c47d465",
       "items": [
         {
-          "channel_id": "notice-2487b99aea65",
+          "channel_id": "notice-b5e6a10e952e",
           "dday": null,
-          "detail": "소프트웨어학과 · 공지사항 · 2026-10-06",
-          "postId": "knu-se-se1617170620:891",
+          "detail": "생물학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-bio-bio1616117151:2482",
           "section": "마감 임박",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTg5MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk3JnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[대학원]G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0ODImc3RhcnRQYWdlPTAmbGlzdE5vPTIxOTMmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-2487b99aea65",
-          "deadline": "2026-10-18",
-          "postId": "knu-se-se1617170620:891",
+          "channel_id": "notice-b5e6a10e952e",
+          "deadline": "2026-10-20",
+          "postId": "knu-bio-bio1616117151:2482",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "[대학원]G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?mode=view&mv_data=aWR4PTI0ODImc3RhcnRQYWdlPTAmbGlzdE5vPTIxOTMmdGFibGU9ZXhfYmJzX2RhdGFfYmlvJm5hdl9jb2RlPWJpbzE2MTYxMTcxNTEmY29kZT1qMURzOExuN0RweVMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "석·박사과정생은 10월 20일까지 G-램프사업단에 지원서를 이메일로 제출하세요.",
+      "title": "[대학원]G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
+    },
+    {
+      "audio": "a218a0426c187304c8036af5756f4954ee500dcef7de354196e7ce51ba57d302.mp3",
+      "channel_id": "82dc1cbdcdc78109a4e9243d",
+      "channel_ids": [
+        "notice-d13e4abb0470"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.912,
+          "start_sec": 0,
+          "text": "석·박사과정생은 10월 20일까지 자연과학계열 지원서를 이메일로 제출하세요."
+        }
+      ],
+      "duration_sec": 6.912,
+      "id": "82dc1cbdcdc78109a4e9243d",
+      "items": [
+        {
+          "channel_id": "notice-d13e4abb0470",
+          "dday": null,
+          "detail": "해양학전공 · 공지사항 · 2026-10-01",
+          "postId": "knu-ocean-oce1623632597:1585",
+          "section": "마감 임박",
+          "title": "[대학원] G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고 안내",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1ODUmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzMmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-d13e4abb0470",
+          "deadline": "2026-10-20",
+          "postId": "knu-ocean-oce1623632597:1585",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "[대학원] G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고 안내",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?mode=view&mv_data=aWR4PTE1ODUmc3RhcnRQYWdlPTAmbGlzdE5vPTExNzMmdGFibGU9ZXhfYmJzX2RhdGFfb2NlYW4mbmF2X2NvZGU9b2NlMTYyMzYzMjU5NyZjb2RlPVM5ZHZXMWxJYnl3SSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "석·박사과정생은 10월 20일까지 자연과학계열 지원서를 이메일로 제출하세요.",
+      "title": "[대학원] G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고 안내"
+    },
+    {
+      "audio": "87ae772b78f59f3aa3ad856d97541f7b95b7ab74361f4eb695d5802c98e1c213.mp3",
+      "channel_id": "41576086b724db7441f27139",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 13.2,
+          "start_sec": 0,
+          "text": "내국인 대학원생은 10월 30일부터 31일까지, 외국인은 11월 6일과 13일까지 참가 신청을 마감합니다. 9월 30일부터 10월 19일까지 신청 가능해요."
+        }
+      ],
+      "duration_sec": 13.2,
+      "id": "41576086b724db7441f27139",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-01",
+          "postId": "knu-chem-che1622521080:7065",
+          "section": "마감 임박",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTIwJmxpc3RObz0zODc2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": "2026-10-19",
+          "postId": "knu-chem-che1622521080:7065",
+          "posted_at": "2026-10-01",
+          "reason": "reminder",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwNjUmc3RhcnRQYWdlPTIwJmxpc3RObz0zODc2JnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "내국인 대학원생은 10월 30일부터 31일까지, 외국인은 11월 6일과 13일까지 참가 신청을 마감합니다. 9월 30일부터 10월 19일까지 신청 가능해요.",
+      "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+    },
+    {
+      "audio": "72a6125e6e222661f27236cef5eeb2c3f8df83db666810f4ae0612a45f8a6b7d.mp3",
+      "channel_id": "fb0579e316faf597f25e63c6",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.08,
+          "start_sec": 0,
+          "text": "소프트웨어중심대학 학생은 2026년 2학기 SW연계부전공 신청을 10월 20일 11시까지 박현미에게 이메일로 제출하세요."
+        }
+      ],
+      "duration_sec": 10.08,
+      "id": "fb0579e316faf597f25e63c6",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-06",
+          "postId": "knu-see-notice:105670",
+          "section": "마감 임박",
+          "title": "[소프트웨어중심대학] 2026년 2학기 SW연계부전공 신청 접수",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105670&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": "2026-10-20",
+          "postId": "knu-see-notice:105670",
           "posted_at": "2026-10-06",
           "reason": "reminder",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTg5MSZzdGFydFBhZ2U9MCZsaXN0Tm89Njk3JnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[소프트웨어중심대학] 2026년 2학기 SW연계부전공 신청 접수",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105670&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "내일배움카드를 가진 학생들은 10월 18일까지 신청 가능해요. 대학졸업자나 졸업예정자만 참여 가능해요.",
-      "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내"
-    },
-    {
-      "audio": "bab99dfc2fcdd89bff9612bc9da90fa01aea6de1bfb67952edc147fa17f76b6b.mp3",
-      "channel_id": "55a8fffa8569cb7d82c9f681",
-      "channel_ids": [
-        "notice-ad22d5b4a9e9"
-      ],
-      "cues": [
-        {
-          "end_sec": 10.344,
-          "start_sec": 0,
-          "text": "내일배움카드를 가진 대학생들은 10월 18일까지 신청 가능해요. 2026년 11월 16일부터 6개월간 교육이 진행돼요."
-        }
-      ],
-      "duration_sec": 10.344,
-      "id": "55a8fffa8569cb7d82c9f681",
-      "items": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "dday": null,
-          "detail": "의류학과 · 공지사항 · 2026-09-30",
-          "postId": "knu-fashion-fas1623134444:901",
-          "section": "마감 임박",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwMSZzdGFydFBhZ2U9MTAmbGlzdE5vPTc4NiZ0YWJsZT1leF9iYnNfZGF0YV9mYXNoaW9uJm5hdl9jb2RlPWZhczE2MjMxMzQ0NDQmY29kZT1rSU90TU9xcm5raUomc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "deadline": "2026-10-18",
-          "postId": "knu-fashion-fas1623134444:901",
-          "posted_at": "2026-09-30",
-          "reason": "reminder",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkwMSZzdGFydFBhZ2U9MTAmbGlzdE5vPTc4NiZ0YWJsZT1leF9iYnNfZGF0YV9mYXNoaW9uJm5hdl9jb2RlPWZhczE2MjMxMzQ0NDQmY29kZT1rSU90TU9xcm5raUomc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "내일배움카드를 가진 대학생들은 10월 18일까지 신청 가능해요. 2026년 11월 16일부터 6개월간 교육이 진행돼요.",
-      "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내"
+      "script": "소프트웨어중심대학 학생은 2026년 2학기 SW연계부전공 신청을 10월 20일 11시까지 박현미에게 이메일로 제출하세요.",
+      "title": "[소프트웨어중심대학] 2026년 2학기 SW연계부전공 신청 접수"
     },
     {
       "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
