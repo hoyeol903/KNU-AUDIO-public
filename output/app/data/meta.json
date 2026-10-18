@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-18",
+  "asOf": "2026-10-19",
   "boards": [
     {
       "collected": true,
@@ -278,15 +278,7 @@
       "id": "notice-ddfc5b2ca163",
       "name": "로봇공학과 · 공지사항",
       "saved": 113,
-      "today": [
-        {
-          "date": "2026-10-12",
-          "deadline": "2026-10-21",
-          "kind": "deadline",
-          "postId": "knu-robot-rob1623632307:822",
-          "title": "[안내] 2026학년도 2학기 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
     },
     {
@@ -318,7 +310,15 @@
       "id": "notice-f4ac509b75c4",
       "name": "물리학과 · 공지사항",
       "saved": 89,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-20",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4724",
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
     },
     {
@@ -390,15 +390,7 @@
       "id": "notice-bbfcc8756400",
       "name": "사회복지학부 · 학부 공지사항",
       "saved": 86,
-      "today": [
-        {
-          "date": "2026-10-02",
-          "deadline": "2026-10-18",
-          "kind": "deadline",
-          "postId": "knu-knusw-knu1623026178:8935",
-          "title": "2026학년도 우양재단 동행 장학생 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178"
     },
     {
@@ -438,7 +430,15 @@
       "id": "notice-b5e6a10e952e",
       "name": "생물학과 · 공지사항",
       "saved": 79,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-20",
+          "kind": "deadline",
+          "postId": "knu-bio-bio1616117151:2482",
+          "title": "[대학원]G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
     },
     {
@@ -486,15 +486,7 @@
       "id": "notice-2487b99aea65",
       "name": "소프트웨어학과 · 공지사항",
       "saved": 54,
-      "today": [
-        {
-          "date": "2026-10-06",
-          "deadline": "2026-10-18",
-          "kind": "deadline",
-          "postId": "knu-se-se1617170620:891",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/se/sub.htm?nav_code=se1617170620"
     },
     {
@@ -758,15 +750,7 @@
       "id": "notice-ad22d5b4a9e9",
       "name": "의류학과 · 공지사항",
       "saved": 71,
-      "today": [
-        {
-          "date": "2026-09-30",
-          "deadline": "2026-10-18",
-          "kind": "deadline",
-          "postId": "knu-fashion-fas1623134444:901",
-          "title": "경북대학교 KDT-AI캠퍼스 ‘AI 기반 임베디드 시스템 개발자 양성과정(1회차)’ SL채용연계과정 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444"
     },
     {
@@ -886,7 +870,15 @@
       "id": "notice-df44dd8507c1",
       "name": "전자공학부 · 공지사항",
       "saved": 178,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-06",
+          "deadline": "2026-10-20",
+          "kind": "deadline",
+          "postId": "knu-see-notice:105670",
+          "title": "[소프트웨어중심대학] 2026년 2학기 SW연계부전공 신청 접수"
+        }
+      ],
       "url": "https://see.knu.ac.kr/content/board/notice.html"
     },
     {
@@ -1094,7 +1086,15 @@
       "id": "notice-d13e4abb0470",
       "name": "해양학전공 · 공지사항",
       "saved": 46,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-20",
+          "kind": "deadline",
+          "postId": "knu-ocean-oce1623632597:1585",
+          "title": "[대학원] G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
     },
     {
@@ -1118,7 +1118,22 @@
       "id": "notice-ac0144f93d45",
       "name": "화학과 · 공지사항",
       "saved": 105,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-02",
+          "deadline": "2026-10-20",
+          "kind": "deadline",
+          "postId": "knu-chem-che1622521080:7073",
+          "title": "G-램프(LAMP)사업단「2026년 기초과학 해외 우수 연구실 단기 방문 연구 지원사업」공고"
+        },
+        {
+          "date": "2026-10-01",
+          "deadline": "2026-10-19",
+          "kind": "deadline",
+          "postId": "knu-chem-che1622521080:7065",
+          "title": "학생상담센터 2026학년도 하반기 대학원생 마음건강증진캠프 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
     },
     {
@@ -1216,19 +1231,31 @@
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "01:34",
+  "checkedAt": "01:39",
   "collection": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "failedBoards": [
       {
-        "name": "물리학과 · 공지사항",
+        "name": "중어중문학과 · 공지사항",
         "reasons": [
-          "공지 목록 구조가 없습니다"
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4daf350>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa58b64d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa58b5690>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13669&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13669&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4daff90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa5267d90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4dae810>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))"
         ],
-        "source_board_id": "knu-physics-phy1645592197"
+        "source_board_id": "knu-chinese-notice"
+      },
+      {
+        "name": "치의학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://dent.knu.ac.kr/sub/board.html?bid=k1news: HTTPSConnectionPool(host='dent.knu.ac.kr', port=443): Max retries exceeded with url: /sub/board.html?bid=k1news (Caused by ConnectTimeoutError(<HTTPSConnection(host='dent.knu.ac.kr', port=443) at 0x7f6fa7684c10>, 'Connection to dent.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-dent-k1news"
       }
     ],
-    "lastCollectedAt": "2026-10-18T01:34:12+09:00",
+    "lastCollectedAt": "2026-10-19T01:39:02+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -1236,9 +1263,9 @@
       "total": 6
     },
     "physicalBoards": 136,
-    "todayFailed": 1,
+    "todayFailed": 2,
     "todayNotCollected": 0,
-    "todaySuccess": 135
+    "todaySuccess": 134
   },
   "departments": [
     {
@@ -3022,12 +3049,32 @@
       "text": "오늘 식단은 로컬에서 아직 수집하지 않았습니다"
     },
     {
-      "source": "notice-f4ac509b75c4",
-      "text": "공지 목록 구조가 없습니다 (https://home.knu.ac.kr/HOME/physics/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9S1p0RFZQaUNCN1VwJm5hdl9jb2RlPXBoeTE2NDU1OTIxOTcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnZpZXdfY2F0ZTM9JnZpZXdfY2F0ZTQ9JnZpZXdfY2F0ZTU9||)"
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4daf350>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)"
     },
     {
-      "source": "knu-academic",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa58b64d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa58b5690>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13669&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13669&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4daff90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13669&page=2)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa5267d90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6fa4dae810>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675)"
+    },
+    {
+      "source": "notice-7414782e7dbb",
+      "text": "요청 실패: https://dent.knu.ac.kr/sub/board.html?bid=k1news: HTTPSConnectionPool(host='dent.knu.ac.kr', port=443): Max retries exceeded with url: /sub/board.html?bid=k1news (Caused by ConnectTimeoutError(<HTTPSConnection(host='dent.knu.ac.kr', port=443) at 0x7f6fa7684c10>, 'Connection to dent.knu.ac.kr timed out. (connect timeout=10)')) (https://dent.knu.ac.kr/sub/board.html?bid=k1news)"
     },
     {
       "source": "notice-ddb70636c525",
@@ -3119,6 +3166,10 @@
     },
     {
       "source": "notice-0b9f7e3a61e0",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-f9d9ecdb1284",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -3214,6 +3265,10 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-6b04da14aae1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-787893a88ff5",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -3247,6 +3302,10 @@
     },
     {
       "source": "notice-dfce5afb9336",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7414782e7dbb",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -3594,10 +3653,10 @@
     "status": "ok"
   },
   "weather": {
-    "max": 24.7,
-    "min": 15.3,
-    "rain": 100,
+    "max": 21.2,
+    "min": 16.7,
+    "rain": 96,
     "status": "ok",
-    "summary": "강한 비"
+    "summary": "비"
   }
 }
