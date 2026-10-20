@@ -20,6 +20,7 @@ def main(root=ROOT, run=subprocess.run, now=None):
     def command(args, **kwargs):
         return run(args, cwd=root, text=True, capture_output=True, **kwargs)
 
+    original, branch = None, None
     try:
         auth = command(['gh', 'auth', 'status'])
         if auth.returncode:
@@ -33,13 +34,18 @@ def main(root=ROOT, run=subprocess.run, now=None):
         repository = repositories[remote]
         if git('status', '--porcelain', '--untracked-files=all').stdout.strip():
             raise RuntimeError('작업 트리가 깨끗하지 않습니다. 변경을 정리한 뒤 다시 실행하세요.')
-        head = git('symbolic-ref', 'refs/remotes/origin/HEAD').stdout.strip()
-        default = head.removeprefix('refs/remotes/origin/')
+        # clone이 아닌 방법으로 받은 폴더에는 origin/HEAD가 없을 수 있어 GitHub에 기본 브랜치를 묻는다.
+        head = git('symbolic-ref', 'refs/remotes/origin/HEAD', check=False)
+        default = head.stdout.strip().removeprefix('refs/remotes/origin/') if head.returncode == 0 else ''
+        if not default:
+            asked = command(['gh', 'repo', 'view', repository, '--json', 'defaultBranchRef', '-q', '.defaultBranchRef.name'])
+            default = asked.stdout.strip() if asked.returncode == 0 else ''
         if not default:
             raise RuntimeError('origin 기본 브랜치를 확인할 수 없습니다.')
         git('fetch', 'origin', default)
         started = now()
         day = started.date().isoformat()
+        original = git('branch', '--show-current').stdout.strip()
         branch = 'feat/local-meals-' + started.strftime('%Y%m%d-%H%M%S')
         git('switch', '-c', branch, f'origin/{default}')
 
@@ -96,6 +102,12 @@ def main(root=ROOT, run=subprocess.run, now=None):
         detail = f': {exc.stderr.strip()}' if isinstance(exc, subprocess.CalledProcessError) and exc.stderr else ''
         print(f'중단: {exc}{detail}', file=sys.stderr)
         return 1
+    finally:
+        # 끝나면 원래 브랜치로 돌아간다. 수집 중 실패해 바뀐 파일이 남아 있으면 원래 브랜치로 옮기지 않고 학식 브랜치에 둔다.
+        if original and branch:
+            clean = not git('status', '--porcelain', '--untracked-files=all', check=False).stdout.strip()
+            if not (clean and git('switch', original, check=False).returncode == 0):
+                print(f'정리되지 않은 변경이 있어 {branch} 브랜치에 남았습니다. 확인 후 git switch {original}로 돌아가세요.', file=sys.stderr)
 
 
 if __name__ == '__main__':

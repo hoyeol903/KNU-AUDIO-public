@@ -96,6 +96,44 @@ class UpdateMealsTest(unittest.TestCase):
         add = next(call for call in self.calls if call[:2] == ['git', 'add'])
         self.assertEqual(add[3:], ['data/raw/2026-10-06/context.json', 'output/app'])
 
+    def test_missing_origin_head_asks_github_and_returns_to_original_branch(self):
+        original = self.runner
+
+        def no_head(args, **kwargs):
+            if args[1:] == ['symbolic-ref', 'refs/remotes/origin/HEAD']:
+                self.calls.append(args)
+                return subprocess.CompletedProcess(args, 128, '', 'fatal: not a symbolic ref')
+            if args[:3] == ['gh', 'repo', 'view']:
+                self.calls.append(args)
+                return subprocess.CompletedProcess(args, 0, 'main\n', '')
+            if args[1:] == ['branch', '--show-current']:
+                self.calls.append(args)
+                return subprocess.CompletedProcess(args, 0, 'main\n', '')
+            return original(args, **kwargs)
+
+        self.assertEqual(main(self.root, no_head, lambda: self.now), 0)
+        self.assertIn(['git', 'switch', '-c', 'feat/local-meals-20261006-100000', 'origin/main'], self.calls)
+        self.assertEqual(self.calls[-1], ['git', 'switch', 'main'])
+
+    def test_failure_with_leftover_files_stays_on_meal_branch(self):
+        original = self.runner
+
+        def dirty_after(args, **kwargs):
+            if args[1:] == ['branch', '--show-current']:
+                self.calls.append(args)
+                return subprocess.CompletedProcess(args, 0, 'main\n', '')
+            if args[1:3] == ['-m', 'collector.export_app']:
+                self.calls.append(args)
+                self.dirty = True
+                return subprocess.CompletedProcess(args, 2, '', 'failed')
+            if args[1:2] == ['status'] and getattr(self, 'dirty', False):
+                self.calls.append(args)
+                return subprocess.CompletedProcess(args, 0, ' M output/app/index.html\n', '')
+            return original(args, **kwargs)
+
+        self.assertEqual(main(self.root, dirty_after, lambda: self.now), 1)
+        self.assertNotIn(['git', 'switch', 'main'], self.calls)
+
     def test_export_failure_stops_before_push(self):
         original = self.runner
 
