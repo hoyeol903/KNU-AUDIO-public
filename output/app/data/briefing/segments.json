@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "segments": [
     {
-      "audio": "ea5268cbae5945e0fc0f1ffa08a1cdace9fc6182e1f3375353c38e3d8119a9f9.mp3",
+      "audio": "0a54c8e3e86359d916ce583be3c6c1963b664931b544806b263da46d2f15e298.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -11,700 +11,91 @@
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 19.152,
+          "end_sec": 12.072,
           "start_sec": 6.984,
-          "text": "비가 올 수 있으니 우산 챙기고, 길 미끄러울 수 있어 조심하세요. 아침엔 선선하니 얇은 겉옷 하나 챙기세요. 일교차가 크니 입고 벗기 편한 옷이 좋습니다."
+          "text": "우산은 가방에 넣어 두고, 비가 온 길에서는 천천히 걸어 주세요."
         }
       ],
-      "duration_sec": 19.152,
+      "duration_sec": 12.072,
       "id": "intro",
       "items": [
         {
           "dday": null,
-          "detail": "최저 9.3° / 최고 21.2° · 비 올 확률 94%",
+          "detail": "최저 15.1° / 최고 17.5° · 비 올 확률 100%",
           "postId": null,
           "section": "날씨",
-          "title": "흐림",
+          "title": "비",
           "url": null
         }
       ],
-      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 비가 올 수 있으니 우산 챙기고, 길 미끄러울 수 있어 조심하세요. 아침엔 선선하니 얇은 겉옷 하나 챙기세요. 일교차가 크니 입고 벗기 편한 옷이 좋습니다.",
+      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 우산은 가방에 넣어 두고, 비가 온 길에서는 천천히 걸어 주세요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "903a2e58208ac03acecca9a0c7a13d914722ba21d9fac1aba93e4ee40ba5a8e2.mp3",
-      "channel_id": "e39fe678cd42a5f034c2d17e",
+      "audio": "8c6f2ef3ab81f6cc2e5fdeff0a0728d508207184aab8a475d76d0b5145bd96a9.mp3",
+      "channel_id": "dd51729686f69525dd96f289",
       "channel_ids": [
-        "notice-fd04b6b6208e"
+        "notice-eaa2bcd13c4a"
       ],
       "cues": [
         {
-          "end_sec": 8.304,
+          "end_sec": 11.04,
           "start_sec": 0,
-          "text": "2026 제3회 대구·경북 방재 포럼은 6월 15일 개최되며, 전문가들이 방재 전략을 논의합니다."
+          "text": "소노인터내셔널 비발디파크, 26~27년 동계시즌 산학실습생 모집해요. 자세한 내용은 첨부파일의 PDF 미리보기에서 확인하세요."
         }
       ],
-      "duration_sec": 8.304,
-      "id": "e39fe678cd42a5f034c2d17e",
+      "duration_sec": 11.04,
+      "id": "dd51729686f69525dd96f289",
       "items": [
         {
-          "channel_id": "notice-fd04b6b6208e",
+          "channel_id": "notice-eaa2bcd13c4a",
           "dday": null,
-          "detail": "건설방재공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-disaster-dis1616717237:707",
+          "detail": "관광학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-tour-tou1616116950:874",
           "section": "소식",
-          "title": "2026 제3회 대구·경북 방재 포럼 개최 안내",
-          "url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?mode=view&mv_data=aWR4PTcwNyZzdGFydFBhZ2U9MCZsaXN0Tm89NTIxJnRhYmxlPWV4X2Jic19kYXRhX2Rpc2FzdGVyJm5hdl9jb2RlPWRpczE2MTY3MTcyMzcmY29kZT1rUkxwU1FCcnRsUHcmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "[소노인터내셔널|비발디파크] 26_27년 동계시즌 산학실습생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?mode=view&mv_data=aWR4PTg3NCZzdGFydFBhZ2U9MCZsaXN0Tm89MzU2JnRhYmxlPWV4X2Jic19kYXRhX3RvdXImbmF2X2NvZGU9dG91MTYxNjExNjk1MCZjb2RlPUYzYlJTRTlxT3hKWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-fd04b6b6208e",
+          "channel_id": "notice-eaa2bcd13c4a",
           "deadline": null,
-          "postId": "knu-disaster-dis1616717237:707",
-          "posted_at": "2026-10-22",
+          "postId": "knu-tour-tou1616116950:874",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026 제3회 대구·경북 방재 포럼 개최 안내",
-          "url": "https://home.knu.ac.kr/HOME/disaster/sub.htm?mode=view&mv_data=aWR4PTcwNyZzdGFydFBhZ2U9MCZsaXN0Tm89NTIxJnRhYmxlPWV4X2Jic19kYXRhX2Rpc2FzdGVyJm5hdl9jb2RlPWRpczE2MTY3MTcyMzcmY29kZT1rUkxwU1FCcnRsUHcmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "[소노인터내셔널|비발디파크] 26_27년 동계시즌 산학실습생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?mode=view&mv_data=aWR4PTg3NCZzdGFydFBhZ2U9MCZsaXN0Tm89MzU2JnRhYmxlPWV4X2Jic19kYXRhX3RvdXImbmF2X2NvZGU9dG91MTYxNjExNjk1MCZjb2RlPUYzYlJTRTlxT3hKWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026 제3회 대구·경북 방재 포럼은 6월 15일 개최되며, 전문가들이 방재 전략을 논의합니다.",
-      "title": "2026 제3회 대구·경북 방재 포럼 개최 안내"
+      "script": "소노인터내셔널 비발디파크, 26~27년 동계시즌 산학실습생 모집해요. 자세한 내용은 첨부파일의 PDF 미리보기에서 확인하세요.",
+      "title": "[소노인터내셔널|비발디파크] 26_27년 동계시즌 산학실습생 모집 안내"
     },
     {
-      "audio": "002406e9974c5f0617b4a068a3c32bda764ed4d9d393c0337a22bd930dc3ee08.mp3",
-      "channel_id": "4bbd09c0ccead3d7f6c482d1",
-      "channel_ids": [
-        "notice-a267229666ef"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.168,
-          "start_sec": 0,
-          "text": "임근석 대표가 주최하는 AI 실전 스킬 특강은 11월 19일 오후 3시, 복지관 4층 강의실2에서 진행돼요. KNUCUBE를 통해 사전 신청 후 참석해 주세요."
-        }
-      ],
-      "duration_sec": 12.168,
-      "id": "4bbd09c0ccead3d7f6c482d1",
-      "items": [
-        {
-          "channel_id": "notice-a267229666ef",
-          "dday": null,
-          "detail": "고고인류학과 · 학부공지 · 2026-10-22",
-          "postId": "knu-aran-ara1623718660:4853",
-          "section": "소식",
-          "title": "[교수학습센터] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTAmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-a267229666ef",
-          "deadline": null,
-          "postId": "knu-aran-ara1623718660:4853",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[교수학습센터] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTAmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "임근석 대표가 주최하는 AI 실전 스킬 특강은 11월 19일 오후 3시, 복지관 4층 강의실2에서 진행돼요. KNUCUBE를 통해 사전 신청 후 참석해 주세요.",
-      "title": "[교수학습센터] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-    },
-    {
-      "audio": "713f0d751c1291a18a843b27ad9f37d5e1aae56b65f63967f06367e80ae6bdd1.mp3",
-      "channel_id": "8828142ef2704db11e10bc06",
-      "channel_ids": [
-        "notice-a267229666ef"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.416,
-          "start_sec": 0,
-          "text": "외국대학 어학집중 프로그램 모집. 11.9~11.10까지 지원서 접수. 합격자 발표는 11.13. 외국대학 참가자격을 가진 학부생만 지원가능."
-        }
-      ],
-      "duration_sec": 13.416,
-      "id": "8828142ef2704db11e10bc06",
-      "items": [
-        {
-          "channel_id": "notice-a267229666ef",
-          "dday": null,
-          "detail": "고고인류학과 · 학부공지 · 2026-10-22",
-          "postId": "knu-aran-ara1623718660:4854",
-          "section": "소식",
-          "title": "[국제처] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11.9.~11.10.)",
-          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTEmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-a267229666ef",
-          "deadline": null,
-          "postId": "knu-aran-ara1623718660:4854",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[국제처] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11.9.~11.10.)",
-          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTEmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "외국대학 어학집중 프로그램 모집. 11.9~11.10까지 지원서 접수. 합격자 발표는 11.13. 외국대학 참가자격을 가진 학부생만 지원가능.",
-      "title": "[국제처] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11.9.~11.10.)"
-    },
-    {
-      "audio": "7840734a71ab9a66d3d0414c599c6dadc67cc9f54bb407539f9e24b89e1e82f1.mp3",
-      "channel_id": "6dd0e598b38a310248f3d7aa",
-      "channel_ids": [
-        "notice-7ff56c3af3e0",
-        "notice-74a3f719131b"
-      ],
-      "cues": [
-        {
-          "end_sec": 6.144,
-          "start_sec": 0,
-          "text": "경북대 공학계열 재학생은 11월 3일까지 메일로 참가지원서를 제출해 주세요."
-        }
-      ],
-      "duration_sec": 6.144,
-      "id": "6dd0e598b38a310248f3d7aa",
-      "items": [
-        {
-          "channel_id": "notice-7ff56c3af3e0",
-          "dday": null,
-          "detail": "고분자공학과 · 학사 공지사항 · 2026-10-22",
-          "postId": "knu-knupolymer-knu1623888520:1711",
-          "section": "소식",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MTEmc3RhcnRQYWdlPTAmbGlzdE5vPTUzOSZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-74a3f719131b",
-          "dday": null,
-          "detail": "기계공학부 · 학부 공지사항 · 2026-10-22",
-          "postId": "knu-me-me1623370438:6891",
-          "section": "소식",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY4OTEmc3RhcnRQYWdlPTAmbGlzdE5vPTE5OTgmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7ff56c3af3e0",
-          "deadline": "2026-11-03",
-          "postId": "knu-knupolymer-knu1623888520:1711",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MTEmc3RhcnRQYWdlPTAmbGlzdE5vPTUzOSZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-74a3f719131b",
-          "deadline": "2026-11-03",
-          "postId": "knu-me-me1623370438:6891",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY4OTEmc3RhcnRQYWdlPTAmbGlzdE5vPTE5OTgmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "경북대 공학계열 재학생은 11월 3일까지 메일로 참가지원서를 제출해 주세요.",
-      "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
-    },
-    {
-      "audio": "42538534d0377e09f9d228c8dbac3255b36988399a592c926103d310357da50f.mp3",
-      "channel_id": "6408fb5c6ea20aab726cb2ef",
-      "channel_ids": [
-        "notice-f3ba4290e5dd"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.48,
-          "start_sec": 0,
-          "text": "교직적성검사(2차) 대상자 확정. 10월 29일 19시부터 4개 장소에서 실시. 입실은 18시 45분까지. 준비물은 신분증과 사인펜, 수정테이프."
-        }
-      ],
-      "duration_sec": 12.48,
-      "id": "6408fb5c6ea20aab726cb2ef",
-      "items": [
-        {
-          "channel_id": "notice-f3ba4290e5dd",
-          "dday": null,
-          "detail": "국악학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-kmusic-kmu1622609949:1559",
-          "section": "소식",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내",
-          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NTkmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MTUmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f3ba4290e5dd",
-          "deadline": null,
-          "postId": "knu-kmusic-kmu1622609949:1559",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내",
-          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NTkmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MTUmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "교직적성검사(2차) 대상자 확정. 10월 29일 19시부터 4개 장소에서 실시. 입실은 18시 45분까지. 준비물은 신분증과 사인펜, 수정테이프.",
-      "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내"
-    },
-    {
-      "audio": "22b189e78ae298a433471ee79ff7df4f9445aa5b2fb14a0d1ee042eadcbc9736.mp3",
-      "channel_id": "bf4c125ef6b1629e2151b7e3",
-      "channel_ids": [
-        "notice-ca78d3fd3c51"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.88,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 교직적성검사(2차) 대상자 확정. 10월 29일 19시부터 4개 장소에서 실시. 입실은 18시 45분까지. 준비물은 신분증과 사인펜, 수정테이프."
-        }
-      ],
-      "duration_sec": 14.88,
-      "id": "bf4c125ef6b1629e2151b7e3",
-      "items": [
-        {
-          "channel_id": "notice-ca78d3fd3c51",
-          "dday": null,
-          "detail": "국어교육과 · 공지사항 · 2026-10-22",
-          "postId": "knu-koredu-kor1622459695:289",
-          "section": "소식",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내",
-          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTgyJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ca78d3fd3c51",
-          "deadline": null,
-          "postId": "knu-koredu-kor1622459695:289",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내",
-          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI4OSZzdGFydFBhZ2U9MCZsaXN0Tm89MTgyJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 2학기 교직적성검사(2차) 대상자 확정. 10월 29일 19시부터 4개 장소에서 실시. 입실은 18시 45분까지. 준비물은 신분증과 사인펜, 수정테이프.",
-      "title": "2026학년도 2학기 교직 적성 및 인성검사(2차) 대상자 확정 및 시행 안내"
-    },
-    {
-      "audio": "828fdfb2773b0f89d35b5952fa590d7c32be7049a986bed8140865062a20eddf.mp3",
-      "channel_id": "c4a9f902970bc516c64af8b5",
-      "channel_ids": [
-        "notice-ca78d3fd3c51"
-      ],
-      "cues": [
-        {
-          "end_sec": 11.256,
-          "start_sec": 0,
-          "text": "10월 23일·26일 금·월 5시 이후 학과사무실은 운영되지 않으며, 서류는 문 밑에 넣고 급한 사항은 010-****-0378로 문자로 연락해 주세요."
-        }
-      ],
-      "duration_sec": 11.256,
-      "id": "c4a9f902970bc516c64af8b5",
-      "items": [
-        {
-          "channel_id": "notice-ca78d3fd3c51",
-          "dday": null,
-          "detail": "국어교육과 · 공지사항 · 2026-10-22",
-          "postId": "knu-koredu-kor1622459695:290",
-          "section": "소식",
-          "title": "학과사무실 운영 관련 안내(10/23(금), 10/26(월))",
-          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI5MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTgzJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ca78d3fd3c51",
-          "deadline": null,
-          "postId": "knu-koredu-kor1622459695:290",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "학과사무실 운영 관련 안내(10/23(금), 10/26(월))",
-          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTI5MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTgzJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "10월 23일·26일 금·월 5시 이후 학과사무실은 운영되지 않으며, 서류는 문 밑에 넣고 급한 사항은 010-****-0378로 문자로 연락해 주세요.",
-      "title": "학과사무실 운영 관련 안내(10/23(금), 10/26(월))"
-    },
-    {
-      "audio": "c95b5347d4df74cfbdb329d66c79f7f53fa0b193b67d153d2c41ec773d9dc098.mp3",
-      "channel_id": "fc815a3e312bb3ea5825584c",
-      "channel_ids": [
-        "notice-74a3f719131b",
-        "notice-f4ac509b75c4",
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 16.2,
-          "start_sec": 0,
-          "text": "2027학년도 1학기 외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살대학 75명 내외. 지원서 11.9~10까지 접수. 합격자 11.13 발표. 국제처 홈페이지에서 확인."
-        }
-      ],
-      "duration_sec": 16.2,
-      "id": "fc815a3e312bb3ea5825584c",
-      "items": [
-        {
-          "channel_id": "notice-74a3f719131b",
-          "dday": null,
-          "detail": "기계공학부 · 학부 공지사항 · 2026-10-22",
-          "postId": "knu-me-me1623370438:6889",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY4ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTE5OTcmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "dday": null,
-          "detail": "물리학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physics-phy1645592197:4763",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4535",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4535&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-74a3f719131b",
-          "deadline": null,
-          "postId": "knu-me-me1623370438:6889",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY4ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTE5OTcmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "deadline": null,
-          "postId": "knu-physics-phy1645592197:4763",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4535",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4535&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "2027학년도 1학기 외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살대학 75명 내외. 지원서 11.9~10까지 접수. 합격자 11.13 발표. 국제처 홈페이지에서 확인.",
-      "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
-    },
-    {
-      "audio": "ac753c1c4f9a78937a311a2a0f1c42c17a6f68cd36c7a47474a9eb2abcd0f112.mp3",
-      "channel_id": "d10cf10a3ace432033443e63",
-      "channel_ids": [
-        "notice-e3a4a5455384"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.8,
-          "start_sec": 0,
-          "text": "이남규 동문이 10월 26일 고려대 의대 교수로 임용됩니다. 공식 발표는 아직 확인되지 않았습니다."
-        }
-      ],
-      "duration_sec": 7.8,
-      "id": "d10cf10a3ace432033443e63",
-      "items": [
-        {
-          "channel_id": "notice-e3a4a5455384",
-          "dday": null,
-          "detail": "농업생명과학대학 · 공지사항 · 2026-10-22",
-          "postId": "knu-cals-cal1623200331:480",
-          "section": "소식",
-          "title": "26 10 22 (식품생물공학) 이남규 동문(고려대 의대 교수 임용)",
-          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?mode=view&mv_data=aWR4PTQ4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTAyJnRhYmxlPWV4X2Jic19kYXRhX2NhbHMmbmF2X2NvZGU9Y2FsMTYyMzIwMDMzMSZjb2RlPUNkMzRVb3NidXl0TCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-e3a4a5455384",
-          "deadline": null,
-          "postId": "knu-cals-cal1623200331:480",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "26 10 22 (식품생물공학) 이남규 동문(고려대 의대 교수 임용)",
-          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?mode=view&mv_data=aWR4PTQ4MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTAyJnRhYmxlPWV4X2Jic19kYXRhX2NhbHMmbmF2X2NvZGU9Y2FsMTYyMzIwMDMzMSZjb2RlPUNkMzRVb3NidXl0TCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "이남규 동문이 10월 26일 고려대 의대 교수로 임용됩니다. 공식 발표는 아직 확인되지 않았습니다.",
-      "title": "26 10 22 (식품생물공학) 이남규 동문(고려대 의대 교수 임용)"
-    },
-    {
-      "audio": "478f6c4dbb030a478940e1e9568bf66caadeb6d2709db0388a6f35598ffe5713.mp3",
-      "channel_id": "362f617c7c002b075171a138",
-      "channel_ids": [
-        "notice-ddfc5b2ca163"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.352,
-          "start_sec": 0,
-          "text": "2026 항공·우주 산업현장 직무 탐색 프로그램은 11월 13일 대전에서 열려요. 경북대 재학생 20명 내외 모집. 10월 21일부터 28일까지 네이버폼으로 신청하세요."
-        }
-      ],
-      "duration_sec": 14.352,
-      "id": "362f617c7c002b075171a138",
-      "items": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "dday": null,
-          "detail": "로봇공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-robot-rob1623632307:835",
-          "section": "소식",
-          "title": "[안내] [항공드론 혁신융합대학사업단] 2026 항공·우주 산업현장 직무 탐색 프로그램 참여 안",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgzNSZzdGFydFBhZ2U9MCZsaXN0Tm89NzQyJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "deadline": null,
-          "postId": "knu-robot-rob1623632307:835",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[안내] [항공드론 혁신융합대학사업단] 2026 항공·우주 산업현장 직무 탐색 프로그램 참여 안",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgzNSZzdGFydFBhZ2U9MCZsaXN0Tm89NzQyJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026 항공·우주 산업현장 직무 탐색 프로그램은 11월 13일 대전에서 열려요. 경북대 재학생 20명 내외 모집. 10월 21일부터 28일까지 네이버폼으로 신청하세요.",
-      "title": "[안내] [항공드론 혁신융합대학사업단] 2026 항공·우주 산업현장 직무 탐색 프로그램 참여 안"
-    },
-    {
-      "audio": "4325035165fa9585254a8a06e0eafd5a4c1b9972a1ae5dd256bc1ff4cfd46fd8.mp3",
-      "channel_id": "b27c9c96d96ce3b38c0663ea",
-      "channel_ids": [
-        "notice-ddfc5b2ca163",
-        "notice-e1ec1bf0eb87"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.488,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 연구실 안전교육(신규·집합)은 10월 27일과 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 미이수자 반드시 참석해 주세요."
-        }
-      ],
-      "duration_sec": 13.488,
-      "id": "b27c9c96d96ce3b38c0663ea",
-      "items": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "dday": null,
-          "detail": "로봇공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-robot-rob1623632307:836",
-          "section": "소식",
-          "title": "[학사][필수] 2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내(미이수자 필히 참석)",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgzNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzQzJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "dday": null,
-          "detail": "의생명융합공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-bcst2-bcs1611061294:843",
-          "section": "소식",
-          "title": "[학사][필수] 2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내(미이수자 필히 참석)",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg0MyZzdGFydFBhZ2U9MCZsaXN0Tm89NzI4JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "deadline": null,
-          "postId": "knu-robot-rob1623632307:836",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학사][필수] 2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내(미이수자 필히 참석)",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgzNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzQzJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "deadline": null,
-          "postId": "knu-bcst2-bcs1611061294:843",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학사][필수] 2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내(미이수자 필히 참석)",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg0MyZzdGFydFBhZ2U9MCZsaXN0Tm89NzI4JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "script": "2026학년도 2학기 연구실 안전교육(신규·집합)은 10월 27일과 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 미이수자 반드시 참석해 주세요.",
-      "title": "[학사][필수] 2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내(미이수자 필히 참석)"
-    },
-    {
-      "audio": "ccc923a17a5602c50390db11699d1a2a7f57dffe801c4272182fe43cc1aef0be.mp3",
-      "channel_id": "4e4e612394e60c27aed3dd28",
-      "channel_ids": [
-        "notice-ec96ad09ef78"
-      ],
-      "cues": [
-        {
-          "end_sec": 19.344,
-          "start_sec": 0,
-          "text": "교직적성검사(2차)는 10월 29일 19시부터 50분간, 글로벌플라자 경하홀Ⅰ‧Ⅱ, 201, 301호에서 진행돼요. 18시 45분까지 입실하고, 컴퓨터용사인펜, 신분증, 수정테이프를 준비해 주세요. 결과는 11월 6일 예정입니다."
-        }
-      ],
-      "duration_sec": 19.344,
-      "id": "4e4e612394e60c27aed3dd28",
-      "items": [
-        {
-          "channel_id": "notice-ec96ad09ef78",
-          "dday": null,
-          "detail": "물리교육과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physed-phy1623371316:5025",
-          "section": "소식",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차)안내",
-          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMjUmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTAmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ec96ad09ef78",
-          "deadline": null,
-          "postId": "knu-physed-phy1623371316:5025",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(2차)안내",
-          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMjUmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTAmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "교직적성검사(2차)는 10월 29일 19시부터 50분간, 글로벌플라자 경하홀Ⅰ‧Ⅱ, 201, 301호에서 진행돼요. 18시 45분까지 입실하고, 컴퓨터용사인펜, 신분증, 수정테이프를 준비해 주세요. 결과는 11월 6일 예정입니다.",
-      "title": "2026학년도 2학기 교직 적성 및 인성검사(2차)안내"
-    },
-    {
-      "audio": "cd006b72b3c9cc6c25d832b8968040b249f2d5a91bb7e5055d009c7ca5f704de.mp3",
-      "channel_id": "f81e01c53a99d479e15ac9df",
-      "channel_ids": [
-        "notice-ec96ad09ef78"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.424,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 응급처치 실습은 11월 9일~10일, 글로벌플라자 경하홀Ⅰ․Ⅱ에서 10회 진행돼요. 운동화와 신분증을 준비해 주세요. 불참 시 다음 회차 신청 시 패널티가 적용됩니다."
-        }
-      ],
-      "duration_sec": 14.424,
-      "id": "f81e01c53a99d479e15ac9df",
-      "items": [
-        {
-          "channel_id": "notice-ec96ad09ef78",
-          "dday": null,
-          "detail": "물리교육과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physed-phy1623371316:5026",
-          "section": "소식",
-          "title": "2026학년도 2학기 응급처치 및 심폐소생술 실습 안내",
-          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMjYmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTEmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ec96ad09ef78",
-          "deadline": null,
-          "postId": "knu-physed-phy1623371316:5026",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 응급처치 및 심폐소생술 실습 안내",
-          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMjYmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTEmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026학년도 2학기 응급처치 실습은 11월 9일~10일, 글로벌플라자 경하홀Ⅰ․Ⅱ에서 10회 진행돼요. 운동화와 신분증을 준비해 주세요. 불참 시 다음 회차 신청 시 패널티가 적용됩니다.",
-      "title": "2026학년도 2학기 응급처치 및 심폐소생술 실습 안내"
-    },
-    {
-      "audio": "bfa3ac9b893d2623b152b54400f8d604e15fb8553df795431d6713bfa2293731.mp3",
-      "channel_id": "9a44c00be6f3faab850482a9",
+      "audio": "9b49d6896b5fea07b6845a26f0d8e203d005d5ad50ea12e332bf448609d8fda8.mp3",
+      "channel_id": "5268bd5bea2ec4adc789cd3b",
       "channel_ids": [
         "notice-f4ac509b75c4"
       ],
       "cues": [
         {
-          "end_sec": 12.528,
+          "end_sec": 9.696,
           "start_sec": 0,
-          "text": "2026학년도 겨울수업 타대학 수학 추천은 10월 29일 18시까지 학사과에 제출하세요. 신청은 10월 28일 13시까지 통합정보시스템에서 진행합니다."
+          "text": "수학 희망 학생은 11월 9일 13시까지 통합정보시스템에서 신청하고, 11월 10일 18시까지 학사과에 추천서 제출하세요."
         }
       ],
-      "duration_sec": 12.528,
-      "id": "9a44c00be6f3faab850482a9",
+      "duration_sec": 9.696,
+      "id": "5268bd5bea2ec4adc789cd3b",
       "items": [
         {
           "channel_id": "notice-f4ac509b75c4",
           "dday": null,
-          "detail": "물리학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physics-phy1645592197:4764",
+          "detail": "물리학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-physics-phy1645592197:4768",
           "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzQmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "deadline": null,
-          "postId": "knu-physics-phy1645592197:4764",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzQmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 겨울수업 타대학 수학 추천은 10월 29일 18시까지 학사과에 제출하세요. 신청은 10월 28일 13시까지 통합정보시스템에서 진행합니다.",
-      "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내"
-    },
-    {
-      "audio": "f91593753ed8b1cbd36f86baaeaa0f3caccb909eeb0eb291ac7a1e42362bb78a.mp3",
-      "channel_id": "c00ce554eeac6d4b6fb76561",
-      "channel_ids": [
-        "notice-f4ac509b75c4"
-      ],
-      "cues": [
-        {
-          "end_sec": 10.992,
-          "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학을 희망하는 학생은 10월 28일 18시까지 학사과에 추천서를 제출해야 합니다."
-        }
-      ],
-      "duration_sec": 10.992,
-      "id": "c00ce554eeac6d4b6fb76561",
-      "items": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "dday": null,
-          "detail": "물리학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physics-phy1645592197:4765",
-          "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjUmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzUmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "2026학년도 겨울계절수업 타대학(서울시립대학교 학부) 수학 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3Njgmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
@@ -712,1737 +103,1144 @@
         {
           "channel_id": "notice-f4ac509b75c4",
           "deadline": null,
-          "postId": "knu-physics-phy1645592197:4765",
-          "posted_at": "2026-10-22",
+          "postId": "knu-physics-phy1645592197:4768",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjUmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzUmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "2026학년도 겨울계절수업 타대학(서울시립대학교 학부) 수학 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3Njgmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학을 희망하는 학생은 10월 28일 18시까지 학사과에 추천서를 제출해야 합니다.",
-      "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내"
+      "script": "수학 희망 학생은 11월 9일 13시까지 통합정보시스템에서 신청하고, 11월 10일 18시까지 학사과에 추천서 제출하세요.",
+      "title": "2026학년도 겨울계절수업 타대학(서울시립대학교 학부) 수학 안내"
     },
     {
-      "audio": "05840f08f4a8bad1ef6be9367b178cd4773d7ba1a054339e8755fa229b2ef1df.mp3",
-      "channel_id": "d0e31189c040ba3450d87ee0",
+      "audio": "7451265e47f0da241001314dcb38f34291e1855cc132a1392d5518148cd10cb0.mp3",
+      "channel_id": "fa5c86629be9cc80aab2d8b7",
       "channel_ids": [
-        "notice-f4ac509b75c4"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.232,
-          "start_sec": 0,
-          "text": "국립금오공과대 수학 교류를 희망하는 학생은 11월 2일 18시까지 학사과에 추천서를 제출하세요."
-        }
-      ],
-      "duration_sec": 8.232,
-      "id": "d0e31189c040ba3450d87ee0",
-      "items": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "dday": null,
-          "detail": "물리학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-physics-phy1645592197:4766",
-          "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "deadline": null,
-          "postId": "knu-physics-phy1645592197:4766",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "국립금오공과대 수학 교류를 희망하는 학생은 11월 2일 18시까지 학사과에 추천서를 제출하세요.",
-      "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내"
-    },
-    {
-      "audio": "e50104abd5953a803c5bed53a3a5d6bb2b9f6dbea5ac8044792013e251e35c34.mp3",
-      "channel_id": "a68a95993fbe2659762d73ed",
-      "channel_ids": [
-        "notice-bbfcc8756400"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.8,
-          "start_sec": 0,
-          "text": "변리사·노무사 선배와의 토크 콘서트를 2026학년도 하반기 진행합니다. 세션별 신청 가능하며, 행사 전일 문자로 안내됩니다. 신청 링크: https://knucube.knu.ac.kr/site/lecture00113829"
-        }
-      ],
-      "duration_sec": 13.8,
-      "id": "a68a95993fbe2659762d73ed",
-      "items": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "dday": null,
-          "detail": "사회복지학부 · 학부 공지사항 · 2026-10-22",
-          "postId": "knu-knusw-knu1623026178:8966",
-          "section": "소식",
-          "title": "[진로취업과] 2026학년도 하반기 「동문선배 진로 스킬업」(변리사·노무사 특강)",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzcmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "deadline": null,
-          "postId": "knu-knusw-knu1623026178:8966",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[진로취업과] 2026학년도 하반기 「동문선배 진로 스킬업」(변리사·노무사 특강)",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzcmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "변리사·노무사 선배와의 토크 콘서트를 2026학년도 하반기 진행합니다. 세션별 신청 가능하며, 행사 전일 문자로 안내됩니다. 신청 링크: https://knucube.knu.ac.kr/site/lecture00113829",
-      "title": "[진로취업과] 2026학년도 하반기 「동문선배 진로 스킬업」(변리사·노무사 특강)"
-    },
-    {
-      "audio": "c2a1c13a77f4e5efdc5c795565fb64c8a363e30f50b84acd99b8fddc2556c151.mp3",
-      "channel_id": "5a74beae9c6745064cbec226",
-      "channel_ids": [
-        "notice-bbfcc8756400"
-      ],
-      "cues": [
-        {
-          "end_sec": 15.624,
-          "start_sec": 0,
-          "text": "2026 KNU 형평과 포용주간, 쇼츠 영상 공모전과 어울림 데이 개최. 10월 19일~30일까지 쇼츠 영상 접수. 10월 27일 일청담에서 OX 퀴즈와 체험 프로그램 진행. 신청은 네이버 폼에서."
-        }
-      ],
-      "duration_sec": 15.624,
-      "id": "5a74beae9c6745064cbec226",
-      "items": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "dday": null,
-          "detail": "사회복지학부 · 학부 공지사항 · 2026-10-22",
-          "postId": "knu-knusw-knu1623026178:8967",
-          "section": "소식",
-          "title": "[2026 KNU 형평과 포용주간] 쇼츠 영상 공모전 & 포용캠퍼스 어울림 데이 개최",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5Njcmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzgmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-bbfcc8756400",
-          "deadline": null,
-          "postId": "knu-knusw-knu1623026178:8967",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[2026 KNU 형평과 포용주간] 쇼츠 영상 공모전 & 포용캠퍼스 어울림 데이 개최",
-          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5Njcmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzgmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2026 KNU 형평과 포용주간, 쇼츠 영상 공모전과 어울림 데이 개최. 10월 19일~30일까지 쇼츠 영상 접수. 10월 27일 일청담에서 OX 퀴즈와 체험 프로그램 진행. 신청은 네이버 폼에서.",
-      "title": "[2026 KNU 형평과 포용주간] 쇼츠 영상 공모전 & 포용캠퍼스 어울림 데이 개최"
-    },
-    {
-      "audio": "7343f54733f899f91b5da04e9e3e0a4ad27a5b9783ae496a87999ab0e2a6e7dd.mp3",
-      "channel_id": "8e2dcb092af0309060e97a47",
-      "channel_ids": [
-        "notice-f310e00db70c"
-      ],
-      "cues": [
-        {
-          "end_sec": 9.072,
-          "start_sec": 0,
-          "text": "2026학년도 화신 기업 견학 참여 수요조사를 10월 30일 18시까지 신청하세요. 네이버폼 링크로 접수합니다."
-        }
-      ],
-      "duration_sec": 9.072,
-      "id": "8e2dcb092af0309060e97a47",
-      "items": [
-        {
-          "channel_id": "notice-f310e00db70c",
-          "dday": null,
-          "detail": "스마트모빌리티공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-mobility-mob1692863999:462",
-          "section": "소식",
-          "title": "[앵커사업] 2026학년도 기업 『화신』 현장 견학 참여 수요조사 안내",
-          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2MiZzdGFydFBhZ2U9MCZsaXN0Tm89NDA4JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f310e00db70c",
-          "deadline": null,
-          "postId": "knu-mobility-mob1692863999:462",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[앵커사업] 2026학년도 기업 『화신』 현장 견학 참여 수요조사 안내",
-          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2MiZzdGFydFBhZ2U9MCZsaXN0Tm89NDA4JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026학년도 화신 기업 견학 참여 수요조사를 10월 30일 18시까지 신청하세요. 네이버폼 링크로 접수합니다.",
-      "title": "[앵커사업] 2026학년도 기업 『화신』 현장 견학 참여 수요조사 안내"
-    },
-    {
-      "audio": "2656b8619c89827191cf51694169a1d6760a48ee08a0718be1908d0c471a4ae8.mp3",
-      "channel_id": "4f65db88cb52c4cc6bcc3748",
-      "channel_ids": [
-        "notice-f310e00db70c"
-      ],
-      "cues": [
-        {
-          "end_sec": 10.176,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 연구실 안전교육(신규·집합)을 실시합니다. 신규교육 미이수 학생은 법정교육 완료를 확인하세요."
-        }
-      ],
-      "duration_sec": 10.176,
-      "id": "4f65db88cb52c4cc6bcc3748",
-      "items": [
-        {
-          "channel_id": "notice-f310e00db70c",
-          "dday": null,
-          "detail": "스마트모빌리티공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-mobility-mob1692863999:463",
-          "section": "소식",
-          "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내",
-          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2MyZzdGFydFBhZ2U9MCZsaXN0Tm89NDA5JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f310e00db70c",
-          "deadline": null,
-          "postId": "knu-mobility-mob1692863999:463",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내",
-          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2MyZzdGFydFBhZ2U9MCZsaXN0Tm89NDA5JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026학년도 2학기 연구실 안전교육(신규·집합)을 실시합니다. 신규교육 미이수 학생은 법정교육 완료를 확인하세요.",
-      "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내"
-    },
-    {
-      "audio": "37d2627c3aa7143126e960cd84738cd881a50ce84437b46b39762bbe689717a8.mp3",
-      "channel_id": "ceab4c5f11f7595aee45d5b5",
-      "channel_ids": [
-        "notice-cc19e513d407"
-      ],
-      "cues": [
-        {
-          "end_sec": 6.84,
-          "start_sec": 0,
-          "text": "경북대 공학계열 재학생은 11월 2일까지 참가지원서를 이메일로 제출해야 합니다."
-        }
-      ],
-      "duration_sec": 6.84,
-      "id": "ceab4c5f11f7595aee45d5b5",
-      "items": [
-        {
-          "channel_id": "notice-cc19e513d407",
-          "dday": null,
-          "detail": "스마트생물산업기계공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-bime-bim1622180687:1433",
-          "section": "소식",
-          "title": "「2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램」신청 안내",
-          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MzMmc3RhcnRQYWdlPTAmbGlzdE5vPTU1NCZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-cc19e513d407",
-          "deadline": "2026-11-02",
-          "postId": "knu-bime-bim1622180687:1433",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "「2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램」신청 안내",
-          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MzMmc3RhcnRQYWdlPTAmbGlzdE5vPTU1NCZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "경북대 공학계열 재학생은 11월 2일까지 참가지원서를 이메일로 제출해야 합니다.",
-      "title": "「2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램」신청 안내"
-    },
-    {
-      "audio": "ed65da5f7a56b50dc8ff99fa27c5f966e52563db22edd20012dfc9dc2140e321.mp3",
-      "channel_id": "5e1284bbc61c2c46e4098c72",
-      "channel_ids": [
-        "notice-97fffffebd44"
-      ],
-      "cues": [
-        {
-          "end_sec": 10.056,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 장학사정관 장학금 추천을 위한 신청은 10월 23일까지 학과장이 추천한 학생이 신청해야 합니다."
-        }
-      ],
-      "duration_sec": 10.056,
-      "id": "5e1284bbc61c2c46e4098c72",
-      "items": [
-        {
-          "channel_id": "notice-97fffffebd44",
-          "dday": null,
-          "detail": "아동학부 · 학부 공지사항 · 2026-10-13",
-          "postId": "knu-knuchild-knu1623370362:1426",
-          "section": "마감 임박",
-          "title": "2026학년도 2학기 장학사정관장학금 장학생 추천 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTY2OCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-97fffffebd44",
-          "deadline": "2026-10-23",
-          "postId": "knu-knuchild-knu1623370362:1426",
-          "posted_at": "2026-10-13",
-          "reason": "reminder",
-          "title": "2026학년도 2학기 장학사정관장학금 장학생 추천 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTY2OCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 2학기 장학사정관 장학금 추천을 위한 신청은 10월 23일까지 학과장이 추천한 학생이 신청해야 합니다.",
-      "title": "2026학년도 2학기 장학사정관장학금 장학생 추천 안내"
-    },
-    {
-      "audio": "ad122cc826c905e11455657362a8ffa7b53a53d5a1c287ee56ffee7693802421.mp3",
-      "channel_id": "259b75ee50b642d50b59f022",
-      "channel_ids": [
-        "notice-3834483dc081"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.344,
-          "start_sec": 0,
-          "text": "2027년 2월 졸업예정자들은 10월 30일 18시까지 발표신청서를 지도교수 날인 후 학과사무실에 제출해야 합니다. 최종 논문은 12월 31일까지 파일로 제출해요."
-        }
-      ],
-      "duration_sec": 13.344,
-      "id": "259b75ee50b642d50b59f022",
-      "items": [
-        {
-          "channel_id": "notice-3834483dc081",
-          "dday": null,
-          "detail": "원예과학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-horti-hor1622609861:1682",
-          "section": "소식",
-          "title": "2026학년도 2학기 학부생 졸업논문 발표신청서 제출안내",
-          "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2ODImc3RhcnRQYWdlPTAmbGlzdE5vPTEyODEmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-3834483dc081",
-          "deadline": null,
-          "postId": "knu-horti-hor1622609861:1682",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 학부생 졸업논문 발표신청서 제출안내",
-          "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2ODImc3RhcnRQYWdlPTAmbGlzdE5vPTEyODEmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2027년 2월 졸업예정자들은 10월 30일 18시까지 발표신청서를 지도교수 날인 후 학과사무실에 제출해야 합니다. 최종 논문은 12월 31일까지 파일로 제출해요.",
-      "title": "2026학년도 2학기 학부생 졸업논문 발표신청서 제출안내"
-    },
-    {
-      "audio": "f74e8d4c1bb6c52f66e2c50aca6f827d1c4b8c5dea315e3c132ab72170fd0194.mp3",
-      "channel_id": "380f25824eb6c0d979b0fdd0",
-      "channel_ids": [
-        "notice-ef883ff42361"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.704,
-          "start_sec": 0,
-          "text": "2027학년도 1학기 외국대학 어학집중 프로그램 모집해요. 신청은 3월 31일까지 해요."
-        }
-      ],
-      "duration_sec": 7.704,
-      "id": "380f25824eb6c0d979b0fdd0",
-      "items": [
-        {
-          "channel_id": "notice-ef883ff42361",
-          "dday": null,
-          "detail": "위치정보시스템학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-lbis-lbi1661932979:2131",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzEmc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDMmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ef883ff42361",
-          "deadline": null,
-          "postId": "knu-lbis-lbi1661932979:2131",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzEmc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDMmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 1학기 외국대학 어학집중 프로그램 모집해요. 신청은 3월 31일까지 해요.",
-      "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
-    },
-    {
-      "audio": "98eddbe65f598b5b2dc6eacb0108ef1627e890b924ac1c19a5a56d2dbc4a67df.mp3",
-      "channel_id": "2d8b4d0dc5bff63dd9641a1c",
-      "channel_ids": [
-        "notice-7dfeec322405"
-      ],
-      "cues": [
-        {
-          "end_sec": 11.136,
-          "start_sec": 0,
-          "text": "2026~2027 국제 공동 캡스톤 디자인 캠프 참가 신청 기한은 11월 3일까지입니다. 경북대 공학계열 재학생만 대상입니다."
-        }
-      ],
-      "duration_sec": 11.136,
-      "id": "2d8b4d0dc5bff63dd9641a1c",
-      "items": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "dday": null,
-          "detail": "응용화학공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-knuce-knu1762850029:386",
-          "section": "소식",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTg5JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "deadline": "2026-11-03",
-          "postId": "knu-knuce-knu1762850029:386",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTg5JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026~2027 국제 공동 캡스톤 디자인 캠프 참가 신청 기한은 11월 3일까지입니다. 경북대 공학계열 재학생만 대상입니다.",
-      "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
-    },
-    {
-      "audio": "b817d19e44dfbf8b77f78b9b173f375e2e613590787ff8b38a1521b33515090f.mp3",
-      "channel_id": "9509a4f5b2fa878fda7a5a14",
-      "channel_ids": [
-        "notice-7dfeec322405"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.208,
-          "start_sec": 0,
-          "text": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11/9~11/10)입니다. 빅토리아, 제임스쿡, 세인트라살 대학 참가 가능. 지원서는 11월 9일부터 10일까지 접수됩니다."
-        }
-      ],
-      "duration_sec": 14.208,
-      "id": "9509a4f5b2fa878fda7a5a14",
-      "items": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "dday": null,
-          "detail": "응용화학공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-knuce-knu1762850029:384",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11/9~11/10)",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTg3JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "deadline": null,
-          "postId": "knu-knuce-knu1762850029:384",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11/9~11/10)",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTg3JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11/9~11/10)입니다. 빅토리아, 제임스쿡, 세인트라살 대학 참가 가능. 지원서는 11월 9일부터 10일까지 접수됩니다.",
-      "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내(11/9~11/10)"
-    },
-    {
-      "audio": "b11f05c43f5dba7de506d261223e630fc13c2d49c38beafda6b4358d39b1c072.mp3",
-      "channel_id": "7038928d09332d92a539c0b7",
-      "channel_ids": [
-        "notice-7dfeec322405"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.488,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 4차 학습법 특강은 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE를 통해 사전 신청 후 참석해 주세요."
-        }
-      ],
-      "duration_sec": 13.488,
-      "id": "7038928d09332d92a539c0b7",
-      "items": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "dday": null,
-          "detail": "응용화학공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-knuce-knu1762850029:385",
-          "section": "소식",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTg4JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "deadline": null,
-          "postId": "knu-knuce-knu1762850029:385",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM4NSZzdGFydFBhZ2U9MCZsaXN0Tm89MTg4JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2026학년도 2학기 4차 학습법 특강은 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE를 통해 사전 신청 후 참석해 주세요.",
-      "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-    },
-    {
-      "audio": "c58552f9ddff737922ce91866a2c220a1877c020f3ecde972f084c4566ee6301.mp3",
-      "channel_id": "8ccdf2ea41d1961da25dee3c",
-      "channel_ids": [
-        "notice-ad22d5b4a9e9"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.896,
-          "start_sec": 0,
-          "text": "2027학기 외국대학 어학집중 참가자 모집(11.9~10). 서류접수 후 11.13 결과발표. 본교 등록생 3.0이상 성적 필수. 문의 950-2415."
-        }
-      ],
-      "duration_sec": 13.896,
-      "id": "8ccdf2ea41d1961da25dee3c",
-      "items": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "dday": null,
-          "detail": "의류학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-fashion-fas1623134444:924",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 참가자 모집(11.9~10)",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNCZzdGFydFBhZ2U9MCZsaXN0Tm89ODA4JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "deadline": null,
-          "postId": "knu-fashion-fas1623134444:924",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 참가자 모집(11.9~10)",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNCZzdGFydFBhZ2U9MCZsaXN0Tm89ODA4JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2027학기 외국대학 어학집중 참가자 모집(11.9~10). 서류접수 후 11.13 결과발표. 본교 등록생 3.0이상 성적 필수. 문의 950-2415.",
-      "title": "2027학년도 1학기 외국대학 어학집중 참가자 모집(11.9~10)"
-    },
-    {
-      "audio": "f14fffe801b485d6b85c4e24ac718718738e3d9c627772e165a3fbee8a34e3f7.mp3",
-      "channel_id": "5ec7de32ed7c2e9bb79bc817",
-      "channel_ids": [
-        "notice-ad22d5b4a9e9"
-      ],
-      "cues": [
-        {
-          "end_sec": 6.816,
-          "start_sec": 0,
-          "text": "자기성장 글쓰기 클래스 '나의 모든 순간 [나-노트]'가 진행돼요. 누구나 참여 가능해요."
-        }
-      ],
-      "duration_sec": 6.816,
-      "id": "5ec7de32ed7c2e9bb79bc817",
-      "items": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "dday": null,
-          "detail": "의류학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-fashion-fas1623134444:925",
-          "section": "소식",
-          "title": "원데이클래스 [자기성장 글쓰기] 나의 모든 순간 [나-노트]",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNSZzdGFydFBhZ2U9MCZsaXN0Tm89ODA5JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "deadline": null,
-          "postId": "knu-fashion-fas1623134444:925",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "원데이클래스 [자기성장 글쓰기] 나의 모든 순간 [나-노트]",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNSZzdGFydFBhZ2U9MCZsaXN0Tm89ODA5JnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "자기성장 글쓰기 클래스 '나의 모든 순간 [나-노트]'가 진행돼요. 누구나 참여 가능해요.",
-      "title": "원데이클래스 [자기성장 글쓰기] 나의 모든 순간 [나-노트]"
-    },
-    {
-      "audio": "9f69a02bb7dc1df202ae04596aa118c0d9e8414fa8d1d7eba1baf581e5e50033.mp3",
-      "channel_id": "a33aeabf48b0e3070548b088",
-      "channel_ids": [
-        "notice-ad22d5b4a9e9"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.736,
-          "start_sec": 0,
-          "text": "학생상담센터 그룹 프로그램 참여자 모집해요. 참여를 원하시는 학생은 5월 31일까지 신청해 주세요."
-        }
-      ],
-      "duration_sec": 8.736,
-      "id": "a33aeabf48b0e3070548b088",
-      "items": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "dday": null,
-          "detail": "의류학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-fashion-fas1623134444:926",
-          "section": "소식",
-          "title": "[학생상담센터]그룹 프로그램 참여자 모집",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNiZzdGFydFBhZ2U9MCZsaXN0Tm89ODEwJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "deadline": null,
-          "postId": "knu-fashion-fas1623134444:926",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학생상담센터]그룹 프로그램 참여자 모집",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyNiZzdGFydFBhZ2U9MCZsaXN0Tm89ODEwJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "학생상담센터 그룹 프로그램 참여자 모집해요. 참여를 원하시는 학생은 5월 31일까지 신청해 주세요.",
-      "title": "[학생상담센터]그룹 프로그램 참여자 모집"
-    },
-    {
-      "audio": "f794a89a262d685a51ec39a2e539031c879ddee858956270b277668c03ea218e.mp3",
-      "channel_id": "82a87d2fbd7955cef2babd7c",
-      "channel_ids": [
-        "notice-e1ec1bf0eb87"
-      ],
-      "cues": [
-        {
-          "end_sec": 11.376,
-          "start_sec": 0,
-          "text": "신규출입자들은 KNU LAB 온라인 교육을 반드시 이수해야 합니다. 상시 운영 중이며, 2025.11.1 이후 고위험실 출입 전 이수 필수입니다."
-        }
-      ],
-      "duration_sec": 11.376,
-      "id": "82a87d2fbd7955cef2babd7c",
-      "items": [
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "dday": null,
-          "detail": "의생명융합공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-bcst2-bcs1611061294:842",
-          "section": "소식",
-          "title": "[학사][필수] KNU LAB 신규출입자교육(온라인) 수강 재안내(미이수자 확인 ★)",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg0MiZzdGFydFBhZ2U9MCZsaXN0Tm89NzI3JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "deadline": null,
-          "postId": "knu-bcst2-bcs1611061294:842",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학사][필수] KNU LAB 신규출입자교육(온라인) 수강 재안내(미이수자 확인 ★)",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg0MiZzdGFydFBhZ2U9MCZsaXN0Tm89NzI3JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "script": "신규출입자들은 KNU LAB 온라인 교육을 반드시 이수해야 합니다. 상시 운영 중이며, 2025.11.1 이후 고위험실 출입 전 이수 필수입니다.",
-      "title": "[학사][필수] KNU LAB 신규출입자교육(온라인) 수강 재안내(미이수자 확인 ★)"
-    },
-    {
-      "audio": "bc3631b65d08e0a85d05c1faa6adf4ae965dad7eec76be89d5cda31673b0ad73.mp3",
-      "channel_id": "7f8f91699ee8c113f4a1d2ec",
-      "channel_ids": [
-        "notice-d1802616c625"
-      ],
-      "cues": [
-        {
-          "end_sec": 16.104,
-          "start_sec": 0,
-          "text": "학부 재학생 20~30명이 신청해 주세요. 10월 20일부터 22일까지 포털 설문을 통해 신청하고, 26일부터 28일까지 온라인 테스트를 수행합니다. 결과 제출 후 네이버페이 상품권 5만 원을 지급합니다."
-        }
-      ],
-      "duration_sec": 16.104,
-      "id": "7f8f91699ee8c113f4a1d2ec",
-      "items": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "dday": null,
-          "detail": "자율전공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-udm-udm1623371432:1644",
-          "section": "소식",
-          "title": "[안내](가칭) Agentic AI 기반 학습설계 및 진로성장 지원 플랫폼 학생 사용자 테스트 참여자 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDQmc3RhcnRQYWdlPTAmbGlzdE5vPTkyOCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "deadline": null,
-          "postId": "knu-udm-udm1623371432:1644",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[안내](가칭) Agentic AI 기반 학습설계 및 진로성장 지원 플랫폼 학생 사용자 테스트 참여자 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDQmc3RhcnRQYWdlPTAmbGlzdE5vPTkyOCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "학부 재학생 20~30명이 신청해 주세요. 10월 20일부터 22일까지 포털 설문을 통해 신청하고, 26일부터 28일까지 온라인 테스트를 수행합니다. 결과 제출 후 네이버페이 상품권 5만 원을 지급합니다.",
-      "title": "[안내](가칭) Agentic AI 기반 학습설계 및 진로성장 지원 플랫폼 학생 사용자 테스트 참여자 모집 안내"
-    },
-    {
-      "audio": "a21936024e24f187d0d8fd175e0013adb19cc41c112317549067ba7cb0026634.mp3",
-      "channel_id": "ecabd5765f04aaed8bfd2eb8",
-      "channel_ids": [
-        "notice-d1802616c625"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.064,
-          "start_sec": 0,
-          "text": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집. 학생들이 지역 자원과 창업 아이디어를 연결해 보세요."
-        }
-      ],
-      "duration_sec": 8.064,
-      "id": "ecabd5765f04aaed8bfd2eb8",
-      "items": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "dday": null,
-          "detail": "자율전공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-udm-udm1623371432:1645",
-          "section": "소식",
-          "title": "[안내]「동성로 로컬 창업 아이디어 경진대회」참여학생 모집",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTkyOSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "deadline": null,
-          "postId": "knu-udm-udm1623371432:1645",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[안내]「동성로 로컬 창업 아이디어 경진대회」참여학생 모집",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTkyOSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집. 학생들이 지역 자원과 창업 아이디어를 연결해 보세요.",
-      "title": "[안내]「동성로 로컬 창업 아이디어 경진대회」참여학생 모집"
-    },
-    {
-      "audio": "4e23a83efe217c9a7724944baa560321705fc1621ae5d9cecd426275eb11ded9.mp3",
-      "channel_id": "833ea5853cbb08eb8d5b176c",
-      "channel_ids": [
-        "notice-d1802616c625"
-      ],
-      "cues": [
-        {
-          "end_sec": 16.056,
-          "start_sec": 0,
-          "text": "2027학년도 1학기 외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살대학 75명 내외. 지원서는 11.9~10까지 접수. 합격자 발표는 11.13. 국제처 홈페이지에서 확인."
-        }
-      ],
-      "duration_sec": 16.056,
-      "id": "833ea5853cbb08eb8d5b176c",
-      "items": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "dday": null,
-          "detail": "자율전공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-udm-udm1623371432:1646",
-          "section": "소식",
-          "title": "[안내]2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDYmc3RhcnRQYWdlPTAmbGlzdE5vPTkzMCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "deadline": null,
-          "postId": "knu-udm-udm1623371432:1646",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[안내]2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDYmc3RhcnRQYWdlPTAmbGlzdE5vPTkzMCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2027학년도 1학기 외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살대학 75명 내외. 지원서는 11.9~10까지 접수. 합격자 발표는 11.13. 국제처 홈페이지에서 확인.",
-      "title": "[안내]2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
-    },
-    {
-      "audio": "7c7ad49612c04a49db2f3dfbdbc8d7a4d7ff9b7eafe72ba59104f0b4ac689d6c.mp3",
-      "channel_id": "7926b3f518563a59241b65c9",
-      "channel_ids": [
-        "notice-d1802616c625"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.592,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 4차 Learning Tube는 11월 19일 오후 3시부터 5시까지 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE를 통해 사전 신청 후 참석해 주세요."
-        }
-      ],
-      "duration_sec": 14.592,
-      "id": "7926b3f518563a59241b65c9",
-      "items": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "dday": null,
-          "detail": "자율전공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-udm-udm1623371432:1647",
-          "section": "소식",
-          "title": "[안내]2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDcmc3RhcnRQYWdlPTAmbGlzdE5vPTkzMSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-d1802616c625",
-          "deadline": null,
-          "postId": "knu-udm-udm1623371432:1647",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[안내]2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NDcmc3RhcnRQYWdlPTAmbGlzdE5vPTkzMSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2026학년도 2학기 4차 Learning Tube는 11월 19일 오후 3시부터 5시까지 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE를 통해 사전 신청 후 참석해 주세요.",
-      "title": "[안내]2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-    },
-    {
-      "audio": "8175bab9326c6d5b943cee7f06b60aee5c4a47824443ef4192fc088692bdb919.mp3",
-      "channel_id": "48d45b57a57e7423ced18b8a",
-      "channel_ids": [
-        "notice-1f235111f7dc"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.096,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 장학사정관 장학금 신청은 10월 23일까지 학과사무실로 제출서류를 제출하세요. 가계곤란 학생 대상입니다."
-        }
-      ],
-      "duration_sec": 12.096,
-      "id": "48d45b57a57e7423ced18b8a",
-      "items": [
-        {
-          "channel_id": "notice-1f235111f7dc",
-          "dday": null,
-          "detail": "지질학전공 · 공지사항 · 2026-10-14",
-          "postId": "knu-geology-geo1621814864:1625",
-          "section": "마감 임박",
-          "title": "2026학년도 2학기 장학사정관 장학금 장학생 신청 안내",
-          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjUmc3RhcnRQYWdlPTAmbGlzdE5vPTEzODkmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-1f235111f7dc",
-          "deadline": "2026-10-23",
-          "postId": "knu-geology-geo1621814864:1625",
-          "posted_at": "2026-10-14",
-          "reason": "reminder",
-          "title": "2026학년도 2학기 장학사정관 장학금 장학생 신청 안내",
-          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjUmc3RhcnRQYWdlPTAmbGlzdE5vPTEzODkmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 2학기 장학사정관 장학금 신청은 10월 23일까지 학과사무실로 제출서류를 제출하세요. 가계곤란 학생 대상입니다.",
-      "title": "2026학년도 2학기 장학사정관 장학금 장학생 신청 안내"
-    },
-    {
-      "audio": "0094922525a67b4713e5ba7539a46b646f0e786886b3f1b952e35d0e895f4690.mp3",
-      "channel_id": "6c0007ccda81a2b02fa59031",
-      "channel_ids": [
-        "notice-ccc3a94a1fa5"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.456,
-          "start_sec": 0,
-          "text": "거창군 지역출신 학생은 2학기 등록금 10-100만원 지원받을 수 있습니다. 10월 16일부터 11월 16일까지 주소지 행정복지센터 또는 우편으로 신청하세요."
-        }
-      ],
-      "duration_sec": 12.456,
-      "id": "6c0007ccda81a2b02fa59031",
-      "items": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "dday": null,
-          "detail": "토목공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-civil-civ1614066197:3151",
-          "section": "소식",
-          "title": "2026학년도 2학기 거창군 지역출신 대학생 등록금 지원 사업 안내",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTEmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjYmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "deadline": null,
-          "postId": "knu-civil-civ1614066197:3151",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 거창군 지역출신 대학생 등록금 지원 사업 안내",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTEmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjYmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "거창군 지역출신 학생은 2학기 등록금 10-100만원 지원받을 수 있습니다. 10월 16일부터 11월 16일까지 주소지 행정복지센터 또는 우편으로 신청하세요.",
-      "title": "2026학년도 2학기 거창군 지역출신 대학생 등록금 지원 사업 안내"
-    },
-    {
-      "audio": "25fd7181b86041a331dbf376dbb166f96d43e83e138451193b65fb3940001ff4.mp3",
-      "channel_id": "7c17e67e8ba1a2907bd42cf9",
-      "channel_ids": [
-        "notice-ccc3a94a1fa5"
-      ],
-      "cues": [
-        {
-          "end_sec": 15.84,
-          "start_sec": 0,
-          "text": "2026 대구경북 대학페스타(UNIF 2026)는 10월 30일부터 31일까지 동성로 일대에서 열려요. 대구·경북 14개 대학이 참여해 대항전, 홍보부스, 개막식 퍼포먼스를 진행합니다."
-        }
-      ],
-      "duration_sec": 15.84,
-      "id": "7c17e67e8ba1a2907bd42cf9",
-      "items": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "dday": null,
-          "detail": "토목공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-civil-civ1614066197:3152",
-          "section": "소식",
-          "title": "2026 대구경북 대학페스타(UNIF 2026) 행사 안내",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTImc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "deadline": null,
-          "postId": "knu-civil-civ1614066197:3152",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026 대구경북 대학페스타(UNIF 2026) 행사 안내",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTImc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2026 대구경북 대학페스타(UNIF 2026)는 10월 30일부터 31일까지 동성로 일대에서 열려요. 대구·경북 14개 대학이 참여해 대항전, 홍보부스, 개막식 퍼포먼스를 진행합니다.",
-      "title": "2026 대구경북 대학페스타(UNIF 2026) 행사 안내"
-    },
-    {
-      "audio": "2489950abc9ceb71c9f1f40901ef0fd683a5343e9bd74472c9433ac7bd0a0229.mp3",
-      "channel_id": "744f6840c5f397db45d1a648",
-      "channel_ids": [
-        "notice-ccc3a94a1fa5"
-      ],
-      "cues": [
-        {
-          "end_sec": 16.824,
-          "start_sec": 0,
-          "text": "지역사회공헌센터, 2026 동성로 로컬 창업 아이디어 경진대회 참여자 모집. 경북대 재학생(대학원생 가능) 10월 6일~27일까지 신청 가능. 팀 또는 개인 지원 가능. 30만~50만원 활동비 지급."
-        }
-      ],
-      "duration_sec": 16.824,
-      "id": "744f6840c5f397db45d1a648",
-      "items": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "dday": null,
-          "detail": "토목공학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-civil-civ1614066197:3153",
-          "section": "소식",
-          "title": "(기간연장)[지역사회공헌센터] 2026 동성로 로컬 창업 아이디어 경진대회 참여자 모집",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjgmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ccc3a94a1fa5",
-          "deadline": null,
-          "postId": "knu-civil-civ1614066197:3153",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "(기간연장)[지역사회공헌센터] 2026 동성로 로컬 창업 아이디어 경진대회 참여자 모집",
-          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NjgmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "지역사회공헌센터, 2026 동성로 로컬 창업 아이디어 경진대회 참여자 모집. 경북대 재학생(대학원생 가능) 10월 6일~27일까지 신청 가능. 팀 또는 개인 지원 가능. 30만~50만원 활동비 지급.",
-      "title": "(기간연장)[지역사회공헌센터] 2026 동성로 로컬 창업 아이디어 경진대회 참여자 모집"
-    },
-    {
-      "audio": "9856fa35fcba1e386af65092e5485f706f92fca40f46d48c3590f3ab2ceb20df.mp3",
-      "channel_id": "d6ff000ff295c501060fae02",
-      "channel_ids": [
-        "notice-4a41e1328a3e"
-      ],
-      "cues": [
-        {
-          "end_sec": 14.472,
-          "start_sec": 0,
-          "text": "외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살 대학 75명 내외. 지원서는 11월 9일~10일까지 접수. 합격자 발표는 11월 13일."
-        }
-      ],
-      "duration_sec": 14.472,
-      "id": "d6ff000ff295c501060fae02",
-      "items": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "dday": null,
-          "detail": "행정학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-puad-pua1623029519:4077",
-          "section": "소식",
-          "title": "[학사] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjYmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "deadline": null,
-          "postId": "knu-puad-pua1623029519:4077",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학사] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjYmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "외국대학 어학집중 프로그램 모집. 빅토리아, 제임스쿡, 세인트라살 대학 75명 내외. 지원서는 11월 9일~10일까지 접수. 합격자 발표는 11월 13일.",
-      "title": "[학사] 2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
-    },
-    {
-      "audio": "4ecfc3ded6875178e549cea656c413ba7691be23d64036f6bc2b1fd2587d07e8.mp3",
-      "channel_id": "af10838662c501a484c3ae31",
-      "channel_ids": [
-        "notice-4a41e1328a3e"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.936,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 4차 Learning Tube는 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 주최합니다. KNUCUBE에서 사전 신청 후 참석하세요."
-        }
-      ],
-      "duration_sec": 12.936,
-      "id": "af10838662c501a484c3ae31",
-      "items": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "dday": null,
-          "detail": "행정학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-puad-pua1623029519:4078",
-          "section": "소식",
-          "title": "[학사] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjcmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "deadline": null,
-          "postId": "knu-puad-pua1623029519:4078",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "[학사] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjcmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 2학기 4차 Learning Tube는 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 주최합니다. KNUCUBE에서 사전 신청 후 참석하세요.",
-      "title": "[학사] 2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-    },
-    {
-      "audio": "250463ee0eb7ddb73d121a9f7215b87b4329c62c950a49582dc98cdf7fa78a6d.mp3",
-      "channel_id": "eac03241cc9f309f2ebd6986",
-      "channel_ids": [
-        "notice-ac0144f93d45"
-      ],
-      "cues": [
-        {
-          "end_sec": 5.04,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 4차 Learning Tube 특강 운영 안내를 확인하세요."
-        }
-      ],
-      "duration_sec": 5.04,
-      "id": "eac03241cc9f309f2ebd6986",
-      "items": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "dday": null,
-          "detail": "화학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-chem-che1622521080:7124",
-          "section": "소식",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjQmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTcmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "deadline": null,
-          "postId": "knu-chem-che1622521080:7124",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjQmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTcmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 2학기 4차 Learning Tube 특강 운영 안내를 확인하세요.",
-      "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-    },
-    {
-      "audio": "f74e8d4c1bb6c52f66e2c50aca6f827d1c4b8c5dea315e3c132ab72170fd0194.mp3",
-      "channel_id": "2e2a260b290df3e7b2f51ff6",
-      "channel_ids": [
-        "notice-ac0144f93d45"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.704,
-          "start_sec": 0,
-          "text": "2027학년도 1학기 외국대학 어학집중 프로그램 모집해요. 신청은 3월 31일까지 해요."
-        }
-      ],
-      "duration_sec": 7.704,
-      "id": "2e2a260b290df3e7b2f51ff6",
-      "items": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "dday": null,
-          "detail": "화학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-chem-che1622521080:7125",
-          "section": "소식",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjUmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTgmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "deadline": null,
-          "postId": "knu-chem-che1622521080:7125",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjUmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTgmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 1학기 외국대학 어학집중 프로그램 모집해요. 신청은 3월 31일까지 해요.",
-      "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
-    },
-    {
-      "audio": "718114b6a875170bcd19973cc686cd74ca3e9e7388b5fad58d56bdff0da0bf69.mp3",
-      "channel_id": "05305d6ff973097282832d81",
-      "channel_ids": [
-        "notice-ac0144f93d45"
-      ],
-      "cues": [
-        {
-          "end_sec": 9.456,
-          "start_sec": 0,
-          "text": "2026학년도 하반기 KNU 글로벌 세미나(11월) 안내입니다. 참가자 명단은 11월 5일까지 제출해 주세요."
-        }
-      ],
-      "duration_sec": 9.456,
-      "id": "05305d6ff973097282832d81",
-      "items": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "dday": null,
-          "detail": "화학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-chem-che1622521080:7126",
-          "section": "소식",
-          "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjYmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTkmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ac0144f93d45",
-          "deadline": null,
-          "postId": "knu-chem-che1622521080:7126",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjYmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MTkmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2026학년도 하반기 KNU 글로벌 세미나(11월) 안내입니다. 참가자 명단은 11월 5일까지 제출해 주세요.",
-      "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내"
-    },
-    {
-      "audio": "8a39fc4ca1701d527ee18ab13ec2b142668405359d049021aa98d3039341973b.mp3",
-      "channel_id": "6a58dff4f8ef605aea84cd14",
-      "channel_ids": [
-        "notice-ac0144f93d45"
+        "notice-b5015ce1e74b"
       ],
       "cues": [
         {
           "end_sec": 17.88,
           "start_sec": 0,
-          "text": "2026학년도 2학기 연구실 안전교육(신규·집합)은 10월 27일, 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 신규교육 미이수자 및 2시간 인정 대상자는 KNUPIA 어플에서 QR스캔으로 출석해 주세요."
+          "text": "2026학년도 불어불문학과 해외어학연수 최종 선발자 공고. 리옹 카톨릭대 ILCF에서 2월 2일부터 19일까지 3주간 프랑스어학연수 참가자 명단은 접수번호 01, 03, 05, 06, 09, 10, 12, 14, 15, 16번입니다."
         }
       ],
       "duration_sec": 17.88,
-      "id": "6a58dff4f8ef605aea84cd14",
+      "id": "fa5c86629be9cc80aab2d8b7",
       "items": [
         {
-          "channel_id": "notice-ac0144f93d45",
+          "channel_id": "notice-b5015ce1e74b",
           "dday": null,
-          "detail": "화학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-chem-che1622521080:7127",
+          "detail": "불어불문학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-french-fre1623147753:1874",
           "section": "소식",
-          "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjAmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "2026학년도 불어불문학과 글로벌지역학 해외어학연수 프로그램 참가 최종 선발자 공고",
+          "url": "https://home.knu.ac.kr/HOME/french/sub.htm?mode=view&mv_data=aWR4PTE4NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMTEmdGFibGU9ZXhfYmJzX2RhdGFfZnJlbmNoJm5hdl9jb2RlPWZyZTE2MjMxNDc3NTMmY29kZT1KR09xSWFVbjlrZ2smc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-ac0144f93d45",
+          "channel_id": "notice-b5015ce1e74b",
           "deadline": null,
-          "postId": "knu-chem-che1622521080:7127",
-          "posted_at": "2026-10-22",
+          "postId": "knu-french-fre1623147753:1874",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMjcmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjAmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "2026학년도 불어불문학과 글로벌지역학 해외어학연수 프로그램 참가 최종 선발자 공고",
+          "url": "https://home.knu.ac.kr/HOME/french/sub.htm?mode=view&mv_data=aWR4PTE4NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMTEmdGFibGU9ZXhfYmJzX2RhdGFfZnJlbmNoJm5hdl9jb2RlPWZyZTE2MjMxNDc3NTMmY29kZT1KR09xSWFVbjlrZ2smc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026학년도 2학기 연구실 안전교육(신규·집합)은 10월 27일, 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 신규교육 미이수자 및 2시간 인정 대상자는 KNUPIA 어플에서 QR스캔으로 출석해 주세요.",
-      "title": "2026학년도 2학기 연구실 안전교육(신규·집합) 실시 안내"
+      "script": "2026학년도 불어불문학과 해외어학연수 최종 선발자 공고. 리옹 카톨릭대 ILCF에서 2월 2일부터 19일까지 3주간 프랑스어학연수 참가자 명단은 접수번호 01, 03, 05, 06, 09, 10, 12, 14, 15, 16번입니다.",
+      "title": "2026학년도 불어불문학과 글로벌지역학 해외어학연수 프로그램 참가 최종 선발자 공고"
     },
     {
-      "audio": "d1d36aae08f8bbf39a863c37bc93f692c964516b1cde76f40d9b44b90d904364.mp3",
-      "channel_id": "686b5527cfd7ba798f513f57",
+      "audio": "81e1b60f7b19e8d5fe136d938cabc3df98654307dd1c5fe0dbf5701fba4005f1.mp3",
+      "channel_id": "176338ef699aa2e834a24788",
       "channel_ids": [
-        "notice-df44dd8507c1"
+        "notice-1268b7a10e0b"
       ],
       "cues": [
         {
-          "end_sec": 6.168,
+          "end_sec": 7.224,
           "start_sec": 0,
-          "text": "경북대 공학계열 재학생은 11월 3일까지 참가지원서를 이메일로 제출해야 합니다."
+          "text": "2027학년도 학생리포터 모집해요. 관심 있는 학생은 3월 31일까지 신청해 주세요."
         }
       ],
-      "duration_sec": 6.168,
-      "id": "686b5527cfd7ba798f513f57",
+      "duration_sec": 7.224,
+      "id": "176338ef699aa2e834a24788",
       "items": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1268b7a10e0b",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-see-notice:105732",
+          "detail": "사회학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-socio-soc1622181477:3974",
           "section": "소식",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105732&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 학생리포터 모집 공지",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NzQmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-df44dd8507c1",
-          "deadline": "2026-11-03",
-          "postId": "knu-see-notice:105732",
-          "posted_at": "2026-10-22",
+          "channel_id": "notice-1268b7a10e0b",
+          "deadline": null,
+          "postId": "knu-socio-soc1622181477:3974",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105732&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 학생리포터 모집 공지",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NzQmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "경북대 공학계열 재학생은 11월 3일까지 참가지원서를 이메일로 제출해야 합니다.",
+      "script": "2027학년도 학생리포터 모집해요. 관심 있는 학생은 3월 31일까지 신청해 주세요.",
+      "title": "2027학년도 학생리포터 모집 공지"
+    },
+    {
+      "audio": "8ee5509d95627724fad499d29db3dbcd7634500104e5a74a5bfba9cb3d86a6bb.mp3",
+      "channel_id": "4abcadc068060846732cc361",
+      "channel_ids": [
+        "notice-1268b7a10e0b"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.632,
+          "start_sec": 0,
+          "text": "2027학년 29기 학생홍보대사 모집해요. 서류 접수는 11월 2일부터 6일까지, 대강당 3층 홍보대사실에서 진행합니다."
+        }
+      ],
+      "duration_sec": 10.632,
+      "id": "4abcadc068060846732cc361",
+      "items": [
+        {
+          "channel_id": "notice-1268b7a10e0b",
+          "dday": null,
+          "detail": "사회학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-socio-soc1622181477:3976",
+          "section": "소식",
+          "title": "2027학년 29기 학생홍보대사 모집 공고",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NzUmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-1268b7a10e0b",
+          "deadline": null,
+          "postId": "knu-socio-soc1622181477:3976",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027학년 29기 학생홍보대사 모집 공고",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTM5NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTE3NzUmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "2027학년 29기 학생홍보대사 모집해요. 서류 접수는 11월 2일부터 6일까지, 대강당 3층 홍보대사실에서 진행합니다.",
+      "title": "2027학년 29기 학생홍보대사 모집 공고"
+    },
+    {
+      "audio": "e5d288ec1c20de976e83a20b56ae349c1842a6b6863a3ce1752ff0406aacc1de.mp3",
+      "channel_id": "3133756e6f58fa767d8d8b3e",
+      "channel_ids": [
+        "notice-ef883ff42361"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.096,
+          "start_sec": 0,
+          "text": "2027학년도 학생리포터 모집. 관심 있는 학생은 학생회 홈페이지에서 지원서 작성 후 5월 31일까지 제출하세요."
+        }
+      ],
+      "duration_sec": 9.096,
+      "id": "3133756e6f58fa767d8d8b3e",
+      "items": [
+        {
+          "channel_id": "notice-ef883ff42361",
+          "dday": null,
+          "detail": "위치정보시스템학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-lbis-lbi1661932979:2132",
+          "section": "소식",
+          "title": "2027학년도 학생리포터 모집 공지",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDQmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ef883ff42361",
+          "deadline": null,
+          "postId": "knu-lbis-lbi1661932979:2132",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027학년도 학생리포터 모집 공지",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDQmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2027학년도 학생리포터 모집. 관심 있는 학생은 학생회 홈페이지에서 지원서 작성 후 5월 31일까지 제출하세요.",
+      "title": "2027학년도 학생리포터 모집 공지"
+    },
+    {
+      "audio": "bd4509244b0a0fba5ad511177079b8c3a890a80cc95f3a54c54f6ed273b7fa3f.mp3",
+      "channel_id": "6e3157bb09ac8c20a151ce28",
+      "channel_ids": [
+        "notice-ef883ff42361"
+      ],
+      "cues": [
+        {
+          "end_sec": 15.0,
+          "start_sec": 0,
+          "text": "기본훈련 3차는 11월 17일, 동원훈련 3차는 23일부터 26일. 버스 탑승은 08시 15분, 학교 앞 버스터미널. 훈련비 및 연락처는 예비군홈페이지에서 최신화해 주세요."
+        }
+      ],
+      "duration_sec": 15.0,
+      "id": "6e3157bb09ac8c20a151ce28",
+      "items": [
+        {
+          "channel_id": "notice-ef883ff42361",
+          "dday": null,
+          "detail": "위치정보시스템학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-lbis-lbi1661932979:2133",
+          "section": "소식",
+          "title": "[상주캠퍼스] 2026년 학생예비군 연말보충훈련 일정 공지",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzMmc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDUmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ef883ff42361",
+          "deadline": null,
+          "postId": "knu-lbis-lbi1661932979:2133",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "[상주캠퍼스] 2026년 학생예비군 연말보충훈련 일정 공지",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxMzMmc3RhcnRQYWdlPTAmbGlzdE5vPTE3MDUmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "기본훈련 3차는 11월 17일, 동원훈련 3차는 23일부터 26일. 버스 탑승은 08시 15분, 학교 앞 버스터미널. 훈련비 및 연락처는 예비군홈페이지에서 최신화해 주세요.",
+      "title": "[상주캠퍼스] 2026년 학생예비군 연말보충훈련 일정 공지"
+    },
+    {
+      "audio": "45080baf8d19e9bf0f9345007fd958a511d85417d39672541c5b733e2531ae5f.mp3",
+      "channel_id": "017014b40fd8a3acc2801480",
+      "channel_ids": [
+        "notice-55ac86f2e763",
+        "notice-392eeaadf103"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.176,
+          "start_sec": 0,
+          "text": "기초과학 학부생은 2026학년도 학술발표대회 발표자료를 5월 31일까지 제출하세요."
+        }
+      ],
+      "duration_sec": 7.176,
+      "id": "017014b40fd8a3acc2801480",
+      "items": [
+        {
+          "channel_id": "notice-55ac86f2e763",
+          "dday": null,
+          "detail": "자연과학대학 · 공지사항 · 2026-10-23",
+          "postId": "knu-cns-cns1623199799:268",
+          "section": "소식",
+          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89OTAmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "channel_id": "notice-392eeaadf103",
+          "dday": null,
+          "detail": "지구시스템과학부 · 공지사항 · 2026-10-23",
+          "postId": "knu-cns-cns1623199799:268",
+          "section": "소식",
+          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89OTAmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-55ac86f2e763",
+          "deadline": null,
+          "postId": "knu-cns-cns1623199799:268",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89OTAmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "channel_id": "notice-392eeaadf103",
+          "deadline": null,
+          "postId": "knu-cns-cns1623199799:268",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?mode=view&mv_data=aWR4PTI2OCZzdGFydFBhZ2U9MCZsaXN0Tm89OTAmdGFibGU9ZXhfYmJzX2RhdGFfY25zJm5hdl9jb2RlPWNuczE2MjMxOTk3OTkmY29kZT00dXR3Y1o3WEhFREImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "기초과학 학부생은 2026학년도 학술발표대회 발표자료를 5월 31일까지 제출하세요.",
+      "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내"
+    },
+    {
+      "audio": "d58b2169c21410093a7f5b087b97b0036250d8e5a042c52023e8c3e4c4bbd144.mp3",
+      "channel_id": "c8644bf634f9529344037edc",
+      "channel_ids": [
+        "notice-1cbb3d90d081"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.504,
+          "start_sec": 0,
+          "text": "경북대 공학계열 재학생은 11월 3일까지 온라인 신청서를 이메일로 제출해 주세요."
+        }
+      ],
+      "duration_sec": 6.504,
+      "id": "c8644bf634f9529344037edc",
+      "items": [
+        {
+          "channel_id": "notice-1cbb3d90d081",
+          "dday": null,
+          "detail": "전기공학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-electric-ele1622787198:7468",
+          "section": "소식",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0Njgmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjgmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-1cbb3d90d081",
+          "deadline": "2026-11-03",
+          "postId": "knu-electric-ele1622787198:7468",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0Njgmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjgmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "경북대 공학계열 재학생은 11월 3일까지 온라인 신청서를 이메일로 제출해 주세요.",
       "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
     },
     {
-      "audio": "3340d433ef29ce3b4e54ca5db85f17124835c5d32800d7739d00818140bd9e8f.mp3",
-      "channel_id": "a7d88a8d6eb8b82ba457a01e",
+      "audio": "cd073bc0fbcb84578a9f1c0699ea93d94c69f510531a5b462f6b7f58c90a5514.mp3",
+      "channel_id": "39469857b79c948554b25ef7",
       "channel_ids": [
-        "notice-df44dd8507c1"
+        "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 13.152,
+          "end_sec": 11.352,
           "start_sec": 0,
-          "text": "반도체특성화 트랙 Ⅰ·Ⅱ 4기 3차 선발 결과를 붙임 파일 참조로 안내해요. 트랙 Ⅰ 4명, 트랙 Ⅱ 16명, 합계 20명입니다. 선발 명단은 공지일로부터 2주 후 삭제됩니다."
+          "text": "2027년 1월 13일부터 인도네시아에서 봉사활동을 하며, 10월 30일까지 신청 가능해요. 네이버폼에서 신청 후 계약금 납부 후 완료됩니다."
         }
       ],
-      "duration_sec": 13.152,
-      "id": "a7d88a8d6eb8b82ba457a01e",
+      "duration_sec": 11.352,
+      "id": "39469857b79c948554b25ef7",
       "items": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1cbb3d90d081",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-see-notice:105730",
+          "detail": "전기공학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-electric-ele1622787198:7469",
           "section": "소식",
-          "title": "[반도체특성화대학사업단] 2026학년도 2학기 반도체특성화 트랙 Ⅰ·Ⅱ (4기 3차) 선발 결과 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105730&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기모집(인도네시아)",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0Njkmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjkmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1cbb3d90d081",
           "deadline": null,
-          "postId": "knu-see-notice:105730",
-          "posted_at": "2026-10-22",
+          "postId": "knu-electric-ele1622787198:7469",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "[반도체특성화대학사업단] 2026학년도 2학기 반도체특성화 트랙 Ⅰ·Ⅱ (4기 3차) 선발 결과 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105730&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기모집(인도네시아)",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0Njkmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjkmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "반도체특성화 트랙 Ⅰ·Ⅱ 4기 3차 선발 결과를 붙임 파일 참조로 안내해요. 트랙 Ⅰ 4명, 트랙 Ⅱ 16명, 합계 20명입니다. 선발 명단은 공지일로부터 2주 후 삭제됩니다.",
-      "title": "[반도체특성화대학사업단] 2026학년도 2학기 반도체특성화 트랙 Ⅰ·Ⅱ (4기 3차) 선발 결과 안내"
+      "script": "2027년 1월 13일부터 인도네시아에서 봉사활동을 하며, 10월 30일까지 신청 가능해요. 네이버폼에서 신청 후 계약금 납부 후 완료됩니다.",
+      "title": "2027 시립문래청소년센터 동계 해외봉사단 6기모집(인도네시아)"
     },
     {
-      "audio": "6a045ff444865797667f79c62c2c8ac957bfb3d59090db9523ef7ec541a3312e.mp3",
-      "channel_id": "aa5dbb50185c80254ab7dc70",
+      "audio": "349780efdeec3e60177dfc131961fe3ae0c2d4ab40fbd7871d475573d6df3680.mp3",
+      "channel_id": "afcdff3062ae17cb4a16f9d9",
       "channel_ids": [
-        "notice-df44dd8507c1"
+        "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 8.16,
+          "end_sec": 12.912,
           "start_sec": 0,
-          "text": "2026학년도 2학기 4차 Learning Tube 특강은 교수학습센터가 주관하며, 학습법에 대한 특강을 운영해요."
+          "text": "외국대학 어학 프로그램 모집, 11월 9일부터 10일까지 지원서 접수. 합격자 발표는 11월 13일. 외국대학 참가자격을 가진 학부생만 참가 가능해요."
         }
       ],
-      "duration_sec": 8.16,
-      "id": "aa5dbb50185c80254ab7dc70",
+      "duration_sec": 12.912,
+      "id": "afcdff3062ae17cb4a16f9d9",
       "items": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1cbb3d90d081",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-see-notice:105731",
+          "detail": "전기공학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-electric-ele1622787198:7470",
           "section": "소식",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내(본교 교수학습센터 주관)",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105731&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NzAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzAmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1cbb3d90d081",
           "deadline": null,
-          "postId": "knu-see-notice:105731",
-          "posted_at": "2026-10-22",
+          "postId": "knu-electric-ele1622787198:7470",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내(본교 교수학습센터 주관)",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105731&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NzAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzAmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 2학기 4차 Learning Tube 특강은 교수학습센터가 주관하며, 학습법에 대한 특강을 운영해요.",
-      "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내(본교 교수학습센터 주관)"
+      "script": "외국대학 어학 프로그램 모집, 11월 9일부터 10일까지 지원서 접수. 합격자 발표는 11월 13일. 외국대학 참가자격을 가진 학부생만 참가 가능해요.",
+      "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
     },
     {
-      "audio": "56d4d97051c31770b669398c169976c132fad7384e8194868e12662b559a8386.mp3",
-      "channel_id": "fcaa4334089895c8380a2e0b",
+      "audio": "ecd6a018eb3e62122eb5227895454f4a3c463ccece4f94c4414dea7708e7304f.mp3",
+      "channel_id": "5885c8fc675f2b816359e32d",
       "channel_ids": [
-        "notice-df44dd8507c1"
+        "notice-1f235111f7dc"
       ],
       "cues": [
         {
-          "end_sec": 14.736,
+          "end_sec": 9.912,
           "start_sec": 0,
-          "text": "AI부트캠프사업단, 2026 겨울방학 동계수업 및 SJSU 해외연수 참가자 모집. 중급·고급 AI 과목 수강 가능. 11.6까지 신청. 11.12까지 서류 제출."
+          "text": "2027학년도 장학생 추천자 선발 기한은 10월 29일까지입니다. 지원서와 성적증명서를 첨성인 미래관 3층에 제출해 주세요."
         }
       ],
-      "duration_sec": 14.736,
-      "id": "fcaa4334089895c8380a2e0b",
+      "duration_sec": 9.912,
+      "id": "5885c8fc675f2b816359e32d",
       "items": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1f235111f7dc",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-see-notice:105733",
+          "detail": "지질학전공 · 공지사항 · 2026-10-23",
+          "postId": "knu-geology-geo1621814864:1626",
           "section": "소식",
-          "title": "[AI부트캠프사업단] 동계 몰입형 교육 및 실리콘밸리(SJSU) 해외연수 참가자 모집",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105733&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTAmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-df44dd8507c1",
-          "deadline": null,
-          "postId": "knu-see-notice:105733",
-          "posted_at": "2026-10-22",
+          "channel_id": "notice-1f235111f7dc",
+          "deadline": "2026-10-29",
+          "postId": "knu-geology-geo1621814864:1626",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "[AI부트캠프사업단] 동계 몰입형 교육 및 실리콘밸리(SJSU) 해외연수 참가자 모집",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105733&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTAmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "AI부트캠프사업단, 2026 겨울방학 동계수업 및 SJSU 해외연수 참가자 모집. 중급·고급 AI 과목 수강 가능. 11.6까지 신청. 11.12까지 서류 제출.",
-      "title": "[AI부트캠프사업단] 동계 몰입형 교육 및 실리콘밸리(SJSU) 해외연수 참가자 모집"
+      "script": "2027학년도 장학생 추천자 선발 기한은 10월 29일까지입니다. 지원서와 성적증명서를 첨성인 미래관 3층에 제출해 주세요.",
+      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
     },
     {
-      "audio": "de6bf91969981ffde5b28856b289e41b48f054684eb4f469f8ba5302abc8e0de.mp3",
-      "channel_id": "6b815c46ac903bbfafe77eb9",
+      "audio": "80fe092c656e3862e959c16edd6247decb1dfd7169a7298d6ca375d99468dcfc.mp3",
+      "channel_id": "9dce633356db39418354e270",
       "channel_ids": [
-        "notice-df44dd8507c1"
+        "notice-1f235111f7dc"
       ],
       "cues": [
         {
-          "end_sec": 14.472,
+          "end_sec": 9.816,
           "start_sec": 0,
-          "text": "2026학기 연구실 안전교육(신규 집합)은 10월 27일과 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 아직 이수하지 않은 분은 해당 기간 내 참석해 주세요."
+          "text": "2026학년도 'KNU in the World' 모집 기간은 11월 3일까지입니다. 경북대 재학생 및 영어수강 가능자만 지원 가능해요."
         }
       ],
-      "duration_sec": 14.472,
-      "id": "6b815c46ac903bbfafe77eb9",
+      "duration_sec": 9.816,
+      "id": "9dce633356db39418354e270",
       "items": [
         {
-          "channel_id": "notice-df44dd8507c1",
+          "channel_id": "notice-1f235111f7dc",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-see-notice:105734",
+          "detail": "지질학전공 · 공지사항 · 2026-10-23",
+          "postId": "knu-geology-geo1621814864:1627",
           "section": "소식",
-          "title": "[긴급공지 안전교육] 안전관리총괄본부 주관 2026학년도 2학기 연구실 안전교육(신규 집합) 실시 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105734&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2026학년도 글로벌 PBL「KNU in the World」안내",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2Mjcmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTEmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-df44dd8507c1",
-          "deadline": null,
-          "postId": "knu-see-notice:105734",
-          "posted_at": "2026-10-22",
+          "channel_id": "notice-1f235111f7dc",
+          "deadline": "2026-11-03",
+          "postId": "knu-geology-geo1621814864:1627",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "[긴급공지 안전교육] 안전관리총괄본부 주관 2026학년도 2학기 연구실 안전교육(신규 집합) 실시 안내",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105734&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "2026학년도 글로벌 PBL「KNU in the World」안내",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2Mjcmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTEmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학기 연구실 안전교육(신규 집합)은 10월 27일과 28일, 30일 오전·오후에 공동실험실습관 101호에서 실시돼요. 아직 이수하지 않은 분은 해당 기간 내 참석해 주세요.",
-      "title": "[긴급공지 안전교육] 안전관리총괄본부 주관 2026학년도 2학기 연구실 안전교육(신규 집합) 실시 안내"
+      "script": "2026학년도 'KNU in the World' 모집 기간은 11월 3일까지입니다. 경북대 재학생 및 영어수강 가능자만 지원 가능해요.",
+      "title": "2026학년도 글로벌 PBL「KNU in the World」안내"
     },
     {
-      "audio": "19766da258591fc8cbbbfd09b975e222b24a01b30a662f1aa54a448589746308.mp3",
-      "channel_id": "e77e1cbec398497de9dd79d9",
+      "audio": "4e0baea4d9d28dc2e5c8005bb02e362460e936f8fd34dc86b5a0c426303b398c.mp3",
+      "channel_id": "436b66b0438e1c3951cbe29d",
       "channel_ids": [
-        "notice-b34ee1a00417",
-        "notice-fefffa32e24c"
+        "notice-ccc3a94a1fa5"
       ],
       "cues": [
         {
-          "end_sec": 9.408,
+          "end_sec": 12.408,
           "start_sec": 0,
-          "text": "경북대 컴퓨터학부는 2027학기 외국인 전임교원 채용을 진행합니다. 공고는 hibrain.net에서 확인하세요."
+          "text": "2027학년도 해동과학문화재단 장학생 지원서는 10월 27일 오후 3시까지 제출하세요. 자격과 서류는 참고하시고, 문의는 오전 8시~오후 5시까지 가능해요."
         }
       ],
-      "duration_sec": 9.408,
-      "id": "e77e1cbec398497de9dd79d9",
+      "duration_sec": 12.408,
+      "id": "436b66b0438e1c3951cbe29d",
       "items": [
         {
-          "channel_id": "notice-b34ee1a00417",
+          "channel_id": "notice-ccc3a94a1fa5",
           "dday": null,
-          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29479",
-          "section": "소식",
-          "title": "2027학년도 1학기 컴퓨터학부 외국인 전임교원 공개 채용 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29479"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "dday": null,
-          "detail": "컴퓨터학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29479",
-          "section": "소식",
-          "title": "2027학년도 1학기 컴퓨터학부 외국인 전임교원 공개 채용 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29479"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-b34ee1a00417",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29479",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 컴퓨터학부 외국인 전임교원 공개 채용 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29479"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29479",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2027학년도 1학기 컴퓨터학부 외국인 전임교원 공개 채용 모집 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29479"
-        }
-      ],
-      "script": "경북대 컴퓨터학부는 2027학기 외국인 전임교원 채용을 진행합니다. 공고는 hibrain.net에서 확인하세요.",
-      "title": "2027학년도 1학기 컴퓨터학부 외국인 전임교원 공개 채용 모집 안내"
-    },
-    {
-      "audio": "2729e4f24b1d88fe61e716db95dbffbd5c9363aad5a843493b8dd3251968f8b7.mp3",
-      "channel_id": "8efd3713f8f631a75079841e",
-      "channel_ids": [
-        "notice-b34ee1a00417",
-        "notice-fefffa32e24c"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.576,
-          "start_sec": 0,
-          "text": "2026년 대구울산경북 대학 X Upstage 해커톤, 추가 3팀 선착순 모집(10월 28일까지), 구글폼으로 신청. 최종제출기한은 11월 11일까지입니다."
-        }
-      ],
-      "duration_sec": 12.576,
-      "id": "8efd3713f8f631a75079841e",
-      "items": [
-        {
-          "channel_id": "notice-b34ee1a00417",
-          "dday": null,
-          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29480",
-          "section": "소식",
-          "title": "2026년 대구울산경북 대학 X Upstage 해커톤 프로그램 변경 내용 안내 및 참가자(팀) 추모집",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29480"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "dday": null,
-          "detail": "컴퓨터학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29480",
-          "section": "소식",
-          "title": "2026년 대구울산경북 대학 X Upstage 해커톤 프로그램 변경 내용 안내 및 참가자(팀) 추모집",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29480"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-b34ee1a00417",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29480",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026년 대구울산경북 대학 X Upstage 해커톤 프로그램 변경 내용 안내 및 참가자(팀) 추모집",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29480"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29480",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026년 대구울산경북 대학 X Upstage 해커톤 프로그램 변경 내용 안내 및 참가자(팀) 추모집",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29480"
-        }
-      ],
-      "script": "2026년 대구울산경북 대학 X Upstage 해커톤, 추가 3팀 선착순 모집(10월 28일까지), 구글폼으로 신청. 최종제출기한은 11월 11일까지입니다.",
-      "title": "2026년 대구울산경북 대학 X Upstage 해커톤 프로그램 변경 내용 안내 및 참가자(팀) 추모집"
-    },
-    {
-      "audio": "1ac2b5079140b7c0ac281fe01024cac7b4e3bbc64c9f0ebc259af63b345bc48e.mp3",
-      "channel_id": "30e3dd07d0bd4c772a7b8819",
-      "channel_ids": [
-        "notice-b34ee1a00417",
-        "notice-fefffa32e24c"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.16,
-          "start_sec": 0,
-          "text": "안전교육 미이수자 확인 및 이수 안내: 11월 30일 전까지 온라인 이수 또는 대면 교육 참석 부탁드립니다."
-        }
-      ],
-      "duration_sec": 8.16,
-      "id": "30e3dd07d0bd4c772a7b8819",
-      "items": [
-        {
-          "channel_id": "notice-b34ee1a00417",
-          "dday": null,
-          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29481",
-          "section": "소식",
-          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.10.22. 기준)",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29481"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "dday": null,
-          "detail": "컴퓨터학부 · 공지사항 · 2026-10-22",
-          "postId": "knu-computer-sub6_1_a:29481",
-          "section": "소식",
-          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.10.22. 기준)",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29481"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-b34ee1a00417",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29481",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.10.22. 기준)",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29481"
-        },
-        {
-          "channel_id": "notice-fefffa32e24c",
-          "deadline": null,
-          "postId": "knu-computer-sub6_1_a:29481",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.10.22. 기준)",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29481"
-        }
-      ],
-      "script": "안전교육 미이수자 확인 및 이수 안내: 11월 30일 전까지 온라인 이수 또는 대면 교육 참석 부탁드립니다.",
-      "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.10.22. 기준)"
-    },
-    {
-      "audio": "03ec30385d404e6a38de76c6a05c3d93d2ccc105066df34d478a03777b074b7b.mp3",
-      "channel_id": "5c70458b57a5a197be7782b6",
-      "channel_ids": [
-        "notice-6b04da14aae1"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.992,
-          "start_sec": 0,
-          "text": "중어중문학과는 2026학년도 동계방학 상해사범대학 어학연수를 10월 23일까지 신청받습니다. 선발은 12명, 연수는 2027년 1월 3일부터 23일까지입니다."
-        }
-      ],
-      "duration_sec": 13.992,
-      "id": "5c70458b57a5a197be7782b6",
-      "items": [
-        {
-          "channel_id": "notice-6b04da14aae1",
-          "dday": null,
-          "detail": "중어중문학과 · 공지사항 · 2026-10-16",
-          "postId": "knu-chinese-notice:13669",
+          "detail": "토목공학과 · 공지사항 · 2026-10-06",
+          "postId": "knu-civil-civ1614066197:3117",
           "section": "마감 임박",
-          "title": "2026학년도 중어중문학과 동계방학 중국 상해사범대학 어학연수 신청 안내",
-          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13669&page=2"
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxMTcmc3RhcnRQYWdlPTIwJmxpc3RObz0yNTQwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-6b04da14aae1",
-          "deadline": "2026-10-23",
-          "postId": "knu-chinese-notice:13669",
-          "posted_at": "2026-10-16",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "deadline": "2026-10-27",
+          "postId": "knu-civil-civ1614066197:3117",
+          "posted_at": "2026-10-06",
           "reason": "reminder",
-          "title": "2026학년도 중어중문학과 동계방학 중국 상해사범대학 어학연수 신청 안내",
-          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13669&page=2"
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxMTcmc3RhcnRQYWdlPTIwJmxpc3RObz0yNTQwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "중어중문학과는 2026학년도 동계방학 상해사범대학 어학연수를 10월 23일까지 신청받습니다. 선발은 12명, 연수는 2027년 1월 3일부터 23일까지입니다.",
-      "title": "2026학년도 중어중문학과 동계방학 중국 상해사범대학 어학연수 신청 안내"
+      "script": "2027학년도 해동과학문화재단 장학생 지원서는 10월 27일 오후 3시까지 제출하세요. 자격과 서류는 참고하시고, 문의는 오전 8시~오후 5시까지 가능해요.",
+      "title": "2027학년도 해동과학문화재단 장학생 모집 안내"
     },
     {
-      "audio": "b8f9e3836d7aec8366266133f7394f23764d569ef2a98b3f2665487731d80cf5.mp3",
-      "channel_id": "99da84940c2ed1ef13f49023",
+      "audio": "9c2f039c2971a26a826057d746aadfe621ea675422f37ca18b89cf00401dc5be.mp3",
+      "channel_id": "65e03a94cd41cb90fcfab376",
       "channel_ids": [
-        "notice-a363da417a07"
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.144,
+          "start_sec": 0,
+          "text": "2026학년도 'KNU in the World' 모집 기간 11월 3일까지. 경북대 재학생, 영어수강 가능자, 성적 3.0이상, 해외여행 결격 없이 신청하세요."
+        }
+      ],
+      "duration_sec": 12.144,
+      "id": "65e03a94cd41cb90fcfab376",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7403",
+          "section": "소식",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내(~11/3)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDMmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTcyJnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": "2026-11-03",
+          "postId": "knu-hanmun-han1624361542:7403",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내(~11/3)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDMmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTcyJnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2026학년도 'KNU in the World' 모집 기간 11월 3일까지. 경북대 재학생, 영어수강 가능자, 성적 3.0이상, 해외여행 결격 없이 신청하세요.",
+      "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내(~11/3)"
+    },
+    {
+      "audio": "a971475bdc9dbc99b40349298a0e0cd3ebf5dd6960abedebea54e11b5b4fef60.mp3",
+      "channel_id": "550181ffd35cd8dc644c555d",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.264,
+          "start_sec": 0,
+          "text": "2026학기 이용교육 수강후기를 100자 이상 작성해 구글 설문지에 제출하세요. 링크: https://buly.kr/DwEgleY. 10월 19일부터 1월 15일까지 제출 가능해요."
+        }
+      ],
+      "duration_sec": 12.264,
+      "id": "550181ffd35cd8dc644c555d",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7412",
+          "section": "소식",
+          "title": "2026.2학기 대학원생 이용교육 수강후기 작성 참여 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": "2027-01-15",
+          "postId": "knu-hanmun-han1624361542:7412",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026.2학기 대학원생 이용교육 수강후기 작성 참여 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026학기 이용교육 수강후기를 100자 이상 작성해 구글 설문지에 제출하세요. 링크: https://buly.kr/DwEgleY. 10월 19일부터 1월 15일까지 제출 가능해요.",
+      "title": "2026.2학기 대학원생 이용교육 수강후기 작성 참여 안내"
+    },
+    {
+      "audio": "05342aecd345693cc772f8c94f050adc38e04334b5ebc4c6b93ba5d4cc31521b.mp3",
+      "channel_id": "a85189cb6a8808d564260fcb",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.976,
+          "start_sec": 0,
+          "text": "2026년 취업인식도 설문 참여 요청합니다. 재학생 및 졸업(예정)자께서는 10월 30일까지 설문에 참여해 주세요. 링크: https://forms.gle/d8FHVs5t7qps2Pp18"
+        }
+      ],
+      "duration_sec": 11.976,
+      "id": "a85189cb6a8808d564260fcb",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7404",
+          "section": "소식",
+          "title": "2026년 대학생 취업인식도 설문조사 협조 요청(~10/30)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzMmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7404",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026년 대학생 취업인식도 설문조사 협조 요청(~10/30)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzMmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026년 취업인식도 설문 참여 요청합니다. 재학생 및 졸업(예정)자께서는 10월 30일까지 설문에 참여해 주세요. 링크: https://forms.gle/d8FHVs5t7qps2Pp18",
+      "title": "2026년 대학생 취업인식도 설문조사 협조 요청(~10/30)"
+    },
+    {
+      "audio": "e891ca4aaff93c7251d4a7b88973144cb64d7b6d5ac75f2a846feca9e6eb8557.mp3",
+      "channel_id": "b0d5926ee5b1ee3fc3586abb",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.288,
+          "start_sec": 0,
+          "text": "2026.2학기 생활관생 5차 후보자 모집, 10월 23일부터 30일까지 신청. 입주 기한은 11월 12일. 신청은 생활관 시스템에서 진행하세요."
+        }
+      ],
+      "duration_sec": 12.288,
+      "id": "b0d5926ee5b1ee3fc3586abb",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7405",
+          "section": "소식",
+          "title": "2026.2학기 생활관생 후보자 5차 추가 모집 안내(~10/30)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7405",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026.2학기 생활관생 후보자 5차 추가 모집 안내(~10/30)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026.2학기 생활관생 5차 후보자 모집, 10월 23일부터 30일까지 신청. 입주 기한은 11월 12일. 신청은 생활관 시스템에서 진행하세요.",
+      "title": "2026.2학기 생활관생 후보자 5차 추가 모집 안내(~10/30)"
+    },
+    {
+      "audio": "6397aeeb1d1a0068efa0090273b3d9819de4a03aecae80177d0df7c8daa4d37c.mp3",
+      "channel_id": "4b72492a7780ba854c5c39bc",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
       ],
       "cues": [
         {
           "end_sec": 12.936,
           "start_sec": 0,
-          "text": "2026학년도 2학기 4차 학습법 특강은 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE에서 사전 신청 후 참석하세요."
+          "text": "2026학년도 동계 외국대학 파견 프로그램 추가 모집해요. 포르투갈, 프랑스 등 6개 대학 30명 내외. 지원서는 10월 27일~28일까지 접수해 주세요."
         }
       ],
       "duration_sec": 12.936,
-      "id": "99da84940c2ed1ef13f49023",
+      "id": "4b72492a7780ba854c5c39bc",
       "items": [
         {
-          "channel_id": "notice-a363da417a07",
+          "channel_id": "notice-3d2a3e87207a",
           "dday": null,
-          "detail": "의학과 · 공지 · 2026-10-22",
-          "postId": "knu-med-notice001:25956",
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7408",
           "section": "소식",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTU2JnN0YXJ0UGFnZT0wJmxpc3RObz0yOTA2JnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내(~10/28)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzUmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-a363da417a07",
+          "channel_id": "notice-3d2a3e87207a",
           "deadline": null,
-          "postId": "knu-med-notice001:25956",
-          "posted_at": "2026-10-22",
+          "postId": "knu-hanmun-han1624361542:7408",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTU2JnN0YXJ0UGFnZT0wJmxpc3RObz0yOTA2JnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내(~10/28)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzUmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2026학년도 2학기 4차 학습법 특강은 11월 19일 오후 3시부터 복지관 4층 강의실2에서 임근석 대표가 진행합니다. KNUCUBE에서 사전 신청 후 참석하세요.",
-      "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강) 운영 안내"
+      "script": "2026학년도 동계 외국대학 파견 프로그램 추가 모집해요. 포르투갈, 프랑스 등 6개 대학 30명 내외. 지원서는 10월 27일~28일까지 접수해 주세요.",
+      "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내(~10/28)"
     },
     {
-      "audio": "5727feccabf3cc0ab6307cd206228434b32c9787552175e746e590590ee4a40f.mp3",
-      "channel_id": "e00e05ec1b6104bcf13ab77a",
+      "audio": "90e785996a33ef71d00db510e5a63f2466242e79dc77ed7e33e44d3c4cb50c6b.mp3",
+      "channel_id": "67793aeb44032a5acff030d3",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.584,
+          "start_sec": 0,
+          "text": "외국대학 어학프로그램 모집, 11월 10일까지 지원서 제출. 합격자 발표는 11월 13일."
+        }
+      ],
+      "duration_sec": 7.584,
+      "id": "67793aeb44032a5acff030d3",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7409",
+          "section": "소식",
+          "title": "2027.1학기 외국대학 어학집중 프로그램 모집 안내(~11/10)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzYmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7409",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027.1학기 외국대학 어학집중 프로그램 모집 안내(~11/10)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzYmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "외국대학 어학프로그램 모집, 11월 10일까지 지원서 제출. 합격자 발표는 11월 13일.",
+      "title": "2027.1학기 외국대학 어학집중 프로그램 모집 안내(~11/10)"
+    },
+    {
+      "audio": "8d812ce8d9939ed267acfc93bb0acb1b48c0a44a579122fe59d81ab45181c74a.mp3",
+      "channel_id": "7acb3a987ab39103578bfe4a",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 17.208,
+          "start_sec": 0,
+          "text": "2026년 10월 30일, 11월 6일, 13일 오후 1시부터 경북대 정보화본부 크리에이티브 파크에서 HS 동문연계 아카데미가 열려요. 재학생 및 졸업생 누구나 참가 가능하며, QR코드로 온라인 신청만 해요."
+        }
+      ],
+      "duration_sec": 17.208,
+      "id": "7acb3a987ab39103578bfe4a",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7410",
+          "section": "소식",
+          "title": "「2026년도 HS 동문연계 아카데미」개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzcmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7410",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "「2026년도 HS 동문연계 아카데미」개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzcmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026년 10월 30일, 11월 6일, 13일 오후 1시부터 경북대 정보화본부 크리에이티브 파크에서 HS 동문연계 아카데미가 열려요. 재학생 및 졸업생 누구나 참가 가능하며, QR코드로 온라인 신청만 해요.",
+      "title": "「2026년도 HS 동문연계 아카데미」개최 안내"
+    },
+    {
+      "audio": "2888ccdb827382288afaadf51bd5ad01f049d9aee0cacc55888b98ff019a24f5.mp3",
+      "channel_id": "98c4a95b172eda5b8190577f",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.792,
+          "start_sec": 0,
+          "text": "동성로 로컬 창업 아이디어 경진대회 참여자 모집해요. 10월 6일부터 27일까지 신청 가능해요. 경북대 재학생 5팀(최대 25명)이 참가 가능해요."
+        }
+      ],
+      "duration_sec": 12.792,
+      "id": "98c4a95b172eda5b8190577f",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7414",
+          "section": "소식",
+          "title": "「동성로 로컬 창업 아이디어 경진대회」참여학생 모집 아내(~10/27)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzkmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7414",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "「동성로 로컬 창업 아이디어 경진대회」참여학생 모집 아내(~10/27)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTQmc3RhcnRQYWdlPTAmbGlzdE5vPTI5NzkmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "동성로 로컬 창업 아이디어 경진대회 참여자 모집해요. 10월 6일부터 27일까지 신청 가능해요. 경북대 재학생 5팀(최대 25명)이 참가 가능해요.",
+      "title": "「동성로 로컬 창업 아이디어 경진대회」참여학생 모집 아내(~10/27)"
+    },
+    {
+      "audio": "130bab63ea57d98e4bf09b0aefa1661760c6f1b50f516a84a90de23565ba1369.mp3",
+      "channel_id": "0da4e44a04aef88c55cd1d4f",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 14.568,
+          "start_sec": 0,
+          "text": "2026 동성로 오픈캠퍼스 ESG 포럼, 11월 9일 13시 대구 무영당에서 개최. 익스 이상미가 연사. 사전 참가는 포스터 QR코드로. 교내 구성원은 13시 출발 버스 이용 가능."
+        }
+      ],
+      "duration_sec": 14.568,
+      "id": "0da4e44a04aef88c55cd1d4f",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7416",
+          "section": "소식",
+          "title": "「2026 동성로 오픈캠퍼스 ESG 포럼」개최 및 사전참가 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODAmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7416",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "「2026 동성로 오픈캠퍼스 ESG 포럼」개최 및 사전참가 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTYmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODAmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026 동성로 오픈캠퍼스 ESG 포럼, 11월 9일 13시 대구 무영당에서 개최. 익스 이상미가 연사. 사전 참가는 포스터 QR코드로. 교내 구성원은 13시 출발 버스 이용 가능.",
+      "title": "「2026 동성로 오픈캠퍼스 ESG 포럼」개최 및 사전참가 신청 안내"
+    },
+    {
+      "audio": "6c6075253616bd30bb18a741244ea59db868dc6c9c1d1e83c18d125b01ffe5f0.mp3",
+      "channel_id": "19f7eefd70cd1839997578b6",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 13.104,
+          "start_sec": 0,
+          "text": "팀 프로젝트 AI 실전 스킬 특강, 11월 19일 오후 3시 복지관 4층 강의실2에서 진행합니다. 임근석 대표가 진행하고, KNUCUBE에서 사전 신청 후 참석해 주세요."
+        }
+      ],
+      "duration_sec": 13.104,
+      "id": "19f7eefd70cd1839997578b6",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7418",
+          "section": "소식",
+          "title": "2026.2학기 4차 Learning Tube(학습법 특강) 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODEmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7418",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026.2학기 4차 Learning Tube(학습법 특강) 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODEmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "팀 프로젝트 AI 실전 스킬 특강, 11월 19일 오후 3시 복지관 4층 강의실2에서 진행합니다. 임근석 대표가 진행하고, KNUCUBE에서 사전 신청 후 참석해 주세요.",
+      "title": "2026.2학기 4차 Learning Tube(학습법 특강) 운영 안내"
+    },
+    {
+      "audio": "fca8f1e73e15ea1c1c51f3d65067298820db0e7e92aaa06aa32025de5ff6f479.mp3",
+      "channel_id": "846d2a52c7ba73a22390558a",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.856,
+          "start_sec": 0,
+          "text": "14~24세 청소년, 2026.10.20~30까지 신청. 인도네시아 봉사활동 2027년 1월 진행. 참가비 200만원. 공문 참조."
+        }
+      ],
+      "duration_sec": 11.856,
+      "id": "846d2a52c7ba73a22390558a",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-10-23",
+          "postId": "knu-hanmun-han1624361542:7420",
+          "section": "소식",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집 안내(인도네시아 편)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODImdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": null,
+          "postId": "knu-hanmun-han1624361542:7420",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집 안내(인도네시아 편)",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5ODImdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "14~24세 청소년, 2026.10.20~30까지 신청. 인도네시아 봉사활동 2027년 1월 진행. 참가비 200만원. 공문 참조.",
+      "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집 안내(인도네시아 편)"
+    },
+    {
+      "audio": "d3ed9ccde3131223e2e8790367f6d30984b181520618beaa28b379f6c1e8b2ec.mp3",
+      "channel_id": "bf924bb0230853e3c7059be3",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 15.816,
+          "start_sec": 0,
+          "text": "2026년 'KNU-대구앵커' 창업 아이디어 경진대회 신청은 10.22~26까지요. 서류 평가 10.28, 발표 평가 10.30입니다. 대구 청년 연구자 자격을 충족한 개인 또는 팀이 신청 가능해요."
+        }
+      ],
+      "duration_sec": 15.816,
+      "id": "bf924bb0230853e3c7059be3",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-23",
+          "postId": "knu-see-notice:105735",
+          "section": "소식",
+          "title": "2026년 'KNU-대구앵커' 청년 연구자 창업 아이디어 경진대회 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105735&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": null,
+          "postId": "knu-see-notice:105735",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2026년 'KNU-대구앵커' 청년 연구자 창업 아이디어 경진대회 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105735&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "2026년 'KNU-대구앵커' 창업 아이디어 경진대회 신청은 10.22~26까지요. 서류 평가 10.28, 발표 평가 10.30입니다. 대구 청년 연구자 자격을 충족한 개인 또는 팀이 신청 가능해요.",
+      "title": "2026년 'KNU-대구앵커' 청년 연구자 창업 아이디어 경진대회 안내"
+    },
+    {
+      "audio": "ebd26bbd86b0b7c84e7fa7325508379d23184cfc5964275968088fa22b0a4c08.mp3",
+      "channel_id": "9b65937c640200f66ecb17df",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 16.776,
+          "start_sec": 0,
+          "text": "이성학교수 연구실, 2027년 3월부터 석사 또는 석박통합과정 모집. 자율주행 차량, 해양 감시 영상 분야에서 코딩 및 광학 연구 수행. 연락: IT1-307,308,310 950-7216"
+        }
+      ],
+      "duration_sec": 16.776,
+      "id": "9b65937c640200f66ecb17df",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-23",
+          "postId": "knu-see-notice:105736",
+          "section": "소식",
+          "title": "[이성학교수] 2027년 대학원생(석사과정 또는 석박통합과정) 모집",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105736&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": null,
+          "postId": "knu-see-notice:105736",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "[이성학교수] 2027년 대학원생(석사과정 또는 석박통합과정) 모집",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105736&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "이성학교수 연구실, 2027년 3월부터 석사 또는 석박통합과정 모집. 자율주행 차량, 해양 감시 영상 분야에서 코딩 및 광학 연구 수행. 연락: IT1-307,308,310 950-7216",
+      "title": "[이성학교수] 2027년 대학원생(석사과정 또는 석박통합과정) 모집"
+    },
+    {
+      "audio": "2dde4d4718d088e30839e71091081030b86bfdd1b73ddd8ad2d8ba1348ce31cf.mp3",
+      "channel_id": "3658e997241798103d08c1f9",
+      "channel_ids": [
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "cues": [
+        {
+          "end_sec": 14.016,
+          "start_sec": 0,
+          "text": "2026년 10월 20일부터 30일까지 신청. 14~24세 청소년 20명 모집. 인도네시아 봉사활동 1월 13일~20일 진행. 네이버폼으로 신청 후 계약금 납부 필수."
+        }
+      ],
+      "duration_sec": 14.016,
+      "id": "3658e997241798103d08c1f9",
+      "items": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-computer-sub6_1_a:29482",
+          "section": "소식",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29482"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "detail": "컴퓨터학부 · 공지사항 · 2026-10-23",
+          "postId": "knu-computer-sub6_1_a:29482",
+          "section": "소식",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29482"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29482",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29482"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29482",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29482"
+        }
+      ],
+      "script": "2026년 10월 20일부터 30일까지 신청. 14~24세 청소년 20명 모집. 인도네시아 봉사활동 1월 13일~20일 진행. 네이버폼으로 신청 후 계약금 납부 필수.",
+      "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)"
+    },
+    {
+      "audio": "412d3e291d260b058d6b9baaa2f4f1832f8c4616c1852d031795112847ee2afd.mp3",
+      "channel_id": "b7037baa2631cb9de6974c60",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 10.872,
+          "end_sec": 7.92,
           "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(충남대학교 학부) 수학 안내를 확인해 주세요. 학생은 12월 15일까지 수강 신청을 완료해야 합니다."
+          "text": "국립금오공과대 학부 수학 수업, 2026 겨울계절수업 참여 학생은 3월 15일까지 신청하세요."
         }
       ],
-      "duration_sec": 10.872,
-      "id": "e00e05ec1b6104bcf13ab77a",
+      "duration_sec": 7.92,
+      "id": "b7037baa2631cb9de6974c60",
       "items": [
         {
           "channel_id": "notice-7414782e7dbb",
           "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4525",
+          "detail": "치의학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-dent-k1news:4536",
           "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(충남대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4525&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4536&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
       "kind": "notice",
@@ -2450,19 +1248,19 @@
         {
           "channel_id": "notice-7414782e7dbb",
           "deadline": null,
-          "postId": "knu-dent-k1news:4525",
-          "posted_at": "2026-10-22",
+          "postId": "knu-dent-k1news:4536",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(충남대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4525&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4536&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학(충남대학교 학부) 수학 안내를 확인해 주세요. 학생은 12월 15일까지 수강 신청을 완료해야 합니다.",
-      "title": "2026학년도 겨울계절수업 타대학(충남대학교 학부) 수학 안내"
+      "script": "국립금오공과대 학부 수학 수업, 2026 겨울계절수업 참여 학생은 3월 15일까지 신청하세요.",
+      "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내"
     },
     {
-      "audio": "faa362ef66c7aee68de122300dd232c358c92ed51fe5bb8cc0ddddbfce781c4a.mp3",
-      "channel_id": "9c9b9a1a93b293e3efd93b60",
+      "audio": "5c61b5a9c0f00951766014752a9fa99f450b847fec4dd6e86fbaa4cd4565be61.mp3",
+      "channel_id": "1e59ab6cbf5d6647bb09563a",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
@@ -2470,20 +1268,20 @@
         {
           "end_sec": 7.632,
           "start_sec": 0,
-          "text": "강원대 학부 겨울계절수업 수학 수강 안내. 2026학년도 수업 내용은 공지된 자료를 참고하세요."
+          "text": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내를 확인해 주세요."
         }
       ],
       "duration_sec": 7.632,
-      "id": "9c9b9a1a93b293e3efd93b60",
+      "id": "1e59ab6cbf5d6647bb09563a",
       "items": [
         {
           "channel_id": "notice-7414782e7dbb",
           "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4526",
+          "detail": "치의학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-dent-k1news:4537",
           "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(강원대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4526&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4537&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
       "kind": "notice",
@@ -2491,40 +1289,40 @@
         {
           "channel_id": "notice-7414782e7dbb",
           "deadline": null,
-          "postId": "knu-dent-k1news:4526",
-          "posted_at": "2026-10-22",
+          "postId": "knu-dent-k1news:4537",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(강원대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4526&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4537&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "강원대 학부 겨울계절수업 수학 수강 안내. 2026학년도 수업 내용은 공지된 자료를 참고하세요.",
-      "title": "2026학년도 겨울계절수업 타대학(강원대학교 학부) 수학 안내"
+      "script": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내를 확인해 주세요.",
+      "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내"
     },
     {
-      "audio": "91628698f52915dbf040885aef97ae341d2ceca864ed097187169754984a47b1.mp3",
-      "channel_id": "a3914b6c0f630a7203fa74c7",
+      "audio": "7c28f222514c7a9d2d47e14f53f824a1e0cc9d396b3c815adc639d72566ba9b3.mp3",
+      "channel_id": "3bba042765fa06c9ae157596",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 9.792,
+          "end_sec": 9.36,
           "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(국립부경대학교 학부) 수학 안내를 확인하세요. 12월 15일까지 신청 완료"
+          "text": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내를 확인해 주세요. 학생은 수업 내용을 반드시 확인해 주세요."
         }
       ],
-      "duration_sec": 9.792,
-      "id": "a3914b6c0f630a7203fa74c7",
+      "duration_sec": 9.36,
+      "id": "3bba042765fa06c9ae157596",
       "items": [
         {
           "channel_id": "notice-7414782e7dbb",
           "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4528",
+          "detail": "치의학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-dent-k1news:4538",
           "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(국립부경대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4528&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4538&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
       "kind": "notice",
@@ -2532,40 +1330,40 @@
         {
           "channel_id": "notice-7414782e7dbb",
           "deadline": null,
-          "postId": "knu-dent-k1news:4528",
-          "posted_at": "2026-10-22",
+          "postId": "knu-dent-k1news:4538",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(국립부경대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4528&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4538&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "2026학년도 겨울계절수업 타대학(국립부경대학교 학부) 수학 안내를 확인하세요. 12월 15일까지 신청 완료",
-      "title": "2026학년도 겨울계절수업 타대학(국립부경대학교 학부) 수학 안내"
+      "script": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내를 확인해 주세요. 학생은 수업 내용을 반드시 확인해 주세요.",
+      "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내"
     },
     {
-      "audio": "97630368d05296302a5981465f5fc674872335abbecda16db79c58ac88dff721.mp3",
-      "channel_id": "c6c6b29f0de1c5eceab0bdfd",
+      "audio": "cc3733f04bc6215fdba90ea2dd8f96d156f363e958074c3873a87abf086a79d9.mp3",
+      "channel_id": "d60953a9e0fc384b67f99b6c",
       "channel_ids": [
         "notice-7414782e7dbb"
       ],
       "cues": [
         {
-          "end_sec": 8.688,
+          "end_sec": 11.016,
           "start_sec": 0,
-          "text": "제주대학교 학부 겨울계절수업 수학 안내를 확인하세요. 2026학년도 수업 정보는 공식 사이트에서 확인 가능해요."
+          "text": "2026년 KNU-대구앵커 청년 연구자 창업 아이디어 경진대회 추가 모집을 안내해요. 제안 아이디어를 언제까지 제출할지 확인하세요."
         }
       ],
-      "duration_sec": 8.688,
-      "id": "c6c6b29f0de1c5eceab0bdfd",
+      "duration_sec": 11.016,
+      "id": "d60953a9e0fc384b67f99b6c",
       "items": [
         {
           "channel_id": "notice-7414782e7dbb",
           "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4529",
+          "detail": "치의학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-dent-k1news:4540",
           "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(제주대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4529&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "『2026년 `KNU-대구앵커` 청년 연구자 창업 아이디어 경진대회』추가 모집 홍보",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4540&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
       "kind": "notice",
@@ -2573,220 +1371,15 @@
         {
           "channel_id": "notice-7414782e7dbb",
           "deadline": null,
-          "postId": "knu-dent-k1news:4529",
-          "posted_at": "2026-10-22",
+          "postId": "knu-dent-k1news:4540",
+          "posted_at": "2026-10-23",
           "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(제주대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4529&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+          "title": "『2026년 `KNU-대구앵커` 청년 연구자 창업 아이디어 경진대회』추가 모집 홍보",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4540&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
         }
       ],
-      "script": "제주대학교 학부 겨울계절수업 수학 안내를 확인하세요. 2026학년도 수업 정보는 공식 사이트에서 확인 가능해요.",
-      "title": "2026학년도 겨울계절수업 타대학(제주대학교 학부) 수학 안내"
-    },
-    {
-      "audio": "f1bb693916de1405a5ceaeeb3d51e521710a178fd059478b284c649b3d1eec2d.mp3",
-      "channel_id": "98d03260bc563a1fe9de8c16",
-      "channel_ids": [
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.536,
-          "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내를 확인해 주세요."
-        }
-      ],
-      "duration_sec": 7.536,
-      "id": "98d03260bc563a1fe9de8c16",
-      "items": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4530",
-          "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4530&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4530",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4530&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내를 확인해 주세요.",
-      "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내"
-    },
-    {
-      "audio": "78136862faa89f1a69df4f7085437809627d77f74fad45d9bb25ce60b7be3cdf.mp3",
-      "channel_id": "7bdcc0d223247ba057cd4704",
-      "channel_ids": [
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 11.4,
-          "start_sec": 0,
-          "text": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내를 확인하세요. 학부 수강 신청은 3월 31일까지 해야 합니다."
-        }
-      ],
-      "duration_sec": 11.4,
-      "id": "7bdcc0d223247ba057cd4704",
-      "items": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4531",
-          "section": "소식",
-          "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4531&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4531",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4531&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내를 확인하세요. 학부 수강 신청은 3월 31일까지 해야 합니다.",
-      "title": "2026학년도 겨울계절수업 타대학(숙명여자대학교 학부) 수학 안내"
-    },
-    {
-      "audio": "f82c9aa2c2875c23a72007cacb63d3840392a8d7e54258f117947a8b8ba23cdf.mp3",
-      "channel_id": "54c1b2530c8b390e7cc9b726",
-      "channel_ids": [
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 6.504,
-          "start_sec": 0,
-          "text": "2026학년도 2학기 4차 학습법 특강은 6월 15일까지 참가자 신청을 받습니다."
-        }
-      ],
-      "duration_sec": 6.504,
-      "id": "54c1b2530c8b390e7cc9b726",
-      "items": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4532",
-          "section": "소식",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강 ) 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4532&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4532",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강 ) 안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4532&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "2026학년도 2학기 4차 학습법 특강은 6월 15일까지 참가자 신청을 받습니다.",
-      "title": "2026학년도 2학기 4차 Learning Tube(학습법 특강 ) 안내"
-    },
-    {
-      "audio": "5fd9cad437394f899cd880dee4b05c5605c03d976ba93ffa37af0379b5e1e3fc.mp3",
-      "channel_id": "5f81430b3cfcec79328b5263",
-      "channel_ids": [
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 6.6,
-          "start_sec": 0,
-          "text": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집 요청. 홍보 협조를 부탁드립니다."
-        }
-      ],
-      "duration_sec": 6.6,
-      "id": "5f81430b3cfcec79328b5263",
-      "items": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4533",
-          "section": "소식",
-          "title": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집 및 홍보 협조 요청",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4533&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4533",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집 및 홍보 협조 요청",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4533&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집 요청. 홍보 협조를 부탁드립니다.",
-      "title": "동성로 로컬 창업 아이디어 경진대회 참여학생 모집 및 홍보 협조 요청"
-    },
-    {
-      "audio": "718114b6a875170bcd19973cc686cd74ca3e9e7388b5fad58d56bdff0da0bf69.mp3",
-      "channel_id": "edc4d7f46ed576c46c9d9e9f",
-      "channel_ids": [
-        "notice-7414782e7dbb"
-      ],
-      "cues": [
-        {
-          "end_sec": 9.456,
-          "start_sec": 0,
-          "text": "2026학년도 하반기 KNU 글로벌 세미나(11월) 안내입니다. 참가자 명단은 11월 5일까지 제출해 주세요."
-        }
-      ],
-      "duration_sec": 9.456,
-      "id": "edc4d7f46ed576c46c9d9e9f",
-      "items": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "dday": null,
-          "detail": "치의학과 · 공지사항 · 2026-10-22",
-          "postId": "knu-dent-k1news:4534",
-          "section": "소식",
-          "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4534&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7414782e7dbb",
-          "deadline": null,
-          "postId": "knu-dent-k1news:4534",
-          "posted_at": "2026-10-22",
-          "reason": "new",
-          "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내",
-          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4534&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
-        }
-      ],
-      "script": "2026학년도 하반기 KNU 글로벌 세미나(11월) 안내입니다. 참가자 명단은 11월 5일까지 제출해 주세요.",
-      "title": "「2026학년도 하반기 KNU 글로벌 세미나(11월)」안내"
+      "script": "2026년 KNU-대구앵커 청년 연구자 창업 아이디어 경진대회 추가 모집을 안내해요. 제안 아이디어를 언제까지 제출할지 확인하세요.",
+      "title": "『2026년 `KNU-대구앵커` 청년 연구자 창업 아이디어 경진대회』추가 모집 홍보"
     },
     {
       "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
