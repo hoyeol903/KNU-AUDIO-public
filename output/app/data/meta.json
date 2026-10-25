@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-26",
   "boards": [
     {
       "collected": true,
@@ -46,7 +46,15 @@
       "id": "notice-f5bf5684020e",
       "name": "간호학과 · 학부 공지사항",
       "saved": 90,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-nurse-nur1624533209:5049",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209"
     },
     {
@@ -86,7 +94,15 @@
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
       "saved": 59,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-kbiz-kbi1623370557:5860",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
     },
     {
@@ -94,7 +110,15 @@
       "id": "notice-8860bb9a4bc5",
       "name": "경제통상학부 · 학부 공지사항",
       "saved": 64,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-econ-eco1623370509:5132",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509"
     },
     {
@@ -110,7 +134,15 @@
       "id": "notice-7ff56c3af3e0",
       "name": "고분자공학과 · 학사 공지사항",
       "saved": 73,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-knupolymer-knu1623888520:1704",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
     },
     {
@@ -142,15 +174,7 @@
       "id": "notice-eaa2bcd13c4a",
       "name": "관광학과 · 공지사항",
       "saved": 44,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-tour-tou1616116950:874",
-          "title": "[소노인터내셔널|비발디파크] 26_27년 동계시즌 산학실습생 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950"
     },
     {
@@ -278,7 +302,15 @@
       "id": "notice-ddfc5b2ca163",
       "name": "로봇공학과 · 공지사항",
       "saved": 121,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-robot-rob1623632307:829",
+          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
     },
     {
@@ -312,11 +344,11 @@
       "saved": 108,
       "today": [
         {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4768",
-          "title": "2026학년도 겨울계절수업 타대학(서울시립대학교 학부) 수학 안내"
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4745",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
@@ -358,15 +390,7 @@
       "id": "notice-b5015ce1e74b",
       "name": "불어불문학과 · 공지사항",
       "saved": 61,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-french-fre1623147753:1874",
-          "title": "2026학년도 불어불문학과 글로벌지역학 해외어학연수 프로그램 참가 최종 선발자 공고"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
     },
     {
@@ -406,22 +430,7 @@
       "id": "notice-1268b7a10e0b",
       "name": "사회학과 · 학부 공지사항",
       "saved": 62,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-socio-soc1622181477:3974",
-          "title": "2027학년도 학생리포터 모집 공지"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-socio-soc1622181477:3976",
-          "title": "2027학년 29기 학생홍보대사 모집 공고"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477"
     },
     {
@@ -629,7 +638,15 @@
       "id": "notice-6b16f01d1a75",
       "name": "식품자원경제학과 · 공지사항",
       "saved": 50,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-knuagec-knu1623134126:3240",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
     },
     {
@@ -653,7 +670,15 @@
       "id": "notice-97fffffebd44",
       "name": "아동학부 · 학부 공지사항",
       "saved": 50,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-knuchild-knu1623370362:1428",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
     },
     {
@@ -669,7 +694,15 @@
       "id": "notice-06dffccf1c28",
       "name": "에너지공학부 · 학부 공지사항",
       "saved": 50,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-21",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-soee-soe1622609908:1861",
+          "title": "[학생] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?nav_code=soe1622609908"
     },
     {
@@ -725,22 +758,7 @@
       "id": "notice-ef883ff42361",
       "name": "위치정보시스템학과 · 공지사항",
       "saved": 57,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2132",
-          "title": "2027학년도 학생리포터 모집 공지"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2133",
-          "title": "[상주캠퍼스] 2026년 학생예비군 연말보충훈련 일정 공지"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979"
     },
     {
@@ -772,7 +790,15 @@
       "id": "notice-7dfeec322405",
       "name": "응용화학공학부 · 공지사항",
       "saved": 67,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-knuce-knu1762850029:372",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
     },
     {
@@ -780,7 +806,15 @@
       "id": "notice-ad22d5b4a9e9",
       "name": "의류학과 · 공지사항",
       "saved": 79,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-fashion-fas1623134444:917",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444"
     },
     {
@@ -788,7 +822,15 @@
       "id": "notice-e1ec1bf0eb87",
       "name": "의생명융합공학과 · 공지사항",
       "saved": 113,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-bcst2-bcs1611061294:836",
+          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
     },
     {
@@ -796,7 +838,15 @@
       "id": "notice-a363da417a07",
       "name": "의학과 · 공지",
       "saved": 83,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-med-notice001:25950",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
     },
     {
@@ -806,11 +856,11 @@
       "saved": 113,
       "today": [
         {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29482",
-          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)"
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29475",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
         }
       ],
       "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
@@ -876,15 +926,7 @@
       "id": "notice-55ac86f2e763",
       "name": "자연과학대학 · 공지사항",
       "saved": 30,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cns-cns1623199799:268",
-          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799"
     },
     {
@@ -910,25 +952,11 @@
       "saved": 84,
       "today": [
         {
-          "date": "2026-10-23",
-          "deadline": "2026-11-03",
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7468",
-          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7469",
-          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기모집(인도네시아)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7470",
-          "title": "2027학년도 1학기 외국대학 어학집중 프로그램 모집 안내"
+          "date": "2026-10-16",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-electric-ele1622787198:7453",
+          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
@@ -937,21 +965,21 @@
       "collected": true,
       "id": "notice-df44dd8507c1",
       "name": "전자공학부 · 공지사항",
-      "saved": 197,
+      "saved": 198,
       "today": [
         {
-          "date": "2026-10-23",
+          "date": "2026-10-24",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-see-notice:105735",
-          "title": "2026년 'KNU-대구앵커' 청년 연구자 창업 아이디어 경진대회 안내"
+          "postId": "knu-see-notice:105737",
+          "title": "Mobile SOC & Microprocessor Lab. (지도교수: 공준호) 2027년 대학원 진학 예정자 및 학부연수생 (3학년 이상) 모집"
         },
         {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105736",
-          "title": "[이성학교수] 2027년 대학원생(석사과정 또는 석박통합과정) 모집"
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-see-notice:105714",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 추천(∼10.29/목 15:00)"
         }
       ],
       "url": "https://see.knu.ac.kr/content/board/notice.html"
@@ -1025,15 +1053,7 @@
       "id": "notice-392eeaadf103",
       "name": "지구시스템과학부 · 공지사항",
       "saved": 30,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cns-cns1623199799:268",
-          "title": "2026학년도 자연과학대학교 기초과학 학부생 학술발표대회 개최 및 발표자료 제출 안내"
-        }
-      ],
+      "today": [],
       "url": "https://cns.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799"
     },
     {
@@ -1061,16 +1081,9 @@
         {
           "date": "2026-10-23",
           "deadline": "2026-10-29",
-          "kind": "new",
+          "kind": "deadline",
           "postId": "knu-geology-geo1621814864:1626",
           "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": "2026-11-03",
-          "kind": "new",
-          "postId": "knu-geology-geo1621814864:1627",
-          "title": "2026학년도 글로벌 PBL「KNU in the World」안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864"
@@ -1136,36 +1149,7 @@
       "id": "notice-7414782e7dbb",
       "name": "치의학과 · 공지사항",
       "saved": 106,
-      "today": [
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4536",
-          "title": "2026학년도 겨울계절수업 타대학(국립금오공과대학교 학부) 수학 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4537",
-          "title": "2026학년도 겨울계절수업 타대학(한국예술종합학교 학부) 수학 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4538",
-          "title": "2026학년도 겨울계절수업 타대학(부산대학교 학부) 수학 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4540",
-          "title": "『2026년 `KNU-대구앵커` 청년 연구자 창업 아이디어 경진대회』추가 모집 홍보"
-        }
-      ],
+      "today": [],
       "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
     },
     {
@@ -1175,11 +1159,11 @@
       "saved": 113,
       "today": [
         {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29482",
-          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집(인도네시아편)"
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29475",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
         }
       ],
       "url": "https://computer.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
@@ -1223,81 +1207,11 @@
       "saved": 107,
       "today": [
         {
-          "date": "2026-10-23",
-          "deadline": "2026-11-03",
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7403",
-          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내(~11/3)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": "2027-01-15",
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7412",
-          "title": "2026.2학기 대학원생 이용교육 수강후기 작성 참여 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7404",
-          "title": "2026년 대학생 취업인식도 설문조사 협조 요청(~10/30)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7405",
-          "title": "2026.2학기 생활관생 후보자 5차 추가 모집 안내(~10/30)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7408",
-          "title": "2026학년도 동계 외국대학 파견 프로그램 추가 모집 안내(~10/28)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7409",
-          "title": "2027.1학기 외국대학 어학집중 프로그램 모집 안내(~11/10)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7410",
-          "title": "「2026년도 HS 동문연계 아카데미」개최 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7414",
-          "title": "「동성로 로컬 창업 아이디어 경진대회」참여학생 모집 아내(~10/27)"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7416",
-          "title": "「2026 동성로 오픈캠퍼스 ESG 포럼」개최 및 사전참가 신청 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7418",
-          "title": "2026.2학기 4차 Learning Tube(학습법 특강) 운영 안내"
-        },
-        {
-          "date": "2026-10-23",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7420",
-          "title": "2027 시립문래청소년센터 동계 해외봉사단 6기 모집 안내(인도네시아 편)"
+          "date": "2026-10-20",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-hanmun-han1624361542:7395",
+          "title": "[장학]2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내(~10/29)"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
@@ -1315,7 +1229,22 @@
       "id": "notice-4a41e1328a3e",
       "name": "행정학부 · 공지사항",
       "saved": 92,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-puad-pua1623029519:4069",
+          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        },
+        {
+          "date": "2026-10-13",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-puad-pua1623029519:4065",
+          "title": "[장학] 2026학년도 2학기 장학사정관 장학금 장학생 추천 안내(~10/29(목))"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
     },
     {
@@ -1331,7 +1260,15 @@
       "id": "notice-ac0144f93d45",
       "name": "화학과 · 공지사항",
       "saved": 124,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-19",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-chem-che1622521080:7106",
+          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
     },
     {
@@ -1347,7 +1284,15 @@
       "id": "notice-101538fb6a8e",
       "name": "환경공학과 · 학부 공지사항",
       "saved": 42,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-13",
+          "deadline": "2026-10-29",
+          "kind": "deadline",
+          "postId": "knu-env-env1624500229:1110",
+          "title": "[안내] 2026학년도 2학기 장학사정관 장학금 장학생 추천"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229"
     },
     {
@@ -1468,12 +1413,27 @@
           "status": "ok"
         }
       ],
-      "groups": [],
-      "hours": null,
+      "groups": [
+        {
+          "head": 0,
+          "hours": "11:15~13:30",
+          "label": "중식",
+          "menu": [
+            "기장밥",
+            "버섯샤브국",
+            "매콤닭토막조림",
+            "마카로니샐러드",
+            "유자쑥갓무침",
+            "포기김치"
+          ],
+          "price": 6000
+        }
+      ],
+      "hours": "11:15~13:30",
       "id": "meal-46",
       "menuFrom": "2026-10-22",
       "name": "GP감꽃 식당",
-      "status": "empty",
+      "status": "ok",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=46"
     },
     {
@@ -2192,12 +2152,28 @@
           "status": "ok"
         }
       ],
-      "groups": [],
-      "hours": null,
+      "groups": [
+        {
+          "head": 0,
+          "hours": "11:15~13:30",
+          "label": "중식",
+          "menu": [
+            "기장밥",
+            "꼬치어묵탕",
+            "돈육칠리",
+            "바베큐조림★",
+            "팟타이★",
+            "삼색나물",
+            "포기김치"
+          ],
+          "price": 6000
+        }
+      ],
+      "hours": "11:15~13:30",
       "id": "meal-bokji",
       "menuFrom": "2026-10-22",
       "name": "복지관 교직원 식당",
-      "status": "empty",
+      "status": "ok",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=36"
     },
     {
@@ -2710,12 +2686,130 @@
           "status": "ok"
         }
       ],
-      "groups": [],
-      "hours": null,
+      "groups": [
+        {
+          "head": 2,
+          "hours": "11:00~13:30",
+          "label": "중식",
+          "menu": [
+            "투움바함박스테이크★",
+            "새우튀김",
+            "흰밥",
+            "들깨미역국",
+            "배추김치"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "불닭크런치야끼우동"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "불고기비빔밥★"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "순살돈가스★"
+          ],
+          "price": 4500
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "치즈돈가스★"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "고구마돈가스★"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "왕돈가스★"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "왕치즈돈가스★"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": "13:00~17:00",
+          "label": "중식",
+          "menu": [
+            "라면"
+          ],
+          "price": 2800
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "우동"
+          ],
+          "price": 4500
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "우동밥"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 0,
+          "hours": "17:00~19:00",
+          "label": "석식",
+          "menu": [
+            "흰밥",
+            "도토리묵채국",
+            "닭데리야끼볶음",
+            "새우까스&칠리소스",
+            "마카로니과일샐러드",
+            "배추김치"
+          ],
+          "price": 6000
+        }
+      ],
+      "hours": "11:00~13:30",
       "id": "meal-35",
       "menuFrom": "2026-10-22",
       "name": "정보센터 식당",
-      "status": "empty",
+      "status": "ok",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=35"
     },
     {
@@ -3096,32 +3190,143 @@
           "status": "ok"
         }
       ],
-      "groups": [],
-      "hours": null,
+      "groups": [
+        {
+          "head": 1,
+          "hours": null,
+          "label": "조식",
+          "menu": [
+            "천원의 아침밥",
+            "쌀국수",
+            "나시고랭볶음밥",
+            "왕새우튀김",
+            "&머스타드",
+            "망고주스",
+            "배추김치"
+          ],
+          "price": 1000
+        },
+        {
+          "head": 1,
+          "hours": "11:00~13:30",
+          "label": "중식",
+          "menu": [
+            "핫바베큐치밥",
+            "흰밥",
+            "수제비국",
+            "배추김치"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "육회비빔밥"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 2,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "더진국",
+            "수육국밥★"
+          ],
+          "price": 6500
+        },
+        {
+          "head": 2,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "더진국",
+            "순대수육국밥★"
+          ],
+          "price": 7000
+        },
+        {
+          "head": 1,
+          "hours": "11:00~15:30",
+          "label": "중식",
+          "menu": [
+            "순살돈가스★"
+          ],
+          "price": 4500
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "치즈돈가스★"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "고구마돈가스★"
+          ],
+          "price": 5000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "왕돈가스★"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": null,
+          "label": "중식",
+          "menu": [
+            "치즈왕돈가스★"
+          ],
+          "price": 6000
+        },
+        {
+          "head": 1,
+          "hours": "9:00~11:00,13:00~15:30",
+          "label": "중식",
+          "menu": [
+            "라면"
+          ],
+          "price": 2800
+        }
+      ],
+      "hours": "11:00~13:30",
       "id": "meal-37",
       "menuFrom": "2026-10-22",
       "name": "카페테리아 첨성",
-      "status": "empty",
+      "status": "ok",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "01:36",
+  "checkedAt": "02:48",
   "collection": {
-    "date": "2026-10-24",
+    "date": "2026-10-26",
     "failedBoards": [
       {
         "name": "중어중문학과 · 공지사항",
         "reasons": [
-          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c67cd350>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c6c76ad0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c67cc990>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c70b7f90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c71389d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))"
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf6241e90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf7aa2510>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf8cd2810>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf6242790>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf631ad90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))"
         ],
         "source_board_id": "knu-chinese-notice"
       }
     ],
-    "lastCollectedAt": "2026-10-24T01:36:10+09:00",
+    "lastCollectedAt": "2026-10-26T02:48:06+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -4916,299 +5121,31 @@
     },
     {
       "source": "notice-6b04da14aae1",
-      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c67cd350>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)"
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf6241e90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)"
     },
     {
       "source": "notice-6b04da14aae1",
-      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c6c76ad0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4)"
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf7aa2510>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=4)"
     },
     {
       "source": "notice-6b04da14aae1",
-      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c67cc990>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2)"
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13666&page=2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf8cd2810>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13666&page=2)"
     },
     {
       "source": "notice-6b04da14aae1",
-      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c70b7f90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674)"
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13674 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf6242790>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13674)"
     },
     {
       "source": "notice-6b04da14aae1",
-      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7fe3c71389d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675)"
-    },
-    {
-      "source": "notice-7537783c05b0",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-0158c1288046",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-8d0ba20b8a78",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-ab33c8b6f3d1",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-cd772685aa0f",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-b7eb69e8405d",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-dc7fc6a93fe8",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-12a353fc2eb8",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-683cb3e528ee",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-30f51dd33791",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-750dff5618d4",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-fe90b8f3beb7",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-956827a355a7",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-7e56cbeca2ee",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-73ffa1763744",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-9b84b4adc47a",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-2ae1ca96e3de",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-8b73f625639c",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-b1133d4c8b3b",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-afb535aeb941",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-9bcb92908bc9",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-3bb6de2335b3",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-fe8857afa2d4",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-f9d9ecdb1284",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-4c132ad6150a",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-8666f6ab7bde",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-451c515734ae",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-aaa5e07a26eb",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-5489a94f38cd",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-45a059e34b9c",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-57321798a19a",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-d5e75aa6b2da",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-99ea5018f469",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-2c006faa8fdd",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-16f98ec95fc6",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-9a2cb1c992c7",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-848538cdce05",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-9c2e2dbd2980",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-f95f0e2ac40d",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-ef883ff42361",
-      "text": "knu-lbis-lbi1661932979:2132: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-a1540deb2a6f",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-a1c0cc5412ca",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-ecd686f730b2",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-614324804939",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-7bb331bb8b0f",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-4b4549901a22",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-55ac86f2e763",
-      "text": "knu-cns-cns1623199799:268: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-9a0b59b2a2b4",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-e08af12e34e3",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-1d6a78636180",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13675 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f6cf631ad90>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675)"
     },
     {
       "source": "notice-6b04da14aae1",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-787893a88ff5",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-392eeaadf103",
-      "text": "knu-cns-cns1623199799:268: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-278455937509",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-2eb7684c7df1",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-d6ef40bd632d",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-e187e9582e58",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-afca571a7ef1",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-dd1ea15f1f4f",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-dfce5afb9336",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-d6c272c6c7db",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4536: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4537: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4538: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4540: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-9dbd1b2695c9",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-093d2d29fb09",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-6fafb52e7377",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-459a4805de72",
-      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+      "source": "notice-6b04da14aae1",
+      "text": "knu-chinese-notice:13674: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
     },
     {
       "source": "notice-93ddd4d44cec",
@@ -5533,15 +5470,25 @@
         "end": "2026-10-27",
         "start": "2026-10-21",
         "title": "중간고사 기간 (10.21.~10.27.)"
+      },
+      {
+        "end": null,
+        "start": "2026-10-28",
+        "title": "수업일수2/4 (10.28.)"
+      },
+      {
+        "end": null,
+        "start": "2026-10-28",
+        "title": "일반휴학원 접수종료(10.28.)"
       }
     ],
     "status": "ok"
   },
   "weather": {
-    "max": 17.5,
-    "min": 15.1,
-    "rain": 100,
+    "max": 21.1,
+    "min": 15.0,
+    "rain": 98,
     "status": "ok",
-    "summary": "비"
+    "summary": "약한 비"
   }
 }
