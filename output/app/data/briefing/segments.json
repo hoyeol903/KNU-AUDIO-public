@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "segments": [
     {
-      "audio": "55e80a6d7ac93a780877f5503a9794e02130f1889f9e31c4bc01cc87649ed6e0.mp3",
+      "audio": "af185c28600594fd2c4cd044944bad7ef65e1b5c11575ffa64856492e2baa370.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -11,611 +11,245 @@
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 16.08,
+          "end_sec": 14.904,
           "start_sec": 6.984,
-          "text": "비가 올 수 있으니 우산을 챙기고, 길이 미끄러울 수 있어 조심하세요. 아침엔 선선하니 얇은 겉옷 하나 챙기세요."
+          "text": "등굣길에는 겉옷 하나 걸치는 날씨예요. 아침과 낮의 온도 차이가 커서 옷차림을 조절해 주세요."
         }
       ],
-      "duration_sec": 16.08,
+      "duration_sec": 14.904,
       "id": "intro",
       "items": [
         {
           "dday": null,
-          "detail": "최저 15.0° / 최고 21.1° · 비 올 확률 98%",
+          "detail": "최저 7.0° / 최고 17.4° · 비 올 확률 0%",
           "postId": null,
           "section": "날씨",
-          "title": "약한 비",
+          "title": "대체로 맑음",
           "url": null
         }
       ],
-      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 비가 올 수 있으니 우산을 챙기고, 길이 미끄러울 수 있어 조심하세요. 아침엔 선선하니 얇은 겉옷 하나 챙기세요.",
+      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 등굣길에는 겉옷 하나 걸치는 날씨예요. 아침과 낮의 온도 차이가 커서 옷차림을 조절해 주세요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "bd78d308454e357f39463db4fecb54989ece6b200f788ec6e78cc427101574e9.mp3",
-      "channel_id": "304c6ce922a5d1ec8ea7b558",
+      "audio": "68f34c5ca240c864cd45ba0e1255f1f4e5d6f5a3177b63093bdb4d20a85122f4.mp3",
+      "channel_id": "37facc9ae31baa413e47299c",
       "channel_ids": [
-        "notice-f5bf5684020e"
+        "notice-d1802616c625"
       ],
       "cues": [
         {
-          "end_sec": 12.264,
+          "end_sec": 10.2,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 간호대학 행정실 203호입니다."
+          "text": "장학사정관 추천 장학생은 10월 30일까지 등록금 내 장학금을 받을 수 있어요. 가계곤란 증명서와 성적 기준을 충족해야 해요."
         }
       ],
-      "duration_sec": 12.264,
-      "id": "304c6ce922a5d1ec8ea7b558",
+      "duration_sec": 10.2,
+      "id": "37facc9ae31baa413e47299c",
       "items": [
         {
-          "channel_id": "notice-f5bf5684020e",
+          "channel_id": "notice-d1802616c625",
           "dday": null,
-          "detail": "간호학과 · 학부 공지사항 · 2026-10-16",
-          "postId": "knu-nurse-nur1624533209:5049",
+          "detail": "자율전공학부 · 공지사항 · 2026-10-14",
+          "postId": "knu-udm-udm1623371432:1637",
           "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwNDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3ODYmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[안내]2026학년도 2학기 장학사정관 장학금 장학생 추천 안내",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2Mzcmc3RhcnRQYWdlPTAmbGlzdE5vPTkyMiZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-f5bf5684020e",
-          "deadline": "2026-10-29",
-          "postId": "knu-nurse-nur1624533209:5049",
-          "posted_at": "2026-10-16",
+          "channel_id": "notice-d1802616c625",
+          "deadline": "2026-10-30",
+          "postId": "knu-udm-udm1623371432:1637",
+          "posted_at": "2026-10-14",
           "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwNDkmc3RhcnRQYWdlPTAmbGlzdE5vPTI3ODYmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[안내]2026학년도 2학기 장학사정관 장학금 장학생 추천 안내",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2Mzcmc3RhcnRQYWdlPTAmbGlzdE5vPTkyMiZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 간호대학 행정실 203호입니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+      "script": "장학사정관 추천 장학생은 10월 30일까지 등록금 내 장학금을 받을 수 있어요. 가계곤란 증명서와 성적 기준을 충족해야 해요.",
+      "title": "[안내]2026학년도 2학기 장학사정관 장학금 장학생 추천 안내"
     },
     {
-      "audio": "87ab0f70da9125507a683455cb4fd557d96f94c1755ab5adcc59fe7d94827c20.mp3",
-      "channel_id": "9a170a297785b04fa4e5b4cb",
-      "channel_ids": [
-        "notice-a6afbe817dd2"
-      ],
-      "cues": [
-        {
-          "end_sec": 9.384,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다."
-        }
-      ],
-      "duration_sec": 9.384,
-      "id": "9a170a297785b04fa4e5b4cb",
-      "items": [
-        {
-          "channel_id": "notice-a6afbe817dd2",
-          "dday": null,
-          "detail": "경영학부 · 학부 공지사항 · 2026-10-16",
-          "postId": "knu-kbiz-kbi1623370557:5860",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTgmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-a6afbe817dd2",
-          "deadline": "2026-10-29",
-          "postId": "knu-kbiz-kbi1623370557:5860",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MTgmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "d13490b908af6f3cb53c9288cd479c35d744cb29d8193efe775b52d11ad86c07.mp3",
-      "channel_id": "9b44b83538722096349a2358",
-      "channel_ids": [
-        "notice-8860bb9a4bc5"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.616,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 제출하세요."
-        }
-      ],
-      "duration_sec": 8.616,
-      "id": "9b44b83538722096349a2358",
-      "items": [
-        {
-          "channel_id": "notice-8860bb9a4bc5",
-          "dday": null,
-          "detail": "경제통상학부 · 학부 공지사항 · 2026-10-19",
-          "postId": "knu-econ-eco1623370509:5132",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MzQmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-8860bb9a4bc5",
-          "deadline": "2026-10-29",
-          "postId": "knu-econ-eco1623370509:5132",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTI2MzQmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 제출하세요.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "1eac3cd8df0996974c4400dbff3ded107e129a8c4598efe3cca8ffc3f1b26642.mp3",
-      "channel_id": "f1e966349004da7b62881fff",
-      "channel_ids": [
-        "notice-7ff56c3af3e0"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.872,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다."
-        }
-      ],
-      "duration_sec": 13.872,
-      "id": "f1e966349004da7b62881fff",
-      "items": [
-        {
-          "channel_id": "notice-7ff56c3af3e0",
-          "dday": null,
-          "detail": "고분자공학과 · 학사 공지사항 · 2026-10-19",
-          "postId": "knu-knupolymer-knu1623888520:1704",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTUzNyZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7ff56c3af3e0",
-          "deadline": "2026-10-29",
-          "postId": "knu-knupolymer-knu1623888520:1704",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTUzNyZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "e301f19a8389a5b13b69de839343e655e5ebf2b6e7ea13901eaa91a0e79baa3e.mp3",
-      "channel_id": "9c6d78fc4502737125fcb3d8",
-      "channel_ids": [
-        "notice-ddfc5b2ca163",
-        "notice-e1ec1bf0eb87"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.584,
-          "start_sec": 0,
-          "text": "2027학년도 장학재단 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다."
-        }
-      ],
-      "duration_sec": 7.584,
-      "id": "9c6d78fc4502737125fcb3d8",
-      "items": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "dday": null,
-          "detail": "로봇공학과 · 공지사항 · 2026-10-19",
-          "postId": "knu-robot-rob1623632307:829",
-          "section": "마감 임박",
-          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgyOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzM2JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "dday": null,
-          "detail": "의생명융합공학과 · 공지사항 · 2026-10-19",
-          "postId": "knu-bcst2-bcs1611061294:836",
-          "section": "마감 임박",
-          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgzNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzIxJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ddfc5b2ca163",
-          "deadline": "2026-10-29",
-          "postId": "knu-robot-rob1623632307:829",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTgyOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzM2JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        },
-        {
-          "channel_id": "notice-e1ec1bf0eb87",
-          "deadline": "2026-10-29",
-          "postId": "knu-bcst2-bcs1611061294:836",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTgzNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzIxJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
-        }
-      ],
-      "script": "2027학년도 장학재단 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다.",
-      "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "f135ad7e7ffc182b2a3f1da24aeab97f2822ee0fec13275f16964a014c66e5e5.mp3",
-      "channel_id": "ad1abe807d4cd1b2c56a2bbf",
-      "channel_ids": [
-        "notice-f4ac509b75c4",
-        "notice-a363da417a07"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.152,
-          "start_sec": 0,
-          "text": "2027학년도 장학생 추천자 3명 선발. 2026년 10월 29일 15시까지 본교 추천서 제출. 제출처: 첨성인 미래관 108동 3층 학생과 장학복지팀."
-        }
-      ],
-      "duration_sec": 13.152,
-      "id": "ad1abe807d4cd1b2c56a2bbf",
-      "items": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "dday": null,
-          "detail": "물리학과 · 공지사항 · 2026-10-16",
-          "postId": "knu-physics-phy1645592197:4745",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-a363da417a07",
-          "dday": null,
-          "detail": "의학과 · 공지 · 2026-10-16",
-          "postId": "knu-med-notice001:25950",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTUwJnN0YXJ0UGFnZT0wJmxpc3RObz0yOTAwJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-f4ac509b75c4",
-          "deadline": "2026-10-29",
-          "postId": "knu-physics-phy1645592197:4745",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3NDUmc3RhcnRQYWdlPTAmbGlzdE5vPTMxMzcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        },
-        {
-          "channel_id": "notice-a363da417a07",
-          "deadline": "2026-10-29",
-          "postId": "knu-med-notice001:25950",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTUwJnN0YXJ0UGFnZT0wJmxpc3RObz0yOTAwJnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
-        }
-      ],
-      "script": "2027학년도 장학생 추천자 3명 선발. 2026년 10월 29일 15시까지 본교 추천서 제출. 제출처: 첨성인 미래관 108동 3층 학생과 장학복지팀.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "bff8b41623eaff9014011c501fc370d3e460e43dd6da3bc039f9f8c31bac8255.mp3",
-      "channel_id": "0a78dbb879f2e2f337612caa",
-      "channel_ids": [
-        "notice-6b16f01d1a75"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.016,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요."
-        }
-      ],
-      "duration_sec": 8.016,
-      "id": "0a78dbb879f2e2f337612caa",
-      "items": [
-        {
-          "channel_id": "notice-6b16f01d1a75",
-          "dday": null,
-          "detail": "식품자원경제학과 · 공지사항 · 2026-10-16",
-          "postId": "knu-knuagec-knu1623134126:3240",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNDAmc3RhcnRQYWdlPTAmbGlzdE5vPTExNDcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-6b16f01d1a75",
-          "deadline": "2026-10-29",
-          "postId": "knu-knuagec-knu1623134126:3240",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNDAmc3RhcnRQYWdlPTAmbGlzdE5vPTExNDcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "bff8b41623eaff9014011c501fc370d3e460e43dd6da3bc039f9f8c31bac8255.mp3",
-      "channel_id": "4918d47c6d88a586862b0721",
-      "channel_ids": [
-        "notice-97fffffebd44"
-      ],
-      "cues": [
-        {
-          "end_sec": 8.016,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요."
-        }
-      ],
-      "duration_sec": 8.016,
-      "id": "4918d47c6d88a586862b0721",
-      "items": [
-        {
-          "channel_id": "notice-97fffffebd44",
-          "dday": null,
-          "detail": "아동학부 · 학부 공지사항 · 2026-10-19",
-          "postId": "knu-knuchild-knu1623370362:1428",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0Mjgmc3RhcnRQYWdlPTAmbGlzdE5vPTY2OCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-97fffffebd44",
-          "deadline": "2026-10-29",
-          "postId": "knu-knuchild-knu1623370362:1428",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0Mjgmc3RhcnRQYWdlPTAmbGlzdE5vPTY2OCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "f5b76a4537303db54d405b8dc6366b4af48561f4656ab1a23018d5e4cd79400d.mp3",
-      "channel_id": "47dedc18de9af0c4b888bae3",
-      "channel_ids": [
-        "notice-06dffccf1c28"
-      ],
-      "cues": [
-        {
-          "end_sec": 12.216,
-          "start_sec": 0,
-          "text": "2027학년도 장학생 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다."
-        }
-      ],
-      "duration_sec": 12.216,
-      "id": "47dedc18de9af0c4b888bae3",
-      "items": [
-        {
-          "channel_id": "notice-06dffccf1c28",
-          "dday": null,
-          "detail": "에너지공학부 · 학부 공지사항 · 2026-10-21",
-          "postId": "knu-soee-soe1622609908:1861",
-          "section": "마감 임박",
-          "title": "[학생] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NjEmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzYmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-06dffccf1c28",
-          "deadline": "2026-10-29",
-          "postId": "knu-soee-soe1622609908:1861",
-          "posted_at": "2026-10-21",
-          "reason": "reminder",
-          "title": "[학생] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NjEmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzYmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 장학생 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다.",
-      "title": "[학생] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "8450669acc9660207bdf5d34c078a143551b5de5309487b5c86ffaa64dcfaa0f.mp3",
-      "channel_id": "22d6902fea61846de274d9d3",
-      "channel_ids": [
-        "notice-7dfeec322405"
-      ],
-      "cues": [
-        {
-          "end_sec": 7.848,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 진행합니다."
-        }
-      ],
-      "duration_sec": 7.848,
-      "id": "22d6902fea61846de274d9d3",
-      "items": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "dday": null,
-          "detail": "응용화학공학부 · 공지사항 · 2026-10-16",
-          "postId": "knu-knuce-knu1762850029:372",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM3MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTgwJnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-7dfeec322405",
-          "deadline": "2026-10-29",
-          "postId": "knu-knuce-knu1762850029:372",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM3MiZzdGFydFBhZ2U9MCZsaXN0Tm89MTgwJnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 진행합니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "87ab0f70da9125507a683455cb4fd557d96f94c1755ab5adcc59fe7d94827c20.mp3",
-      "channel_id": "c11e947f9bf332daa1b7bebf",
-      "channel_ids": [
-        "notice-ad22d5b4a9e9"
-      ],
-      "cues": [
-        {
-          "end_sec": 9.384,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다."
-        }
-      ],
-      "duration_sec": 9.384,
-      "id": "c11e947f9bf332daa1b7bebf",
-      "items": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "dday": null,
-          "detail": "의류학과 · 공지사항 · 2026-10-16",
-          "postId": "knu-fashion-fas1623134444:917",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkxNyZzdGFydFBhZ2U9MCZsaXN0Tm89ODAxJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-ad22d5b4a9e9",
-          "deadline": "2026-10-29",
-          "postId": "knu-fashion-fas1623134444:917",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkxNyZzdGFydFBhZ2U9MCZsaXN0Tm89ODAxJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "106cae81043d33ccd82c69ae54e0181c6a38adb0cad4be52f852e4cd2d49363f.mp3",
-      "channel_id": "086fa8685ef4151005b9daa8",
+      "audio": "5344827023c973de0df2a0519d0b105c35a872d2e36ab1725047689b1858de9e.mp3",
+      "channel_id": "486c6248f499c0fc2af5c309",
       "channel_ids": [
         "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 10.416,
+          "end_sec": 9.672,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 공고. 제출기한은 10월 29일 15시까지입니다."
+          "text": "2027학년도 해동과학문화재단 장학생 추천 신청 기한은 10월 28일 18시까지입니다. 2학기 이상 재학 예정자만 대상입니다."
         }
       ],
-      "duration_sec": 10.416,
-      "id": "086fa8685ef4151005b9daa8",
+      "duration_sec": 9.672,
+      "id": "486c6248f499c0fc2af5c309",
       "items": [
         {
           "channel_id": "notice-1cbb3d90d081",
           "dday": null,
-          "detail": "전기공학과 · 공지사항 · 2026-10-16",
-          "postId": "knu-electric-ele1622787198:7453",
-          "section": "마감 임박",
-          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "detail": "전기공학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-electric-ele1622787198:7472",
+          "section": "소식",
+          "title": "[장학]2027학년도 해동과학문화재단 장학생 추천 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NzImc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzEmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-1cbb3d90d081",
-          "deadline": "2026-10-29",
-          "postId": "knu-electric-ele1622787198:7453",
-          "posted_at": "2026-10-16",
-          "reason": "reminder",
-          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTMwNjMmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "deadline": "2026-10-28",
+          "postId": "knu-electric-ele1622787198:7472",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[장학]2027학년도 해동과학문화재단 장학생 추천 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NzImc3RhcnRQYWdlPTAmbGlzdE5vPTMwNzEmdGFibGU9ZXhfYmJzX2RhdGFfZWxlY3RyaWMmbmF2X2NvZGU9ZWxlMTYyMjc4NzE5OCZjb2RlPXFoOGl4dzc5OGFuWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 공고. 제출기한은 10월 29일 15시까지입니다.",
-      "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+      "script": "2027학년도 해동과학문화재단 장학생 추천 신청 기한은 10월 28일 18시까지입니다. 2학기 이상 재학 예정자만 대상입니다.",
+      "title": "[장학]2027학년도 해동과학문화재단 장학생 추천 안내"
     },
     {
-      "audio": "87ab0f70da9125507a683455cb4fd557d96f94c1755ab5adcc59fe7d94827c20.mp3",
-      "channel_id": "5885c8fc675f2b816359e32d",
+      "audio": "d140359538d8df494ca6549429b7ad2945ced6b9b222ab4c111fc8cb1a7028fd.mp3",
+      "channel_id": "c0c956a3329994520394e7a0",
       "channel_ids": [
-        "notice-1f235111f7dc"
+        "notice-1cbb3d90d081"
       ],
       "cues": [
         {
-          "end_sec": 9.384,
+          "end_sec": 8.04,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다."
+          "text": "대구·경북 대학생, 10월 30일까지 서류 접수. 휴학생 제외. 창업 아이디어 제출하세요."
         }
       ],
-      "duration_sec": 9.384,
-      "id": "5885c8fc675f2b816359e32d",
+      "duration_sec": 8.04,
+      "id": "c0c956a3329994520394e7a0",
       "items": [
         {
-          "channel_id": "notice-1f235111f7dc",
+          "channel_id": "notice-1cbb3d90d081",
           "dday": null,
-          "detail": "지질학전공 · 공지사항 · 2026-10-23",
-          "postId": "knu-geology-geo1621814864:1626",
+          "detail": "전기공학과 · 공지사항 · 2026-10-15",
+          "postId": "knu-electric-ele1622787198:7446",
           "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTAmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "「개교80주년 기념 대학(원)생 창업경진대회<대구·경북 대학(원)생 Tech&Idea 창업경진대회>」개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NDYmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDYxJnRhYmxlPWV4X2Jic19kYXRhX2VsZWN0cmljJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmY29kZT1xaDhpeHc3OThhblkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-1f235111f7dc",
-          "deadline": "2026-10-29",
-          "postId": "knu-geology-geo1621814864:1626",
-          "posted_at": "2026-10-23",
+          "channel_id": "notice-1cbb3d90d081",
+          "deadline": "2026-10-30",
+          "postId": "knu-electric-ele1622787198:7446",
+          "posted_at": "2026-10-15",
           "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?mode=view&mv_data=aWR4PTE2MjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEzOTAmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvbG9neSZuYXZfY29kZT1nZW8xNjIxODE0ODY0JmNvZGU9WllINUU1Znloc2d1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "「개교80주년 기념 대학(원)생 창업경진대회<대구·경북 대학(원)생 Tech&Idea 창업경진대회>」개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?mode=view&mv_data=aWR4PTc0NDYmc3RhcnRQYWdlPTEwJmxpc3RObz0zMDYxJnRhYmxlPWV4X2Jic19kYXRhX2VsZWN0cmljJm5hdl9jb2RlPWVsZTE2MjI3ODcxOTgmY29kZT1xaDhpeHc3OThhblkmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 위한 제출기한은 10월 29일 15시까지입니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+      "script": "대구·경북 대학생, 10월 30일까지 서류 접수. 휴학생 제외. 창업 아이디어 제출하세요.",
+      "title": "「개교80주년 기념 대학(원)생 창업경진대회<대구·경북 대학(원)생 Tech&Idea 창업경진대회>」개최 안내"
     },
     {
-      "audio": "880fa3b097bfd4666da044157d81bb1698e8db8c413ec93999cb76d5554ec862.mp3",
+      "audio": "1db160a4a4df3de106d6a935286d69fc0373eeb334c762d629c2ba1c1b7bfb78.mp3",
+      "channel_id": "c0d1413f7bec4bdee50913ad",
+      "channel_ids": [
+        "notice-8b2d3f025a39"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.16,
+          "start_sec": 0,
+          "text": "2027학년도 해동과학문화재단 장학생 모집 안내를 확인해 주세요. PDF 미리보기 첨부되어 있습니다."
+        }
+      ],
+      "duration_sec": 8.16,
+      "id": "c0d1413f7bec4bdee50913ad",
+      "items": [
+        {
+          "channel_id": "notice-8b2d3f025a39",
+          "dday": null,
+          "detail": "정밀기계공학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-pmeatknu-pme1623030157:1516",
+          "section": "소식",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE1MTYmc3RhcnRQYWdlPTAmbGlzdE5vPTcyMCZ0YWJsZT1leF9iYnNfZGF0YV9wbWVhdGtudSZuYXZfY29kZT1wbWUxNjIzMDMwMTU3JmNvZGU9RmJXSTNnSURDNFdoJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-8b2d3f025a39",
+          "deadline": null,
+          "postId": "knu-pmeatknu-pme1623030157:1516",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE1MTYmc3RhcnRQYWdlPTAmbGlzdE5vPTcyMCZ0YWJsZT1leF9iYnNfZGF0YV9wbWVhdGtudSZuYXZfY29kZT1wbWUxNjIzMDMwMTU3JmNvZGU9RmJXSTNnSURDNFdoJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2027학년도 해동과학문화재단 장학생 모집 안내를 확인해 주세요. PDF 미리보기 첨부되어 있습니다.",
+      "title": "2027학년도 해동과학문화재단 장학생 모집 안내"
+    },
+    {
+      "audio": "5433d1fb3a901db818a243abc79643a5957ccc4a0480e518986bd342b051613d.mp3",
+      "channel_id": "813562c8bc06f053c9690224",
+      "channel_ids": [
+        "notice-2eb7684c7df1"
+      ],
+      "cues": [
+        {
+          "end_sec": 15.312,
+          "start_sec": 0,
+          "text": "졸업자격인정원 신청은 2026.10.12~12.31까지 해야 합니다. 실용영어, 소프트웨어 영역 성적이나 자격증을 미리 준비하세요. 학과 홈페이지와 [붙임] 자료 확인 후 제출해 주세요."
+        }
+      ],
+      "duration_sec": 15.312,
+      "id": "813562c8bc06f053c9690224",
+      "items": [
+        {
+          "channel_id": "notice-2eb7684c7df1",
+          "dday": null,
+          "detail": "지리학과 · 학부 공지사항 · 2026-10-26",
+          "postId": "knu-geog-geo1614082611:2878",
+          "section": "소식",
+          "title": "2026학년도 2학기 졸업자격인정원 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?mode=view&mv_data=aWR4PTI4Nzgmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MTkmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZyZuYXZfY29kZT1nZW8xNjE0MDgyNjExJmNvZGU9cE4xOE9zdlJjV1dkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-2eb7684c7df1",
+          "deadline": null,
+          "postId": "knu-geog-geo1614082611:2878",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2026학년도 2학기 졸업자격인정원 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?mode=view&mv_data=aWR4PTI4Nzgmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MTkmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZyZuYXZfY29kZT1nZW8xNjE0MDgyNjExJmNvZGU9cE4xOE9zdlJjV1dkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "졸업자격인정원 신청은 2026.10.12~12.31까지 해야 합니다. 실용영어, 소프트웨어 영역 성적이나 자격증을 미리 준비하세요. 학과 홈페이지와 [붙임] 자료 확인 후 제출해 주세요.",
+      "title": "2026학년도 2학기 졸업자격인정원 신청 안내"
+    },
+    {
+      "audio": "8812745b8e99cdedf7627c45372ad306a76bde44b89bd59ef5712455d36a2639.mp3",
       "channel_id": "436b66b0438e1c3951cbe29d",
       "channel_ids": [
         "notice-ccc3a94a1fa5"
       ],
       "cues": [
         {
-          "end_sec": 10.344,
+          "end_sec": 12.408,
           "start_sec": 0,
-          "text": "2027학년도 해동과학문화재단 장학생 모집. 지원서는 10월 27일 오후 3시까지 제출. 학과 및 성적 기준 확인 후 제출."
+          "text": "2027학년도 해동과학문화재단 장학생 지원서는 10월 27일 오후 3시까지 제출하세요. 자격과 서류는 참조하시고, 문의는 오전 8시~오후 5시까지 가능해요."
         }
       ],
-      "duration_sec": 10.344,
+      "duration_sec": 12.408,
       "id": "436b66b0438e1c3951cbe29d",
       "items": [
         {
@@ -640,279 +274,607 @@
           "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxMTcmc3RhcnRQYWdlPTIwJmxpc3RObz0yNTQwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
         }
       ],
-      "script": "2027학년도 해동과학문화재단 장학생 모집. 지원서는 10월 27일 오후 3시까지 제출. 학과 및 성적 기준 확인 후 제출.",
+      "script": "2027학년도 해동과학문화재단 장학생 지원서는 10월 27일 오후 3시까지 제출하세요. 자격과 서류는 참조하시고, 문의는 오전 8시~오후 5시까지 가능해요.",
       "title": "2027학년도 해동과학문화재단 장학생 모집 안내"
     },
     {
-      "audio": "bff8b41623eaff9014011c501fc370d3e460e43dd6da3bc039f9f8c31bac8255.mp3",
-      "channel_id": "11e656bb9b016984b96ae7b4",
+      "audio": "613646c642a11055f76f4ecec78c61951f151c2c075a23d4649fb83fadda5867.mp3",
+      "channel_id": "bc707fab0d7963c74ae491ea",
       "channel_ids": [
         "notice-3d2a3e87207a"
       ],
       "cues": [
         {
-          "end_sec": 8.016,
+          "end_sec": 10.824,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요."
+          "text": "대구·경북 대학(원)생, 10월 30일까지 창업 아이디어 신청 가능해요. 휴학생 제외, 개인 또는 4인 이하 팀 참가 가능해요."
         }
       ],
-      "duration_sec": 8.016,
-      "id": "11e656bb9b016984b96ae7b4",
+      "duration_sec": 10.824,
+      "id": "bc707fab0d7963c74ae491ea",
       "items": [
         {
           "channel_id": "notice-3d2a3e87207a",
           "dday": null,
           "detail": "한문학과 · 학부 공지사항 · 2026-10-20",
-          "postId": "knu-hanmun-han1624361542:7395",
+          "postId": "knu-hanmun-han1624361542:7398",
           "section": "마감 임박",
-          "title": "[장학]2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내(~10/29)",
-          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczOTUmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTY2JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "[대구앵커사업] 「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczOTgmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTY4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-3d2a3e87207a",
-          "deadline": "2026-10-29",
-          "postId": "knu-hanmun-han1624361542:7395",
+          "deadline": "2026-10-30",
+          "postId": "knu-hanmun-han1624361542:7398",
           "posted_at": "2026-10-20",
           "reason": "reminder",
-          "title": "[장학]2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내(~10/29)",
-          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczOTUmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTY2JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+          "title": "[대구앵커사업] 「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTczOTgmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTY4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요.",
-      "title": "[장학]2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내(~10/29)"
+      "script": "대구·경북 대학(원)생, 10월 30일까지 창업 아이디어 신청 가능해요. 휴학생 제외, 개인 또는 4인 이하 팀 참가 가능해요.",
+      "title": "[대구앵커사업] 「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내"
     },
     {
-      "audio": "a9550b9bd508b65434762870e5d2b08d9a42cf411a8ca22b655a8f4630ecfa99.mp3",
-      "channel_id": "ac2fa6d032c55bbe35ca8295",
+      "audio": "7f24a486be37547288d221004913924f334c12a98ac586abc7312b1d3d98f0f6.mp3",
+      "channel_id": "0994eb4df90e653b95600204",
       "channel_ids": [
         "notice-4a41e1328a3e"
       ],
       "cues": [
         {
-          "end_sec": 10.272,
+          "end_sec": 8.064,
           "start_sec": 0,
-          "text": "2026학년도 2학기 장학사정관 장학금 장학생 추천을 위해, 10월 29일까지 행정학부사무실로 원본 서류 제출 바랍니다."
+          "text": "의료 바이오 3D모델링(AI 활용) 프로그램 참여 신청서를 10월 28일까지 전자메일로 제출하세요."
         }
       ],
-      "duration_sec": 10.272,
-      "id": "ac2fa6d032c55bbe35ca8295",
+      "duration_sec": 8.064,
+      "id": "0994eb4df90e653b95600204",
       "items": [
         {
           "channel_id": "notice-4a41e1328a3e",
           "dday": null,
-          "detail": "행정학부 · 공지사항 · 2026-10-13",
-          "postId": "knu-puad-pua1623029519:4065",
-          "section": "마감 임박",
-          "title": "[장학] 2026학년도 2학기 장학사정관 장학금 장학생 추천 안내(~10/29(목))",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNjUmc3RhcnRQYWdlPTEwJmxpc3RObz0yMTE1JnRhYmxlPWV4X2Jic19kYXRhX3B1YWQmbmF2X2NvZGU9cHVhMTYyMzAyOTUxOSZjb2RlPTlYdFQwbWc1SExpMyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "detail": "행정학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-puad-pua1623029519:4079",
+          "section": "소식",
+          "title": "[학사] [앵커 1-3] 2026년도 의료 바이오 3D 모델링(AI활용) 프로그램 참여 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjgmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-4a41e1328a3e",
-          "deadline": "2026-10-29",
-          "postId": "knu-puad-pua1623029519:4065",
-          "posted_at": "2026-10-13",
-          "reason": "reminder",
-          "title": "[장학] 2026학년도 2학기 장학사정관 장학금 장학생 추천 안내(~10/29(목))",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNjUmc3RhcnRQYWdlPTEwJmxpc3RObz0yMTE1JnRhYmxlPWV4X2Jic19kYXRhX3B1YWQmbmF2X2NvZGU9cHVhMTYyMzAyOTUxOSZjb2RlPTlYdFQwbWc1SExpMyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "deadline": null,
+          "postId": "knu-puad-pua1623029519:4079",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[학사] [앵커 1-3] 2026년도 의료 바이오 3D 모델링(AI활용) 프로그램 참여 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMjgmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "2026학년도 2학기 장학사정관 장학금 장학생 추천을 위해, 10월 29일까지 행정학부사무실로 원본 서류 제출 바랍니다.",
-      "title": "[장학] 2026학년도 2학기 장학사정관 장학금 장학생 추천 안내(~10/29(목))"
+      "script": "의료 바이오 3D모델링(AI 활용) 프로그램 참여 신청서를 10월 28일까지 전자메일로 제출하세요.",
+      "title": "[학사] [앵커 1-3] 2026년도 의료 바이오 3D 모델링(AI활용) 프로그램 참여 신청 안내"
     },
     {
-      "audio": "1eac3cd8df0996974c4400dbff3ded107e129a8c4598efe3cca8ffc3f1b26642.mp3",
-      "channel_id": "a79320ed8f177238e923e675",
-      "channel_ids": [
-        "notice-4a41e1328a3e"
-      ],
-      "cues": [
-        {
-          "end_sec": 13.872,
-          "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다."
-        }
-      ],
-      "duration_sec": 13.872,
-      "id": "a79320ed8f177238e923e675",
-      "items": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "dday": null,
-          "detail": "행정학부 · 공지사항 · 2026-10-19",
-          "postId": "knu-puad-pua1623029519:4069",
-          "section": "마감 임박",
-          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNjkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMTkmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "kind": "notice",
-      "notice_refs": [
-        {
-          "channel_id": "notice-4a41e1328a3e",
-          "deadline": "2026-10-29",
-          "postId": "knu-puad-pua1623029519:4069",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwNjkmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMTkmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
-        }
-      ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요. 제출처는 첨성인 미래관 108건물 3층 학생과 장학복지팀입니다.",
-      "title": "[장학] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
-    },
-    {
-      "audio": "bff8b41623eaff9014011c501fc370d3e460e43dd6da3bc039f9f8c31bac8255.mp3",
-      "channel_id": "2fc4eff26e9ea61eebaf586d",
+      "audio": "9f05d79fecd03a8bdf1b29e4aa2ad213175778e99cb1f2b5b53ee4a177b8ebbc.mp3",
+      "channel_id": "147944246d7d1ea9dcc5aa13",
       "channel_ids": [
         "notice-ac0144f93d45"
       ],
       "cues": [
         {
-          "end_sec": 8.016,
+          "end_sec": 10.584,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요."
+          "text": "장학사정관 추천 학생은 10월 30일까지 등록금 내 장학금 신청하세요. 성적은 6학점 이상, 백분위 73점 이상이 필요합니다."
         }
       ],
-      "duration_sec": 8.016,
-      "id": "2fc4eff26e9ea61eebaf586d",
+      "duration_sec": 10.584,
+      "id": "147944246d7d1ea9dcc5aa13",
       "items": [
         {
           "channel_id": "notice-ac0144f93d45",
           "dday": null,
-          "detail": "화학과 · 공지사항 · 2026-10-19",
-          "postId": "knu-chem-che1622521080:7106",
+          "detail": "화학과 · 공지사항 · 2026-10-13",
+          "postId": "knu-chem-che1622521080:7092",
           "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMDYmc3RhcnRQYWdlPTEwJmxpc3RObz0zOTAzJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "2026학년도 2학기 장학사정관 장학생 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwOTImc3RhcnRQYWdlPTMwJmxpc3RObz0zODkyJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-ac0144f93d45",
-          "deadline": "2026-10-29",
-          "postId": "knu-chem-che1622521080:7106",
-          "posted_at": "2026-10-19",
+          "deadline": "2026-10-30",
+          "postId": "knu-chem-che1622521080:7092",
+          "posted_at": "2026-10-13",
           "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMDYmc3RhcnRQYWdlPTEwJmxpc3RObz0zOTAzJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "2026학년도 2학기 장학사정관 장학생 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcwOTImc3RhcnRQYWdlPTMwJmxpc3RObz0zODkyJnRhYmxlPWV4X2Jic19kYXRhX2NoZW0mbmF2X2NvZGU9Y2hlMTYyMjUyMTA4MCZjb2RlPUwySG03a3c0WnZsTiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 신청하세요.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+      "script": "장학사정관 추천 학생은 10월 30일까지 등록금 내 장학금 신청하세요. 성적은 6학점 이상, 백분위 73점 이상이 필요합니다.",
+      "title": "2026학년도 2학기 장학사정관 장학생 신청 안내"
     },
     {
-      "audio": "8aa03e406bd7d900a729e6eeefdc7bca816d1867ab7b70e3f54ddb72136812a4.mp3",
-      "channel_id": "2bc424424a4afc6e139ffecc",
+      "audio": "eea21880b8aee17d4e85c6a6224e4ff25a814b7c075bc4157938329f6181910c.mp3",
+      "channel_id": "3cb98c85cc36ddbb45a41d24",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.52,
+          "start_sec": 0,
+          "text": "2026학년도 2학기 외국인 대학원생 심리검사 해석 특강을 안내해요. 언제까지 참가할지 확인해 주세요."
+        }
+      ],
+      "duration_sec": 8.52,
+      "id": "3cb98c85cc36ddbb45a41d24",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7130",
+          "section": "소식",
+          "title": "2026학년도 2학기 외국인 대학원생 심리검사 해석 특강 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzAmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjEmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7130",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2026학년도 2학기 외국인 대학원생 심리검사 해석 특강 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzAmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjEmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2026학년도 2학기 외국인 대학원생 심리검사 해석 특강을 안내해요. 언제까지 참가할지 확인해 주세요.",
+      "title": "2026학년도 2학기 외국인 대학원생 심리검사 해석 특강 안내"
+    },
+    {
+      "audio": "5e2726eb84b3c8e3d0d2ee4a18ce2ccae62cbca6215e20497d3832b4b94580e5.mp3",
+      "channel_id": "efd399481f02c717d0c393e4",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.72,
+          "start_sec": 0,
+          "text": "청년연구자 문화행사의 날 참여신청을 오늘까지 해주세요. 대구앵커사업에서 진행돼요."
+        }
+      ],
+      "duration_sec": 6.72,
+      "id": "efd399481f02c717d0c393e4",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7131",
+          "section": "소식",
+          "title": "[대구앵커사업]청년연구자 문화행사의 날 알림 및 참여신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzEmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjImdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7131",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[대구앵커사업]청년연구자 문화행사의 날 알림 및 참여신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzEmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjImdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "청년연구자 문화행사의 날 참여신청을 오늘까지 해주세요. 대구앵커사업에서 진행돼요.",
+      "title": "[대구앵커사업]청년연구자 문화행사의 날 알림 및 참여신청 안내"
+    },
+    {
+      "audio": "5eb87731db46883a25d41eb0a2e65526320b35e57c64e09527734450b7c1afdd.mp3",
+      "channel_id": "a5c7f82d4ed2f43a3c7f61d6",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.968,
+          "start_sec": 0,
+          "text": "2027학년도 해동과학문화재단 장학생 지원서는 10월 28일 18시까지 학생이 직접 제출하세요."
+        }
+      ],
+      "duration_sec": 7.968,
+      "id": "a5c7f82d4ed2f43a3c7f61d6",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7132",
+          "section": "소식",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjMmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7132",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzImc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjMmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "2027학년도 해동과학문화재단 장학생 지원서는 10월 28일 18시까지 학생이 직접 제출하세요.",
+      "title": "2027학년도 해동과학문화재단 장학생 모집 안내"
+    },
+    {
+      "audio": "9732e827a87e4dbe21566b0c657f09ad695b458fb8f475d5e9030f1096af94e3.mp3",
+      "channel_id": "b6b2906cc12fadb96b18f69a",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.24,
+          "start_sec": 0,
+          "text": "화학과 2026학기 전공체험 박람회는 11월 3일(화) 진행돼요. 행사 내용은 공식 안내를 통해 확인하세요."
+        }
+      ],
+      "duration_sec": 9.24,
+      "id": "b6b2906cc12fadb96b18f69a",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7133",
+          "section": "소식",
+          "title": "2026학년도 2학기 대학원 전공체험 박람회 행사 안내(화학과 11/3(화))",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzMmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjQmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7133",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2026학년도 2학기 대학원 전공체험 박람회 행사 안내(화학과 11/3(화))",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzMmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjQmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "화학과 2026학기 전공체험 박람회는 11월 3일(화) 진행돼요. 행사 내용은 공식 안내를 통해 확인하세요.",
+      "title": "2026학년도 2학기 대학원 전공체험 박람회 행사 안내(화학과 11/3(화))"
+    },
+    {
+      "audio": "2ed478aa543aeb7bd8b71f5831438678dc92a2b7947bc48e90ce384592f357e7.mp3",
+      "channel_id": "62902a2eabda8c3848163b1d",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.992,
+          "start_sec": 0,
+          "text": "청년연구자 커뮤니티 프로그램 2회차 신청을 오늘까지 해주세요. 대구앵커사업 운영 안내입니다."
+        }
+      ],
+      "duration_sec": 7.992,
+      "id": "62902a2eabda8c3848163b1d",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7134",
+          "section": "소식",
+          "title": "[대구앵커사업] 청년연구자 커뮤니티 프로그램 운영계획(2회차) 알림 및 신청안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzQmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjUmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7134",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[대구앵커사업] 청년연구자 커뮤니티 프로그램 운영계획(2회차) 알림 및 신청안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzQmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjUmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "청년연구자 커뮤니티 프로그램 2회차 신청을 오늘까지 해주세요. 대구앵커사업 운영 안내입니다.",
+      "title": "[대구앵커사업] 청년연구자 커뮤니티 프로그램 운영계획(2회차) 알림 및 신청안내"
+    },
+    {
+      "audio": "6e9c6d9a15b5b34ad0de5d7e0e4acd6c2b9be2302607d561c2510765dfd7e8e2.mp3",
+      "channel_id": "9fdaa88ec515a5af5e46262c",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "cues": [
+        {
+          "end_sec": 15.096,
+          "start_sec": 0,
+          "text": "도로·광장·공원 인파재난 위기경보 '주의' 단계가 10월 23일 오후 5시부터 11월 1일 오전 6시까지 서울, 부산, 대구 등 24개 지역에서 발령됩니다. 인파가 많은 장소에서는 안전을 위해 주의해 주세요."
+        }
+      ],
+      "duration_sec": 15.096,
+      "id": "9fdaa88ec515a5af5e46262c",
+      "items": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "detail": "화학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chem-che1622521080:7135",
+          "section": "소식",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzUmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjYmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ac0144f93d45",
+          "deadline": null,
+          "postId": "knu-chem-che1622521080:7135",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxMzUmc3RhcnRQYWdlPTAmbGlzdE5vPTM5MjYmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "도로·광장·공원 인파재난 위기경보 '주의' 단계가 10월 23일 오후 5시부터 11월 1일 오전 6시까지 서울, 부산, 대구 등 24개 지역에서 발령됩니다. 인파가 많은 장소에서는 안전을 위해 주의해 주세요.",
+      "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내"
+    },
+    {
+      "audio": "4556e9dbe60731d5e8e8d1e5136f5c76bf5ef56471ed1d7811f85a641c65b193.mp3",
+      "channel_id": "c37ea7d7abedde3421843314",
+      "channel_ids": [
+        "notice-093d2d29fb09"
+      ],
+      "cues": [
+        {
+          "end_sec": 14.784,
+          "start_sec": 0,
+          "text": "화학교육과 2026학년도 학술제는 11월 7일(토) 9시 30분, 경북대 화학관에서 열려요. 초·중·고 학생 누구나 무료로 참여 가능해요. 현장 접수 후 자율 참가입니다."
+        }
+      ],
+      "duration_sec": 14.784,
+      "id": "c37ea7d7abedde3421843314",
+      "items": [
+        {
+          "channel_id": "notice-093d2d29fb09",
+          "dday": null,
+          "detail": "화학교육과 · 공지사항 · 2026-10-26",
+          "postId": "knu-chedu-che1623057663:1263",
+          "section": "소식",
+          "title": "2026학년도 화학교육과 학술제 개최 알림",
+          "url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?mode=view&mv_data=aWR4PTEyNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTY5NSZ0YWJsZT1leF9iYnNfZGF0YV9jaGVkdSZuYXZfY29kZT1jaGUxNjIzMDU3NjYzJmNvZGU9ckRTNDl0cmRQUkZTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-093d2d29fb09",
+          "deadline": null,
+          "postId": "knu-chedu-che1623057663:1263",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2026학년도 화학교육과 학술제 개최 알림",
+          "url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?mode=view&mv_data=aWR4PTEyNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTY5NSZ0YWJsZT1leF9iYnNfZGF0YV9jaGVkdSZuYXZfY29kZT1jaGUxNjIzMDU3NjYzJmNvZGU9ckRTNDl0cmRQUkZTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "화학교육과 2026학년도 학술제는 11월 7일(토) 9시 30분, 경북대 화학관에서 열려요. 초·중·고 학생 누구나 무료로 참여 가능해요. 현장 접수 후 자율 참가입니다.",
+      "title": "2026학년도 화학교육과 학술제 개최 알림"
+    },
+    {
+      "audio": "5161b5c22a92e7ed953e421d47c742cd055f535e931fa50f1443a84924222235.mp3",
+      "channel_id": "02cee0bb75d86d1b45267c96",
       "channel_ids": [
         "notice-101538fb6a8e"
       ],
       "cues": [
         {
-          "end_sec": 7.944,
+          "end_sec": 14.04,
           "start_sec": 0,
-          "text": "2026학년도 2학기 장학금 추천을 위해 학생은 10월 29일 18시까지 학과에 제출하세요."
+          "text": "2027학년도 장학생 추천자 선발 안내해요. 리더십 경험자 및 성적 85점 이상, 12학점 이상 이수한 3학년 1학기 학생이 지원 가능해요. 제출기한은 10월 28일 18시까지입니다."
         }
       ],
-      "duration_sec": 7.944,
-      "id": "2bc424424a4afc6e139ffecc",
+      "duration_sec": 14.04,
+      "id": "02cee0bb75d86d1b45267c96",
       "items": [
         {
           "channel_id": "notice-101538fb6a8e",
           "dday": null,
-          "detail": "환경공학과 · 학부 공지사항 · 2026-10-13",
-          "postId": "knu-env-env1624500229:1110",
+          "detail": "환경공학과 · 학부 공지사항 · 2026-10-16",
+          "postId": "knu-env-env1624500229:1114",
           "section": "마감 임박",
-          "title": "[안내] 2026학년도 2학기 장학사정관 장학금 장학생 추천",
-          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTExMTAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4NiZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTExMTQmc3RhcnRQYWdlPTAmbGlzdE5vPTE4NyZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-101538fb6a8e",
-          "deadline": "2026-10-29",
-          "postId": "knu-env-env1624500229:1110",
-          "posted_at": "2026-10-13",
+          "deadline": "2026-10-28",
+          "postId": "knu-env-env1624500229:1114",
+          "posted_at": "2026-10-16",
           "reason": "reminder",
-          "title": "[안내] 2026학년도 2학기 장학사정관 장학금 장학생 추천",
-          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTExMTAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4NiZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+          "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTExMTQmc3RhcnRQYWdlPTAmbGlzdE5vPTE4NyZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "2026학년도 2학기 장학금 추천을 위해 학생은 10월 29일 18시까지 학과에 제출하세요.",
-      "title": "[안내] 2026학년도 2학기 장학사정관 장학금 장학생 추천"
+      "script": "2027학년도 장학생 추천자 선발 안내해요. 리더십 경험자 및 성적 85점 이상, 12학점 이상 이수한 3학년 1학기 학생이 지원 가능해요. 제출기한은 10월 28일 18시까지입니다.",
+      "title": "[안내] 2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발"
     },
     {
-      "audio": "128ac15bef0e28b63d3749d200fd18d5013b75a8df9db91c71be5b86c0727430.mp3",
-      "channel_id": "3933bea1a822b3071f969827",
+      "audio": "be1ae1f2cd54f03f74751e619bd308a6a60705648b24479e161db647e9854433.mp3",
+      "channel_id": "6a7da591b7df89274dfa0965",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 12.0,
+          "end_sec": 12.264,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 추천을 10월 29일까지 진행합니다. 지원서 및 서류를 108건물 3층 학생과 장학복지팀에 제출하세요."
+          "text": "공성호 교수 과제 팀 선발 안내, 2027년 1학기. 주제별 1팀, 팀당 5~8명. 지원 마감 10월 28일 16시. 조교 이경현에게 메일로 지원하세요."
         }
       ],
-      "duration_sec": 12.0,
-      "id": "3933bea1a822b3071f969827",
+      "duration_sec": 12.264,
+      "id": "6a7da591b7df89274dfa0965",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-see-notice:105742",
+          "section": "소식",
+          "title": "[PBL기반반도체특성화프로젝트] 2027년 1학기 공성호 교수 과제 제안 및 팀 선발 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105742&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": "2026-10-28",
+          "postId": "knu-see-notice:105742",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[PBL기반반도체특성화프로젝트] 2027년 1학기 공성호 교수 과제 제안 및 팀 선발 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105742&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "공성호 교수 과제 팀 선발 안내, 2027년 1학기. 주제별 1팀, 팀당 5~8명. 지원 마감 10월 28일 16시. 조교 이경현에게 메일로 지원하세요.",
+      "title": "[PBL기반반도체특성화프로젝트] 2027년 1학기 공성호 교수 과제 제안 및 팀 선발 안내"
+    },
+    {
+      "audio": "278454d17e91a10bda9421c69381e84598a4b556a54c51ac6bc79012205cee2a.mp3",
+      "channel_id": "f87544349da48ce52658fdb7",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.768,
+          "start_sec": 0,
+          "text": "티에스이 권상준 회장 초청 세미나, 10월 19일부터 30일까지 신청하세요. 11월 5일 12시 IT대학 2호관 101호에서 진행돼요. 참여자에게 수업 공결 가능해요."
+        }
+      ],
+      "duration_sec": 12.768,
+      "id": "f87544349da48ce52658fdb7",
       "items": [
         {
           "channel_id": "notice-df44dd8507c1",
           "dday": null,
           "detail": "전자공학부 · 공지사항 · 2026-10-19",
-          "postId": "knu-see-notice:105714",
+          "postId": "knu-see-notice:105718",
           "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 추천(∼10.29/목 15:00)",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105714&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "[반도체특성화대학사업단] 「반도체 산업의 미래와 도전」 ㈜티에스이 회장 초청 특별 세미나 개최 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105718&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-df44dd8507c1",
-          "deadline": "2026-10-29",
-          "postId": "knu-see-notice:105714",
+          "deadline": "2026-10-30",
+          "postId": "knu-see-notice:105718",
           "posted_at": "2026-10-19",
           "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 추천(∼10.29/목 15:00)",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105714&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "[반도체특성화대학사업단] 「반도체 산업의 미래와 도전」 ㈜티에스이 회장 초청 특별 세미나 개최 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105718&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 추천을 10월 29일까지 진행합니다. 지원서 및 서류를 108건물 3층 학생과 장학복지팀에 제출하세요.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 추천(∼10.29/목 15:00)"
+      "script": "티에스이 권상준 회장 초청 세미나, 10월 19일부터 30일까지 신청하세요. 11월 5일 12시 IT대학 2호관 101호에서 진행돼요. 참여자에게 수업 공결 가능해요.",
+      "title": "[반도체특성화대학사업단] 「반도체 산업의 미래와 도전」 ㈜티에스이 회장 초청 특별 세미나 개최 안내"
     },
     {
-      "audio": "f82da090031c326ecd0d5992e59e6a1908291d1457a301825437cb9dd26543d5.mp3",
-      "channel_id": "5019553d3a6ed60b881d586b",
+      "audio": "368f2bfbd4db94d9b562f7108a1aa966d94927a4968298b356be5ace44676eb4.mp3",
+      "channel_id": "161d3f522c3606e26f5f96f7",
       "channel_ids": [
         "notice-df44dd8507c1"
       ],
       "cues": [
         {
-          "end_sec": 9.288,
+          "end_sec": 14.424,
           "start_sec": 0,
-          "text": "공준호 지도교수 연구실에서 2027년 대학원 진학 예정자 및 3학년 이상 학부생을 모집해요. 지원은 메일로 하세요."
+          "text": "티에스이 취업상담회는 11월 5일 14시 30분, IT대학 2호관 104호에서 열려요. 10월 19일부터 30일까지 신청 가능해요. 참여 장학생은 사전에 궁금한 점을 준비해 주세요."
         }
       ],
-      "duration_sec": 9.288,
-      "id": "5019553d3a6ed60b881d586b",
+      "duration_sec": 14.424,
+      "id": "161d3f522c3606e26f5f96f7",
       "items": [
         {
           "channel_id": "notice-df44dd8507c1",
           "dday": null,
-          "detail": "전자공학부 · 공지사항 · 2026-10-24",
-          "postId": "knu-see-notice:105737",
+          "detail": "전자공학부 · 공지사항 · 2026-10-19",
+          "postId": "knu-see-notice:105719",
+          "section": "마감 임박",
+          "title": "[반도체특성화대학사업단] 반도체특성화 참여기업 ㈜티에스이 취업 및 직무상담회 개최 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105719&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": "2026-10-30",
+          "postId": "knu-see-notice:105719",
+          "posted_at": "2026-10-19",
+          "reason": "reminder",
+          "title": "[반도체특성화대학사업단] 반도체특성화 참여기업 ㈜티에스이 취업 및 직무상담회 개최 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105719&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "티에스이 취업상담회는 11월 5일 14시 30분, IT대학 2호관 104호에서 열려요. 10월 19일부터 30일까지 신청 가능해요. 참여 장학생은 사전에 궁금한 점을 준비해 주세요.",
+      "title": "[반도체특성화대학사업단] 반도체특성화 참여기업 ㈜티에스이 취업 및 직무상담회 개최 안내"
+    },
+    {
+      "audio": "eec3d2ab6366d808efa8c1e0b15770ac2dd59b72253478643d85be2f6862c2d3.mp3",
+      "channel_id": "3aa3ee507ae69bba418139d4",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 12.816,
+          "start_sec": 0,
+          "text": "유지만 교수 지도교수 상담, 10월 28일, 11월 3~4일 예약 가능. 공대 7호관 307호. 구글 캘린더 예약 후 KNUCUBE 확인. 시간 중복 주의."
+        }
+      ],
+      "duration_sec": 12.816,
+      "id": "3aa3ee507ae69bba418139d4",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-see-notice:105738",
           "section": "소식",
-          "title": "Mobile SOC & Microprocessor Lab. (지도교수: 공준호) 2027년 대학원 진학 예정자 및 학부연수생 (3학년 이상) 모집",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105737&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "[유지만 교수] 26년 2학기 지도교수 상담",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105738&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
       "kind": "notice",
@@ -920,75 +882,460 @@
         {
           "channel_id": "notice-df44dd8507c1",
           "deadline": null,
-          "postId": "knu-see-notice:105737",
-          "posted_at": "2026-10-24",
+          "postId": "knu-see-notice:105738",
+          "posted_at": "2026-10-26",
           "reason": "new",
-          "title": "Mobile SOC & Microprocessor Lab. (지도교수: 공준호) 2027년 대학원 진학 예정자 및 학부연수생 (3학년 이상) 모집",
-          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105737&gtid=notice&opt=&sword=&page=1&f_opt_1="
+          "title": "[유지만 교수] 26년 2학기 지도교수 상담",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105738&gtid=notice&opt=&sword=&page=1&f_opt_1="
         }
       ],
-      "script": "공준호 지도교수 연구실에서 2027년 대학원 진학 예정자 및 3학년 이상 학부생을 모집해요. 지원은 메일로 하세요.",
-      "title": "Mobile SOC & Microprocessor Lab. (지도교수: 공준호) 2027년 대학원 진학 예정자 및 학부연수생 (3학년 이상) 모집"
+      "script": "유지만 교수 지도교수 상담, 10월 28일, 11월 3~4일 예약 가능. 공대 7호관 307호. 구글 캘린더 예약 후 KNUCUBE 확인. 시간 중복 주의.",
+      "title": "[유지만 교수] 26년 2학기 지도교수 상담"
     },
     {
-      "audio": "8450669acc9660207bdf5d34c078a143551b5de5309487b5c86ffaa64dcfaa0f.mp3",
-      "channel_id": "490281a6a9aaad62cf0020b8",
+      "audio": "e22d84dd6d729dbe441dc5903367f668a1d100e0a99a49384cea8d234af2e41a.mp3",
+      "channel_id": "bcff04eca9d2fb61d55aa2d2",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 16.032,
+          "start_sec": 0,
+          "text": "AI융합정보통신&Next RF 세미나는 11월 2일 12시, IT2호관 101호에서 열려요. 사전 신청(10월 29일 12시 마감) 후 참석 필수입니다. 선착순 280명입니다."
+        }
+      ],
+      "duration_sec": 16.032,
+      "id": "bcff04eca9d2fb61d55aa2d2",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-see-notice:105740",
+          "section": "소식",
+          "title": "[4단계 BK21]BK런치세미나 'AI융합정보통신&Next RF 특화연구그룹’ (11/02(월) 12:00, 선착순 280명)",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105740&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": null,
+          "postId": "knu-see-notice:105740",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[4단계 BK21]BK런치세미나 'AI융합정보통신&Next RF 특화연구그룹’ (11/02(월) 12:00, 선착순 280명)",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105740&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "AI융합정보통신&Next RF 세미나는 11월 2일 12시, IT2호관 101호에서 열려요. 사전 신청(10월 29일 12시 마감) 후 참석 필수입니다. 선착순 280명입니다.",
+      "title": "[4단계 BK21]BK런치세미나 'AI융합정보통신&Next RF 특화연구그룹’ (11/02(월) 12:00, 선착순 280명)"
+    },
+    {
+      "audio": "8bea47cd164fa49b3dac82d054f540ca904357f379227a39cbd02bbcb56a175b.mp3",
+      "channel_id": "43d11246d400322900330ad2",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.008,
+          "start_sec": 0,
+          "text": "2회차(10월30일) 반도체 아카데미 참가자 선착순 70명에 한해 참여 가능해요. 명단 확인: https://knusemi.knu.ac.kr/notice/693"
+        }
+      ],
+      "duration_sec": 10.008,
+      "id": "43d11246d400322900330ad2",
+      "items": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "detail": "전자공학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-see-notice:105741",
+          "section": "소식",
+          "title": "제6회 반도체특성화 취업·직무역량 강화 아카데미 개최-2회차 (10/30) 신청 결과 안내（선착순70명）",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105741&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-df44dd8507c1",
+          "deadline": null,
+          "postId": "knu-see-notice:105741",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "제6회 반도체특성화 취업·직무역량 강화 아카데미 개최-2회차 (10/30) 신청 결과 안내（선착순70명）",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105741&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ],
+      "script": "2회차(10월30일) 반도체 아카데미 참가자 선착순 70명에 한해 참여 가능해요. 명단 확인: https://knusemi.knu.ac.kr/notice/693",
+      "title": "제6회 반도체특성화 취업·직무역량 강화 아카데미 개최-2회차 (10/30) 신청 결과 안내（선착순70명）"
+    },
+    {
+      "audio": "27786b5f4686b406113cc7374632818d085b5622f975a2f27c233b558f38e1a1.mp3",
+      "channel_id": "0c565e7b22b095094aaa792b",
       "channel_ids": [
         "notice-b34ee1a00417",
         "notice-fefffa32e24c"
       ],
       "cues": [
         {
-          "end_sec": 7.848,
+          "end_sec": 15.6,
           "start_sec": 0,
-          "text": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 진행합니다."
+          "text": "빅데이터·피지컬AI 융합전공 설명회 참석자 모집\n11월 3일(화) 12시 00분, 경북대 IT대학 5호관 348호\n11월 2일 14시까지 QR코드로 신청하세요. 선착순 50명, 도시락 제공"
         }
       ],
-      "duration_sec": 7.848,
-      "id": "490281a6a9aaad62cf0020b8",
+      "duration_sec": 15.6,
+      "id": "0c565e7b22b095094aaa792b",
       "items": [
         {
           "channel_id": "notice-b34ee1a00417",
           "dday": null,
-          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-19",
-          "postId": "knu-computer-sub6_1_a:29475",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29475"
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29483",
+          "section": "소식",
+          "title": "[융합전공] 빅데이터/피지컬AI융합전공 설명회 참석자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29483"
         },
         {
           "channel_id": "notice-fefffa32e24c",
           "dday": null,
-          "detail": "컴퓨터학부 · 공지사항 · 2026-10-19",
-          "postId": "knu-computer-sub6_1_a:29475",
-          "section": "마감 임박",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29475"
+          "detail": "컴퓨터학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29483",
+          "section": "소식",
+          "title": "[융합전공] 빅데이터/피지컬AI융합전공 설명회 참석자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29483"
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
           "channel_id": "notice-b34ee1a00417",
-          "deadline": "2026-10-29",
-          "postId": "knu-computer-sub6_1_a:29475",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29475"
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29483",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[융합전공] 빅데이터/피지컬AI융합전공 설명회 참석자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29483"
         },
         {
           "channel_id": "notice-fefffa32e24c",
-          "deadline": "2026-10-29",
-          "postId": "knu-computer-sub6_1_a:29475",
-          "posted_at": "2026-10-19",
-          "reason": "reminder",
-          "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내",
-          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29475"
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29483",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[융합전공] 빅데이터/피지컬AI융합전공 설명회 참석자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29483"
         }
       ],
-      "script": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발을 10월 29일까지 진행합니다.",
-      "title": "2027학년도 한국지도자육성장학재단 신규장학생 본교 추천자 선발 안내"
+      "script": "빅데이터·피지컬AI 융합전공 설명회 참석자 모집\n11월 3일(화) 12시 00분, 경북대 IT대학 5호관 348호\n11월 2일 14시까지 QR코드로 신청하세요. 선착순 50명, 도시락 제공",
+      "title": "[융합전공] 빅데이터/피지컬AI융합전공 설명회 참석자 모집"
+    },
+    {
+      "audio": "588b9539191e1e9590f44a2ba1fe7542bfc6ea8e7a0f3a54becaf89e218035d9.mp3",
+      "channel_id": "5eda0675cb8e0430f39847c4",
+      "channel_ids": [
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "cues": [
+        {
+          "end_sec": 13.104,
+          "start_sec": 0,
+          "text": "창업 팀은 10월 26일부터 11월 4일까지 구글폼으로 신청하고, 11월 5일부터 13일까지 개발해 14일 오후 12시까지 IT대학 5호관 407호에서 경진대회 참가하세요."
+        }
+      ],
+      "duration_sec": 13.104,
+      "id": "5eda0675cb8e0430f39847c4",
+      "items": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29484",
+          "section": "소식",
+          "title": "[중심대학] 2026년도 창업 MVP 개발 해커톤 경진대회 개최 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29484"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "detail": "컴퓨터학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29484",
+          "section": "소식",
+          "title": "[중심대학] 2026년도 창업 MVP 개발 해커톤 경진대회 개최 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29484"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29484",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[중심대학] 2026년도 창업 MVP 개발 해커톤 경진대회 개최 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29484"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29484",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "[중심대학] 2026년도 창업 MVP 개발 해커톤 경진대회 개최 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29484"
+        }
+      ],
+      "script": "창업 팀은 10월 26일부터 11월 4일까지 구글폼으로 신청하고, 11월 5일부터 13일까지 개발해 14일 오후 12시까지 IT대학 5호관 407호에서 경진대회 참가하세요.",
+      "title": "[중심대학] 2026년도 창업 MVP 개발 해커톤 경진대회 개최 안내"
+    },
+    {
+      "audio": "4b31f76625754a8d03c379e5839c59d39de83981011e2aeb8504c5b1eb041389.mp3",
+      "channel_id": "dd2a412c823043b3745296b4",
+      "channel_ids": [
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "cues": [
+        {
+          "end_sec": 16.632,
+          "start_sec": 0,
+          "text": "대구 중구, 26.10.23 금요일 17시부터 26.11.1일 오전 6시까지 도로·광장·공원 인파재난 위기경보 '주의' 단계 발령입니다. 인파가 많은 장소에서는 인파를 줄이기 위해 주의를 기울여주세요."
+        }
+      ],
+      "duration_sec": 16.632,
+      "id": "dd2a412c823043b3745296b4",
+      "items": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29485",
+          "section": "소식",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29485"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "detail": "컴퓨터학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29485",
+          "section": "소식",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29485"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29485",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29485"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29485",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29485"
+        }
+      ],
+      "script": "대구 중구, 26.10.23 금요일 17시부터 26.11.1일 오전 6시까지 도로·광장·공원 인파재난 위기경보 '주의' 단계 발령입니다. 인파가 많은 장소에서는 인파를 줄이기 위해 주의를 기울여주세요.",
+      "title": "도로·광장·공원 다중운집인파재난 위기경보 ‘주의’ 단계 발령 알림 및 다중운집인파사고 국민행동요령 안내"
+    },
+    {
+      "audio": "637eab91fc306098cd32031d04677f6bce0a58aa9921830f0564fdb7017b6f99.mp3",
+      "channel_id": "c498ee9ba8e07d8d966c0334",
+      "channel_ids": [
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.808,
+          "start_sec": 0,
+          "text": "해동과학문화재단 2027학년도 장학생 지원서를 2026년 10월 28일 18시까지 로 제출해 주세요."
+        }
+      ],
+      "duration_sec": 8.808,
+      "id": "c498ee9ba8e07d8d966c0334",
+      "items": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "detail": "인공지능시스템학과 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29486",
+          "section": "소식",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내(2026. 10. 28. 18시까지)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29486"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "detail": "컴퓨터학부 · 공지사항 · 2026-10-26",
+          "postId": "knu-computer-sub6_1_a:29486",
+          "section": "소식",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내(2026. 10. 28. 18시까지)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29486"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-b34ee1a00417",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29486",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내(2026. 10. 28. 18시까지)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29486"
+        },
+        {
+          "channel_id": "notice-fefffa32e24c",
+          "deadline": null,
+          "postId": "knu-computer-sub6_1_a:29486",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2027학년도 해동과학문화재단 장학생 모집 안내(2026. 10. 28. 18시까지)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29486"
+        }
+      ],
+      "script": "해동과학문화재단 2027학년도 장학생 지원서를 2026년 10월 28일 18시까지 로 제출해 주세요.",
+      "title": "2027학년도 해동과학문화재단 장학생 모집 안내(2026. 10. 28. 18시까지)"
+    },
+    {
+      "audio": "98eb44ce1b8c6c09c820673c5c8193ea0ae1c8e3544033265a3e4a3606607d90.mp3",
+      "channel_id": "ccdf36970060599e078fe532",
+      "channel_ids": [
+        "notice-6b04da14aae1"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.552,
+          "start_sec": 0,
+          "text": "개교80주년 기념 창업경진대회 참가 신청 접수기간 10월 30일까지입니다. 대구·경북 대학 재학생만 참가 가능해요."
+        }
+      ],
+      "duration_sec": 9.552,
+      "id": "ccdf36970060599e078fe532",
+      "items": [
+        {
+          "channel_id": "notice-6b04da14aae1",
+          "dday": null,
+          "detail": "중어중문학과 · 공지사항 · 2026-10-16",
+          "postId": "knu-chinese-notice:13675",
+          "section": "마감 임박",
+          "title": "(앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내",
+          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-6b04da14aae1",
+          "deadline": "2026-10-30",
+          "postId": "knu-chinese-notice:13675",
+          "posted_at": "2026-10-16",
+          "reason": "reminder",
+          "title": "(앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내",
+          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13675"
+        }
+      ],
+      "script": "개교80주년 기념 창업경진대회 참가 신청 접수기간 10월 30일까지입니다. 대구·경북 대학 재학생만 참가 가능해요.",
+      "title": "(앵커)「개교80주년 기념 대학(원)생 창업경진대회」참가 학생 모집 안내"
+    },
+    {
+      "audio": "c387f1628666ddd9bc9ca726550ac80acf154484b99680f45cbd37cfa3258b21.mp3",
+      "channel_id": "6b803c01e105633595b6a119",
+      "channel_ids": [
+        "notice-6b04da14aae1"
+      ],
+      "cues": [
+        {
+          "end_sec": 16.368,
+          "start_sec": 0,
+          "text": "한중교류를 위한 제5회 영남권 대학생 중국어 말하기 대회가 2026.11.26 16시에 국립창원대 32호관 110호 강당에서 열려요. 경북·경남 학생은 11월 13일까지 네이버폼으로 신청하세요."
+        }
+      ],
+      "duration_sec": 16.368,
+      "id": "6b803c01e105633595b6a119",
+      "items": [
+        {
+          "channel_id": "notice-6b04da14aae1",
+          "dday": null,
+          "detail": "중어중문학과 · 공지사항 · 2026-10-23",
+          "postId": "knu-chinese-notice:13679",
+          "section": "소식",
+          "title": "제5회 영남권 대학생 중국어 말하기 대회 개최 안내",
+          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13679"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-6b04da14aae1",
+          "deadline": null,
+          "postId": "knu-chinese-notice:13679",
+          "posted_at": "2026-10-23",
+          "reason": "new",
+          "title": "제5회 영남권 대학생 중국어 말하기 대회 개최 안내",
+          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13679"
+        }
+      ],
+      "script": "한중교류를 위한 제5회 영남권 대학생 중국어 말하기 대회가 2026.11.26 16시에 국립창원대 32호관 110호 강당에서 열려요. 경북·경남 학생은 11월 13일까지 네이버폼으로 신청하세요.",
+      "title": "제5회 영남권 대학생 중국어 말하기 대회 개최 안내"
+    },
+    {
+      "audio": "41a39c211cb01dc1c6f4333f10b0fb5440d0c2034a821548f0444c77c86d92ff.mp3",
+      "channel_id": "e35d624e9ad7a2f24c72955a",
+      "channel_ids": [
+        "notice-a363da417a07"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.24,
+          "start_sec": 0,
+          "text": "2026학년도 'KNU in the World' 모집 기간 11월 3일까지. 경북대 재학생 및 영어수강 가능자 참여 가능."
+        }
+      ],
+      "duration_sec": 9.24,
+      "id": "e35d624e9ad7a2f24c72955a",
+      "items": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "dday": null,
+          "detail": "의학과 · 공지 · 2026-10-26",
+          "postId": "knu-med-notice001:25957",
+          "section": "소식",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」 운영 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTU3JnN0YXJ0UGFnZT0wJmxpc3RObz0yOTA3JnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-a363da417a07",
+          "deadline": "2026-11-03",
+          "postId": "knu-med-notice001:25957",
+          "posted_at": "2026-10-26",
+          "reason": "new",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」 운영 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTU3JnN0YXJ0UGFnZT0wJmxpc3RObz0yOTA3JnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ],
+      "script": "2026학년도 'KNU in the World' 모집 기간 11월 3일까지. 경북대 재학생 및 영어수강 가능자 참여 가능.",
+      "title": "2026학년도 글로벌 PBL「KNU in the World」 운영 안내"
     },
     {
       "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
