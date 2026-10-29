@@ -12,7 +12,7 @@ function setup(name = '', dept = 'ai') {
   const button = {disabled:dept == null};
   const c = vm.createContext({S:{startName:name,startDept:dept,startNameError:false,startQuery:''},store:{},DATA:{deptMap:{}},
     document:{addEventListener(k,fn){listeners[k]=fn;},querySelector(){return button;}},
-    $:id=>elements[id],save(){calls.push('save');},nav(route){calls.push(route);},deptList:()=>'',esc:s=>s,IC:{search:''}});
+    $:id=>elements[id],save(){calls.push('save');},nav(route){calls.push(route);},deptList:()=>'',esc:s=>s,IC:{search:''},collegeOptions:()=>''});
   vm.runInContext(html.slice(html.indexOf('function vStart(){'),html.indexOf('/* 휴대폰에서 자판이 올라와도')),c);
   vm.runInContext(html.slice(html.indexOf("document.addEventListener('click', function(e){"),html.indexOf("document.addEventListener('toggle',")),c);
   return {c,calls,elements,attrs,button,next(){listeners.click({target:{closest:()=>({getAttribute:()=> 'startNext'})}});},input(value){listeners.input({target:{id:'inName',value}});}};

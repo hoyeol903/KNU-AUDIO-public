@@ -666,7 +666,7 @@ function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); return 
 var S = {
   theme: store.theme || 'system',
   route: 'home', boardId: null, pickMode: 'first', sheet: null,
-  startName: '', startNameError: false, startDept: null, startQuery: '', pickQuery: '', pickExtra: [], pickCafes: {},
+  startName: '', startNameError: false, startCollege: '', startDept: null, startQuery: '', pickQuery: '', pickExtra: [], pickCafes: {},
   calDay: null, evSheet: false, evTitle: '', evDate: '',
   mealIdx: 0, mealSel: {}, mealSheet: null,
   tour: null,
@@ -1244,8 +1244,64 @@ function paintSeek(ch, t){
 
 /* ---------- 화면 ---------- */
 var lastRoute = null;
-function nav(route, opts){ S.route = route; if (opts) for (var k in opts) S[k] = opts[k]; render(true); var sc = document.querySelector('.scr'); if (sc) sc.scrollTop = 0; if (route === 'meeting' || route === 'meeting-list') loadCommunity(false); if (route === 'meeting-inbox') loadInbox(); }
+var APP_HISTORY = { current: null, restoring: false, pending: false, serial: Date.now(), previous: {} };
+var APP_VIEW_KEYS = ['route','boardId','pickMode','listKind','cafeTab','cafeDate','calView','calMonth','calSel','calDay','meetCategory','meetSize','meetTeam','meetMineOnly','meetId','meetBack','pickQuery','startCollege','startQuery','startDept','sheet','evSheet','evTitle','evDate','mealSheet','meetSheet','report','decide'];
+function appView(){
+  var v = {}; APP_VIEW_KEYS.forEach(function(k){ v[k] = S[k] === undefined ? null : S[k]; });
+  return JSON.parse(JSON.stringify(v));
+}
+function appViewKey(v){
+  return JSON.stringify([v.route,v.route === 'board' ? v.boardId : null,v.route === 'pick' ? v.pickMode : null,v.route === 'list' ? v.listKind : null,v.route === 'meeting-detail' ? v.meetId : null,v.route === 'meeting-list' ? v.meetCategory : null,
+    v.sheet && [v.sheet.b,v.sheet.id],!!v.evSheet,!!v.mealSheet,!!v.meetSheet,!!v.report,!!v.decide]);
+}
+function appHasOverlay(v){ return !!(v.sheet || v.evSheet || v.mealSheet || v.meetSheet || v.report || v.decide); }
+function syncAppHistory(){
+  if (!window.history || S.loadPhase || !DATA || APP_HISTORY.restoring || APP_HISTORY.pending) return;
+  var v = appView(), key = appViewKey(v), old = APP_HISTORY.current;
+  var sc = document.querySelector('#view .scr'), y = sc ? sc.scrollTop : 0;
+  if (!old) {
+    APP_HISTORY.current = { knua: 1, id: ++APP_HISTORY.serial, view: v, scroll: 0 };
+    window.history.replaceState(APP_HISTORY.current, ''); return;
+  }
+  if (appViewKey(old.view) === key) {
+    old.view = v; old.scroll = y; window.history.replaceState(old, ''); return;
+  }
+  old.scroll = y; window.history.replaceState(old, '');
+  var parent = APP_HISTORY.previous[old.id];
+  if (appHasOverlay(old.view) && !appHasOverlay(v) && parent && appViewKey(parent.view) === key) {
+    APP_HISTORY.pending = true; window.history.back(); return;
+  }
+  var entry = { knua: 1, id: ++APP_HISTORY.serial, view: v, scroll: 0 };
+  APP_HISTORY.previous[entry.id] = old;
+  APP_HISTORY.current = entry; window.history.pushState(entry, '');
+}
+function appBack(){
+  var current = APP_HISTORY.current;
+  if (window.history && current && APP_HISTORY.previous[current.id]) {
+    if (!APP_HISTORY.pending) { APP_HISTORY.pending = true; window.history.back(); }
+    return true;
+  }
+  return false;
+}
+window.addEventListener('popstate', function(e){
+  var entry = e.state; APP_HISTORY.pending = false;
+  if (!entry || entry.knua !== 1 || !entry.view || !DATA) return;
+  APP_HISTORY.current = entry; APP_HISTORY.restoring = true;
+  APP_VIEW_KEYS.forEach(function(k){ S[k] = entry.view[k]; });
+  if (!profileOk() && S.route !== 'start') S.route = 'start';
+  S.tour = null; refresh();
+  if (S.route === 'board') loadBoard(S.boardId);
+  if (S.sheet) loadBoard(S.sheet.b);
+  render(false);
+  var sc = document.querySelector('#view .scr'); if (sc) sc.scrollTop = entry.scroll || 0;
+  APP_HISTORY.restoring = false;
+  if (S.route === 'meeting-detail' && (!COMMUNITY.detail || COMMUNITY.detail.id !== S.meetId)) openMeeting(S.meetId);
+  else if (S.route === 'meeting' || S.route === 'meeting-list') loadCommunity(false);
+  else if (S.route === 'meeting-inbox') loadInbox();
+});
+function nav(route, opts){ syncAppHistory(); S.route = route; if (opts) for (var k in opts) S[k] = opts[k]; render(true); var sc = document.querySelector('.scr'); if (sc) sc.scrollTop = 0; if (route === 'meeting' || route === 'meeting-list') loadCommunity(false); if (route === 'meeting-inbox') loadInbox(); }
 function render(animate){
+  syncAppHistory();
   var route = S.loadPhase === 'loading' ? 'loading' : S.loadPhase === 'error' ? 'error' : S.route;
   if (animate === undefined) animate = route !== lastRoute;
   lastRoute = route;
@@ -1287,9 +1343,15 @@ function header(back, right){
   return '<div class="row" style="justify-content:space-between;height:48px;margin-left:-10px">' + (back ? '<button class="icon-btn plain" data-act="back" aria-label="뒤로">' + IC.back + '</button>' : '<span></span>') + (right || '') + '</div>';
 }
 
+function collegeOptions(){
+  var colleges = [];
+  DATA.departments.forEach(function(d){ if (colleges.indexOf(d.college) < 0) colleges.push(d.college); });
+  return '<option value="">대학을 선택하세요</option>' + colleges.map(function(c){ return '<option value="' + esc(c) + '"' + (S.startCollege === c ? ' selected' : '') + '>' + esc(c) + '</option>'; }).join('');
+}
 function deptList(){
-  var q = S.startQuery.trim(), list = DATA.departments.filter(function(d){ return !q || (d.dept + d.college).indexOf(q) >= 0; });
-  if (!list.length) return '<span class="muted" style="font-size:14px;padding:12px 4px">‘' + esc(q) + '’에 맞는 학과가 없어요.</span>';
+  if (!S.startCollege) return '<span class="muted" style="font-size:14px;padding:12px 4px">대학을 선택하면 소속 학과가 여기에 나와요.</span>';
+  var q = S.startQuery.trim(), list = DATA.departments.filter(function(d){ return d.college === S.startCollege && (!q || d.dept.indexOf(q) >= 0); });
+  if (!list.length) return '<span class="muted" style="font-size:14px;padding:12px 4px">이 대학에 ‘' + esc(q) + '’에 맞는 학과가 없어요.</span>';
   return list.map(function(d){ var on = S.startDept === d.id; return '<button data-act="dept" data-i="' + esc(d.id) + '" aria-pressed="' + on + '" class="row" style="min-height:64px;gap:12px;padding:10px 14px 10px 16px;border-radius:18px;border:1.5px solid ' + (on ? 'var(--wine)' : 'var(--line)') + ';background:' + (on ? 'var(--wine-soft)' : 'var(--bg)') + ';text-align:left;width:100%">' + avatar(d, 44) + '<span class="col" style="gap:2px;flex:1;min-width:0"><b style="font-size:15.5px;line-height:22px">' + esc(d.dept) + '</b><span class="muted" style="font-size:13px">' + esc(d.college) + '</span></span>' + (on ? '<span style="width:26px;height:26px;border-radius:13px;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center">' + IC.check + '</span>' : '') + '</button>'; }).join('');
 }
 /* 4-1 시작 */
@@ -1300,7 +1362,8 @@ function vStart(){
     '<div class="col" style="gap:8px"><h1 style="margin:0;font-size:28px;line-height:36px;font-weight:800;letter-spacing:-.9px">등굣길 1분,<br>오늘 학교 소식을 들려드려요</h1><span class="muted" style="font-size:14.5px;line-height:22px">이름과 학과는 이 브라우저에만 저장돼요.</span></div></div>' +
     '<a href="privacy.html" target="_blank" rel="noopener" class="muted" style="font-size:13px">방문 통계·개인정보 안내</a>' +
     '<div class="col" style="gap:8px"><label for="inName" class="row" style="justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--ink2)"><span>이름</span><span class="muted num" id="nameCount">' + S.startName.length + '/20</span></label><input class="field" id="inName" required aria-invalid="' + !!S.startNameError + '" aria-describedby="nameError" maxlength="20" autocomplete="off" placeholder="이름을 입력하세요" value="' + esc(S.startName) + '"><p class="field-error" id="nameError" role="alert"' + (S.startNameError ? '' : ' hidden') + '>이름을 입력하세요</p></div>' +
-    '<div class="col" style="gap:8px"><label for="inDept" style="font-size:13.5px;font-weight:700;color:var(--ink2)">학과</label><div style="position:relative">' + IC.search + '<input class="field search" id="inDept" autocomplete="off" placeholder="학과 이름 검색" value="' + esc(S.startQuery) + '"></div>' +
+    '<div class="col" style="gap:8px"><label for="inCollege" style="font-size:13.5px;font-weight:700;color:var(--ink2)">대학</label><select class="field" id="inCollege" aria-controls="deptList">' + collegeOptions() + '</select><span class="muted" style="font-size:12.5px">소속 대학·학부를 먼저 선택해 주세요.</span></div>' +
+    '<div class="col" style="gap:8px"><label for="inDept" style="font-size:13.5px;font-weight:700;color:var(--ink2)">학과</label><div style="position:relative">' + IC.search + '<input class="field search" id="inDept" autocomplete="off" placeholder="선택한 대학 안에서 학과 검색"' + (S.startCollege ? '' : ' disabled') + ' value="' + esc(S.startQuery) + '"></div>' +
     '<div class="col" style="gap:6px" id="deptList">' + deptList() + '</div></div>' +
     '</div></div><div class="bottom-bar"><button class="btn-pri" data-act="startNext"' + (ok ? '' : ' disabled') + '>다음</button></div>';
 }
@@ -2259,7 +2322,7 @@ document.addEventListener('click', function(e){
       S.pickExtra = (store.extra || []).filter(function(id){ return DATA.deptMap[id] && id !== store.dept; }); S.pickCafes = Object.assign({}, store.cafes || {});
       return nav('pick', { pickMode: 'first', pickQuery: '' });
     }
-    case 'changeDept': S.startName = store.name || ''; S.startDept = store.dept; S.startQuery = ''; return nav('start');
+    case 'changeDept': S.startName = store.name || ''; S.startDept = store.dept; S.startCollege = DATA.deptMap[store.dept] ? DATA.deptMap[store.dept].college : ''; S.startQuery = ''; return nav('start');
     case 'locked': { var sw = el.querySelector('.sw'); sw.classList.remove('shake'); void sw.offsetWidth; sw.classList.add('shake'); return; }
     case 'extra': S.pickExtra.push(el.getAttribute('data-i')); S.pickQuery = ''; return render(false);
     case 'unextra': S.pickExtra = S.pickExtra.filter(function(i){ return i !== el.getAttribute('data-i'); }); return render(false);
@@ -2267,7 +2330,7 @@ document.addEventListener('click', function(e){
     case 'pickDone': { var was = S.pickMode; store.extra = S.pickExtra.slice(); store.cafes = Object.assign({}, S.pickCafes); save(); pause(); P.started = false; P.ch = 0; P.chT = 0; P.done = false; refresh(); nav('home'); if (was === 'settings') toastMsg('저장했어요.'); return; }
     case 'settings': return openSettings();
     case 'collectionStatus': return nav('collection-status');
-    case 'back': S.sheet = null; S.decide = null; return nav(S.route === 'meeting-detail' ? S.meetBack || 'meeting-list' : S.route === 'meeting-list' || S.route === 'meeting-inbox' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
+    case 'back': if (appBack()) return; S.sheet = null; S.decide = null; return nav(S.route === 'meeting-detail' ? S.meetBack || 'meeting-list' : S.route === 'meeting-list' || S.route === 'meeting-inbox' ? 'meeting' : S.route === 'collection-status' ? 'pick' : S.route === 'pick' && S.pickMode === 'first' ? 'start' : 'home', S.route === 'collection-status' ? { pickMode: 'settings' } : null);
     case 'heroPlay': if (!P.started) { play(0); return nav('player'); } return toggle();
     case 'openPlayer': return nav('player');
     case 'tab': {
@@ -2360,6 +2423,13 @@ document.addEventListener('click', function(e){
     case 'retry': return loadMeta();
     case 'retryBoard': POSTS[S.boardId] = null; loadBoard(S.boardId); return render(false);
   }
+});
+document.addEventListener('change', function(e){
+  if (e.target.id !== 'inCollege') return;
+  S.startCollege = e.target.value; S.startDept = null; S.startQuery = '';
+  var search = $('inDept'); search.value = ''; search.disabled = !S.startCollege;
+  $('deptList').innerHTML = deptList();
+  var next = document.querySelector('[data-act="startNext"]'); if (next) next.disabled = true;
 });
 document.addEventListener('input', function(e){
   var t = e.target;
