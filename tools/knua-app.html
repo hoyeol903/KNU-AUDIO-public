@@ -23,19 +23,19 @@ gtag('config', 'G-RLJ8SEF3JF', {
 /* layout: phone-frame app beside a test panel on desktop; full-screen app with a floating test button on phones */
 :root{
   --page:#F3EFF0;--bg:#FFFFFF;--tile:#F7F4F5;--tile2:#EFE9EB;--ink:#1A1417;--ink2:#4A3F44;--muted:#6E6267;--line:#EAE3E6;
-  --wine:#8B1E3F;--wine-press:#6F1732;--wine-ink:#8B1E3F;--wine-soft:#FBEFF3;--wine-lock:#C9939F;--on-wine-muted:#F4CDD9;
+  --error-ink:#C62828;--wine:#8B1E3F;--wine-press:#6F1732;--wine-ink:#8B1E3F;--wine-soft:#FBEFF3;--wine-lock:#C9939F;--on-wine-muted:#F4CDD9;
   --amber-bg:#FFF0DF;--amber-ink:#8A4700;--amber-line:#F3D3AE;--ok-bg:#E9F5EE;--ok-ink:#1D5D37;--sky-bg:#E8F0FB;--sky-ink:#1F4774;--sky-dot:#4A86D0;--sp-new:#8B1E3F;--sp-due:#9A4F00;--sp-sky:#2D5F99;--sp-ok:#2E6B47;--sp-cheer:#6B3A6E;--sp-end:#353352;--sp-calm:#4F5B66;--paper:#FBF8F3;--paper-line:#ECE4D8;
   --dis-ink:#8E8287;--ph:#A3979C;--scrim:rgba(26,20,23,.42);--sk:#EFE9EB;--sk-hi:#F9F6F7;--frame:#E3DCDF;--dock:rgba(255,255,255,.86);
   --font:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --page:#060506;--bg:#0E0C0D;--tile:#1A1618;--tile2:#241F21;--ink:#F5EFF1;--ink2:#DCD1D5;--muted:#AB9DA3;--line:#2E282B;
-  --wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
+  --error-ink:#FF8A80;--wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
   --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--sp-cheer:#57305A;--sp-end:#2A2842;--sp-calm:#3E4851;--paper:#1C1819;--paper-line:#332C2E;
   --dis-ink:#8C7F85;--ph:#6F6468;--scrim:rgba(0,0,0,.62);--sk:#1E1A1C;--sk-hi:#2A2427;--frame:#2A2427;--dock:rgba(30,25,28,.86);color-scheme:dark}}
 :root[data-theme="dark"]{
   --page:#060506;--bg:#0E0C0D;--tile:#1A1618;--tile2:#241F21;--ink:#F5EFF1;--ink2:#DCD1D5;--muted:#AB9DA3;--line:#2E282B;
-  --wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
+  --error-ink:#FF8A80;--wine:#9C2A4B;--wine-press:#7E203C;--wine-ink:#F2A6BB;--wine-soft:#2A1820;--wine-lock:#5E2A3A;--on-wine-muted:#F2C6D2;
   --amber-bg:#3A2710;--amber-ink:#FFD49E;--amber-line:#5A3D17;--ok-bg:#15291D;--ok-ink:#AEE3C0;--sky-bg:#1A2B40;--sky-ink:#BCD5F2;--sky-dot:#5B8FD6;--sp-new:#7E203C;--sp-due:#8A4A06;--sp-sky:#244D7E;--sp-ok:#1F4D33;--sp-cheer:#57305A;--sp-end:#2A2842;--sp-calm:#3E4851;--paper:#1C1819;--paper-line:#332C2E;
   --dis-ink:#8C7F85;--ph:#6F6468;--scrim:rgba(0,0,0,.62);--sk:#1E1A1C;--sk-hi:#2A2427;--frame:#2A2427;--dock:rgba(30,25,28,.86);color-scheme:dark}
 
@@ -361,6 +361,8 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .sw.lock.shake i{animation:nudge .35s}
 .field{height:52px;width:100%;padding:0 16px;border-radius:16px;border:1.5px solid transparent;background:var(--tile);font-size:16px;font-weight:600;outline:none}
 .field:focus{border-color:var(--wine)}
+.field[aria-invalid="true"]{border-color:var(--error-ink)}
+.field-error{margin:0;color:var(--error-ink);font-size:13px;font-weight:600;line-height:20px}
 .field.search{padding-left:44px}
 .sicon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
 
@@ -664,7 +666,7 @@ function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); return 
 var S = {
   theme: store.theme || 'system',
   route: 'home', boardId: null, pickMode: 'first', sheet: null,
-  startName: '', startDept: null, startQuery: '', pickQuery: '', pickExtra: [], pickCafes: {},
+  startName: '', startNameError: false, startDept: null, startQuery: '', pickQuery: '', pickExtra: [], pickCafes: {},
   calDay: null, evSheet: false, evTitle: '', evDate: '',
   mealIdx: 0, mealSel: {}, mealSheet: null,
   tour: null,
@@ -1292,15 +1294,22 @@ function deptList(){
 }
 /* 4-1 시작 */
 function vStart(){
-  var ok = S.startName.trim() && S.startDept != null;
+  var ok = S.startDept != null;
   return '<div class="scr" style="padding:28px 20px 140px"><div class="stg col" style="gap:24px">' +
     '<div class="col" style="gap:18px;padding-top:12px"><img class="brand-logo brand-light" src="data/branding/logo-knua.svg" width="344" height="100" alt="크누아 KNUA"><img class="brand-logo brand-dark" src="data/branding/logo-knua-dark.svg" width="344" height="100" alt="크누아 KNUA">' +
     '<div class="col" style="gap:8px"><h1 style="margin:0;font-size:28px;line-height:36px;font-weight:800;letter-spacing:-.9px">등굣길 1분,<br>오늘 학교 소식을 들려드려요</h1><span class="muted" style="font-size:14.5px;line-height:22px">이름과 학과는 이 브라우저에만 저장돼요.</span></div></div>' +
     '<a href="privacy.html" target="_blank" rel="noopener" class="muted" style="font-size:13px">방문 통계·개인정보 안내</a>' +
-    '<div class="col" style="gap:8px"><label for="inName" class="row" style="justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--ink2)"><span>이름</span><span class="muted num" id="nameCount">' + S.startName.length + '/20</span></label><input class="field" id="inName" maxlength="20" autocomplete="off" placeholder="이름을 입력하세요" value="' + esc(S.startName) + '"></div>' +
+    '<div class="col" style="gap:8px"><label for="inName" class="row" style="justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--ink2)"><span>이름</span><span class="muted num" id="nameCount">' + S.startName.length + '/20</span></label><input class="field" id="inName" required aria-invalid="' + !!S.startNameError + '" aria-describedby="nameError" maxlength="20" autocomplete="off" placeholder="이름을 입력하세요" value="' + esc(S.startName) + '"><p class="field-error" id="nameError" role="alert"' + (S.startNameError ? '' : ' hidden') + '>이름을 입력하세요</p></div>' +
     '<div class="col" style="gap:8px"><label for="inDept" style="font-size:13.5px;font-weight:700;color:var(--ink2)">학과</label><div style="position:relative">' + IC.search + '<input class="field search" id="inDept" autocomplete="off" placeholder="학과 이름 검색" value="' + esc(S.startQuery) + '"></div>' +
     '<div class="col" style="gap:6px" id="deptList">' + deptList() + '</div></div>' +
     '</div></div><div class="bottom-bar"><button class="btn-pri" data-act="startNext"' + (ok ? '' : ' disabled') + '>다음</button></div>';
+}
+
+function setStartNameError(show){
+  S.startNameError = show;
+  var input = $('inName'), error = $('nameError');
+  if (input) input.setAttribute('aria-invalid', String(show));
+  if (error) error.hidden = !show;
 }
 
 /* 휴대폰에서 자판이 올라와도 누른 입력칸(이름·학과)이 보이는 영역 위쪽에 오게 한다. 라벨이 함께 보이도록 위에서 90px 아래에 둔다.
@@ -2236,8 +2245,16 @@ document.addEventListener('click', function(e){
       if (to === 'calendar' || to === 'meeting') return nav(to);
       return nav('home');
     }
-    case 'dept': { S.startDept = el.getAttribute('data-i'); $('deptList').innerHTML = deptList(); var nb = document.querySelector('[data-act="startNext"]'); if (nb) nb.disabled = !(S.startName.trim() && S.startDept != null); return; }
+    case 'dept': { S.startDept = el.getAttribute('data-i'); $('deptList').innerHTML = deptList(); var nb = document.querySelector('[data-act="startNext"]'); if (nb) nb.disabled = S.startDept == null; return; }
     case 'startNext': {
+      if (!S.startName.trim()) {
+        setStartNameError(true);
+        var nameInput = $('inName');
+        if (nameInput) { nameInput.scrollIntoView({ block: 'center' }); nameInput.focus({ preventScroll: true }); }
+        return;
+      }
+      if (S.startDept == null) return;
+      setStartNameError(false);
       store.name = S.startName.trim().slice(0, 20); store.dept = S.startDept; save();
       S.pickExtra = (store.extra || []).filter(function(id){ return DATA.deptMap[id] && id !== store.dept; }); S.pickCafes = Object.assign({}, store.cafes || {});
       return nav('pick', { pickMode: 'first', pickQuery: '' });
@@ -2346,7 +2363,7 @@ document.addEventListener('click', function(e){
 });
 document.addEventListener('input', function(e){
   var t = e.target;
-  if (t.id === 'inName') { S.startName = t.value; $('nameCount').textContent = t.value.length + '/20'; var b = document.querySelector('[data-act="startNext"]'); if (b) b.disabled = !(t.value.trim() && S.startDept != null); }
+  if (t.id === 'inName') { S.startName = t.value; $('nameCount').textContent = t.value.length + '/20'; if (t.value.trim()) setStartNameError(false); }
   if (t.id === 'inDept') { S.startQuery = t.value; $('deptList').innerHTML = deptList(); }
   if (t.id === 'evTitle') { S.evTitle = t.value; $('evCount').textContent = t.value.length + '/40'; var sv = document.querySelector('[data-act="evSave"]'); if (sv) sv.disabled = !t.value.trim(); }
   if (t.id === 'evDate') S.evDate = t.value;
