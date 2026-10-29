@@ -1,12 +1,30 @@
 [
   {
+    "body": "[졸업자격인정신청]-첨부 메뉴얼 참조\n차세대 통합정보시스템 로그인(knuin.knu.ac.kr)->졸업->졸업인정(대학)->졸업자격인정신청->조회->인정구분선택->신청\n*인정과목을 수강 중이거나, 상담 결과가 미 입력된 경우 신청하지 말 것\n- 인정 과목 수강 중 : 성적 공개일 이후 신청\n- 상담 회수 부족(8회) : 상담 진행하였으나, 입력 누락으로 부족 - 지도교수님께 상담 일정 입력 요청\n상담 회수 부족 - 학기 중, 교수님과 일정 조율하여 추가로 상담 진행\n*편입생 및 외국인은 인정구분에 \"면제\" 선택.\n*유예신청은 졸업자격인정 신청 완료 후, 추후 별도로 차세대통합정보시스템에서 [유예 신청] 하여야 함(기간 추후 공지)\n[인정구분선택]\n1)실용영어 영역 : \"실용영어 4학점을 이수한 자\" or TOEIC 등 총장이 인정하는 공인영어시험에서 TOEIC 시험성적 기준 700점 이상 취득한자선택 (공인영어성적으로 인정받고자 할 시, 공인영어성적 성적표 필히 첨부)\n2)상담영역 영역: \"학생상담지도교수에게 상담 총 8회 이상 받음\"선택\n3)소프트웨어 영역 : \"교양 일반영역의 소프트웨어 관련 과목~~~\"선택 (C/C++프로그래밍기초 수강시)\n\" 각 학과에서 지정한 소프트웨어 관련 대체 과목을 3학점 이상 이수한 자(공학프로그래밍 수강시)\n****각 인정영역별, 상담영역 외, 증빙서류 첨부 필요함.\n1)실용영어: 성적증명서 or 공인영어시험 증명서\n2)상담영역: 첨부X\n3)소프트웨어: 성적증명서\n※실용영어, 소프트웨어 2개 모두 첨부파일 각각 등록할 것\n각 과목 이수 이외, 인정구분 선택시에는 내용을 증빙하는 서류를 반드시 첨부 할 것.\n-상담횟수 확인방법\n경북대학교 포털(on.knu.ac.kr) -> KNUCUBE ->전체상담내역\n졸업자격인정 신청정보에 상담횟수가 8회이상으로 확인되더라도 상담내역상 날짜 중복이 있는 경우, 중복 횟수 차감 후 8회가 되지 않는 경우 승인처리 불가하므로 신청하지 마세요.\n첨부파일중 PDF미리보기",
+    "bodyStatus": "ok",
+    "date": "2026-10-29",
+    "deadline": null,
+    "id": "knu-kremse-kre1640045053:749",
+    "title": "2027년 2월 졸업자 및 유예자 [졸업자격인정원] 신청 안내",
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAxJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+  },
+  {
+    "body": "\"2026 국외 글로벌 반도체 연구소로의 현장학습 지원 연수생 선발 안내\"\n반도체특성화대학사업단에서는 세계적인 반도체 연구소(스페인 ICFO 연구소, 벨기에 IMEC 연구소)의 신기술 현장학습을 통한 사업 참여 학생의 글로벌 교육역량 강화를 위하여 2026 국외 글로벌 반도체 연구소 현장학습 연수생을 다음과 같이 선발합니다.\n▶ 신청기간: 2026. 10. 28.(수) 09:00 ~ 2026. 11. 11.(수) 18:00 ※기한 준수\n▶ 참가자격: 반도체특성화대학사업단 트랙 Ⅰ,Ⅱ,Ⅲ 장학생\n자세한 내용은 하단의 링크를 확인 부탁드립니다.\n반도체특성화대학사업단 홈페이지 바로가기 ☞ 경북대학교 반도체특성화대학사업단\nhttps://knusemi.knu.ac.kr/content/community/notice.html?pg=vv&number=703&Sopt_1=&Sopt_2=&Sopt_3=&sword=&sdate=#ditail_view",
+    "bodyStatus": "ok",
+    "date": "2026-10-28",
+    "deadline": "2026-11-11",
+    "id": "knu-kremse-kre1640045053:748",
+    "title": "[반도체특성화대학사업단] 글로벌 교육역량 강화를 위한 2026 국외 글로벌 반도체 연구소로의 현장학습 지원 연수생 선발 안내",
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0OCZzdGFydFBhZ2U9MCZsaXN0Tm89MjAwJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+  },
+  {
     "body": "신소재공학과 전공배정 및 전입을 계획 중인 학생은 아래 사항을 참고하시기 바랍니다.\n대상: 자율전공학부, 공학첨단자율학부, 전과 등을 통하여 신소재공학과에 전공배정 및 전입을 계획 중인 학생\n1. 재료과학1(META0211) 수강 권장: 2학년 전공 교과목의 원활한 수강을 위하여 1학년 2학기에 개설되는 재료과학1을 적극 수강하기 바랍니다.\n2. 재료과학2(META0212) 수강 안내: 재료과학1(META0211) 선이수 여부와 관계없이 재료과학2(META0212)수강이 가능합니다.",
     "bodyStatus": "ok",
     "date": "2026-10-27",
     "deadline": null,
     "id": "knu-kremse-kre1640045053:746",
     "title": "신소재공학과 전공배정 및 전입 예정 학생 안내사항",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTk5JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjAxJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
   },
   {
     "body": "반도체특성화대학사업단에서는 반도체 산업의 미래와 인재의 역할을 주제로\n㈜티에스이 권상준 회장 초청 특별세미나를 개최합니다.\n반도체 산업의 미래를 이끌어갈 인재에게 필요한 역량은 무엇일까요?\n이번 특별세미나에서는 반도체 산업의 변화와 미래 전망,\n인재에게 요구되는 역량에 대해 함께 알아봅니다.\n경북대학교 전자공학부 동문 선배의 경험과 조언을 직접 들을 수 있는 특별한 기회! 반도체 산업과 자신의 미래를 함께 고민해 보고 싶은 학생 여러분의 적극적인 참여를 바랍니다.\n▶일 정 : 2026.11.05. (목) 12:00 ~ 13:20\n▶장 소 : IT대학 2호관 101호 ※중식 제공\n▶주 제 : 경북대학교 전자공학과 동문 선배와 함께하는 반도체산업 이야기\n▶연 사 : ㈜티에스이 권상준 회장\n▶신청기간 : 2026.10.19. (월) 10:00 ~ 2026.10.30. (금) 18:00\n▶참여대상 : 반도체특성화사업단 트랙 (I, II, III) 참여 장학생\n▶신청방법 : 반도체특성화대학사업단홈페이지 프로그램 신청\nhttps://knusemi.knu.ac.kr/content/requisition/program.html?pg=vv&pg_seq=53&page=1\n▶선발결과 : 11월 02일(월) 17:00, 사업단 홈페이지 게시 예정.\n▶공결 안내 : 행사 참여 시 해당 시간의 수업에 대해 공결 처리가 가능합니다.\n많은 참여 바랍니다.\n문의 : [반도체특성화대학사업단] 950-7031, kristo@knu.ac.kr",
@@ -27,12 +45,12 @@
     "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk4JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
   },
   {
-    "body": "[반도체특성화대학사업단] 2027학년도 1학기 PBL기반반도체실무프로젝트 신청 안내 (10/26~10/28) ★ 트랙 선발자 필독 ★\n반도체특성화대학사업단에서 2027학년도 1학기 \" PBL기반반도체실무프로젝트 \" 교과목 신청에 대해 안내드립니다.\n반도체 특성화 트랙과 연계되어 개설되는 \" PBL기반반도체실무프로젝트 \" 교과목은 실제 수강 신청 전에 사전 신청을 거쳐 강좌를 개설하고, 사전 신청을 통해 미리 참여 승인을 받은 학생들이 수강 신청 기간 중 수강 신청을 하는 방식으로 운영됩니다. 반도체특성화대학사업단 참여 학생 및 반도체에 관심 있는 학생분들의 많은 참여 바랍니다.\n■ 신청 기간 : 2026. 10. 26. (월) 13 : 00 ~ 2026. 10. 28. (수) 16 : 00\n■ 팀 선정 결과 발표 : 2026. 10. 30. (금) 14 : 00 ~\n자세한 내용은 하단의 링크를 확인 부탁드립니다.\n반도체특성화대학사업단 홈페이지 바로가기 ☞ 경북대학교 반도체특성화대학사업단\nhttps://knusemi.knu.ac.kr/content/community/notice.html?pg=vv&number=685&Sopt_1=&Sopt_2=&Sopt_3=&sword=&sdate=#ditail_view",
+    "body": "[반도체특성화대학사업단] 2027학년도 1학기 PBL기반반도체실무프로젝트 신청 안내 (10/26~10/30) ★ 트랙 선발자 필독 ★\n반도체특성화대학사업단에서 2027학년도 1학기 \" PBL기반반도체실무프로젝트 \" 교과목 신청에 대해 안내드립니다.\n반도체 특성화 트랙과 연계되어 개설되는 \" PBL기반반도체실무프로젝트 \" 교과목은 실제 수강 신청 전에 사전 신청을 거쳐 강좌를 개설하고, 사전 신청을 통해 미리 참여 승인을 받은 학생들이 수강 신청 기간 중 수강 신청을 하는 방식으로 운영됩니다. 반도체특성화대학사업단 참여 학생 및 반도체에 관심 있는 학생분들의 많은 참여 바랍니다.\n■ 신청 기간 : 2026. 10. 26. (월) 13 : 00 ~ 2026. 10. 30. (금) 16 : 00\n■ 팀 선정 결과 발표 : 2026. 11. 4. (수) 14 : 00 ~\n자세한 내용은 하단의 링크를 확인 부탁드립니다.\n반도체특성화대학사업단 홈페이지 바로가기 ☞ 경북대학교 반도체특성화대학사업단\nhttps://knusemi.knu.ac.kr/content/community/notice.html?pg=vv&number=685&Sopt_1=&Sopt_2=&Sopt_3=&sword=&sdate=#ditail_view",
     "bodyStatus": "ok",
     "date": "2026-10-19",
     "deadline": null,
     "id": "knu-kremse-kre1640045053:740",
-    "title": "[반도체특성화대학사업단] 2027학년도 1학기 PBL기반반도체실무프로젝트 신청 안내 (10/26~10/28) ★ 트랙 선발자 필독 ★",
+    "title": "[반도체특성화대학사업단] 2027학년도 1학기 PBL기반반도체실무프로젝트 신청 안내 (10/26~10/30) ★ 트랙 선발자 필독 ★",
     "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0MCZzdGFydFBhZ2U9MCZsaXN0Tm89MTk2JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
   },
   {
@@ -69,7 +87,7 @@
     "deadline": null,
     "id": "knu-kremse-kre1640045053:735",
     "title": "2026학년도 2학기「캡스톤디자인 프로그램 운영」에 따른 신청 안내(~10.08/목 12시까지)",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTczNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTk4JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTczNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTkyJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
   },
   {
     "body": "반도체특성화대학사업단에서는 반도체 특성화 트랙에 참여하는 학생들의 전공 및 취업역량강화를 위하여 교외 프로그램 참가 지원을 하고 있습니다. 이에, 10월 서울 코엑스에서 열리는 “2026 SEDEX 반도체대전” 참가 신청을 받고 있으니 많은 관심 바랍니다.\n[2026 SEDEX 반도체대전]\n1. 일시: 2026.10.15.(목) 13:00~16:00 (오전 9:00 출발, 18:00 도착 예정 ※ 일정에 따라 시간이 변경될 수 있음)\n2. 장소: 서울 COEX\n□ 신청대상: 학부 재학생 중 트랙 Ⅰ,Ⅱ,Ⅲ 참여학생\n□ 신청기한: ~2026.9.17.(목)까지\n□ 신청방법: [사업단 홈페이지] - [접수 및 조회] - [프로그램 신청] ※ 로그인 후 신청가능\n□ 지원내용: 교통비, 식비, 여행자보험 (※사업단 일괄 결제)\n□ 필수사항\n(1) 온라인 사전등록:https://sedex.org/public_html/participation/participation_regi.asp\n※참고: 9/1(화)~10/13(화), 온라인 사전 등록 시 무료 관람\n(2) 전시회 방문 후 결과보고서 제출 ※양식 붙임파일 참조\n□ 신청결과: 2026.9.21.(월) 선정자 개별 연락\n※ 최소 신청인원 미달 시 지원이 취소될 수 있음",
@@ -250,23 +268,5 @@
     "id": "knu-kremse-kre1640045053:674",
     "title": "2026년 8월 졸업자 및 유예자 [졸업자격인정원] 신청 안내",
     "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY3NCZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3MiZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-  },
-  {
-    "body": "공시사항 안문의사항 : 반도체특성화대학사업단 노유진(053-950-7030 ,yj1224@knu.ac.kr)\n1. 행사목적: PBL교과를 통해 도출된 성과를 공유하고 우수 팀을 선발하여 수상(장학금 지급)\n2. 일 시: 2026.06.23.(화), 13:00 ~ 17:00\n3. 장 소: IT대학 2호관 101호\n4. 참가대상: PBL프로젝트22팀 (※필참)\n팀\n담당교수\n과제명(팀명)\n1\n김학린\n유리기판 TGV 공정 및 홀로그래픽 3차원 단층 이미징 기술\n2\n신효근\n레이저 미세가공을 이용한 웨어러블 헬스케어 소자 제작 및 최적화\n3\n박홍식\n전력반도체용 고전압/전력 트랜지스터의 특성평가 및 성능 향상 기술 연구\n4\n고출력/고속 GaN 트랜지스터 에피택시 및 소자 기술 연구\n5\n안재범\n반도체 스위치 기반 전력변환 회로 설계\n6\n공성호\n산화물 공정 조건에 따른 저항성 메모리 소자 동작 특성 분석\n7\n차세대 엣지 컴퓨팅 플랫폼을 위한 Memristor 소자 기술 개발\n8\nVO₂ 스퍼터링 공정을 이용한 Mott 소자의 제작 및 특성 최적화 연구\n9\n김선민\nPIM ASIC 설계 자동화 프로그램 개발\n10\nTransistor-level physical design methodology for extreme area scaling\n11\nEMIC를 위한 디지털 시스템 설계 및 검증\n12\n우성윤\n비휘발성 메모리 소자의 절연막 분석 및 CAP 어레이 제작\n13\n전력 반도체 소자 3차원 구조 제작\n14\n나현수\n전자빔리소그래피를 활용한 23 nm 이하 패턴 형성 심화\n15\nAI 시각센서를 위한 차세대 고속동작 단파적외선 센서 특성평가 심화\n16\n차세대 고속동작 적외선센서 대면적 공정기술 개발 심화\n17\n장병철\nNAND Flash 메모리 프로그램 효율성 개선을 위한 막질 엔지니어링 공정\n18\n박세훈\n저잡음·고감도 광 생체신호 검출용 Readout IC 설계\n19\n화합물/CMOS 반도체 기반 송수신기 핵심 부품 설계\n20\n조명래\nSi Bulk 에칭 조건 최적화를 통한 MEMS 구조 공정 수득 향상\n21\n심재훈\nVCO-based ADC 설계\n22\n소철\n차세대 통신을 위한 위상배열 집적회로 설계\n5. 주요내용\n1) 1차 평가 서류 제출 : 6월1일(월)~6월8일(월) 12:00까지(※기한 엄수), 팀별 결과보고서 및 포스터 제출\n- 결과보고서 [붙임1] 확인 : PBL최종결과보고서 제출 (한글파일 제출)\n- 포스터 [붙임2] 확인 : 자유롭게 디자인 (ppt 및 pdf 파일 각각 제출), 포스터 사이즈 : 너비 - 60cm 높이 - 100cm\n- 제출 요령: [팀 번호- 교수님- 팀과제명] 제목으로 메일 제출하여 주시기 바랍니다.\n2) PBL우수 팀 선발 및 공고 : 6월15일(월), 우수 팀 중 4팀→ 경진대회 당일 구두 발표 (개별 연락 예정)\n3)최종 순위 발표: 6월23일(화), 경진대회 시상식\n6. 상금\n1) 1등 대상 - 인당 30만원\n2) 2등 최우수상 – 인당 25만원\n3) 3등 우수상 – 인당 20만원\n4) 4등 장려상 – 인당 15만원\n5) 5,6등 우수포스터상 - 인당 10만원\n6) 현장투표우수상–인당 5만원\n**PBL프로젝트 경진대회 상금(장학금)은 반도체특성화대학사업단에서 지원되는 상금입니다.\n반도체 트랙(Ⅰ,Ⅱ,Ⅲ)에소속되어 있지 않은 학생들은 우수 팀으로 선발될 시 상장은 수여받되 상금 지급이 불가함을 안내드립니다. **\n7. 기타: 반도체특성화대학사업단 해외연수 프로그램 선발시 PBL경진대회 수상학생에 가점부여\n8. 참여대상: 경북대학교 재학생 중 반도체특성화 트랙에 관심 있는 학생 누구나\n**행사 당일에는 경품추첨의 이벤트도 열릴 예정이오니, 많은 참여와 관심 바랍니다.\n9. 제출 : 메일제출, 반도체특성화대학사업단 노유진(053-950-7030 ,yj1224@knu.ac.kr)\n※행사 세부 일정 (행사 세부 일정은 사업단 사정에 따라 변동 될 수 있습니다.)\n일 시\n행사내용\n비 고\n13:00～13:30\n행사 오프닝\n13:30～13:40\nPBL 경진대회 시작 안내\n인사말\n13:40～15:00\nPBL 4팀 발표\n팀당 20분씩 발표\n(15분 발표, 5분 질의)\n15:00～16:00\n포스터 심사\n학생들이 직접 자유롭게 돌아다니며 포스터 감상 및 투표\n16:00～16:50\n시상식\n발표 4팀 (1·2·3·4등) 시상\n포스터 2팀 (5·6등) 시상\n현장투표우수상 1팀(7등) 시상\n1등 상금 : 인당 30만원\n2등 상금 : 인당 25만원\n3등 상금 : 인당 20만원\n4등 상금 : 인당 15만원\n5·6등 상금 : 인당 10만원\n7등 상금 : 인당 5만원\n16:50～17:00\n행사 종료 안내\n사진 촬영",
-    "bodyStatus": "ok",
-    "date": "2026-05-18",
-    "deadline": null,
-    "id": "knu-kremse-kre1640045053:672",
-    "title": "[반도체특성화대학사업단] 제6회 PBL프로젝트 경진대회 개최 안",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY3MiZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3MSZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-  },
-  {
-    "body": "「경북대학교 반도체특성화대학사업단」 4차년도 반도체특성화트랙 설명회(신소재공학과) 안내\n반도체특성화트랙 설명회를 아래와 같이 개최하오니 관심 있는 학생들의 많은 참여 바랍니다.\n※ 참석 희망자는 2026. 5. 14.(목)까지 네이버폼으로 신청 바랍니다. (간단한 점심 제공)\n━━━━━━━━━━━━━━━━━━\n▪ 일 시 : 2026. 5. 18.(월) 12:00 ~ 13:00\n▪ 장 소 : 공과대학 8호관 101호\n▪ 대 상 : 신소재공학과 재학생\n▪ 참여인원 : 신소재공학과 소속 학생 및 참여교수 등 총 50명\n[주요 내용]\n✔ 반도체특성화대학사업 소개\n✔ 반도체특성화트랙 운영 및 신청 안내\n✔ 장학금 제도 및 비교과 프로그램 안내\n━━━━━━━━━━━━━━━━━━\n???? 신청링크\nhttps://naver.me/F6QbMXWp",
-    "bodyStatus": "ok",
-    "date": "2026-05-06",
-    "deadline": null,
-    "id": "knu-kremse-kre1640045053:667",
-    "title": "[반도체특성화대학사업단 교육지원팀] 반도체특성화트랙 설명회 안내(05.18/월)",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY2NyZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3MCZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
   }
 ]
