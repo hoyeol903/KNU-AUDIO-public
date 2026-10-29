@@ -5,7 +5,7 @@ import vm from 'node:vm';
 const html=readFileSync(new URL('../tools/knua-app.html',import.meta.url),'utf8');
 const departments=[{id:'kor',college:'인문대학',dept:'국어국문학과'},{id:'history',college:'인문대학',dept:'사학과'},{id:'ai',college:'IT대학',dept:'인공지능전공'},{id:'free',college:'자율전공학부',dept:'자율전공학부'}];
 function college(){const c=vm.createContext({DATA:{departments},S:{startCollege:'',startQuery:'',startDept:null},esc:s=>s,avatar:()=>'',IC:{check:''}});vm.runInContext(html.slice(html.indexOf('function collegeOptions(){'),html.indexOf('/* 4-1 시작 */')),c);return c;}
-test('대학을 고르기 전에는 전체 학과를 나열하지 않는다',()=>{const c=college();assert.match(c.deptList(),/대학을 선택하면/);assert.doesNotMatch(c.deptList(),/data-act="dept"/);assert.equal((c.collegeOptions().match(/>인문대학</g)||[]).length,1);assert.match(c.collegeOptions(),/자율전공학부/);});
+test('대학을 고르기 전에는 전체 학과를 나열하지 않는다',()=>{const c=college();assert.match(c.deptList(),/대학을 선택하면/);assert.doesNotMatch(c.deptList(),/data-act="dept"/);assert.equal((c.collegeOptions().match(/data-college="인문대학"/g)||[]).length,1);assert.match(c.collegeOptions(),/자율전공학부/);});
 test('선택한 대학의 학과만 보이고 대학 내 검색과 선택 표시를 유지한다',()=>{const c=college();c.S.startCollege='인문대학';assert.match(c.deptList(),/국어국문학과/);assert.match(c.deptList(),/사학과/);assert.doesNotMatch(c.deptList(),/인공지능전공/);c.S.startQuery='사학';c.S.startDept='history';assert.doesNotMatch(c.deptList(),/국어국문학과/);assert.match(c.deptList(),/aria-pressed="true"/);c.S.startQuery='없는과';assert.match(c.deptList(),/맞는 학과가 없어요/);});
 function historySetup(){
  const handlers={},stack=[],renders=[];let position=-1;const sc={scrollTop:0};

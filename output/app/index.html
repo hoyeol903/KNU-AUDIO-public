@@ -1345,8 +1345,8 @@ function header(back, right){
 
 function collegeOptions(){
   var colleges = [];
-  DATA.departments.forEach(function(d){ if (colleges.indexOf(d.college) < 0) colleges.push(d.college); });
-  return '<option value="">대학을 선택하세요</option>' + colleges.map(function(c){ return '<option value="' + esc(c) + '"' + (S.startCollege === c ? ' selected' : '') + '>' + esc(c) + '</option>'; }).join('');
+  DATA.departments.forEach(function(d){ if (!colleges.some(function(c){ return c.college === d.college; })) colleges.push(d); });
+  return colleges.map(function(d){ var on = S.startCollege === d.college; return '<button data-act="college" data-college="' + esc(d.college) + '" aria-pressed="' + on + '" class="row" style="min-height:64px;flex-shrink:0;gap:12px;padding:10px 14px 10px 16px;border-radius:18px;border:1.5px solid ' + (on ? 'var(--wine)' : 'var(--line)') + ';background:' + (on ? 'var(--wine-soft)' : 'var(--bg)') + ';text-align:left;width:100%">' + avatar(d,44) + '<b style="flex:1;min-width:0;font-size:15.5px;line-height:22px">' + esc(d.college) + '</b>' + (on ? '<span style="width:26px;height:26px;border-radius:13px;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center">' + IC.check + '</span>' : '') + '</button>'; }).join('');
 }
 function deptList(){
   if (!S.startCollege) return '<span class="muted" style="font-size:14px;padding:12px 4px">대학을 선택하면 소속 학과가 여기에 나와요.</span>';
@@ -1362,7 +1362,7 @@ function vStart(){
     '<div class="col" style="gap:8px"><h1 style="margin:0;font-size:28px;line-height:36px;font-weight:800;letter-spacing:-.9px">등굣길 1분,<br>오늘 학교 소식을 들려드려요</h1><span class="muted" style="font-size:14.5px;line-height:22px">이름과 학과는 이 브라우저에만 저장돼요.</span></div></div>' +
     '<a href="privacy.html" target="_blank" rel="noopener" class="muted" style="font-size:13px">방문 통계·개인정보 안내</a>' +
     '<div class="col" style="gap:8px"><label for="inName" class="row" style="justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--ink2)"><span>이름</span><span class="muted num" id="nameCount">' + S.startName.length + '/20</span></label><input class="field" id="inName" required aria-invalid="' + !!S.startNameError + '" aria-describedby="nameError" maxlength="20" autocomplete="off" placeholder="이름을 입력하세요" value="' + esc(S.startName) + '"><p class="field-error" id="nameError" role="alert"' + (S.startNameError ? '' : ' hidden') + '>이름을 입력하세요</p></div>' +
-    '<div class="col" style="gap:8px"><label for="inCollege" style="font-size:13.5px;font-weight:700;color:var(--ink2)">대학</label><select class="field" id="inCollege" aria-controls="deptList">' + collegeOptions() + '</select><span class="muted" style="font-size:12.5px">소속 대학·학부를 먼저 선택해 주세요.</span></div>' +
+    '<div class="col" style="gap:8px"><span id="collegeLabel" style="font-size:13.5px;font-weight:700;color:var(--ink2)">대학</span><span class="muted" style="font-size:12.5px">목록을 내려 소속 대학·학부를 선택해 주세요.</span><div class="col" id="collegeList" role="group" aria-labelledby="collegeLabel" style="gap:6px;max-height:280px;overflow-y:auto;padding:2px">' + collegeOptions() + '</div></div>' +
     '<div class="col" style="gap:8px"><label for="inDept" style="font-size:13.5px;font-weight:700;color:var(--ink2)">학과</label><div style="position:relative">' + IC.search + '<input class="field search" id="inDept" autocomplete="off" placeholder="선택한 대학 안에서 학과 검색"' + (S.startCollege ? '' : ' disabled') + ' value="' + esc(S.startQuery) + '"></div>' +
     '<div class="col" style="gap:6px" id="deptList">' + deptList() + '</div></div>' +
     '</div></div><div class="bottom-bar"><button class="btn-pri" data-act="startNext"' + (ok ? '' : ' disabled') + '>다음</button></div>';
@@ -2308,6 +2308,16 @@ document.addEventListener('click', function(e){
       if (to === 'calendar' || to === 'meeting') return nav(to);
       return nav('home');
     }
+    case 'college': {
+      var college = el.getAttribute('data-college');
+      if (college === S.startCollege) return;
+      S.startCollege = college; S.startDept = null; S.startQuery = '';
+      var list = $('collegeList'), y = list.scrollTop; list.innerHTML = collegeOptions(); list.scrollTop = y;
+      var search = $('inDept'); search.value = ''; search.disabled = false;
+      $('deptList').innerHTML = deptList();
+      var next = document.querySelector('[data-act="startNext"]'); if (next) next.disabled = true;
+      return;
+    }
     case 'dept': { S.startDept = el.getAttribute('data-i'); $('deptList').innerHTML = deptList(); var nb = document.querySelector('[data-act="startNext"]'); if (nb) nb.disabled = S.startDept == null; return; }
     case 'startNext': {
       if (!S.startName.trim()) {
@@ -2423,13 +2433,6 @@ document.addEventListener('click', function(e){
     case 'retry': return loadMeta();
     case 'retryBoard': POSTS[S.boardId] = null; loadBoard(S.boardId); return render(false);
   }
-});
-document.addEventListener('change', function(e){
-  if (e.target.id !== 'inCollege') return;
-  S.startCollege = e.target.value; S.startDept = null; S.startQuery = '';
-  var search = $('inDept'); search.value = ''; search.disabled = !S.startCollege;
-  $('deptList').innerHTML = deptList();
-  var next = document.querySelector('[data-act="startNext"]'); if (next) next.disabled = true;
 });
 document.addEventListener('input', function(e){
   var t = e.target;
