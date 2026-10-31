@@ -5536,3 +5536,22 @@
   classification_reason: '대학원·연구사업 공지: 신입생 기본 채널에서 제외'
   evidence: collector/tests/fixtures/channels/739876756888c2f8.html
   homepage: http://env.knu.ac.kr/
+- id: notice-aibootcamp
+  name: AI부트캠프 · 알림
+  type: notice
+  required: none
+  required_department_ids: []
+  classification: required
+  category: extracurricular
+  source_url: https://aibootcamp.knu.ac.kr/notices/
+  template: aibootcamp
+  status: found
+  collection_enabled: true
+  organization_ids: []
+  menu_labels:
+  - 알림
+  review_needed: false
+  review_reasons: []
+  classification_reason: 비교과 공지 칸에서 모아 보는 비교과 사이트(AI부트캠프사업단)
+  evidence: collector/tests/fixtures/aibootcamp/notices.html
+  homepage: https://aibootcamp.knu.ac.kr/

@@ -6836,6 +6836,28 @@
       "status": "found",
       "template": "knu-cms",
       "type": "notice"
+    },
+    {
+      "category": "extracurricular",
+      "classification": "required",
+      "classification_reason": "비교과 공지 칸에서 모아 보는 비교과 사이트(AI부트캠프사업단)",
+      "collection_enabled": true,
+      "evidence": "collector/tests/fixtures/aibootcamp/notices.html",
+      "homepage": "https://aibootcamp.knu.ac.kr/",
+      "id": "notice-aibootcamp",
+      "menu_labels": [
+        "알림"
+      ],
+      "name": "AI부트캠프 · 알림",
+      "organization_ids": [],
+      "required": "none",
+      "required_department_ids": [],
+      "review_needed": false,
+      "review_reasons": [],
+      "source_url": "https://aibootcamp.knu.ac.kr/notices/",
+      "status": "found",
+      "template": "aibootcamp",
+      "type": "notice"
     }
   ],
   "feedback_applied": [

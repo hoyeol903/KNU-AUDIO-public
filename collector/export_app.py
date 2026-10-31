@@ -185,6 +185,8 @@ def app_data(channels, departments, data, by_notice, stored_ids, meal_week):
         boards.append(dict(
             id=channel['id'], name=channel['name'], url=channel.get('source_url'), saved=len(rows),
             collected=channel['id'] in stored_ids,
+            # extracurricular 게시판은 학과 게시판 대신 홈의 '비교과 공지' 칸에서 모아 본다.
+            category=channel.get('category'),
             today=[dict(postId=row['id'], kind='new' if row['reason'] == 'new' else 'deadline', title=row['title'],
                         date=row['posted_at'], deadline=row['deadline']) for row in today]))
         if shown:

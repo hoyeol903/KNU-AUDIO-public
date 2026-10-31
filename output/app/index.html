@@ -350,6 +350,9 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 /* board tiles */
 .btile{background:var(--tile);border-radius:24px;padding:14px 16px;min-height:132px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;text-align:left}
 .btile.hot{background:var(--wine-soft)}
+.nc-cube{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 14px 16px 18px;border-radius:22px;background:var(--wine-soft)}
+.nc-cube-go{flex-shrink:0;height:44px;padding:0 16px;border-radius:14px;background:var(--wine);color:#fff;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.nc-req{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--wine-ink);padding:6px 0}
 .list-row{min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:12px 0;border-top:1px solid var(--line);text-align:left;width:100%}
 
 /* switch */
@@ -915,20 +918,28 @@ function pickCandidates(q){
 }
 /* 오늘 새로 확인할 글이 없는 게시판에서 늘 남는 정상 기록이다. 문제가 아니라서 "확인할 내용"에 세지 않는다. */
 var QUIET_ISSUE = /오늘 확인한 상세 자료가 없습니다/;
+/* 비교과 공지: 학과 게시판과 따로, 비교과 사이트(category: extracurricular)를 홈의 한 칸에 모아 본다.
+   새 사이트는 자동으로 켜지도록 사용자가 끈 사이트만 store.ncOff에 남긴다. KNUcube는 로그인이 필요해 바로가기만 둔다. */
+var KNUCUBE_URL = 'https://knucube.knu.ac.kr/knucube_index.jsp';
+function ncAll(){ return DATA.boards.filter(function(b){ return b.category === 'extracurricular'; }); }
+function ncOff(){ return Array.isArray(store.ncOff) ? store.ncOff : []; }
 function world(){
   var pf = profile(), req = pf.dept.requiredBoards;
-  var mine = boardIds(pf.dept.id, pf.extra).map(function(id){
+  function mk(id){
     var b = DATA.boardMap[id], o = { id: b.id, name: b.name, url: b.url, saved: b.saved, collected: b.collected, required: req.indexOf(id) >= 0 };
     o.today = b.today.map(function(t){ return { id: t.postId, title: t.title, date: t.date, deadline: t.deadline, dday: dday(t.deadline), tag: t.kind === 'deadline' ? 'due' : 'new', board: o }; });
     return o;
-  });
+  }
+  /* 비교과 게시판은 학과 필수 게시판에 붙지 않지만, 혹시 겹쳐도 내 게시판에서는 빼고 비교과 칸에서만 보여 준다. */
+  var mine = boardIds(pf.dept.id, pf.extra).filter(function(id){ return DATA.boardMap[id].category !== 'extracurricular'; }).map(mk);
+  var nc = ncAll().filter(function(b){ return ncOff().indexOf(b.id) < 0; }).map(function(b){ return mk(b.id); });
   var today = [].concat.apply([], mine.map(function(b){ return b.today; }));
   var cafes = cafeOrder().filter(function(c){ return pf.cafes[c.id]; }).map(function(c){ return { c: c, state: c.status === 'failed' ? 'fail' : c.status === 'ok' ? 'ok' : 'none' }; });
   var names = {}; mine.forEach(function(b){ names[b.id] = b.name; }); cafes.forEach(function(x){ names[x.c.id] = x.c.name; });
   var checks = DATA.issues.filter(function(i){ return !QUIET_ISSUE.test(i.text) && (names[i.source] || i.source === 'weather' || i.source === 'schedule' || (i.source === 'meals' && cafes.length)); })
     .map(function(i){ return (names[i.source] ? names[i.source] + ': ' : '') + i.text; });
   return {
-    pf: pf, boards: mine, today: today, cafes: cafes,
+    pf: pf, boards: mine, nc: nc, today: today, cafes: cafes,
     newCount: today.filter(function(p){ return p.tag === 'new'; }).length,
     dueCount: today.filter(function(p){ return p.tag === 'due'; }).length,
     weather: DATA.weather.status === 'ok' ? DATA.weather : null,
@@ -940,7 +951,7 @@ function world(){
 function savedPosts(){ return Array.isArray(store.savedPosts) ? store.savedPosts.filter(function(p){ return p && typeof p.id === 'string' && typeof p.boardId === 'string'; }) : []; }
 function savedPost(boardId, id){ return savedPosts().filter(function(p){ return p.boardId === boardId && p.id === id; })[0] || null; }
 function postBoard(id){
-  var b = W.boards.filter(function(x){ return x.id === id; })[0], source = DATA.boardMap[id], saved = savedPosts().filter(function(p){ return p.boardId === id; })[0];
+  var b = W.boards.concat(W.nc || []).filter(function(x){ return x.id === id; })[0], source = DATA.boardMap[id], saved = savedPosts().filter(function(p){ return p.boardId === id; })[0];
   return b || (source ? { id: id, name: source.name, url: source.url, today: [] } : saved ? { id: id, name: saved.boardName, url: saved.boardUrl, today: [] } : null);
 }
 function postSnapshot(p){
@@ -1305,7 +1316,7 @@ function render(animate){
   var route = S.loadPhase === 'loading' ? 'loading' : S.loadPhase === 'error' ? 'error' : S.route;
   if (animate === undefined) animate = route !== lastRoute;
   lastRoute = route;
-  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, feedback: vFeedback, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList, 'meeting-detail': vMeetDetail, 'meeting-inbox': vMeetInbox }[route];
+  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, feedback: vFeedback, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, nc: vNc, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList, 'meeting-detail': vMeetDetail, 'meeting-inbox': vMeetInbox }[route];
   var view = $('view'), y = 0, sc = view.querySelector('.scr');
   if (sc && !animate) y = sc.scrollTop;
   view.innerHTML = fn();
@@ -1480,13 +1491,45 @@ function vHome(){
   h += vMeals();
   h += '<div class="span2 row" style="justify-content:space-between;padding:10px 4px 0"><h2 class="h-sec">내 게시판</h2><span class="lab-s" style="font-weight:600">' + '오늘의 새 글</span></div>';
   h += '<button class="btile hot" data-act="savedPosts" aria-label="저장한 공지 ' + savedPosts().length + '개 보기"><span style="font-size:14.5px;font-weight:750">저장한 공지</span><b class="pop num" style="font-size:30px;line-height:34px;color:var(--wine-ink)">' + savedPosts().length + '</b><span class="muted" style="font-size:12px">다시 볼 공지를 모았어요</span></button>';
-  W.boards.forEach(function(b){
+  if (!W.boards.length) h += ncTile();
+  W.boards.forEach(function(b, i){
+    if (i === 1) h += ncTile();
     var n = b.today.length;
     h += '<button data-act="board" data-id="' + esc(b.id) + '" class="btile' + (n ? ' hot' : '') + '"><span style="font-size:14.5px;line-height:20px;font-weight:700">' + esc(b.name) + '</span><span class="row" style="justify-content:space-between;align-items:flex-end;gap:6px;width:100%"><span class="col" style="gap:2px"><b class="pop num" style="font-size:30px;line-height:34px;font-weight:800;color:' + (n ? 'var(--wine-ink)' : 'var(--muted)') + '">' + (b.collected ? n : '–') + '</b><span class="muted" style="font-size:12px">' + (b.collected ? '수집한 공지 ' + (b.saved != null ? b.saved : '[N]') + '개' : '수집된 공지 없음') + '</span></span><span class="badge b-bg" style="font-size:11.5px;padding:0 8px">' + (b.required ? IC.lock(11) + '필수' : '선택') + '</span></span></button>';
   });
+  if (W.boards.length === 1) h += ncTile();
   h += '<button data-act="settings" style="border:1.5px dashed var(--line);border-radius:24px;min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:700;color:var(--muted)">' + sz(IC.plus, 22) + '게시판 설정</button>';
   return h + '</div></div>';
 }
+function ncTile(){
+  var n = [].concat.apply([], W.nc.map(function(b){ return b.today; })).length;
+  return '<button data-act="nc" class="btile' + (n ? ' hot' : '') + '" aria-label="비교과 공지, 오늘 소식 ' + n + '개"><span style="font-size:14.5px;line-height:20px;font-weight:700">비교과 공지</span><span class="col" style="gap:2px"><b class="pop num" style="font-size:30px;line-height:34px;font-weight:800;color:' + (n ? 'var(--wine-ink)' : 'var(--muted)') + '">' + n + '</b><span class="muted" style="font-size:12px">' + (W.nc.length ? '사이트 ' + W.nc.length + '곳 · KNUcube 바로가기' : 'KNUcube 바로가기 · 사이트 고르기') + '</span></span></button>';
+}
+/* 비교과 공지 화면: KNUcube 바로가기, 모아 볼 사이트 켜고 끄기, 오늘 소식, 사이트를 합친 최근 글 */
+function vNc(){
+  var all = ncAll(), on = W.nc;
+  var h = '<div class="scr" style="padding:12px 18px ' + (P.started ? 120 : 40) + 'px"><div class="stg col" style="gap:20px">' + header(true);
+  h += '<div class="col" style="gap:6px;margin-top:-8px"><h1 style="margin:0;font-size:26px;line-height:34px;font-weight:800;letter-spacing:-.8px">비교과 공지</h1><span class="muted" style="font-size:13.5px;line-height:20px">비교과 사이트의 공지를 한곳에 모아 봐요.</span></div>';
+  h += '<section class="nc-cube"><div class="col" style="gap:4px;min-width:0"><b style="font-size:16px">KNUcube 비교과 프로그램</b><span class="muted" style="font-size:13px;line-height:19px">학교 비교과 통합관리시스템이에요. 로그인이 필요해서 크누아가 대신 가져오지 않고 바로 열어 드려요.</span></div>' + ext(KNUCUBE_URL, '바로가기' + IC.ext(14), 'nc-cube-go', '') + '</section>';
+  h += '<section class="col" style="gap:10px"><div class="row" style="justify-content:space-between"><h2 style="margin:0;font-size:17px;font-weight:800">모아 보는 사이트</h2><span class="lab-s" style="font-weight:600">눌러서 켜고 끄기</span></div><div class="chips">' +
+    all.map(function(b){ var at = on.some(function(x){ return x.id === b.id; }); return '<button class="chip-btn" data-act="ncToggle" data-id="' + esc(b.id) + '" aria-pressed="' + at + '">' + (at ? IC.check : '') + esc(b.name) + '</button>'; }).join('') +
+    '</div>' + ext(FEEDBACK_FORM, sz(IC.plus, 16) + '원하는 비교과 사이트 추가 요청' + IC.ext(13), 'nc-req', '') + '</section>';
+  if (!on.length) return h + '<div class="tile col" style="gap:4px"><b style="font-size:15px">모아 볼 사이트를 하나 이상 켜 주세요</b><span class="muted" style="font-size:13.5px;line-height:20px">위에서 사이트를 누르면 그 사이트의 공지가 여기에 모여요.</span></div></div></div>';
+  var today = [].concat.apply([], on.map(function(b){ return b.today; }));
+  h += '<section class="col" style="gap:4px"><div class="row" style="gap:8px"><h2 style="margin:0;font-size:17px;font-weight:800">오늘의 소식</h2><span style="font-size:13px;font-weight:800;color:var(--wine-ink)">' + today.length + '</span></div>' +
+    (today.length ? today.map(newsRow).join('') : '<span class="muted" style="font-size:13.5px;padding:8px 0">' + (W.old ? md(DATA.asOf) + '에' : '오늘') + ' 새로 올라오거나 곧 마감되는 비교과 공지가 없어요.</span>') + '</section>';
+  h += '<section class="col"><div class="row" style="justify-content:space-between;padding-bottom:4px"><h2 style="margin:0;font-size:17px;font-weight:800">최근 글</h2><span class="lab-s" style="font-weight:600">최신순</span></div>';
+  var loading = on.some(function(b){ return b.collected && !Array.isArray(POSTS[b.id]) && POSTS[b.id] !== 'error'; });
+  var failed = on.filter(function(b){ return POSTS[b.id] === 'error'; });
+  var rows = [].concat.apply([], on.map(function(b){ return (Array.isArray(POSTS[b.id]) ? POSTS[b.id] : []).map(function(r){ return { r: r, b: b }; }); }))
+    .sort(function(x, y){ return (y.r.date || '').localeCompare(x.r.date || ''); }).slice(0, 40);
+  h += rows.map(function(x){ var n = dday(x.r.deadline); return '<button data-act="post" data-id="' + esc(x.r.id) + '" data-b="' + esc(x.b.id) + '" class="list-row"><span class="title-wrap" style="font-size:15px;line-height:22px;font-weight:600">' + esc(x.r.title) + '</span><span class="row" style="gap:8px;font-size:12.5px;flex-wrap:wrap"><span class="muted num' + (x.r.date ? '' : ' ph') + '">' + esc(x.r.date || '게시일 미확인') + '</span>' + (n != null ? '<b style="color:var(--amber-ink)">마감 ' + dd(n) + '</b>' : '') + '<span class="muted" style="font-weight:600">' + esc(x.b.name) + '</span></span></button>'; }).join('');
+  if (loading) h += [0, 1, 2].map(function(){ return '<span class="sk" style="height:52px;border-radius:14px;margin-top:10px"></span>'; }).join('');
+  else if (!rows.length) h += '<span class="muted" style="font-size:13.5px;padding:10px 0">' + (on.some(function(b){ return b.collected; }) ? '아직 모인 글이 없어요.' : '켜 둔 사이트는 다음 수집부터 글이 모여요.') + '</span>';
+  if (failed.length) h += '<div class="fail" style="gap:12px;margin-top:10px"><b style="font-size:14.5px;line-height:21px">' + esc(failed.map(function(b){ return b.name; }).join(', ')) + ' 글을 불러오지 못했어요</b><button class="btn-sec" data-act="ncRetry" style="align-self:flex-start;background:var(--bg);color:var(--ink)">' + sz(IC.replay, 18) + '다시 시도</button></div>';
+  return h + '<span class="muted" style="font-size:12.5px;line-height:19px;padding:14px 0;border-top:1px solid var(--line)">사이트마다 최근 30개까지 모아요. 더 이전 글은 각 사이트에서 볼 수 있어요.</span></section></div></div>';
+}
+function openNc(){ W.nc.forEach(function(b){ if (POSTS[b.id] === 'error') delete POSTS[b.id]; loadBoard(b.id); }); nav('nc'); }
 function newsRow(p){
   return '<button data-act="post" data-id="' + esc(p.id) + '" data-b="' + esc(p.board.id) + '" class="list-row" style="gap:10px;padding:14px 0"><span class="row" style="gap:6px;flex-wrap:wrap">' + (p.tag === 'new' ? '<span class="badge b-new">새 글</span>' : '<span class="badge b-due">마감 알림</span>') + (p.dday != null ? '<span class="badge b-due">마감 ' + dd(p.dday) + '</span>' : '') + '<span class="muted" style="font-size:12px;font-weight:600">' + esc(p.board.name) + '</span></span><span class="title-wrap" style="font-size:15px;line-height:22px;font-weight:650">' + esc(p.title) + '</span></button>';
 }
@@ -2077,8 +2120,8 @@ var TAB_IC = {
   calendar: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
   meeting: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19.5c0-3 2.4-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><path d="M15 14.4c.5-.1 1-.2 1.5-.2 2.5 0 4.5 1.9 4.5 4.6"/></svg>'
 };
-var TAB_ROUTES = { saved: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', 'meeting-detail': 'meeting', 'meeting-inbox': 'meeting', feedback: 'feedback' };
-var DOCK_ROUTES = { saved: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1, 'meeting-detail': 1, 'meeting-inbox': 1 };
+var TAB_ROUTES = { saved: 'home', nc: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', 'meeting-detail': 'meeting', 'meeting-inbox': 'meeting', feedback: 'feedback' };
+var DOCK_ROUTES = { saved: 1, nc: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1, 'meeting-detail': 1, 'meeting-inbox': 1 };
 function vTabs(route){
   var cur = TAB_ROUTES[route];
   return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '모임'], ['feedback', '피드백']].map(function(t){
@@ -2365,6 +2408,14 @@ document.addEventListener('click', function(e){
     case 'sent': { var sc2 = +el.getAttribute('data-c'), sk = +el.getAttribute('data-k'); if (!CH[sc2]) return; S.follow = true; return seekTo(sc2, sentStart(CH[sc2], sk) + 0.01); }
     case 'follow': { S.follow = true; var fbn = $('followBtn'); if (fbn) fbn.remove(); return scrollToNow(true); }
     case 'savedPosts': return nav('saved');
+    case 'nc': case 'ncRetry': return openNc();
+    case 'ncToggle': {
+      var nid = el.getAttribute('data-id'), off = ncOff().slice(), at = off.indexOf(nid);
+      if (at < 0) off.push(nid); else off.splice(at, 1);
+      var prevOff = store.ncOff; store.ncOff = off;
+      if (!save()) { store.ncOff = prevOff; return toastMsg('저장 공간이 부족해 변경하지 못했어요.'); }
+      refresh(); if (at >= 0) loadBoard(nid); return render(false);
+    }
     case 'savePost': return toggleSavedPost(el.getAttribute('data-b'), el.getAttribute('data-id'));
     case 'statList': return nav('list', { listKind: el.getAttribute('data-k') });
     case 'calView': S.calView = el.getAttribute('data-v'); return render(false);

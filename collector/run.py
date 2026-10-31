@@ -38,6 +38,8 @@ OTHER_SOURCES = {
     'notice-6b04da14aae1': ('gnuboard', 'https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice', 'knu-chinese-notice'),
     'notice-a363da417a07': ('med-cms', 'http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748', 'knu-med-notice001'),
     'notice-7414782e7dbb': ('custom-bid-board', 'https://dent.knu.ac.kr/sub/board.html?bid=k1news', 'knu-dent-k1news'),
+    # 비교과 공지 칸(category: extracurricular)에서 모아 보는 사이트. 학과 필수 게시판에는 붙지 않는다.
+    'notice-aibootcamp': ('aibootcamp', 'https://aibootcamp.knu.ac.kr/notices/', 'knu-aibootcamp-notices'),
 }
 
 
@@ -72,7 +74,7 @@ def select_channels(channels, requested=None, required_all=False, validation=Non
     grouped = {}
     for channel_id in dict.fromkeys(ids):
         channel = by_id.get(channel_id)
-        if not channel or channel_id not in verified or not channel.get('collection_enabled') or channel.get('template') not in {'knu-cms', 'knu-wbbs', 'gt-board', 'gnuboard', 'med-cms', 'custom-bid-board'}:
+        if not channel or channel_id not in verified or not channel.get('collection_enabled') or channel.get('template') not in {'knu-cms', 'knu-wbbs', 'gt-board', 'gnuboard', 'med-cms', 'custom-bid-board', 'aibootcamp'}:
             raise ValueError(f'목록·상세 검증을 통과한 지원 채널이 아닙니다: {channel_id}')
         board = board_id_for(channel)
         if board not in grouped:
@@ -154,6 +156,8 @@ def collect(client, channel, *, db_path=DEFAULT_PATH, max_pages=1000, now=None, 
         list_parser, detail_parser, page_parser = other_notices.parse_med_list, other_notices.parse_med_detail, other_notices.med_next_page
     elif board_id == 'knu-dent-k1news':
         list_parser, detail_parser, page_parser = other_notices.parse_dent_list, other_notices.parse_dent_detail, other_notices.dent_next_page
+    elif board_id == 'knu-aibootcamp-notices':
+        list_parser, detail_parser, page_parser = other_notices.parse_aiboot_list, other_notices.parse_aiboot_detail, other_notices.aiboot_next_page
     fixed_now = now is not None
     now = now or datetime.now(SEOUL)
     if now.utcoffset() != timedelta(hours=9):
@@ -262,7 +266,9 @@ def collect(client, channel, *, db_path=DEFAULT_PATH, max_pages=1000, now=None, 
             deadline = extract_deadline(notice['title'], notice['body'])
             if deadline['status'] != 'not-found':
                 report['deadline_checks'].append(dict(notice_id=notice_id, **deadline))
-            if deadline['status'] == 'found':
+            if notice.get('deadline'):
+                pass  # 원문 사이트가 마감일을 따로 표시했으면(예: AI부트캠프) 본문 날짜 추측보다 우선한다.
+            elif deadline['status'] == 'found':
                 notice['deadline'] = deadline['deadline']
             elif deadline['status'] == 'needs-review' and notice_id not in report['needs_review']:
                 report['needs_review'].append(notice_id)
