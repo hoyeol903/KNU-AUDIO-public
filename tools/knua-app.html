@@ -352,6 +352,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .btile.hot{background:var(--wine-soft)}
 .nc-cube{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 14px 16px 18px;border-radius:22px;background:var(--wine-soft)}
 .nc-cube-go{flex-shrink:0;height:44px;padding:0 16px;border-radius:14px;background:var(--wine);color:#fff;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.nc-req{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--wine-ink);padding:6px 0}
 .list-row{min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:12px 0;border-top:1px solid var(--line);text-align:left;width:100%}
 
 /* switch */
@@ -1512,7 +1513,7 @@ function vNc(){
   h += '<section class="nc-cube"><div class="col" style="gap:4px;min-width:0"><b style="font-size:16px">KNUcube 비교과 프로그램</b><span class="muted" style="font-size:13px;line-height:19px">학교 비교과 통합관리시스템이에요. 로그인이 필요해서 크누아가 대신 가져오지 않고 바로 열어 드려요.</span></div>' + ext(KNUCUBE_URL, '바로가기' + IC.ext(14), 'nc-cube-go', '') + '</section>';
   h += '<section class="col" style="gap:10px"><div class="row" style="justify-content:space-between"><h2 style="margin:0;font-size:17px;font-weight:800">모아 보는 사이트</h2><span class="lab-s" style="font-weight:600">눌러서 켜고 끄기</span></div><div class="chips">' +
     all.map(function(b){ var at = on.some(function(x){ return x.id === b.id; }); return '<button class="chip-btn" data-act="ncToggle" data-id="' + esc(b.id) + '" aria-pressed="' + at + '">' + (at ? IC.check : '') + esc(b.name) + '</button>'; }).join('') +
-    '</div></section>';
+    '</div>' + ext(FEEDBACK_FORM, sz(IC.plus, 16) + '원하는 비교과 사이트 추가 요청' + IC.ext(13), 'nc-req', '') + '</section>';
   if (!on.length) return h + '<div class="tile col" style="gap:4px"><b style="font-size:15px">모아 볼 사이트를 하나 이상 켜 주세요</b><span class="muted" style="font-size:13.5px;line-height:20px">위에서 사이트를 누르면 그 사이트의 공지가 여기에 모여요.</span></div></div></div>';
   var today = [].concat.apply([], on.map(function(b){ return b.today; }));
   h += '<section class="col" style="gap:4px"><div class="row" style="gap:8px"><h2 style="margin:0;font-size:17px;font-weight:800">오늘의 소식</h2><span style="font-size:13px;font-weight:800;color:var(--wine-ink)">' + today.length + '</span></div>' +
