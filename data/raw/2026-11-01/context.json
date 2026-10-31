@@ -1,0 +1,28 @@
+{
+  "channels": [],
+  "collected_at": "2026-11-01T02:54:54.139864+09:00",
+  "date": "2026-11-01",
+  "errors": [
+    {
+      "message": "요청 실패: https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026: HTTPSConnectionPool(host='www.knu.ac.kr', port=443): Max retries exceeded with url: /wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.knu.ac.kr', port=443) at 0x745af869f310>, 'Connection to www.knu.ac.kr timed out. (connect timeout=10)'))",
+      "source": "schedule"
+    }
+  ],
+  "meal_week": {},
+  "request_count": 4,
+  "schedule": [],
+  "schedule_year": [],
+  "sources": [
+    {
+      "checked_at": "2026-11-01T02:54:20.898190+09:00",
+      "source": "weather",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=35.87028&longitude=128.59111&daily=weather_code%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_probability_max&timezone=Asia%2FSeoul&start_date=2026-11-01&end_date=2026-11-01"
+    }
+  ],
+  "weather": {
+    "rain_prob": 100,
+    "summary": "비",
+    "temp_max": 12.6,
+    "temp_min": 8.5
+  }
+}
