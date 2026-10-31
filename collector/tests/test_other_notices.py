@@ -96,7 +96,7 @@ def test_shared_computer_and_ai_board_and_selection():
     assert all(ad[k]==bd[k] for k in ('source_post_id','title','posted_at','body','body_status'))
     channels=yaml.safe_load((ROOT/'data/channels.yaml').read_text())
     grouped=run.select_channels(channels,list(run.OTHER_SOURCES))
-    assert len(grouped)==5 and sum(len(c['channel_ids']) for c in grouped)==6
+    assert len(grouped)==6 and sum(len(c['channel_ids']) for c in grouped)==7
     wrong=dict(next(c for c in channels if c['id']==a['channel_id']),source_url='https://aicollege.knu.ac.kr/bbs/board.php?bo_table=other')
     with pytest.raises(ValueError): run.select_channels([wrong],[wrong['id']])
 

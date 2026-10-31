@@ -234,3 +234,59 @@ def parse_dent_detail(html, url):
     if info:
         info.decompose()
     return _detail(root, DENT_TITLE, DENT_BODY, stamp, url, _query_id(url, 'bno'), DENT_ATTACH)
+
+
+# 비교과: AI부트캠프사업단 알림(정적 사이트, 2026-10-30 확인). 목록 한 페이지에 최근 알림이 모두 있고
+# 오래된 글은 /notices/archive에 따로 모여 있어 다음 페이지를 따라가지 않는다.
+AIBOOT_HOST = 'aibootcamp.knu.ac.kr'
+AIBOOT_SLUG = re.compile(r'/notices/(\d{4}-\d{2}-\d{2}-[a-z0-9-]+)/?')
+AIBOOT_DATE = re.compile(r'\d{4}-\d{2}-\d{2}')
+
+
+def _aiboot_slug(url):
+    parts = urlsplit(url)
+    match = AIBOOT_SLUG.fullmatch(parts.path)
+    if parts.hostname != AIBOOT_HOST or not match:
+        raise ParseError('AI부트캠프 알림 주소가 아닙니다')
+    return match[1]
+
+
+def parse_aiboot_list(html, url):
+    root = BeautifulSoup(html, 'html.parser').select_one('main')
+    if root is None or urlsplit(url).hostname != AIBOOT_HOST:
+        raise ParseError('AI부트캠프 알림 목록 구조가 없습니다')
+    rows = {}
+    for row in root.select('li'):
+        link = row.select_one('a[href^="/notices/"]')
+        if link is None or not AIBOOT_SLUG.fullmatch(link['href']):
+            continue
+        dates = [_text(span) for span in row.select('span') if AIBOOT_DATE.fullmatch(_text(span))]
+        if len(dates) != 1 or not _text(link):
+            raise ParseError('AI부트캠프 알림 목록의 제목·게시일을 읽을 수 없습니다')
+        detail = _url(url, link['href'].rstrip('/') + '/')
+        slug = _aiboot_slug(detail)
+        rows.setdefault(slug, dict(source_post_id=slug, title=_text(link), posted_at=_date(dates[0]), url=detail,
+                                   pinned=any(_text(span) == '고정' for span in row.select('span'))))
+    if not rows:
+        raise ParseError('AI부트캠프 알림 목록이 비어 있습니다')
+    return list(rows.values())
+
+
+def parse_aiboot_detail(html, url):
+    root = BeautifulSoup(html, 'html.parser').select_one('main')
+    slug = _aiboot_slug(url)
+    posted = [_text(span) for span in root.select('h1 ~ p span, p:has(+ h1) span') if AIBOOT_DATE.fullmatch(_text(span))] if root else []
+    if len(set(posted)) != 1:
+        raise ParseError('AI부트캠프 알림 상세 게시일을 확인할 수 없습니다')
+    detail = _detail(root, 'h1', '.prose-notice', _date(posted[0]), url, slug,
+                     "div:has(> h2:-soup-contains('첨부파일')) a[href]")
+    # 모집 글은 '마감일 2026-11-12 24:00'처럼 마감을 따로 적는다. 본문 날짜 추측보다 이 값을 쓴다.
+    for label in root.select('dt'):
+        value = label.find_next_sibling('dd')
+        if _text(label) == '마감일' and value is not None and AIBOOT_DATE.match(_text(value)):
+            detail['deadline'] = _date(AIBOOT_DATE.match(_text(value))[0])
+    return detail
+
+
+def aiboot_next_page(html, url):
+    return None
