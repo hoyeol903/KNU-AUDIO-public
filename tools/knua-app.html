@@ -249,7 +249,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 @keyframes blink{0%,100%{opacity:.25}50%{opacity:.9}}
 
 /* 아래 메뉴바 */
-.tabbar{position:absolute;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;height:68px;border-radius:34px;background:var(--dock);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);border:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(60,10,30,.45);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:6px;box-sizing:border-box;animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
+.tabbar{position:absolute;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;height:68px;border-radius:34px;background:var(--dock);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);border:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(60,10,30,.45);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:6px;box-sizing:border-box;animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
 .tb{border-radius:28px;color:var(--muted);font-size:11.5px;font-weight:750;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:44px}
 .tb.on{background:var(--wine-soft);color:var(--wine-ink)}
 .tb{position:relative}
@@ -259,35 +259,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 .has-tabs .dock{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 .has-tabs .toast{bottom:calc(176px + env(safe-area-inset-bottom,0px))}
 .has-tabs .scr::after{content:"";display:block;height:88px}
-/* 피드백 */
-.fb-hero{position:relative;overflow:hidden;border-radius:28px;background:var(--wine);color:#fff;padding:20px;display:flex;align-items:center;gap:14px;min-height:124px;box-shadow:0 22px 44px -22px rgba(139,30,63,.6)}
-.fb-hero img{width:100px;height:auto;margin:-6px -12px -48px 0;flex-shrink:0}
 .cm-report{display:inline-flex;align-items:center;gap:5px;padding:8px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink2);font-size:12px;cursor:pointer}
-/* 피드백 호반우: 교류 칸 호반우(높이 140px)와 같은 크기로 보이게 한다. 그림이 여백 있는 정사각형이라 상자를 더 크게 잡는다. */
-.fb-hero.fb-big{min-height:150px}
-.fb-hero .fb-mascot{width:156px;height:156px;object-fit:contain;align-self:flex-end;margin:0 -18px -22px -10px}
-@media(max-width:359px){.fb-hero .fb-mascot{width:124px;height:124px}}
-.fb-k{font-size:12.5px;font-weight:700;color:var(--on-wine-muted)}
-.fb-h{margin:0;font-size:22px;line-height:30px;font-weight:800;letter-spacing:-.6px}
-.fb-s{font-size:13px;color:var(--on-wine-muted)}
-.fb-rate{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
-.fb-rt{height:64px;border-radius:18px;border:1px solid var(--line);color:var(--muted);font-size:11.5px;font-weight:750;display:grid;grid-template-rows:24px 18px;align-content:center;justify-items:center;gap:2px}
-.fb-rt b{font-size:19px;font-weight:800;color:var(--ink2)}
-.fb-rt[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.fb-rt[aria-pressed="true"] b{color:var(--bg)}
-.fb-tags{display:flex;flex-wrap:wrap;gap:6px}
-.fb-tg{min-height:44px;padding:0 14px;border-radius:12px;background:var(--tile);color:var(--ink2);font-size:13.5px;font-weight:700}
-.fb-tg[aria-pressed="true"]{background:var(--wine-soft);color:var(--wine-ink);box-shadow:inset 0 0 0 1.5px var(--wine-ink)}
-.fb-form{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px 14px 18px;border-radius:20px;background:var(--wine-soft)}
-.fb-form-go{flex-shrink:0;height:44px;padding:0 16px;border-radius:14px;background:var(--wine);color:#fff;font-size:14px;font-weight:800;display:inline-flex;align-items:center;gap:6px}
-.fb-thanks{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:8px 8px 0}
-.fb-thanks-img{width:240px;height:240px;object-fit:contain;transform-origin:50% 100%;filter:drop-shadow(0 12px 16px rgba(0,0,0,.18));animation:fbBob 2.8s ease-in-out infinite}
-@keyframes fbBob{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-6px) rotate(1.5deg)}}
-.fb-thanks-t{margin-top:6px;font-size:24px;line-height:32px;font-weight:800;letter-spacing:-.6px}
-:root[data-theme="dark"] .fb-thanks-img{filter:drop-shadow(0 0 1px rgba(255,255,255,.45)) drop-shadow(0 12px 16px rgba(0,0,0,.4))}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fb-thanks-img{filter:drop-shadow(0 0 1px rgba(255,255,255,.45)) drop-shadow(0 12px 16px rgba(0,0,0,.4))}}
-.fb-ta{width:100%;box-sizing:border-box;min-height:112px;border-radius:18px;border:1.5px solid transparent;background:var(--tile);padding:14px 16px;font:inherit;font-size:15px;line-height:23px;color:var(--ink);resize:vertical;outline:none}
-.fb-ta:focus{border-color:var(--wine)}
 
 /* 사용법 안내 */
 .coach{position:absolute;inset:0;z-index:30}
@@ -657,8 +629,7 @@ button.cbb{display:block;text-align:left;cursor:pointer;transition:opacity .3s,b
 var DATA = null, BRIEF = null, BRIEF_OLD = false, POSTS = {}, BGM_TRACK = null;   /* meta.json, briefing/segments.json, boards/{id}.json */
 var YEAR = null;   /* schedule.json: 캘린더용 학사일정 전체. 없으면 meta.json의 가까운 일정만 쓴다 */
 var TEST = /[?&]test\b/.test(location.search);
-/* 피드백 받는 주소. 보내기를 누르면 이 주소로 메일 앱이 열린다. */
-/* 메일 앱이 없는 사용자도 남길 수 있게 구글 폼으로도 받는다. */
+/* 의견·요청을 받는 구글 폼. 피드백 탭은 없앴고, 필요한 화면에서 링크로 연결한다. */
 var FEEDBACK_FORM = 'https://forms.gle/P3Ds4eUawQYaeDneA';
 
 /* ---------- 상태 ---------- */
@@ -838,7 +809,6 @@ function dismissSplash(immediate){
 
 /* ---------- 호반우: 원본 데이터의 구간 ID·카드 종류·날씨로만 선택 ---------- */
 var HOB_MOODS = {
-  feedback: { image: 'feedback', label: '피드백 감사해요' },
   greeting: { image: 'greeting', label: '반가워요' },
   rain: { image: 'rain', label: '우산을 챙겨요' },
   sun: { image: 'sun', label: '맑은 날씨예요' },
@@ -1316,7 +1286,7 @@ function render(animate){
   var route = S.loadPhase === 'loading' ? 'loading' : S.loadPhase === 'error' ? 'error' : S.route;
   if (animate === undefined) animate = route !== lastRoute;
   lastRoute = route;
-  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, feedback: vFeedback, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, nc: vNc, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList, 'meeting-detail': vMeetDetail, 'meeting-inbox': vMeetInbox }[route];
+  var fn = { loading: vLoading, error: vError, start: vStart, pick: vPick, home: vHome, board: vBoard, cafe: vCafe, player: vPlayer, 'collection-status': vCollectionStatus, list: vList, saved: vSaved, nc: vNc, calendar: vCalendar, meeting: vMeet, 'meeting-list': vMeetList, 'meeting-detail': vMeetDetail, 'meeting-inbox': vMeetInbox }[route];
   var view = $('view'), y = 0, sc = view.querySelector('.scr');
   if (sc && !animate) y = sc.scrollTop;
   view.innerHTML = fn();
@@ -2111,39 +2081,29 @@ function saveSharedMeeting(){
 }
 
 
-/* 아래 메뉴바: 홈 · 캘린더 · 교류 · 피드백. 브리핑은 홈 재생 카드와 미니 플레이어, 학식은 홈 학식 카드에서 들어간다. */
+/* 아래 메뉴바: 홈 · 캘린더 · 모임. 브리핑은 홈 재생 카드와 미니 플레이어, 학식은 홈 학식 카드에서 들어간다. */
 var TAB_IC = {
   home: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6.5 8 6.5V20a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg>',
   player: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>',
   cafe: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M8 7c0-1.5 1-1.5 1-3M12 7c0-1.5 1-1.5 1-3M16 7c0-1.5 1-1.5 1-3"/></svg>',
-  feedback: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>',
   calendar: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
   meeting: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19.5c0-3 2.4-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><path d="M15 14.4c.5-.1 1-.2 1.5-.2 2.5 0 4.5 1.9 4.5 4.6"/></svg>'
 };
-var TAB_ROUTES = { saved: 'home', nc: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', 'meeting-detail': 'meeting', 'meeting-inbox': 'meeting', feedback: 'feedback' };
+var TAB_ROUTES = { saved: 'home', nc: 'home', home: 'home', board: 'home', cafe: 'home', list: 'home', calendar: 'calendar', meeting: 'meeting', 'meeting-list': 'meeting', 'meeting-detail': 'meeting', 'meeting-inbox': 'meeting' };
 var DOCK_ROUTES = { saved: 1, nc: 1, home: 1, board: 1, cafe: 1, list: 1, calendar: 1, meeting: 1, 'meeting-list': 1, 'meeting-detail': 1, 'meeting-inbox': 1 };
 function vTabs(route){
   var cur = TAB_ROUTES[route];
-  return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '모임'], ['feedback', '피드백']].map(function(t){
+  return '<nav class="tabbar" aria-label="메뉴">' + [['home', '홈'], ['calendar', '캘린더'], ['meeting', '모임']].map(function(t){
     var on = cur === t[0];
     return '<button class="tb' + (on ? ' on' : '') + '" data-act="tab" data-to="' + t[0] + '"' + (on ? ' aria-current="page"' : '') + '>' + TAB_IC[t[0]] + '<span>' + t[1] + '</span>' + (t[0] === 'meeting' ? noteBadge() : '') + '</button>';
   }).join('') + '</nav>';
-}
-/* 피드백: 구글 폼으로 받는다. 화면에는 폼 바로가기와 고마움을 전하는 호반우만 둔다. */
-function vFeedback(){
-  var h = '<div class="scr" style="padding:14px 16px 40px"><div class="stg col" style="gap:20px">';
-  h += '<section class="fb-hero fb-big"><div class="col" style="gap:4px;flex:1;min-width:0;position:relative"><span class="fb-k">피드백</span><h1 class="fb-h">오늘 크누아 어땠어요?</h1><span class="fb-s">관리자가 직접 읽어요.</span></div><img class="fb-mascot" src="' + hobImage('news') + '" alt="" width="156" height="156"></section>';
-  h += '<section class="fb-form"><div class="col" style="gap:2px;min-width:0"><b style="font-size:15.5px">구글 폼으로 남기기</b><span class="muted" style="font-size:13px;line-height:19px">좋았던 점, 불편한 점을 1분이면 남길 수 있어요.</span></div>' + ext(FEEDBACK_FORM, '폼 열기' + IC.ext(14), 'fb-form-go', '') + '</section>';
-  /* 그림은 tools/hobanu/feedback.webp 하나만 바꾸면 된다. 홈 브리핑 카드 호반우처럼 살짝 움직인다. */
-  h += '<section class="fb-thanks" aria-label="감사 인사"><img class="fb-thanks-img" src="' + hobImage('feedback') + '" alt="" width="240" height="240"><b class="fb-thanks-t">피드백 감사합니다!</b><span class="muted" style="font-size:14px;line-height:21px">남겨 주신 의견은 관리자가 직접 읽고 크누아를 고쳐 나갈게요.</span></section>';
-  return h + '</div></div>';
 }
 /* 사용법 안내: 실제 홈 위에서 한 군데씩 짚어 준다. 한 번 보면 store.tour 에 남겨 다시 띄우지 않는다. */
 var TOUR = [
   { sel: ['.herowrap .hero', '.herowrap .hb'], top: true, title: '재생 한 번이면 오늘 브리핑', body: '내 학과 공지와 마감, 날씨, 학식을 1~2분 동안 들려줘요. 화면을 꺼도 계속 들려요.' },
   { sel: ['.wx', '.week'], title: '날씨와 이번 주 일정', body: '학사일정은 저절로 들어와요. "일정 추가"를 누르면 내 일정도 넣을 수 있어요.' },
   { sel: ['.ml-hd', '.mlc'], title: '오늘 학식은 옆으로 넘겨요', body: '켜 둔 식당 메뉴판이 한 장씩 나와요. "식당 관리"에서 식당과 순서를 바꿔요.' },
-  { sel: ['.tabbar'], fixed: true, title: '아래 메뉴로 어디든', body: '홈, 캘린더, 모임, 피드백으로 바로 가요. 브리핑은 홈의 재생 카드에서 들어요.' }
+  { sel: ['.tabbar'], fixed: true, title: '아래 메뉴로 어디든', body: '홈, 캘린더, 모임으로 바로 가요. 브리핑은 홈의 재생 카드에서 들어요.' }
 ];
 function vCoach(){
   var i = S.tour.i, n = TOUR.length, t = TOUR[i];
