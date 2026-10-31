@@ -167,6 +167,10 @@ def collect(client, channel, *, db_path=DEFAULT_PATH, max_pages=1000, now=None, 
     state = load_collection_state(db_path)
     markers = state['boards'].get(board_id, dict(initialized_at=None, last_full_scan_at=None))
     baseline = markers['initialized_at']
+    # 과거 글이 많은 새 게시판은 정기 수집의 첫 실행도 start처럼 최근 구간만 적재한다.
+    # channels.yaml에 first_collection: recent를 적은 채널만 해당하고, 그 밖의 게시판은 기존과 같다.
+    if mode == 'daily' and baseline is None and channel.get('first_collection') == 'recent':
+        mode = 'start'
     if mode == 'start' and baseline is not None:
         raise ValueError('이미 운영을 시작한 게시판입니다. daily 또는 full을 사용하세요')
     bootstrap = baseline is None or mode in {'init', 'start'}

@@ -88,3 +88,37 @@ def test_collect_stores_notices_with_site_deadline(tmp_path):
     stored = {row['source_post_id']: row for row in load_notices(db)}
     assert stored[SJSU]['deadline'] == '2026-11-12' and stored[SJSU]['channel_ids'] == ['notice-aibootcamp']
     assert stored[LAUNCH]['deadline'] is None
+
+
+class TwoPostClient(FixtureClient):
+    """저장해 둔 상세 두 건만 목록에 남겨 오류 없이 끝나는 수집을 만든다."""
+
+    def get(self, url):
+        html, actual = super().get(url)
+        if url == LIST_URL:
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html, 'html.parser')
+            for row in soup.select('main li'):
+                link = row.select_one('a[href^="/notices/"]')
+                if link and link['href'].strip('/').split('/')[-1] not in (SJSU, LAUNCH):
+                    row.decompose()
+            html = str(soup)
+        return html, actual
+
+
+def test_first_collection_recent_uses_start_window_only_for_marked_channels(tmp_path):
+    channels = yaml.safe_load((ROOT / 'data/channels.yaml').read_text(encoding='utf-8'))
+    for channel_id in ('notice-423ad5624dbc', 'notice-5a80fc96a24d'):
+        marked = next(c for c in channels if c['id'] == channel_id)
+        assert marked['category'] == 'extracurricular' and marked['first_collection'] == 'recent'
+    [channel] = run.select_channels(channels, ['notice-aibootcamp'])
+    now = datetime(2026, 10, 30, 9, tzinfo=SEOUL)
+    # 표시한 채널: 정기(daily) 첫 실행이 최근 구간만 적재하는 start로 바뀌고 전체 점검 시각은 남기지 않는다.
+    recent = run.collect(TwoPostClient(), dict(channel, first_collection='recent'), db_path=tmp_path / 'a.json', now=now)
+    assert recent['mode'] == 'start' and recent['bootstrap'] and not recent['errors']
+    state = run.load_collection_state(tmp_path / 'a.json')['boards']['knu-aibootcamp-notices']
+    assert state['initialized_at'] and state['last_full_scan_at'] is None
+    # 표시하지 않은 채널은 기존처럼 첫 실행을 과거 전체 적재(init)로 한다.
+    plain = run.collect(TwoPostClient(), channel, db_path=tmp_path / 'b.json', now=now)
+    assert plain['mode'] == 'init'
+    assert run.load_collection_state(tmp_path / 'b.json')['boards']['knu-aibootcamp-notices']['last_full_scan_at']

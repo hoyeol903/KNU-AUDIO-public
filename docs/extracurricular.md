@@ -13,11 +13,13 @@
 
 ## 사이트 추가 순서
 
-1. 공개 여부 확인: `robots.txt`가 막지 않고, 로그인 없이 목록·상세를 볼 수 있어야 한다.
+1. 공개 여부 확인: 로그인 없이 목록·상세를 볼 수 있어야 한다. 학교 공통 CMS(`home.knu.ac.kr/HOME/...`) 게시판은 기존 학과 게시판과 같은 방식으로 수집한다(이 CMS의 `robots.txt`에는 `Disallow: /H*`가 있으며 기존 게시판도 같은 조건이다). 그 밖의 사이트는 `robots.txt`가 막는지 확인한다.
 2. `data/channels.yaml`에 채널을 추가한다. `type: notice`, `classification: required`, `required: none`, `category: extracurricular`, `collection_enabled: true`, `evidence`(저장한 목록 페이지).
    - `required: none`이라 학과 필수 게시판에는 붙지 않고 비교과 칸에만 나온다.
 3. 수집 틀 연결
-   - 학교 홈페이지 공통 CMS(`home.knu.ac.kr/HOME/.../sub.htm?nav_code=...`)나 그누보드 사이트는 기존 틀(`knu-cms`, `gnuboard`)을 쓴다. KNU CMS는 `data/knu-cms-validation.json` 검증을, 그 밖의 틀은 아래처럼 `OTHER_SOURCES` 등록을 거친다.
+   - 학교 홈페이지 공통 CMS(`home.knu.ac.kr/HOME/.../sub.htm?nav_code=...`)는 `template: knu-cms`를 쓴다. 채널 ID는 `notice-` + 주소 SHA-256 앞 12자리다. `collector/verify_knu_cms.py`와 같은 절차(목록·최근 상세 1건 확인)로 `data/knu-cms-validation.json`에 `verified` 기록을 남겨야 수집 대상이 된다.
+   - 과거 글이 많은 게시판은 `first_collection: recent`를 적는다. 첫 정기 수집이 전체 목록 대신 최근 30일 구간만 읽는다(국제처 약 3,200건 → 첫 수집 44회 요청).
+   - 그누보드 사이트는 `gnuboard` 틀과 아래 `OTHER_SOURCES` 등록을 거친다.
    - 그 밖의 사이트는 `collector/other_notices.py`에 목록·상세 읽기 함수를 만들고, `collector/run.py`의 `OTHER_SOURCES`(채널 ID → 틀·주소·게시판 ID)와 `collect()`의 분기에 연결한다. AI부트캠프(`parse_aiboot_*`)가 예시다.
 4. `docs/channel-review-data.json`과 `docs/channel-review.html`의 채널 목록을 `channels.yaml`과 같게 맞추고 `python docs/check_channels.py`로 확인한다.
 5. 저장한 페이지로 시험을 만든다(`collector/tests/test_aibootcamp.py` 참고). 다음 정기 수집부터 글이 모인다. 첫 수집은 기존 글을 처음 불러오는 것이라 '새 글'로 알리지 않는다.
@@ -27,3 +29,5 @@
 | 채널 | 사이트 | 틀 | 비고 |
 |---|---|---|---|
 | `notice-aibootcamp` | [AI부트캠프사업단 알림](https://aibootcamp.knu.ac.kr/notices/) | `aibootcamp` | 정적 사이트. 목록 한 페이지(오래된 글은 `/notices/archive`라 따라가지 않음). 상세의 '마감일'을 마감으로 쓴다 |
+| `notice-423ad5624dbc` | [국제처 공지사항(국제화 프로그램)](https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883) | `knu-cms` | 교환학생·해외 연수·세미나. 과거 글 약 3,200건이라 `first_collection: recent`. 외국인 유학생용 Notice 게시판은 넣지 않음 |
+| `notice-5a80fc96a24d` | [자원봉사센터 공지사항](https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108) | `knu-cms` | 봉사활동·멘토링·튜터링. `first_collection: recent`. 국내·해외 봉사자 모집 게시판은 따로 있음(아직 넣지 않음) |

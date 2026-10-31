@@ -6858,6 +6858,52 @@
       "status": "found",
       "template": "aibootcamp",
       "type": "notice"
+    },
+    {
+      "category": "extracurricular",
+      "classification": "required",
+      "classification_reason": "비교과 공지 칸에서 모아 보는 비교과 사이트(국제처 국제화 프로그램 공지)",
+      "collection_enabled": true,
+      "evidence": "collector/tests/fixtures/channels/423ad5624dbc4024.html",
+      "first_collection": "recent",
+      "homepage": "https://international.knu.ac.kr/",
+      "id": "notice-423ad5624dbc",
+      "menu_labels": [
+        "공지사항(국제화 프로그램)"
+      ],
+      "name": "국제처 · 공지사항(국제화 프로그램)",
+      "organization_ids": [],
+      "required": "none",
+      "required_department_ids": [],
+      "review_needed": false,
+      "review_reasons": [],
+      "source_url": "https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883",
+      "status": "found",
+      "template": "knu-cms",
+      "type": "notice"
+    },
+    {
+      "category": "extracurricular",
+      "classification": "required",
+      "classification_reason": "비교과 공지 칸에서 모아 보는 비교과 사이트(자원봉사센터 공지)",
+      "collection_enabled": true,
+      "evidence": "collector/tests/fixtures/channels/5a80fc96a24dca05.html",
+      "first_collection": "recent",
+      "homepage": "https://volunteer.knu.ac.kr/",
+      "id": "notice-5a80fc96a24d",
+      "menu_labels": [
+        "공지사항"
+      ],
+      "name": "자원봉사센터 · 공지사항",
+      "organization_ids": [],
+      "required": "none",
+      "required_department_ids": [],
+      "review_needed": false,
+      "review_reasons": [],
+      "source_url": "https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108",
+      "status": "found",
+      "template": "knu-cms",
+      "type": "notice"
     }
   ],
   "feedback_applied": [
