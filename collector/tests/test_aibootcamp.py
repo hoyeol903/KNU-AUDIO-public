@@ -108,7 +108,7 @@ class TwoPostClient(FixtureClient):
 
 def test_first_collection_recent_uses_start_window_only_for_marked_channels(tmp_path):
     channels = yaml.safe_load((ROOT / 'data/channels.yaml').read_text(encoding='utf-8'))
-    for channel_id in ('notice-423ad5624dbc', 'notice-5a80fc96a24d'):
+    for channel_id in ('notice-423ad5624dbc', 'notice-5a80fc96a24d', 'notice-d365c7a64837'):
         marked = next(c for c in channels if c['id'] == channel_id)
         assert marked['category'] == 'extracurricular' and marked['first_collection'] == 'recent'
     [channel] = run.select_channels(channels, ['notice-aibootcamp'])

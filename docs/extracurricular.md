@@ -30,4 +30,5 @@
 |---|---|---|---|
 | `notice-aibootcamp` | [AI부트캠프사업단 알림](https://aibootcamp.knu.ac.kr/notices/) | `aibootcamp` | 정적 사이트. 목록 한 페이지(오래된 글은 `/notices/archive`라 따라가지 않음). 상세의 '마감일'을 마감으로 쓴다 |
 | `notice-423ad5624dbc` | [국제처 공지사항(국제화 프로그램)](https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883) | `knu-cms` | 교환학생·해외 연수·세미나. 과거 글 약 3,200건이라 `first_collection: recent`. 외국인 유학생용 Notice 게시판은 넣지 않음 |
+| `notice-d365c7a64837` | [진로취업과 게시판](https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159) | `knu-cms` | 공직·기업 설명회, 기업탐방, 면접·멘토링 특강. `first_collection: recent`. 취업정보·채용설명회·인턴십 메뉴는 공지 목록 형태가 아니라 넣지 않음 |
 | `notice-5a80fc96a24d` | [자원봉사센터 공지사항](https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108) | `knu-cms` | 봉사활동·멘토링·튜터링. `first_collection: recent`. 국내·해외 봉사자 모집 게시판은 따로 있음(아직 넣지 않음) |

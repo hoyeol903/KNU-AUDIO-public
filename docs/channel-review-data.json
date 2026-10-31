@@ -6904,6 +6904,29 @@
       "status": "found",
       "template": "knu-cms",
       "type": "notice"
+    },
+    {
+      "category": "extracurricular",
+      "classification": "required",
+      "classification_reason": "비교과 공지 칸에서 모아 보는 비교과 사이트(진로취업과 설명회·특강·멘토링 공지)",
+      "collection_enabled": true,
+      "evidence": "collector/tests/fixtures/channels/d365c7a64837dde2.html",
+      "first_collection": "recent",
+      "homepage": "https://knujob.knu.ac.kr/",
+      "id": "notice-d365c7a64837",
+      "menu_labels": [
+        "게시판"
+      ],
+      "name": "진로취업과 · 게시판",
+      "organization_ids": [],
+      "required": "none",
+      "required_department_ids": [],
+      "review_needed": false,
+      "review_reasons": [],
+      "source_url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159",
+      "status": "found",
+      "template": "knu-cms",
+      "type": "notice"
     }
   ],
   "feedback_applied": [

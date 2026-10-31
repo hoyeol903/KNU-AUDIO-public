@@ -3051,6 +3051,29 @@
       "source_board_id": "knu-volunteer-vol1623744108",
       "source_url": "https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108",
       "status": "verified"
+    },
+    {
+      "body_status": "text",
+      "channel_id": "notice-d365c7a64837",
+      "checked_at": "2026-10-31T14:22:35.310206+09:00",
+      "errors": [],
+      "files": {
+        "detail": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d365c7a64837-detail.html",
+          "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?mode=view&mv_data=aWR4PTYyMzMmc3RhcnRQYWdlPTAmbGlzdE5vPTcyNiZ0YWJsZT1leF9iYnNfZGF0YV9rbnVqb2ImbmF2X2NvZGU9a251MTYyMzgxNzE1OSZjb2RlPVZzRFgyN2RtdUtuVyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        "list": {
+          "path": "collector/tests/fixtures/knu-cms/expansion/notice-d365c7a64837-list.html",
+          "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159"
+        }
+      },
+      "listed": 22,
+      "name": "진로취업과 · 게시판",
+      "next_url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?mv_data=c3RhcnRQYWdlPTEwJmNvZGU9VnNEWDI3ZG11S25XJm5hdl9jb2RlPWtudTE2MjM4MTcxNTkmdGFibGU9ZXhfYmJzX2RhdGFfa251am9iJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mdmlld19jYXRlMz0mdmlld19jYXRlND0mdmlld19jYXRlNT0=||",
+      "sample_post_id": "6233",
+      "source_board_id": "knu-knujob-knu1623817159",
+      "source_url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159",
+      "status": "verified"
     }
   ],
   "finished_at": "2026-10-01T14:18:30.137809+09:00",

@@ -5595,3 +5595,23 @@
   classification_reason: 비교과 공지 칸에서 모아 보는 비교과 사이트(자원봉사센터 공지)
   evidence: collector/tests/fixtures/channels/5a80fc96a24dca05.html
   homepage: https://volunteer.knu.ac.kr/
+- id: notice-d365c7a64837
+  name: 진로취업과 · 게시판
+  type: notice
+  required: none
+  required_department_ids: []
+  classification: required
+  category: extracurricular
+  source_url: https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159
+  template: knu-cms
+  first_collection: recent
+  status: found
+  collection_enabled: true
+  organization_ids: []
+  menu_labels:
+  - 게시판
+  review_needed: false
+  review_reasons: []
+  classification_reason: 비교과 공지 칸에서 모아 보는 비교과 사이트(진로취업과 설명회·특강·멘토링 공지)
+  evidence: collector/tests/fixtures/channels/d365c7a64837dde2.html
+  homepage: https://knujob.knu.ac.kr/
