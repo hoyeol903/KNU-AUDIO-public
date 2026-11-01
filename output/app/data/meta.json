@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-01",
+  "asOf": "2026-11-02",
   "boards": [
     {
       "category": "academic",
@@ -97,7 +97,15 @@
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
       "saved": 60,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-kbiz-kbi1623370557:5867",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
     },
     {
@@ -124,7 +132,22 @@
       "id": "notice-7ff56c3af3e0",
       "name": "고분자공학과 · 학사 공지사항",
       "saved": 74,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-22",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-knupolymer-knu1623888520:1711",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
+        },
+        {
+          "date": "2026-10-15",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-knupolymer-knu1623888520:1700",
+          "title": "2026학년도 2학기 장학사정관 장학금 장학생 추천 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
     },
     {
@@ -213,7 +236,22 @@
       "id": "notice-74a3f719131b",
       "name": "기계공학부 · 학부 공지사항",
       "saved": 85,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-22",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-me-me1623370438:6891",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
+        },
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-me-me1623370438:6886",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
     },
     {
@@ -314,11 +352,11 @@
       "saved": 136,
       "today": [
         {
-          "date": "2026-10-29",
-          "deadline": "2026-11-01",
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
           "kind": "deadline",
-          "postId": "knu-robot-rob1623632307:848",
-          "title": "[장학] 2027학년도 해동과학문화재단 장학생 모집 안내"
+          "postId": "knu-robot-rob1623632307:832",
+          "title": "[안내] 2026학년도 글로벌 PBL「KNU in the World」운영 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
@@ -357,6 +395,13 @@
       "name": "물리학과 · 공지사항",
       "saved": 124,
       "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4751",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내 및 홍보"
+        },
         {
           "date": "2026-10-13",
           "deadline": "2026-11-02",
@@ -409,7 +454,15 @@
       "id": "notice-b5015ce1e74b",
       "name": "불어불문학과 · 공지사항",
       "saved": 61,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-french-fre1623147753:1872",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」참가자 모집"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
     },
     {
@@ -596,6 +649,13 @@
           "kind": "deadline",
           "postId": "knu-bime-bim1622180687:1433",
           "title": "「2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램」신청 안내"
+        },
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-bime-bim1622180687:1431",
+          "title": "[모집] 2026학년도 글로벌 PBL 「KNU in the World」(싱가포르) 참가학생 모집 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687"
@@ -696,7 +756,15 @@
       "id": "notice-6b16f01d1a75",
       "name": "식품자원경제학과 · 공지사항",
       "saved": 55,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-knuagec-knu1623134126:3241",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
     },
     {
@@ -750,7 +818,15 @@
       "id": "notice-70d703a20086",
       "name": "에너지화학공학과 · 학과공지",
       "saved": 42,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-ece-ece1704877202:722",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/ece/sub.htm?nav_code=ece1704877202"
     },
     {
@@ -848,7 +924,15 @@
       "id": "notice-7dfeec322405",
       "name": "응용화학공학부 · 공지사항",
       "saved": 75,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-22",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-knuce-knu1762850029:386",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
     },
     {
@@ -866,7 +950,15 @@
       "id": "notice-e1ec1bf0eb87",
       "name": "의생명융합공학과 · 공지사항",
       "saved": 125,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-bcst2-bcs1611061294:839",
+          "title": "[안내] 2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
     },
     {
@@ -875,7 +967,22 @@
       "id": "notice-a363da417a07",
       "name": "의학과 · 공지",
       "saved": 89,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-26",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-med-notice001:25957",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」 운영 안내"
+        },
+        {
+          "date": "2026-10-13",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-med-notice001:25945",
+          "title": "2026학년도 2학기 장학사정관 장학금 장학생 추천 안내"
+        }
+      ],
       "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
     },
     {
@@ -884,7 +991,15 @@
       "id": "notice-b34ee1a00417",
       "name": "인공지능시스템학과 · 공지사항",
       "saved": 125,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29477",
+          "title": "2026학년도 글로벌 PBL 「KNU in the World」 운영 안내"
+        }
+      ],
       "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -974,7 +1089,15 @@
       "id": "notice-d1802616c625",
       "name": "자율전공학부 · 공지사항",
       "saved": 79,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-udm-udm1623371432:1642",
+          "title": "[안내]2026학년도 글로벌 PBL「KNU in the World」운영"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432"
     },
     {
@@ -983,7 +1106,22 @@
       "id": "notice-1cbb3d90d081",
       "name": "전기공학과 · 공지사항",
       "saved": 89,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-23",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-electric-ele1622787198:7468",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
+        },
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-electric-ele1622787198:7456",
+          "title": "2026학년도 글로벌 PBL「KNU in the World Program」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
     },
     {
@@ -991,14 +1129,35 @@
       "collected": true,
       "id": "notice-df44dd8507c1",
       "name": "전자공학부 · 공지사항",
-      "saved": 232,
+      "saved": 234,
       "today": [
         {
-          "date": "2026-10-29",
-          "deadline": "2026-11-01",
+          "date": "2026-10-31",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-see-notice:105782",
+          "title": "2027학년도 1학기 복수전공 이수대상자 선발 안내"
+        },
+        {
+          "date": "2026-10-31",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-see-notice:105783",
+          "title": "2027학년도 학습지원 프로그램 운영을 위한 요구조사 실시 안내(본교 교수학습센터)"
+        },
+        {
+          "date": "2026-10-22",
+          "deadline": "2026-11-03",
           "kind": "deadline",
-          "postId": "knu-see-notice:105763",
-          "title": "㈜티에스이 취업 및 직무상담회 참여학생 모집 안내(비트랙 학생 참여 가능)"
+          "postId": "knu-see-notice:105732",
+          "title": "2026~2027 국제 공동 캡스톤 디자인 캠프(Global CDP) 프로그램 참가 학생 모집 안내"
+        },
+        {
+          "date": "2026-10-21",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-see-notice:105723",
+          "title": "2026 글로벌 PBL「KNU in the World」신청안내 (∼11.3/화)"
         }
       ],
       "url": "https://see.knu.ac.kr/content/board/notice.html"
@@ -1073,6 +1232,13 @@
       "saved": 92,
       "today": [
         {
+          "date": "2026-10-27",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-chinese-notice:13681",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        },
+        {
           "date": "2026-10-14",
           "deadline": "2026-11-02",
           "kind": "deadline",
@@ -1124,7 +1290,15 @@
       "id": "notice-1f235111f7dc",
       "name": "지질학전공 · 공지사항",
       "saved": 39,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-23",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-geology-geo1621814864:1627",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864"
     },
     {
@@ -1196,7 +1370,15 @@
       "id": "notice-7414782e7dbb",
       "name": "치의학과 · 공지사항",
       "saved": 121,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-dent-k1news:4522",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내 및 홍보협조 요청"
+        }
+      ],
       "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
     },
     {
@@ -1205,7 +1387,15 @@
       "id": "notice-fefffa32e24c",
       "name": "컴퓨터학부 · 공지사항",
       "saved": 125,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-computer-sub6_1_a:29477",
+          "title": "2026학년도 글로벌 PBL 「KNU in the World」 운영 안내"
+        }
+      ],
       "url": "https://computer.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
     },
     {
@@ -1241,7 +1431,15 @@
       "id": "notice-3d2a3e87207a",
       "name": "한문학과 · 학부 공지사항",
       "saved": 116,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-23",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-hanmun-han1624361542:7403",
+          "title": "2026학년도 글로벌 PBL「KNU in the World」운영 안내(~11/3)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
     },
     {
@@ -1250,7 +1448,15 @@
       "id": "notice-d13e4abb0470",
       "name": "해양학전공 · 공지사항",
       "saved": 51,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-ocean-oce1623632597:1590",
+          "title": "[학부] 2026학년도 글로벌 PBL「KNU in the World」운영 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
     },
     {
@@ -1259,7 +1465,15 @@
       "id": "notice-4a41e1328a3e",
       "name": "행정학부 · 공지사항",
       "saved": 103,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-10-20",
+          "deadline": "2026-11-03",
+          "kind": "deadline",
+          "postId": "knu-puad-pua1623029519:4075",
+          "title": "[학사] 2026학년도 글로벌 PBL「KNU in the World」참여 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
     },
     {
@@ -1330,25 +1544,25 @@
       "collected": true,
       "id": "notice-423ad5624dbc",
       "name": "국제처 · 공지사항(국제화 프로그램)",
-      "saved": 25,
+      "saved": 41,
       "today": [],
       "url": "https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883"
     },
     {
       "category": "extracurricular",
-      "collected": false,
+      "collected": true,
       "id": "notice-5a80fc96a24d",
       "name": "자원봉사센터 · 공지사항",
-      "saved": 0,
+      "saved": 22,
       "today": [],
       "url": "https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108"
     },
     {
       "category": "extracurricular",
-      "collected": false,
+      "collected": true,
       "id": "notice-d365c7a64837",
       "name": "진로취업과 · 게시판",
-      "saved": 0,
+      "saved": 47,
       "today": [],
       "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159"
     }
@@ -1415,100 +1629,11 @@
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "02:54",
+  "checkedAt": "01:44",
   "collection": {
-    "date": "2026-11-01",
-    "failedBoards": [
-      {
-        "name": "고고인류학과 · 학부공지",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4ODAmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MjMmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected))",
-          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NzUmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTkmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))",
-          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
-        ],
-        "source_board_id": "knu-aran-ara1623718660"
-      },
-      {
-        "name": "스마트생물산업기계공학과 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTU1NiZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected))"
-        ],
-        "source_board_id": "knu-bime-bim1622180687"
-      },
-      {
-        "name": "에너지공학부 · 학부 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzgmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
-        ],
-        "source_board_id": "knu-soee-soe1622609908"
-      },
-      {
-        "name": "의류학과 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyOSZzdGFydFBhZ2U9MCZsaXN0Tm89ODEzJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
-        ],
-        "source_board_id": "knu-fashion-fas1623134444"
-      },
-      {
-        "name": "토목공학과 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected))"
-        ],
-        "source_board_id": "knu-civil-civ1614066197"
-      },
-      {
-        "name": "국제처 · 공지사항(국제화 프로그램)",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI5JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI5JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afc75c990>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI3JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI3JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa67bcd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTA4JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTA4JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad40b90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22c290>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAyJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAyJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad43650>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAwJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAwJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad41850>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa678c10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk4JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk4JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa720bd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDg5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDg5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa67a690>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad43c10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc3JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc3JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22fe50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDczJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDczJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa723910>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22f190>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY1JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY1JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad42c90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY0JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY0JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa7222d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDYzJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDYzJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa679350>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
-        ],
-        "source_board_id": "knu-global-glo1729572883"
-      },
-      {
-        "name": "자원봉사센터 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/volunteer/sub.htm?nav_code=vol1623744108 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745af992de50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
-        ],
-        "source_board_id": "knu-volunteer-vol1623744108"
-      },
-      {
-        "name": "진로취업과 · 게시판",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/knujob/sub.htm?nav_code=knu1623817159 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745af92dbb50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
-        ],
-        "source_board_id": "knu-knujob-knu1623817159"
-      },
-      {
-        "name": "학교 학사공지",
-        "reasons": [
-          "요청 실패: https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42: HTTPSConnectionPool(host='www.knu.ac.kr', port=443): Max retries exceeded with url: /wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.knu.ac.kr', port=443) at 0x745afaef7a90>, 'Connection to www.knu.ac.kr timed out. (connect timeout=10)'))"
-        ],
-        "source_board_id": "knu-wbbs-stu_812"
-      },
-      {
-        "name": "전자공학부 · 공지사항",
-        "reasons": [
-          "요청 실패: https://see.knu.ac.kr/content/board/notice.html: HTTPSConnectionPool(host='see.knu.ac.kr', port=443): Max retries exceeded with url: /content/board/notice.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='see.knu.ac.kr', port=443) at 0x745af92d80d0>, 'Connection to see.knu.ac.kr timed out. (connect timeout=10)'))"
-        ],
-        "source_board_id": "knu-see-notice"
-      }
-    ],
-    "lastCollectedAt": "2026-11-01T02:54:20+09:00",
+    "date": "2026-11-02",
+    "failedBoards": [],
+    "lastCollectedAt": "2026-11-02T01:44:43+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -1516,9 +1641,9 @@
       "total": 6
     },
     "physicalBoards": 140,
-    "todayFailed": 10,
+    "todayFailed": 0,
     "todayNotCollected": 0,
-    "todaySuccess": 130
+    "todaySuccess": 140
   },
   "departments": [
     {
@@ -3298,127 +3423,11 @@
   ],
   "issues": [
     {
-      "source": "schedule",
-      "text": "요청 실패: https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026: HTTPSConnectionPool(host='www.knu.ac.kr', port=443): Max retries exceeded with url: /wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.knu.ac.kr', port=443) at 0x745af869f310>, 'Connection to www.knu.ac.kr timed out. (connect timeout=10)'))"
-    },
-    {
       "source": "meals",
       "text": "오늘 식단은 로컬에서 아직 수집하지 않았습니다"
     },
     {
-      "source": "notice-a267229666ef",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4ODAmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MjMmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4ODAmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MjMmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
-    },
-    {
-      "source": "notice-a267229666ef",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NzUmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTkmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NzUmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MTkmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
-    },
-    {
-      "source": "notice-a267229666ef",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-cc19e513d407",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTU1NiZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTU1NiZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
-    },
-    {
-      "source": "notice-06dffccf1c28",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzgmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NjMmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMzgmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
-    },
-    {
-      "source": "notice-ad22d5b4a9e9",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyOSZzdGFydFBhZ2U9MCZsaXN0Tm89ODEzJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkyOSZzdGFydFBhZ2U9MCZsaXN0Tm89ODEzJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzcmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNTgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1NzImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI5JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI5JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afc75c990>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI5JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI3JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI3JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa67bcd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTI3JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTA4JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTA4JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad40b90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTA4JnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22c290>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAzJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAyJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAyJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad43650>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAyJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAwJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAwJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad41850>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTAwJnN0YXJ0UGFnZT0xMCZsaXN0Tm89MzE5NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa678c10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk4JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk4JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa720bd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDk4JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDg5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDg5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa67a690>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDg5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad43c10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE5MCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc3JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc3JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22fe50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDc3JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDczJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDczJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa723910>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDczJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4OCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afb22f190>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY5JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NyZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY1JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY1JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afad42c90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY1JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NiZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY0JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY0JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa7222d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDY0JnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NSZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDYzJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDYzJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745afa679350>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MDYzJnN0YXJ0UGFnZT0yMCZsaXN0Tm89MzE4NCZ0YWJsZT1leF9iYnNfZGF0YV9nbG9iYWwmbmF2X2NvZGU9Z2xvMTcyOTU3Mjg4MyZjb2RlPW5vdGljZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9JnNlY3JldF9tb2RlPTA=)"
-    },
-    {
-      "source": "notice-5a80fc96a24d",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/volunteer/sub.htm?nav_code=vol1623744108 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745af992de50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108)"
-    },
-    {
-      "source": "notice-d365c7a64837",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/knujob/sub.htm?nav_code=knu1623817159 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x745af92dbb50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159)"
-    },
-    {
-      "source": "knu-academic",
-      "text": "요청 실패: https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42: HTTPSConnectionPool(host='www.knu.ac.kr', port=443): Max retries exceeded with url: /wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.knu.ac.kr', port=443) at 0x745afaef7a90>, 'Connection to www.knu.ac.kr timed out. (connect timeout=10)')) (https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42)"
-    },
-    {
-      "source": "notice-df44dd8507c1",
-      "text": "요청 실패: https://see.knu.ac.kr/content/board/notice.html: HTTPSConnectionPool(host='see.knu.ac.kr', port=443): Max retries exceeded with url: /content/board/notice.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='see.knu.ac.kr', port=443) at 0x745af92d80d0>, 'Connection to see.knu.ac.kr timed out. (connect timeout=10)')) (https://see.knu.ac.kr/content/board/notice.html)"
-    },
-    {
-      "source": "knu-academic",
+      "source": "notice-ddb70636c525",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -3598,6 +3607,10 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-df44dd8507c1",
+      "text": "knu-see-notice:105783: 본문을 온전히 읽지 못했습니다 (image-only)"
+    },
+    {
       "source": "notice-e08af12e34e3",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -3644,10 +3657,6 @@
     {
       "source": "notice-6fafb52e7377",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-423ad5624dbc",
-      "text": "게시판 운영 시작이 아직 완료되지 않았습니다"
     },
     {
       "source": "notice-93ddd4d44cec",
@@ -3964,25 +3973,17 @@
     {
       "source": "notice-739876756888",
       "text": "환경공학과 · 대학원 공지사항: 저장 자료가 없거나 게시판 연결을 확정할 수 없습니다"
-    },
-    {
-      "source": "notice-5a80fc96a24d",
-      "text": "자원봉사센터 · 공지사항: 저장 자료가 없거나 게시판 연결을 확정할 수 없습니다"
-    },
-    {
-      "source": "notice-d365c7a64837",
-      "text": "진로취업과 · 게시판: 저장 자료가 없거나 게시판 연결을 확정할 수 없습니다"
     }
   ],
   "schedule": {
     "items": [],
-    "status": "failed"
+    "status": "empty"
   },
   "weather": {
-    "max": 12.6,
-    "min": 8.5,
+    "max": 16.1,
+    "min": 8.4,
     "rain": 100,
     "status": "ok",
-    "summary": "비"
+    "summary": "강한 이슬비"
   }
 }

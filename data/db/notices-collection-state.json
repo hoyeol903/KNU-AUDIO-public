@@ -244,6 +244,10 @@
       "initialized_at": "2026-10-01T21:02:11.260509+09:00",
       "last_full_scan_at": null
     },
+    "knu-global-glo1729572883": {
+      "initialized_at": "2026-11-02T01:38:03.474028+09:00",
+      "last_full_scan_at": null
+    },
     "knu-hanl-han1769127610": {
       "initialized_at": "2026-10-02T14:36:26.082892+09:00",
       "last_full_scan_at": null
@@ -326,6 +330,10 @@
     },
     "knu-knuchild-knu1623370362": {
       "initialized_at": "2026-10-02T13:46:08.283275+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-knujob-knu1623817159": {
+      "initialized_at": "2026-11-02T01:40:11.355102+09:00",
       "last_full_scan_at": null
     },
     "knu-knupharmacy-knu1623650948": {
@@ -538,6 +546,10 @@
     },
     "knu-veterinary-vet1623200224": {
       "initialized_at": "2026-10-01T21:25:37.967997+09:00",
+      "last_full_scan_at": null
+    },
+    "knu-volunteer-vol1623744108": {
+      "initialized_at": "2026-11-02T01:38:41.497212+09:00",
       "last_full_scan_at": null
     },
     "knu-wbbs-stu_812": {
