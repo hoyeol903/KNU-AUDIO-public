@@ -1,25 +1,4 @@
 {
-  "knu-kremse-kre1640045053:674": {
-    "body": "[졸업자격인정신청]-첨부 메뉴얼 참조\n차세대 통합정보시스템 로그인(knuin.knu.ac.kr)->졸업->졸업인정(대학)->졸업자격인정신청->조회->인정구분선택->신청\n*인정과목을 수강 중이거나, 상담 결과가 미 입력된 경우 신청하지 말 것\n- 인정 과목 수강 중 : 성적 공개일 이후 신청\n- 상담 회수 부족(8회) : 상담 진행하였으나, 입력 누락으로 부족 - 지도교수님께 상담 일정 입력 요청\n상담 회수 부족 - 학기 중, 교수님과 일정 조율하여 추가로 상담 진행\n*편입생 및 외국인은 인정구분에 \"면제\" 선택.\n*유예신청은 졸업자격인정 신청 완료 후, 추후 별도로 차세대통합정보시스템에서 [유예 신청] 하여야 함(기간 추후 공지)\n[인정구분선택]\n1)실용영어 영역 : \"실용영어 4학점을 이수한 자\" or TOEIC 등 총장이 인정하는 공인영어시험에서 TOEIC 시험성적 기준 700점 이상 취득한자선택 (공인영어성적으로 인정받고자 할 시, 공인영어성적 성적표 필히 첨부)\n2)상담영역 영역: \"학생상담지도교수에게 상담 총 8회 이상 받음\"선택\n3)소프트웨어 영역 : \"교양 일반영역의 소프트웨어 관련 과목~~~\"선택 (C/C++프로그래밍기초 수강시)\n\" 각 학과에서 지정한 소프트웨어 관련 대체 과목을 3학점 이상 이수한 자(공학프로그래밍 수강시)\n****각 인정영역별, 상담영역 외, 증빙서류 첨부 필요함.\n1)실용영어: 성적증명서 or 공인영어시험 증명서\n2)상담영역: 첨부X\n3)소프트웨어: 성적증명서\n※실용영어, 소프트웨어 2개 모두 첨부파일 각각 등록할 것\n각 과목 이수 이외, 인정구분 선택시에는 내용을 증빙하는 서류를 반드시 첨부 할 것.\n-상담횟수 확인방법\n경북대학교 포털(on.knu.ac.kr) -> KNUCUBE ->전체상담내역\n졸업자격인정 신청정보에 상담횟수가 8회이상으로 확인되더라도 상담내역상 날짜 중복이 있는 경우, 중복 횟수 차감 후 8회가 되지 않는 경우 승인처리 불가하므로 신청하지 마세요.",
-    "deadline": null,
-    "posted_at": "2026-05-20",
-    "title": "2026년 8월 졸업자 및 유예자 [졸업자격인정원] 신청 안내",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY3NCZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3MiZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-  },
-  "knu-kremse-kre1640045053:675": {
-    "body": "■ 문의: 반도체특성화대학사업단 담당자 노유진\n(☎ 053-950-7030 / ✉ yj1224@knu.ac.kr)\n반도체특성화대학사업단에서는 PBL교과를 통해 도출된 성과를 공유하고 우수 팀을 선발하여 수상하고자 PBL 프로젝트 경진대회를 개최합니다.\n본 사업단에서는 PBL교과를 이수한 학생 외 재학생을 초대하여 PBL경진대회의 성과를 공유하고자 합니다.\n또한 PBL프로젝트를 통해 반도체 소자 및 설계 분야에서 어떤 실무 경험을 쌓을 수 있는지 볼 수 있는 행사이니, 많은 참석 바랍니다.\n*트랙/비트랙 학생 모두를 위한 경품 추첨 이벤트도 준비되어 있으니 많은 관심 바랍니다.\n참석을 희망하는 학생께서는 아래의 참여 조사에 응해주시기 바랍니다.\n- 참여조사 링크: https://naver.me/FIcN3ZAX\n(PBL 프로젝트 22팀 참가자는 별도 신청 불요)\n- 신청기간: 2026.05.26.(화) ~ 2026.06.12.(금) 18:00까지\n[제 6회 PBL 기반 반도체 프로젝트 경진대회]\n일 시: 2026. 06. 23.(화), 13:00~17:00\n장 소: IT대학 2호관 101호\n대 상: 반도체 특성화 트랙에 관심 있는 학생 누구나\n(PBL 프로젝트 22팀 참가자는 별도 신청 불요)",
-    "deadline": "2026-06-12",
-    "posted_at": "2026-05-26",
-    "title": "[반도체특성화대학사업단] 제6회 PBL프로젝트 경진대회 참가조사",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY3NSZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3MyZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-  },
-  "knu-kremse-kre1640045053:676": {
-    "body": "■ 문의\n반도체특성화대학사업단 이수빈 (053-950-7034, gds7224@knu.ac.kr)\n반도체특성화대학사업단 김은경 (053-950-7033, gyeong0379@knu.ac.kr)\n※ 붙임 문서 확인 필수 ※\n-반도체 특성화 트랙과 연계되어 개설되는 \" PBL기반반도체특성화프로젝트 \" 강좌는 실제 수강 신청 전에 사전 신청을 거쳐 강좌를 개설하고, 사전 신청을 통해 미리 참여 승인을 받은 학생들이 수강 신청 기간 중 수강 신청을 하는 방식으로 운영됩니다.\n■ 신청 기간 : 2026. 05. 26. (화) 13 : 00 ~ 2026. 06. 02. (화) 16 : 00\n■ 팀 선정 결과 발표 : 2026. 06. 05. (금) 13 : 00, 선정 결과는 반도체특성화대학사업단 홈페이지를 통해 확인 바랍니다.\n※ 선정된 학생들은 수강 신청 기간에 꼭 해당 과목 수강 신청을 바랍니다.\n※ 2026학년도 2학기 PBL 과제 신청은 반도체특성화대학사업단 홈페이지를 통해 진행되며, 사업단 홈페이지 이용 방법은 첨부 파일의 \" 반도체특성화대학사업단 홈페이지 사용 매뉴얼_학생용 \" 파일 확인 바랍니다.\n■ 필독 사항\n1) 대상 교과목 : 전자공학종합설계1, 전자공학종합설계2, PBL기반반도체특성화프로젝트, PBL기반반도체실무프로젝트\n- 교과목 이수 시 동일 학기에 중복 수강 불가\n2) 대상 교과목 : 전자공학종합설계1, 전자공학종합설계2, PBL기반반도체실무프로젝트\n- 교과목 이수 학점은 모두 졸업 학점에 포함되나, 전자공학부 졸업 필수 이수 과목 중 \" 설계 및 실험 과목 \" 으로는 최대 6학점(2과목)만 인정\n3) PBL기반반도체특성화프로젝트\n- 융합전공 개설 교과목으로 반도체특성화대학사업 트랙 Ⅰ & 트랙 Ⅱ 이수 학생들 추후 교과 구분 변경하여 전자공학부 전공으로 인정\n- 전자공학부 소속 트랙 미참여 학생 : 타학과 전공을 최대 15학점으로 소속 학과(부) 전공 변경 가능 (졸업 시 신청)\n4) PBL기반반도체실무프로젝트\n- 트랙 Ⅲ 이수 과목으로 트랙 인증 학점으로는 인정되나, 융합 전공 교육과정에 편성되어 있지 않아 융합 전공 학점이 아닌 일반 선택 학점으로 인정",
-    "deadline": null,
-    "posted_at": "2026-05-26",
-    "title": "[반도체특성화대학사업단]2026학년도 2학기 PBL기반반도체특성화프로젝트 신청 안내 (05/26~06/02) ★ 트랙 선발자 필독 ★",
-    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTY3NiZzdGFydFBhZ2U9MjAmbGlzdE5vPTE3NCZ0YWJsZT1leF9iYnNfZGF0YV9rcmVtc2UmbmF2X2NvZGU9a3JlMTY0MDA0NTA1MyZjb2RlPUFDYXZpTmJ6MkpEeSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
-  },
   "knu-kremse-kre1640045053:678": {
     "body": "2026학년도 1학기 「캡스톤디자인 프로그램」결과보고서 제출 안내\n1) 제출대상: 2026학년도 1학기 캡스톤디자인 과제수행팀\n2) 제출내용 - [붙임] 파일 참고\n- 결과보고서\n- 과제 변경신청서(해당시)\n- 정산신청서\n- 정산을 위한 증빙 자료(원본必)\n- 팀장 신분증 or 재학증명서\n- 팀장 통장사본\n3) 제출기한: ~2026.06.30(화) 까지 학과사무실(E8-215호)로 제출",
     "deadline": null,
@@ -208,5 +187,26 @@
     "posted_at": "2026-10-29",
     "title": "2027년 2월 졸업자 및 유예자 [졸업자격인정원] 신청 안내",
     "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc0OSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAxJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+  },
+  "knu-kremse-kre1640045053:754": {
+    "body": "2027학년도 1학기 PBL기반반도체실무프로젝트 신청 결과 및 추가 모집 안내 ★ 트랙 선발자 필독 ★\n반도체특성화대학사업단에서 2027학년도 1학기 \" PBL기반반도체실무프로젝트 \" 교과목 신청 결과 및 추가 모집에 대해 안내드립니다.\n■ 추가 신청 기간 : 2026. 11. 05. (목) 09 : 00 ~ 2026. 11. 06. (금) 16 : 00\n■ 팀 선정 결과 발표 : 2026. 11. 10. (화) 14 : 00 ~\n자세한 내용은 하단의 링크를 확인 부탁드립니다.\n반도체특성화대학사업단 홈페이지 바로가기 ☞ 경북대학교 반도체특성화대학사업단\nhttps://knusemi.knu.ac.kr/content/community/notice.html?pg=vv&number=711&Sopt_1=&Sopt_2=&Sopt_3=&sword=&sdate=#ditail_view",
+    "deadline": "2026-11-06",
+    "posted_at": "2026-11-04",
+    "title": "2027학년도 1학기 PBL기반반도체실무프로젝트 신청 결과 및 추가 모집 안내 ★ 트랙 선발자 필독 ★",
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc1NCZzdGFydFBhZ2U9MCZsaXN0Tm89MjAyJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+  },
+  "knu-kremse-kre1640045053:755": {
+    "body": "반도체특성화대학사업단에서는 신소재공학과 재학생을 대상으로 반도체특성화트랙 설명회를 개최하오니, 관심 있는 학생들의 많은 참여 바랍니다.\n▪ 일시: 2026. 11. 11.(수) 12:00~13:00\n▪ 장소: 공과대학 8호관 101호\n▪ 대상: 신소재공학과 재학생\n▪ 신청기간: 2026. 11. 4.(수)~11. 10.(화) 16:00까지\n▪ 신청방법: 네이버폼 사전 신청\n▪ 신청링크: https://naver.me/551EixoU\n[주요 내용]\n• 반도체 특성화 융합전공 및 트랙Ⅲ 신청 안내\n• 장학금 제도 및 비교과 프로그램 소개\n• 질의응답\n※ 참석 학생에게는 간단한 점심을 제공합니다.",
+    "deadline": null,
+    "posted_at": "2026-11-04",
+    "title": "신소재공학과 반도체특성화트랙 설명회 안내(11.11/수, 12시)",
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc1NSZzdGFydFBhZ2U9MCZsaXN0Tm89MjAzJnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+  },
+  "knu-kremse-kre1640045053:756": {
+    "body": "장애인식개선 교육 이수 관련 첨부 메뉴얼 참고\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기",
+    "deadline": null,
+    "posted_at": "2026-11-05",
+    "title": "사이버 장애인식개선 교육 수강 메뉴얼",
+    "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?mode=view&mv_data=aWR4PTc1NiZzdGFydFBhZ2U9MCZsaXN0Tm89MjA0JnRhYmxlPWV4X2Jic19kYXRhX2tyZW1zZSZuYXZfY29kZT1rcmUxNjQwMDQ1MDUzJmNvZGU9QUNhdmlOYnoySkR5JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
   }
 }
