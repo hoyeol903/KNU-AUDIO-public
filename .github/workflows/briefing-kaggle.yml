@@ -66,7 +66,7 @@ jobs:
       - name: 시작 시각 기록
         run: echo "JOB_STARTED=$(date +%s)" >> "$GITHUB_ENV"
       - name: 고정 버전 Kaggle CLI 설치
-        run: python -m pip install --disable-pip-version-check -r requirements.txt 'kaggle==2.2.4' 'mutagen>=1.47,<2'
+        run: python -m pip install --disable-pip-version-check -r requirements.txt 'kaggle==2.2.4' 'six' 'mutagen>=1.47,<2'
       # 기본 계정의 남은 GPU가 기준보다 적으면 보조 계정으로 실행한다. 고른 계정은 이 실행이 끝날 때까지 쓴다.
       - name: GPU 한도가 남은 Kaggle 계정 선택
         env:
