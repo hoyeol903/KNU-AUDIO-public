@@ -9479,7 +9479,7 @@
     ]
   },
   "snapshot": {
-    "checked_at": "2026-11-06T02:08:23.903099+09:00",
+    "checked_at": "2026-11-06T16:18:35.484931+09:00",
     "checks": [
       {
         "body_status": "text",
@@ -229740,15 +229740,461 @@
           "channel_id": "notice-d365c7a64837",
           "meals": [],
           "notices": []
+        },
+        {
+          "channel_id": "meal-46",
+          "meals": [
+            {
+              "menu": [
+                "백미밥",
+                "얼큰이낙지칼국수",
+                "이북식부추찜닭",
+                "옹심이만두간장조림★",
+                "들깨무나물",
+                "포기김치"
+              ],
+              "place": "GP감꽃식당",
+              "time": "11:15~13:30"
+            }
+          ],
+          "notices": []
+        },
+        {
+          "channel_id": "meal-35",
+          "meals": [
+            {
+              "menu": [
+                "육전비빔국수★",
+                "망고쥬스",
+                "흰밥",
+                "계란양파국",
+                "배추김치"
+              ],
+              "place": "정보센터식당",
+              "time": "11:00~13:30"
+            },
+            {
+              "menu": [
+                "볼카츠오므라이스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "제육치즈돌솥★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "순살돈가스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "치즈돈가스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "고구마돈가스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "왕돈가스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "왕치즈돈가스★"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "라면"
+              ],
+              "place": "정보센터식당",
+              "time": "13:00~17:00"
+            },
+            {
+              "menu": [
+                "우동"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "우동밥"
+              ],
+              "place": "정보센터식당",
+              "time": null
+            },
+            {
+              "menu": [
+                "흰밥",
+                "닭곰탕",
+                "로제떡볶이★",
+                "순대야채볶음★",
+                "콩나물김가루무침",
+                "포기김치"
+              ],
+              "place": "정보센터식당",
+              "time": "17:00~19:00"
+            }
+          ],
+          "notices": []
+        },
+        {
+          "channel_id": "meal-85",
+          "meals": [
+            {
+              "menu": [
+                "정식",
+                "흑미밥/쌀밥",
+                "얼큰콩나물국",
+                "오삼불고기★",
+                "온두부&볶음김치",
+                "연근채조림",
+                "단배추겉절이",
+                "온국수"
+              ],
+              "place": "공학관교직원식당(외부업체)",
+              "time": "11:30~13:30"
+            },
+            {
+              "menu": [
+                "정식",
+                "기장밥/쌀밥",
+                "부대찌개★",
+                "까망찜닭",
+                "한식잡채★",
+                "팽이미역줄기볶음",
+                "직접담근김치",
+                "도시락김"
+              ],
+              "place": "공학관교직원식당(외부업체)",
+              "time": "17:00~19:00"
+            }
+          ],
+          "notices": []
+        },
+        {
+          "channel_id": "meal-86",
+          "meals": [
+            {
+              "menu": [
+                "쟁반수육★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "치킨난반&매콤볶음밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "돼지고기김치구이(2인)★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "등심돈가스&스프★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "땡초우동&주먹밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "닭찜덮밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "특돼지국밥★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "된장찌개정식"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "삼겹살김치전골(2인)★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "양푼이돈육양념찜★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "꼬마부대찌개★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "뚝배기알밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "치즈뚝배기알밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "양푼이비빔밥&된장찌개"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "불고기치즈뚝배기★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "떡라면"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "떡라면&밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "만두라면★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "만두라면&밥★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "최루탄라면"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "최루탄라면&밥★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": "10:00~14:30"
+            },
+            {
+              "menu": [
+                "등심돈가스&스프★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "특돼지국밥★"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "땡초우동&주먹밥"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            },
+            {
+              "menu": [
+                "꼬마삼겹김치찌개",
+                "17:00~1900"
+              ],
+              "place": "공학관학생식당(외부업체)",
+              "time": null
+            }
+          ],
+          "notices": []
+        },
+        {
+          "channel_id": "meal-bokji",
+          "meals": [
+            {
+              "menu": [
+                "비벼주는 날치알밥",
+                "조개스튜",
+                "쥬키니파스타★",
+                "치킨까스",
+                "&스리라차마요",
+                "소금모닝빵",
+                "포기김치"
+              ],
+              "place": "복지관 교직원식당",
+              "time": "11:15~13:30"
+            }
+          ],
+          "notices": []
+        },
+        {
+          "channel_id": "meal-37",
+          "meals": [
+            {
+              "menu": [
+                "천원의 아침밥",
+                "흰밥",
+                "육개장",
+                "치즈닭갈비",
+                "떡갈비*데리야끼★",
+                "열대과일샐러드",
+                "초코파이",
+                "배추김치"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "투움바함박★",
+                "&마늘빵",
+                "&그린샐러드",
+                "(11:00~13:3",
+                "흰밥",
+                "감자양파국",
+                "배추김치"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "닭불고기비빔밥"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "더진국",
+                "수육국밥★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "더진국",
+                "순대수육국밥★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "순살돈가스★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": "11:00~15:30"
+            },
+            {
+              "menu": [
+                "치즈돈가스★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "고구마돈가스★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "왕돈가스★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "치즈왕돈가스★"
+              ],
+              "place": "카페테리아 첨성",
+              "time": null
+            },
+            {
+              "menu": [
+                "라면"
+              ],
+              "place": "카페테리아 첨성",
+              "time": "9:00~11:00,13:00~15:30"
+            }
+          ],
+          "notices": []
         }
       ],
-      "collected_at": "2026-11-06T02:08:23.903099+09:00",
+      "collected_at": "2026-11-06T16:18:35.484931+09:00",
       "date": "2026-11-06",
       "errors": [
-        {
-          "message": "오늘 식단은 로컬에서 아직 수집하지 않았습니다",
-          "source": "meals"
-        },
         {
           "message": "요청 실패: https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEzJnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEzJnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)",
           "source": "notice-2ae1ca96e3de"
