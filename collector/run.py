@@ -24,6 +24,8 @@ BOARD_ID = 'knu-korean-kor1657071357'
 RECENT_DAYS = 30
 DETAIL_RECHECK_DAYS = 7
 OLD_RECHECK_DAYS = 7
+# 학교 방화벽이 러너를 막으면 모든 요청이 연결 시간 초과로 2시간을 채운다(2026-11-09). 연속 실패 시 남은 게시판은 건너뛴다.
+CONNECT_FAIL_LIMIT = 5
 DEFAULT_CMS_CHANNEL_IDS = [CHANNEL_ID, 'notice-1abc9573202c', 'notice-472ae4378387']
 VALIDATION_PATH = ROOT / 'data/knu-cms-validation.json'
 PUBLIC_SOURCES = {
@@ -390,12 +392,15 @@ def main():
     if retrying and source_report_path and Path(report_path).resolve() == source_report_path:
         parser.error('새 보고서 경로는 재수집 원본과 달라야 합니다')
     report_rows = list(current_report_rows or [])
+    connect_fails = 0
     with Client() as client:
         for channel in selected:
             print(f"수집 시작: {channel['name']}", flush=True)
             board_started = time.monotonic()
             started_iso = datetime.now(SEOUL).isoformat(timespec='seconds')
             try:
+                if connect_fails >= CONNECT_FAIL_LIMIT:
+                    raise FetchError(f'앞선 게시판 {connect_fails}곳이 연달아 연결되지 않아 건너뜀')
                 report = collect(client, channel, db_path=args.db_path, max_pages=args.max_pages, mode=args.mode,
                                  progress=lambda message: print(message, flush=True))
             except Exception as exc:
@@ -406,6 +411,8 @@ def main():
                               errors=[dict(source=channel['id'], message=f'{type(exc).__name__}: {exc}', url=channel['source_url'])],
                               request_count=0,
                               duration_sec=round(time.monotonic() - board_started, 3))
+            blocked = not report['listed'] and any(e.get('message', '').startswith('요청 실패') for e in report['errors'])
+            connect_fails = connect_fails + 1 if blocked else 0 if connect_fails < CONNECT_FAIL_LIMIT else connect_fails
             report['finished_at'] = datetime.now(SEOUL).isoformat(timespec='seconds')
             reports.append(report)
             report_rows_to_save = merge_board_reports(report_rows, reports) if retrying else reports

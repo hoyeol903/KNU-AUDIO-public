@@ -320,6 +320,25 @@ def test_batch_continues_after_one_channel_failure(monkeypatch, tmp_path):
     assert seen[:2] == ['knu-academic', 'notice-df44dd8507c1']
 
 
+def test_batch_stops_requesting_after_consecutive_connect_failures(monkeypatch, tmp_path):
+    from collector import run
+    seen = []
+    def fake_collect(client, channel, **kwargs):
+        seen.append(channel['id'])
+        return dict(channel_id=channel['id'], listed=0, successful=0, new=[], updated=[], skipped=[],
+                    errors=[dict(message='요청 실패: https://x.knu.ac.kr: ConnectTimeout')],
+                    request_count=3, duration_sec=30, truncated=False)
+    path = tmp_path / 'report.json'
+    monkeypatch.setattr(run, 'collect', fake_collect)
+    monkeypatch.setattr(run, 'CONNECT_FAIL_LIMIT', 2)
+    monkeypatch.setattr('sys.argv', ['collector.run', '--report-path', str(path)])
+    assert run.main() == 1
+    assert seen == run.DEFAULT_CHANNEL_IDS[:2]
+    report = json.loads(path.read_text())
+    assert len(report['channels']) == 5 and report['request_count'] == 6
+    assert '건너뜀' in report['channels'][-1]['errors'][0]['message']
+
+
 def test_ingestion_checkpoint_survives_interruption(monkeypatch, tmp_path):
     from collector import run
     from collector.knu_cms import parse_detail
