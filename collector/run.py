@@ -127,7 +127,7 @@ def all_required_channels(channels, validation):
     return select_channels(channels, ids, validation=validation)
 
 
-def needs_detail(item, previous, now):
+def needs_detail(item, previous, now, full=False):
     if previous is None or item['posted_at'] is None:
         return True
     if item['posted_at'] != previous['posted_at'] or not title_matches(item['title'], previous['title']):
@@ -138,6 +138,10 @@ def needs_detail(item, previous, now):
         return True
     if previous['body_status'] == 'needs-review':
         return True
+    # 정기 수집은 최근 30일 글만 7일 재확인한다. 한 페이지에 수백 개가 나오는 게시판의 옛 글이
+    # 한날에 몰려 2시간 제한을 넘긴 일이 있었다(2026-11-07~09). 옛 글은 full 수집에서만 다시 본다.
+    if not full and date.fromisoformat(item['posted_at']) < now.date() - timedelta(days=RECENT_DAYS):
+        return False
     return now - datetime.fromisoformat(previous['last_checked_at']) >= timedelta(days=OLD_RECHECK_DAYS)
 
 
@@ -257,7 +261,7 @@ def collect(client, channel, *, db_path=DEFAULT_PATH, max_pages=1000, now=None, 
         notice_id = board_id + ':' + item['source_post_id']
         if item['posted_at'] is None:
             report['needs_review'].append(notice_id)
-        if not needs_detail(item, previous, now):
+        if not needs_detail(item, previous, now, full):
             report['skipped'].append(notice_id)
             continue
         try:
