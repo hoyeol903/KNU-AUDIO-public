@@ -153,10 +153,10 @@ def test_page_group_boundary_and_cycle(tmp_path):
     # A pin alone does not justify fetching an old, unchanged detail again.
     ('2026-08-01', True, None, '2026-09-30T10:00:00+09:00', False, False),
     ('2026-08-01', True, None, '2026-09-25T10:00:00+09:00', False, False),
-    ('2026-08-01', True, None, '2026-09-24T10:00:00+09:00', False, True),
+    ('2026-08-01', True, None, '2026-09-24T10:00:00+09:00', False, False),  # 30일 넘은 옛 글은 정기 수집에서 재확인하지 않는다.
     ('2026-08-01', True, '2026-10-01', '2026-09-30T10:00:00+09:00', False, True),
     ('2026-08-01', False, '2026-09-30', '2026-09-30T10:00:00+09:00', False, False),
-    ('2026-08-01', False, None, '2026-09-24T10:00:00+09:00', False, True),
+    ('2026-08-01', False, None, '2026-09-24T10:00:00+09:00', False, False),  # 30일 넘은 옛 글은 정기 수집에서 재확인하지 않는다.
     ('2026-08-01', False, None, '2026-09-24T10:00:01+09:00', False, False),
     (None, False, None, '2026-09-30T10:00:00+09:00', False, True),
     ('2026-08-01', True, None, '2026-09-30T10:00:00+09:00', True, True),
@@ -183,7 +183,7 @@ def test_changed_posted_date_and_needs_review_still_fetch_old_detail():
     assert needs_detail(dict(title='제목', posted_at='2026-08-01', pinned=True), previous, now)
 
 
-@pytest.mark.parametrize('age', [8, 20, 30])
+@pytest.mark.parametrize('age', [8, 20, 23])  # 7일 뒤에도 30일 안에 드는 글
 def test_older_recent_details_wait_seven_days_since_last_success(age):
     from datetime import datetime, timedelta
     from collector.run import needs_detail
@@ -344,3 +344,15 @@ def test_ingestion_checkpoint_survives_interruption(monkeypatch, tmp_path):
     report = collect(Complete(), CHANNEL, db_path=path)
     assert report['successful'] == 5 and len(report['skipped']) == 25
     assert len(report['new']) == 5 and len(load_notices(path)) == 30
+
+
+def test_old_unchanged_detail_is_rechecked_only_in_full_mode():
+    from datetime import datetime
+    from collector.run import needs_detail
+    now = datetime.fromisoformat('2026-11-09T01:07:00+09:00')
+    item = dict(title='제목', posted_at='2016-08-25', pinned=False)
+    previous = dict(item, deadline=None, body_status='text', last_checked_at='2026-10-30T10:00:00+09:00')
+    assert not needs_detail(item, previous, now)
+    assert needs_detail(item, previous, now, full=True)
+    previous['deadline'] = '2026-11-20'
+    assert needs_detail(item, previous, now)
