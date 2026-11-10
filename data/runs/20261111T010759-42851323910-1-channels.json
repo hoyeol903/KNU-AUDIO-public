@@ -1,0 +1,4749 @@
+{
+  "channels": [
+    {
+      "bootstrap": false,
+      "channel_id": "notice-ddb70636c525",
+      "channel_ids": [
+        "notice-ddb70636c525"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 15.041,
+      "errors": [],
+      "finished_at": "2026-11-11T01:08:15+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 30,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 3,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-it-it1623310437:718",
+        "knu-it-it1623310437:699",
+        "knu-it-it1623310437:698",
+        "knu-it-it1623310437:697",
+        "knu-it-it1623310437:664",
+        "knu-it-it1623310437:658",
+        "knu-it-it1623310437:652",
+        "knu-it-it1623310437:643",
+        "knu-it-it1623310437:617",
+        "knu-it-it1623310437:607",
+        "knu-it-it1623310437:601",
+        "knu-it-it1623310437:595",
+        "knu-it-it1623310437:586",
+        "knu-it-it1623310437:580",
+        "knu-it-it1623310437:577",
+        "knu-it-it1623310437:575",
+        "knu-it-it1623310437:564",
+        "knu-it-it1623310437:553",
+        "knu-it-it1623310437:546",
+        "knu-it-it1623310437:542",
+        "knu-it-it1623310437:534",
+        "knu-it-it1623310437:520",
+        "knu-it-it1623310437:517",
+        "knu-it-it1623310437:516",
+        "knu-it-it1623310437:515",
+        "knu-it-it1623310437:514",
+        "knu-it-it1623310437:513",
+        "knu-it-it1623310437:512",
+        "knu-it-it1623310437:503",
+        "knu-it-it1623310437:502"
+      ],
+      "source_board_id": "knu-it-it1623310437",
+      "started_at": "2026-11-11T01:08:01+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-04f9a84e582c",
+      "channel_ids": [
+        "notice-04f9a84e582c"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "가. 수강신청기간 : 2026. 11. 11.(수) 13:00 ~ 11. 12.(금) 17:59",
+            "-수강신청기간 중에는 24시간 신청가능(단, 18:00~19:00는 시스템 점검으로 접속불가)"
+          ],
+          "notice_id": "knu-it-it1790050032:720",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 26.612,
+      "errors": [],
+      "finished_at": "2026-11-11T01:08:41+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 35,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-it-it1790050032:720"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 4,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-it-it1790050032:719",
+        "knu-it-it1790050032:669",
+        "knu-it-it1790050032:656",
+        "knu-it-it1790050032:547",
+        "knu-it-it1790050032:529",
+        "knu-it-it1790050032:521",
+        "knu-it-it1790050032:716",
+        "knu-it-it1790050032:715",
+        "knu-it-it1790050032:713",
+        "knu-it-it1790050032:712",
+        "knu-it-it1790050032:711",
+        "knu-it-it1790050032:710",
+        "knu-it-it1790050032:709",
+        "knu-it-it1790050032:708",
+        "knu-it-it1790050032:707",
+        "knu-it-it1790050032:706",
+        "knu-it-it1790050032:703",
+        "knu-it-it1790050032:702",
+        "knu-it-it1790050032:701",
+        "knu-it-it1790050032:700",
+        "knu-it-it1790050032:695",
+        "knu-it-it1790050032:694",
+        "knu-it-it1790050032:693",
+        "knu-it-it1790050032:692",
+        "knu-it-it1790050032:691",
+        "knu-it-it1790050032:690",
+        "knu-it-it1790050032:689",
+        "knu-it-it1790050032:688",
+        "knu-it-it1790050032:687",
+        "knu-it-it1790050032:686",
+        "knu-it-it1790050032:685",
+        "knu-it-it1790050032:683",
+        "knu-it-it1790050032:682",
+        "knu-it-it1790050032:681"
+      ],
+      "source_board_id": "knu-it-it1790050032",
+      "started_at": "2026-11-11T01:08:16+09:00",
+      "successful": 1,
+      "truncated": false,
+      "unchanged": [
+        "knu-it-it1790050032:720"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-7537783c05b0",
+      "channel_ids": [
+        "notice-7537783c05b0"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 9.621,
+      "errors": [],
+      "finished_at": "2026-11-11T01:08:51+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 21,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 2,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-homeedu-hom1622521250:181",
+        "knu-homeedu-hom1622521250:180",
+        "knu-homeedu-hom1622521250:179",
+        "knu-homeedu-hom1622521250:126",
+        "knu-homeedu-hom1622521250:222",
+        "knu-homeedu-hom1622521250:221",
+        "knu-homeedu-hom1622521250:212",
+        "knu-homeedu-hom1622521250:211",
+        "knu-homeedu-hom1622521250:207",
+        "knu-homeedu-hom1622521250:204",
+        "knu-homeedu-hom1622521250:203",
+        "knu-homeedu-hom1622521250:198",
+        "knu-homeedu-hom1622521250:194",
+        "knu-homeedu-hom1622521250:193",
+        "knu-homeedu-hom1622521250:190",
+        "knu-homeedu-hom1622521250:189",
+        "knu-homeedu-hom1622521250:188",
+        "knu-homeedu-hom1622521250:187",
+        "knu-homeedu-hom1622521250:136",
+        "knu-homeedu-hom1622521250:135",
+        "knu-homeedu-hom1622521250:134"
+      ],
+      "source_board_id": "knu-homeedu-hom1622521250",
+      "started_at": "2026-11-11T01:08:43+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-56d213db968e",
+      "channel_ids": [
+        "notice-56d213db968e"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 모집기간: 2026년 10월 20일() 9:00 ~ 11월 8일(일) 23:59"
+          ],
+          "notice_id": "knu-nurse-nur1624533185:5056",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 31.864,
+      "errors": [],
+      "finished_at": "2026-11-11T01:09:23+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 32,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-nurse-nur1624533185:5056"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 4,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-nurse-nur1624533185:5047",
+        "knu-nurse-nur1624533185:4952",
+        "knu-nurse-nur1624533185:4924",
+        "knu-nurse-nur1624533185:4922",
+        "knu-nurse-nur1624533185:4897",
+        "knu-nurse-nur1624533185:4834",
+        "knu-nurse-nur1624533185:4809",
+        "knu-nurse-nur1624533185:4803",
+        "knu-nurse-nur1624533185:4796",
+        "knu-nurse-nur1624533185:4795",
+        "knu-nurse-nur1624533185:4787",
+        "knu-nurse-nur1624533185:4670",
+        "knu-nurse-nur1624533185:4346",
+        "knu-nurse-nur1624533185:4261",
+        "knu-nurse-nur1624533185:5059",
+        "knu-nurse-nur1624533185:5053",
+        "knu-nurse-nur1624533185:4912",
+        "knu-nurse-nur1624533185:4869",
+        "knu-nurse-nur1624533185:4794",
+        "knu-nurse-nur1624533185:4757",
+        "knu-nurse-nur1624533185:4732",
+        "knu-nurse-nur1624533185:4666",
+        "knu-nurse-nur1624533185:4613",
+        "knu-nurse-nur1624533185:4606",
+        "knu-nurse-nur1624533185:4605",
+        "knu-nurse-nur1624533185:4603",
+        "knu-nurse-nur1624533185:4596",
+        "knu-nurse-nur1624533185:4575",
+        "knu-nurse-nur1624533185:4559",
+        "knu-nurse-nur1624533185:4543",
+        "knu-nurse-nur1624533185:4525"
+      ],
+      "source_board_id": "knu-nurse-nur1624533185",
+      "started_at": "2026-11-11T01:08:52+09:00",
+      "successful": 1,
+      "truncated": false,
+      "unchanged": [
+        "knu-nurse-nur1624533185:5056"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-f5bf5684020e",
+      "channel_ids": [
+        "notice-f5bf5684020e"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": "2026-11-13",
+          "evidence": [
+            "* 큐브 신청 기간 : ~ 2026. 11. 13.(금) 10:00까지"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5086",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 수강신청 기간: 2026. 11. 11.(수) 13:00~11. 12.(목) 17:59(로그인은 12:40부터 가능)",
+            "※ 수강신청기간 중에는 24시간 신청가능 (단, 18:00~19:00는 시스템 점검으로 접속불가)",
+            "수강취소원 제출기간 수강료 환불예정일"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5085",
+          "reason": "상대적인 기한 표현이 섞여 있음; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "6. 제출기한(기한엄수)",
+            "- (학생→학과) 참여 신청서 제출: 2026. 11. 6.(금) 18:00까지",
+            "- (학과→대학) 심사 및 제출: 2026. 11. 9.(월) 18:00까지",
+            "- (대학→학생과) 취합 및 제출: 2026. 11. 10.(화) 18:00까지"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5084",
+          "reason": "서로 다른 마감일이 여러 개; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-15",
+          "evidence": [
+            "신청 마감: 2026년 11월 15일"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5081",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "마. 제출기한: 2026. 11. 20.(금) 18:00까지 이메일 도착분에 한함 ※ 접수 기간 이후 지원 서류 접수 불가"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5076",
+          "reason": "한 문장에 여러 신청·마감 항목",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-27",
+          "evidence": [
+            "■ 신청기한: 2026. 11. 27.(금)까지"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5074",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-11-27",
+          "evidence": [
+            "■ 신청기한: 2026. 11. 27.(금)까지"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5073",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "큐브 신청 기간 : 2026. 10. 27(화) 00:00 ~ 11. 2(월) 12:00"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5068",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-29",
+          "evidence": [
+            "사. 제출기한: 2026. 10. 29.(목) 15:00까지"
+          ],
+          "notice_id": "knu-nurse-nur1624533209:5049",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 110.644,
+      "errors": [],
+      "finished_at": "2026-11-11T01:11:14+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 69,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-nurse-nur1624533209:5085",
+        "knu-nurse-nur1624533209:5084",
+        "knu-nurse-nur1624533209:5076",
+        "knu-nurse-nur1624533209:5068"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 4,
+      "request_count": 19,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-nurse-nur1624533209:5075",
+        "knu-nurse-nur1624533209:5030",
+        "knu-nurse-nur1624533209:5017",
+        "knu-nurse-nur1624533209:5009",
+        "knu-nurse-nur1624533209:5004",
+        "knu-nurse-nur1624533209:5003",
+        "knu-nurse-nur1624533209:5002",
+        "knu-nurse-nur1624533209:5000",
+        "knu-nurse-nur1624533209:4996",
+        "knu-nurse-nur1624533209:4974",
+        "knu-nurse-nur1624533209:4963",
+        "knu-nurse-nur1624533209:4955",
+        "knu-nurse-nur1624533209:4949",
+        "knu-nurse-nur1624533209:4947",
+        "knu-nurse-nur1624533209:4945",
+        "knu-nurse-nur1624533209:4944",
+        "knu-nurse-nur1624533209:4899",
+        "knu-nurse-nur1624533209:4894",
+        "knu-nurse-nur1624533209:4893",
+        "knu-nurse-nur1624533209:4879",
+        "knu-nurse-nur1624533209:4825",
+        "knu-nurse-nur1624533209:4823",
+        "knu-nurse-nur1624533209:4798",
+        "knu-nurse-nur1624533209:4756",
+        "knu-nurse-nur1624533209:4754",
+        "knu-nurse-nur1624533209:4719",
+        "knu-nurse-nur1624533209:4708",
+        "knu-nurse-nur1624533209:4671",
+        "knu-nurse-nur1624533209:4463",
+        "knu-nurse-nur1624533209:4430",
+        "knu-nurse-nur1624533209:4093",
+        "knu-nurse-nur1624533209:3964",
+        "knu-nurse-nur1624533209:3682",
+        "knu-nurse-nur1624533209:3612",
+        "knu-nurse-nur1624533209:3510",
+        "knu-nurse-nur1624533209:3212",
+        "knu-nurse-nur1624533209:3091",
+        "knu-nurse-nur1624533209:213",
+        "knu-nurse-nur1624533209:5051",
+        "knu-nurse-nur1624533209:5050",
+        "knu-nurse-nur1624533209:5045",
+        "knu-nurse-nur1624533209:5027",
+        "knu-nurse-nur1624533209:5026",
+        "knu-nurse-nur1624533209:5025",
+        "knu-nurse-nur1624533209:5024",
+        "knu-nurse-nur1624533209:5023",
+        "knu-nurse-nur1624533209:5015",
+        "knu-nurse-nur1624533209:5014",
+        "knu-nurse-nur1624533209:5012",
+        "knu-nurse-nur1624533209:5008",
+        "knu-nurse-nur1624533209:5001",
+        "knu-nurse-nur1624533209:4999",
+        "knu-nurse-nur1624533209:4994",
+        "knu-nurse-nur1624533209:4989"
+      ],
+      "source_board_id": "knu-nurse-nur1624533209",
+      "started_at": "2026-11-11T01:09:24+09:00",
+      "successful": 15,
+      "truncated": false,
+      "unchanged": [
+        "knu-nurse-nur1624533209:5037",
+        "knu-nurse-nur1624533209:5038",
+        "knu-nurse-nur1624533209:5039",
+        "knu-nurse-nur1624533209:5041",
+        "knu-nurse-nur1624533209:5049",
+        "knu-nurse-nur1624533209:5068",
+        "knu-nurse-nur1624533209:5069",
+        "knu-nurse-nur1624533209:5073",
+        "knu-nurse-nur1624533209:5074",
+        "knu-nurse-nur1624533209:5076",
+        "knu-nurse-nur1624533209:5081",
+        "knu-nurse-nur1624533209:5084",
+        "knu-nurse-nur1624533209:5085",
+        "knu-nurse-nur1624533209:5086",
+        "knu-nurse-nur1624533209:5087"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-fd04b6b6208e",
+      "channel_ids": [
+        "notice-fd04b6b6208e"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 27.794,
+      "errors": [],
+      "finished_at": "2026-11-11T01:11:41+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 35,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 3,
+      "request_count": 5,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-disaster-dis1616717237:374",
+        "knu-disaster-dis1616717237:47",
+        "knu-disaster-dis1616717237:28",
+        "knu-disaster-dis1616717237:27",
+        "knu-disaster-dis1616717237:26",
+        "knu-disaster-dis1616717237:711",
+        "knu-disaster-dis1616717237:710",
+        "knu-disaster-dis1616717237:709",
+        "knu-disaster-dis1616717237:708",
+        "knu-disaster-dis1616717237:695",
+        "knu-disaster-dis1616717237:691",
+        "knu-disaster-dis1616717237:683",
+        "knu-disaster-dis1616717237:682",
+        "knu-disaster-dis1616717237:681",
+        "knu-disaster-dis1616717237:680",
+        "knu-disaster-dis1616717237:679",
+        "knu-disaster-dis1616717237:678",
+        "knu-disaster-dis1616717237:677",
+        "knu-disaster-dis1616717237:676",
+        "knu-disaster-dis1616717237:675",
+        "knu-disaster-dis1616717237:674",
+        "knu-disaster-dis1616717237:673",
+        "knu-disaster-dis1616717237:672",
+        "knu-disaster-dis1616717237:671",
+        "knu-disaster-dis1616717237:670",
+        "knu-disaster-dis1616717237:669",
+        "knu-disaster-dis1616717237:668",
+        "knu-disaster-dis1616717237:667",
+        "knu-disaster-dis1616717237:666",
+        "knu-disaster-dis1616717237:665",
+        "knu-disaster-dis1616717237:664",
+        "knu-disaster-dis1616717237:663",
+        "knu-disaster-dis1616717237:662"
+      ],
+      "source_board_id": "knu-disaster-dis1616717237",
+      "started_at": "2026-11-11T01:11:15+09:00",
+      "successful": 2,
+      "truncated": false,
+      "unchanged": [
+        "knu-disaster-dis1616717237:707",
+        "knu-disaster-dis1616717237:713"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-0158c1288046",
+      "channel_ids": [
+        "notice-0158c1288046"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 10.079,
+      "errors": [],
+      "finished_at": "2026-11-11T01:11:52+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 23,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 2,
+      "request_count": 2,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-arch-arc1623110358:359",
+        "knu-arch-arc1623110358:358",
+        "knu-arch-arc1623110358:355",
+        "knu-arch-arc1623110358:354",
+        "knu-arch-arc1623110358:737",
+        "knu-arch-arc1623110358:577",
+        "knu-arch-arc1623110358:376",
+        "knu-arch-arc1623110358:375",
+        "knu-arch-arc1623110358:374",
+        "knu-arch-arc1623110358:373",
+        "knu-arch-arc1623110358:372",
+        "knu-arch-arc1623110358:371",
+        "knu-arch-arc1623110358:370",
+        "knu-arch-arc1623110358:369",
+        "knu-arch-arc1623110358:368",
+        "knu-arch-arc1623110358:367",
+        "knu-arch-arc1623110358:366",
+        "knu-arch-arc1623110358:365",
+        "knu-arch-arc1623110358:364",
+        "knu-arch-arc1623110358:363",
+        "knu-arch-arc1623110358:362",
+        "knu-arch-arc1623110358:361",
+        "knu-arch-arc1623110358:360"
+      ],
+      "source_board_id": "knu-arch-arc1623110358",
+      "started_at": "2026-11-11T01:11:43+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-541aff0da509",
+      "channel_ids": [
+        "notice-541aff0da509"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 4.303,
+      "errors": [],
+      "finished_at": "2026-11-11T01:11:56+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 1,
+      "request_count": 1,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-ceba-ceb1748499674",
+      "started_at": "2026-11-11T01:11:53+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-78e12cb6bc22",
+      "channel_ids": [
+        "notice-78e12cb6bc22"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 4.995,
+      "errors": [],
+      "finished_at": "2026-11-11T01:12:01+09:00",
+      "initial_import": true,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 1,
+      "request_count": 1,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-biz-biz1623200446",
+      "started_at": "2026-11-11T01:11:57+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-a6afbe817dd2",
+      "channel_ids": [
+        "notice-a6afbe817dd2"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "ㅇ신청기간: 2026. 10. 12.(월) ~ 12. 31.(목)",
+            "※ 27년 1월 22(금)까지 시스템이 열려 있으면 입력 및 승인 가능하지만, 되도록이면 정식신청기간에 신청하기를 권장함."
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5863",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "신청기한: 11. 18.(수) 18:00까지",
+            "모집인원: 선착순 50명(조기 마감 가능)"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5887",
+          "reason": "연도까지 명시된 마감 날짜 없음; 조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-20",
+          "evidence": [
+            "• 접수기간: 2026.11.4.(수) ~ 2026.11.20.(금) 23:59까지"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5879",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "2026년 KNU 학생 옴부즈맨 참여 학생 추천 학생 모집 안내(~11/5까지,선착순) //마감되었습니다.",
+            "◦ 모집인원: 경영학부 재학생 1명 / 선착순 선발이며 마감시 안내예정 // 마감되었습니다.",
+            "◦ 신청기간: ∼11. 5.(목)까지 (기한엄수)",
+            "※ 제출 기한 내 미제출자 또는 2학기 중 휴학자는 활동비 미지급"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5878",
+          "reason": "연도까지 명시된 마감 날짜 없음; 조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-03",
+          "evidence": [
+            "나. 모집기간: 2026. 10. 21.(수)∼2026. 11. 3.(화)"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5867",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "라. 신청기간: 2026. 10. 13.(화) ~ 10. 23.(금) 16:00 [40명 선착순 모집]"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5865",
+          "reason": "조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-29",
+          "evidence": [
+            "사. 제출기한: 2026. 10. 29.(목) 15:00까지"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5860",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "라. 서류제출기한: 10/30(금) 17시까지"
+          ],
+          "notice_id": "knu-kbiz-kbi1623370557:5857",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 99.08,
+      "errors": [],
+      "finished_at": "2026-11-11T01:13:40+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 51,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-kbiz-kbi1623370557:5863",
+        "knu-kbiz-kbi1623370557:5887",
+        "knu-kbiz-kbi1623370557:5878",
+        "knu-kbiz-kbi1623370557:5865",
+        "knu-kbiz-kbi1623370557:5857"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 4,
+      "request_count": 18,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-kbiz-kbi1623370557:5762",
+        "knu-kbiz-kbi1623370557:5761",
+        "knu-kbiz-kbi1623370557:5689",
+        "knu-kbiz-kbi1623370557:5530",
+        "knu-kbiz-kbi1623370557:5490",
+        "knu-kbiz-kbi1623370557:5436",
+        "knu-kbiz-kbi1623370557:5214",
+        "knu-kbiz-kbi1623370557:4898",
+        "knu-kbiz-kbi1623370557:4233",
+        "knu-kbiz-kbi1623370557:816",
+        "knu-kbiz-kbi1623370557:546",
+        "knu-kbiz-kbi1623370557:5877",
+        "knu-kbiz-kbi1623370557:5876",
+        "knu-kbiz-kbi1623370557:5859",
+        "knu-kbiz-kbi1623370557:5856",
+        "knu-kbiz-kbi1623370557:5855",
+        "knu-kbiz-kbi1623370557:5852",
+        "knu-kbiz-kbi1623370557:5849",
+        "knu-kbiz-kbi1623370557:5845",
+        "knu-kbiz-kbi1623370557:5826",
+        "knu-kbiz-kbi1623370557:5816",
+        "knu-kbiz-kbi1623370557:5815",
+        "knu-kbiz-kbi1623370557:5813",
+        "knu-kbiz-kbi1623370557:5810",
+        "knu-kbiz-kbi1623370557:5801",
+        "knu-kbiz-kbi1623370557:5800",
+        "knu-kbiz-kbi1623370557:5796",
+        "knu-kbiz-kbi1623370557:5794",
+        "knu-kbiz-kbi1623370557:5784",
+        "knu-kbiz-kbi1623370557:5782",
+        "knu-kbiz-kbi1623370557:5781",
+        "knu-kbiz-kbi1623370557:5780",
+        "knu-kbiz-kbi1623370557:5778",
+        "knu-kbiz-kbi1623370557:5776",
+        "knu-kbiz-kbi1623370557:5775",
+        "knu-kbiz-kbi1623370557:5774",
+        "knu-kbiz-kbi1623370557:5773"
+      ],
+      "source_board_id": "knu-kbiz-kbi1623370557",
+      "started_at": "2026-11-11T01:12:02+09:00",
+      "successful": 14,
+      "truncated": false,
+      "unchanged": [
+        "knu-kbiz-kbi1623370557:5857",
+        "knu-kbiz-kbi1623370557:5858",
+        "knu-kbiz-kbi1623370557:5860",
+        "knu-kbiz-kbi1623370557:5863",
+        "knu-kbiz-kbi1623370557:5865",
+        "knu-kbiz-kbi1623370557:5866",
+        "knu-kbiz-kbi1623370557:5867",
+        "knu-kbiz-kbi1623370557:5874",
+        "knu-kbiz-kbi1623370557:5878",
+        "knu-kbiz-kbi1623370557:5879",
+        "knu-kbiz-kbi1623370557:5881",
+        "knu-kbiz-kbi1623370557:5884",
+        "knu-kbiz-kbi1623370557:5885",
+        "knu-kbiz-kbi1623370557:5887"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-8860bb9a4bc5",
+      "channel_ids": [
+        "notice-8860bb9a4bc5"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": null,
+          "evidence": [
+            "2. 신청 기간 2026. 10. 12.(월) ~ 12. 31.(목)"
+          ],
+          "notice_id": "knu-econ-eco1623370509:5122",
+          "reason": "연도 생략 또는 여러 날짜·기간",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "5. 신청기간 - 국가근로 : ~11월 24일(화) 17시 까지"
+          ],
+          "notice_id": "knu-econ-eco1623370509:5177",
+          "reason": "연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-11-18",
+          "evidence": [
+            "신청 기간: 2026. 11. 18.(수) 12:00까지"
+          ],
+          "notice_id": "knu-econ-eco1623370509:5173",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "1. 수강신청 기간 2026. 11. 11.(수) 13:00 ~ 11. 12.(목) 17:59",
+            "수강신청 기간 및 시간을 반드시 확인하시기 바랍니다."
+          ],
+          "notice_id": "knu-econ-eco1623370509:5169",
+          "reason": "연도 생략 또는 여러 날짜·기간; 연도까지 명시된 마감 날짜 없음",
+          "status": "needs-review"
+        },
+        {
+          "deadline": null,
+          "evidence": [
+            "(마감) ★ 2026년 KNU 학생 옴부즈맨 참여 학생 모집 안내 ★ 선착순",
+            "신청 마감되었습니다.",
+            "6. 신청 기한 2026. 11. 6.(금) 16:00까지(기한엄수)"
+          ],
+          "notice_id": "knu-econ-eco1623370509:5168",
+          "reason": "본문에 조건부·미확정 안내가 있어 확인 필요; 연도까지 명시된 마감 날짜 없음; 조건부·상시 마감",
+          "status": "needs-review"
+        },
+        {
+          "deadline": "2026-10-29",
+          "evidence": [
+            "사. 제출기한: 2026. 10. 29.(목) 15:00까지"
+          ],
+          "notice_id": "knu-econ-eco1623370509:5132",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-11-24",
+          "evidence": [
+            "5. 신청 기한 학생 → 학과: 2026. 11. 24.(화)까지"
+          ],
+          "notice_id": "knu-econ-eco1623370509:4992",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 1,
+      "duration_sec": 77.833,
+      "errors": [],
+      "finished_at": "2026-11-11T01:14:58+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 55,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [
+        "knu-econ-eco1623370509:5122",
+        "knu-econ-eco1623370509:5177",
+        "knu-econ-eco1623370509:5169",
+        "knu-econ-eco1623370509:5168"
+      ],
+      "new": [],
+      "new_candidates": [],
+      "pages": 4,
+      "request_count": 15,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-econ-eco1623370509:5167",
+        "knu-econ-eco1623370509:5164",
+        "knu-econ-eco1623370509:4727",
+        "knu-econ-eco1623370509:4518",
+        "knu-econ-eco1623370509:3964",
+        "knu-econ-eco1623370509:3831",
+        "knu-econ-eco1623370509:3697",
+        "knu-econ-eco1623370509:3696",
+        "knu-econ-eco1623370509:3489",
+        "knu-econ-eco1623370509:3332",
+        "knu-econ-eco1623370509:3139",
+        "knu-econ-eco1623370509:2938",
+        "knu-econ-eco1623370509:854",
+        "knu-econ-eco1623370509:842",
+        "knu-econ-eco1623370509:785",
+        "knu-econ-eco1623370509:776",
+        "knu-econ-eco1623370509:549",
+        "knu-econ-eco1623370509:5166",
+        "knu-econ-eco1623370509:5163",
+        "knu-econ-eco1623370509:5160",
+        "knu-econ-eco1623370509:5127",
+        "knu-econ-eco1623370509:5124",
+        "knu-econ-eco1623370509:5123",
+        "knu-econ-eco1623370509:5117",
+        "knu-econ-eco1623370509:5113",
+        "knu-econ-eco1623370509:5108",
+        "knu-econ-eco1623370509:5107",
+        "knu-econ-eco1623370509:5103",
+        "knu-econ-eco1623370509:5082",
+        "knu-econ-eco1623370509:5073",
+        "knu-econ-eco1623370509:5062",
+        "knu-econ-eco1623370509:5061",
+        "knu-econ-eco1623370509:5051",
+        "knu-econ-eco1623370509:5042",
+        "knu-econ-eco1623370509:5041",
+        "knu-econ-eco1623370509:5040",
+        "knu-econ-eco1623370509:5033",
+        "knu-econ-eco1623370509:5031",
+        "knu-econ-eco1623370509:5026",
+        "knu-econ-eco1623370509:5025",
+        "knu-econ-eco1623370509:5023",
+        "knu-econ-eco1623370509:5015",
+        "knu-econ-eco1623370509:5013",
+        "knu-econ-eco1623370509:5012",
+        "knu-econ-eco1623370509:5002"
+      ],
+      "source_board_id": "knu-econ-eco1623370509",
+      "started_at": "2026-11-11T01:13:41+09:00",
+      "successful": 11,
+      "truncated": false,
+      "unchanged": [
+        "knu-econ-eco1623370509:4992",
+        "knu-econ-eco1623370509:5122",
+        "knu-econ-eco1623370509:5132",
+        "knu-econ-eco1623370509:5134",
+        "knu-econ-eco1623370509:5168",
+        "knu-econ-eco1623370509:5169",
+        "knu-econ-eco1623370509:5173",
+        "knu-econ-eco1623370509:5174",
+        "knu-econ-eco1623370509:5175",
+        "knu-econ-eco1623370509:5176",
+        "knu-econ-eco1623370509:5177"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-a267229666ef",
+      "channel_ids": [
+        "notice-a267229666ef"
+      ],
+      "deadline_checks": [
+        {
+          "deadline": "2026-11-18",
+          "evidence": [
+            "라. 신청 기간: 2026. 11. 18.(수) 12:00 까지"
+          ],
+          "notice_id": "knu-aran-ara1623718660:4894",
+          "reason": null,
+          "status": "found"
+        },
+        {
+          "deadline": "2026-11-20",
+          "evidence": [
+            "• 접수기간: 2026.11.4.(수) ~ 2026.11.20.(금) 23:59까지"
+          ],
+          "notice_id": "knu-aran-ara1623718660:4893",
+          "reason": null,
+          "status": "found"
+        }
+      ],
+      "direct_checks": 0,
+      "duration_sec": 693.875,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDExJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDExJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTAmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA5JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTAmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA5JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1dff4e50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTAmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA5JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDkmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA4JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDkmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA4JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1ceeedd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDkmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA4JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDgmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDgmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1ceeea90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDgmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDcmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA2JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDcmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA2JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1bc06290>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDcmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA2JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDUmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA1JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDUmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA1JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c181710>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDUmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA1JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1da59290>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDImc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDImc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c182ad0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDImc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDEmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDEmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c180b10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDEmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzYmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAxJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzYmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAxJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1bc07c10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzYmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAxJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAwJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAwJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1ceee590>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzMmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDAwJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MjYmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MjYmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1d9812d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MjYmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTkmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTkmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1ceefd50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTkmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk0JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTcmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzkzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTcmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzkzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1bc05ed0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-a267229666ef",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MTcmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzkzJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "finished_at": "2026-11-11T01:26:32+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 95,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 6,
+      "request_count": 51,
+      "scope": "page-traversal",
+      "skipped": [
+        "knu-aran-ara1623718660:4889",
+        "knu-aran-ara1623718660:4814",
+        "knu-aran-ara1623718660:4677",
+        "knu-aran-ara1623718660:4676",
+        "knu-aran-ara1623718660:4627",
+        "knu-aran-ara1623718660:4625",
+        "knu-aran-ara1623718660:4585",
+        "knu-aran-ara1623718660:4580",
+        "knu-aran-ara1623718660:4576",
+        "knu-aran-ara1623718660:4567",
+        "knu-aran-ara1623718660:4545",
+        "knu-aran-ara1623718660:4531",
+        "knu-aran-ara1623718660:4438",
+        "knu-aran-ara1623718660:4397",
+        "knu-aran-ara1623718660:4376",
+        "knu-aran-ara1623718660:4371",
+        "knu-aran-ara1623718660:4300",
+        "knu-aran-ara1623718660:4102",
+        "knu-aran-ara1623718660:3302",
+        "knu-aran-ara1623718660:2888",
+        "knu-aran-ara1623718660:2821",
+        "knu-aran-ara1623718660:2459",
+        "knu-aran-ara1623718660:2402",
+        "knu-aran-ara1623718660:2231",
+        "knu-aran-ara1623718660:2186",
+        "knu-aran-ara1623718660:1757",
+        "knu-aran-ara1623718660:1424",
+        "knu-aran-ara1623718660:368",
+        "knu-aran-ara1623718660:336",
+        "knu-aran-ara1623718660:305",
+        "knu-aran-ara1623718660:158",
+        "knu-aran-ara1623718660:101",
+        "knu-aran-ara1623718660:100",
+        "knu-aran-ara1623718660:98",
+        "knu-aran-ara1623718660:95",
+        "knu-aran-ara1623718660:94",
+        "knu-aran-ara1623718660:92",
+        "knu-aran-ara1623718660:4891",
+        "knu-aran-ara1623718660:4881",
+        "knu-aran-ara1623718660:4880",
+        "knu-aran-ara1623718660:4879",
+        "knu-aran-ara1623718660:4878",
+        "knu-aran-ara1623718660:4877",
+        "knu-aran-ara1623718660:4875",
+        "knu-aran-ara1623718660:4874",
+        "knu-aran-ara1623718660:4873",
+        "knu-aran-ara1623718660:4872",
+        "knu-aran-ara1623718660:4865",
+        "knu-aran-ara1623718660:4857",
+        "knu-aran-ara1623718660:4856",
+        "knu-aran-ara1623718660:4831",
+        "knu-aran-ara1623718660:4830",
+        "knu-aran-ara1623718660:4825",
+        "knu-aran-ara1623718660:4823",
+        "knu-aran-ara1623718660:4815",
+        "knu-aran-ara1623718660:4809",
+        "knu-aran-ara1623718660:4808",
+        "knu-aran-ara1623718660:4807",
+        "knu-aran-ara1623718660:4806",
+        "knu-aran-ara1623718660:4805",
+        "knu-aran-ara1623718660:4802",
+        "knu-aran-ara1623718660:4797",
+        "knu-aran-ara1623718660:4793",
+        "knu-aran-ara1623718660:4791",
+        "knu-aran-ara1623718660:4790",
+        "knu-aran-ara1623718660:4789",
+        "knu-aran-ara1623718660:4779",
+        "knu-aran-ara1623718660:4777",
+        "knu-aran-ara1623718660:4769",
+        "knu-aran-ara1623718660:4768",
+        "knu-aran-ara1623718660:4767",
+        "knu-aran-ara1623718660:4754",
+        "knu-aran-ara1623718660:4749",
+        "knu-aran-ara1623718660:4730",
+        "knu-aran-ara1623718660:4728",
+        "knu-aran-ara1623718660:4725"
+      ],
+      "source_board_id": "knu-aran-ara1623718660",
+      "started_at": "2026-11-11T01:14:59+09:00",
+      "successful": 4,
+      "truncated": false,
+      "unchanged": [
+        "knu-aran-ara1623718660:4853",
+        "knu-aran-ara1623718660:4892",
+        "knu-aran-ara1623718660:4893",
+        "knu-aran-ara1623718660:4894"
+      ],
+      "updated": [],
+      "window_complete": true
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-7ff56c3af3e0",
+      "channel_ids": [
+        "notice-7ff56c3af3e0"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 2,
+      "duration_sec": 103.041,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/knupolymer/sub.htm?nav_code=knu1623888520 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1e023910>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-7ff56c3af3e0",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2MzAmc3RhcnRQYWdlPTMwJmxpc3RObz00ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZuYXZfY29kZT1rbnUxNjIzODg4NTIwJmNvZGU9WldMYThlNVNFdW1hJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2MzAmc3RhcnRQYWdlPTMwJmxpc3RObz00ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZuYXZfY29kZT1rbnUxNjIzODg4NTIwJmNvZGU9WldMYThlNVNFdW1hJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1b15fa90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-7ff56c3af3e0",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2MzAmc3RhcnRQYWdlPTMwJmxpc3RObz00ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZuYXZfY29kZT1rbnUxNjIzODg4NTIwJmNvZGU9WldMYThlNVNFdW1hJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTUzOCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTUzOCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c1323d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-7ff56c3af3e0",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTUzOCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "finished_at": "2026-11-11T01:28:15+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 0,
+      "request_count": 9,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-knupolymer-knu1623888520",
+      "started_at": "2026-11-11T01:26:33+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-8d0ba20b8a78",
+      "channel_ids": [
+        "notice-8d0ba20b8a78"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 35.793,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/ento/sub.htm?nav_code=ent1625131133: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/ento/sub.htm?nav_code=ent1625131133 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1b87b210>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-8d0ba20b8a78",
+          "url": "https://home.knu.ac.kr/HOME/ento/sub.htm?nav_code=ent1625131133"
+        }
+      ],
+      "finished_at": "2026-11-11T01:28:51+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 0,
+      "request_count": 3,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-ento-ent1625131133",
+      "started_at": "2026-11-11T01:28:16+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-ab33c8b6f3d1",
+      "channel_ids": [
+        "notice-ab33c8b6f3d1"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 35.185,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/engineer/sub.htm?nav_code=eng1729076802: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/engineer/sub.htm?nav_code=eng1729076802 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c1a2490>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-ab33c8b6f3d1",
+          "url": "https://home.knu.ac.kr/HOME/engineer/sub.htm?nav_code=eng1729076802"
+        }
+      ],
+      "finished_at": "2026-11-11T01:29:26+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 0,
+      "request_count": 3,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-engineer-eng1729076802",
+      "started_at": "2026-11-11T01:28:52+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-cd772685aa0f",
+      "channel_ids": [
+        "notice-cd772685aa0f"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 35.111,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/cst/sub.htm?nav_code=cst1614760898: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/cst/sub.htm?nav_code=cst1614760898 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1c8e21d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-cd772685aa0f",
+          "url": "https://home.knu.ac.kr/HOME/cst/sub.htm?nav_code=cst1614760898"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:01+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 0,
+      "request_count": 3,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-cst-cst1614760898",
+      "started_at": "2026-11-11T01:29:27+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "bootstrap": false,
+      "channel_id": "notice-eaa2bcd13c4a",
+      "channel_ids": [
+        "notice-eaa2bcd13c4a"
+      ],
+      "deadline_checks": [],
+      "direct_checks": 0,
+      "duration_sec": 34.739,
+      "errors": [
+        {
+          "message": "요청 실패: https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/tour/sub.htm?nav_code=tou1616116950 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7abd1cf839d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "source": "notice-eaa2bcd13c4a",
+          "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "initial_import": false,
+      "late_discoveries": [],
+      "linked": 0,
+      "listed": 0,
+      "max_pages": 1000,
+      "mode": "daily",
+      "needs_review": [],
+      "new": [],
+      "new_candidates": [],
+      "pages": 0,
+      "request_count": 3,
+      "scope": "page-traversal",
+      "skipped": [],
+      "source_board_id": "knu-tour-tou1616116950",
+      "started_at": "2026-11-11T01:30:02+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f3ba4290e5dd",
+      "channel_ids": [
+        "notice-f3ba4290e5dd"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f3ba4290e5dd",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?nav_code=kmu1622609949"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-kmusic-kmu1622609949",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ca78d3fd3c51",
+      "channel_ids": [
+        "notice-ca78d3fd3c51"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ca78d3fd3c51",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?nav_code=kor1622459695"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-koredu-kor1622459695",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-6c1f8a512fa4",
+      "channel_ids": [
+        "notice-6c1f8a512fa4"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-6c1f8a512fa4",
+          "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-korean-kor1657071357",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b7eb69e8405d",
+      "channel_ids": [
+        "notice-b7eb69e8405d"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b7eb69e8405d",
+          "url": "https://home.knu.ac.kr/HOME/material/sub.htm?nav_code=mat1623632513"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-material-mat1623632513",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-74a3f719131b",
+      "channel_ids": [
+        "notice-74a3f719131b"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-74a3f719131b",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-me-me1623370438",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-61c2fdac4b03",
+      "channel_ids": [
+        "notice-61c2fdac4b03"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-61c2fdac4b03",
+          "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?nav_code=ams1622609715"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-amse-ams1622609715",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-2fdcd3cab366",
+      "channel_ids": [
+        "notice-2fdcd3cab366"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-2fdcd3cab366",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?nav_code=knu1742773842"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knurussian-knu1742773842",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-dc7fc6a93fe8",
+      "channel_ids": [
+        "notice-dc7fc6a93fe8"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-dc7fc6a93fe8",
+          "url": "https://home.knu.ac.kr/HOME/aifm/sub.htm?nav_code=aif1623029616"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-aifm-aif1623029616",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-e3a4a5455384",
+      "channel_ids": [
+        "notice-e3a4a5455384"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-e3a4a5455384",
+          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?nav_code=cal1623200331"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-cals-cal1623200331",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-12a353fc2eb8",
+      "channel_ids": [
+        "notice-12a353fc2eb8"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-12a353fc2eb8",
+          "url": "https://home.knu.ac.kr/HOME/acen/sub.htm?nav_code=ace1622521462"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-acen-ace1622521462",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-683cb3e528ee",
+      "channel_ids": [
+        "notice-683cb3e528ee"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-683cb3e528ee",
+          "url": "https://home.knu.ac.kr/HOME/geredu/sub.htm?nav_code=ger1622609973"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-geredu-ger1622609973",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-0ef73fec9014",
+      "channel_ids": [
+        "notice-0ef73fec9014"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-0ef73fec9014",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623133982"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-german-ger1623133982",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d42e73c1be80",
+      "channel_ids": [
+        "notice-d42e73c1be80"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d42e73c1be80",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623203350"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-german-ger1623203350",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-30f51dd33791",
+      "channel_ids": [
+        "notice-30f51dd33791"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-30f51dd33791",
+          "url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?nav_code=ani1622629991"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-anibiotech-ani1622629991",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-750dff5618d4",
+      "channel_ids": [
+        "notice-750dff5618d4"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-750dff5618d4",
+          "url": "https://home.knu.ac.kr/HOME/vcd/sub.htm?nav_code=vcd1622551643"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-vcd-vcd1622551643",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ddfc5b2ca163",
+      "channel_ids": [
+        "notice-ddfc5b2ca163"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ddfc5b2ca163",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-robot-rob1623632307",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-fe90b8f3beb7",
+      "channel_ids": [
+        "notice-fe90b8f3beb7"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-fe90b8f3beb7",
+          "url": "https://home.knu.ac.kr/HOME/spanimal/sub.htm?nav_code=spa1622450979"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-spanimal-spa1622450979",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-956827a355a7",
+      "channel_ids": [
+        "notice-956827a355a7"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-956827a355a7",
+          "url": "https://home.knu.ac.kr/HOME/lis/sub.htm?nav_code=lis1622460108"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-lis-lis1622460108",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ec96ad09ef78",
+      "channel_ids": [
+        "notice-ec96ad09ef78"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ec96ad09ef78",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-physed-phy1623371316",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f4ac509b75c4",
+      "channel_ids": [
+        "notice-f4ac509b75c4"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f4ac509b75c4",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-physics-phy1645592197",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7dbc635b2399",
+      "channel_ids": [
+        "notice-7dbc635b2399"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7dbc635b2399",
+          "url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?nav_code=mas1614079680"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-masscom-mas1614079680",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7e56cbeca2ee",
+      "channel_ids": [
+        "notice-7e56cbeca2ee"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7e56cbeca2ee",
+          "url": "https://home.knu.ac.kr/HOME/arts/sub.htm?nav_code=art1623199694"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-arts-art1623199694",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-73ffa1763744",
+      "channel_ids": [
+        "notice-73ffa1763744"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-73ffa1763744",
+          "url": "https://home.knu.ac.kr/HOME/biofiber/sub.htm?nav_code=bio1623029353"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-biofiber-bio1623029353",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9b84b4adc47a",
+      "channel_ids": [
+        "notice-9b84b4adc47a"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9b84b4adc47a",
+          "url": "https://home.knu.ac.kr/HOME/fredu/sub.htm?nav_code=fre1623134357"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-fredu-fre1623134357",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b5015ce1e74b",
+      "channel_ids": [
+        "notice-b5015ce1e74b"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b5015ce1e74b",
+          "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-french-fre1623147753",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-2ae1ca96e3de",
+      "channel_ids": [
+        "notice-2ae1ca96e3de"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-2ae1ca96e3de",
+          "url": "https://home.knu.ac.kr/HOME/education/sub.htm?nav_code=edu1623200393"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-education-edu1623200393",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9f20cdb4b423",
+      "channel_ids": [
+        "notice-9f20cdb4b423"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9f20cdb4b423",
+          "url": "https://home.knu.ac.kr/HOME/history/sub.htm?nav_code=his1622521427"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:36+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-history-his1622521427",
+      "started_at": "2026-11-11T01:30:36+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7502f997e5e7",
+      "channel_ids": [
+        "notice-7502f997e5e7"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7502f997e5e7",
+          "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?nav_code=cos1623199778"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-coss-cos1623199778",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-bbfcc8756400",
+      "channel_ids": [
+        "notice-bbfcc8756400"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-bbfcc8756400",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knusw-knu1623026178",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-1268b7a10e0b",
+      "channel_ids": [
+        "notice-1268b7a10e0b"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-1268b7a10e0b",
+          "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-socio-soc1622181477",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-8b73f625639c",
+      "channel_ids": [
+        "notice-8b73f625639c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-8b73f625639c",
+          "url": "https://home.knu.ac.kr/HOME/fore/sub.htm?nav_code=for1622704960"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-fore-for1622704960",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-afb535aeb941",
+      "channel_ids": [
+        "notice-afb535aeb941"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-afb535aeb941",
+          "url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?nav_code=bio1622460188"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-bioedu-bio1622460188",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b5e6a10e952e",
+      "channel_ids": [
+        "notice-b5e6a10e952e"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b5e6a10e952e",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-bio-bio1616117151",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9bcb92908bc9",
+      "channel_ids": [
+        "notice-9bcb92908bc9"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9bcb92908bc9",
+          "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117150"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-bio-bio1616117150",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-3bb6de2335b3",
+      "channel_ids": [
+        "notice-3bb6de2335b3"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-3bb6de2335b3",
+          "url": "https://home.knu.ac.kr/HOME/cee/sub.htm?nav_code=cee1623200416"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-cee-cee1623200416",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-fe8857afa2d4",
+      "channel_ids": [
+        "notice-fe8857afa2d4"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-fe8857afa2d4",
+          "url": "https://home.knu.ac.kr/HOME/he/sub.htm?nav_code=he1623200306"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-he-he1623200306",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-0b9f7e3a61e0",
+      "channel_ids": [
+        "notice-0b9f7e3a61e0"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-0b9f7e3a61e0",
+          "url": "https://home.knu.ac.kr/HOME/textile/sub.htm?nav_code=tex1616634934"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-textile-tex1616634934",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f9d9ecdb1284",
+      "channel_ids": [
+        "notice-f9d9ecdb1284"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f9d9ecdb1284",
+          "url": "https://home.knu.ac.kr/HOME/textileng/sub.htm?nav_code=tex1623029574"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-textileng-tex1623029574",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-2487b99aea65",
+      "channel_ids": [
+        "notice-2487b99aea65"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-2487b99aea65",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?nav_code=se1617170620"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-se-se1617170620",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-4c132ad6150a",
+      "channel_ids": [
+        "notice-4c132ad6150a"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-4c132ad6150a",
+          "url": "https://home.knu.ac.kr/HOME/veterinary/sub.htm?nav_code=vet1623200224"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-veterinary-vet1623200224",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-472ae4378387",
+      "channel_ids": [
+        "notice-472ae4378387"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-472ae4378387",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-math-mat1623029308",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-8666f6ab7bde",
+      "channel_ids": [
+        "notice-8666f6ab7bde"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-8666f6ab7bde",
+          "url": "https://home.knu.ac.kr/HOME/mathedu/sub.htm?nav_code=mat1623134407"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-mathedu-mat1623134407",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f310e00db70c",
+      "channel_ids": [
+        "notice-f310e00db70c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f310e00db70c",
+          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?nav_code=mob1692863999"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-mobility-mob1692863999",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-cc19e513d407",
+      "channel_ids": [
+        "notice-cc19e513d407"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-cc19e513d407",
+          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-bime-bim1622180687",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b5c34881a6cc",
+      "channel_ids": [
+        "notice-b5c34881a6cc"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b5c34881a6cc",
+          "url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?nav_code=sma1653282097"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-smartplant-sma1653282097",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-451c515734ae",
+      "channel_ids": [
+        "notice-451c515734ae"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-451c515734ae",
+          "url": "https://home.knu.ac.kr/HOME/pbs/sub.htm?nav_code=pbs1623632560"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-pbs-pbs1623632560",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-e0dc5a51576c",
+      "channel_ids": [
+        "notice-e0dc5a51576c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-e0dc5a51576c",
+          "url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?nav_code=pla1677024917"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-plantmed-pla1677024917",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-aaa5e07a26eb",
+      "channel_ids": [
+        "notice-aaa5e07a26eb"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-aaa5e07a26eb",
+          "url": "https://home.knu.ac.kr/HOME/scplant/sub.htm?nav_code=scp1622705079"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-scplant-scp1622705079",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-5489a94f38cd",
+      "channel_ids": [
+        "notice-5489a94f38cd",
+        "notice-2c006faa8fdd"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-5489a94f38cd",
+          "url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-foodbio-foo1623134098",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-45a059e34b9c",
+      "channel_ids": [
+        "notice-45a059e34b9c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-45a059e34b9c",
+          "url": "https://home.knu.ac.kr/HOME/foodbiotechnology/sub.htm?nav_code=foo1619661320"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-foodbiotechnology-foo1619661320",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-57321798a19a",
+      "channel_ids": [
+        "notice-57321798a19a"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-57321798a19a",
+          "url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?nav_code=foo1623888041"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-foodbm-foo1623888041",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d5e75aa6b2da",
+      "channel_ids": [
+        "notice-d5e75aa6b2da"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d5e75aa6b2da",
+          "url": "https://home.knu.ac.kr/HOME/fsnu/sub.htm?nav_code=fsn1622459812"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-fsnu-fsn1622459812",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-99ea5018f469",
+      "channel_ids": [
+        "notice-99ea5018f469"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-99ea5018f469",
+          "url": "https://home.knu.ac.kr/HOME/ffsi/sub.htm?nav_code=ffs1623133940"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ffsi-ffs1623133940",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-6b16f01d1a75",
+      "channel_ids": [
+        "notice-6b16f01d1a75"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-6b16f01d1a75",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knuagec-knu1623134126",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7fcf94c45b4e",
+      "channel_ids": [
+        "notice-7fcf94c45b4e"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7fcf94c45b4e",
+          "url": "https://home.knu.ac.kr/HOME/kremse/sub.htm?nav_code=kre1640045053"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-kremse-kre1640045053",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-16f98ec95fc6",
+      "channel_ids": [
+        "notice-16f98ec95fc6"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-16f98ec95fc6",
+          "url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?nav_code=psy1614066241"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-psychology-psy1614066241",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-97fffffebd44",
+      "channel_ids": [
+        "notice-97fffffebd44"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-97fffffebd44",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knuchild-knu1623370362",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9a2cb1c992c7",
+      "channel_ids": [
+        "notice-9a2cb1c992c7"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9a2cb1c992c7",
+          "url": "https://home.knu.ac.kr/HOME/knupharmacy/sub.htm?nav_code=knu1623650948"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knupharmacy-knu1623650948",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-06dffccf1c28",
+      "channel_ids": [
+        "notice-06dffccf1c28"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-06dffccf1c28",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?nav_code=soe1622609908"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:37+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-soee-soe1622609908",
+      "started_at": "2026-11-11T01:30:37+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-70d703a20086",
+      "channel_ids": [
+        "notice-70d703a20086"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-70d703a20086",
+          "url": "https://home.knu.ac.kr/HOME/ece/sub.htm?nav_code=ece1704877202"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ece-ece1704877202",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-848538cdce05",
+      "channel_ids": [
+        "notice-848538cdce05"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-848538cdce05",
+          "url": "https://home.knu.ac.kr/HOME/hisedu/sub.htm?nav_code=his1622459767"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-hisedu-his1622459767",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9c2e2dbd2980",
+      "channel_ids": [
+        "notice-9c2e2dbd2980"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9c2e2dbd2980",
+          "url": "https://home.knu.ac.kr/HOME/enged/sub.htm?nav_code=eng1622787290"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-enged-eng1622787290",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-1abc9573202c",
+      "channel_ids": [
+        "notice-1abc9573202c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-1abc9573202c",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-english-eng1621852173",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f95f0e2ac40d",
+      "channel_ids": [
+        "notice-f95f0e2ac40d"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f95f0e2ac40d",
+          "url": "https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-aerospace-aer1694412321",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-3834483dc081",
+      "channel_ids": [
+        "notice-3834483dc081"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-3834483dc081",
+          "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-horti-hor1622609861",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ef883ff42361",
+      "channel_ids": [
+        "notice-ef883ff42361"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ef883ff42361",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-lbis-lbi1661932979",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-a1540deb2a6f",
+      "channel_ids": [
+        "notice-a1540deb2a6f"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-a1540deb2a6f",
+          "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ethedu-eth1622460163",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-74558916c320",
+      "channel_ids": [
+        "notice-74558916c320"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-74558916c320",
+          "url": "https://home.knu.ac.kr/HOME/music/sub.htm?nav_code=mus1622610244"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-music-mus1622610244",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-a1c0cc5412ca",
+      "channel_ids": [
+        "notice-a1c0cc5412ca"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-a1c0cc5412ca",
+          "url": "https://home.knu.ac.kr/HOME/appbio/sub.htm?nav_code=app1700444270"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-appbio-app1700444270",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7dfeec322405",
+      "channel_ids": [
+        "notice-7dfeec322405"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7dfeec322405",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knuce-knu1762850029",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ad22d5b4a9e9",
+      "channel_ids": [
+        "notice-ad22d5b4a9e9"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ad22d5b4a9e9",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-fashion-fas1623134444",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "channel_ids": [
+        "notice-e1ec1bf0eb87"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-e1ec1bf0eb87",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-bcst2-bcs1611061294",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ecd686f730b2",
+      "channel_ids": [
+        "notice-ecd686f730b2"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ecd686f730b2",
+          "url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?nav_code=hum1623199741"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-humanities-hum1623199741",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-5c6cbaba27ab",
+      "channel_ids": [
+        "notice-5c6cbaba27ab"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-5c6cbaba27ab",
+          "url": "https://home.knu.ac.kr/HOME/hum/sub.htm?nav_code=hum1741312301"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-hum-hum1741312301",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-614324804939",
+      "channel_ids": [
+        "notice-614324804939"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-614324804939",
+          "url": "https://home.knu.ac.kr/HOME/ilsa/sub.htm?nav_code=ils1622609066"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ilsa-ils1622609066",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-3c7bfc3da404",
+      "channel_ids": [
+        "notice-3c7bfc3da404"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-3c7bfc3da404",
+          "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-japan-jap1695016568",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7bb331bb8b0f",
+      "channel_ids": [
+        "notice-7bb331bb8b0f"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7bb331bb8b0f",
+          "url": "https://home.knu.ac.kr/HOME/treei/sub.htm?nav_code=tre1622610220"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-treei-tre1622610220",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-4b4549901a22",
+      "channel_ids": [
+        "notice-4b4549901a22"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-4b4549901a22",
+          "url": "https://home.knu.ac.kr/HOME/forest/sub.htm?nav_code=for1622521051"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-forest-for1622521051",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-68d5f9aa762f",
+      "channel_ids": [
+        "notice-68d5f9aa762f"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-68d5f9aa762f",
+          "url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?nav_code=aut1623370299"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-automobile-aut1623370299",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-55ac86f2e763",
+      "channel_ids": [
+        "notice-55ac86f2e763",
+        "notice-392eeaadf103"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-55ac86f2e763",
+          "url": "https://home.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-cns-cns1623199799",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9a0b59b2a2b4",
+      "channel_ids": [
+        "notice-9a0b59b2a2b4"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9a0b59b2a2b4",
+          "url": "https://home.knu.ac.kr/HOME/sofi/sub.htm?nav_code=sof1741566884"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-sofi-sof1741566884",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d1802616c625",
+      "channel_ids": [
+        "notice-d1802616c625"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d1802616c625",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-udm-udm1623371432",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-1cbb3d90d081",
+      "channel_ids": [
+        "notice-1cbb3d90d081"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-1cbb3d90d081",
+          "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-electric-ele1622787198",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-e08af12e34e3",
+      "channel_ids": [
+        "notice-e08af12e34e3"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-e08af12e34e3",
+          "url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?nav_code=smo1616372729"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-smobile-smo1616372729",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-450caf336106",
+      "channel_ids": [
+        "notice-450caf336106"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-450caf336106",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-seeai-see1667180581",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-8b2d3f025a39",
+      "channel_ids": [
+        "notice-8b2d3f025a39"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-8b2d3f025a39",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-pmeatknu-pme1623030157",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-1d6a78636180",
+      "channel_ids": [
+        "notice-1d6a78636180"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-1d6a78636180",
+          "url": "https://home.knu.ac.kr/HOME/comedu/sub.htm?nav_code=com1744781375"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-comedu-com1744781375",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b8ebd17a5dca",
+      "channel_ids": [
+        "notice-b8ebd17a5dca"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b8ebd17a5dca",
+          "url": "https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:38+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-politics-pol1614071864",
+      "started_at": "2026-11-11T01:30:38+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-c4b1c79994bd",
+      "channel_ids": [
+        "notice-c4b1c79994bd"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-c4b1c79994bd",
+          "url": "https://home.knu.ac.kr/HOME/land/sub.htm?nav_code=lan1614079746"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-land-lan1614079746",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-787893a88ff5",
+      "channel_ids": [
+        "notice-787893a88ff5"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-787893a88ff5",
+          "url": "https://home.knu.ac.kr/HOME/earth/sub.htm?nav_code=ear1622787840"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-earth-ear1622787840",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-278455937509",
+      "channel_ids": [
+        "notice-278455937509"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-278455937509",
+          "url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?nav_code=geo1623029261"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-geoedu-geo1623029261",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-2eb7684c7df1",
+      "channel_ids": [
+        "notice-2eb7684c7df1"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-2eb7684c7df1",
+          "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?nav_code=geo1614082611"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-geog-geo1614082611",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-1f235111f7dc",
+      "channel_ids": [
+        "notice-1f235111f7dc"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-1f235111f7dc",
+          "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-geology-geo1621814864",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d6ef40bd632d",
+      "channel_ids": [
+        "notice-d6ef40bd632d"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d6ef40bd632d",
+          "url": "https://home.knu.ac.kr/HOME/hanl/sub.htm?nav_code=han1769127610"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-hanl-han1769127610",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d7e3a598e69c",
+      "channel_ids": [
+        "notice-d7e3a598e69c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d7e3a598e69c",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?nav_code=phi1623391659"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-philosophy-phi1623391659",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-e187e9582e58",
+      "channel_ids": [
+        "notice-e187e9582e58"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-e187e9582e58",
+          "url": "https://home.knu.ac.kr/HOME/knuatc/sub.htm?nav_code=knu1711976689"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knuatc-knu1711976689",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-afca571a7ef1",
+      "channel_ids": [
+        "notice-afca571a7ef1"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-afca571a7ef1",
+          "url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?nav_code=atc1753746498"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-atcad-atc1753746498",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-dd1ea15f1f4f",
+      "channel_ids": [
+        "notice-dd1ea15f1f4f"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-dd1ea15f1f4f",
+          "url": "https://home.knu.ac.kr/HOME/spoedu/sub.htm?nav_code=spo1623029398"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-spoedu-spo1623029398",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-dfce5afb9336",
+      "channel_ids": [
+        "notice-dfce5afb9336"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-dfce5afb9336",
+          "url": "https://home.knu.ac.kr/HOME/sports/sub.htm?nav_code=spo1622609691"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-sports-spo1622609691",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d6c272c6c7db",
+      "channel_ids": [
+        "notice-d6c272c6c7db"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d6c272c6c7db",
+          "url": "https://home.knu.ac.kr/HOME/zootechny/sub.htm?nav_code=zoo1622709676"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-zootechny-zoo1622709676",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ccc3a94a1fa5",
+      "channel_ids": [
+        "notice-ccc3a94a1fa5"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ccc3a94a1fa5",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?nav_code=civ1614066197"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-civil-civ1614066197",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-f14e44ae5bb9",
+      "channel_ids": [
+        "notice-f14e44ae5bb9"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-f14e44ae5bb9",
+          "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-stat-sta1623632390",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-9dbd1b2695c9",
+      "channel_ids": [
+        "notice-9dbd1b2695c9"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-9dbd1b2695c9",
+          "url": "https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-style-sty1616635012",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-3d2a3e87207a",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-3d2a3e87207a",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-hanmun-han1624361542",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d13e4abb0470",
+      "channel_ids": [
+        "notice-d13e4abb0470"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d13e4abb0470",
+          "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ocean-oce1623632597",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-4a41e1328a3e",
+      "channel_ids": [
+        "notice-4a41e1328a3e"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-4a41e1328a3e",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-puad-pua1623029519",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b46aed7f6b0f",
+      "channel_ids": [
+        "notice-b46aed7f6b0f"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b46aed7f6b0f",
+          "url": "https://home.knu.ac.kr/HOME/innopharm/sub.htm?nav_code=inn1706058584"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-innopharm-inn1706058584",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-ac0144f93d45",
+      "channel_ids": [
+        "notice-ac0144f93d45"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-ac0144f93d45",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-chem-che1622521080",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-093d2d29fb09",
+      "channel_ids": [
+        "notice-093d2d29fb09"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-093d2d29fb09",
+          "url": "https://home.knu.ac.kr/HOME/chedu/sub.htm?nav_code=che1623057663"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-chedu-che1623057663",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-101538fb6a8e",
+      "channel_ids": [
+        "notice-101538fb6a8e"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-101538fb6a8e",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-env-env1624500229",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-6fafb52e7377",
+      "channel_ids": [
+        "notice-6fafb52e7377"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-6fafb52e7377",
+          "url": "https://home.knu.ac.kr/HOME/kac/sub.htm?nav_code=kac1622609930"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-kac-kac1622609930",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-459a4805de72",
+      "channel_ids": [
+        "notice-459a4805de72"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-459a4805de72",
+          "url": "https://home.knu.ac.kr/HOME/ue/sub.htm?nav_code=ue1616633942"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-ue-ue1616633942",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-423ad5624dbc",
+      "channel_ids": [
+        "notice-423ad5624dbc"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-423ad5624dbc",
+          "url": "https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-global-glo1729572883",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-5a80fc96a24d",
+      "channel_ids": [
+        "notice-5a80fc96a24d"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-5a80fc96a24d",
+          "url": "https://home.knu.ac.kr/HOME/volunteer/sub.htm?nav_code=vol1623744108"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-volunteer-vol1623744108",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-d365c7a64837",
+      "channel_ids": [
+        "notice-d365c7a64837"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-d365c7a64837",
+          "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?nav_code=knu1623817159"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:39+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-knujob-knu1623817159",
+      "started_at": "2026-11-11T01:30:39+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "knu-academic",
+      "channel_ids": [
+        "knu-academic"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "knu-academic",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-wbbs-stu_812",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-df44dd8507c1",
+      "channel_ids": [
+        "notice-df44dd8507c1"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-df44dd8507c1",
+          "url": "https://see.knu.ac.kr/content/board/notice.html"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-see-notice",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b1133d4c8b3b",
+      "channel_ids": [
+        "notice-b1133d4c8b3b"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b1133d4c8b3b",
+          "url": "http://biotech.knu.ac.kr/bbs/board.php?bo_table=sub6_1"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-biotech-sub6_1",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-b34ee1a00417",
+      "channel_ids": [
+        "notice-b34ee1a00417",
+        "notice-fefffa32e24c"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-b34ee1a00417",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-computer-sub6_1_a",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-6b04da14aae1",
+      "channel_ids": [
+        "notice-6b04da14aae1"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-6b04da14aae1",
+          "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-chinese-notice",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-a363da417a07",
+      "channel_ids": [
+        "notice-a363da417a07"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-a363da417a07",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-med-notice001",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-7414782e7dbb",
+      "channel_ids": [
+        "notice-7414782e7dbb"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-7414782e7dbb",
+          "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-dent-k1news",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    },
+    {
+      "channel_id": "notice-aibootcamp",
+      "channel_ids": [
+        "notice-aibootcamp"
+      ],
+      "duration_sec": 0.0,
+      "errors": [
+        {
+          "message": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀",
+          "source": "notice-aibootcamp",
+          "url": "https://aibootcamp.knu.ac.kr/notices/"
+        }
+      ],
+      "finished_at": "2026-11-11T01:30:40+09:00",
+      "listed": 0,
+      "mode": "daily",
+      "new": [],
+      "request_count": 0,
+      "skipped": [],
+      "source_board_id": "knu-aibootcamp-notices",
+      "started_at": "2026-11-11T01:30:40+09:00",
+      "successful": 0,
+      "truncated": false,
+      "unchanged": [],
+      "updated": [],
+      "window_complete": false
+    }
+  ],
+  "duration_sec": 1363.328,
+  "extras": {
+    "errors": [],
+    "request_count": 2,
+    "sources": [
+      {
+        "checked_at": "2026-11-11T01:30:40.560762+09:00",
+        "source": "weather",
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=35.87028&longitude=128.59111&daily=weather_code%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_probability_max&timezone=Asia%2FSeoul&start_date=2026-11-11&end_date=2026-11-11"
+      },
+      {
+        "checked_at": "2026-11-11T01:30:42.746012+09:00",
+        "source": "schedule",
+        "url": "https://www.knu.ac.kr/wbbs/wbbs/user/yearSchedule/index.action?menu_idx=43&vo.search_year=2026"
+      }
+    ]
+  },
+  "finished_at": "2026-11-11T01:30:43.612961+09:00",
+  "request_count": 148,
+  "started_at": "2026-11-11T01:08:00.284710+09:00"
+}
