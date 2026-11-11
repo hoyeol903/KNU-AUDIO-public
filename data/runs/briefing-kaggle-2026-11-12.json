@@ -1,0 +1,21 @@
+{
+  "app_file_sha256": {
+    "86a3eee17c68afdf6d6a2bf3216f98acc948f193957c0aab0f185a661cf39848.mp3": "86a3eee17c68afdf6d6a2bf3216f98acc948f193957c0aab0f185a661cf39848",
+    "aca49a912cb9a8e0c94a9202bcf60ced0d71689496f90ab18fc9ae0247bd71a3.mp3": "aca49a912cb9a8e0c94a9202bcf60ced0d71689496f90ab18fc9ae0247bd71a3",
+    "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a",
+    "d3a09869b3ec5b65769bb27276cd0836b164bb9f23358ba9abb19f8dc8e3009a.mp3": "340b2793eaee9b71a2190135c6ae372bd62d20bf438ab78401067fffdd200737",
+    "segments.json": "bec6e4ef94fa9ddd89d0301ddb51e2dfd6fdc875490d882ce667d57d389b14a9"
+  },
+  "audio_failures": 0,
+  "bundle_sha256": "54f57a32daed189d6bd685da62340a4be7b8b878ce9da1f6ccd19cb13496bc9d",
+  "github_sha": "9b2f2067c79fda4fb5aef7aede931313ad81729a",
+  "gpu": "Tesla T4",
+  "input_date": "2026-11-12",
+  "input_sha256": "e8b71416e72480e7641bd935db68da3e3aba29c3d4bebb3b96e9dda8d959f51d",
+  "kernel_id": "muyahoyeol/knu-audio-briefing-43056277309-1-b1",
+  "kernel_version": 1,
+  "run_attempt": "1",
+  "run_id": "43056277309",
+  "skipped_notices": 0,
+  "verified": true
+}
