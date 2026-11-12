@@ -1,0 +1,2751 @@
+{
+  "channels": [
+    {
+      "channel_id": "notice-ddb70636c525",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-04f9a84e582c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7537783c05b0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-56d213db968e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f5bf5684020e",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 학술제를 아래와 같이 개최합니다.\n20-22년도 입학생은 '학과적응 - 교내학술제' 영역에 해당되며, 23년도 이후 입학생은 '필수 - 교내학술제' 영역에 해당됩니다. (홈커밍데이 제외)\n1. 일시 : 2026. 11. 13. 금요일 13:00 ~ 17:00\n2. 장소 : 나이팅게일홀(206호)\n3. 참여대상 : 간호대학 학부 전교생\n4. 참여방법 : 통합정보시스템 - 큐브에서 신청 - 당일 학술제 참여\n* 큐브 신청 기간 : ~ 2026. 11. 13.(금) 10:00까지\n(서명부에 서명한 학생만 수료 처리됨)\n학생화면 웹URL https://knucube.knu.ac.kr/site/lecture00113883\n학생화면 모바일URL https://knucube.knu.ac.kr/site/lecture00313883",
+          "channel_id": "notice-f5bf5684020e",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-nurse-nur1624533209:5086",
+          "posted_at": "2026-11-06",
+          "reason": "reminder",
+          "source": "간호학과 · 학부 공지사항",
+          "title": "2026학년도 학술제 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwODYmc3RhcnRQYWdlPTAmbGlzdE5vPTI3OTgmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "졸업 30주년 동문 토크콘서트를 하오니 많은 참여 바랍니다.\n20-22년도 입학생은 '인성함양 - 명사초청특강' 영역에 해당되며, 23년도 이후 입학생은 '학과적응 - 전문가초청특강1(학과적응)' 영역에 해당됩니다.\n1. 일시 : 2026. 11. 13.(금) 17:00 ~ 18:00\n2. 장소 : 나이팅게일홀(206호)\n3. 참여방법 : 통합관리시스템 - 큐브에서 신청 - 당일 홈커밍데이 참여\n* 큐브 신청 기간 : ~2026. 11. 13.(금) 14:00까지\n(당일 서명부에 서명한 학생만 수료 처리됨)\n학생화면 웹URL https://knucube.knu.ac.kr/site/lecture00113884\n학생화면 모바일URL https://knucube.knu.ac.kr/site/lecture00313884",
+          "channel_id": "notice-f5bf5684020e",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-nurse-nur1624533209:5093",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "간호학과 · 학부 공지사항",
+          "title": "2026학년도 홈커밍데이 안내",
+          "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?mode=view&mv_data=aWR4PTUwOTMmc3RhcnRQYWdlPTAmbGlzdE5vPTI3OTgmdGFibGU9ZXhfYmJzX2RhdGFfbnVyc2UmbmF2X2NvZGU9bnVyMTYyNDUzMzIwOSZjb2RlPUlLdkczWnFrM1R5UyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-fd04b6b6208e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0158c1288046",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-541aff0da509",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-78e12cb6bc22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a6afbe817dd2",
+      "meals": [],
+      "notices": [
+        {
+          "body": "경북인문사회연구원(KIHSS)에서는 인문사회 분야 학문후속세대의 연구 참여 기회를 확대하고,\n단과대학과 연구원 학술연구교수 간 연구협력 기반을 강화하기 위해 학생연구원을 선발하여 차세대 연구자 멘토링 Lab을 운영합니다,\n가. 사업개요\n구 분\n내 용\n사업명\n2026 KIHSS 차세대 연구자 멘토링 Lab\n참여 단과대학\n인문대학·사회과학대학·경상대학·사범대학·생활과학대학·행정학부\n선발 인원\n단과대학별 2~3명, 총 16명\n선발 시기\n2026년 11월\n운영 기간\n2026년 12월~2027년 2월(3개월)\n운영 방식\n학생연구원–KIHSS 학술연구교수 멘토링 매칭\n핵심 성과\n2027년 1월 KIHSS 국제학술대회 포스터 발표\n최종 성과\n2027년 2월 연구활동 결과보고서 제출\n나. 선발규모\n단과대학\n기본 선발\n인문대학\n3명\n사회과학대학\n3명\n경상대학\n3명\n사범대학\n3명\n생활과학대학\n2명\n행정학부\n2명\n합 계\n16명\n다. 접수기간: 2026. 11. 17.(화)까지 huilin85@knu.ac.kr 메일로 제출\n라 . 제출서류:\n1) 학생연구원 신청자 명단(엑셀파일) 1부.\n2) 학생연구원 연구활동계획서[별지 제1호 서식] 1부.(소속 학과장 도장은 학부에서 처리함)\n3) 통장사본 1부.\n마. 문의처: 950-6025 또는 sim1215@knu.ac.kr (팀장 백현애)\n붙임 1. 경북인문사회연구원 학생연구원 선발 및 차세대 연구자 멘토링 Lab 운영계획 1부.\n2. (서식)학생연구원 신청자 명단(엑셀파일) 1부.\n3. (서식)학생연구원 연구활동계획서 및 연구결과보고서 각1부.\n4. (서식)포스터섹션 1부. 끝.",
+          "channel_id": "notice-a6afbe817dd2",
+          "dday": 4,
+          "deadline": "2026-11-17",
+          "id": "knu-kbiz-kbi1623370557:5889",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "경영학부 · 학부 공지사항",
+          "title": "2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab」 학생연구원 선발 안내",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MzImdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "인사혁신처 주관의 2026년 찾아가는 공직설명회가 개최됩니다.\n행사명: 2026년 찾아가는 공직설명회\n일시: 2026. 11. 11.(수) 13:00~15:00\n장소: 복지관 4층 강의실 1\n내용: 공무원 채용제도 설명 및 질의응답(인사처, 국방부, 경찰청, 모교출신 지역인재 7급 현직자)",
+          "channel_id": "notice-a6afbe817dd2",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-kbiz-kbi1623370557:5890",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "경영학부 · 학부 공지사항",
+          "title": "2026년 찾아가는 공직설명회 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?mode=view&mv_data=aWR4PTU4OTAmc3RhcnRQYWdlPTAmbGlzdE5vPTE4MzMmdGFibGU9ZXhfYmJzX2RhdGFfa2JpeiZuYXZfY29kZT1rYmkxNjIzMzcwNTU3JmNvZGU9QTdKVEE0R3QwbE45JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-8860bb9a4bc5",
+      "meals": [],
+      "notices": [
+        {
+          "body": "학생들의 실무 경험 및 진로 탐색을 위한 「2026학년도 동계 및 2027학년도 1학기 현장실습교육과정」을 다음과 같이 안내하오니 관심 있는 학생들의 많은 참여 바랍니다.\n1. 현장실습 설명회\n대구캠퍼스\n일시: 2026. 11. 23.(월) 16:30~\n장소: 글로벌플라자 경하홀Ⅱ\n내용: 현장실습 운영 안내 및 질의응답\n상주캠퍼스\n일시: 2026. 11. 24.(화) 14:00~\n장소: 복지회관 201호\n내용: 현장실습 운영 안내 및 질의응답\n2. 학생 모집 일정\n1차(집중) 모집: 2026. 11. 25.(수) ~ 11. 27.(금) 23:59까지\n2차(수시) 모집: 2026. 12. 7.(월)부터 교육과정별 모집 마감일까지\n※ 교육과정별 모집 마감일은 첨부된 학생모집 안내문을 확인하시기 바랍니다.\n3. 신청 방법\n통합포털 로그인 → 비교과교육과정(KNUCUBE) → 현장실습 메뉴에서 신청\n4. 참고사항\n현장실습 참여를 희망하는 학생은 모집 일정 및 교육과정별 세부 내용을 확인하시기 바랍니다.\n현장실습 관련 자세한 사항은 첨부파일을 참고하시기 바랍니다.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-8860bb9a4bc5",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-econ-eco1623370509:5183",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "경제통상학부 · 학부 공지사항",
+          "title": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정 안내",
+          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTUxODMmc3RhcnRQYWdlPTAmbGlzdE5vPTI2NDgmdGFibGU9ZXhfYmJzX2RhdGFfZWNvbiZuYXZfY29kZT1lY28xNjIzMzcwNTA5JmNvZGU9WGNXUmx6dkN1emk1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-a267229666ef",
+      "meals": [],
+      "notices": [
+        {
+          "body": "경북인문사회연구원(KIHSS)에서 인문사회 분야 학문후속세대의 연구 참여 기회를 확대하고, 단과대학과 연구원 학술연구교수 간 연구협력 기반을 강화하기 위하여\n다음과 같이 「차세대 연구자 멘토링 Lab」에 참여할 학생연구원을 선발하고자 하오니, 관심 있는 학생들의 많은 신청 바랍니다.\n구 분\n내 용\n사업명\n2026 KIHSS 차세대 연구자 멘토링 Lab\n참여 단과대학\n인문대학·사회과학대학·경상대학·사범대학·생활과학대학·행정학부\n선발 인원\n단과대학별 2~3명, 총 16명\n선발 시기\n2026년 11월\n운영 기간\n2026년 12월~2027년 2월(3개월)\n운영 방식\n학생연구원–KIHSS 학술연구교수 멘토링 매칭\n핵심 성과\n2027년 1월 KIHSS 국제학술대회 포스터 발표\n최종 성과\n2027년 2월 연구활동 결과보고서 제출\n가. 사업개요\n단과대학\n기본 선발\n인문대학\n3명\n사회과학대학\n3명\n경상대학\n3명\n사범대학\n3명\n생활과학대학\n2명\n행정학부\n2명\n합 계\n16명\n나. 선발규모\n다. 접수기간: 2026. 11. 11.(수) ~ 11. 18.(수) 18시까지\n라. 신청방법: 단대별로 수합하여 공문 제출\n마. 제출서류\n1) 학생연구원 신청자 명단(엑셀파일) [붙임2] 1부.\n2) 학생연구원 연구활동계획서[별지 제1호 서식] [붙임3] 1부.\n3) 통장사본 1부.",
+          "channel_id": "notice-a267229666ef",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-aran-ara1623718660:4898",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "고고인류학과 · 학부공지",
+          "title": "「2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab」 학생연구원 선발 안내(~11.17.)",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4OTgmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzAmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "진로취업과에서는 취업교육 프로그램 운영을 위한 기본자료 확보를 위하여 다음과 같이 취업의식조사를 실시하오니 많은 참여 바랍니다.\n가. 조 사 명: 2026년 재학생 취업의식조사\n나. 조사대상: 본교 재학생 3, 4학년 ※ 의대, 약대, 치대, 수의대 제외\n다. 조사기간: 2026. 11. 5.(목) ~ 12. 4.(금)\n라. 조사내용: 붙임 설문문항 참조\n마. 조사방법: 온라인 설문조사(URL: https://surveyl.ink/Kyungpook_Univ_2026)\n※ 선착순 500명 및 추첨 500명에게 각 5,000원 상당의 상품권 지급(총 1,000명)",
+          "channel_id": "notice-a267229666ef",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-aran-ara1623718660:4900",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "고고인류학과 · 학부공지",
+          "title": "2026년 재학생 취업의식조사 안내(~12.4.)",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDAmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzEmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들의 많은 참여 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-a267229666ef",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-aran-ara1623718660:4902",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "고고인류학과 · 학부공지",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내(설명회 11.23.)",
+          "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDImc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzMmdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7ff56c3af3e0",
+      "meals": [],
+      "notices": [
+        {
+          "body": "1. 관련: 학생처 진로취업과-8348(2026.11.02.) 2026학년도 동계 및 2027학년도 1학기 현장실습교육과정 운영 계획(안)\n2. 2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들이 참여할 수 있도록 적극 홍보하여 주시기 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n다. 홍보 포스터 배부: 문서함으로 배부 예정(11월 13일)\n라. 아울러 학과 교수님들의 현장실습에 대한 사전 인식 제고를 위해 「현장실습교육과정지도교수 안내사항(붙임2)」을 첨부하오니, 교수님들께 안내해 주시기 바랍니다.\n붙임 1. 현장실습교육과정 학생모집 안내문 1부.\n2. 현장실습교육과정 지도교수 안내사항 1부.\n3. 현장실습 포스터(웹게시용) 1부.\n4. 현장실습 포스터 배부표 1부. 끝",
+          "channel_id": "notice-7ff56c3af3e0",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knupolymer-knu1623888520:1724",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "고분자공학과 · 학사 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE3MjQmc3RhcnRQYWdlPTAmbGlzdE5vPTU0NiZ0YWJsZT1leF9iYnNfZGF0YV9rbnVwb2x5bWVyJm5hdl9jb2RlPWtudTE2MjM4ODg1MjAmY29kZT1aV0xhOGU1U0V1bWEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-8d0ba20b8a78",
+      "meals": [],
+      "notices": [
+        {
+          "body": "졸업예정자 삭제를 원하는 학생은 졸업예정자 삭제 신청서(첨부파일)를 작성하여 학과사무실로 제출 해 주시기 바랍니다.\n- 이메일: gy8547@knu.ac.kr\n2026학년도 2학기 졸업자격인정원 신청을 아래와 같이 안내하오니 해당 학생들은 기간 내에 신청하기 바랍니다.\n○ 신청기간: 2026. 10. 12.(월) ~ 12. 31.(목)\n※ 신청기간 경과 후 졸업자격 인정원 제출에 관하여는 소속학과 사무실로 문의 바람\n○ 대 상 자: 졸업자격인정 자격요건을 갖춘 재학생 및 수료생(휴학생 제외)\n※ 2027.2월 졸업예정자 및 2027.1학기 학사학위취득유예 신청 예정자는 반드시 졸업자격인정원을 제출해야 함\n○ 적용기준\n- 2007학년도 이전 입학자: 전공영역\n- 2008학년도부터 2011학년도까지 입학자: 실용영어 및 전공영역\n- 2012학년도부터 2015학년도까지 입학자: 실용영어, 학생상담지도교수의 상담 및 전공영역\n- 2016학년도 이후 입학자: 실용영어, 소프트웨어영역, 학생상담지도교수의 상담 및 전공영역\n※ 단, 전공영역은 전공영역을 추가로 평가하는 학과(부) 학생에 한하며, 별도의 졸업자격인정원을 제출하지 않음\n○ 신청방법: [통합정보시스템-졸업-졸업인정(대학)-졸업자격인정신청]에서 학생이 직접 신청하며, 증빙서류는 파일첨부 기능을 활용하여 업로드\n○ 면제대상: 편입생(상주대특례편입생포함), 외국인학생(~2021학번), 장애학생지원센터에 등록된 장애학생은\n실용영어, 소프트웨어영역, 학생상담지도교수의 상담영역 평가를 일괄 면제 처리함(전공영역 면제 아님)\n※ 면제자도 졸업자격인정원을 신청(인정구분에서 \"면제\"를 선택 입력해야함)해야 면제처리가 완료되므로 반드시 신청해야함\n※ 2022학년도부터 입학하는 외국인 학생: 소프트웨어 영역의 졸업자격 인정평가만 면제,\n실용영어영역의 졸업자격 인정평가는 한국어능력시험(TOPIK) 4급 이상으로 대체, 상담영역 충족해야 함\n보다 자세한 사항은 [학교홈페이지-교육-학사행정-학사안내-졸업자격인정제] 내용을 참고하시기 바랍니다.",
+          "channel_id": "notice-8d0ba20b8a78",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-ento-ent1625131133:998",
+          "posted_at": "2026-11-05",
+          "reason": "new",
+          "source": "곤충생명과학과 · 공지사항",
+          "title": "2026학년도 2학기 졸업자격인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/ento/sub.htm?mode=view&mv_data=aWR4PTk5OCZzdGFydFBhZ2U9MCZsaXN0Tm89Nzc2JnRhYmxlPWV4X2Jic19kYXRhX2VudG8mbmF2X2NvZGU9ZW50MTYyNTEzMTEzMyZjb2RlPWdQdTdFM0ROS0NLSyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": null,
+          "channel_id": "notice-8d0ba20b8a78",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-ento-ent1625131133:999",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "곤충생명과학과 · 공지사항",
+          "title": "2026학년도 2학기 곤충생명과학과 학생상담주간 운영안내",
+          "url": "https://home.knu.ac.kr/HOME/ento/sub.htm?mode=view&mv_data=aWR4PTk5OSZzdGFydFBhZ2U9MCZsaXN0Tm89Nzc2JnRhYmxlPWV4X2Jic19kYXRhX2VudG8mbmF2X2NvZGU9ZW50MTYyNTEzMTEzMyZjb2RlPWdQdTdFM0ROS0NLSyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-ab33c8b6f3d1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-cd772685aa0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-eaa2bcd13c4a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f3ba4290e5dd",
+      "meals": [],
+      "notices": [
+        {
+          "body": "https://on.knu.ac.kr/board/board.brd?boardId=stu_812&bltnNo=11794275897669\n2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055) 또는 국악학과 사무실(053-950-5670)",
+          "channel_id": "notice-f3ba4290e5dd",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-kmusic-kmu1622609949:1564",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "국악학과 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청안내",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MjAmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?search_type=&search_text=&popupDeco=&note_div=top&bltn_no=11794287947649&menu_idx=42&bbs_cde=stu_812\n2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)",
+          "channel_id": "notice-f3ba4290e5dd",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-kmusic-kmu1622609949:1565",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "국악학과 · 공지사항",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NjUmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MjEmdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?search_type=&search_text=&popupDeco=&note_div=top&bltn_no=11793768071704&menu_idx=42&bbs_cde=stu_812\n2026학년도 2학기 졸업자격인정원 신청을 아래와 같이 안내하오니 해당 학생들은 기간 내에 신청하기 바랍니다.\n○ 신청기간: 2026. 10. 12.(월) ~ 12. 31.(목)\n※ 신청기간 경과 후 졸업자격 인정원 제출에 관하여는 소속학과 사무실로 문의 바람\n○ 대 상 자: 졸업자격인정 자격요건을 갖춘 재학생 및 수료생(휴학생 제외)\n※ 2027.2월 졸업예정자 및 2027.1학기 학사학위취득유예 신청 예정자는 반드시 졸업자격인정원을 제출해야 함\n○ 적용기준\n- 2007학년도 이전 입학자: 전공영역\n- 2008학년도부터 2011학년도까지 입학자: 실용영어 및 전공영역\n- 2012학년도부터 2015학년도까지 입학자: 실용영어, 학생상담지도교수의 상담 및 전공영역\n- 2016학년도 이후 입학자: 실용영어, 소프트웨어영역, 학생상담지도교수의 상담 및 전공영역\n※ 단, 전공영역은 전공영역을 추가로 평가하는 학과(부) 학생에 한하며, 별도의 졸업자격인정원을 제출하지 않음\n○ 신청방법: [통합정보시스템-졸업-졸업인정(대학)-졸업자격인정신청]에서 학생이 직접 신청하며, 증빙서류는 파일첨부 기능을 활용하여 업로드\n○ 면제대상: 편입생(상주대특례편입생포함), 외국인학생(~2021학번), 장애학생지원센터에 등록된 장애학생은\n실용영어, 소프트웨어영역, 학생상담지도교수의 상담영역 평가를 일괄 면제 처리함(전공영역 면제 아님)\n※ 면제자도 졸업자격인정원을 신청(인정구분에서 \"면제\"를 선택 입력해야함)해야 면제처리가 완료되므로 반드시 신청해야함\n※ 2022학년도부터 입학하는 외국인 학생: 소프트웨어 영역의 졸업자격 인정평가만 면제,\n실용영어영역의 졸업자격 인정평가는 한국어능력시험(TOPIK) 4급 이상으로 대체, 상담영역 충족해야 함\n보다 자세한 사항은 [학교홈페이지-교육-학사행정-학사안내-졸업자격인정제] 내용을 참고하시기 바랍니다.",
+          "channel_id": "notice-f3ba4290e5dd",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-kmusic-kmu1622609949:1566",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "국악학과 · 공지사항",
+          "title": "2026학년도 2학기 졸업자격인정 신청 안내 (필독)",
+          "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?mode=view&mv_data=aWR4PTE1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTE1MjImdGFibGU9ZXhfYmJzX2RhdGFfa211c2ljJm5hdl9jb2RlPWttdTE2MjI2MDk5NDkmY29kZT1YQms5V0czN3pIcWwmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-ca78d3fd3c51",
+      "meals": [],
+      "notices": [
+        {
+          "body": "<학과 사무실 운영 안내(11/11(수), 2026년도 하반기 사범대학 교직원 스포츠의 날>\n2026년도 하반기 사범대학 교직원 스포츠의 날 행사’를 다음과 같이 시행하여 11월 11일 수요일 학과 사무실에 조교 부재 예정입니다.\n가. 일 시: 2026. 11. 11.(수) 09:00~18:00\n나. 장 소: 대구 간송미술관 일대\n다. 참석대상: 학장, 부학장, 교육연수원장, 미래교육센터장, IB글로벌교육센터장, 영재교육원장, 행정실장, 직원, 조교 등 54명\n- 서류 제출 등은 학과사무실 문밑으로 넣어두시고 급한연락은 010-****-0378로 문자 부탁드립니다.\n- 학과 사무실 방문 예정이신 분은 일정 참고 부탁드립니다.",
+          "channel_id": "notice-ca78d3fd3c51",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-koredu-kor1622459695:302",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "국어교육과 · 공지사항",
+          "title": "<학과 사무실 운영 안내(11/11(수), 2026년도 하반기 사범대학 교직원 스포츠의 날>",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTMwMiZzdGFydFBhZ2U9MCZsaXN0Tm89MTg5JnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "＜학과사무실 운영 관련 안내(11/13(금))>\n안녕하세요, 국어교육과 사무실 운영 관련 안내 사항입니다.\n- 11월 13일 금요일 조교 연가 예정입니다. 서류 제출 등은 학과사무실 문밑으로 넣어두시고 급한연락은 010-****-0378로 문자 부탁드립니다.\n학과 사무실 방문 예정이신 분은 일정 참고 부탁드립니다.",
+          "channel_id": "notice-ca78d3fd3c51",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-koredu-kor1622459695:303",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "국어교육과 · 공지사항",
+          "title": "＜학과사무실 운영 관련 안내(11/13(금))>",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTMwMyZzdGFydFBhZ2U9MCZsaXN0Tm89MTkwJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ca78d3fd3c51",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-koredu-kor1622459695:305",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "국어교육과 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?mode=view&mv_data=aWR4PTMwNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTkxJnRhYmxlPWV4X2Jic19kYXRhX2tvcmVkdSZuYXZfY29kZT1rb3IxNjIyNDU5Njk1JmNvZGU9cWtkZ08yWFBTN1l3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-6c1f8a512fa4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b7eb69e8405d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74a3f719131b",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2027학년도 일반대학원 1학기 2차 모집을 안내합니다.\n원서접수기간: 2026. 11. 13(금) - 20(금)\n면접구술고사: 2026. 12. 8(화) 10:30 ~\n*붙임의 모집요강 및 기계공학과 포스터 참조할 것.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-74a3f719131b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-me-me1623370438:6931",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "기계공학부 · 학부 공지사항",
+          "title": "2027학년도 일반대학원 1학기 2차 모집 안내(대학원 기계공학과)",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY5MzEmc3RhcnRQYWdlPTAmbGlzdE5vPTIwMjEmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "1. 도서관에서는 대학 구성원의 학업능력 향상과 연구력 증진을 위해 다양한 전자자원을 구독·제공하고 있으며, 전자자원 활용 증대를 위해 이용교육을 실시하고 있습니다.\n2. 이에, 국내 전자자원 DBpia에서 외국인 유학생을 위한 DBpia AI 교육을 아래와 같이 실시하오니, 유학생들은 참여하기 바랍니다.\n가. 교육명: DBpia AI for a Successful Student Life in Korea (English Session)\nHow to Use DBpia AI: For International Students\n교육방식\n진행언어\n자막지원\n신청링크\n온라인 실시간 (ZOOM)\n영어\n15개 언어\n(실시간 번역 자막)\n신청하기\n나. 교육강사: 최제서(DBpia 전문 교육강사)\n다. 교육일시: 2026. 11. 19.(목) 10:00-10:50 (50분)\n라. 교육내용:\n1) 다국어 기능을 활용한 한국어 영어 논문 이해(시연)\n2) 논문 작성, 디펜스(발표·심사) 준비 등 DBpia AI 활용\n마. 유의사항:\n1) 본 교육은 DBpia AI 구독 회원기관 전체 대상 연합교육\n2) 접속 방법은 신청 후 신청자에게 개별 안내 예정\n바. 문의처: 누리미디어 영업기획팀 김병국\n02) 710-5310 / class1264@nurimedia.co.kr\n붙임 DBpia AI 교육 홍보물 1부. 끝",
+          "channel_id": "notice-74a3f719131b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-me-me1623370438:6932",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "기계공학부 · 학부 공지사항",
+          "title": "외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY5MzImc3RhcnRQYWdlPTAmbGlzdE5vPTIwMTkmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 2학기 ​KNU 글로벌 대학원 윈터스쿨 겨울계절수업을 대학원 기계공학과에서 1과목 신설하여 개설할 예정이니 학석사연계과정 학생들은 수강신청하기 바랍니다.\n- 개설과목: AI응용고등공학수학(담당교수 스트븐백교수 University of Virginia)\n- 수업방식: 비대면\n- 수강신청기간: 2026. 11. 25(수) 13:00 ~ 26(목) 17:59\n* 학과에서 강좌를 개설하면 세부추진일정을 공지할 예정임",
+          "channel_id": "notice-74a3f719131b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-me-me1623370438:6935",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "기계공학부 · 학부 공지사항",
+          "title": "2026학년도 2학기 KNU 글로벌 대학원 윈터스쿨 겨울계절수업 안내",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY5MzUmc3RhcnRQYWdlPTAmbGlzdE5vPTIwMjAmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "진로취업과에서는 2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니\n관심있는 학생들은 참여하기 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월)\n16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화)\n14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~\n11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별\n모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털\n로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n붙임 1. 현장실습교육과정 학생모집 안내문 1부.\n2. 현장실습 포스터(웹게시용) 1부.\n3. 현장실습 포스터 배부표 1부. 끝\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-74a3f719131b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-me-me1623370438:6936",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "기계공학부 · 학부 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY5MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTIwMjEmdGFibGU9ZXhfYmJzX2RhdGFfbWUmbmF2X2NvZGU9bWUxNjIzMzcwNDM4JmNvZGU9MGJvY0hDRkhlNDNRJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-61c2fdac4b03",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2fdcd3cab366",
+      "meals": [],
+      "notices": [
+        {
+          "body": "참고바랍니다",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3262",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "학과발전계획",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjImc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTImdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)\n※ 세부 내용은 아래에 첨부된 대학 전과 선발 안내(붙임 1) 참조\n붙임 1. 2027학년도 대학 전과 선발 안내 1부\n2. 학과(부)별 전과 선발 인원 1부. 끝.",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3263",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTMmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3264",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTQmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 2학기 졸업자격인정원 신청을 아래와 같이 안내하오니 해당 학생들은 기간 내에 신청하기 바랍니다.\n○ 신청기간: 2026. 10. 12.(월) ~ 12. 31.(목)\n※ 신청기간 경과 후 졸업자격 인정원 제출에 관하여는 소속학과 사무실로 문의 바람\n○ 대 상 자: 졸업자격인정 자격요건을 갖춘 재학생 및 수료생(휴학생 제외)\n※ 2027.2월 졸업예정자 및 2027.1학기 학사학위취득유예 신청 예정자는 반드시 졸업자격인정원을 제출해야 함\n○ 적용기준\n- 2007학년도 이전 입학자: 전공영역\n- 2008학년도부터 2011학년도까지 입학자: 실용영어 및 전공영역\n- 2012학년도부터 2015학년도까지 입학자: 실용영어, 학생상담지도교수의 상담 및 전공영역\n- 2016학년도 이후 입학자: 실용영어, 소프트웨어영역, 학생상담지도교수의 상담 및 전공영역\n※ 단, 전공영역은 전공영역을 추가로 평가하는 학과(부) 학생에 한하며, 별도의 졸업자격인정원을 제출하지 않음\n○ 신청방법: [통합정보시스템-졸업-졸업인정(대학)-졸업자격인정신청]에서 학생이 직접 신청하며, 증빙서류는 파일첨부 기능을 활용하여 업로드\n○ 면제대상: 편입생(상주대특례편입생포함), 외국인학생(~2021학번), 장애학생지원센터에 등록된 장애학생은\n실용영어, 소프트웨어영역, 학생상담지도교수의 상담영역 평가를 일괄 면제 처리함(전공영역 면제 아님)\n※ 면제자도 졸업자격인정원을 신청(인정구분에서 \"면제\"를 선택 입력해야함)해야 면제처리가 완료되므로 반드시 신청해야함\n※ 2022학년도부터 입학하는 외국인 학생: 소프트웨어 영역의 졸업자격 인정평가만 면제,\n실용영어영역의 졸업자격 인정평가는 한국어능력시험(TOPIK) 4급 이상으로 대체, 상담영역 충족해야 함\n보다 자세한 사항은 [학교홈페이지-교육-학사행정-학사안내-졸업자격인정제] 내용을 참고하시기 바랍니다.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3265",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "2026학년도 2학기 졸업자격인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjUmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTUmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "경북대학교 설립 80주년을 기념하여 「2026 인문국제학술주간 국제학술대회」를 개최하오니,\n학내 구성원 및 관심 있는 분들의 많은 참여를 바랍니다.\n< 행사 개요 >\n- 행사명: 2026 인문국제학술주간 국제학술대회\n- 주 제: 연결의 인문학 (The Humanities of Connectedness)\n- 일 시: 2026. 11. 12.(목) ~ 11. 13.(금) [2일간]\n- 장 소: 인문대학, 인문한국진흥관, 대학원동 일원\n- 참석 대상: 내외 귀빈, 국내외 연구자, 학생 및 시민 등\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3266",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "[인문대학] 경북대학교 설립 80주년 기념 행사 '2026 인문국제학술주간 국제학술대회' 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTYmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "KNU 구성원 간 연결을 강화하고 음악을 통한 소통‧화합의 장을 마련하고자, 함께하는 KNU 가을 음악회를 다음과 같이 개최하오니 많은 참석 바랍니다.\n- 행 사 명: 함께하는 KNU 가을 음악회\n- 일 시: 2026. 11. 12.(목) 12:10~13:00\n- 장 소: 첨성별마루(급수탑 주변 공원)\n- 주요내용: 성악 앙상블 및 오케스트라 브라스 밴드 음악 공연, 간단한 다과 제공",
+          "channel_id": "notice-2fdcd3cab366",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knurussian-knu1742773842:3267",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "노어노문학과 · 학부 공지사항",
+          "title": "함께하는 KNU 가을 음악회 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/knurussian/sub.htm?mode=view&mv_data=aWR4PTMyNjcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNTcmdGFibGU9ZXhfYmJzX2RhdGFfa251cnVzc2lhbiZuYXZfY29kZT1rbnUxNzQyNzczODQyJmNvZGU9QnFZdFplV1VrYkd0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-dc7fc6a93fe8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e3a4a5455384",
+      "meals": [],
+      "notices": [
+        {
+          "body": null,
+          "channel_id": "notice-e3a4a5455384",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-cals-cal1623200331:494",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "농업생명과학대학 · 공지사항",
+          "title": "26 11 11 (스마트생물산업기계공학) 전국 농과계 대학 농업 AI경진대회 우수상, 생성데이터활용상 수상",
+          "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?mode=view&mv_data=aWR4PTQ5NCZzdGFydFBhZ2U9MCZsaXN0Tm89MTA5JnRhYmxlPWV4X2Jic19kYXRhX2NhbHMmbmF2X2NvZGU9Y2FsMTYyMzIwMDMzMSZjb2RlPUNkMzRVb3NidXl0TCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-12a353fc2eb8",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-683cb3e528ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0ef73fec9014",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d42e73c1be80",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-30f51dd33791",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-750dff5618d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ddfc5b2ca163",
+      "meals": [],
+      "notices": [
+        {
+          "body": "안녕하세요, 대학원 로봇및스마트시스템공학과입니다.\n2026학년도 2학기 2차 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩을 다음과 같이 안내하오니 대학원 진학에 관심있는 학부생들의 많은 신청 바랍니다.\n○ (행사명) 2026학년도 2학기 2차 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩\n○ (참석대상) 대학원 로봇및스마트시스템공학과 진학에 관심있는 학부생 등\n○ (행사일시 및 장소)\n- 일시: 2026. 11. 18.(수) 12시\n- 장소: 첨단기술융합대학 2층 202호\n○ (사전신청안내)\n- 신청링크: https://forms.gle/jucR3gZGBVr7DDJS7\n- 신청기간: 2026. 11. 13.(금) 18:00까지\n※진학설명회 참석 학생은 식사 준비를 위해 구글폼 링크로 11.13.(금) 18:00까지 사전신청하여 주시기 바랍니다.",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-robot-rob1623632307:859",
+          "posted_at": "2026-11-04",
+          "reason": "reminder",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] 2026학년도 2학기 2차 대학원 로봇및스마트시스템공학과 진학설명회 및 오픈랩 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NzgyJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "안전관리총괄본부에서는 안전에 대한 경각심 고취 및 안전문화 전파를 위하여 안전 홍보게시판의 최신 안전자료(연구실안전 2026-004호)를 안내합니다.\n첨부파일중 이미지 미리보기\n첨부파일중 이미지 미리보기",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-robot-rob1623632307:873",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] [안전홍보] 2026 연구실안전 페스티벌 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg3MyZzdGFydFBhZ2U9MCZsaXN0Tm89Nzc4JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "도서관에서는 대학 구성원의 학업능력 향상과 연구력 증진을 위해 다양한 전자자원을 구독·제공하고 있으며, 전자자원 활용 증대를 위해 이용교육을 실시하고 있습니다.\n이에, 국내 전자자원 DBpia에서 외국인 유학생을 위한 DBpia AI 교육을 아래와 같이 실시하오니, 유학생들의 참여 바랍니다.\n가. 교육명: DBpia AI for a Successful Student Life in Korea (English Session)\nHow to Use DBpia AI: For International Students\n교육방식\n진행언어\n자막지원\n신청링크\n온라인 실시간 (ZOOM)\n영어\n15개 언어\n(실시간 번역 자막)\n신청하기\n나. 교육강사: 최제서(DBpia 전문 교육강사)\n다. 교육일시: 2026. 11. 19.(목) 10:00-10:50 (50분)\n라. 교육내용:\n1) 다국어 기능을 활용한 한국어 영어 논문 이해(시연)\n2) 논문 작성, 디펜스(발표·심사) 준비 등 DBpia AI 활용\n마. 유의사항:\n1) 본 교육은 DBpia AI 구독 회원기관 전체 대상 연합교육\n2) 접속 방법은 신청 후 신청자에게 개별 안내 예정\n바. 문의처: 누리미디어 영업기획팀 김병국 02) 710-5310 / class1264@nurimedia.co.kr\n붙임 DBpia AI 교육 홍보물 1부.",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-robot-rob1623632307:875",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] 외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg3NSZzdGFydFBhZ2U9MCZsaXN0Tm89Nzc5JnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "생활관카페 및 GS25 편의점(생활관점)이 소방공사로 인해 아래 기간동안 임시 휴점하오니, 이용에 참고하여 주시기 바랍니다.\n아울러, 이용에 다소 불편하시더라도 양해를 부탁드리며, 휴점 기간 중에는 생활협동조합의 다른 매장을 이용하여 주시기 바랍니다.\n▣ 휴점 기간\n매 장 명\n휴점 기간\n비 고\n생활관카페, GS25 편의점(생활관점)\n11.16.(월)17:30~11.23.(월)08:30",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-robot-rob1623632307:876",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] 생활관카페 및 GS25 편의점(생활관점) 임시 휴점 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg3NiZzdGFydFBhZ2U9MCZsaXN0Tm89NzgwJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "연구실 사고 발생 시 신속한 사고 처리를 위하여 아래와 같이「경북대학교 안전사고 실무 매뉴얼」을 안내하오니, 소속 연구실에서는 매뉴얼을 숙지 및 비치하여 주시기 바랍니다.\n가. 주요내용\n1) 연구실 안전 사고(연구실 안전사고 분류, 사고 대응 및 처리 절차, 주관 부서 및 유관기관,비상연락처, 응급의료기관 및 분야별 전문병원)\n2) 연구실 사고유형별 행동 절차(화학. 가스, 전기, 생물, 기계, 기타 사고)\n나. 자세한 내용은 [붙임] 매뉴얼 참조\n아울러, 연구실 사고발생 시 안전관리총괄본부(053-950-7667) 로 즉시 신고하여 주시기 바라며, 「경북대학교 안전사고 실무 매뉴얼」은 연구실안전관리시스템(http://safe.knu.ac.kr) → 공지사항에 게시되어 있음을 알려드립니다.\n붙임 경북대학교 연구실 안전사고 실무 매뉴얼(’26.03) 1부. 끝.",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-robot-rob1623632307:877",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] 경북대학교 연구실 안전사고 실무 매뉴얼 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg3NyZzdGFydFBhZ2U9MCZsaXN0Tm89NzgxJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "교수학습센터에서는 수업에 참여한 학생들의 학습경험을 에세이와 숏폼으로 제작 및 공유함으로써 우수 수업 사례 발굴을 위해 「제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전)」을 다음과 같이 시행하오니 많은 학생들의 참여 바랍니다.\n가. 공모대상: 2026학년도 1⦁2학기 수강한 학부 개설 강좌\n※ 전공, 교양, 교직, 일반선택 교과목 모두 포함\n※ 2025학년도 겨울 계절수업, 2026학년도 여름 계절수업 포함\n나. 응모자격: 2026학년도 2학기 현재 재학 중인 학부생\n※ 휴학 및 수업 연한 초과자 제외\n다. 응모분야: 총 4개 분야\n① [에세이] 전공·교직수업 ② [숏폼] 전공·교직수업\n③ [에세이] 교양·일반선택수업 ④ [숏폼] 교양·일반선택수업\n라. 접수기간: 2026. 11. 9.(월)∼12. 11.(금)\n마. 응모방법: KNUCUBE(knucube.knu.ac.kr)를 통한 접수\n- 파일명은 (에세이)_OO학과_OOO(이름), (숏폼)_OO학과_OOO(이름)으로 ZIP(확장자) 등 한 개의 압축 파일로 제출\n바. 시상계획: 총 68편에 대한 상금 및 상장 수여\n- 최우수상(총장상) 4편, 우수상 26편, 장려상 38편\n※ 심사 결과에 따라 예산 범위 내 시상 인원 변경 가능\n붙임 1. 제20회 별빛수기 공모전 개최 안내문 1부.\n2. 제20회 별빛수기 공모전 응모서(서식) 1부.\n3. 제20회 별빛수기 공모전 포스터 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ddfc5b2ca163",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-robot-rob1623632307:878",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "로봇공학과 · 공지사항",
+          "title": "[안내] 제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전) 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?mode=view&mv_data=aWR4PTg3OCZzdGFydFBhZ2U9MCZsaXN0Tm89NzgyJnRhYmxlPWV4X2Jic19kYXRhX3JvYm90Jm5hdl9jb2RlPXJvYjE2MjM2MzIzMDcmY29kZT0yclQ4MThQbFhUM3Qmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-fe90b8f3beb7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-956827a355a7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ec96ad09ef78",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f4ac509b75c4",
+      "meals": [],
+      "notices": [
+        {
+          "body": "개교 80주년을 기념으로 진행하는 KNU Research Festival의 세부 프로그램으로 AI 분야 명사를 초청하여 신기술 신산업 토크 콘서트를 아래와 같이 개최하오니, 교내 구성원이 많이 참여할 수 있도록 적극 홍보하여 주시기 바랍니다.\n가. 행 사 명: 신기술 신산업 토크 콘서트\n나. 강 사: 김상균 교수(경희대학교 경영대학원)\n다. 주 제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”\n라. 일 시: 2026. 11. 23.(월) 14:00 ~ 16:00\n마. 장 소: 글로벌플라자 경하홀Ⅰ\n바. 대 상: 학생 및 교직원\n사. 참가신청\n1) 신청방법: 링크(https://wrl.kr/755o0ELx) 또는 QR코드 스캔\n2) 신청기간: 2026.11.13.(금)까지\n※ 참가시 소정의 기념품 증정",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-physics-phy1645592197:4789",
+          "posted_at": "2026-10-30",
+          "reason": "reminder",
+          "source": "물리학과 · 공지사항",
+          "title": "개교 80주년 기념 「신기술 신산업 토크콘서트」개최",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ3ODkmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "글로벌 연구 환경 구축 및 내·외국인 구성원 간의 협력 활성화를 통한 연구 경쟁력 강화를 위하여 「2026학년도 KNU Global Excellence Lab 지원사업」을 다음과 같이 추진하오니 대상자들에게 많은 안내 바랍니다.\n1. 사업개요\n가. 추진목적: 본교 전임교원 연구실 글로벌 문화 조성 및 대학원생 간 협력 촉진\n나. 대 상: 일반대학원 석·박사 및 통합과정 재학생\n※ 대표자는 1학기 이상 이수 필수, 외국인 대학원생 1명 이상을 포함한 팀 단위 지원\n다. 지원내용: 연구실 국제화 현황 보고서 평가를 통해 우수 연구실 선정 및 상금 지급\n라. 평가방법\n- 정성평가: 영어 사용환경, 외국인 학생 지원 제도, 협력 모범사례 등\n- 정량평가: 외국인 대학원생 연구 실적, 재학·졸업 인원 등\n마. 시상내역: 총 9,800,000원(대상 2팀, 최우수상 4팀, 우수상 10팀)\n※ 인문사회계열 및 이공계열로 구분하여 접수 및 시상\n2. 세부계획:【붙임】참조\n3. 추진일정(※ 아래의 일정은 진행상황에 따라 변경될 수 있음)\n가. 지원공고: 2026. 11. 9.(월)~11. 23.(월)\n나. 지원서접수: 2026. 11. 17.(화)~11. 23.(월)\n다. 선발심사: 2026. 11. 24.(수)~11. 30.(월)\n라. 결과발표: 2026. 12. 2.(수)\n마. 시상계획: 2026. 12. 9.(수) 예정",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-physics-phy1645592197:4805",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "물리학과 · 공지사항",
+          "title": "「2026학년도 KNU Global Excellence Lab 지원사업」추진 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ4MDUmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "^^\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-physics-phy1645592197:4806",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "물리학과 · 공지사항",
+          "title": "2027학년도 1학기 2차 일반대학원 신입생 모집 안내(11.13.(금)-11.20.(금) 18:00)",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ4MDYmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 겨울계절수업 타대학(국립경국대학교) 교류 수학을 붙임과 같이 안내하오니 수학을 희망하는 학생이 있을 경우 기한내 추천하여 주시기 바랍니다.\n가. 추천기한: 2026. 11. 16.(월) 18:00까지(학사과로 공문 제출)\n※ 학생 신청 기한: 2026. 11. 13.(금) 13:00까지(통합정보시스템)\n나. 제출서류: 수학추천자 명단(교류대학 서식) 및 수학지원서(통합정보시스템에서 다운로드)\n다. 타 대학 교류신청 및 승인\n1) 교류 신청: 통합정보시스템에서 입력 후 저장 및 신청\n※ 경로: 통합정보시스템 로그인 → 학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학신청\n2) 교류 승인: 통합정보시스템에서 승인\n※ 경로: 통합정보시스템 로그인 → 학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학생관리",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-physics-phy1645592197:4807",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "물리학과 · 공지사항",
+          "title": "2026학년도 겨울계절수업 타대학(국립경국대학교 학부) 수학 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ4MDcmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjYmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 겨울계절수업 타대학(울산과학기술원) 교류 수학을 붙임과 같이 안내하오니 수학을 희망하는 학생이 있을 경우 기한내 추천하여 주시기 바랍니다.\n가. 추천기한: 2026. 11. 16.(월) 18:00까지(학사과로 공문 제출)\n※ 학생 신청 기한: 2026. 11. 13.(금) 13:00까지(통합정보시스템)\n나. 제출서류: 수학추천자 명단(교류대학 서식) 및 수학지원서(통합정보시스템에서 다운로드)\n다. 타 대학 교류신청 및 승인\n1) 교류 신청: 통합정보시스템에서 입력 후 저장 및 신청\n※ 경로: 통합정보시스템 로그인 → 학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학신청\n2) 교류 승인: 통합정보시스템에서 승인\n※ 경로: 통합정보시스템 로그인 → 학사행정 → 학생지원 → 국내교류학생관리 → 타대학수학생관리\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-physics-phy1645592197:4808",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "물리학과 · 공지사항",
+          "title": "2026학년도 겨울계절수업 타대학(울산과학기술원 학부) 수학 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ4MDgmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjcmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들이 참여할 수 있도록 적극 홍보하여 주시기 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-physics-phy1645592197:4809",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "물리학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ4MDkmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNjgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7dbc635b2399",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)\n※ 세부 내용은 아래에 첨부된 대학 전과 선발 안내(붙임 1) 참조",
+          "channel_id": "notice-7dbc635b2399",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-masscom-mas1614079680:1576",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "미디어커뮤니케이션학과 · 학부 공지사항",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?mode=view&mv_data=aWR4PTE1NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTM3NyZ0YWJsZT1leF9iYnNfZGF0YV9tYXNzY29tJm5hdl9jb2RlPW1hczE2MTQwNzk2ODAmY29kZT1yN0hweEpPYUV6UGMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7e56cbeca2ee",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-73ffa1763744",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9b84b4adc47a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5015ce1e74b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2ae1ca96e3de",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9f20cdb4b423",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7502f997e5e7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-bbfcc8756400",
+      "meals": [],
+      "notices": [
+        {
+          "body": "두산연강재단에서 2027년도 장학생을 선발하오니, 관심있는 학생들은 기한 내 신청하시기 바랍니다.\n1. 접수 기간: 2026. 10. 14.(수) 9시 ~ 2026. 11. 13.(금) 18시\n2. 접수 방법: 두산연강재단 홈페이지 https://www.yonkang.org/kr/support/information/?id=109 신청(홈페이지에서 신청서 작성 및 서류 스캔 파일 업로드 후 제출)\n3. 장학 금액: 졸업시까지 학기당 학업장려금 400만원 지원(재단 내부 기준 충족시), 장학생 워크숍 및 소모임 참여\n4. 지원 자격: 대한민국 국적의 4년제 학과에 속한 학부생, 2027.3월 기준 2학년 1학기 진학 예정자 등(상세사항 공고문 참조)\n5. 문의처: 두산연강재단 학술장학팀 장학 담당자 jaegyeom.jo@doosan.com / 02-705-5514 (평일 10시~17시, 점심시간 12시~13시 제외)\n※ 상세사항은 붙임 참조\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-knusw-knu1623026178:8953",
+          "posted_at": "2026-10-14",
+          "reason": "reminder",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "2027학년도 두산연강재단 장학생 선발 공고",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTg5NTMmc3RhcnRQYWdlPTIwJmxpc3RObz0zMDY5JnRhYmxlPWV4X2Jic19kYXRhX2tudXN3Jm5hdl9jb2RlPWtudTE2MjMwMjYxNzgmY29kZT1uUkk5MFpFdjNFZFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "경북인문사회연구원(KIHSS)에서는 인문사회 분야 학문후속세대의 연구 참여 기회를 확대하고, 단과대학과 연구원 학술연구교수 간 연구협력 기반을 강화하기 위해 학생연구원을 선발하여 차세대 연구자 멘토링 Lab을 운영합니다.\n○ 사업개요\n- 사업명 : 2026 KIHSS 차세대 연구자 멘토링 Lab\n- 선발 인원 : 사회과학대학 3명\n- 선발 시기 : 2026년 11월\n- 운영 기간 : 2026년 12월~2027년 2월(3개월)\n- 운영 방식 : 학생연구원–KIHSS 학술연구교수 멘토링 매칭\n- 핵심 성과 : 2027년 1월 KIHSS 국제학술대회 포스터 발표\n- 최종 성과 : 2027년 2월 연구활동 결과보고서 제출\n○ 접수기간 : 2026. 11. 11.(수) ~ 11. 19.(목) 15시까지\n○ 제출서류\n- 학생연구원 연구활동계획서\n- 통장사본\n○ 제출장소 : 사회복지학부 사무실(사회과학대학 210호)\n자세한 사항은 붙임 파일 확인하시기 바랍니다.",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knusw-knu1623026178:9000",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab 학생연구원 선발 안내",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTkwMDAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwOTMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "교수학습센터에서는 2027학년도 학습지원 프로그램 운영을 위한 요구조사를 다음과 같이 실시하고 있습니다.\n가. 대상: 재학 중인 학부생\n나. 조사기간: 10. 28.(수)~12. 6.(일)\n다. 조사내용: 학습지원 프로그램 참여 인식, 개선 영역 및 효과성, 운영 방법 등\n라. 참여방법: 네이버 폼을 통한 온라인 설문조사(htts://숏.한국/27학습요구/)\n마. 참여혜택: 추첨을 통해 참여 학생에게 5,000원 상당의 편의점 교환권 지급(700명)",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knusw-knu1623026178:9002",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "[교수학습센터] 2027학년도 학습지원 프로그램 운영을 위한 요구조사 실시 안내",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTkwMDImc3RhcnRQYWdlPTAmbGlzdE5vPTMwOTEmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정 설명회를 아래와 같이 개최하오니 관심있는 학생들의 많은 참여 바랍니다.\n* 대구캠퍼스: 11.23.(월) 16:30 글로벌플라자 경하홀2\n* 상주캠퍼스: 11.24.(화) 14:00 복지회관 강의실 201호\n* 학생(집중)모집: 11.25.(수)~11.27.(금)",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knusw-knu1623026178:9003",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "[진로취업과] 2026년 동계 및 2027년 1학기 현장실습교육과정 설명회 개최",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTkwMDMmc3RhcnRQYWdlPTAmbGlzdE5vPTMwOTImdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "※ 신청서 링크 : https://bit.ly/REALLAB\n\"우리 지역의 문제, AI와 함께 직접 해결해 볼까?\"\n지역사회 문제를 발견하고, AI로 분석하고, 새로운 정책을 제안하는 특별한 경험!\n경북대학교 사회과학대학 재학생들을 대상으로 「REAL-LAB」 참여자를 모집합니다!\n■ 'REAL-LAB'이 뭐예요?\nREAL-LAB은 대학생이 직접 지역사회 문제를 발굴하고, 생성형 AI(GPT)와 현장조사(인터뷰·설문 등)를 활용해 실현 가능한 정책 아이디어를 만드는 팀 프로젝트입니다.\n단순한 교육을 넘어, 팀원들과 함께 지역을 탐색하고 전문가의 멘토링을 통해 우리 지역에 필요한 정책을 직접 제안하는 활동입니다!\n■ 참여 혜택\n○ 하나! 개별 활동 장학금\n- 인당 최대 80만 원 지급 (전 회차 참여 시)\n○ 둘! 팀별 성과 상금\n팀별 정책 제안 성과에 따라 모든 참여팀에 상금을 지급합니다!\n- 대상 (1팀): 70만 원\n- 최우수상 (1팀): 40만 원\n- 우수상 (그 외 모든 팀): 팀당 20만 원\n※ 최종 참여팀 수는 4~6개 팀으로 운영될 예정이며, 공동 우수상은 대상·최우수상 수상팀을 제외한 모든 팀에 동일하게 지급됩니다.\n※ 상금은 개인별이 아닌 팀 단위로 지급됩니다.\n○ 셋! AI 활용부터 정책 제안까지!\n- AI 활용 교육 및 지역사회 현장조사 경험\n- 전문가 멘토링과 팀별 정책 아이디어 개발\n- 최종 성과공유회에서 우리 팀의 정책 제안 발표\n■ 모집 안내\n○ 모집 기간: 2026. 11. 12.(목) ~ 11. 23.(월)\n○ 모집 대상: 경북대학교 사회과학대학 학부 및 대학원 재학생\n○ 모집 인원: 총 20명 (4~6개 팀, 팀별 3~5명으로 구성)\n문의처)\n협동조합 소이랩 053-941-9003",
+          "channel_id": "notice-bbfcc8756400",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knusw-knu1623026178:9010",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "사회복지학부 · 학부 공지사항",
+          "title": "[국립대학육성사업] AI 기반 지역사회 문제 해결을 위한 연구 프로젝트「REAL-LAB」참여자 모집",
+          "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?mode=view&mv_data=aWR4PTkwMTAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwOTMmdGFibGU9ZXhfYmJzX2RhdGFfa251c3cmbmF2X2NvZGU9a251MTYyMzAyNjE3OCZjb2RlPW5SSTkwWkV2M0VkUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-1268b7a10e0b",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-8b73f625639c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afb535aeb941",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청 대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청 기간: 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※ 등록 횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4. 신청 방법: 통합정보시스템 로그인 후 신청 [붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-afb535aeb941",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bioedu-bio1622460188:321",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "생물교육과 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/bioedu/sub.htm?mode=view&mv_data=aWR4PTMyMSZzdGFydFBhZ2U9MCZsaXN0Tm89MjIwJnRhYmxlPWV4X2Jic19kYXRhX2Jpb2VkdSZuYXZfY29kZT1iaW8xNjIyNDYwMTg4JmNvZGU9S0xBSExoaVMzWXVkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b5e6a10e952e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9bcb92908bc9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3bb6de2335b3",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-fe8857afa2d4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-0b9f7e3a61e0",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f9d9ecdb1284",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2487b99aea65",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026년 국립대학육성사업의 일환으로 전교생을 대상으로 다양한 전공 분야와 AI기술의 융합을 통한 AI+X 혁신역량 강화 및 글로벌 융합인재 양성을 위해 글로벌 AI산업 현장체험, 프로젝트 기반학습(PBL) 및 해외기업 인턴십을 연계한 2026학년도 동계 AI PBL & 현장체험 프로그램(베트남 인턴십)을 다음과 같이 운영하오니, 소속 학생들의 프로그램에 참여바랍니다.\n가. 프로그램명: 2026학년도 동계 AI PBL & 현장체험 프로그램(베트남 인턴십)\n나. 파견 국가: 베트남 다낭\n다. 파견 기간: 2026. 12. 26.(토) ~ 2027. 1. 23.(토)\n※파견기간은 현지 사정에 따라 변경 될 수 있음\n라. 신청 기간: 2026. 11. 18.(수) 12:00 까지\n※온라인 접수 및 자료제출 2가지 모두 완료되어야 최종 신청 완료\n마. 선발 인원: 서류평가 및 영어 의사소통능력·인성 면접을 통해 최종 선발된 경북대학교 재학생 20명\n바. 연수 내용: 글로벌 AI교육 및 AI+X 융합프로젝트, 베트남 현지 기업 인턴십\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-2487b99aea65",
+          "dday": 5,
+          "deadline": "2026-11-18",
+          "id": "knu-se-se1617170620:916",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "소프트웨어학과 · 공지사항",
+          "title": "[AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 홍보",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTkxNiZzdGFydFBhZ2U9MCZsaXN0Tm89NzEzJnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "한국장학재단에서 정부, 공공기관, 지자체, 공익법인, 민간기업 등 각 기관에 산재되어 있는 청년 지원정보를 수집·제공하는\n｢통학로(통합 학생지원 정보로)｣ 운영과 홍보 공간을 제공하고 있으니 업무에 활용하시기 바랍니다.\n가. 통학로 접속 방법\n1) 한국장학재단 누리집(www.kosaf.go.kr) - (상단) 인재육성 - 통학로\n2) 한국장학재단 누리집(www.kosaf.go.kr) - (좌측) QUICK MENU - 통학로\n3) 바로가기: https://www.kosaf.go.kr/ko/tonghakro.do(붙임2 바로가기 QR코드 참조)\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-2487b99aea65",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-se-se1617170620:909",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "소프트웨어학과 · 공지사항",
+          "title": "한국장학재단 통학로(통합 학생지원 정보로) 운영 및 홍보채널 안내",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTkwOSZzdGFydFBhZ2U9MCZsaXN0Tm89NzA5JnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "첨부파일중 PDF미리보기",
+          "channel_id": "notice-2487b99aea65",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-se-se1617170620:910",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "소프트웨어학과 · 공지사항",
+          "title": "제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 _ 숏폼 공모전) 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTkxMCZzdGFydFBhZ2U9MCZsaXN0Tm89NzEzJnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2026학년도 겨울계절수업․디딤돌수업* 수강신청 안내\n1. 수강신청 기간: 2026. 11. 11.(수) 13:00~11. 12.(목) 17:59(로그인은 12:40부터 가능)\n* 디딤돌수업: 전공자율선택제 학생들의 전공탐색 및 전공 수학능력 향상을 위해 여름계절수업과 동일한 기간에 운영\n※ 수강신청기간 중에는 24시간 신청가능 (단, 18:00~19:00는 시스템 점검으로 접속불가)\n※ 최대 수강허용인원까지 신청하여 수강 여석이 0인 상태에서 강좌 삭제자가 발생하는 강좌의 경우, 일정시간 경과 후 수강신청할 수 있도록 하여 수강매매 방지(랜덤시간대 적용)\n※ 수강신청 관련 일정 및 안내사항 미확인으로 인해 발생하는 불이익은 학생 본인의 책임이며, 이를 사유로 한 별도의 구제 불가능\n2. 수강신청 대상\n가. 학부 재적생 및 강좌가 개설된 학과의 대학원 재학생·휴학생 중 수강희망자\n※ 2026. 2학기 현재 휴학 중인 학생이 계절수업으로 학점을 취득하여도 2027. 2월 졸업 불가능\n※ 시간제 등록생은 재이수에 한하여 수강신청 가능함\n나. 학술교류협정 체결된 타대학 교류 학생\n3. 수강신청 가능 학점 : 6학점 이내\n가. 계절수업, 타대학교류, 해외어학연수, 현장실습교육과정, 해외인턴쉽, 해외봉사활동, 디딤돌수업 등을 포함하여 2026학년도 겨울계절수업에 인정 가능한 학점은 총 6학점 이내임\n(원격강좌 및 재이수 포함 6학점까지 가능)\n★ 교양과목 이수학점 변경사항 필독 ☞ 학부생에 한하여 적용\n구 분\n~ 2017학년도\n입학생까지\n2018~2022학년도 입학생\n2023학년도 입학생\n2024학년도\n입학생부터~\n이수학점\n30학점 이상\n24학점 이상\n42학점 이하\n※ 초과 이수시\n졸업학점에 미포함\n30학점 이상\n(단, 사범대학 학생이 사범대학 내 학과를\n복수전공하는 경우는 24학점 이상)\nSDG\n교양\n해당없음\n3학점 포함\n※ 일반편입생 및\n외국인 학생 제외\n영역별\n필수과목\n영역구분 없음\n<첨성인 기초>\n- 독서와토론, 사고교육, 글쓰기,\n외국어 중 3학점 이상 이수\n- 수리, 기초과학 중 3학점 이상 이수\n<첨성인 핵심>\n-‘인문·사회’영역 3학점 이상 이수\n-‘자연·과학’영역 3학점 이상 이수\n※ 일반편입생, 외국인 학생, 2022학년도 이전 입학생은 영역구분 없이 이수\n※ 학사편입자의 교양학점은 최소 교양학점(24학점)을 이수한 것으로 인정 (교양과목 추가 이수할 필요 없음)\n※ “첨성인 기초”와 “첨성인 핵심” 영역은 반드시 본교에 개설된 과목 이수\n나. 상주캠퍼스 재학생은 상주캠퍼스 미개설 강의에 대해서는 대구캠퍼스에서 6학점이내 수강 가능(계절수업에 한함)\n4. 수강신청 제한\n가. 실용영어1과 실용영어2는 동시 수강 불가\n나. 2026. 2학기에 수강중인 과목은 수강신청 불가\n과목번호\n과목명\n해당분반\n수강제한내역\nCLTR0195\nC/C++프로그래밍기초\n001, 002\nIT대학, 과학기술대학 소프트웨어학과 학생은 수강불가\nCLTR0268\n파이선 프로그래밍\n001, 002\nCLTR0373\n빅데이터 기초 실습\n001\nCLTR0213\n물리학 I\n002\n전공자율선택 모집단위(자율전공학부 및 자율미래인재학부, 단과대학 자율학부 및 첨단자율학부) 학생만 수강가능\n다. 수강제한 교과목 목록\n5. 수강신청 방법\n가. 수강신청 사이트: https://sugang.knu.ac.kr\n* 수강신청 하고자 하는 교과목 번호 11자리(‘-’ 제외, 예를 들어 교과목 코드가\nCLTR0001-001인 경우 ‘-’ 제외하고 CLTR0001001 입력)를 입력하여 신청\n나. 수업시간표 및 강의 계획서 열람: https://sy.knu.ac.kr → ????개설학기: 계절학기(동계)???? 또는 ‘디딤돌학기(동계)‘조회\n* 시간표는 강좌상세검색????선택???? 및 검색조건 ????선택????상태에서 조회를 클릭\n다. 차세대 통합정보시스템 동작 환경\n- 운영체제: Microsoft Windows 8.1이상, iOS, Android\n- 웹브라우저 : Chrome, Microsoft Edge, Safari 권장\n※ 차세대 통합정보시스템은 Internet Explorer에서 접속되지 않습니다.\n※ 공용 PC의 경우 반드시 로그아웃을 하고, 비밀번호 저장 프로그램에 비밀번호가 저장되지 않도록 주의 요망\n※ 수강정원 초과과목의 수강신청\n1) 수강정원이 초과된 과목은 수강신청이 불가함\n단, 특별한 사정이 있는 경우에는 담당교수의 승인을 받아 수강신청 가능\n2) 수강정원변경 신청절차\n통합정보시스템 로그인(knuin) → 학사행정 → 수강 → 수강신청 → 수강정원변경원신청 → 수강정원변경원승인(교수용) → 수강정원변경원승인\n세 부 업 무 추 진 내 용\n일 정\n담 당 부 서\n수강정원변경원 신청\n2026. 11. 23.(월) 9:00 ~ 11 .26.(목) 13:00\n학생\n수강정원변경원 승인\n2026 .11 .23.(월) 9:00 ~ 11. 26.(목) 16:00\n강의담당교수\n2026. 11. 25.(수) 13:00 ~ 11. 26.(목) 18:00\n학과(부)사무실 또는 대학행정실\n3) 수강정원변경 신청 사이트 : 통합정보시스템(http://knuin.knu.ac.kr)\n6. 수강신청 결과 확인\n가. 통합정보시스템 로그인(knuin) → 학사행정 → 수강 → 수강신청 → 수강신청과목조회\n나. 매학기 수강신청 결과 확인 소홀로 인하여 불이익을 당하는 사례가 발생하므로 반드시 본인이 수강신청 내역을 확인하고 이상이 있을 경우 수강신청(변경) 기간내 소속 학과(부)사무실 및 대학행정실로 문의하여야 함\n7. 추후 일정안내\n가. 수강변경: 2026. 11. 25.(수) 12:00 ~ 11. 26.(목) 17:59\n나. 수강료 납부: 2026. 12. 2.(수) 09:00 ~ 12. 4.(금) 16:00\n다. 수강취소\n수강취소 구분\n수강취소원 제출기간\n수강료 환불예정일\n개강전 취소\n2026. 12. 15.(화) ~ 12. 16.(수) 17:30\n2027. 1. 8.(금)\n수업일수 1/3선 이전 취소\n2026. 12. 28.(월) ~ 12. 29.(화) 17:30\n수업일수 1/2선 이전 취소\n2026. 12. 30.(수) ~ 12. 31.(목) 17:30",
+          "channel_id": "notice-2487b99aea65",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-se-se1617170620:914",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "소프트웨어학과 · 공지사항",
+          "title": "2026학년도 겨울계절수업·디딤돌수업 수강신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTkxNCZzdGFydFBhZ2U9MCZsaXN0Tm89NzEzJnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": null,
+          "channel_id": "notice-2487b99aea65",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-se-se1617170620:915",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "소프트웨어학과 · 공지사항",
+          "title": "2026년 재학생 취업의식조사 안내 협조 요청",
+          "url": "https://home.knu.ac.kr/HOME/se/sub.htm?mode=view&mv_data=aWR4PTkxNSZzdGFydFBhZ2U9MCZsaXN0Tm89NzEzJnRhYmxlPWV4X2Jic19kYXRhX3NlJm5hdl9jb2RlPXNlMTYxNzE3MDYyMCZjb2RlPWpWd28xV2VtaUlIZyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-4c132ad6150a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-472ae4378387",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차)를 다음과 같이 시행하오니 해당 학생들이 기간 내 신청하여 검사를 받으시기 바랍니다.\n가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 12. 9.(수)[예정]\n- 부적격자의 경우, 별도의 온라인 교육을 이수해야 함 ※ 추후 별도 안내 예정\n나. 신청 방법\n1) 신청 기간: 2026. 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부.\n2. 통합정보시스템 학생 신청 방법 1부.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-472ae4378387",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-math-mat1623029308:3477",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "수학과 · 공지사항",
+          "title": "[학부-교직] 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Nzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI4NTAmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "https://us06web.zoom.us/webinar/register/WN_SrVCKLsyQhCFvhSsGm8TjQ#/registration",
+          "channel_id": "notice-472ae4378387",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-math-mat1623029308:3478",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "수학과 · 공지사항",
+          "title": "[공통]외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Nzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI4NTEmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": null,
+          "channel_id": "notice-472ae4378387",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-math-mat1623029308:3479",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "수학과 · 공지사항",
+          "title": "[대학원]「2026학년도 KNU Global Excellence Lab 지원사업」추진 안내",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Nzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI4NTImdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": null,
+          "channel_id": "notice-472ae4378387",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-math-mat1623029308:3480",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "수학과 · 공지사항",
+          "title": "[공통]KNU 벤처 메이커스(기업가 정신 및 창의력 강화캠프) 참가 학생 모집",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0ODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI4NTMmdGFibGU9ZXhfYmJzX2RhdGFfbWF0aCZuYXZfY29kZT1tYXQxNjIzMDI5MzA4JmNvZGU9dUR6MlNTZVJsTnJ0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-8666f6ab7bde",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-f310e00db70c",
+      "meals": [],
+      "notices": [
+        {
+          "body": "창의융합형 공학인재 양성지원사업 관련하여 미래형 모빌리티 관련 기업 전문가 초청 세미나를 개최하오니, 학생분들의 많은 참여 바랍니다.",
+          "channel_id": "notice-f310e00db70c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-mobility-mob1692863999:472",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "스마트모빌리티공학과 · 공지사항",
+          "title": "[창의융합형 공학인재 양성지원사업] 2026학년도 미래형 모빌리티 관련 기업 전문가 초청 세미나(7차) 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ3MiZzdGFydFBhZ2U9MCZsaXN0Tm89NDE4JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "스마트모빌리티공학과에서는 앵커사업 프로그램의 일환으로 모빌리티 분야 해외 대학 및 기업과의 협업을 통해\n학생들의 글로벌 역량과 디지털(AI) 역량을 강화하기 위해 「2026학년도 동계 글로벌 역량강화 프로그램」 참가자를 모집합니다.\n해외 현장 견학 및 글로벌 교육 프로그램에 관심 있는 학생들의 많은 지원 바랍니다.\n1. 프로그램 개요\n가. 프로그램명: 2026학년도 동계 글로벌 역량강화\n나. 프로그램 내용: 해외 대학·기업 협업 및 디지털(AI) 역량강화\n다. 일정: 2027. 2. 16.(화) ~ 2. 19.(금) ※ 항공편 일정 등에 따라 세부 일정은 변경될 수 있음.\n라. 방문 장소: 일본 도쿄 ※ 해외 현장견학 업체 및 협의 상황에 따라 방문지는 변경될 수 있음.\n마. 주요 내용: JAXA 쓰쿠바 우주센터 방문, Automotive World 2027 Tokyo 박람회 참관,\nKAWASAKI ROBOSTAGE 방문, ROBOT BASE JAPAN 방문, 항공 과학 박물관 방문 등\n2. 참가 자격\n· 다음 요건을 모두 충족하는 스마트모빌리티공학과 재학생\n가. 2026학년도 2학기 기준 학과 재학생\n나. 누적 평점 평균 2.5 이상인 자\n다. 앵커사업 마일리지 (1, 2학기 누적) 3점 이상인 자\n라. 기타 해외여행에 결격사유가 없는 자\n3. 지원서 접수\n가. 접수 기간: 공고일 ~ 2026. 11. 20.(금) 12시까지(기한 엄수) ※ 기한 이후 서류접수 불가\n나. 접수 방법: 이메일 지원 (이메일 주소: misk1070@knu.ac.kr)\n다. 제출 서류(첨부파일): 아래 서류를 모두 작성하여 반드시 1개의 pdf 파일로 병합 후 제출\n(제출파일명: 스마트모빌리티_동계역량강화 프로그램_지원서_홍길동.pdf)\n1) 자기소개서 및 프로그램 참여 계획서[붙임1, 2] 각 1부\n2) 앵커사업 마일리지 활동 확인서[붙임3] 1부\n3) 참가 서약서[붙임4] 1부\n4) 개인정보의 수집·이용·제공 동의서[붙임5] 1부\n※ 제출서류는 하단 첨부파일을 확인하여 작성하시기 바랍니다.\n※ 제출서류 누락 또는 지정된 제출 형식 미준수 시 선발 대상에서 제외될 수 있으므로 제출 전\n반드시 확인하시기 바랍니다.\n4. 선발 일정 및 결과 발표\n가. 최종 선발자 발표: 2026. 12. 1.(화) 이후\n나. 최종 선발기준\n1) 평점 평균 (40％)\n2) 앵커사업 혁신인재 마일리지 (40％)\n3) 지원동기 및 계획서 내용 충실도 (20%)\n■ 주요 일정\n※ 상기 일정은 사정에 의해 변경될 수 있음.\n5. 유의사항\n가. 지원자는 참가 자격 및 제출 서류를 반드시 확인한 후 지원하시기 바랍니다.\n나. 제출 서류의 기재 내용이 사실과 다르거나 필수 서류가 누락된 경우 선발 대상에서 제외될 수 있습니다.\n다. 프로그램 세부 일정 및 방문 장소는 현지 기관 및 기업과의 협의, 항공편 등에 따라 변경될 수 있습니다.\n라. 최종 선발 이후 프로그램 참여와 관련한 세부 사항은 별도 안내할 예정입니다.\n6. 문의\n경북대학교 스마트모빌리티공학과 앵커사업팀\n※ 문의처: 053-950-5082 / misk1070@knu.ac.kr",
+          "channel_id": "notice-f310e00db70c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-mobility-mob1692863999:473",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "스마트모빌리티공학과 · 공지사항",
+          "title": "[앵커사업] 2026학년도 동계 글로벌 역량강화 프로그램 모집 공고",
+          "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ3MyZzdGFydFBhZ2U9MCZsaXN0Tm89NDE5JnRhYmxlPWV4X2Jic19kYXRhX21vYmlsaXR5Jm5hdl9jb2RlPW1vYjE2OTI4NjM5OTkmY29kZT1ZZ2JHUFpOSllySDUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-cc19e513d407",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b5c34881a6cc",
+      "meals": [],
+      "notices": [
+        {
+          "body": "제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전)」안내\n가. 공모대상: 2026학년도 1⦁2학기 수강한 학부 개설 강좌\n※ 전공, 교양, 교직, 일반선택 교과목 모두 포함\n※ 2025학년도 겨울 계절수업, 2026학년도 여름 계절수업 포함\n나. 응모자격: 2026학년도 2학기 현재 재학 중인 학부생\n※ 휴학 및 수업 연한 초과자 제외\n다. 응모분야: 총 4개 분야\n① [에세이] 전공·교직수업 ② [숏폼] 전공·교직수업\n③ [에세이] 교양·일반선택수업 ④ [숏폼] 교양·일반선택수업\n라. 접수기간: 2026. 11. 9.(월)∼12. 11.(금)\n마. 응모방법: KNUCUBE(knucube.knu.ac.kr)를 통한 접수\n- 파일명은 (에세이)_OO학과_OOO(이름), (숏폼)_OO학과_OOO(이름)으로 ZIP(확장자) 등 한 개의 압축 파일로 제출\n바. 시상계획: 총 68편에 대한 상금 및 상장 수여\n- 최우수상(총장상) 4편, 우수상 26편, 장려상 38편\n※ 심사 결과에 따라 예산 범위 내 시상 인원 변경 가능\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-b5c34881a6cc",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-smartplant-sma1653282097:1435",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "스마트플랜트공학과 · 공지사항",
+          "title": "제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전)」안내",
+          "url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?mode=view&mv_data=aWR4PTE0MzUmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNjcmdGFibGU9ZXhfYmJzX2RhdGFfc21hcnRwbGFudCZuYXZfY29kZT1zbWExNjUzMjgyMDk3JmNvZGU9dmI1bVMwZkpMVmpBJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-451c515734ae",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e0dc5a51576c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-aaa5e07a26eb",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-5489a94f38cd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-2c006faa8fdd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-45a059e34b9c",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-57321798a19a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d5e75aa6b2da",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-99ea5018f469",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-6b16f01d1a75",
+      "meals": [],
+      "notices": [
+        {
+          "body": "개교 80주년을 기념으로 진행하는 KNU Research Festival의 세부 프로그램으로 AI분야 명사를 초청하여 신기술 신산업 토크 콘서트를 아래와 같이 개최하오니, 교내 구성원의 많이 참여 바랍니다.\n가. 행 사 명: 신기술 신산업 토크 콘서트\n나. 강 사: 김상균 교수(경희대학교 경영대학원)\n다. 주 제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”\n라. 일 시: 2026. 11. 23.(월) 14:00 ~ 16:00\n마. 장 소: 글로벌플라자 경하홀Ⅰ\n바. 대 상: 학생 및 교직원\n사. 참가신청\n1) 신청방법: 링크(https://wrl.kr/755o0ELx) 또는 QR코드 스캔\n2) 신청기간: 2026.11.13.(금)까지\n※ 참가시 소정의 기념품 증정",
+          "channel_id": "notice-6b16f01d1a75",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-knuagec-knu1623134126:3253",
+          "posted_at": "2026-11-02",
+          "reason": "reminder",
+          "source": "식품자원경제학과 · 공지사항",
+          "title": "개교 80주년 기념 「신기술 신산업 토크콘서트」개최안내",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNTMmc3RhcnRQYWdlPTEwJmxpc3RObz0xMTU1JnRhYmxlPWV4X2Jic19kYXRhX2tudWFnZWMmbmF2X2NvZGU9a251MTYyMzEzNDEyNiZjb2RlPXRIazM1TnBJcmVzNCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "농촌진흥청에서 진행하는 「농업환경 공공데이터 활용 친환경농업 논문 경진대회」 안내합니다.\n이번 경진대회는 공공데이터를 활용한 친환경농업 연구를 활성화하고, 새로운 연구자를 발굴·육성하기 위해 마련되었습니다.\n많은 참여 바랍니다.\n○ 대회명: 농업환경 공공데이터 활용 친환경농업 논문 경진대회\n○ 접수기간: 2026. 11. 9.(월) ~ 11. 30.(월)\n○ 행사일시: 2026. 12. 11.(금) 10:00~16:00\n○ 행사장소: 농촌진흥청 오디토리움\n○ 참가내용: 공개된 공공데이터를 1종 이상 활용한 친환경농업 분야 연구",
+          "channel_id": "notice-6b16f01d1a75",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knuagec-knu1623134126:3263",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "식품자원경제학과 · 공지사항",
+          "title": "농촌진흥청「농업환경 공공데이터 활용 친환경농업 논문 경진대회」",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNjMmc3RhcnRQYWdlPTAmbGlzdE5vPTExNjQmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "첨부파일중 PDF미리보기",
+          "channel_id": "notice-6b16f01d1a75",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knuagec-knu1623134126:3264",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "식품자원경제학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNjQmc3RhcnRQYWdlPTAmbGlzdE5vPTExNjUmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7fcf94c45b4e",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-16f98ec95fc6",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-16f98ec95fc6",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-psychology-psy1614066241:1660",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "심리학과 · 학부 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?mode=view&mv_data=aWR4PTE2NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTcyMyZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)\n※ 세부 내용은 아래에 첨부된 대학 전과 선발 안내(붙임 1) 참조\n붙임 1. 2027학년도 대학 전과 선발 안내 1부\n2. 학과(부)별 전과 선발 인원 1부. 끝.",
+          "channel_id": "notice-16f98ec95fc6",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-psychology-psy1614066241:1661",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "심리학과 · 학부 공지사항",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://home.knu.ac.kr/HOME/psychology/sub.htm?mode=view&mv_data=aWR4PTE2NjEmc3RhcnRQYWdlPTAmbGlzdE5vPTcyNCZ0YWJsZT1leF9iYnNfZGF0YV9wc3ljaG9sb2d5Jm5hdl9jb2RlPXBzeTE2MTQwNjYyNDEmY29kZT12REs3TGFidTNsdjImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-97fffffebd44",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2027학년도 1학기 개설되는 보육실습 교과목 수강신청을 위해 동계 실습에 참여하는 학생들의 사전조사 내역을 받고자 합니다.\n실습기관이 확정된 학생들은 붙임파일의 엑셀 양식을 작성하셔서 12.4.(금)까지 조교 이메일(uyearj@knu.ac.kr)로 보내 주시기 바랍니다.\n-> 사전조사 사항: 학번, 이름, 전공, 연락처, 실습기관, 기관연락처, 팩스번호, 기관메일, 기관주소, 실습기간, 실습비\n위의 사전조사는 학생들의 실습 진행을 위해 반드시 필요한 사항이므로, 꼭 확인하셔서 기한 내에 작성해 주시기를 당부 드립니다.\n또한 오리엔테이션에서 안내한 바와 같이 실습 동안에는 아래의 자료를 작성해 주셔야 합니다.\n1) 회신서, 서약서, 신상카드(회신서 및 기관 통장사본: 12.4.(금)까지 학부 사무실로 서면 제출/ 타과생 및 복전생은 제출 불요)\n2) 보육실습일지\n3) 실습결과보고서\n4) 보육실습확인서\n5) 놀이 관찰 자료(2027학년도 1학기 보육실습 예정자 대상)\n위 자료의 서식은 학부 홈페이지 공지사항의 자료실에서 확인 가능합니다. 실습일지는 본인 필요에 맞게 조절하여 사용하면 되며, 2027학년도 1학기 보육실습 이수 예정자는 '놀이 관찰 자료(2~3가지)'를 작성하기 바랍니다.\n놀이 관찰 자료는 자유 양식이며, 추후 강의계획서를 통해 확인하기 바랍니다.\n보육실습에 관한 기준은 '보육교직원 통합정보시스템(https://chrd.childcare.go.kr/)'에서 참고하면 됩니다.\n이밖에 보육실습과 관련하여 추가적인 문의사항은 학부 사무실(053-950-6210)로 연락 바랍니다.",
+          "channel_id": "notice-97fffffebd44",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knuchild-knu1623370362:1436",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "아동학부 · 학부 공지사항",
+          "title": "2026 보육실습 사전조사 자료 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTE0MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTY3NCZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-9a2cb1c992c7",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-06dffccf1c28",
+      "meals": [],
+      "notices": [
+        {
+          "body": "제3기 IPESK 차세대 공학자 추천 안내\n한국이공학진흥원에서 제 3회 IPESK 차세대 공학자 추천 요청 건으로 아래와 같이 희망 학생의 지원을 접수합니다. 공학교육 활성화 및 우수한 공학자 육성을 위해 IPESK 차세대 공학자로 인증하고 하오니 많은 관심 바랍니다.\nIPESK 차세대 공학자로 인증 받은 학생에게는 포럼 등 각종 행사 초대권 발송 혜택이 지원될 예정입니다.(인증서는 없으며, 이메일로 디지털배지가 발행될 예정입니다.)\n1. 신청기간 : ~ 2026. 11. 13.(금)까지\n2. 지원자격: 전공 60학점 이상 이수한 학생으로 평점평균 3.5이상(4.3만점 기준)인 재학생\n* 전공 60학점에는 금번학기 수강신청 학점도 포함\n3. 신청방법: 붙임 1 엑셀파일을 작성하여 붙임2 개인정보동의서, 성적증명서(4.3만점) 이메일 제출\n4. 제출처: E-mail 제출 : green@knu.ac.kr\n(메일 발송 후 48시간 이내 답신 메일 확인, 답신 메일이 없는 경우 담당자 연락처로 문의 )\n1) 이메일 제목 : IPESK -학번-이름\n2) 엑셀파일 및 스캔한 개인정보동의서,성적증명서(4.3만점)파일을 첨부하여 신청\n5. 학부 문의처 : 053-950-8970\n6. 한국이공학진흥원 문의처: 02-6958-8220",
+          "channel_id": "notice-06dffccf1c28",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-soee-soe1622609908:1867",
+          "posted_at": "2026-10-29",
+          "reason": "reminder",
+          "source": "에너지공학부 · 학부 공지사항",
+          "title": "[기타] 제3기 IPESK 차세대 공학자 추천 안내(~11/13)",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4Njcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNDAmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "제20회 별빛수기 공모전 개최 안내\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-06dffccf1c28",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-soee-soe1622609908:1874",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "에너지공학부 · 학부 공지사항",
+          "title": "[학생] 제20회 별빛수기 공모전 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NzQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNDYmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": null,
+          "channel_id": "notice-06dffccf1c28",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-soee-soe1622609908:1876",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "에너지공학부 · 학부 공지사항",
+          "title": "[학생] 2026년 동계 및 2027학년도 1학기 현장실습교육과정 운영 및 설명회 일정 안내",
+          "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?mode=view&mv_data=aWR4PTE4NzYmc3RhcnRQYWdlPTAmbGlzdE5vPTEyNDcmdGFibGU9ZXhfYmJzX2RhdGFfc29lZSZuYXZfY29kZT1zb2UxNjIyNjA5OTA4JmNvZGU9RFhKS3NmbUtJTHRKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-70d703a20086",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-848538cdce05",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9c2e2dbd2980",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차)를 다음과 같이 시행하오니, 해당 학생들은 기간 내 신청하여 검사를 받으시기 바랍니다.\n가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 12. 9.(수)[예정]\n- 부적격자의 경우, 별도의 온라인 교육을 이수해야 함 ※ 추후 별도 안내 예정\n나. 신청 방법\n1) 신청 기간: 2026. 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부.\n2. 통합정보시스템 학생 신청 방법 1부. 끝.",
+          "channel_id": "notice-9c2e2dbd2980",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-enged-eng1622787290:559",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "영어교육과 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://home.knu.ac.kr/HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-1abc9573202c",
+      "meals": [],
+      "notices": [
+        {
+          "body": "개교 80주년을 기념으로 진행하는 KNU Research Festival의 세부 프로그램으로 AI 분야 명사를 초청하여 신기술 신산업 토크 콘서트를 아래와 같이 개최하오니, 많은 참여 바랍니다.\n가. 행 사 명: 신기술 신산업 토크 콘서트\n나. 강 사: 김상균 교수(경희대학교 경영대학원)\n다. 주 제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”\n라. 일 시: 2026. 11. 23.(월) 14:00 ~ 16:00\n마. 장 소: 글로벌플라자 경하홀Ⅰ\n바. 대 상: 학생 및 교직원\n사. 참가신청\n1) 신청방법: 링크(https://wrl.kr/755o0ELx) 또는 QR코드 스캔\n2) 신청기간: 2026.11.13.(금)까지\n※ 참가시 소정의 기념품 증정\n붙임 토크 콘서트 홍보 포스터 1부.",
+          "channel_id": "notice-1abc9573202c",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-english-eng1621852173:4457",
+          "posted_at": "2026-10-30",
+          "reason": "reminder",
+          "source": "영어영문학과 · 학부공지",
+          "title": "개교 80주년 기념 「신기술 신산업 토크콘서트」개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjQmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "경북인문사회연구원(KIHSS)에서 인문사회 분야 학문후속세대의 연구 참여 기회를 확대하고, 단과대학과 연구원 학술연구교수 간 연구협력 기반을 강화하기 위하여 다음과 같이 「차세대 연구자 멘토링 Lab」에 참여할 학생연구원을 선발하고자 하오니, 관심 있는 학생들의 많은 신청 바랍니다.\n구 분\n내 용\n사업명\n2026 KIHSS 차세대 연구자 멘토링 Lab\n참여 단과대학\n인문대학·사회과학대학·경상대학·사범대학·생활과학대학·행정학부\n선발 인원\n단과대학별 2~3명, 총 16명\n선발 시기\n2026년 11월\n운영 기간\n2026년 12월~2027년 2월(3개월)\n운영 방식\n학생연구원–KIHSS 학술연구교수 멘토링 매칭\n핵심 성과\n2027년 1월 KIHSS 국제학술대회 포스터 발표\n최종 성과\n2027년 2월 연구활동 결과보고서 제출\n가. 사업개요\n단과대학\n기본 선발\n인문대학\n3명\n사회과학대학\n3명\n경상대학\n3명\n사범대학\n3명\n생활과학대학\n2명\n행정학부\n2명\n합 계\n16명\n나. 선발규모\n다. 접수기간: 2026. 11. 11.(수) ~ 11. 18.(수) 18시까지\n라. 신청방법: 단대별로 수합하여 공문 제출\n마. 제출서류:\n1) 학생연구원 신청자 명단(엑셀파일) [붙임2] 1부.\n2) 학생연구원 연구활동계획서[별지 제1호 서식] [붙임3] 1부.\n3) 통장사본 1부.\n바. 문의처: 950-6025 또는 sim1215@knu.ac.kr (팀장 백현애)\n붙임 1. 경북인문사회연구원 학생연구원 선발 및 차세대 연구자 멘토링 Lab 운영계획 1부.\n2. (서식)학생연구원 신청자 명단(엑셀파일) 1부.\n3. (서식)학생연구원 연구활동계획서 및 연구결과보고서 각1부.\n4. (서식)포스터섹션 1부.",
+          "channel_id": "notice-1abc9573202c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-english-eng1621852173:4466",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "영어영문학과 · 학부공지",
+          "title": "「2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab」 학생연구원 선발 안내",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjgmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들의 많은 참여 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n다. 홍보 포스터 배부: 문서함으로 배부 예정(11월 13일)\n붙임 1. 현장실습교육과정 학생모집 안내문 1부.\n2. 현장실습 포스터(웹게시용) 1부.\n3. 현장실습 포스터 배부표 1부.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-1abc9573202c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-english-eng1621852173:4467",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "영어영문학과 · 학부공지",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0Njcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjkmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-f95f0e2ac40d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3834483dc081",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ef883ff42361",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정 설명회를 아래와 같이 개최하오니 관심있는 학생들의 많은 참여 바랍니다.\n* 대구캠퍼스: 11.23.(월) 16:30 글로벌플라자 경하홀2\n* 상주캠퍼스: 11.24.(화) 14:00 복지회관 강의실 201호\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ef883ff42361",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-lbis-lbi1661932979:2152",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "위치정보시스템학과 · 공지사항",
+          "title": "[공고] '26동계 및 '27-1학기 현장실습 참여 학생 모집",
+          "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?mode=view&mv_data=aWR4PTIxNTImc3RhcnRQYWdlPTAmbGlzdE5vPTE3MTYmdGFibGU9ZXhfYmJzX2RhdGFfbGJpcyZuYXZfY29kZT1sYmkxNjYxOTMyOTc5JmNvZGU9TTFma2R6SlpjVXB0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-a1540deb2a6f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-74558916c320",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a1c0cc5412ca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-7dfeec322405",
+      "meals": [],
+      "notices": [
+        {
+          "body": "개교 80주년을 기념으로 진행하는 KNU Research Festival의 세부 프로그램으로 AI\n분야 명사를 초청하여 신기술 신산업 토크 콘서트를 아래와 같이 개최하오니, 교내 구성원의 많은 참여 바랍니다.\n가. 행 사 명: 신기술 신산업 토크 콘서트\n나. 강 사: 김상균 교수(경희대학교 경영대학원)\n다. 주 제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”\n라. 일 시: 2026. 11. 23.(월) 14:00 ~ 16:00\n마. 장 소: 글로벌플라자 경하홀Ⅰ\n바. 대 상: 학생 및 교직원\n사. 참가신청\n1) 신청방법: 링크(https://wrl.kr/755o0ELx) 또는 QR코드(아래 포스터 참조) 스캔\n2) 신청기간: 2026.11.13.(금)까지\n※ 참가시 소정의 기념품 증정\n붙임 토크 콘서트 홍보 포스터 1부. 끝.",
+          "channel_id": "notice-7dfeec322405",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-knuce-knu1762850029:396",
+          "posted_at": "2026-10-30",
+          "reason": "reminder",
+          "source": "응용화학공학부 · 공지사항",
+          "title": "개교 80주년 기념 「신기술 신산업 토크콘서트」개최 안내(주제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”)",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTM5NiZzdGFydFBhZ2U9MCZsaXN0Tm89MTk1JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-ad22d5b4a9e9",
+      "meals": [],
+      "notices": [
+        {
+          "body": "교수학습센터에서는 2027학년도 학습지원 프로그램 운영을 위한 요구조사를 다음과 같이 실시하고 있습니다.\n가. 대상: 재학 중인 학부생\n나. 조사기간: 10. 28.(수)~12. 6.(일)\n다. 조사내용: 학습지원 프로그램 참여 인식, 개선 영역 및 효과성, 운영 방법 등\n라. 참여방법: 네이버 폼을 통한 온라인 설문조사(htts://숏.한국/27학습요구/)\n마. 참여혜택: 추첨을 통해 참여 학생에게 5,000원 상당의 편의점 교환권 지급(700명)\n관심있는 학생들의 많은 참여 부탁드립니다.\n감사합니다.",
+          "channel_id": "notice-ad22d5b4a9e9",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-fashion-fas1623134444:939",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "의류학과 · 공지사항",
+          "title": "2027학년도 학습지원 프로그램 운영을 위한 요구조사 실시 안내",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTkzOSZzdGFydFBhZ2U9MCZsaXN0Tm89ODIxJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": null,
+          "channel_id": "notice-ad22d5b4a9e9",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-fashion-fas1623134444:940",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "의류학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTk0MCZzdGFydFBhZ2U9MCZsaXN0Tm89ODIyJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "★KNU 글로벌 취업 통합 프로그램「해외취업 빌드업 클래스」Part 2.★\n온라인(ZOOM) 최신 취업정보 특강+1:1 개별 컨설팅을 통한 해외취업 대비 맞춤형 취업전략 설계!!\n▶ 11. 25.(수) 18:00 ~ 21:00(3h) (온라인/ZOOM)국가별(영어권/비영어권) 최신 취업정보 제공 특강\n▶ 11. 26.(목) ~ 12. 13.(일) (온라인/ZOOM)1:1 개별 컨설팅(30명 한정, 1인 1h 배정)\n* (온라인 특강) 참여자 선발 ➡️ 오픈카톡방을 통해 줌링크 안내/참여\n(1:1 컨설팅) 개별희망 참여일시 사전 수요조사 ➡️ 배정 안내/참여\n▶ 신청방법/신청URL\n* KNUCUBE-역량개발-비교과프로그램-[해외취업 빌드업 클래스](온라인 취업특강)-신청\n➡️ https://knucube.knu.ac.kr/site/lecture00313868\n* KNUCUBE-역량개발-비교과프로그램-[해외취업 빌드업 클래스](온라인 1:1컨설팅)-신청\n➡️ https://knucube.knu.ac.kr/site/lecture00313869\n▶ 신청마감: 11/20(금) 24시 까지\n* 문의처 : 진로취업과(☎️053-950-2871)",
+          "channel_id": "notice-ad22d5b4a9e9",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-fashion-fas1623134444:941",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "의류학과 · 공지사항",
+          "title": "2026학년도「해외취업 빌드업 클래스」(온라인 취업특강/1:1 컨설팅)",
+          "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?mode=view&mv_data=aWR4PTk0MSZzdGFydFBhZ2U9MCZsaXN0Tm89ODIzJnRhYmxlPWV4X2Jic19kYXRhX2Zhc2hpb24mbmF2X2NvZGU9ZmFzMTYyMzEzNDQ0NCZjb2RlPWtJT3RNT3FybmtpSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-e1ec1bf0eb87",
+      "meals": [],
+      "notices": [
+        {
+          "body": "첨부파일중 이미지미리보기\n첨부파일중 이미지미리보기\n안전관리총괄본부에서는 안전에 대한 경각심 고취 및 안전문화 전파를 위하여 안전 홍보게시판의 최신 안전자료(연구실안전 2026-004호)를 안내합니다.",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:875",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[안내] [안전홍보] 2026 연구실안전 페스티벌 안내",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg3NSZzdGFydFBhZ2U9MCZsaXN0Tm89NzYxJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        {
+          "body": "도서관에서는 대학 구성원의 학업능력 향상과 연구력 증진을 위해 다양한 전자자원을 구독·제공하고 있으며, 전자자원 활용 증대를 위해 이용교육을 실시하고 있습니다.\n이에, 국내 전자자원 DBpia에서 외국인 유학생을 위한 DBpia AI 교육을 아래와 같이 실시하오니, 유학생들의 참여 바랍니다.\n가. 교육명: DBpia AI for a Successful Student Life in Korea (English Session)\nHow to Use DBpia AI: For International Students\n교육방식\n진행언어\n자막지원\n신청링크\n온라인 실시간 (ZOOM)\n영어\n15개 언어\n(실시간 번역 자막)\n신청하기\n나. 교육강사: 최제서(DBpia 전문 교육강사)\n다. 교육일시: 2026. 11. 19.(목) 10:00-10:50 (50분)\n라. 교육내용:\n1) 다국어 기능을 활용한 한국어 영어 논문 이해(시연)\n2) 논문 작성, 디펜스(발표·심사) 준비 등 DBpia AI 활용\n마. 유의사항:\n1) 본 교육은 DBpia AI 구독 회원기관 전체 대상 연합교육\n2) 접속 방법은 신청 후 신청자에게 개별 안내 예정\n바. 문의처: 누리미디어 영업기획팀 김병국 02) 710-5310 / class1264@nurimedia.co.kr\n붙임 DBpia AI 교육 홍보물 1부.",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:876",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[안내] 외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg3NiZzdGFydFBhZ2U9MCZsaXN0Tm89NzYyJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        {
+          "body": "생활관카페 및 GS25 편의점(생활관점)이 소방공사로 인해 아래 기간동안 임시 휴점하오니, 이용에 참고하여 주시기 바랍니다.\n아울러, 이용에 다소 불편하시더라도 양해를 부탁드리며, 휴점 기간 중에는 생활협동조합의 다른 매장을 이용하여 주시기 바랍니다.\n▣ 휴점 기간\n매 장 명\n휴점 기간\n비 고\n생활관카페, GS25 편의점(생활관점)\n11.16.(월)17:30~11.23.(월)08:30",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:877",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[안내] 생활관카페 및 GS25 편의점(생활관점) 임시 휴점 안내",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg3NyZzdGFydFBhZ2U9MCZsaXN0Tm89NzYzJnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        {
+          "body": "연구실 사고 발생 시 신속한 사고 처리를 위하여 아래와 같이「경북대학교 안전사고 실무 매뉴얼」을 안내하오니, 소속 연구실에서는 매뉴얼을 숙지 및 비치하여 주시기 바랍니다.\n가. 주요내용\n1) 연구실 안전 사고(연구실 안전사고 분류, 사고 대응 및 처리 절차, 주관 부서 및 유관기관,비상연락처, 응급의료기관 및 분야별 전문병원)\n2) 연구실 사고유형별 행동 절차(화학. 가스, 전기, 생물, 기계, 기타 사고)\n나. 자세한 내용은 [붙임] 매뉴얼 참조\n아울러, 연구실 사고발생 시 안전관리총괄본부(053-950-7667) 로 즉시 신고하여 주시기 바라며, 「경북대학교 안전사고 실무 매뉴얼」은 연구실안전관리시스템(http://safe.knu.ac.kr) → 공지사항에 게시되어 있음을 알려드립니다.\n붙임 경북대학교 연구실 안전사고 실무 매뉴얼(’26.03) 1부. 끝.",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:878",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[안내] 경북대학교 연구실 안전사고 실무 매뉴얼 안내",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg3OCZzdGFydFBhZ2U9MCZsaXN0Tm89NzY0JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        {
+          "body": "교수학습센터에서는 수업에 참여한 학생들의 학습경험을 에세이와 숏폼으로 제작 및 공유함으로써 우수 수업 사례 발굴을 위해 「제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전)」을 다음과 같이 시행하오니 많은 학생들의 참여 바랍니다.\n가. 공모대상: 2026학년도 1⦁2학기 수강한 학부 개설 강좌\n※ 전공, 교양, 교직, 일반선택 교과목 모두 포함\n※ 2025학년도 겨울 계절수업, 2026학년도 여름 계절수업 포함\n나. 응모자격: 2026학년도 2학기 현재 재학 중인 학부생\n※ 휴학 및 수업 연한 초과자 제외\n다. 응모분야: 총 4개 분야\n① [에세이] 전공·교직수업 ② [숏폼] 전공·교직수업\n③ [에세이] 교양·일반선택수업 ④ [숏폼] 교양·일반선택수업\n라. 접수기간: 2026. 11. 9.(월)∼12. 11.(금)\n마. 응모방법: KNUCUBE(knucube.knu.ac.kr)를 통한 접수\n- 파일명은 (에세이)_OO학과_OOO(이름), (숏폼)_OO학과_OOO(이름)으로 ZIP(확장자) 등 한 개의 압축 파일로 제출\n바. 시상계획: 총 68편에 대한 상금 및 상장 수여\n- 최우수상(총장상) 4편, 우수상 26편, 장려상 38편\n※ 심사 결과에 따라 예산 범위 내 시상 인원 변경 가능\n붙임 1. 제20회 별빛수기 공모전 개최 안내문 1부.\n2. 제20회 별빛수기 공모전 응모서(서식) 1부.\n3. 제20회 별빛수기 공모전 포스터 1부. 끝.",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:879",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[안내] 제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 / 숏폼 공모전) 개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg3OSZzdGFydFBhZ2U9MCZsaXN0Tm89NzY1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPSZzZWNyZXRfbW9kZT0w"
+        },
+        {
+          "body": "강의실 변경을 아래와 같이 안내합니다.\n○ 적용일자: 2026. 11. 18.(수) ※ 11.18. 수업만 강의실 변경\n○ 강의실 변경 안내\n과목코드\n과목명\n담당교수\n강의실\n변경전\n변경후\nCMEB0212-001\n바이오유체공학\n한영기 교수\n203호\n107호\nCMEB0226-001\n의생명기초통계학\n최동식 교수\n203호\n107호",
+          "channel_id": "notice-e1ec1bf0eb87",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-bcst2-bcs1611061294:880",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "의생명융합공학과 · 공지사항",
+          "title": "[수업] 수업 강의실 변경 안내[2026.11.18.(수)/바이오유체공학, 의생명기초통계학]",
+          "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?mode=view&mv_data=aWR4PTg4MCZzdGFydFBhZ2U9MCZsaXN0Tm89NzY1JnRhYmxlPWV4X2Jic19kYXRhX2Jjc3QyJm5hdl9jb2RlPWJjczE2MTEwNjEyOTQmY29kZT1ub3RpY2Umc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-ecd686f730b2",
+      "meals": [],
+      "notices": [
+        {
+          "body": "고전작품을 통해 동·서양의 지혜를 배우고 다양한 학문적 관점에서 현대사회에 필요한 통찰과 사고력을 함양하고자\n인문고전포럼 『영원한 고전 오뒷세이아』를 개최하오니, 교직원 및 학생 여러분의 많은 관심과 참여 바랍니다.\n< 행사 개요 >\n가. 주 제: 영원한 고전 오뒷세이아\n나. 일 시: 2026. 11. 16.(월) 15:00 ~ 17:00\n다. 장 소: 인문한국진흥관 B103\n라. 강 연 자: 김 헌 교수(서울대학교 인문학연구원)\n마. 사 회 자: 김민아 교수(경북대학교 노어노문학과)\n바. 참석대상: 교내 희망 교직원 및 학생\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ecd686f730b2",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-humanities-hum1623199741:2018",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "인문대학 · 공지사항",
+          "title": "2026학년도 인문고전포럼 『영원한 고전 오뒷세이아』개최 안내",
+          "url": "https://home.knu.ac.kr/HOME/humanities/sub.htm?mode=view&mv_data=aWR4PTIwMTgmc3RhcnRQYWdlPTAmbGlzdE5vPTg3MSZ0YWJsZT1leF9iYnNfZGF0YV9odW1hbml0aWVzJm5hdl9jb2RlPWh1bTE2MjMxOTk3NDEmY29kZT1HUnJDUjhKT0IwejQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-5c6cbaba27ab",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-614324804939",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-3c7bfc3da404",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사 시행 계획\n□ 관련\n 교원자격검정령 [별표 1] 무시험검정 합격기준\n- (비고) 3. 교직 적성 및 인성검사 기준: 교원양성과정을 이수하는 동안 해당 교원양성기관의 장이 실시한 교직 적성 및 인성검사 결과가 다음 각 목의 기준을 충족할 것\n가. 2년 이하의 교원양성과정을 이수한 사람: 적격 판정 1회 이상\n나. 2년을 초과하는 교원양성과정을 이수한 사람: 적격 판정 2회 이상\n□ 검사 일정\n 일시: 2026. 12.3.(목) 19:00 ~ 19:50(검사 시작 후 입실불가)\n 장소: 5개 고사장(글로벌플라자 경하홀. 301.303,304,501,502호)\n 검사 방법: 정량평가\n 결과 확정: 2026. 12.9.(수)[예정]\n- 부적격자 대상 교육프로그램 운영: 추후 별도 안내 예정\n□ 검사 신청\n 신청대상 및 기간\n- 대상자 : 교직과정 이수자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n신청 기간\n대상(등록횟수)\n비고\n11.17.(화) - 11.19.(목)\n매일 10:00-17:00\n‧ 학부: 7학기 이상\n‧ 교육대학원: 4학기 이상\n11.18.(수) - 11.19.(목)\n매일 10:00-17:00\n‧ 학부: 6학기 이상\n‧ 교육대학원: 3학기 이상\n11.19.(목) 10:00-17:00\n모두 가능\n※ ’27. 2월 또는 ’27. 8월 졸업예정자 중 충족 기준을 만족하지 못한 학생들은 반드시 신청하세요!\n 신청방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- 메뉴: 교직/교직적성및인성검사관리/교직적성및인성검사신청\n- ‘신청’ 버튼을 반드시 클릭 ※ 신청 후 반드시 재접속하여 신청여부 확인\n 검사인원: 270명(5개 고사장)\n□ 유의사항\n 신청 후 검사에 불참하는 학생은 추후 검사 신청 우선 순위 불이익\n 교직 적성 및 인성검사 충족 기준 ※ 학기당 1회 인정\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n 기타 인정과 관련된 사항은 교원자격 무시험검정 기준에 따름",
+          "channel_id": "notice-3c7bfc3da404",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-japan-jap1695016568:459",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "일어일문학과 · 공지사항",
+          "title": "[교직]2026학년도 2학기 교직 적성 및 인성검사(3차) 시행!",
+          "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?mode=view&mv_data=aWR4PTQ1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NDM0JnRhYmxlPWV4X2Jic19kYXRhX2phcGFuJm5hdl9jb2RlPWphcDE2OTUwMTY1NjgmY29kZT01TE5MZHJORkducVImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "히로시마 연수 프로그램 면접 일정\n일 시: 2026년 11월 13일(금)\n장 소: 대학원동 313호\n준비물: 성적증명서 지참할 것.\n●유의사항●\n- 개인별 면접 시간을 확인하고, 지정된 시간에 맞춰 참석하기 바랍니다.\n- 면접 당일 성적증명서를 반드시 지참하기 바랍니다.\n- 사전 연락 없이 면접에 불참할 경우, 별도의 재면접 기회가 없으니 유의하기 바랍니다.\n-------------------------------\n1. 이*훈 13:00~13:05\n2. 성*규 13:05~13:10\n3. 장*훈 13:10~13:15\n4. 김*예 13:15~13:20\n5. 김*린 13:20~13:25\n6. 김*은 13:25~13:30\n7. 김*윤 13:30~13:35\n8. 이*림 13:35~13:40\n9. 김*민 13:40~13:45\n[휴식] 13:45~14:00\n10. 김상* 14:00~14:05\n11. 손*오 14:05~14:10\n12. 심*민 14:10~14:15\n13. 이*철 14:15~14:20\n14. 공*진 14:20~14:25\n15. 김*채 14:25~14:30\n16. 김*수 14:30~14:35\n17. 장*우 14:35~14:40\n18. 박*영 14:40~14:45",
+          "channel_id": "notice-3c7bfc3da404",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-japan-jap1695016568:460",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "일어일문학과 · 공지사항",
+          "title": "2026 일본 히로시마 동계 연수 신청자 면접 일시 공지!",
+          "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?mode=view&mv_data=aWR4PTQ2MCZzdGFydFBhZ2U9MCZsaXN0Tm89NDM0JnRhYmxlPWV4X2Jic19kYXRhX2phcGFuJm5hdl9jb2RlPWphcDE2OTUwMTY1NjgmY29kZT01TE5MZHJORkducVImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7bb331bb8b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4b4549901a22",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-68d5f9aa762f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-55ac86f2e763",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-392eeaadf103",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9a0b59b2a2b4",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d1802616c625",
+      "meals": [],
+      "notices": [
+        {
+          "body": "1. 행사개요\nKNU 벤처 메이커스(기업가 정신 및 창의력 강화캠프)\n• 접수기간: 2026.11.4.(수) ~ 2026.11.20.(금) 23:59까지\n• 일 정: 2026.11.26.(목) ~ 11.27.(금)\n• 장 소: 경주 한화 리조트\n• 참가대상: 창업 아이디어에 관심이 있는 경북대학교 재학생\n※ 휴학생 및 수료생 제외\n• 신청방법: QR코드 신청\n※ 창업교육센터 홈페이지 참고 https://changup.knu.ac.kr/)\n2. 홍보포스터: [붙임] 참조\n붙임 포스터 1부.",
+          "channel_id": "notice-d1802616c625",
+          "dday": 7,
+          "deadline": "2026-11-20",
+          "id": "knu-udm-udm1623371432:1657",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "자율전공학부 · 공지사항",
+          "title": "[안내]KNU 벤처 메이커스(기업가 정신 및 창의력 강화캠프) 참가 학생 모집",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NTcmc3RhcnRQYWdlPTAmbGlzdE5vPTk0MSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "가. 조 사 명: 2026년 재학생 취업의식조사\n나. 조사대상: 본교 재학생 3, 4학년 ※ 의대, 약대, 치대, 수의대 제외\n다. 조사기간: 2026. 11. 5.(목) ~ 12. 4.(금)\n라. 조사내용: 붙임 설문문항 참조\n마. 조사방법: 온라인 설문조사(URL: https://surveyl.ink/Kyungpook_Univ_2026)\n※ 선착순 500명 및 추첨 500명에게 각 5,000원 상당의 상품권 지급(총 1,000명)\n바. 협조사항: 각 학과(부) 홈페이지 등에 포스터 게재 및 홍보 요청\n붙임 1. 2026년 재학생 취업의식조사 설문문항 1부.\n2. 조사 안내 웹포스터(QR code포함) 1부.",
+          "channel_id": "notice-d1802616c625",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-udm-udm1623371432:1653",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "자율전공학부 · 공지사항",
+          "title": "[안내]2026년 재학생 취업의식조사",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NTMmc3RhcnRQYWdlPTAmbGlzdE5vPTkzNyZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "가. 개관기간\n- 전 기간: 2026. 12. 20.(일) 13:00∼2027. 2. 21.(일) 12:00【64일】\n※ 명의·선의관: 2027. 1. 9.(토) 13:00∼2. 21.(일) 12:00【44일】\n- 계절학기 기간: 2026. 12. 20.(일) 13:00∼2027. 1. 16.(토) 12:00【28일】\n나. 신청방법: 생활관 정보시스템(https://dormt.knu.ac.kr)에서 입주신청서 작성\n다. 세부사항: [붙임] 또는 생활관 홈페이지 공지사항 참고\n붙임 2026학년도 동계방학 생활관생 모집 안내 국·영문 각 1부.\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-d1802616c625",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-udm-udm1623371432:1654",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "자율전공학부 · 공지사항",
+          "title": "[안내]2026학년도 동계방학 대구캠퍼스 생활관생 모집",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NTQmc3RhcnRQYWdlPTAmbGlzdE5vPTkzOCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2026학년도 겨울계절수업․디딤돌수업* 수강신청에 관한 사항을 아래와 같이 알려드리오니 학생분들의 참고 바랍니다.\n* 전공자율선택제 학생들의 전공탐색 및 전공 수학능력 향상을 위해 여름계절수업과 동일한 기간에 운영\n가. 수강신청기간: 2026. 11. 11.(수) 13:00 ∼ 11. 12.(목) 17:59\n나. 수강신청 사이트: https://sugang.knu.ac.kr/\n다. 수업시간표 및 강의계획서 열람: http://sy.knu.ac.kr→계절학기(동계) 또는 디딤돌학기(동계)\n라. 수강신청 세부안내: [붙임1] 수강신청 안내 참조\n붙임 1. 2026학년도 겨울계절수업․디딤돌수업 수강신청 안내 1부.\n2. 2026학년도 겨울계절수업․디딤돌수업 수업시간표 1부.\n3. 수강신청프로그램매뉴얼(학생용) 1부.",
+          "channel_id": "notice-d1802616c625",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-udm-udm1623371432:1655",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "자율전공학부 · 공지사항",
+          "title": "[안내]2026학년도 겨울계절수업·디딤돌수업 수강신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NTUmc3RhcnRQYWdlPTAmbGlzdE5vPTkzOSZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "「2026년 K-MOOC 디지털 기초강좌(2차) 학습동아리」를 아래와 같이 모집하오니, 관심있는 학생들의 신청바랍니다.\n가. 프로그램: 2026년 K-MOOC 디지털 기초강좌「인공지능과 캐글분석(2차)」연계 학습동아리\n나. 운영목적: K-MOOC강좌 수강과 오프라인 활동을 연계하여 주제 이해도 향상, 심화 학습 도모 및 재학생 학습 역량 강화\n다. 신청대상: 본교 재학생\n라. 선발규모: 1팀(총4명: 팀장 1명, 팀원 3명)\n마. 활동내용: 오프라인 활동 기반의 강좌 연계 과제 수립 및 팀개별 학습 활동 진행\n바. 신청기간: 2026. 11. 5.(목) ~ 11. 17.(화) 23:00까지\n사. 신청방법: 제출 서류[붙임2] 작성 후 이메일 제출(kmooc@knu.ac.kr)\n아. 지원혜택\n 장학금지원: 활동 완료 시 장학금(1인당 40만원) 지급\n 학습지원: 운영TA를 통한 학습지원, 중간 점검을 통한 교수자 전문 피드백 제공 등\n자. 지원조건: 동아리 신청 시점부터 장학금 지급 시까지 반드시 재학 상태 유지, 해당 강좌 이수 및 필수 서류(최종 보고서 등) 제출 완료 시 장학금 지급\n※ 신청조건, 제출 서류 양식 및 세부일정 [붙임1] 참고\n차. 문의사항: 교수학습센터 교육지원팀(kmooc@knu.ac.kr, 053-950-4423)\n붙임 1. 2026년 K-MOOC 디지털 기초강좌(2차) 학습동아리 학습동아리 모집안내 1부.\n2. 2026년 K-MOOC 디지털 기초강좌(2차) 학습동아리 신청서류 모음 1부.\n3. 2026년 K-MOOC 디지털 기초강좌(2차) 학습동아리 홍보 포스터 1부.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-d1802616c625",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-udm-udm1623371432:1656",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "자율전공학부 · 공지사항",
+          "title": "[안내]2026년 본교 K-MOOC 디지털 기초강좌(2차) 학습동아리 모집",
+          "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NTYmc3RhcnRQYWdlPTAmbGlzdE5vPTk0MCZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-1cbb3d90d081",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-e08af12e34e3",
+      "meals": [],
+      "notices": [
+        {
+          "body": "코드트리(CodeTree) 6개월 수강 지원 프로그램의 운영 기간이 종료됨에 따라 후속 제출 서류를 안내해 드립니다.\n수강을 완료한 대상 학생은 아래 제출 서류를 기한 내에 제출해 주시기 바랍니다.\n■ 제출 서류\n결과 보고서 1부 (A4 2장 내외, 학과 홈페이지 양식 참고)\n※ 단, 삼성전자 PRO(B형) 및 삼성전자 공채 합격자는 결과 보고서 제출이 면제됩니다.\n(합격사실 학과사무실 통보 필수)\n* 교육 이수 수료증 (학과사무실 일괄확인 예정)\n■ 제출 마감: 2026. 11. 13.(금) 12:00까지\n■ 제출 방법: 학과사무실(IT2호관 305호) 방문 제출",
+          "channel_id": "notice-e08af12e34e3",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-smobile-smo1616372729:735",
+          "posted_at": "2026-11-09",
+          "reason": "reminder",
+          "source": "전자공학부 모바일공학전공 · 공지사항",
+          "title": "[모바일공학과] 코드트리 결과 보고서 및 수료증 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/smobile/sub.htm?mode=view&mv_data=aWR4PTczNSZzdGFydFBhZ2U9MCZsaXN0Tm89MzMmdGFibGU9ZXhfYmJzX2RhdGFfc21vYmlsZSZuYXZfY29kZT1zbW8xNjE2MzcyNzI5JmNvZGU9eDdsbmJKODVwTWtwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-450caf336106",
+      "meals": [],
+      "notices": [
+        {
+          "body": "겨울 계절수업에 개설된 교과목 중\n아래의 두 교과목은 \"AI부트캠프사업단\" 사전 신청한 학생만 신청 가능합니다.\n인공지능시스템(CAIB0222-001), 딥러닝프로그래밍실습(CAIB0235-001)\n수강신청 시 유의하시기 바랍니다.\n사업단문의: 950-7054\n감사합니다.",
+          "channel_id": "notice-450caf336106",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-seeai-see1667180581:319",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 인공지능전공 · 공지사항",
+          "title": "겨울 계절수업 신청 관련 공지",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTMxOSZzdGFydFBhZ2U9MCZsaXN0Tm89MjI3JnRhYmxlPWV4X2Jic19kYXRhX3NlZWFpJm5hdl9jb2RlPXNlZTE2NjcxODA1ODEmY29kZT1WZWpOTERSa3JIb2cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-8b2d3f025a39",
+      "meals": [],
+      "notices": [
+        {
+          "body": "첨부파일중 PDF미리보기",
+          "channel_id": "notice-8b2d3f025a39",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-pmeatknu-pme1623030157:1531",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "정밀기계공학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE1MzEmc3RhcnRQYWdlPTAmbGlzdE5vPTcyOSZ0YWJsZT1leF9iYnNfZGF0YV9wbWVhdGtudSZuYXZfY29kZT1wbWUxNjIzMDMwMTU3JmNvZGU9RmJXSTNnSURDNFdoJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-1d6a78636180",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-b8ebd17a5dca",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-c4b1c79994bd",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-787893a88ff5",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-278455937509",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차)를 아래와 같이 시행합니다.\n가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학생 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026년 12월 3일(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장 [붙임 문서 참조]\n5) 결과 확정: 2026년 12월 9일(수)[예정]\n- 부적격자의 경우 별도의 온라인 교육을 이수하여야 함 ※ 추후 별도 안내 예정\n나. 신청\n1) 기간: 2026년 11월 17일(화) ~ 11월 19일(목) 매일 10:00 ~ 17:00\n※ 등록횟수에 따라 신청 일자가 상이하므로 반드시 붙임 '시행 계획' 내 검사 신청 항목 확인\n2) 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n- 기준연도 2012년 이전 학생: 적격 판정 1회 / 평가(정량, 정성) 종류 구별 없음\n- 기준연도 2013년 이후 학생: 적격 판정 2회 / 평가(정량, 정성) 종류 구별 없음\n< 붙임 문서 >\n1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부\n2. 통합정보시스템 학생 신청 방법 1부\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-278455937509",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-geoedu-geo1623029261:1436",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "지리교육과 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?mode=view&mv_data=aWR4PTE0MzYmc3RhcnRQYWdlPTAmbGlzdE5vPTEzODQmdGFibGU9ZXhfYmJzX2RhdGFfZ2VvZWR1Jm5hdl9jb2RlPWdlbzE2MjMwMjkyNjEmY29kZT1KcWxkN1FVZXV6aDMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-2eb7684c7df1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-1f235111f7dc",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6ef40bd632d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d7e3a598e69c",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-d7e3a598e69c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-philosophy-phi1623391659:4219",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "철학과 · 학부 공지사항",
+          "title": "[교직] 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?mode=view&mv_data=aWR4PTQyMTkmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTMmdGFibGU9ZXhfYmJzX2RhdGFfcGhpbG9zb3BoeSZuYXZfY29kZT1waGkxNjIzMzkxNjU5JmNvZGU9eTVlc2ZnZ2ZZQlBZJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-e187e9582e58",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-afca571a7ef1",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 첨단기술융합대학 자율학부1의 학과선호도조사를 시행합니다.\n- 일정: 2026.11.11.(수) - 11.17.(화)\n- 신청방법:※[붙임3] 매뉴얼 참조\nPC 또는 모바일) 통합행정시스템 - 학적- 전공관리 - 자율(전공)학부 학과선호도조사\n- 작성요령: 1,2,3, 지망 모두 선택 후 저장.\n※본 학과선호도 조사는 수요조사 목적으로 진행됩니다.\n※학과선호도 조사와 본 전공(학과)선택과는 별개로 진행됩니다.\n※본 전공(학과)선택 일정은 향후 공지 예정/ (참고) 25학번 전공선택 일정: 2026.01.02. - 01.06.\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-afca571a7ef1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-atcad-atc1753746498:135",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "첨단기술융합대학 자율학부1 · 공지사항",
+          "title": "2026학년도 2학기 첨단기술융합대학 자율학부1 학과선호도 조사(11/11-11/17)",
+          "url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?mode=view&mv_data=aWR4PTEzNSZzdGFydFBhZ2U9MCZsaXN0Tm89MTMwJnRhYmxlPWV4X2Jic19kYXRhX2F0Y2FkJm5hdl9jb2RlPWF0YzE3NTM3NDY0OTgmY29kZT1zRWxDS3NqbWlyZTMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-dd1ea15f1f4f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-dfce5afb9336",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d6c272c6c7db",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ccc3a94a1fa5",
+      "meals": [],
+      "notices": [
+        {
+          "body": "두산연강재단에서 2027년도 장학생을 선발하오니, 관심있는 학생들은 기한 내 신청하시기 바랍니다.\n1. 접수 기간: 2026. 10. 14.(수) 9시 ~ 2026. 11. 13.(금) 18시\n2. 접수 방법: 두산연강재단 홈페이지 https://www.yonkang.org/kr/support/information/?id=109 신청(홈페이지에서 신청서 작성 및 서류 스캔 파일 업로드 후 제출)\n3. 장학 금액: 졸업시까지 학기당 학업장려금 400만원 지원(재단 내부 기준 충족시), 장학생 워크숍 및 소모임 참여\n4. 지원 자격: 대한민국 국적의 4년제 학과에 속한 학부생, 2027.3월 기준 2학년 1학기 진학 예정자 등(상세사항 공고문 참조)\n5. 문의처: 두산연강재단 학술장학팀 장학 담당자 jaegyeom.jo@doosan.com / 02-705-5514 (평일 10시~17시, 점심시간 12시~13시 제외)\n※ 상세사항은 붙임 참조\n첨부파일중 PDF미리보기\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-civil-civ1614066197:3144",
+          "posted_at": "2026-10-15",
+          "reason": "reminder",
+          "source": "토목공학과 · 공지사항",
+          "title": "2027학년도 두산연강재단 장학생 선발 공고",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNDQmc3RhcnRQYWdlPTMwJmxpc3RObz0yNTU5JnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        },
+        {
+          "body": "경북대 1:1 전화·화상 외국어 프로그램 모집\n원하는 시간에, 나에게 딱 맞는 1:1 맞춤 수업!개인별 수준과 학습 목적에 맞춰\n필리핀 및 북미 강사와 1:1 맞춤형 수업으로 진행됩니다.\n◎ 접수 기간: 2026. 11. 3.(화) ~ 2026. 11. 27.(금)\n◎ 수업 기간: 2026. 11. 30.(월) ~ 2026. 12. 28.(월)\n■ 1:1 화상 영어\n[스탠다드 / 필리핀]\n○ 주 2회 25분(월 8회) : 76,000원\n○ 주 3회 25분(월 12회) : 110,000원\n○ 주 5회 25분(월 20회) : 152,000원\n[프리미엄 / 북미]\n○ 주 2회 25분(월 8회) : 159,000원\n○ 주 3회 25분(월 12회) : 219,000원\n○ 주 5회 25분(월 20회) : 339,000원\n■ 1:1 전화 영어\n[필리핀]\n○ 주 3회 10분(월 12회) : 65,000원\n○ 주 3회 15분(월 12회) : 97,000원\n[북미]\n○ 주 3회 10분(월 12회) : 105,000원\n○ 주 3회 15분(월 12회) : 155,000원\n■ 프로그램 특징\n○ 개인별 수준과 학습 목적에 맞춘 1:1 맞춤 수업\n○ 본인 일정에 맞춰 원하는 수업 시간 선택\n○ 필리핀 및 북미 강사와 실전 회화 중심 수업\n○ 전화 또는 화상 방식으로 편리하게 수강 가능\n■ 신청 홈페이지 : https://knucenter.english.co.kr/\n■ 문의 : 053-950-6737\n경북대학교 글로벌교육센터 106호 토익사무실\n첨부파일중 이미지 미리보기",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": 14,
+          "deadline": "2026-11-27",
+          "id": "knu-civil-civ1614066197:3185",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "토목공학과 · 공지사항",
+          "title": "[글로벌교육센터][토익]1:1 전화·화상 외국어 프로그램 모집",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODUmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTUmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "<2026학년도 대학원 직무박람회>\n_ 학부생도 수강 가능합니다.\n1. 진행기간: 2026. 11. 20.(금) ~ 12. 5.(토)\n- 11/20(금): 오프라인(복지관 4층, 강의실1)\n- 11/30(월)~12/5(토): 온라인(줌)\n2. 주요내용\n1) 인사담당자 특강(오프라인, 복지관 4층(강의실 1))\n- 삼성전자 한국 총괄 HR\n- 반도체 산업 및 기업이 원하는 인재\n2) 취업전략\n- AI시대 취업트렌드 및 대학원생 커리어 전략\n- 연구경험을 직무역량으로 전환하는 취업전략\n3) 서류 및 면접\n- 서류작성\n- 면접대비\n4) 현직자 멘토링\n- LG에너지솔루션, 현대자동차, 아모레퍼시픽, LG MAGNA, 농협, 삼성SDI 등\n5) 커리어역량\n- 경력개발전략\n(AI시대 업무생산성과 커리어 경쟁력, 퍼스널 브랜딩 등)\n첨부파일중 이미지 미리보기",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-civil-civ1614066197:3176",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "토목공학과 · 공지사항",
+          "title": "[대학원혁신]경북대학교 대학원 직무 박람회",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2026학년도 2학기 졸업자격인정원 신청을 아래와 같이 안내하오니 해당 학생들은 기간 내에 신청하기 바랍니다.\n○ 신청기간: 2026. 10. 12.(월) ~ 12. 31.(목)\n※ 신청기간 경과 후 졸업자격 인정원 제출에 관하여는 소속학과 사무실로 문의 바람\n○ 대 상 자: 졸업자격인정 자격요건을 갖춘 재학생 및 수료생(휴학생 제외)\n※ 2027.2월 졸업예정자 및 2027.1학기 학사학위취득유예 신청 예정자는 반드시 졸업자격인정원을 제출해야 함\n○ 적용기준\n- 2007학년도 이전 입학자: 전공영역\n- 2008학년도부터 2011학년도까지 입학자: 실용영어 및 전공영역\n- 2012학년도부터 2015학년도까지 입학자: 실용영어, 학생상담지도교수의 상담 및 전공영역\n- 2016학년도 이후 입학자: 실용영어, 소프트웨어영역, 학생상담지도교수의 상담 및 전공영역\n※ 단, 전공영역은 전공영역을 추가로 평가하는 학과(부) 학생에 한하며, 별도의 졸업자격인정원을 제출하지 않음\n○ 신청방법: [통합정보시스템-졸업-졸업인정(대학)-졸업자격인정신청]에서 학생이 직접 신청하며, 증빙서류는 파일첨부 기능을 활용하여 업로드\n○ 면제대상: 편입생(상주대특례편입생포함), 외국인학생(~2021학번), 장애학생지원센터에 등록된 장애학생은\n실용영어, 소프트웨어영역, 학생상담지도교수의 상담영역 평가를 일괄 면제 처리함(전공영역 면제 아님)\n※ 면제자도 졸업자격인정원을 신청(인정구분에서 \"면제\"를 선택 입력해야함)해야 면제처리가 완료되므로 반드시 신청해야함\n※ 2022학년도부터 입학하는 외국인 학생: 소프트웨어 영역의 졸업자격 인정평가만 면제,\n실용영어영역의 졸업자격 인정평가는 한국어능력시험(TOPIK) 4급 이상으로 대체, 상담영역 충족해야 함\n보다 자세한 사항은 [학교홈페이지-교육-학사행정-학사안내-졸업자격인정제] 내용을 참고하시기 바랍니다.\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-civil-civ1614066197:3177",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "토목공학과 · 공지사항",
+          "title": "2026학년도 2학기 졸업자격인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)\n※ 세부 내용은 아래에 첨부된 대학 전과 선발 안내(붙임 1) 참조\n붙임 1. 2027학년도 대학 전과 선발 안내 1부\n2. 학과(부)별 전과 선발 인원 1부. 끝.",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-civil-civ1614066197:3179",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "토목공학과 · 공지사항",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정 설명회를 아래와 같이 개최하오니 관심있는 학생들의 많은 참여 바랍니다.\n* 대구캠퍼스: 11.23.(월) 16:30 글로벌플라자 경하홀2\n* 상주캠퍼스: 11.24.(화) 14:00 복지회관 강의실 201호\n첨부파일중 이미지 미리보기",
+          "channel_id": "notice-ccc3a94a1fa5",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-civil-civ1614066197:3181",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "토목공학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 설명회 개최",
+          "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODEmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTQmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-f14e44ae5bb9",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-9dbd1b2695c9",
+      "meals": [],
+      "notices": [
+        {
+          "body": null,
+          "channel_id": "notice-9dbd1b2695c9",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-style-sty1616635012:392",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "패션디자인전공 · 공지사항",
+          "title": "2026학년도 섬유패션디자인학부 패션디자인전공 졸업작품발표회",
+          "url": "https://home.knu.ac.kr/HOME/style/sub.htm?mode=view&mv_data=aWR4PTM5MiZzdGFydFBhZ2U9MCZsaXN0Tm89MzI4JnRhYmxlPWV4X2Jic19kYXRhX3N0eWxlJm5hdl9jb2RlPXN0eTE2MTY2MzUwMTImY29kZT1JV0czTzA1NkhZQXAmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-3d2a3e87207a",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d13e4abb0470",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-4a41e1328a3e",
+      "meals": [],
+      "notices": [
+        {
+          "body": "개교 80주년을 기념으로 진행하는 KNU Research Festival의 세부 프로그램으로 AI 분야 명사를 초청하여 신기술 신산업 토크 콘서트를 아래와 같이 개최하오니, 교내 구성원의 많은 참여 바랍니다.\n가. 행 사 명: 신기술 신산업 토크 콘서트\n나. 강 사: 김상균 교수(경희대학교 경영대학원)\n다. 주 제: “AI가 내 일을 대신한다면, 나는 무엇을 배워야 할까?”\n라. 일 시: 2026. 11. 23.(월) 14:00 ~ 16:00\n마. 장 소: 글로벌플라자 경하홀Ⅰ\n바. 대 상: 학생 및 교직원\n사. 참가신청\n1) 신청방법: 링크(https://wrl.kr/755o0ELx) 또는 QR코드 스캔\n2) 신청기간: 2026.11.13.(금)까지\n※ 참가시 소정의 기념품 증정\n붙임 토크 콘서트 홍보 포스터 1부. 끝.",
+          "channel_id": "notice-4a41e1328a3e",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-puad-pua1623029519:4087",
+          "posted_at": "2026-10-30",
+          "reason": "reminder",
+          "source": "행정학부 · 공지사항",
+          "title": "[행사] 개교 80주년 기념 「신기술 신산업 토크콘서트」홍보",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwODcmc3RhcnRQYWdlPTAmbGlzdE5vPTIxMzYmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "우리 대학 경북인문사회연구원(KIHSS)에서 인문사회분야 학문후속세대의 연구 참여 기회를 확대하고, 단과대학과 연구원 학술연구교수 간 연구협력 기반을 강화하기 위해 학생연구원을 선발하여 차세대 연구자 멘토링 Lab을 운영하고자 합니다.\n참여하고자 하는 행정학부생은 붙임 운영계획을 확인하여, 11/18(수) 오후 3시까지 행정학부 사무실로 연구활동계획서와 통장사본을 제출하기 바랍니다.\n※ 학생연구원 지원금: 30만원/월(2026년 12월~2027년 2월, 3개월)\n※ 연구활동계획서 작성 안내\n-. 연구자번호: 범부처통합연구지원시스템(www.iris.go.kr)에서 가입하여 생성\n-. 소속 학과장 날인: 빈칸으로 제출\n붙임 1. 경북인문사회연구원 학생연구원 선발 및 차세대 연구자 멘토링 Lab 운영계획 1부.\n2. (서식)학생연구원 신청자 명단(엑셀파일) 1부.\n3. (서식)학생연구원 연구활동계획서 및 연구결과보고서 각1부.\n4. (서식)포스터섹션 1부. 끝.",
+          "channel_id": "notice-4a41e1328a3e",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-puad-pua1623029519:4095",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "행정학부 · 공지사항",
+          "title": "[학사]「2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab」 학생연구원 선발 안내(~11/18(수) 오후 3시)",
+          "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTUmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDMmdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b46aed7f6b0f",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-ac0144f93d45",
+      "meals": [],
+      "notices": [
+        {
+          "body": null,
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-chem-che1622521080:7167",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "화학과 · 공지사항",
+          "title": "외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxNjcmc3RhcnRQYWdlPTAmbGlzdE5vPTM5NTQmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "글로벌 연구 환경 구축 및 내·외국인 구성원 간의 협력 활성화를 통한 연구 경쟁력 강화를 위하여 「2026학년도 KNU Global Excellence Lab 지원사업」을 다음과 같이 추진하오니 대상자들께서는 많은 참여 바랍니다.\n1. 사업개요\n가. 추진목적: 본교 전임교원 연구실 글로벌 문화 조성 및 대학원생 간 협력 촉진\n나. 대 상: 일반대학원 석·박사 및 통합과정 재학생\n※ 대표자는 1학기 이상 이수 필수, 외국인 대학원생 1명 이상을 포함한 팀 단위 지원\n다. 지원내용: 연구실 국제화 현황 보고서 평가를 통해 우수 연구실 선정 및 상금 지급\n라. 평가방법\n- 정성평가: 영어 사용환경, 외국인 학생 지원 제도, 협력 모범사례 등\n- 정량평가: 외국인 대학원생 연구 실적, 재학·졸업 인원 등\n마. 시상내역: 총 9,800,000원(대상 2팀, 최우수상 4팀, 우수상 10팀)\n※ 인문사회계열 및 이공계열로 구분하여 접수 및 시상\n2. 세부계획:【붙임】참조\n3. 추진일정(※ 아래의 일정은 진행상황에 따라 변경될 수 있음)\n가. 지원공고: 2026. 11. 9.(월)~11. 23.(월)\n나. 지원서접수: 2026. 11. 23.(월) 오전 10시까지\n다. 선발심사: 2026. 11. 24.(수)~11. 30.(월)\n라. 결과발표: 2026. 12. 2.(수)\n마. 시상계획: 2026. 12. 9.(수) 예정\n붙임 1. 2026학년도 KNU Global Excellence Lab 지원사업 안내 1부.\n2. 2026학년도 KNU Global Excellence Lab 지원사업 홍보 포스터 1부. 끝.",
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-chem-che1622521080:7168",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "화학과 · 공지사항",
+          "title": "「2026학년도 KNU Global Excellence Lab 지원사업」추진 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxNjgmc3RhcnRQYWdlPTAmbGlzdE5vPTM5NTUmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": "* 고려아연 온산 제련소 견학신청 안내\n1. 대상: 대학원생\n2. 견학 일정: 2027년 1월 15일 금요일 08:30~18:00 (화학관에서 전세버스로 이동)\n3. 중식 제공, 석식은 미정\n4. 신청 양식: 이름, 학번 및 휴대폰 번호\n5. 신청 마감일: 11월 25일 18:00 까지\n참가 희망자는 이메일([개인정보 가림])로 신청하길 바랍니다.",
+          "channel_id": "notice-ac0144f93d45",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-chem-che1622521080:7172",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "화학과 · 공지사항",
+          "title": "대학원생 대상 고려아연 온산 제련소 견학 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?mode=view&mv_data=aWR4PTcxNzImc3RhcnRQYWdlPTAmbGlzdE5vPTM5NTYmdGFibGU9ZXhfYmJzX2RhdGFfY2hlbSZuYXZfY29kZT1jaGUxNjIyNTIxMDgwJmNvZGU9TDJIbTdrdzRadmxOJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-093d2d29fb09",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-101538fb6a8e",
+      "meals": [],
+      "notices": [
+        {
+          "body": "1. 관련: 이공학-2026-87(2026. 10. 16.)\n2. 한국이공학진흥원(Institute for Promotion of Engineering and Science of Korea, IPESK)에서는 공학계열 단과대학의 발전과 대한민국의 미래를 선도할 공학(연구)자를 양성하기 위해「글로벌 연구중심대학」에 재학 중인 우수한 학생을 추천받아「IPESK 차세대 공학(연구)자」로 인증하고, 다양한 혜택을 제공하고자 합니다.\n3. 귀 대학은 세계대학 평가에서 최근 5년간 꾸준히 상위 순위를 유지하고 있어「글로벌 연구중심대학」으로 평가되었기에 귀 대학의 우수한 학생을「IPESK 차세대 공학(연구)자」로 추가 추천해 주시기 바랍니다.\n가. 개요\n대상자\n추천요건\n추천권자\n- 학부생\n- 휴학생 및 수료생 제외\n-\n학장의 추천을 받은 자로서\n- 학부 3학년 또는 4학년 재학생으로\n- 성적이 4.5 만점에 3.7 이상인\n학생\n(또는 4.3 만점에 3.5 이상인 학생)\n- 소속 공학계열 단과대학 학장\n추천인원\n인증혜택\n시상\n- 학과별 10명 이내(입학정원 60명당)\n-\n차세대 공학자 디지털배지 발급\n- 포럼 등 각종 행사 초대권 발송\n-\n차세대 공학자상\n(학과별 최우수상 1명, 우수상 2명)\n나. 추천서류\ni. 제3기 차세대 공학자 개인정보 수집 및 이용 동의서(서식) 1부.\nii. 성적증명서 1부.\n다. 추천 기한: 2026. 11. 13.(금) 17시\n라. 제출 방법: 학과 사무실로 추천서류 원본 제출\n첨부파일중 PDF미리보기",
+          "channel_id": "notice-101538fb6a8e",
+          "dday": 0,
+          "deadline": "2026-11-13",
+          "id": "knu-env-env1624500229:1115",
+          "posted_at": "2026-10-19",
+          "reason": "reminder",
+          "source": "환경공학과 · 학부 공지사항",
+          "title": "[안내] 제3기 IPESK 차세대 공학자 추천 안내",
+          "url": "https://home.knu.ac.kr/HOME/env/sub.htm?mode=view&mv_data=aWR4PTExMTUmc3RhcnRQYWdlPTAmbGlzdE5vPTE4OCZ0YWJsZT1leF9iYnNfZGF0YV9lbnYmbmF2X2NvZGU9ZW52MTYyNDUwMDIyOSZjb2RlPWRmazRQT21sSW5yViZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-6fafb52e7377",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-459a4805de72",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-423ad5624dbc",
+      "meals": [],
+      "notices": [
+        {
+          "body": "글로벌 연구 환경 구축 및 내·외국인 구성원 간의 협력 활성화를 통한 연구 경쟁력 강화를 위하여「2026학년도 KNU Global Excellence Lab 지원사업」을 다음과 같이 추진하고자 합니다.\n1. 사업개요\n가. 추진목적: 본교 전임교원 연구실 글로벌 문화 조성 및 대학원생 간 협력 촉진\n나. 대 상: 일반대학원 석·박사 및 통합과정 재학생\n※ 대표자는 1학기 이상 이수 필수, 외국인 대학원생 1명 이상을 포함한 팀 단위 지원\n다. 지원내용: 연구실 국제화 현황 보고서 평가를 통해 우수 연구실 선정 및 상금 지급\n라. 평가방법\n- 정성평가: 영어 사용환경, 외국인 학생 지원 제도, 협력 모범사례 등\n- 정량평가: 외국인 대학원생 연구 실적, 재학·졸업 인원 등\n마. 시상내역: 총 9,800,000원(대상 2팀, 최우수상 4팀, 우수상 10팀)\n※ 인문사회계열 및 이공계열로 구분하여 접수 및 시상\n2. 세부계획:【붙임】참조\n3. 추진일정\n가. 지원공고: 2026. 11. 9.(월)~11. 23.(월)\n나. 지원서접수: 2026. 11. 17.(화)~11. 23.(월) (공문과 이메일 모두 기간 엄수)\n다. 선발심사: 2026. 11. 24.(수)~11. 30.(월)\n라. 결과발표: 2026. 12. 2.(수)\n마. 시상계획: 2026. 12. 9.(수) 예정\n붙임 1. 2026학년도 KNU Global Excellence Lab 지원사업 안내 1부.\n2. 2026학년도 KNU Global Excellence Lab 지원사업 홍보 포스터 1부. 끝.",
+          "channel_id": "notice-423ad5624dbc",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-global-glo1729572883:19183",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "국제처 · 공지사항(국제화 프로그램)",
+          "title": "2026학년도 KNU Global Excellence Lab 지원사업 안내",
+          "url": "https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTgzJnN0YXJ0UGFnZT0wJmxpc3RObz0zMjIyJnRhYmxlPWV4X2Jic19kYXRhX2dsb2JhbCZuYXZfY29kZT1nbG8xNzI5NTcyODgzJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        },
+        {
+          "body": null,
+          "channel_id": "notice-423ad5624dbc",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-global-glo1729572883:19186",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "국제처 · 공지사항(국제화 프로그램)",
+          "title": "2026년 제2기 외국인 유학생‘KNU 글로벌 모교방문 홍보단’참가자 모집공고",
+          "url": "https://home.knu.ac.kr/HOME/global/sub.htm?mode=view&mv_data=aWR4PTE5MTg2JnN0YXJ0UGFnZT0wJmxpc3RObz0zMjIyJnRhYmxlPWV4X2Jic19kYXRhX2dsb2JhbCZuYXZfY29kZT1nbG8xNzI5NTcyODgzJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0mc2VjcmV0X21vZGU9MA=="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-5a80fc96a24d",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-d365c7a64837",
+      "meals": [],
+      "notices": [
+        {
+          "body": "▶수강대상: 2026학년도 상반기 코멘토「현직자 직무 부트캠프」수료자\n▶모집일정: ~ 2026.11.24.(화) 까지\n▶특강일시: 2026.11.30.(월) (19:00~21:00)\n▶특강내용\n-포트폴리오: 부트캠프 경험을 채용 언어로 전환하는 법\n-자기소개서: 공고 역분석부터 문항 설계까지\n-면접: STAR 구조화+실전 질문 대응 전략\n▶신청폼: https://bit.ly/4AavUOR\n▶형태: 비대면 총 2시간\n▶참가비: 무료\n▶수강생 혜택\n-직무 부트캠프 경험을 포트폴리오/자소서/면접으로 연결하는 실전 노하우\n-전액 무료(별도 비용 없음)",
+          "channel_id": "notice-d365c7a64837",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knujob-knu1623817159:6252",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "진로취업과 · 게시판",
+          "title": "KNU×코멘토「현직자 직무 부트캠프」수료생들을 위한 취업특강 안내",
+          "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?mode=view&mv_data=aWR4PTYyNTImc3RhcnRQYWdlPTAmbGlzdE5vPTczMSZ0YWJsZT1leF9iYnNfZGF0YV9rbnVqb2ImbmF2X2NvZGU9a251MTYyMzgxNzE1OSZjb2RlPVZzRFgyN2RtdUtuVyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        },
+        {
+          "body": "★KNU 글로벌 취업 통합 프로그램「해외취업 빌드업 클래스」Part 2.★\n온라인(ZOOM) 최신 취업정보 특강+1:1 개별 컨설팅을 통한 해외취업 대비 맞춤형 취업전략 설계!!\n▶ 11. 25.(수) 18:00 ~ 21:00(3h) (온라인/ZOOM)국가별(영어권/비영어권) 최신 취업정보 제공 특강\n▶ 11. 26.(목) ~ 12. 13.(일) (온라인/ZOOM)1:1 개별 컨설팅(30명 한정, 1인 1h 배정)\n* (온라인 특강) 참여자 선발 ➡️ 오픈카톡방을 통해 줌링크 안내/참여\n(1:1 컨설팅) 개별희망 참여일시 사전 수요조사 ➡️ 배정 안내/참여\n▶ 신청방법/신청URL\n* KNUCUBE-역량개발-비교과프로그램-[해외취업 빌드업 클래스](온라인 취업특강)-신청\n➡️ https://knucube.knu.ac.kr/site/lecture00313868\n* KNUCUBE-역량개발-비교과프로그램-[해외취업 빌드업 클래스](온라인 1:1컨설팅)-신청\n➡️ https://knucube.knu.ac.kr/site/lecture00313869\n▶ 신청마감: 11/20(금) 24시 까지\n* 문의처 : 진로취업과(☎️053-950-2871)",
+          "channel_id": "notice-d365c7a64837",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-knujob-knu1623817159:6253",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "진로취업과 · 게시판",
+          "title": "[진로취업과] 2026학년도「해외취업 빌드업 클래스」(온라인 취업특강/1:1 컨설팅)",
+          "url": "https://home.knu.ac.kr/HOME/knujob/sub.htm?mode=view&mv_data=aWR4PTYyNTMmc3RhcnRQYWdlPTAmbGlzdE5vPTczMiZ0YWJsZT1leF9iYnNfZGF0YV9rbnVqb2ImbmF2X2NvZGU9a251MTYyMzgxNzE1OSZjb2RlPVZzRFgyN2RtdUtuVyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ]
+    },
+    {
+      "channel_id": "knu-academic",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청을 다음과 같이 공지하오니 희망하는 학생들은 기한 내 신청하여 주시기 바랍니다.\n1. 신청대상: 교직과정 이수예정자(사범대학, 교육대학원 포함) ※ 휴학 및 수료생 신청 가능\n2. 신청기간: 11. 17.(화) ~ 11. 19.(목) 매일 10:00~17:00(신청자가 많은 경우, 조기 종료될 수 있음)\n※등록횟수에 따라 신청 기간이 다르므로 [붙임1] 참조 후 신청\n3. 검사일시: 2026. 12. 3.(목) 19:00~19:50\n4. 신청방법: 통합정보시스템 로그인 후 신청[붙임 2 참조]\n[통합정보시스템_교직_교직적성및인성검사관리_교직적성및인성검사신청]\n5. 문의처: 교무처 학사과(053-950-2055)\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 세부 안내 1부.\n2. 통합정보시스템 신청 방법 1부. 끝.",
+          "channel_id": "knu-academic",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-wbbs-stu_812:11794275897669",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "학교 학사공지",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?menu_idx=42&bbs_cde=stu_812&note_div=top&bltn_no=11794275897669"
+        },
+        {
+          "body": "2027학년도 대학 전과 선발 내용을 다음과 같이 공지하오니 전과를 희망하는 학생들은 참고하시기 바랍니다.\n1. 신청자격: 자격 요건(붙임 1 참조)을 만족하는 2학년 이상 재학생 또는 복학예정자(편입생도 가능)\n2. 허용 학과 및 인원: [붙임 2] 참조\n3. 추진 일정\n- 선발 방법 및 세부 일정 등 공지: 2026. 12월 중\n- 지원서 접수 및 선발: 2027. 1월 ~ 2월 중\n4. 문의처: 학사과(053-950-2055)\n※ 세부 내용은 아래에 첨부된 대학 전과 선발 안내(붙임 1) 참조\n붙임 1. 2027학년도 대학 전과 선발 안내 1부\n2. 학과(부)별 전과 선발 인원 1부. 끝.",
+          "channel_id": "knu-academic",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-wbbs-stu_812:11794287947649",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "학교 학사공지",
+          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdViewBtin.action?menu_idx=42&bbs_cde=stu_812&note_div=top&bltn_no=11794287947649"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-df44dd8507c1",
+      "meals": [],
+      "notices": [
+        {
+          "body": "학생 여러분 안녕하세요,\n저희 연구실은 디지털 반도체 설계와 관련된 최신의 이슈들을 분석/설계하는 연구실입니다.\n(e.g., 인공지능의 반도체 설계 응용, 1.6nm 반도체의 VLSI 설계, PIM 및 가속기 회로, 삼진법 회로설계 등.)\n학부 연구생 및 대학원(석사/박사)생들은 디지털 반도체 설계와 관련된 내용을 배우며,\n각 개인별로 작은 연구과제를 받아 저와 연구를 진행합니다.\n송대건 교수는 2027 1학기부터 복직하여 연구지도 및 교육을 계속할 예정입니다.\n2027 1학기에 진학을 희망하는 대학원생을 모집합니다.\n자격요건: 디지털 반도체 설계에 관심있는 대학원 진학 예정 학생\n지원: 연구실 자리배정, 개인 PC, 연구비 및 국내외 학술대회 논문 발표 및 참여지원\n모집기간: 2026.11.9 - 2026.11.16\n지원방법: (1)1-2페이지 분량의 자기소개서 및 (2)구글닥 작성 (구글닥에 자기소개서 제출)\n(자기소개서형식 자유 - 이름, 연락처, 본인의 강점 및 지원동기 등)\nhttps://docs.google.com/forms/d/1S_1g3Kd1jAzkkXPFFTLLLUYAa76ItxzkclUyl94YhEs\n문의 및 지원: tsong@knu.ac.kr\n모집인원: 대학원생 0명\n본 안내가 전자공학부 학우 여러분의 2027년 계획에 도움이 되기를 바랍니다.\n-송대건 (tsong@knu.ac.kr)",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": 3,
+          "deadline": "2026-11-16",
+          "id": "knu-see-notice:105830",
+          "posted_at": "2026-11-09",
+          "reason": "reminder",
+          "source": "전자공학부 · 공지사항",
+          "title": "[송대건 교수] 2027 1학기 석사/박사 모집",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105830&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내\n가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 12. 9.(수)[예정]\n- 부적격자의 경우, 별도의 온라인 교육을 이수해야 함 ※ 추후 별도 안내 예정\n나. 신청 방법\n1) 신청 기간: 2026. 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n* 2027년 2월 또는 8월 졸업예정자 중 교직 적성 및 인성검사 기준을 충족하지 못한 학생은 반드시 신청 및 참여하기 바랍니다.\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부.\n2. 통합정보시스템 학생 신청 방법 1부.",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105832",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105832&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "[분실물]갈색 머플러 보관중입니다.(학부사무실)\n2호관과 5호관 사이 길에서 습득한 갈색머플러를\n학부사무실에서 보관 중입니다.\n분실한 분은 전자공학부사무실(IT대학 1호관 409호)로 방문 부탁드립니다.\n문의처 : 053-950-6508",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105833",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "[분실물]갈색 머플러 보관중입니다.(학부사무실)",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105833&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "박홍식 교수 2026년 2학기 지도학생 상담을 실시할 예정입니다.\n* 일시 :\n(1) 11/17일 화요일 낮 12시\n(2) 11/20일 금요일 낮 12시\n* 장소 : IT3호관 305호\n* 참석 예정자는 ’참석여부와 원하는 날짜’를 메일로 간단히 알려주기 바랍니다.\n(박홍식, hpark@ee.knu.ac.kr)\n* 위 일정에 참석이 어렵거나 개별상담을 희망하는 학생은 메일주세요. 별도의 면담 일정 정하도록 하겠습니다.",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105834",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "[박홍식 교수] 2026년 2학기 지도학생 상담",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105834&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "학생여러분 안녕하세요. 지도교수 상담 신청을 받습니다.\n링크를 걸어둔 구글 시트에서 희망하는 시간에 이름을 적어주세요.\n[상담]\n일시 11월 12일(목) / 16일(월) / 19일(목)\n장소 IT1호관 407호 학부장실\n[신청링크]\nhttps://docs.google.com/spreadsheets/d/17C1A4tHmVa7Yazp2-Y_sL2qnYjSwG6ON/edit?gid=1954467771#gid=1954467771\n가능하면 개인상담을 하려고 합니다.\n한준구",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105835",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "[한준구교수]지도교수상담",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105835&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "『제6회 반도체특성화 취업·직무역량 강화 아카데미』(4회차, 11/13) 신청결과 및 참석 안내\n이번 아카데미에 보내주신 많은 관심과 참여에 진심으로 감사드립니다.\n해당 특강은 선착순 70명 모집으로 진행되었으며, 아래 최종 선발자 명단에 포함된 학생만 참여가 가능합니다.\n※ 대리참석 및 미등록자의 참여는 제한되오니 양해 부탁드립니다.\n[참석 및 사전 취소 안내]\n최근 아카데미 신청 후 사전 연락 없이 당일 불참하는 학생이 10명 이상 발생하여,\n다른 학생들의 참여 기회와 행사 운영에 차질이 생기고 있습니다.\n최종 선발된 학생은 반드시 참석해주시기 바라며, 부득이하게 참석이 어려운 경우\n행사 2일 전인 11월 11일(수)까지 사업단에 취소 의사를 알려주시기 바랍니다.\n사전 취소된 자리는 다른 학생에게 참여 기회를 제공할 예정입니다.\n사전 연락 없이 당일 불참하는 경우 비교과 점수가 감점되오니 유의하시기 바랍니다.\n원활한 행사 운영을 위해 학생 여러분의 협조 부탁드립니다.\n명단확인：https://knusemi.knu.ac.kr/content/community/notice.html?pg=vv&number=718&Sopt_1=&Sopt_2=&Sopt_3=&sword=&sdate=#ditail_view",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105836",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "제6회 반도체특성화 취업·직무역량 강화 아카데미 개최-4회차 (11/13) 신청 결과 안내(선착순70명)",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105836&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "☞ 본 특강은 공결 인정되지 않습니다. 참고바랍니다.\n☞ 최정식 교수님 '이동통신'수업 수강생들은 신청하지 마세요. 자동 등록처리 됩니다.\n2026 KCA Tech Mentor, 이공계 전파기술 실무특강\nㅇ (목 적) 전파진흥주간을 맞아 지역 전파문화 확산을 위해 이공계대학 학생 대상 이동통신 실무분야의 기술·체험교육을 제공하여 정보통신분야 우수인재 양성\nㅇ (일 시) 2026. 11. 19.(목) 10:30 ~ 11:45\nㅇ (장 소) IT대학 1호관 108호\nㅇ (참여기관) KCA, 엘지유플러스, SK오앤에스\n☞ 사전등록(선착순 20명) : https://naver.me/GFsSi9Ah (∼11.17/화 09:00 까지)\n# 최정식 교수님 '이동통신'수업 수강생들은 신청하지 마세요.(자동 등록처리 됩니다.)\n#전자공학부 학생만 신청가능. 타학과생은 신청불가합니다.\nㅇ 주요내용",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105837",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "[특강]2026 KCA Tech Mentor, 이공계 전파기술 실무특강(11.19/목 사전등록필수!!)",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105837&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "전자공학부의 전자공학종합설계 강좌는 실제 수강신청 전에 사전 신청을 거쳐 강좌를 개설하고 사전 신청을 통해 미리 참여 승인을 받은 학생들이 수강신청 기간 중 수강신청을 하는 방식으로 운영하고 있습니다.\n이번 사전 신청 기간 중에 신청 후 최종 승인이 완료되면 2027학년도 1학기에 '전자공학종합설계1'을, 2027학년도 2학기에 '전자공학종합설계2‘를 수강신청하여 1년 동안 과제를 수행하게 됩니다.\n이에 2027학년도 전자공학종합설계 신청을 다음과 같이 시행합니다.\n▶ 신청 기간 : 2026.11.19.(목) 10:00 ~ 11.26.(목) 24:00\n▶ 전자공학종합설계 신청: 웹페이지(http://itsee.knu.ac.kr/gproj/team/)에서 신청\n▶ 신청 대상 : 아래 ①∼③ 조건 모두 충족 필요\n① (2027학년도 1학기 기준) 3학년 2학기 및 4학년 학생\n② (2027학년도 1학기 기준) 6학기 이상 등록 예정인 학생\n※ 2027학년도 1학기가 5학기인 학생은 신청 불가(관련 문의 사절)\n※ 타학과 학생은 해당 과제 담당교수님께 승인 받은 후 신청\n※ 지정과제의 경우 4명∼6명으로 1팀 구성할 것\n▶ 2027학년도 전자공학부 전자공학종합설계 운영 방안 및 신청 방법 관련 상세 내용은 첨부파일을﻿참고부탁드립니다.\n▶ 전자공학종합설계 과목은 상대평가 권장 강좌로 A등급 비율 50%를 초과할 수 없습니다.\n▶ 학생 신청 기간 중에 과제 제안을 하시는 교수님도 가끔 있으니 수시로 확인하시고 신청하시기 바랍니다.\n▶ PBL교과목(PBL기반반도체특성화프로젝트, PBL기반반도체실무프로젝트 등) 관련\n- 동일학기에 전자공학종합설계와 동시 이수 불가",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105840",
+          "posted_at": "2026-11-11",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "2027학년도 전자공학종합설계 신청 안내(11.19~11.26)★3,4학년★",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105840&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        },
+        {
+          "body": "2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들은 참여바랍니다.\n﻿\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청",
+          "channel_id": "notice-df44dd8507c1",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-see-notice:105841",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "전자공학부 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://see.knu.ac.kr/content/board/notice.html?pg=vv&fidx=105841&gtid=notice&opt=&sword=&page=1&f_opt_1="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b1133d4c8b3b",
+      "meals": [],
+      "notices": [
+        {
+          "body": null,
+          "channel_id": "notice-b1133d4c8b3b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-biotech-sub6_1:323",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "생명공학부 · 공지사항",
+          "title": "졸업생 초청 특강: 이주엽",
+          "url": "http://biotech.knu.ac.kr/bbs/board.php?bo_table=sub6_1&wr_id=323"
+        },
+        {
+          "body": null,
+          "channel_id": "notice-b1133d4c8b3b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-biotech-sub6_1:324",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "생명공학부 · 공지사항",
+          "title": "졸업생 초청 특강: 박지영",
+          "url": "http://biotech.knu.ac.kr/bbs/board.php?bo_table=sub6_1&wr_id=324"
+        },
+        {
+          "body": "생명공학부 김상룡 교수팀은 한국뇌연구원 김재광 박사 연구팀과의 공동연구를 통해 퇴행성 뇌질환과 관련된 핵심 단백질중 하나인 TDP-43(Transactive response DNA-binding protein 43)의 신경세포 손상 유발 분자기전을 새롭게 제시했다.\nTDP-43은 RNA의 처리와 수송을 조절하는 중요한 세포 내 단백질로 비정상적 응집은 루게릭병 및 전두측두엽치매를 유도하는 신경세포 손상에 관여한다. 그러나, 세포 내 응집이 산화스트레스를 유발하는 구체적인 기전은 충분히 밝혀지지 않았다.\n공동연구팀은 인간 TDP-43을 과발현시킨 신경세포 모델의 단백체를 분석하여, 세포의 산화환원 균형을 유지하는 티오레독신 1(Thioredoxin 1, Trx1)의 발현이 감소한다는 사실에 주목했다. 특히, 세포 내 산화/환원(Redox) 조절 단백질인 Trx1의 발현을 높이면 TDP-43 응집과 산화스트레스를 완화할 수 있음을 확인하여 새로운 치료 표적으로서의 활용 가능성도 제시했다.\n연구 결과 세포질에 응집된 TDP-43은 Trx1의 mRNA를 격리해 단백질 합성을 억제하고, 세포의 항산화 방어 기능을 약화시키는 것으로 나타났다. 반면 Trx1의 발현을 높이면 TDP-43 응집과 산화스트레스, 세포사멸 관련 지표가 감소하고 미토콘드리아 호흡 기능이 개선되었으며, 마우스 유래 신경세포에서도 신경돌기 손상을 완화하는 보호 효과가 확인되었다. 또한, 루게릭병 유발 변이인 TDP-43 (M337V) 돌연변이를 지닌 사람 유도만능줄기세포 유래 운동신경세포에서도 Trx1 발현 증가에 따라 산화스트레스가 줄고 스트레스 자극에 따른 TDP-43 응집이 완화되었다. 이러한 결과는 Trx1을 표적으로 하는 퇴행성 뇌질환의 새로운 신경세포 보호 전략의 가능성을 보여준다.\n본 연구 설정 및 검증 진행에 주도적 역할을 한 김재광 박사는 “TDP-43 덩어리가 단순히 병의 흔적이 아니라, 세포의 방어 체계를 직접 무력화하는 능동적인 가해자임을 보여준 것”이라며 “Trx1을 회복시키는 것이 루게릭병을 비롯한 TDP-43 관련 퇴행성 뇌질환의 새로운 치료 전략이 될 수 있다”고 밝혔다.\n김상룡 교수는 “이번 연구 결과는 신경세포의 항산화 방어체계를 조절하는 Trx1이 퇴행성 뇌질환의 새로운 치료 표적이 될 가능성을 제시한 것”이라며 “향후 더욱 증진된 공동연구를 통한 동물모델에서의 Trx1 조절 및 이와 연관된 퇴행성 뇌질환 내 효능 검증을 보완 확인한다면 임상적 연구 확대 추진을 위한 새로운 치료 전략 제시에 중요한 선도적 역할을 할 수 있을 것으로 기대한다”고 강조했다.\n이번 연구 진행은 한국연구재단 국가아젠다 기초연구 및 뇌과학선도융합기술개발 사업 지원으로 수행됐다. 생명공학부 이지민 박사가 제1저자로 참여했으며, 한국뇌연구원 김재광 박사 외 한국생명공학연구원 김천아 박사, 고려대학교 이상원 교수, 한국뇌연구원 남민엽 박사가 김상룡 교수와 함께 공동 교신저자로 연구를 진행했다. 연구 결과는 생화학 및 분자생물학 분야 우수 국제학술지인 Redox Biology(IF=16.2, JCR 상위 3.2%)에 11월 4일자로 온라인 게재되었다.\n* Title of original paper: Cytoplasmic TDP-43 aggregation promotes oxidative stress and neurotoxicity through Trx1 mRNA sequestration and translational suppression\n*Abstract\nTransactive response (TAR) DNA-binding protein 43 (TDP-43) is a multifunctional DNA/RNA binding protein. Cytoplasmic TDP-43 aggregation is a pathological hallmark of diverse neurodegenerative diseases collectively termed TDP-43 proteinopathy. Oxidative stress is closely associated with TDP-43 aggregation and neurotoxicity in TDP-43 proteinopathy, yet the underlying molecular mechanisms remain elusive. To delineate molecular basis of TDP-43 proteinopathy, we conducted deep quantitative proteomic profiling using a Neuro-2a (N2a) neuronal cell model of human wild-type TDP-43 overexpression (N2a-hTDP-43). We identified thioredoxin-1 (Trx1) as a central node linking mitochondrial dysfunction and redox dysregulation to TDP-43 pathology. Consistent with this, TDP-43 overexpression markedly reduced Trx1 protein levels. Moreover, inhibiting Trx1 exacerbates, whereas overexpressing Trx1 alleviates, cytoplasmic TDP-43 aggregation and neurotoxicity in N2a-hTDP-43 cells. Furthermore, overexpressing Trx1 alleviates TDP-43-associated pathologies in mouse primary neurons. Notably, we identified that cytoplasmic TDP-43 protein sequesters Trx1 mRNAs into insoluble TDP-43 inclusions, leading to its translational suppression. We also demonstrated that suppression of Trx1 is a core mechanism eliciting oxidative stress and mitochondrial dysfunction in TDP-43 overexpression model. Importantly, in human induced pluripotent stem cell (iPSC)-derived motor neurons (MN) harboring the pathogenic TDP-43 M337V mutation (TDP-43M337V iPSC-MNs), Trx1 expression is downregulated, concomitant with increased oxidative stress, compared to the isogenic TDP-43WT iPSC-MN control. Furthermore, inducing Trx1 expression markedly reduces oxidative stress and cytoplasmic TDP-43 aggregation in TDP-43M337V iPSC-MNs, suggesting conserved neuroprotective role of Trx1 in TDP-43 proteinopathy in human. Collectively, we identified Trx1 as a pivotal regulator of TDP-43 proteinopathy, highlighting therapeutic potential of Trx1 for TDP-43 proteinopathies.\n*Journal: Redox Biology\n* Web Link: https://www.sciencedirect.com/science/article/pii/S2213231726004684\n<사진 왼쪽부터 김상룡 교수, 김재광 박사>",
+          "channel_id": "notice-b1133d4c8b3b",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-biotech-sub6_1:325",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "생명공학부 · 공지사항",
+          "title": "김상룡 교수팀, 신경독성 단백질의 신규 세부 기전 공동 규명",
+          "url": "http://biotech.knu.ac.kr/bbs/board.php?bo_table=sub6_1&wr_id=325"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-b34ee1a00417",
+      "meals": [],
+      "notices": [
+        {
+          "body": "경북대학교 청년인재 혁신아카데미 2기(3차 인턴십) 교육생을 추가 모집합니다.\n○ 모집기간\n- 2026년 11월 10일(화) ~ 2026년 11월 16일(월) 17시\n※ 선발 및 안내(기업 목록, 희망 기업 신청 등) 메일은 11월 20일(금) 전으로 전달 예정입니다.\n○ 선발인원\n- 15명 내외\n○ 교육대상\n- 대구 지역 대학·대학원 졸업(예정)자로 대구 지역에 거주 중인 만 39세 이하 청년\n- 타 지역 대학 졸업 후 1년 이상 지난 졸업자로 대구 지역에 거주 중인 만 39세 이하 청년\n- 기계·자동차·로봇·전자·IT 등 관련 전공자 또는 공학계 관련 학과(연계·융합·복수·부전공 포함) 졸업(예정)자로 해당 분야 관련 사전 지식 보유자\n​\n○ 일정 안내\n- AI 교육 (주말 온라인 수업)\n일정: 2027년 1월 ~ 2월\n과정: 이미지분석(M5), AI로봇 Part1, AI로봇 Part2\n- 인턴십 참여\n일정: 26년 12월 21일 ~ 27년 2월 26일\n○ 수혜 혜택\n- 교육 지원금 지급\n- 인턴십 교육 지원금 지급(매월 만근 시 200만원/세전)\n- 현장실습 대체 인정 수료증 발급 (경북대학교 컴퓨터학부 학생만 해당)\n○ 신청 링크\nhttps://forms.gle/e3dYhn78EyFPHwT89\n○ 제출 서류 안내\n- 제출 서류:\n① 졸업(재학)증명서, 주민등록초본(뒷자리 마스킹) -> PDF 1개로 병합하여 제출\n② 이력서(자기소개서) -> 첨부파일 양식 사용\n③ 포트폴리오\n- 접수방법: 구글폼 작성 + 서류 이메일 제출 → 두 가지 모두 완료해야 접수 인정됩니다.\n- 제출처: academy25@knu.ac.kr\n- 이메일 제목: [혁신아카데미 2기] 지원서 제출_이름\n○ 문의\nacademy25@knu.ac.kr",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": 3,
+          "deadline": "2026-11-16",
+          "id": "knu-computer-sub6_1_a:29514",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "[SW교육원] 청년인재 혁신아카데미 2기 (3차 인턴십) 교육생 추가 모집(현장실습 대체 가능)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29514"
+        },
+        {
+          "body": "o 일정 : 2026년 11월 25일(수)~26일(목)\no 장소 : 서울 삼성동 코엑스 3층 컨퍼런스룸 E\no 행사 홈페이지 :\nhttps://blockchainweek.co.kr/\no 사전등록 홈페이지 :\nhttps://event-us.kr/m/135409/62108\n※ 행사문의 : 070-5153-3113 / [개인정보 가림]",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29513",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "[한국인터넷진흥원] 2026 블록체인 진흥주간 안내(11/25~26, 서울 코엑스)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29513"
+        },
+        {
+          "body": "⊙ 졸업요건 중 현장실습 이수 안내입니다.\n2023.06.28.기준 대체기준 확대 사항 반영\n2023.12.12.기준 대체승인 신청 기한 적용\n**졸업예정자의 경우 현장실습 대체 '1. 학점 미인정 현장실습관련 프로그램'항목에 대한 대체 승인 신청 기한은 매 학기 기말고사 종료일까지 적용됨\n(대체신청기한: 24년 8월 졸업예정자부터 적용됩니다.)\n(졸업 직전 학기 말=학사력 기준 기말고사 종료시점, 예: ​26.02. 졸업예정자 = 25.12.20.까지, 26.08. 졸업예정자 = 26.6.24.까지 신청 가능)\n현장실습\n★현장실습 졸업요건 기준: 국내 및 해외 인턴십 학점 적용, 성적증명서에 현장실습으로 학점인정 확인이 되는 경우 인정됩니다.\n[1] 진로취업과를 통한 학점인정 현장실습 <졸업학점에는 포함되나, 최소교양 or 최소전공 이수학점에는 미포함>\n[2] 수업을 통한 산학프로젝트 연계형 현장실습 <졸업학점에는 포함되나, 최소교양 or 최소전공 이수학점에는 미포함>\n※종합설계프로젝트 수업등을 통한 프로젝트 연계형 현장실습으로 현장실습전담교수(정설영 교수, snowflower@knu.ac.kr) 지도하에 등록 및 참여가능(유의: 수업 이수만으로 현장실습 대체 불가)\n[3] 현장실습 대체기준 적용 <학점 미포함, 졸업요건만 충족>\n현장실습 대체 기준\n다음 대체기준에 부합하는 경우 학부 심의 절차를 통해 '현장실습'졸업요건에 충족하는 것으로 인정됩니다.\n※아래 대체 기준은 졸업요건 충족을 위해 학부에서 대체 방안을 마련한 것으로 학점으로 인정되지 않습니다.\n1. 학점 미인정 현장실습 관련 프로그램 수료 (가~다 중 택1, 최소 4주이상의 프로그램 적용)\n가. 대기업, IT관련 중견기업, 공공기관 운영 현장실습 관련 프로그램 수료\n1) 대기업(매출 10조 이상)과 대기업 계열사\n2) IT관련 중견기업(매출 5천억 이상, 상시직원수 1,000명 이상)\n※분야가 모호한 경우 사전 전공주임교수 심의를 통한 확인\n예: 네이버, 라인, 배달의 민족, 쿠팡, NC소프트, 넥슨, 구글코리아, 마이크로소프트코리아, 카카오 등\n3) 공공기관: 공기업 또는 준정부기관\n나. 학부지원사업에서 수행하는 현장실습 관련 프로그램 수료\n다. 정부지원사업에서 수행하는 현장실습 관련 프로그램 수료\n※ 실습 시작 전 '프로그램 적합성 심층심의' 승인 완료 시에 한해 인정\n- 심층심의 신청 시기: 해당 프로그램 신청 및 시작 전 (실습 종료 후 사후 신청 불가)\n- 제출 서류: 해당 프로그램 운영 계획서\n- 심사 기준: 수행 직무의 전공 적합성 및 실무 비율 (단순 교육 위주 프로그램은 승인 불가)\n*가~다 중 택1이며, 최소 4주 이상의 프로그램 후 인정 가능\n※현장실습은 산업체 현장에서 시행하는 산학협력 교육과정 참여를 위한 활동으로 대학내 연구실 인턴프로그램은 포함되지 않음\n※교육 위주의 프로그램 승인불가, 단순 온라인 강의,이론 위주 수업은 인정되지 않음\n※졸업예정자의 경우 현장실습 대체 '1. 학점 미인정 현장실습관련 프로그램' 항목에 대한 승인 신청 기한은 매 학기 기말고사 종료일까지 적용됨\n(졸업 직전 학기 말, 예: 26.02.졸업예정자 = 25.12.20.까지, 26.08. 졸업예정자 = 26.6.24.까지 신청 가능)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 해당 기관 발급 현장실습(인턴십) 근무확인서[서식1], 현장실습교육과정 학점인정에 부합하는 주요 제출서류[서식2~4]\n※학부지원사업 수행 현장실습 관련 프로그램 참여시 해당 학부지원기관 확인 공문으로 증빙서류 대체(수료증 발급시 현장실습 대체인정 확인내용 명시됨, 해당 수료증을 승인서로 활용가능)\n※기관발급 근무확인서의 경우 해당 프로그램 참여확인서로 [서식1]의 내용이 포함된 기관자체 발급서식으로 대체 가능함(O)\n2. 조기취업자\n졸업하는 학기 이전(최소 1개 학기 전) 취업 확정된 경우 (※졸업시점 취업상태 유지: 학위수여식 1개월 전 취업확인자료 재제출)\n예: 26년 8월 졸업예정자의 경우 26년 2월 이전, 27년 2월 졸업예정자의 경우 26년 8월 이전 취업 확정된 경우\n조기취업 현장실습 대체 승인신청 시점: 기말고사 전, 제출일 1주일 이내 발급된 증빙자료 포함\n제출 서류[서식2~4] : 조기취업 후 근무 상황을 바탕으로 작성(졸업 시점까지 취업상태가 유지되어야함)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 재직증명서, 4대보험가입내역 확인서, 현장실습교육과정 학점인정에 부합하는 주요 제출서류[서식2~4]\n※학사과의 조기취업자 출석 인정 제도와는 별개로 운영되는 현장실습 대체를 위한 기준입니다.(조기취업자 출석인정은 학사관련 공지 확인 후 개별신청필수입니다.)\n※재직증명서와 4대보험가입내역확인서의 경우 제출일 기준에 해당하는 달에 발급된 일자로 제출해주셔야 합니다.(발급일: 최근 1주 이내)\n※현장실습 대체 승인요청시 학부 현장실습 담당자에게 증빙서류 제출(졸업 직전 학기 말) → 전공주임교수의 검토 및 심의 → 승인완료 시 현장실습 대체적용됩니다.\n3. 학진등재지 이상의 학술지 논문 게재자(주저자)\n※ 본 학부의 논문작성 프로그램을 통해 수행된 연구 논문만 인정됨\n※ 아래 가~나 요건을 모두 충족하여야 함\n가. 논문 게재 및 저자 요건\n인정 기준: SCIE, Scopus 또는 KCI 등재 학술지에 주저자로 논문 게재 또는 게재 승인 완료\n우수학술대회 인정: BK21 국제 우수학술대회 및 한국정보과학회 우수학술대회 인정 (2027년 2월 졸업예정자부터 적용)\n공동 주저자인 경우 학생 1명만 졸업 대체 인정\n나. 연구 수행 과정 요건 (논문작성 프로그램)\n학부생 졸업을 위한 논문작성 프로그램 참여를 통한 최소 1개 학기 이상 연구수행 후 작성된 논문에 한함\n※논문작성 프로그램 참여 유의사항\n1) 연구주제 선정 시 학부 소속 교수와의 사전 협의 필요\n2) 논문작성 계획서: 결과물 제출 1개학기 전 신청(지도교수 변경이 필요한 경우, 지도교수변경 승인서 함께 제출)\n3) 불가피한 사정으로 학부 소속 연구 지도교수 미배정시 현장실습 논문 대체 프로그램 수행 불가\n※프로그램 진행 중단시 중단신고서 제출(첨부 관련서식 참조)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 현장실습 대체 승인서, 논문작성 계획서, 논문작성 결과보고서, 게재논문, 논문게재확인서\n관련공지(세부내용 추가확인가능): [졸업] 현장실습 대체를 위한 논문작성계획서 제출 안내\n4. 창업자에 한해 창업대체학점 중 창업현장실습(STUP0311) 이수학점 인정 (가~나 모두해당)\n가. 산학협력단 창업 교육센터에서 운영하는 창업현장실습 수강 신청 및 이수\n나. 졸업 시점 전 1개 학기 이수필요: 창업교육센터를 통한 수강신청 및 이수승인 필요\n관련링크: https://iac.knu.ac.kr/changup/Replacement?menuId=MENU_CHANGUP0022\n(경북대학교 창업교육팀 ▷ 창업지원제도 ▷ 창업대체학점)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 창업 확인을 위한 사업자등록증, 창업현장실습 이수증명서(성적증명서), 창업교육팀에 제출한 공통 제출 서류\n5. 외국인 학생 및 본교 장애학생 지원센터에 등록된 장애학생의 경우 국내외 학술대회 주저자 논문 게재자\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 학술대회 참가확인서, 발표 논문이 수록된 프로시딩(표지+목차+해당논문 발췌)\n※공동 주저자의 경우 1명만 졸업대체로 인정함\n[현장실습 대체 인정 절차]\n기관참여: (학생)증빙서류 → 현장실습 담당자에게 제출(scse@knu.ac.kr) → (담당자) 전공주임교수님께 검토 및 심의 요청 → 승인여부결정\n논문게재: (학생)증빙서류 → 논문지도교수님께 [서식0 승인서] 승인 요청 → 현장실습 담당자에게 제출 → 승인여부결정\n※기타 문의 사항은 scse@knu.ac.kr 로 문의 메일 주시면 현장실습 담당자가 회신 드립니다.\n※졸업요건 충족 최종 자료는 현장실습담당자를 통해 발급된 현장실습 보고서 평가서or 현장실습 대체 승인서를 포트폴리오에 수록하여 제출하면 됩니다.\n※기관 참여는 현장실습보고서 평가서로 평가되며, 논문작성 및 창업자는 승인서를 통해 승인됩니다.\n※모든 파일은 PDF로 병합하여 한 파일로 제출바랍니다.\n→ 제목 및 파일명: [전공명] 현장실습보고서 평가서_이름_대체기준 (예시. [글솝] 현장실습보고서 평가서_홍길동_한국전자통신연구원 or 논문게재자(KICS))\n→ 서식 작성 시 제목과 표가 분리되지 않도록 파일을 깔끔하게 정리하여 제출할 것.",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29515",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "[안내] 현장실습 대체 기준 변경 안내(26.11.10. 기준)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29515"
+        },
+        {
+          "body": "2027년 1월 미국 산호세주립대(SJSU)에서 진행하는 글로벌 AI부트캠프 참가자를 모집합니다.\n[글로벌 AI부트캠프]\n- 접수 마감: 11. 12.(목) 24:00 (이메일 접수) > 11. 16.(월) 13:00 (이메일 접수)\n- 기간: 2027. 1. 7.(목) ~ 1. 22.(금)\n- 인원: 10명\n- 지원: 교육비, 숙박비, 공항↔숙소 이동, 여행자 보험료, 중식(예정)\n- 대상: AI부트캠프사업단 중급·고급 프로그램 이수자 또는 이수 예정자 (영어 성적 필수)\n- 내용: AI에이전트·AI코딩 강의와 실습, 실리콘밸리 기업 강연 및 방문, 팀 프로젝트\n- 일정: 면접 11. 17.(화), 합격자 발표 11. 18.(수)\n- 접수: aibootcamp@knu.ac.kr (제목: 글로벌 AI부트캠프 지원_학번_성명)\n지원 자격, 제출 서류, 유의사항은 첨부한 모집 공고 및 AI부트캠프 홈페이지(https://aibootcamp.knu.ac.kr/notices/2026-10-21-global-bootcamp-recruitment/)를 확인해 주세요.\n※ 첨부: 모집 공고, 참가 서식\n문의: 053-950-7054, aibootcamp@knu.ac.kr",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29516",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "[글로벌 AI부트캠프사업단] 글로벌 미국 산호세 실리콘밸리(SJSU) 참가자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29516"
+        },
+        {
+          "body": "1. 우리대학 3개의 대학문화기관(미술관, 자연사박물관, 박물관)은 대학구성원과 지역주 민의 문화향유 기회 확대를 위해 다양한 노력을 하고 있습니다.\n2. 이에, 대학문화기관의 역할과 기능에 대한 이해를 돕고 다양한 소식을 공유하기 위해 다음과 같이 대학문화기관 소식지를 제작하였으니 구성원들의 많은 관심 바랍니다.\n가. 소식지명: 경북대학교 ‘박미자’(박물관, 미술관, 자연사박물관 통합소식지 이름)\n나. 주요내용: 문화예술관련 학생 활동, 2026년도 대학문화기관 활동 등\n다. 배부방법: E-book(링크/QR코드) 배부\n※ 박물관 미술관 안내데스크에서 인쇄본 열람(12월 중 배부 예정)",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29517",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "대학문화소식지 경북대학교 ‘박미자’ 제작 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29517"
+        },
+        {
+          "body": "가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 12. 9.(수)[예정]\n- 부적격자의 경우, 별도의 온라인 교육을 이수해야 함 ※ 추후 별도 안내 예정\n나. 신청 방법\n1) 신청 기간: 2026. 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n* 2027년 2월 또는 8월 졸업예정자 중 교직 적성 및 인성검사 기준을 충족하지 못한 학생은 반드시 신청 및 참여하기 바랍니다.\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부.\n2. 통합정보시스템 학생 신청 방법 1부.",
+          "channel_id": "notice-b34ee1a00417",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29518",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "인공지능시스템학과 · 공지사항",
+          "title": "[교직] 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29518"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-fefffa32e24c",
+      "meals": [],
+      "notices": [
+        {
+          "body": "경북대학교 청년인재 혁신아카데미 2기(3차 인턴십) 교육생을 추가 모집합니다.\n○ 모집기간\n- 2026년 11월 10일(화) ~ 2026년 11월 16일(월) 17시\n※ 선발 및 안내(기업 목록, 희망 기업 신청 등) 메일은 11월 20일(금) 전으로 전달 예정입니다.\n○ 선발인원\n- 15명 내외\n○ 교육대상\n- 대구 지역 대학·대학원 졸업(예정)자로 대구 지역에 거주 중인 만 39세 이하 청년\n- 타 지역 대학 졸업 후 1년 이상 지난 졸업자로 대구 지역에 거주 중인 만 39세 이하 청년\n- 기계·자동차·로봇·전자·IT 등 관련 전공자 또는 공학계 관련 학과(연계·융합·복수·부전공 포함) 졸업(예정)자로 해당 분야 관련 사전 지식 보유자\n​\n○ 일정 안내\n- AI 교육 (주말 온라인 수업)\n일정: 2027년 1월 ~ 2월\n과정: 이미지분석(M5), AI로봇 Part1, AI로봇 Part2\n- 인턴십 참여\n일정: 26년 12월 21일 ~ 27년 2월 26일\n○ 수혜 혜택\n- 교육 지원금 지급\n- 인턴십 교육 지원금 지급(매월 만근 시 200만원/세전)\n- 현장실습 대체 인정 수료증 발급 (경북대학교 컴퓨터학부 학생만 해당)\n○ 신청 링크\nhttps://forms.gle/e3dYhn78EyFPHwT89\n○ 제출 서류 안내\n- 제출 서류:\n① 졸업(재학)증명서, 주민등록초본(뒷자리 마스킹) -> PDF 1개로 병합하여 제출\n② 이력서(자기소개서) -> 첨부파일 양식 사용\n③ 포트폴리오\n- 접수방법: 구글폼 작성 + 서류 이메일 제출 → 두 가지 모두 완료해야 접수 인정됩니다.\n- 제출처: academy25@knu.ac.kr\n- 이메일 제목: [혁신아카데미 2기] 지원서 제출_이름\n○ 문의\nacademy25@knu.ac.kr",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": 3,
+          "deadline": "2026-11-16",
+          "id": "knu-computer-sub6_1_a:29514",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "[SW교육원] 청년인재 혁신아카데미 2기 (3차 인턴십) 교육생 추가 모집(현장실습 대체 가능)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29514"
+        },
+        {
+          "body": "o 일정 : 2026년 11월 25일(수)~26일(목)\no 장소 : 서울 삼성동 코엑스 3층 컨퍼런스룸 E\no 행사 홈페이지 :\nhttps://blockchainweek.co.kr/\no 사전등록 홈페이지 :\nhttps://event-us.kr/m/135409/62108\n※ 행사문의 : 070-5153-3113 / [개인정보 가림]",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29513",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "[한국인터넷진흥원] 2026 블록체인 진흥주간 안내(11/25~26, 서울 코엑스)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29513"
+        },
+        {
+          "body": "⊙ 졸업요건 중 현장실습 이수 안내입니다.\n2023.06.28.기준 대체기준 확대 사항 반영\n2023.12.12.기준 대체승인 신청 기한 적용\n**졸업예정자의 경우 현장실습 대체 '1. 학점 미인정 현장실습관련 프로그램'항목에 대한 대체 승인 신청 기한은 매 학기 기말고사 종료일까지 적용됨\n(대체신청기한: 24년 8월 졸업예정자부터 적용됩니다.)\n(졸업 직전 학기 말=학사력 기준 기말고사 종료시점, 예: ​26.02. 졸업예정자 = 25.12.20.까지, 26.08. 졸업예정자 = 26.6.24.까지 신청 가능)\n현장실습\n★현장실습 졸업요건 기준: 국내 및 해외 인턴십 학점 적용, 성적증명서에 현장실습으로 학점인정 확인이 되는 경우 인정됩니다.\n[1] 진로취업과를 통한 학점인정 현장실습 <졸업학점에는 포함되나, 최소교양 or 최소전공 이수학점에는 미포함>\n[2] 수업을 통한 산학프로젝트 연계형 현장실습 <졸업학점에는 포함되나, 최소교양 or 최소전공 이수학점에는 미포함>\n※종합설계프로젝트 수업등을 통한 프로젝트 연계형 현장실습으로 현장실습전담교수(정설영 교수, snowflower@knu.ac.kr) 지도하에 등록 및 참여가능(유의: 수업 이수만으로 현장실습 대체 불가)\n[3] 현장실습 대체기준 적용 <학점 미포함, 졸업요건만 충족>\n현장실습 대체 기준\n다음 대체기준에 부합하는 경우 학부 심의 절차를 통해 '현장실습'졸업요건에 충족하는 것으로 인정됩니다.\n※아래 대체 기준은 졸업요건 충족을 위해 학부에서 대체 방안을 마련한 것으로 학점으로 인정되지 않습니다.\n1. 학점 미인정 현장실습 관련 프로그램 수료 (가~다 중 택1, 최소 4주이상의 프로그램 적용)\n가. 대기업, IT관련 중견기업, 공공기관 운영 현장실습 관련 프로그램 수료\n1) 대기업(매출 10조 이상)과 대기업 계열사\n2) IT관련 중견기업(매출 5천억 이상, 상시직원수 1,000명 이상)\n※분야가 모호한 경우 사전 전공주임교수 심의를 통한 확인\n예: 네이버, 라인, 배달의 민족, 쿠팡, NC소프트, 넥슨, 구글코리아, 마이크로소프트코리아, 카카오 등\n3) 공공기관: 공기업 또는 준정부기관\n나. 학부지원사업에서 수행하는 현장실습 관련 프로그램 수료\n다. 정부지원사업에서 수행하는 현장실습 관련 프로그램 수료\n※ 실습 시작 전 '프로그램 적합성 심층심의' 승인 완료 시에 한해 인정\n- 심층심의 신청 시기: 해당 프로그램 신청 및 시작 전 (실습 종료 후 사후 신청 불가)\n- 제출 서류: 해당 프로그램 운영 계획서\n- 심사 기준: 수행 직무의 전공 적합성 및 실무 비율 (단순 교육 위주 프로그램은 승인 불가)\n*가~다 중 택1이며, 최소 4주 이상의 프로그램 후 인정 가능\n※현장실습은 산업체 현장에서 시행하는 산학협력 교육과정 참여를 위한 활동으로 대학내 연구실 인턴프로그램은 포함되지 않음\n※교육 위주의 프로그램 승인불가, 단순 온라인 강의,이론 위주 수업은 인정되지 않음\n※졸업예정자의 경우 현장실습 대체 '1. 학점 미인정 현장실습관련 프로그램' 항목에 대한 승인 신청 기한은 매 학기 기말고사 종료일까지 적용됨\n(졸업 직전 학기 말, 예: 26.02.졸업예정자 = 25.12.20.까지, 26.08. 졸업예정자 = 26.6.24.까지 신청 가능)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 해당 기관 발급 현장실습(인턴십) 근무확인서[서식1], 현장실습교육과정 학점인정에 부합하는 주요 제출서류[서식2~4]\n※학부지원사업 수행 현장실습 관련 프로그램 참여시 해당 학부지원기관 확인 공문으로 증빙서류 대체(수료증 발급시 현장실습 대체인정 확인내용 명시됨, 해당 수료증을 승인서로 활용가능)\n※기관발급 근무확인서의 경우 해당 프로그램 참여확인서로 [서식1]의 내용이 포함된 기관자체 발급서식으로 대체 가능함(O)\n2. 조기취업자\n졸업하는 학기 이전(최소 1개 학기 전) 취업 확정된 경우 (※졸업시점 취업상태 유지: 학위수여식 1개월 전 취업확인자료 재제출)\n예: 26년 8월 졸업예정자의 경우 26년 2월 이전, 27년 2월 졸업예정자의 경우 26년 8월 이전 취업 확정된 경우\n조기취업 현장실습 대체 승인신청 시점: 기말고사 전, 제출일 1주일 이내 발급된 증빙자료 포함\n제출 서류[서식2~4] : 조기취업 후 근무 상황을 바탕으로 작성(졸업 시점까지 취업상태가 유지되어야함)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 재직증명서, 4대보험가입내역 확인서, 현장실습교육과정 학점인정에 부합하는 주요 제출서류[서식2~4]\n※학사과의 조기취업자 출석 인정 제도와는 별개로 운영되는 현장실습 대체를 위한 기준입니다.(조기취업자 출석인정은 학사관련 공지 확인 후 개별신청필수입니다.)\n※재직증명서와 4대보험가입내역확인서의 경우 제출일 기준에 해당하는 달에 발급된 일자로 제출해주셔야 합니다.(발급일: 최근 1주 이내)\n※현장실습 대체 승인요청시 학부 현장실습 담당자에게 증빙서류 제출(졸업 직전 학기 말) → 전공주임교수의 검토 및 심의 → 승인완료 시 현장실습 대체적용됩니다.\n3. 학진등재지 이상의 학술지 논문 게재자(주저자)\n※ 본 학부의 논문작성 프로그램을 통해 수행된 연구 논문만 인정됨\n※ 아래 가~나 요건을 모두 충족하여야 함\n가. 논문 게재 및 저자 요건\n인정 기준: SCIE, Scopus 또는 KCI 등재 학술지에 주저자로 논문 게재 또는 게재 승인 완료\n우수학술대회 인정: BK21 국제 우수학술대회 및 한국정보과학회 우수학술대회 인정 (2027년 2월 졸업예정자부터 적용)\n공동 주저자인 경우 학생 1명만 졸업 대체 인정\n나. 연구 수행 과정 요건 (논문작성 프로그램)\n학부생 졸업을 위한 논문작성 프로그램 참여를 통한 최소 1개 학기 이상 연구수행 후 작성된 논문에 한함\n※논문작성 프로그램 참여 유의사항\n1) 연구주제 선정 시 학부 소속 교수와의 사전 협의 필요\n2) 논문작성 계획서: 결과물 제출 1개학기 전 신청(지도교수 변경이 필요한 경우, 지도교수변경 승인서 함께 제출)\n3) 불가피한 사정으로 학부 소속 연구 지도교수 미배정시 현장실습 논문 대체 프로그램 수행 불가\n※프로그램 진행 중단시 중단신고서 제출(첨부 관련서식 참조)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 현장실습 대체 승인서, 논문작성 계획서, 논문작성 결과보고서, 게재논문, 논문게재확인서\n관련공지(세부내용 추가확인가능): [졸업] 현장실습 대체를 위한 논문작성계획서 제출 안내\n4. 창업자에 한해 창업대체학점 중 창업현장실습(STUP0311) 이수학점 인정 (가~나 모두해당)\n가. 산학협력단 창업 교육센터에서 운영하는 창업현장실습 수강 신청 및 이수\n나. 졸업 시점 전 1개 학기 이수필요: 창업교육센터를 통한 수강신청 및 이수승인 필요\n관련링크: https://iac.knu.ac.kr/changup/Replacement?menuId=MENU_CHANGUP0022\n(경북대학교 창업교육팀 ▷ 창업지원제도 ▷ 창업대체학점)\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 창업 확인을 위한 사업자등록증, 창업현장실습 이수증명서(성적증명서), 창업교육팀에 제출한 공통 제출 서류\n5. 외국인 학생 및 본교 장애학생 지원센터에 등록된 장애학생의 경우 국내외 학술대회 주저자 논문 게재자\n→ 증빙서류(필수): 현장실습 대체 신청서[서식0], 학술대회 참가확인서, 발표 논문이 수록된 프로시딩(표지+목차+해당논문 발췌)\n※공동 주저자의 경우 1명만 졸업대체로 인정함\n[현장실습 대체 인정 절차]\n기관참여: (학생)증빙서류 → 현장실습 담당자에게 제출(scse@knu.ac.kr) → (담당자) 전공주임교수님께 검토 및 심의 요청 → 승인여부결정\n논문게재: (학생)증빙서류 → 논문지도교수님께 [서식0 승인서] 승인 요청 → 현장실습 담당자에게 제출 → 승인여부결정\n※기타 문의 사항은 scse@knu.ac.kr 로 문의 메일 주시면 현장실습 담당자가 회신 드립니다.\n※졸업요건 충족 최종 자료는 현장실습담당자를 통해 발급된 현장실습 보고서 평가서or 현장실습 대체 승인서를 포트폴리오에 수록하여 제출하면 됩니다.\n※기관 참여는 현장실습보고서 평가서로 평가되며, 논문작성 및 창업자는 승인서를 통해 승인됩니다.\n※모든 파일은 PDF로 병합하여 한 파일로 제출바랍니다.\n→ 제목 및 파일명: [전공명] 현장실습보고서 평가서_이름_대체기준 (예시. [글솝] 현장실습보고서 평가서_홍길동_한국전자통신연구원 or 논문게재자(KICS))\n→ 서식 작성 시 제목과 표가 분리되지 않도록 파일을 깔끔하게 정리하여 제출할 것.",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29515",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "[안내] 현장실습 대체 기준 변경 안내(26.11.10. 기준)",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29515"
+        },
+        {
+          "body": "2027년 1월 미국 산호세주립대(SJSU)에서 진행하는 글로벌 AI부트캠프 참가자를 모집합니다.\n[글로벌 AI부트캠프]\n- 접수 마감: 11. 12.(목) 24:00 (이메일 접수) > 11. 16.(월) 13:00 (이메일 접수)\n- 기간: 2027. 1. 7.(목) ~ 1. 22.(금)\n- 인원: 10명\n- 지원: 교육비, 숙박비, 공항↔숙소 이동, 여행자 보험료, 중식(예정)\n- 대상: AI부트캠프사업단 중급·고급 프로그램 이수자 또는 이수 예정자 (영어 성적 필수)\n- 내용: AI에이전트·AI코딩 강의와 실습, 실리콘밸리 기업 강연 및 방문, 팀 프로젝트\n- 일정: 면접 11. 17.(화), 합격자 발표 11. 18.(수)\n- 접수: aibootcamp@knu.ac.kr (제목: 글로벌 AI부트캠프 지원_학번_성명)\n지원 자격, 제출 서류, 유의사항은 첨부한 모집 공고 및 AI부트캠프 홈페이지(https://aibootcamp.knu.ac.kr/notices/2026-10-21-global-bootcamp-recruitment/)를 확인해 주세요.\n※ 첨부: 모집 공고, 참가 서식\n문의: 053-950-7054, aibootcamp@knu.ac.kr",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29516",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "[글로벌 AI부트캠프사업단] 글로벌 미국 산호세 실리콘밸리(SJSU) 참가자 모집",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29516"
+        },
+        {
+          "body": "1. 우리대학 3개의 대학문화기관(미술관, 자연사박물관, 박물관)은 대학구성원과 지역주 민의 문화향유 기회 확대를 위해 다양한 노력을 하고 있습니다.\n2. 이에, 대학문화기관의 역할과 기능에 대한 이해를 돕고 다양한 소식을 공유하기 위해 다음과 같이 대학문화기관 소식지를 제작하였으니 구성원들의 많은 관심 바랍니다.\n가. 소식지명: 경북대학교 ‘박미자’(박물관, 미술관, 자연사박물관 통합소식지 이름)\n나. 주요내용: 문화예술관련 학생 활동, 2026년도 대학문화기관 활동 등\n다. 배부방법: E-book(링크/QR코드) 배부\n※ 박물관 미술관 안내데스크에서 인쇄본 열람(12월 중 배부 예정)",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29517",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "대학문화소식지 경북대학교 ‘박미자’ 제작 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29517"
+        },
+        {
+          "body": "가. 검사 개요\n1) 검사 인원 및 대상: 270명, 교직과정 이수자(사범대학, 교육대학원 포함)\n※ 휴학 및 수료생 포함\n2) 검사 방법: 정량평가\n3) 검사 일시: 2026. 12. 3.(목) 19:00 ~ 19:50\n4) 검사 장소: 글로벌플라자 5개 검사장\n5) 결과 확정: 2026. 12. 9.(수)[예정]\n- 부적격자의 경우, 별도의 온라인 교육을 이수해야 함 ※ 추후 별도 안내 예정\n나. 신청 방법\n1) 신청 기간: 2026. 11. 17.(화) ∼ 11. 19.(목) 매일 10:00 ~ 17:00\n2) 신청 방법: 통합정보시스템(http://knuin.knu.ac.kr) 로그인 후 신청\n- [교직/교직적성및인성검사관리/교직적성및인성검사신청]에서 신청\n다. 교원자격증 발급을 위한 교직 적성 및 인성검사 충족 요건\n구 분\n충족 요건\n참고사항\n기준연도 2012년 이전 학생\n적격 판정 1회\n- 평가(정량, 정성)종류 구별없음\n기준연도 2013년 이후 학생\n적격 판정 2회\n* 2027년 2월 또는 8월 졸업예정자 중 교직 적성 및 인성검사 기준을 충족하지 못한 학생은 반드시 신청 및 참여하기 바랍니다.\n붙임 1. 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 계획 1부.\n2. 통합정보시스템 학생 신청 방법 1부.",
+          "channel_id": "notice-fefffa32e24c",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-computer-sub6_1_a:29518",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "컴퓨터학부 · 공지사항",
+          "title": "[교직] 2026학년도 2학기 교직 적성 및 인성검사(3차) 시행 안내",
+          "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&wr_id=29518"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-6b04da14aae1",
+      "meals": [],
+      "notices": []
+    },
+    {
+      "channel_id": "notice-a363da417a07",
+      "meals": [],
+      "notices": [
+        {
+          "body": "2027학년도 일반대학원 1학기 2차 모집요강을 붙임과 같이 안내하오니 대학원 진학을 희망하는 학생들의 많은 관심 바랍니다.\n(*1학기 2차 모집학과: 의학과, 보건학과, 의과학과, 의용생체공학과, 의료정보학과)\n* 원서접수: 2026. 11. 13. (금) ~ 11. 20. (금) 18:00\n* 서류제출: 2026. 11. 13. (금) ~ 11. 23. (월) 17:00\n* 입학시험: 2026. 12. 8. (화)\n* 합격자발표: 2026. 12. 31. (목) 17:00 예정\n* 등록기간: 2027. 1. 12. (화) ~ 1. 15. (금) 16:00\n※ 대학원 입학 페이지: https://ipsi2.knu.ac.kr/main/\n* 대학원 의학과, 의과학과 추천서의 학과장님 날인은 의대 행정실에서 받으실 수 있습니다.\n자세한 사항은 붙임파일 모집요강 확인바랍니다.",
+          "channel_id": "notice-a363da417a07",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-med-notice001:25970",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "의학과 · 공지",
+          "title": "(대학원) 2027학년도 일반대학원 1학기 2차 신입생 모집 안내",
+          "url": "http://med.knu.ac.kr/pages/sub.htm?mode=view&mv_data=aWR4PTI1OTcwJnN0YXJ0UGFnZT0wJmxpc3RObz0yOTE5JnRhYmxlPWNzX2Jic19kYXRhJm5hdl9jb2RlPWtudTE2NzA1ODM3NDgmY29kZT1ub3RpY2UwMDEmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==%7C%7C"
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-7414782e7dbb",
+      "meals": [],
+      "notices": [
+        {
+          "body": "도서관에서는 대학 구성원의 학업능력 향상과 연구력 증진을 위해 다양한 전자자원을 구독·제공하고 있으며, 전자자원 활용 증대를 위해 이용교육을 실시하고 있습니다.\n이에, 국내 전자자원 DBpia에서 외국인 유학생을 위한 DBpia AI 교육을 아래와 같이 실시하오니, 유학생들의 많은 참여 바랍니다\n가. 교육명: DBpia AI for a Successful Student Life in Korea (English Session)\nHow to Use DBpia AI: For International Students\n교육방식\n진행언어\n자막지원\n신청링크\n온라인 실시간 (ZOOM)\n영어\n15개 언어\n(실시간 번역 자막)\n신청하기\n나. 교육강사: 최제서(DBpia 전문 교육강사)\n다. 교육일시: 2026. 11. 19.(목) 10:00-10:50 (50분)\n라. 교육내용:\n1) 다국어 기능을 활용한 한국어 영어 논문 이해(시연)\n2) 논문 작성, 디펜스(발표·심사) 준비 등 DBpia AI 활용\n마. 유의사항:\n1) 본 교육은 DBpia AI 구독 회원기관 전체 대상 연합교육\n2) 접속 방법은 신청 후 신청자에게 개별 안내 예정\n바. 문의처: 누리미디어 영업기획팀 김병국\n02) 710-5310 / class1264@nurimedia.co.kr\n붙임 DBpia AI 교육 홍보물 1부. 끝.",
+          "channel_id": "notice-7414782e7dbb",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-dent-k1news:4567",
+          "posted_at": "2026-11-10",
+          "reason": "new",
+          "source": "치의학과 · 공지사항",
+          "title": "외국인 유학생 대상 DBpia AI 이용방법 온라인 교육 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4567&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+        },
+        {
+          "body": "2. 2026학년도 동계 및 2027학년도 1학기 현장실습교육과정을 다음과 같이 운영하오니 관심있는 학생들이 참여할 수 있도록 적극 홍보하여 주시기 바랍니다.\n가. 설명회\n구분\n장소\n일정\n내 용\n대구캠퍼스\n글로벌플라자 경하홀Ⅱ\n2026.11.23.(월) 16:30\n16:30~17:00\n현장실습 운영 안내\n17:00~\n질의응답\n상주캠퍼스\n복지회관\n201호\n2026.11.24.(화) 14:00\n14:00~14:30\n현장실습 운영 안내\n14:30~\n질의응답\n나. 학생 모집\n1) 1차(집중) 모집: 11. 25.(수) ~ 11. 27.(금) 23:59\n2) 2차(수시) 모집: 12. 7.(월) ~ 교육과정별 모집 마감일(‘붙임1’ 참조)\n3) 신청 방법: 통합포털 로그인-비교과교육과정(KNUCUBE) 현장실습 메뉴에서 신청\n다. 홍보 포스터 배부: 문서함으로 배부 예정(11월 13일)\n라. 아울러 학과 교수님들의 현장실습에 대한 사전 인식 제고를 위해 「현장실습교육과정지도교수 안내사항(붙임2)」을 첨부하오니, 교수님들께 안내해 주시기 바랍니다.\n붙임 1. 현장실습교육과정 학생모집 안내문 1부.\n2. 현장실습교육과정 지도교수 안내사항 1부.\n3. 현장실습 포스터(웹게시용) 1부.\n4. 현장실습 포스터 배부표 1부. 끝.",
+          "channel_id": "notice-7414782e7dbb",
+          "dday": null,
+          "deadline": null,
+          "id": "knu-dent-k1news:4568",
+          "posted_at": "2026-11-12",
+          "reason": "new",
+          "source": "치의학과 · 공지사항",
+          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내",
+          "url": "https://dent.knu.ac.kr/sub/board.html?mode=cont&bno=4568&snm=342&gotoPage=1&bid=k1news&sflag=&sword=&syear=&bcate="
+        }
+      ]
+    },
+    {
+      "channel_id": "notice-aibootcamp",
+      "meals": [],
+      "notices": []
+    }
+  ],
+  "collected_at": "2026-11-13T02:03:01.260358+09:00",
+  "date": "2026-11-13",
+  "errors": [
+    {
+      "message": "오늘 식단은 로컬에서 아직 수집하지 않았습니다",
+      "source": "meals"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1623310437: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/it/sub.htm?nav_code=it1623310437 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7b44d3e4e250>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1623310437)",
+      "source": "notice-ddb70636c525"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzImdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzImdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)",
+      "source": "notice-a267229666ef"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDExJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTQmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDExJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)",
+      "source": "notice-a267229666ef"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDgmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NDgmc3RhcnRQYWdlPTIwJmxpc3RObz0xNDA3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)",
+      "source": "notice-a267229666ef"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzYmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDAxJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MzYmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDAxJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)",
+      "source": "notice-a267229666ef"
+    },
+    {
+      "message": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MjYmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4MjYmc3RhcnRQYWdlPTMwJmxpc3RObz0xMzk3JnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)",
+      "source": "notice-a267229666ef"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-ddb70636c525"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-7537783c05b0"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-0158c1288046"
+    },
+    {
+      "message": "knu-ento-ent1625131133:999: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-8d0ba20b8a78"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-ab33c8b6f3d1"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-cd772685aa0f"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-b7eb69e8405d"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-dc7fc6a93fe8"
+    },
+    {
+      "message": "knu-cals-cal1623200331:494: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-e3a4a5455384"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-12a353fc2eb8"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-0ef73fec9014"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-30f51dd33791"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-750dff5618d4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fe90b8f3beb7"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-956827a355a7"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-73ffa1763744"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9b84b4adc47a"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-8b73f625639c"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9bcb92908bc9"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-3bb6de2335b3"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-fe8857afa2d4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-f9d9ecdb1284"
+    },
+    {
+      "message": "knu-se-se1617170620:915: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-2487b99aea65"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-4c132ad6150a"
+    },
+    {
+      "message": "knu-math-mat1623029308:3479: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "knu-math-mat1623029308:3480: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-472ae4378387"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-8666f6ab7bde"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-451c515734ae"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-aaa5e07a26eb"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-45a059e34b9c"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-57321798a19a"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-d5e75aa6b2da"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9a2cb1c992c7"
+    },
+    {
+      "message": "knu-soee-soe1622609908:1876: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-06dffccf1c28"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-f95f0e2ac40d"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-a1c0cc5412ca"
+    },
+    {
+      "message": "knu-fashion-fas1623134444:940: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-ad22d5b4a9e9"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-614324804939"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-7bb331bb8b0f"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-4b4549901a22"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-55ac86f2e763"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-392eeaadf103"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-9a0b59b2a2b4"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-787893a88ff5"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-e187e9582e58"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-dd1ea15f1f4f"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-dfce5afb9336"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-d6c272c6c7db"
+    },
+    {
+      "message": "knu-style-sty1616635012:392: 본문을 온전히 읽지 못했습니다 (attachment-only)",
+      "source": "notice-9dbd1b2695c9"
+    },
+    {
+      "message": "knu-chem-che1622521080:7167: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-ac0144f93d45"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-093d2d29fb09"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-6fafb52e7377"
+    },
+    {
+      "message": "knu-global-glo1729572883:19186: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-423ad5624dbc"
+    },
+    {
+      "message": "knu-biotech-sub6_1:323: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-b1133d4c8b3b"
+    },
+    {
+      "message": "knu-biotech-sub6_1:324: 본문을 온전히 읽지 못했습니다 (image-only)",
+      "source": "notice-b1133d4c8b3b"
+    },
+    {
+      "message": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다",
+      "source": "notice-aibootcamp"
+    }
+  ],
+  "schedule": [],
+  "weather": {
+    "rain_prob": 38,
+    "summary": "흐림",
+    "temp_max": 17.0,
+    "temp_min": 8.3
+  }
+}
