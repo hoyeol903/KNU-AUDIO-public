@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "boards": [
     {
       "category": "academic",
@@ -105,22 +105,7 @@
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
       "saved": 71,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-kbiz-kbi1623370557:5894",
-          "title": "인문고전포럼 ‘영원한 고전 오뒷세이아’ 개최 안내"
-        },
-        {
-          "date": "2026-11-11",
-          "deadline": "2026-11-17",
-          "kind": "deadline",
-          "postId": "knu-kbiz-kbi1623370557:5889",
-          "title": "2026학년도 경북인문사회연구원 차세대 연구자 멘토링 Lab」 학생연구원 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
     },
     {
@@ -129,7 +114,15 @@
       "id": "notice-8860bb9a4bc5",
       "name": "경제통상학부 · 학부 공지사항",
       "saved": 77,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-econ-eco1623370509:5173",
+          "title": "2026학년도 동계 AI PBL & 현장체험 프로그램(베트남 인턴십) 참가자 모집 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509"
     },
     {
@@ -140,18 +133,11 @@
       "saved": 127,
       "today": [
         {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4903",
-          "title": "고고인류학과 진로콘서트 '취업에는 정답이 없다' 안내(사전조사 11.17.~11.22.)"
-        },
-        {
-          "date": "2026-11-11",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4901",
-          "title": "제8회 감(感)-동(動)-인(人) 영상·학술제 영화상영 및 GV 안내"
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-aran-ara1623718660:4894",
+          "title": "[AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십)"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?nav_code=ara1623718660"
@@ -225,29 +211,7 @@
       "id": "notice-6c1f8a512fa4",
       "name": "국어국문학과 · 공지사항(학사)",
       "saved": 313,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-korean-kor1657071357:1379",
-          "title": "「2026학년도 제4회 KNU 융합전공 설명회」개최 및 참가신청 안내"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-korean-kor1657071357:1380",
-          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-korean-kor1657071357:1381",
-          "title": "2026학년도 남부특수교육지원센터 계절학교 교육봉사자 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
     },
     {
@@ -256,15 +220,7 @@
       "id": "notice-b7eb69e8405d",
       "name": "금속재료공학과 · 공지사항",
       "saved": 31,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-material-mat1623632513:284",
-          "title": "51대 학생회(학생회장 진상우 2015년 입학), 대구지방보훈청과 ‘보훈가족 사랑의 쌀’ 200kg 전달식 개최"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/material/sub.htm?nav_code=mat1623632513"
     },
     {
@@ -273,15 +229,7 @@
       "id": "notice-74a3f719131b",
       "name": "기계공학부 · 학부 공지사항",
       "saved": 102,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-me-me1623370438:6938",
-          "title": "경북대학교 학생 윤리강령"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
     },
     {
@@ -317,15 +265,7 @@
       "id": "notice-e3a4a5455384",
       "name": "농업생명과학대학 · 공지사항",
       "saved": 56,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cals-cal1623200331:496",
-          "title": "26 11 12 (5차)동문취업멘토링특강_농촌진흥청 농업연구관 황록연_행사 후"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?nav_code=cal1623200331"
     },
     {
@@ -352,15 +292,7 @@
       "id": "notice-0ef73fec9014",
       "name": "독어독문학과 · 공지사항",
       "saved": 32,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-german-ger1623133982:1685",
-          "title": "[행사 안내] 2026 독일어의 날(Tag der deutschen Sprache) 개최 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623133982"
     },
     {
@@ -396,7 +328,15 @@
       "id": "notice-ddfc5b2ca163",
       "name": "로봇공학과 · 공지사항",
       "saved": 161,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-robot-rob1623632307:863",
+          "title": "[안내] [AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
     },
     {
@@ -434,11 +374,11 @@
       "saved": 140,
       "today": [
         {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4814",
-          "title": "2026학년도 2학기 K-STAR 비자트랙 우수인재 추천 안내 및 접수"
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4800",
+          "title": "[AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 홍보"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
@@ -485,15 +425,7 @@
       "id": "notice-b5015ce1e74b",
       "name": "불어불문학과 · 공지사항",
       "saved": 62,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-french-fre1623147753:1879",
-          "title": "「2026학년도 제4회 KNU 융합전공 설명회」개최 및 참가신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
     },
     {
@@ -502,15 +434,7 @@
       "id": "notice-2ae1ca96e3de",
       "name": "사범대학 · 공지사항",
       "saved": 41,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-education-edu1623200393:429",
-          "title": "(교육봉사)2026학년도 남부특수교육지원센터 계절학교 교육봉사자 모집 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/education/sub.htm?nav_code=edu1623200393"
     },
     {
@@ -528,22 +452,7 @@
       "id": "notice-7502f997e5e7",
       "name": "사회과학대학 자율학부 · 공지사항",
       "saved": 33,
-      "today": [
-        {
-          "date": "2026-08-26",
-          "deadline": "2026-11-17",
-          "kind": "deadline",
-          "postId": "knu-coss-cos1623199778:583",
-          "title": "2027학년도 사회정책대학원 입학전형 기본계획 알림"
-        },
-        {
-          "date": "2026-08-26",
-          "deadline": "2026-11-17",
-          "kind": "deadline",
-          "postId": "knu-coss-cos1623199778:584",
-          "title": "2027학년도 사회정책대학원 신입생 모집요강 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/coss/sub.htm?nav_code=cos1623199778"
     },
     {
@@ -561,15 +470,7 @@
       "id": "notice-1268b7a10e0b",
       "name": "사회학과 · 학부 공지사항",
       "saved": 69,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-socio-soc1622181477:4002",
-          "title": "2026학년도 2학기 교직 적성 및 인성검사(3차) 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477"
     },
     {
@@ -609,23 +510,16 @@
         {
           "date": "2026-11-13",
           "deadline": "2026-11-18",
-          "kind": "new",
+          "kind": "deadline",
           "postId": "knu-bio-bio1616117151:2508",
           "title": "「2026학년도 제4회 KNU 융합전공 설명회」개최 및 참가신청 안내"
         },
         {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2509",
-          "title": "경북대학생 온라인 강의 전액지원 프로모션 안내"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2510",
-          "title": "2026학년도 남부특수교육지원센터 계절학교 교육봉사자 모집 안내"
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-bio-bio1616117151:2506",
+          "title": "[국립대학육성사업] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램 (베트남 인턴쉽)"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
@@ -681,7 +575,15 @@
       "id": "notice-2487b99aea65",
       "name": "소프트웨어학과 · 공지사항",
       "saved": 70,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-11-10",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-se-se1617170620:916",
+          "title": "[AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 홍보"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/se/sub.htm?nav_code=se1617170620"
     },
     {
@@ -701,11 +603,11 @@
       "saved": 2854,
       "today": [
         {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3481",
-          "title": "[학부] 「2026학년도 제4회 KNU 융합전공 설명회」 개최 및 참가신청 안내"
+          "date": "2026-11-06",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-math-mat1623029308:3473",
+          "title": "[학부] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 신청 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
@@ -761,15 +663,7 @@
       "id": "notice-e0dc5a51576c",
       "name": "식물의학과 · 공지사항",
       "saved": 33,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-plantmed-pla1677024917:113",
-          "title": "2027년도 지방 국립대학 전액 장학금 안내물 배포"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?nav_code=pla1677024917"
     },
     {
@@ -843,11 +737,11 @@
       "saved": 68,
       "today": [
         {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuagec-knu1623134126:3265",
-          "title": "2026학년도 KNU 융합전공 설명회 안내"
+          "date": "2026-11-05",
+          "deadline": "2026-11-18",
+          "kind": "deadline",
+          "postId": "knu-knuagec-knu1623134126:3261",
+          "title": "[AI거점대학] 2026학년도 동계 글로벌 AI PBL & 현장체험 프로그램(베트남 인턴십) 신청 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
@@ -876,15 +770,7 @@
       "id": "notice-97fffffebd44",
       "name": "아동학부 · 학부 공지사항",
       "saved": 58,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuchild-knu1623370362:1437",
-          "title": "경북인문사회연구원 학생연구원 선발 및 멘토링 Lab 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
     },
     {
@@ -1010,29 +896,7 @@
       "id": "notice-ad22d5b4a9e9",
       "name": "의류학과 · 공지사항",
       "saved": 95,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:942",
-          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:943",
-          "title": "2026년 제2기 외국인 유학생‘KNU 글로벌 모교방문 홍보단’참가자 모집"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-fashion-fas1623134444:944",
-          "title": "잇:지(知) 프로그램 연계『정보리터러시 교육』안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444"
     },
     {
@@ -1095,15 +959,7 @@
       "id": "notice-3c7bfc3da404",
       "name": "일어일문학과 · 공지사항",
       "saved": 75,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-japan-jap1695016568:461",
-          "title": "온라인 강의 프로모션 안내!"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568"
     },
     {
@@ -1166,15 +1022,7 @@
       "id": "notice-1cbb3d90d081",
       "name": "전기공학과 · 공지사항",
       "saved": 106,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7505",
-          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
     },
     {
@@ -1201,15 +1049,7 @@
       "id": "notice-450caf336106",
       "name": "전자공학부 인공지능전공 · 공지사항",
       "saved": 75,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-seeai-see1667180581:320",
-          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581"
     },
     {
@@ -1218,15 +1058,7 @@
       "id": "notice-8b2d3f025a39",
       "name": "정밀기계공학과 · 공지사항",
       "saved": 45,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-pmeatknu-pme1623030157:1532",
-          "title": "2026학년도 기업탐방(삼양사) 프로그램 운영 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157"
     },
     {
@@ -1244,22 +1076,7 @@
       "id": "notice-b8ebd17a5dca",
       "name": "정치외교학과 · 학부 공지사항",
       "saved": 38,
-      "today": [
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1072",
-          "title": "2027학년도 대학 전과 선발 안내(선발인원 공지)"
-        },
-        {
-          "date": "2026-11-13",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1073",
-          "title": "2026학년도 제4회 KNU 융합전공 설명회 참가신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864"
     },
     {
@@ -3395,58 +3212,338 @@
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "01:50",
+  "checkedAt": "02:00",
   "collection": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "failedBoards": [
+      {
+        "name": "고고인류학과 · 학부공지",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzImdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
+        ],
+        "source_board_id": "knu-aran-ara1623718660"
+      },
+      {
+        "name": "스마트생물산업기계공학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
+        ],
+        "source_board_id": "knu-bime-bim1622180687"
+      },
+      {
+        "name": "영어교육과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639845cd410>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-enged-eng1622787290"
+      },
+      {
+        "name": "영어영문학과 · 학부공지",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?nav_code=eng1621852173 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x76398481ca10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x763981d63c90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639812c3cd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-english-eng1621852173"
+      },
+      {
+        "name": "우주공학부 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aerospace/sub.htm?nav_code=aer1694412321 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x76398484fed0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-aerospace-aer1694412321"
+      },
+      {
+        "name": "원예과학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/horti/sub.htm?nav_code=hor1622609861 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x763984740dd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-horti-hor1622609861"
+      },
+      {
+        "name": "위치정보시스템학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/lbis/sub.htm?nav_code=lbi1661932979 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639847de210>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-lbis-lbi1661932979"
+      },
+      {
+        "name": "윤리교육과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/ethedu/sub.htm?nav_code=eth1622460163 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639847509d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-ethedu-eth1622460163"
+      },
+      {
+        "name": "음악학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-music-mus1622610244"
+      },
+      {
+        "name": "응용생명과학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-appbio-app1700444270"
+      },
+      {
+        "name": "응용화학공학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-knuce-knu1762850029"
+      },
+      {
+        "name": "의류학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-fashion-fas1623134444"
+      },
+      {
+        "name": "의생명융합공학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-bcst2-bcs1611061294"
+      },
+      {
+        "name": "인문대학 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-humanities-hum1623199741"
+      },
+      {
+        "name": "인문대학 자율학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-hum-hum1741312301"
+      },
+      {
+        "name": "일반사회교육과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-ilsa-ils1622609066"
+      },
+      {
+        "name": "일어일문학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-japan-jap1695016568"
+      },
+      {
+        "name": "임산공학전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-treei-tre1622610220"
+      },
+      {
+        "name": "임학전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-forest-for1622521051"
+      },
+      {
+        "name": "자동차공학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-automobile-aut1623370299"
+      },
+      {
+        "name": "자연과학대학 · 공지사항 / 지구시스템과학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-cns-cns1623199799"
+      },
+      {
+        "name": "자율미래인재학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-sofi-sof1741566884"
+      },
+      {
+        "name": "자율전공학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-udm-udm1623371432"
+      },
+      {
+        "name": "전기공학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-electric-ele1622787198"
+      },
+      {
+        "name": "전자공학부 모바일공학전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-smobile-smo1616372729"
+      },
+      {
+        "name": "전자공학부 인공지능전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-seeai-see1667180581"
+      },
+      {
+        "name": "정밀기계공학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-pmeatknu-pme1623030157"
+      },
+      {
+        "name": "정보·컴퓨터교육과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-comedu-com1744781375"
+      },
+      {
+        "name": "정치외교학과 · 학부 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-politics-pol1614071864"
+      },
+      {
+        "name": "조경학전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-land-lan1614079746"
+      },
+      {
+        "name": "지구과학교육과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-earth-ear1622787840"
+      },
+      {
+        "name": "지리교육과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-geoedu-geo1623029261"
+      },
+      {
+        "name": "지리학과 · 학부 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-geog-geo1614082611"
+      },
+      {
+        "name": "지질학전공 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-geology-geo1621814864"
+      },
+      {
+        "name": "천문대기과학전공 · 학과공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-hanl-han1769127610"
+      },
+      {
+        "name": "철학과 · 학부 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-philosophy-phi1623391659"
+      },
+      {
+        "name": "첨단기술융합대학 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-knuatc-knu1711976689"
+      },
+      {
+        "name": "첨단기술융합대학 자율학부1 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-atcad-atc1753746498"
+      },
+      {
+        "name": "체육교육과 · 학부 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-spoedu-spo1623029398"
+      },
+      {
+        "name": "체육학부 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-sports-spo1622609691"
+      },
+      {
+        "name": "축산학과 · 공지사항",
+        "reasons": [
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
+        ],
+        "source_board_id": "knu-zootechny-zoo1622709676"
+      },
       {
         "name": "토목공학과 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTMmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTMmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b216758f10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b214142a10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215fe8190>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2141824d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2156a1c50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjYmc3RhcnRQYWdlPTEwJmxpc3RObz0yNTgwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjYmc3RhcnRQYWdlPTEwJmxpc3RObz0yNTgwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b214182110>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-civil-civ1614066197"
       },
       {
         "name": "통계학과 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/stat/sub.htm?nav_code=sta1623632390 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21492c5d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2159710d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-stat-sta1623632390"
       },
       {
         "name": "패션디자인전공 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/style/sub.htm?nav_code=sty1616635012 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2164b0550>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-style-sty1616635012"
       },
       {
         "name": "한문학과 · 학부 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?nav_code=han1624361542 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2164f1c50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5OTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5OTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215355910>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTEwJmxpc3RObz0yOTc4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTEwJmxpc3RObz0yOTc4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21531ec10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-hanmun-han1624361542"
       },
       {
         "name": "해양학전공 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/ocean/sub.htm?nav_code=oce1623632597 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2155e72d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-ocean-oce1623632597"
       },
       {
         "name": "행정학부 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/puad/sub.htm?nav_code=pua1623029519 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21353cd10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))",
-          "요청 실패: https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDImdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDImdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215e08bd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)'))"
+          "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀"
         ],
         "source_board_id": "knu-puad-pua1623029519"
       },
@@ -3570,7 +3667,7 @@
         "source_board_id": "knu-aibootcamp-notices"
       }
     ],
-    "lastCollectedAt": "2026-11-14T01:50:31+09:00",
+    "lastCollectedAt": "2026-11-15T02:00:44+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -3578,9 +3675,9 @@
       "total": 6
     },
     "physicalBoards": 140,
-    "todayFailed": 23,
+    "todayFailed": 64,
     "todayNotCollected": 0,
-    "todaySuccess": 117
+    "todaySuccess": 76
   },
   "departments": [
     {
@@ -5364,64 +5461,200 @@
       "text": "오늘 식단은 로컬에서 아직 수집하지 않았습니다"
     },
     {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTMmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTMmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b216758f10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxODAmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTMmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+      "source": "notice-a267229666ef",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzImdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MzImdGFibGU9ZXhfYmJzX2RhdGFfYXJhbiZuYXZfY29kZT1hcmExNjIzNzE4NjYwJmNvZGU9empXeEVrMk9wWktKJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
+    },
+    {
+      "source": "notice-cc19e513d407",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+    },
+    {
+      "source": "notice-9c2e2dbd2980",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639845cd410>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/enged/sub.htm?mode=view&mv_data=aWR4PTU1OSZzdGFydFBhZ2U9MCZsaXN0Tm89NTAyJnRhYmxlPWV4X2Jic19kYXRhX2VuZ2VkJm5hdl9jb2RlPWVuZzE2MjI3ODcyOTAmY29kZT16QWNvck1MTjRwMEUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+    },
+    {
+      "source": "notice-1abc9573202c",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?nav_code=eng1621852173 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x76398481ca10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173)"
+    },
+    {
+      "source": "notice-1abc9573202c",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x763981d63c90>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+    },
+    {
+      "source": "notice-1abc9573202c",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639812c3cd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTEyMjcmdGFibGU9ZXhfYmJzX2RhdGFfZW5nbGlzaCZuYXZfY29kZT1lbmcxNjIxODUyMTczJmNvZGU9Sm9haTFoRVA4ckl0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
+    },
+    {
+      "source": "notice-f95f0e2ac40d",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/aerospace/sub.htm?nav_code=aer1694412321 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x76398484fed0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/aerospace/sub.htm?nav_code=aer1694412321)"
+    },
+    {
+      "source": "notice-3834483dc081",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/horti/sub.htm?nav_code=hor1622609861 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x763984740dd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861)"
+    },
+    {
+      "source": "notice-ef883ff42361",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/lbis/sub.htm?nav_code=lbi1661932979 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639847de210>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979)"
+    },
+    {
+      "source": "notice-a1540deb2a6f",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/ethedu/sub.htm?nav_code=eth1622460163 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x7639847509d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163)"
+    },
+    {
+      "source": "notice-74558916c320",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/music/sub.htm?nav_code=mus1622610244)"
+    },
+    {
+      "source": "notice-a1c0cc5412ca",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/appbio/sub.htm?nav_code=app1700444270)"
+    },
+    {
+      "source": "notice-7dfeec322405",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029)"
+    },
+    {
+      "source": "notice-ad22d5b4a9e9",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/fashion/sub.htm?nav_code=fas1623134444)"
+    },
+    {
+      "source": "notice-e1ec1bf0eb87",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294)"
+    },
+    {
+      "source": "notice-ecd686f730b2",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/humanities/sub.htm?nav_code=hum1623199741)"
+    },
+    {
+      "source": "notice-5c6cbaba27ab",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/hum/sub.htm?nav_code=hum1741312301)"
+    },
+    {
+      "source": "notice-614324804939",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/ilsa/sub.htm?nav_code=ils1622609066)"
+    },
+    {
+      "source": "notice-3c7bfc3da404",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568)"
+    },
+    {
+      "source": "notice-7bb331bb8b0f",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/treei/sub.htm?nav_code=tre1622610220)"
+    },
+    {
+      "source": "notice-4b4549901a22",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/forest/sub.htm?nav_code=for1622521051)"
+    },
+    {
+      "source": "notice-68d5f9aa762f",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/automobile/sub.htm?nav_code=aut1623370299)"
+    },
+    {
+      "source": "notice-55ac86f2e763",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/cns/sub.htm?nav_code=cns1623199799)"
+    },
+    {
+      "source": "notice-9a0b59b2a2b4",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/sofi/sub.htm?nav_code=sof1741566884)"
+    },
+    {
+      "source": "notice-d1802616c625",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432)"
+    },
+    {
+      "source": "notice-1cbb3d90d081",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198)"
+    },
+    {
+      "source": "notice-e08af12e34e3",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/smobile/sub.htm?nav_code=smo1616372729)"
+    },
+    {
+      "source": "notice-450caf336106",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581)"
+    },
+    {
+      "source": "notice-8b2d3f025a39",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157)"
+    },
+    {
+      "source": "notice-1d6a78636180",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/comedu/sub.htm?nav_code=com1744781375)"
+    },
+    {
+      "source": "notice-b8ebd17a5dca",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864)"
+    },
+    {
+      "source": "notice-c4b1c79994bd",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/land/sub.htm?nav_code=lan1614079746)"
+    },
+    {
+      "source": "notice-787893a88ff5",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/earth/sub.htm?nav_code=ear1622787840)"
+    },
+    {
+      "source": "notice-278455937509",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/geoedu/sub.htm?nav_code=geo1623029261)"
+    },
+    {
+      "source": "notice-2eb7684c7df1",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/geog/sub.htm?nav_code=geo1614082611)"
+    },
+    {
+      "source": "notice-1f235111f7dc",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864)"
+    },
+    {
+      "source": "notice-d6ef40bd632d",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/hanl/sub.htm?nav_code=han1769127610)"
+    },
+    {
+      "source": "notice-d7e3a598e69c",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/philosophy/sub.htm?nav_code=phi1623391659)"
+    },
+    {
+      "source": "notice-e187e9582e58",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/knuatc/sub.htm?nav_code=knu1711976689)"
+    },
+    {
+      "source": "notice-afca571a7ef1",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/atcad/sub.htm?nav_code=atc1753746498)"
+    },
+    {
+      "source": "notice-dd1ea15f1f4f",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/spoedu/sub.htm?nav_code=spo1623029398)"
+    },
+    {
+      "source": "notice-dfce5afb9336",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/sports/sub.htm?nav_code=spo1622609691)"
+    },
+    {
+      "source": "notice-d6c272c6c7db",
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/zootechny/sub.htm?nav_code=zoo1622709676)"
     },
     {
       "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b214142a10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzkmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215fe8190>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzgmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2141824d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzcmc3RhcnRQYWdlPTAmbGlzdE5vPTI1OTAmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2156a1c50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNzYmc3RhcnRQYWdlPTAmbGlzdE5vPTI1ODkmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-ccc3a94a1fa5",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjYmc3RhcnRQYWdlPTEwJmxpc3RObz0yNTgwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjYmc3RhcnRQYWdlPTEwJmxpc3RObz0yNTgwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b214182110>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMxNjYmc3RhcnRQYWdlPTEwJmxpc3RObz0yNTgwJnRhYmxlPWV4X2Jic19kYXRhX2NpdmlsJm5hdl9jb2RlPWNpdjE2MTQwNjYxOTcmY29kZT1jaXRtcXJLVFlpcWUmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/civil/sub.htm?nav_code=civ1614066197)"
     },
     {
       "source": "notice-f14e44ae5bb9",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/stat/sub.htm?nav_code=sta1623632390 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21492c5d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390)"
-    },
-    {
-      "source": "notice-f14e44ae5bb9",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2159710d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390)"
     },
     {
       "source": "notice-9dbd1b2695c9",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/style/sub.htm?nav_code=sty1616635012 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2164b0550>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/style/sub.htm?nav_code=sty1616635012)"
     },
     {
       "source": "notice-3d2a3e87207a",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?nav_code=han1624361542 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2164f1c50>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542)"
-    },
-    {
-      "source": "notice-3d2a3e87207a",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5OTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5OTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ== (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215355910>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTI5OTQmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
-    },
-    {
-      "source": "notice-3d2a3e87207a",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTEwJmxpc3RObz0yOTc4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTEwJmxpc3RObz0yOTc4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21531ec10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTc0MTImc3RhcnRQYWdlPTEwJmxpc3RObz0yOTc4JnRhYmxlPWV4X2Jic19kYXRhX2hhbm11biZuYXZfY29kZT1oYW4xNjI0MzYxNTQyJmNvZGU9Tkd6TUxqYmJYRDhTJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542)"
     },
     {
       "source": "notice-d13e4abb0470",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/ocean/sub.htm?nav_code=oce1623632597 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b2155e72d0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597)"
     },
     {
       "source": "notice-4a41e1328a3e",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/puad/sub.htm?nav_code=pua1623029519 (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b21353cd10>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519)"
-    },
-    {
-      "source": "notice-4a41e1328a3e",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDImdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: HTTPSConnectionPool(host='home.knu.ac.kr', port=443): Max retries exceeded with url: /HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDImdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0= (Caused by ConnectTimeoutError(<HTTPSConnection(host='home.knu.ac.kr', port=443) at 0x78b215e08bd0>, 'Connection to home.knu.ac.kr timed out. (connect timeout=10)')) (https://home.knu.ac.kr/HOME/puad/sub.htm?mode=view&mv_data=aWR4PTQwOTQmc3RhcnRQYWdlPTAmbGlzdE5vPTIxNDImdGFibGU9ZXhfYmJzX2RhdGFfcHVhZCZuYXZfY29kZT1wdWExNjIzMDI5NTE5JmNvZGU9OVh0VDBtZzVITGkzJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
+      "text": "FetchError: 앞선 게시판 5곳이 연달아 연결되지 않아 건너뜀 (https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519)"
     },
     {
       "source": "notice-b46aed7f6b0f",
@@ -5496,6 +5729,10 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-ddb70636c525",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-04f9a84e582c",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -5528,16 +5765,8 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-b7eb69e8405d",
-      "text": "knu-material-mat1623632513:284: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
       "source": "notice-dc7fc6a93fe8",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-e3a4a5455384",
-      "text": "knu-cals-cal1623200331:496: 본문을 온전히 읽지 못했습니다 (image-only)"
     },
     {
       "source": "notice-12a353fc2eb8",
@@ -5586,10 +5815,6 @@
     {
       "source": "notice-b1133d4c8b3b",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
-    },
-    {
-      "source": "notice-b5e6a10e952e",
-      "text": "knu-bio-bio1616117151:2510: 본문을 온전히 읽지 못했습니다 (image-only)"
     },
     {
       "source": "notice-9bcb92908bc9",
@@ -5644,12 +5869,12 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-2c006faa8fdd",
+      "source": "notice-99ea5018f469",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-6b16f01d1a75",
-      "text": "knu-knuagec-knu1623134126:3265: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-2c006faa8fdd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-7fcf94c45b4e",
@@ -5664,11 +5889,31 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-9c2e2dbd2980",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-1abc9573202c",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-1abc9573202c",
+      "text": "knu-english-eng1621852173:4464: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
       "source": "notice-f95f0e2ac40d",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-3834483dc081",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-ef883ff42361",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-a1540deb2a6f",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -5680,8 +5925,24 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-7dfeec322405",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7dfeec322405",
+      "text": "knu-knuce-knu1762850029:402: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
       "source": "notice-ad22d5b4a9e9",
-      "text": "knu-fashion-fas1623134444:943: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e1ec1bf0eb87",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-e1ec1bf0eb87",
+      "text": "knu-bcst2-bcs1611061294:866: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
     },
     {
       "source": "notice-a363da417a07",
@@ -5692,12 +5953,24 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-b34ee1a00417",
+      "text": "knu-computer-sub6_1_a:29514: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
+      "source": "notice-ecd686f730b2",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-5c6cbaba27ab",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-614324804939",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-3c7bfc3da404",
-      "text": "knu-japan-jap1695016568:461: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-7bb331bb8b0f",
@@ -5705,6 +5978,10 @@
     },
     {
       "source": "notice-4b4549901a22",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-68d5f9aa762f",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -5716,16 +5993,48 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-d1802616c625",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d1802616c625",
+      "text": "knu-udm-udm1623371432:1652: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
+      "source": "notice-1cbb3d90d081",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-df44dd8507c1",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-df44dd8507c1",
+      "text": "knu-see-notice:105830: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
+      "source": "notice-e08af12e34e3",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-450caf336106",
-      "text": "knu-seeai-see1667180581:320: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-8b2d3f025a39",
-      "text": "knu-pmeatknu-pme1623030157:1532: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-1d6a78636180",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b8ebd17a5dca",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-c4b1c79994bd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-6b04da14aae1",
@@ -5740,6 +6049,14 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-278455937509",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-2eb7684c7df1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-1f235111f7dc",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -5748,7 +6065,15 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-d7e3a598e69c",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-e187e9582e58",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-afca571a7ef1",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -5772,6 +6097,14 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-fefffa32e24c",
+      "text": "knu-computer-sub6_1_a:29514: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
+      "source": "notice-ccc3a94a1fa5",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-f14e44ae5bb9",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -5790,6 +6123,10 @@
     {
       "source": "notice-4a41e1328a3e",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-4a41e1328a3e",
+      "text": "knu-puad-pua1623029519:4094: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
     },
     {
       "source": "notice-b46aed7f6b0f",
@@ -6153,10 +6490,10 @@
     "status": "empty"
   },
   "weather": {
-    "max": 13.5,
-    "min": 11.4,
-    "rain": 100,
+    "max": 17.1,
+    "min": 10.0,
+    "rain": 61,
     "status": "ok",
-    "summary": "비"
+    "summary": "약한 이슬비"
   }
 }
