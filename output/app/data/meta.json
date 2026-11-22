@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-22",
+  "asOf": "2026-11-23",
   "boards": [
     {
       "category": "academic",
@@ -106,7 +106,15 @@
       "id": "notice-8860bb9a4bc5",
       "name": "경제통상학부 · 학부 공지사항",
       "saved": 81,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-econ-eco1623370509:4992",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(9월 1일부터 신청 가능)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509"
     },
     {
@@ -124,7 +132,15 @@
       "id": "notice-7ff56c3af3e0",
       "name": "고분자공학과 · 학사 공지사항",
       "saved": 89,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-knupolymer-knu1623888520:1630",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
     },
     {
@@ -187,7 +203,15 @@
       "id": "notice-6c1f8a512fa4",
       "name": "국어국문학과 · 공지사항(학사)",
       "saved": 316,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-korean-kor1657071357:1273",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
     },
     {
@@ -205,7 +229,15 @@
       "id": "notice-74a3f719131b",
       "name": "기계공학부 · 학부 공지사항",
       "saved": 107,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-me-me1623370438:6714",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
     },
     {
@@ -214,7 +246,15 @@
       "id": "notice-61c2fdac4b03",
       "name": "나노신소재공학과 · 공지사항",
       "saved": 421,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-amse-ams1622609715:846",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?nav_code=ams1622609715"
     },
     {
@@ -277,7 +317,15 @@
       "id": "notice-d42e73c1be80",
       "name": "독어독문학과 · 학사공지",
       "saved": 35,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-18",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-german-ger1623203350:1664",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(~11. 24.(화))"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/german/sub.htm?nav_code=ger1623203350"
     },
     {
@@ -330,8 +378,16 @@
       "collected": true,
       "id": "notice-ec96ad09ef78",
       "name": "물리교육과 · 공지사항",
-      "saved": 55,
-      "today": [],
+      "saved": 56,
+      "today": [
+        {
+          "date": "2026-11-22",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-physed-phy1623371316:5036",
+          "title": "2026학년도 1학기 교원양성과정 성인지 교육 이수 안내_(2026. 12. 31.까지)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316"
     },
     {
@@ -340,7 +396,15 @@
       "id": "notice-f4ac509b75c4",
       "name": "물리학과 · 공지사항",
       "saved": 154,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-physics-phy1645592197:4612",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
     },
     {
@@ -538,7 +602,15 @@
       "id": "notice-472ae4378387",
       "name": "수학과 · 공지사항",
       "saved": 2862,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-math-mat1623029308:3378",
+          "title": "[학부] 2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
     },
     {
@@ -565,7 +637,15 @@
       "id": "notice-cc19e513d407",
       "name": "스마트생물산업기계공학과 · 공지사항",
       "saved": 51,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-09-17",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-bime-bim1622180687:1423",
+          "title": "「2026학년도 2학기 조기취업자 출석인정」신청서 제출 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687"
     },
     {
@@ -699,7 +779,15 @@
       "id": "notice-97fffffebd44",
       "name": "아동학부 · 학부 공지사항",
       "saved": 59,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-18",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-knuchild-knu1623370362:1398",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
     },
     {
@@ -753,7 +841,15 @@
       "id": "notice-1abc9573202c",
       "name": "영어영문학과 · 학부공지",
       "saved": 1232,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-18",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-english-eng1621852173:4417",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/english/sub.htm?nav_code=eng1621852173"
     },
     {
@@ -789,15 +885,7 @@
       "id": "notice-a1540deb2a6f",
       "name": "윤리교육과 · 공지사항",
       "saved": 40,
-      "today": [
-        {
-          "date": "2026-11-19",
-          "deadline": "2026-11-25",
-          "kind": "deadline",
-          "postId": "knu-ethedu-eth1622460163:2566",
-          "title": "[국립대학육성사업] 경북대학교 사범대학 80주년 기념 예비교원 수업 시연대회 실시"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163"
     },
     {
@@ -824,7 +912,15 @@
       "id": "notice-7dfeec322405",
       "name": "응용화학공학부 · 공지사항",
       "saved": 87,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-19",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-knuce-knu1762850029:267",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
     },
     {
@@ -994,7 +1090,15 @@
       "id": "notice-450caf336106",
       "name": "전자공학부 인공지능전공 · 공지사항",
       "saved": 79,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-seeai-see1667180581:246",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?nav_code=see1667180581"
     },
     {
@@ -1003,7 +1107,15 @@
       "id": "notice-8b2d3f025a39",
       "name": "정밀기계공학과 · 공지사항",
       "saved": 48,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-18",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-pmeatknu-pme1623030157:1444",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?nav_code=pme1623030157"
     },
     {
@@ -1102,7 +1214,15 @@
       "id": "notice-d7e3a598e69c",
       "name": "철학과 · 학부 공지사항",
       "saved": 48,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-18",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-philosophy-phi1623391659:4070",
+          "title": "[학사] 2026학년도 2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?nav_code=phi1623391659"
     },
     {
@@ -1183,7 +1303,15 @@
       "id": "notice-f14e44ae5bb9",
       "name": "통계학과 · 공지사항",
       "saved": 55,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-stat-sta1623632390:361",
+          "title": "｢2026학년도 2학기 조기취업 졸업예정자 출석인정] 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?nav_code=sta1623632390"
     },
     {
@@ -1201,7 +1329,15 @@
       "id": "notice-3d2a3e87207a",
       "name": "한문학과 · 학부 공지사항",
       "saved": 143,
-      "today": [],
+      "today": [
+        {
+          "date": "2026-08-14",
+          "deadline": "2026-11-24",
+          "kind": "deadline",
+          "postId": "knu-hanmun-han1624361542:7260",
+          "title": "2026.2학기 조기취업자 출석인정 신청 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
     },
     {
@@ -1375,26 +1511,41 @@
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "02:00",
+  "checkedAt": "01:57",
   "collection": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "failedBoards": [
       {
         "name": "고고인류학과 · 학부공지",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected))"
+          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: Response ended prematurely"
         ],
         "source_board_id": "knu-aran-ara1623718660"
       },
       {
         "name": "스마트생물산업기계공학과 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(2040 bytes read, 8200 more expected)', IncompleteRead(2040 bytes read, 8200 more expected))"
+          "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected))"
         ],
         "source_board_id": "knu-bime-bim1622180687"
+      },
+      {
+        "name": "중어중문학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f99cc7a2310>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))",
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=5: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f99ccc241d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-chinese-notice"
+      },
+      {
+        "name": "치의학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://dent.knu.ac.kr/sub/board.html?bid=k1news: HTTPSConnectionPool(host='dent.knu.ac.kr', port=443): Max retries exceeded with url: /sub/board.html?bid=k1news (Caused by ConnectTimeoutError(<HTTPSConnection(host='dent.knu.ac.kr', port=443) at 0x7f99cf5353d0>, 'Connection to dent.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-dent-k1news"
       }
     ],
-    "lastCollectedAt": "2026-11-22T02:00:56+09:00",
+    "lastCollectedAt": "2026-11-23T01:57:41+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -1402,9 +1553,9 @@
       "total": 6
     },
     "physicalBoards": 140,
-    "todayFailed": 2,
+    "todayFailed": 4,
     "todayNotCollected": 0,
-    "todaySuccess": 138
+    "todaySuccess": 136
   },
   "departments": [
     {
@@ -3189,11 +3340,23 @@
     },
     {
       "source": "notice-a267229666ef",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: Response ended prematurely (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ4NTUmc3RhcnRQYWdlPTMwJmxpc3RObz0xNDEyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
     },
     {
       "source": "notice-cc19e513d407",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(2040 bytes read, 8200 more expected)', IncompleteRead(2040 bytes read, 8200 more expected)) (https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected)) (https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0Mzkmc3RhcnRQYWdlPTAmbGlzdE5vPTU1OSZ0YWJsZT1leF9iYnNfZGF0YV9iaW1lJm5hdl9jb2RlPWJpbTE2MjIxODA2ODcmY29kZT1iaGhtaWs5czVwS3cmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ==)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f99cc7a2310>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=5: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice&wr_id=13635&page=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x7f99ccc241d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice&wr_id=13635&page=5)"
+    },
+    {
+      "source": "notice-7414782e7dbb",
+      "text": "요청 실패: https://dent.knu.ac.kr/sub/board.html?bid=k1news: HTTPSConnectionPool(host='dent.knu.ac.kr', port=443): Max retries exceeded with url: /sub/board.html?bid=k1news (Caused by ConnectTimeoutError(<HTTPSConnection(host='dent.knu.ac.kr', port=443) at 0x7f99cf5353d0>, 'Connection to dent.knu.ac.kr timed out. (connect timeout=10)')) (https://dent.knu.ac.kr/sub/board.html?bid=k1news)"
     },
     {
       "source": "notice-7537783c05b0",
@@ -3380,6 +3543,14 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-6b04da14aae1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "knu-chinese-notice:13635: 선정 후보의 오늘 상세 확인이 없어 제외했습니다"
+    },
+    {
       "source": "notice-787893a88ff5",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
@@ -3409,6 +3580,10 @@
     },
     {
       "source": "notice-d6c272c6c7db",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7414782e7dbb",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -3772,10 +3947,10 @@
     "status": "ok"
   },
   "weather": {
-    "max": 6.7,
-    "min": -2.7,
-    "rain": 0,
+    "max": 12.9,
+    "min": 0.2,
+    "rain": 88,
     "status": "ok",
-    "summary": "맑음"
+    "summary": "약한 이슬비"
   }
 }
