@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "segments": [
     {
-      "audio": "7dceda507000001114a32b32940723883c1581a231f82ff9c5ea3b564a164301.mp3",
+      "audio": "f7fb4d3295880e49f629b82900840671e24207678ad35ccb0eafc2c2f3a08eaf.mp3",
       "channel_id": "intro",
       "cues": [
         {
@@ -11,40 +11,450 @@
           "text": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요."
         },
         {
-          "end_sec": 10.32,
+          "end_sec": 17.856,
           "start_sec": 6.984,
-          "text": "아침엔 선선하니 얇은 겉옷 하나 챙기세요."
+          "text": "우산은 가방에 넣고, 비가 오면 천천히 걸어주세요. 등굣길에는 겉옷 하나 걸치면 좋아요. 아침과 낮의 온도 차이가 커서 옷차림을 조절해 주세요."
         }
       ],
-      "duration_sec": 10.32,
+      "duration_sec": 17.856,
       "id": "intro",
       "items": [
         {
           "dday": null,
-          "detail": "최저 -2.7° / 최고 6.7° · 비 올 확률 0%",
+          "detail": "최저 0.2° / 최고 12.9° · 비 올 확률 88%",
           "postId": null,
           "section": "날씨",
-          "title": "맑음",
+          "title": "약한 이슬비",
           "url": null
         }
       ],
-      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 아침엔 선선하니 얇은 겉옷 하나 챙기세요.",
+      "script": "안녕하세요, 좋은 아침이에요! 오늘 알아두면 좋을 학교 소식을 짧게 전해 드릴게요. 우산은 가방에 넣고, 비가 오면 천천히 걸어주세요. 등굣길에는 겉옷 하나 걸치면 좋아요. 아침과 낮의 온도 차이가 커서 옷차림을 조절해 주세요.",
       "title": "인사·날씨"
     },
     {
-      "audio": "ac1162bae6d01540137a92e66089a68cc100d48d55af825fad7fd55772a9acef.mp3",
+      "audio": "8097fed13ec6a06d875b7a8ac601abcc68276341267ba4641feb774f57a0c5fe.mp3",
+      "channel_id": "a55bf1350b1d0d138641586f",
+      "channel_ids": [
+        "notice-8860bb9a4bc5"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.256,
+          "start_sec": 0,
+          "text": "취업한 학생은 9월 1일부터 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요."
+        }
+      ],
+      "duration_sec": 8.256,
+      "id": "a55bf1350b1d0d138641586f",
+      "items": [
+        {
+          "channel_id": "notice-8860bb9a4bc5",
+          "dday": null,
+          "detail": "경제통상학부 · 학부 공지사항 · 2026-08-14",
+          "postId": "knu-econ-eco1623370509:4992",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(9월 1일부터 신청 가능)",
+          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ5OTImc3RhcnRQYWdlPTMwJmxpc3RObz0yNjA0JnRhYmxlPWV4X2Jic19kYXRhX2Vjb24mbmF2X2NvZGU9ZWNvMTYyMzM3MDUwOSZjb2RlPVhjV1JsenZDdXppNSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-8860bb9a4bc5",
+          "deadline": "2026-11-24",
+          "postId": "knu-econ-eco1623370509:4992",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(9월 1일부터 신청 가능)",
+          "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?mode=view&mv_data=aWR4PTQ5OTImc3RhcnRQYWdlPTMwJmxpc3RObz0yNjA0JnRhYmxlPWV4X2Jic19kYXRhX2Vjb24mbmF2X2NvZGU9ZWNvMTYyMzM3MDUwOSZjb2RlPVhjV1JsenZDdXppNSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "취업한 학생은 9월 1일부터 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(9월 1일부터 신청 가능)"
+    },
+    {
+      "audio": "aa31193cbb37a3c2272fa0a96ce369727b1155f0756647aea3f4a29f064a543f.mp3",
+      "channel_id": "fceb8f07d79a287afa6cfd75",
+      "channel_ids": [
+        "notice-7ff56c3af3e0"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.24,
+          "start_sec": 0,
+          "text": "취업한 학생은 학과에 11월 24일까지 신청서 제출하세요. 기한은 엄수합니다."
+        }
+      ],
+      "duration_sec": 6.24,
+      "id": "fceb8f07d79a287afa6cfd75",
+      "items": [
+        {
+          "channel_id": "notice-7ff56c3af3e0",
+          "dday": null,
+          "detail": "고분자공학과 · 학사 공지사항 · 2026-08-14",
+          "postId": "knu-knupolymer-knu1623888520:1630",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2MzAmc3RhcnRQYWdlPTMwJmxpc3RObz00ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZuYXZfY29kZT1rbnUxNjIzODg4NTIwJmNvZGU9WldMYThlNVNFdW1hJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-7ff56c3af3e0",
+          "deadline": "2026-11-24",
+          "postId": "knu-knupolymer-knu1623888520:1630",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?mode=view&mv_data=aWR4PTE2MzAmc3RhcnRQYWdlPTMwJmxpc3RObz00ODkmdGFibGU9ZXhfYmJzX2RhdGFfa251cG9seW1lciZuYXZfY29kZT1rbnUxNjIzODg4NTIwJmNvZGU9WldMYThlNVNFdW1hJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "취업한 학생은 학과에 11월 24일까지 신청서 제출하세요. 기한은 엄수합니다.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "8b036faddd97155d940fe1dd352823cbb1d5a9a6857f6892d7845618745939ec.mp3",
+      "channel_id": "8a4c6260945ef452be48a5dc",
+      "channel_ids": [
+        "notice-6c1f8a512fa4"
+      ],
+      "cues": [
+        {
+          "end_sec": 10.512,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 조기취업자 출석인정 신청서를 출력해 학과 사무실에 제출하세요. 강의교수의 서명과 서류를 꼼꼼히 챙기세요."
+        }
+      ],
+      "duration_sec": 10.512,
+      "id": "8a4c6260945ef452be48a5dc",
+      "items": [
+        {
+          "channel_id": "notice-6c1f8a512fa4",
+          "dday": null,
+          "detail": "국어국문학과 · 공지사항(학사) · 2026-08-14",
+          "postId": "knu-korean-kor1657071357:1273",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEyNzMmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTgmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzEzNTcmY29kZT1aRWZIQ2lCUGxSQnImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-6c1f8a512fa4",
+          "deadline": "2026-11-24",
+          "postId": "knu-korean-kor1657071357:1273",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?mode=view&mv_data=aWR4PTEyNzMmc3RhcnRQYWdlPTEwJmxpc3RObz0yOTgmdGFibGU9ZXhfYmJzX2RhdGFfa29yZWFuJm5hdl9jb2RlPWtvcjE2NTcwNzEzNTcmY29kZT1aRWZIQ2lCUGxSQnImc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 조기취업자 출석인정 신청서를 출력해 학과 사무실에 제출하세요. 강의교수의 서명과 서류를 꼼꼼히 챙기세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "6195fcb353d2fa4dabb9eb8bf5eb3606cba0cc87e8a09daa8f3ad95c3cc3a151.mp3",
+      "channel_id": "9c73f9bc4732113fb61ea4f7",
+      "channel_ids": [
+        "notice-74a3f719131b"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.552,
+          "start_sec": 0,
+          "text": "학생은 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요."
+        }
+      ],
+      "duration_sec": 6.552,
+      "id": "9c73f9bc4732113fb61ea4f7",
+      "items": [
+        {
+          "channel_id": "notice-74a3f719131b",
+          "dday": null,
+          "detail": "기계공학부 · 학부 공지사항 · 2026-08-14",
+          "postId": "knu-me-me1623370438:6714",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY3MTQmc3RhcnRQYWdlPTQwJmxpc3RObz0xOTM5JnRhYmxlPWV4X2Jic19kYXRhX21lJm5hdl9jb2RlPW1lMTYyMzM3MDQzOCZjb2RlPTBib2NIQ0ZIZTQzUSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-74a3f719131b",
+          "deadline": "2026-11-24",
+          "postId": "knu-me-me1623370438:6714",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/me/sub.htm?mode=view&mv_data=aWR4PTY3MTQmc3RhcnRQYWdlPTQwJmxpc3RObz0xOTM5JnRhYmxlPWV4X2Jic19kYXRhX21lJm5hdl9jb2RlPW1lMTYyMzM3MDQzOCZjb2RlPTBib2NIQ0ZIZTQzUSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "학생은 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "de5b4a7e01124bb2b2506fff4ce393610f0d771f9f646faa2cd2c91a8526d2af.mp3",
+      "channel_id": "42dedcd4d5487bc8b39d5da9",
+      "channel_ids": [
+        "notice-61c2fdac4b03"
+      ],
+      "cues": [
+        {
+          "end_sec": 5.28,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 학과에 신청서 제출해 주세요."
+        }
+      ],
+      "duration_sec": 5.28,
+      "id": "42dedcd4d5487bc8b39d5da9",
+      "items": [
+        {
+          "channel_id": "notice-61c2fdac4b03",
+          "dday": null,
+          "detail": "나노신소재공학과 · 공지사항 · 2026-08-14",
+          "postId": "knu-amse-ams1622609715:846",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?mode=view&mv_data=aWR4PTg0NiZzdGFydFBhZ2U9MCZsaXN0Tm89NDM1JnRhYmxlPWV4X2Jic19kYXRhX2Ftc2UmbmF2X2NvZGU9YW1zMTYyMjYwOTcxNSZjb2RlPWF4eTZzelJxbG5zcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-61c2fdac4b03",
+          "deadline": "2026-11-24",
+          "postId": "knu-amse-ams1622609715:846",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?mode=view&mv_data=aWR4PTg0NiZzdGFydFBhZ2U9MCZsaXN0Tm89NDM1JnRhYmxlPWV4X2Jic19kYXRhX2Ftc2UmbmF2X2NvZGU9YW1zMTYyMjYwOTcxNSZjb2RlPWF4eTZzelJxbG5zcCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 학과에 신청서 제출해 주세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "a20952cd4baa191549762df2a3575018a61f93c47685398b52054f61db6e0977.mp3",
+      "channel_id": "9f3b9328bdc86ad76b64299d",
+      "channel_ids": [
+        "notice-d42e73c1be80"
+      ],
+      "cues": [
+        {
+          "end_sec": 8.04,
+          "start_sec": 0,
+          "text": "졸업예정자 중 취업한 학생은 11월 24일까지 조기취업자 출석인정 신청서를 학과에 제출해 주세요."
+        }
+      ],
+      "duration_sec": 8.04,
+      "id": "9f3b9328bdc86ad76b64299d",
+      "items": [
+        {
+          "channel_id": "notice-d42e73c1be80",
+          "dday": null,
+          "detail": "독어독문학과 · 학사공지 · 2026-08-18",
+          "postId": "knu-german-ger1623203350:1664",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(~11. 24.(화))",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?mode=view&mv_data=aWR4PTE2NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNCZ0YWJsZT1leF9iYnNfZGF0YV9nZXJtYW4mbmF2X2NvZGU9Z2VyMTYyMzIwMzM1MCZjb2RlPW5oRUFlSUtYczNJdyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-d42e73c1be80",
+          "deadline": "2026-11-24",
+          "postId": "knu-german-ger1623203350:1664",
+          "posted_at": "2026-08-18",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(~11. 24.(화))",
+          "url": "https://home.knu.ac.kr/HOME/german/sub.htm?mode=view&mv_data=aWR4PTE2NjQmc3RhcnRQYWdlPTAmbGlzdE5vPTMxNCZ0YWJsZT1leF9iYnNfZGF0YV9nZXJtYW4mbmF2X2NvZGU9Z2VyMTYyMzIwMzM1MCZjb2RlPW5oRUFlSUtYczNJdyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "졸업예정자 중 취업한 학생은 11월 24일까지 조기취업자 출석인정 신청서를 학과에 제출해 주세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내(~11. 24.(화))"
+    },
+    {
+      "audio": "764c0c259e623aea8e98915b8476ec88a5fc408b82bbd6fb23a725981c7e1854.mp3",
+      "channel_id": "7ce0292a0d72a2964a4be930",
+      "channel_ids": [
+        "notice-ec96ad09ef78"
+      ],
+      "cues": [
+        {
+          "end_sec": 11.568,
+          "start_sec": 0,
+          "text": "2026학년도 1학기 성인지 교육을 2026.12.31까지 이수해야 하며, 인권센터와 학습관리시스템에서 각각 동영상을 시청해야 합니다."
+        }
+      ],
+      "duration_sec": 11.568,
+      "id": "7ce0292a0d72a2964a4be930",
+      "items": [
+        {
+          "channel_id": "notice-ec96ad09ef78",
+          "dday": null,
+          "detail": "물리교육과 · 공지사항 · 2026-11-22",
+          "postId": "knu-physed-phy1623371316:5036",
+          "section": "소식",
+          "title": "2026학년도 1학기 교원양성과정 성인지 교육 이수 안내_(2026. 12. 31.까지)",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMzYmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-ec96ad09ef78",
+          "deadline": null,
+          "postId": "knu-physed-phy1623371316:5036",
+          "posted_at": "2026-11-22",
+          "reason": "new",
+          "title": "2026학년도 1학기 교원양성과정 성인지 교육 이수 안내_(2026. 12. 31.까지)",
+          "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?mode=view&mv_data=aWR4PTUwMzYmc3RhcnRQYWdlPTAmbGlzdE5vPTQ3MTgmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2VkJm5hdl9jb2RlPXBoeTE2MjMzNzEzMTYmY29kZT1WanFOcTl2bDVYa20mc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "2026학년도 1학기 성인지 교육을 2026.12.31까지 이수해야 하며, 인권센터와 학습관리시스템에서 각각 동영상을 시청해야 합니다.",
+      "title": "2026학년도 1학기 교원양성과정 성인지 교육 이수 안내_(2026. 12. 31.까지)"
+    },
+    {
+      "audio": "71f09a60b6c2a9aa9f56e7a9e26ee112ab01bb2a688db8ddb791b006a9121f3e.mp3",
+      "channel_id": "865ecee16406b94c17541d0c",
+      "channel_ids": [
+        "notice-f4ac509b75c4"
+      ],
+      "cues": [
+        {
+          "end_sec": 5.928,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 학과에 출석인정 신청서를 제출하세요."
+        }
+      ],
+      "duration_sec": 5.928,
+      "id": "865ecee16406b94c17541d0c",
+      "items": [
+        {
+          "channel_id": "notice-f4ac509b75c4",
+          "dday": null,
+          "detail": "물리학과 · 공지사항 · 2026-08-14",
+          "postId": "knu-physics-phy1645592197:4612",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ2MTImc3RhcnRQYWdlPTAmbGlzdE5vPTMxODMmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-f4ac509b75c4",
+          "deadline": "2026-11-24",
+          "postId": "knu-physics-phy1645592197:4612",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?mode=view&mv_data=aWR4PTQ2MTImc3RhcnRQYWdlPTAmbGlzdE5vPTMxODMmdGFibGU9ZXhfYmJzX2RhdGFfcGh5c2ljcyZuYXZfY29kZT1waHkxNjQ1NTkyMTk3JmNvZGU9S1p0RFZQaUNCN1VwJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 학과에 출석인정 신청서를 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "5437ff07d510fabfce61f0f177d5ab622737afc6d0d81abc81a4c32985e27fe0.mp3",
+      "channel_id": "96b17e5a501cb23d868e4c46",
+      "channel_ids": [
+        "notice-472ae4378387"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.2,
+          "start_sec": 0,
+          "text": "학부 졸업예정자 중 취업한 자는 11월 24일까지 출석인정 신청서를 제출하세요."
+        }
+      ],
+      "duration_sec": 7.2,
+      "id": "96b17e5a501cb23d868e4c46",
+      "items": [
+        {
+          "channel_id": "notice-472ae4378387",
+          "dday": null,
+          "detail": "수학과 · 공지사항 · 2026-08-14",
+          "postId": "knu-math-mat1623029308:3378",
+          "section": "마감 임박",
+          "title": "[학부] 2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTMzNzgmc3RhcnRQYWdlPTUwJmxpc3RObz0yNzYxJnRhYmxlPWV4X2Jic19kYXRhX21hdGgmbmF2X2NvZGU9bWF0MTYyMzAyOTMwOCZjb2RlPXVEejJTU2VSbE5ydCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-472ae4378387",
+          "deadline": "2026-11-24",
+          "postId": "knu-math-mat1623029308:3378",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "[학부] 2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTMzNzgmc3RhcnRQYWdlPTUwJmxpc3RObz0yNzYxJnRhYmxlPWV4X2Jic19kYXRhX21hdGgmbmF2X2NvZGU9bWF0MTYyMzAyOTMwOCZjb2RlPXVEejJTU2VSbE5ydCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "학부 졸업예정자 중 취업한 자는 11월 24일까지 출석인정 신청서를 제출하세요.",
+      "title": "[학부] 2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "f84bedd3f56fb5d533ffd07adebeed1d477761065ec71bf5393697eef86eabbe.mp3",
+      "channel_id": "fd5aa325b93df880cfb1773e",
+      "channel_ids": [
+        "notice-cc19e513d407"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.288,
+          "start_sec": 0,
+          "text": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출해 주세요."
+        }
+      ],
+      "duration_sec": 6.288,
+      "id": "fd5aa325b93df880cfb1773e",
+      "items": [
+        {
+          "channel_id": "notice-cc19e513d407",
+          "dday": null,
+          "detail": "스마트생물산업기계공학과 · 공지사항 · 2026-09-17",
+          "postId": "knu-bime-bim1622180687:1423",
+          "section": "마감 임박",
+          "title": "「2026학년도 2학기 조기취업자 출석인정」신청서 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MjMmc3RhcnRQYWdlPTEwJmxpc3RObz01NDYmdGFibGU9ZXhfYmJzX2RhdGFfYmltZSZuYXZfY29kZT1iaW0xNjIyMTgwNjg3JmNvZGU9YmhobWlrOXM1cEt3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-cc19e513d407",
+          "deadline": "2026-11-24",
+          "postId": "knu-bime-bim1622180687:1423",
+          "posted_at": "2026-09-17",
+          "reason": "reminder",
+          "title": "「2026학년도 2학기 조기취업자 출석인정」신청서 제출 안내",
+          "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?mode=view&mv_data=aWR4PTE0MjMmc3RhcnRQYWdlPTEwJmxpc3RObz01NDYmdGFibGU9ZXhfYmJzX2RhdGFfYmltZSZuYXZfY29kZT1iaW0xNjIyMTgwNjg3JmNvZGU9YmhobWlrOXM1cEt3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출해 주세요.",
+      "title": "「2026학년도 2학기 조기취업자 출석인정」신청서 제출 안내"
+    },
+    {
+      "audio": "3aee080209fca3fd2ce8063ffddf3ea784dd6e7e5e3de830aa3dd6ecb7d5a7d5.mp3",
       "channel_id": "b34ea900cb0f1b4fca5275b2",
       "channel_ids": [
         "notice-6b16f01d1a75"
       ],
       "cues": [
         {
-          "end_sec": 11.472,
+          "end_sec": 10.944,
           "start_sec": 0,
-          "text": "식품자원경제학과 학부생 연구우수장학생 신청 접수 마감 11월 23일까지. 서류 제출 후 심사, 2026년 12월부터 연구 활동 시작."
+          "text": "식품자원경제학과 학부생 연구우수장학생 신청 마감 11월 23일까지. 서류 제출 후 12월부터 2월까지 연구 활동 수행."
         }
       ],
-      "duration_sec": 11.472,
+      "duration_sec": 10.944,
       "id": "b34ea900cb0f1b4fca5275b2",
       "items": [
         {
@@ -69,64 +479,146 @@
           "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?mode=view&mv_data=aWR4PTMyNjYmc3RhcnRQYWdlPTAmbGlzdE5vPTExNjcmdGFibGU9ZXhfYmJzX2RhdGFfa251YWdlYyZuYXZfY29kZT1rbnUxNjIzMTM0MTI2JmNvZGU9dEhrMzVOcElyZXM0JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "식품자원경제학과 학부생 연구우수장학생 신청 접수 마감 11월 23일까지. 서류 제출 후 심사, 2026년 12월부터 연구 활동 시작.",
+      "script": "식품자원경제학과 학부생 연구우수장학생 신청 마감 11월 23일까지. 서류 제출 후 12월부터 2월까지 연구 활동 수행.",
       "title": "[글로컬대학사업 연구중점학과] 학부생 연구우수장학생 신청 접수"
     },
     {
-      "audio": "0207b332df6a77974cac92b903364e1414fe3b8d4dccd465367d109c391096c3.mp3",
-      "channel_id": "d50f2985b0d8364b28dfde71",
+      "audio": "4bd9fdbede812e76d274066a82b93e65e8c1dff06e1eee46c8311684cbd3c6aa.mp3",
+      "channel_id": "11c64e3c6feadf24e1d3b63f",
       "channel_ids": [
-        "notice-a1540deb2a6f"
+        "notice-97fffffebd44"
       ],
       "cues": [
         {
-          "end_sec": 7.872,
+          "end_sec": 7.296,
           "start_sec": 0,
-          "text": "경북대 사범대학 80주년 기념 예비교원 수업 시연대회 개최. 참가 신청은 11월 25일까지."
+          "text": "취업한 학생은 11월 24일까지 신청서를 제출해 주세요. 학기 말 기한은 12월 11일까지입니다."
         }
       ],
-      "duration_sec": 7.872,
-      "id": "d50f2985b0d8364b28dfde71",
+      "duration_sec": 7.296,
+      "id": "11c64e3c6feadf24e1d3b63f",
       "items": [
         {
-          "channel_id": "notice-a1540deb2a6f",
+          "channel_id": "notice-97fffffebd44",
           "dday": null,
-          "detail": "윤리교육과 · 공지사항 · 2026-11-19",
-          "postId": "knu-ethedu-eth1622460163:2566",
+          "detail": "아동학부 · 학부 공지사항 · 2026-08-18",
+          "postId": "knu-knuchild-knu1623370362:1398",
           "section": "마감 임박",
-          "title": "[국립대학육성사업] 경북대학교 사범대학 80주년 기념 예비교원 수업 시연대회 실시",
-          "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?mode=view&mv_data=aWR4PTI1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MDMmdGFibGU9ZXhfYmJzX2RhdGFfZXRoZWR1Jm5hdl9jb2RlPWV0aDE2MjI0NjAxNjMmY29kZT1vOWx2dVY2MGt1VmYmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTEzOTgmc3RhcnRQYWdlPTAmbGlzdE5vPTY3NiZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
       "kind": "notice",
       "notice_refs": [
         {
-          "channel_id": "notice-a1540deb2a6f",
-          "deadline": "2026-11-25",
-          "postId": "knu-ethedu-eth1622460163:2566",
-          "posted_at": "2026-11-19",
+          "channel_id": "notice-97fffffebd44",
+          "deadline": "2026-11-24",
+          "postId": "knu-knuchild-knu1623370362:1398",
+          "posted_at": "2026-08-18",
           "reason": "reminder",
-          "title": "[국립대학육성사업] 경북대학교 사범대학 80주년 기념 예비교원 수업 시연대회 실시",
-          "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?mode=view&mv_data=aWR4PTI1NjYmc3RhcnRQYWdlPTAmbGlzdE5vPTE0MDMmdGFibGU9ZXhfYmJzX2RhdGFfZXRoZWR1Jm5hdl9jb2RlPWV0aDE2MjI0NjAxNjMmY29kZT1vOWx2dVY2MGt1VmYmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?mode=view&mv_data=aWR4PTEzOTgmc3RhcnRQYWdlPTAmbGlzdE5vPTY3NiZ0YWJsZT1leF9iYnNfZGF0YV9rbnVjaGlsZCZuYXZfY29kZT1rbnUxNjIzMzcwMzYyJmNvZGU9cHU2dDU3Y1ZFR1hVJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
         }
       ],
-      "script": "경북대 사범대학 80주년 기념 예비교원 수업 시연대회 개최. 참가 신청은 11월 25일까지.",
-      "title": "[국립대학육성사업] 경북대학교 사범대학 80주년 기념 예비교원 수업 시연대회 실시"
+      "script": "취업한 학생은 11월 24일까지 신청서를 제출해 주세요. 학기 말 기한은 12월 11일까지입니다.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
     },
     {
-      "audio": "dece67dc6d7813550ce58aa4768d00b45be1356d327b5dfa0f40cb58080854e5.mp3",
+      "audio": "16c51168152427b787310b12d1b9ce8052049ace5b6514815f4467a140b114ea.mp3",
+      "channel_id": "d80707f59af34f7da6dcd928",
+      "channel_ids": [
+        "notice-1abc9573202c"
+      ],
+      "cues": [
+        {
+          "end_sec": 7.512,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요."
+        }
+      ],
+      "duration_sec": 7.512,
+      "id": "d80707f59af34f7da6dcd928",
+      "items": [
+        {
+          "channel_id": "notice-1abc9573202c",
+          "dday": null,
+          "detail": "영어영문학과 · 학부공지 · 2026-08-18",
+          "postId": "knu-english-eng1621852173:4417",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-1abc9573202c",
+          "deadline": "2026-11-24",
+          "postId": "knu-english-eng1621852173:4417",
+          "posted_at": "2026-08-18",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/english/sub.htm?mode=view&mv_data=aWR4PTQ0MTcmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjA4JnRhYmxlPWV4X2Jic19kYXRhX2VuZ2xpc2gmbmF2X2NvZGU9ZW5nMTYyMTg1MjE3MyZjb2RlPUpvYWkxaEVQOHJJdCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 학과에 출석인정 신청서(스캔본)를 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "4bbeb0295d25951f5e3f0538d92b496b64a335f1193468d5337ddc83def87128.mp3",
+      "channel_id": "489e9feabbea30a6312a8c0d",
+      "channel_ids": [
+        "notice-7dfeec322405"
+      ],
+      "cues": [
+        {
+          "end_sec": 5.736,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 학부사무실에 신청서 제출하세요."
+        }
+      ],
+      "duration_sec": 5.736,
+      "id": "489e9feabbea30a6312a8c0d",
+      "items": [
+        {
+          "channel_id": "notice-7dfeec322405",
+          "dday": null,
+          "detail": "응용화학공학부 · 공지사항 · 2026-08-19",
+          "postId": "knu-knuce-knu1762850029:267",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTI2NyZzdGFydFBhZ2U9MCZsaXN0Tm89MjA5JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-7dfeec322405",
+          "deadline": "2026-11-24",
+          "postId": "knu-knuce-knu1762850029:267",
+          "posted_at": "2026-08-19",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?mode=view&mv_data=aWR4PTI2NyZzdGFydFBhZ2U9MCZsaXN0Tm89MjA5JnRhYmxlPWV4X2Jic19kYXRhX2tudWNlJm5hdl9jb2RlPWtudTE3NjI4NTAwMjkmY29kZT1jRFFUS2dlUGlGcDQmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 학부사무실에 신청서 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "55f2d93fefc1f3d09915e469db9b88cef2c1aa48b58f8267861db1b0c29af328.mp3",
       "channel_id": "9990d5cd057ba5c0d72905ae",
       "channel_ids": [
         "notice-d1802616c625"
       ],
       "cues": [
         {
-          "end_sec": 7.92,
+          "end_sec": 7.368,
           "start_sec": 0,
-          "text": "생계가 곤란한 학부 재학생은 11월 23일 오후 4시까지 장학금 신청서를 이메일로 제출하세요."
+          "text": "생계가 곤란한 학부 재학생은 11월 23일 오후 4시까지 추천서를 이메일로 제출하세요."
         }
       ],
-      "duration_sec": 7.92,
+      "duration_sec": 7.368,
       "id": "9990d5cd057ba5c0d72905ae",
       "items": [
         {
@@ -151,8 +643,213 @@
           "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?mode=view&mv_data=aWR4PTE2NjAmc3RhcnRQYWdlPTAmbGlzdE5vPTk0MyZ0YWJsZT1leF9iYnNfZGF0YV91ZG0mbmF2X2NvZGU9dWRtMTYyMzM3MTQzMiZjb2RlPXdCYktoWFkxbEYwSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
         }
       ],
-      "script": "생계가 곤란한 학부 재학생은 11월 23일 오후 4시까지 장학금 신청서를 이메일로 제출하세요.",
+      "script": "생계가 곤란한 학부 재학생은 11월 23일 오후 4시까지 추천서를 이메일로 제출하세요.",
       "title": "[안내]2026학년도 2학기 학장 추천 장학금 신청 안내"
+    },
+    {
+      "audio": "3cfbdee32ad690f3dfde88cc469c17f3e14a9146b59eab243f50038b5a83efbb.mp3",
+      "channel_id": "fc6cdb227e9f0c4fe9e726f5",
+      "channel_ids": [
+        "notice-450caf336106"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.384,
+          "start_sec": 0,
+          "text": "졸업예정자 중 취업한 학생은 11월 24일까지 신청서 제출해 주세요. 문의: 950-6531"
+        }
+      ],
+      "duration_sec": 9.384,
+      "id": "fc6cdb227e9f0c4fe9e726f5",
+      "items": [
+        {
+          "channel_id": "notice-450caf336106",
+          "dday": null,
+          "detail": "전자공학부 인공지능전공 · 공지사항 · 2026-08-14",
+          "postId": "knu-seeai-see1667180581:246",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI0NiZzdGFydFBhZ2U9NDAmbGlzdE5vPTE2NCZ0YWJsZT1leF9iYnNfZGF0YV9zZWVhaSZuYXZfY29kZT1zZWUxNjY3MTgwNTgxJmNvZGU9VmVqTkxEUmtySG9nJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-450caf336106",
+          "deadline": "2026-11-24",
+          "postId": "knu-seeai-see1667180581:246",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/seeai/sub.htm?mode=view&mv_data=aWR4PTI0NiZzdGFydFBhZ2U9NDAmbGlzdE5vPTE2NCZ0YWJsZT1leF9iYnNfZGF0YV9zZWVhaSZuYXZfY29kZT1zZWUxNjY3MTgwNTgxJmNvZGU9VmVqTkxEUmtySG9nJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0="
+        }
+      ],
+      "script": "졸업예정자 중 취업한 학생은 11월 24일까지 신청서 제출해 주세요. 문의: 950-6531",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "551b6da9f9aa83806d41a8409d871bd8f5fc06888c23fc6c75ba493616747967.mp3",
+      "channel_id": "4e1cd01f6bc3fb7d3d080dee",
+      "channel_ids": [
+        "notice-8b2d3f025a39"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.024,
+          "start_sec": 0,
+          "text": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출하세요."
+        }
+      ],
+      "duration_sec": 6.024,
+      "id": "4e1cd01f6bc3fb7d3d080dee",
+      "items": [
+        {
+          "channel_id": "notice-8b2d3f025a39",
+          "dday": null,
+          "detail": "정밀기계공학과 · 공지사항 · 2026-08-18",
+          "postId": "knu-pmeatknu-pme1623030157:1444",
+          "section": "마감 임박",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE0NDQmc3RhcnRQYWdlPTMwJmxpc3RObz03MDImdGFibGU9ZXhfYmJzX2RhdGFfcG1lYXRrbnUmbmF2X2NvZGU9cG1lMTYyMzAzMDE1NyZjb2RlPUZiV0kzZ0lEQzRXaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-8b2d3f025a39",
+          "deadline": "2026-11-24",
+          "postId": "knu-pmeatknu-pme1623030157:1444",
+          "posted_at": "2026-08-18",
+          "reason": "reminder",
+          "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/pmeatknu/sub.htm?mode=view&mv_data=aWR4PTE0NDQmc3RhcnRQYWdlPTMwJmxpc3RObz03MDImdGFibGU9ZXhfYmJzX2RhdGFfcG1lYXRrbnUmbmF2X2NvZGU9cG1lMTYyMzAzMDE1NyZjb2RlPUZiV0kzZ0lEQzRXaCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출하세요.",
+      "title": "2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "1a2159fe1c753d1a321d3f5639cf25c1bf85d815f75042a2ff85586fa63632f6.mp3",
+      "channel_id": "8bd45d320c8b2744994fd005",
+      "channel_ids": [
+        "notice-d7e3a598e69c"
+      ],
+      "cues": [
+        {
+          "end_sec": 9.864,
+          "start_sec": 0,
+          "text": "취업한 학생은 11월 24일까지 출석인정 신청서를 출력해 학과 사무실에 제출하고, 강의교수의 확인서와 서류를 꼼꼼히 준비하세요."
+        }
+      ],
+      "duration_sec": 9.864,
+      "id": "8bd45d320c8b2744994fd005",
+      "items": [
+        {
+          "channel_id": "notice-d7e3a598e69c",
+          "dday": null,
+          "detail": "철학과 · 학부 공지사항 · 2026-08-18",
+          "postId": "knu-philosophy-phi1623391659:4070",
+          "section": "마감 임박",
+          "title": "[학사] 2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?mode=view&mv_data=aWR4PTQwNzAmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjcwJnRhYmxlPWV4X2Jic19kYXRhX3BoaWxvc29waHkmbmF2X2NvZGU9cGhpMTYyMzM5MTY1OSZjb2RlPXk1ZXNmZ2dmWUJQWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-d7e3a598e69c",
+          "deadline": "2026-11-24",
+          "postId": "knu-philosophy-phi1623391659:4070",
+          "posted_at": "2026-08-18",
+          "reason": "reminder",
+          "title": "[학사] 2026학년도 2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/philosophy/sub.htm?mode=view&mv_data=aWR4PTQwNzAmc3RhcnRQYWdlPTIwJmxpc3RObz0xMjcwJnRhYmxlPWV4X2Jic19kYXRhX3BoaWxvc29waHkmbmF2X2NvZGU9cGhpMTYyMzM5MTY1OSZjb2RlPXk1ZXNmZ2dmWUJQWSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "취업한 학생은 11월 24일까지 출석인정 신청서를 출력해 학과 사무실에 제출하고, 강의교수의 확인서와 서류를 꼼꼼히 준비하세요.",
+      "title": "[학사] 2026학년도 2학기 조기취업자 출석인정 신청 안내"
+    },
+    {
+      "audio": "4cf1449efc66e34b5bfe56c5762b183276d924cfbdd3b68d276704bf08c3c279.mp3",
+      "channel_id": "d5b5214ca47186c547423448",
+      "channel_ids": [
+        "notice-f14e44ae5bb9"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.36,
+          "start_sec": 0,
+          "text": "취업한 졸업예정자들은 11월 24일까지 출석인정 신청서를 제출하세요."
+        }
+      ],
+      "duration_sec": 6.36,
+      "id": "d5b5214ca47186c547423448",
+      "items": [
+        {
+          "channel_id": "notice-f14e44ae5bb9",
+          "dday": null,
+          "detail": "통계학과 · 공지사항 · 2026-08-14",
+          "postId": "knu-stat-sta1623632390:361",
+          "section": "마감 임박",
+          "title": "｢2026학년도 2학기 조기취업 졸업예정자 출석인정] 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-f14e44ae5bb9",
+          "deadline": "2026-11-24",
+          "postId": "knu-stat-sta1623632390:361",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "｢2026학년도 2학기 조기취업 졸업예정자 출석인정] 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/stat/sub.htm?mode=view&mv_data=aWR4PTM2MSZzdGFydFBhZ2U9MCZsaXN0Tm89MjA2JnRhYmxlPWV4X2Jic19kYXRhX3N0YXQmbmF2X2NvZGU9c3RhMTYyMzYzMjM5MCZjb2RlPVdQRUVicUxYS3BsUyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9"
+        }
+      ],
+      "script": "취업한 졸업예정자들은 11월 24일까지 출석인정 신청서를 제출하세요.",
+      "title": "｢2026학년도 2학기 조기취업 졸업예정자 출석인정] 신청 안내"
+    },
+    {
+      "audio": "f84bedd3f56fb5d533ffd07adebeed1d477761065ec71bf5393697eef86eabbe.mp3",
+      "channel_id": "15f4b872a79e9571ba6637e7",
+      "channel_ids": [
+        "notice-3d2a3e87207a"
+      ],
+      "cues": [
+        {
+          "end_sec": 6.288,
+          "start_sec": 0,
+          "text": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출해 주세요."
+        }
+      ],
+      "duration_sec": 6.288,
+      "id": "15f4b872a79e9571ba6637e7",
+      "items": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "dday": null,
+          "detail": "한문학과 · 학부 공지사항 · 2026-08-14",
+          "postId": "knu-hanmun-han1624361542:7260",
+          "section": "마감 임박",
+          "title": "2026.2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwMTgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "kind": "notice",
+      "notice_refs": [
+        {
+          "channel_id": "notice-3d2a3e87207a",
+          "deadline": "2026-11-24",
+          "postId": "knu-hanmun-han1624361542:7260",
+          "posted_at": "2026-08-14",
+          "reason": "reminder",
+          "title": "2026.2학기 조기취업자 출석인정 신청 안내",
+          "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?mode=view&mv_data=aWR4PTcyNjAmc3RhcnRQYWdlPTAmbGlzdE5vPTMwMTgmdGFibGU9ZXhfYmJzX2RhdGFfaGFubXVuJm5hdl9jb2RlPWhhbjE2MjQzNjE1NDImY29kZT1OR3pNTGpiYlhEOFMmc2VhcmNoX2l0ZW09JnNlYXJjaF9vcmRlcj0mb3JkZXJfbGlzdD0mbGlzdF9zY2FsZT0mdmlld19sZXZlbD0mdmlld19jYXRlPSZ2aWV3X2NhdGUyPQ=="
+        }
+      ],
+      "script": "졸업예정 학생은 11월 24일까지 학과에 출석인정 신청서를 제출해 주세요.",
+      "title": "2026.2학기 조기취업자 출석인정 신청 안내"
     },
     {
       "audio": "d0939b5ea921c9578a872290bbcd457f653c09705e077d5be8d9ac152309725a.mp3",
