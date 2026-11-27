@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "boards": [
     {
       "category": "academic",
@@ -7,15 +7,7 @@
       "id": "knu-academic",
       "name": "학교 학사공지",
       "saved": 56,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-wbbs-stu_812:11795672779414",
-          "title": "2026학년도 2학기 응급처치 및 심폐소생술 실습 결과 안내"
-        }
-      ],
+      "today": [],
       "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/stdList.action?menu_idx=42"
     },
     {
@@ -32,8 +24,16 @@
       "collected": true,
       "id": "notice-04f9a84e582c",
       "name": "IT대학 자율학부 · 학부 공지사항",
-      "saved": 48,
-      "today": [],
+      "saved": 49,
+      "today": [
+        {
+          "date": "2026-11-27",
+          "deadline": "2026-12-31",
+          "kind": "new",
+          "postId": "knu-it-it1790050032:729",
+          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내(26.11.25~12.31)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/it/sub.htm?nav_code=it1790050032"
     },
     {
@@ -60,29 +60,7 @@
       "id": "notice-f5bf5684020e",
       "name": "간호학과 · 학부 공지사항",
       "saved": 110,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-11-30",
-          "kind": "new",
-          "postId": "knu-nurse-nur1624533209:5110",
-          "title": "2026년도 '스트레스 관리법' 특강 개최"
-        },
-        {
-          "date": "2026-11-02",
-          "deadline": "2026-11-27",
-          "kind": "deadline",
-          "postId": "knu-nurse-nur1624533209:5073",
-          "title": "2027학년도 1학기 3학년 임상실습과목 이수예정자 조사"
-        },
-        {
-          "date": "2026-11-02",
-          "deadline": "2026-11-27",
-          "kind": "deadline",
-          "postId": "knu-nurse-nur1624533209:5074",
-          "title": "2027학년도 1학기 4학년 임상실습과목 이수예정자 조사"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/nurse/sub.htm?nav_code=nur1624533209"
     },
     {
@@ -126,21 +104,14 @@
       "collected": true,
       "id": "notice-a6afbe817dd2",
       "name": "경영학부 · 학부 공지사항",
-      "saved": 79,
+      "saved": 80,
       "today": [
         {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-kbiz-kbi1623370557:5906",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-kbiz-kbi1623370557:5905",
-          "title": "2026학년도 겨울방학 공인어학 특강 수강생 모집"
+          "postId": "knu-kbiz-kbi1623370557:5908",
+          "title": "겨울방학 중 학부사무실 국가근로 장학생 선발 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/kbiz/sub.htm?nav_code=kbi1623370557"
@@ -151,50 +122,7 @@
       "id": "notice-8860bb9a4bc5",
       "name": "경제통상학부 · 학부 공지사항",
       "saved": 88,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5201",
-          "title": "2026학년도 2학기 권철우 교수님 상담 일정 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5203",
-          "title": "★경상대학 및 국제경상관 출입통제 안내(11/28)★"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5196",
-          "title": "수연재 2027 상반기 입반공고"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5197",
-          "title": "전국 지역인재 7급 수습직원 선발시험 관련 PSAT 시험계획 안내전국 지역인재 7급 수습직원 선발시험 관련 PSAT 시험계획 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5199",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-econ-eco1623370509:5200",
-          "title": "★학부사무실 교내근로신청서 제출자 통합정보시스템 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/econ/sub.htm?nav_code=eco1623370509"
     },
     {
@@ -203,36 +131,7 @@
       "id": "notice-a267229666ef",
       "name": "고고인류학과 · 학부공지",
       "saved": 140,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4927",
-          "title": "[논문발표] 2026학년도 2학기 고고인류학과 학위논문 발표회(학사논문 최종발표/대학원 주제발표)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4923",
-          "title": "조선일보 주최 ’필전 2026 - 조선 백일장’ 대회 안내(12.5. 14:00~17:00)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4924",
-          "title": "2026년 국립대학육성사업 동계 영어집중프로그램(KELP) 신청 안내(12.1.~ 선착순)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-aran-ara1623718660:4921",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내(11.25.~12.31.)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/aran/sub.htm?nav_code=ara1623718660"
     },
     {
@@ -241,36 +140,7 @@
       "id": "notice-7ff56c3af3e0",
       "name": "고분자공학과 · 학사 공지사항",
       "saved": 94,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-knupolymer-knu1623888520:1744",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knupolymer-knu1623888520:1745",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knupolymer-knu1623888520:1746",
-          "title": "[경북대학교 글로벌교육센터] 2026학년도 겨울방학 공인어학 특강"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knupolymer-knu1623888520:1743",
-          "title": "2026학년도 동계방학 교내 근로장학생 인원 배정, 학생 신청 및 선발 방법 알림"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knupolymer/sub.htm?nav_code=knu1623888520"
     },
     {
@@ -306,15 +176,7 @@
       "id": "notice-eaa2bcd13c4a",
       "name": "관광학과 · 공지사항",
       "saved": 49,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-tour-tou1616116950:881",
-          "title": "[청년 관광주민 초청] K-헤리티지 팸투어 참가자 모집"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/tour/sub.htm?nav_code=tou1616116950"
     },
     {
@@ -322,14 +184,35 @@
       "collected": true,
       "id": "notice-f3ba4290e5dd",
       "name": "국악학과 · 공지사항",
-      "saved": 57,
+      "saved": 61,
       "today": [
         {
-          "date": "2026-11-24",
+          "date": "2026-11-27",
+          "deadline": "2027-01-05",
+          "kind": "new",
+          "postId": "knu-kmusic-kmu1622609949:1572",
+          "title": "2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
+        },
+        {
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-kmusic-kmu1622609949:1568",
-          "title": "2026학년도 동계방학 중 교내근로장학생 신청 안내"
+          "postId": "knu-kmusic-kmu1622609949:1569",
+          "title": "2026학년도 2학기 응급처치 및 심폐소생술 실습 결과 안내"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-kmusic-kmu1622609949:1570",
+          "title": "2027학년도 1학기 연계전공 이수대상자 선발 안내"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-kmusic-kmu1622609949:1571",
+          "title": "2027학년도 1학기 융합전공 이수대상자 선발 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/kmusic/sub.htm?nav_code=kmu1622609949"
@@ -339,28 +222,56 @@
       "collected": true,
       "id": "notice-ca78d3fd3c51",
       "name": "국어교육과 · 공지사항",
-      "saved": 91,
+      "saved": 98,
       "today": [
         {
-          "date": "2026-11-26",
-          "deadline": null,
+          "date": "2026-11-27",
+          "deadline": "2027-01-04",
           "kind": "new",
-          "postId": "knu-koredu-kor1622459695:321",
-          "title": "2026학년도 2학기 졸업시험 안내"
+          "postId": "knu-koredu-kor1622459695:327",
+          "title": "(~1.4)★2026년 2차 임용대비 특강(1월 7일) 신청 안내"
         },
         {
-          "date": "2026-11-24",
-          "deadline": "2026-11-30",
+          "date": "2026-11-27",
+          "deadline": "2027-01-04",
           "kind": "new",
-          "postId": "knu-koredu-kor1622459695:319",
-          "title": "(~11.30)2026 예비교원을 위한 AI융합교육 워크숍 with Google 운영 안내 및 홍보"
+          "postId": "knu-koredu-kor1622459695:328",
+          "title": "(~1.4)★임용시험(국어 2차) 심층면접 지도 특강 신청 안내★"
         },
         {
-          "date": "2026-11-24",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-koredu-kor1622459695:318",
-          "title": "(~11.27.)★12월 2일 수요일 14-17시 국어교육과 수업 시연 문제풀이 임용특강(2차 대비) 신청 안내★"
+          "postId": "knu-koredu-kor1622459695:322",
+          "title": "2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-koredu-kor1622459695:323",
+          "title": "＜학과사무실 운영 관련 안내(11/27(금))>"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-koredu-kor1622459695:324",
+          "title": "정전계획(생물관 등 3개동) 알림"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-koredu-kor1622459695:325",
+          "title": "(11.28) 사범대학 건물 일시 폐쇄"
+        },
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-koredu-kor1622459695:326",
+          "title": "(~11.30.)★12월 2일 수요일 14-17시 국어교육과 수업 시연 문제풀이 임용특강(2차 대비) 신청 안내★"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/koredu/sub.htm?nav_code=kor1622459695"
@@ -371,15 +282,7 @@
       "id": "notice-6c1f8a512fa4",
       "name": "국어국문학과 · 공지사항(학사)",
       "saved": 317,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-korean-kor1657071357:1398",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/korean/sub.htm?nav_code=kor1657071357"
     },
     {
@@ -397,15 +300,7 @@
       "id": "notice-74a3f719131b",
       "name": "기계공학부 · 학부 공지사항",
       "saved": 108,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-me-me1623370438:6949",
-          "title": "[대구앵커사업] AI로봇 융합전공 참여 학생 모집"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/me/sub.htm?nav_code=me1623370438"
     },
     {
@@ -414,15 +309,7 @@
       "id": "notice-61c2fdac4b03",
       "name": "나노신소재공학과 · 공지사항",
       "saved": 422,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-amse-ams1622609715:862",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/amse/sub.htm?nav_code=ams1622609715"
     },
     {
@@ -449,29 +336,7 @@
       "id": "notice-e3a4a5455384",
       "name": "농업생명과학대학 · 공지사항",
       "saved": 62,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cals-cal1623200331:508",
-          "title": "26 11 26(응용생명과학) JCR Q1 국제학술지 논문 게재"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cals-cal1623200331:504",
-          "title": "26 11 25 (응용생명과학) 2026 3대 융합연구원 지·산·학·연 성과발표회 우수 포스터발표상 수상"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-cals-cal1623200331:506",
-          "title": "26 11 25 (바이오섬유소재) 과학기술정보통신부 부총리 표창 수상"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/cals/sub.htm?nav_code=cal1623200331"
     },
     {
@@ -515,8 +380,16 @@
       "collected": true,
       "id": "notice-30f51dd33791",
       "name": "동물생명공학과 · 공지사항",
-      "saved": 21,
-      "today": [],
+      "saved": 31,
+      "today": [
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-anibiotech-ani1622629991:1211",
+          "title": "2026학년도 2학기 대학원 학위논문 심사 합격자 원문 파일 제출 안내"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/anibiotech/sub.htm?nav_code=ani1622629991"
     },
     {
@@ -533,28 +406,21 @@
       "collected": true,
       "id": "notice-ddfc5b2ca163",
       "name": "로봇공학과 · 공지사항",
-      "saved": 181,
+      "saved": 183,
       "today": [
         {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
+          "date": "2026-11-27",
+          "deadline": "2027-01-05",
           "kind": "new",
-          "postId": "knu-robot-rob1623632307:899",
-          "title": "[학적] 2026학년도 2학기 군입대 휴학원 수기접수 안내"
+          "postId": "knu-robot-rob1623632307:903",
+          "title": "[대학원] 2026학년도 2학기 학위논문(완성논문) 표절예방 검증 프로그램 결과 제출 안내"
         },
         {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-robot-rob1623632307:897",
-          "title": "[안내] [경북대학교 항공드론 혁신융합대학사업단] 자율시스템 융합전공 이수자 선발 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-robot-rob1623632307:898",
-          "title": "[장학] 2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
+          "postId": "knu-robot-rob1623632307:901",
+          "title": "[대학원] 2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/robot/sub.htm?nav_code=rob1623632307"
@@ -573,28 +439,14 @@
       "collected": true,
       "id": "notice-956827a355a7",
       "name": "문헌정보학과 · 학부공지사항",
-      "saved": 52,
+      "saved": 53,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-lis-lis1622460108:1209",
-          "title": "2026학년도 융합전공 운영 활성화사업 학업장려장학금(등록금 외) 신청 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lis-lis1622460108:1208",
-          "title": "2026학년도 동계방학중 교내근로 장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lis-lis1622460108:1207",
-          "title": "2027년도 국회도서관「대학생 실무실습」 신청 안내"
+          "postId": "knu-lis-lis1622460108:1210",
+          "title": "2026학년도 사회과학대학 문헌정보학과 콜로키움(특강) 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/lis/sub.htm?nav_code=lis1622460108"
@@ -605,22 +457,7 @@
       "id": "notice-ec96ad09ef78",
       "name": "물리교육과 · 공지사항",
       "saved": 59,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-11",
-          "kind": "new",
-          "postId": "knu-physed-phy1623371316:5039",
-          "title": "[2026학년도 2학기 응급처치 및 심폐소생술 대체실습 안내]"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physed-phy1623371316:5038",
-          "title": "2026 동계방학 교내근로장학생 학생 신청 및 근로 합격 확인 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/physed/sub.htm?nav_code=phy1623371316"
     },
     {
@@ -628,28 +465,14 @@
       "collected": true,
       "id": "notice-f4ac509b75c4",
       "name": "물리학과 · 공지사항",
-      "saved": 157,
+      "saved": 158,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-physics-phy1645592197:4832",
-          "title": "「2026년도 연구노트 경진대회」접수기간 연장 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4831",
-          "title": "2026학년도 겨울계절수업 타대학(한국과학기술원) 수학 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-physics-phy1645592197:4830",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
+          "postId": "knu-physics-phy1645592197:4833",
+          "title": "2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내(저작권 동의시 제출할 서류 없음/조건부동의 및 비동의 학생만 1월15일(금)까지 학과사무실로 서류 제출하여 주시기 바랍니다.)"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/physics/sub.htm?nav_code=phy1645592197"
@@ -660,15 +483,7 @@
       "id": "notice-7dbc635b2399",
       "name": "미디어커뮤니케이션학과 · 학부 공지사항",
       "saved": 44,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-masscom-mas1614079680:1578",
-          "title": "2026학년도 동계방학 중 '교내' 근로장학생 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/masscom/sub.htm?nav_code=mas1614079680"
     },
     {
@@ -704,15 +519,7 @@
       "id": "notice-b5015ce1e74b",
       "name": "불어불문학과 · 공지사항",
       "saved": 67,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-french-fre1623147753:1885",
-          "title": "2026학년도 동계방학 불어불문학과 교내근로장학생 모집"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/french/sub.htm?nav_code=fre1623147753"
     },
     {
@@ -721,22 +528,7 @@
       "id": "notice-2ae1ca96e3de",
       "name": "사범대학 · 공지사항",
       "saved": 45,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": "2026-11-30",
-          "kind": "new",
-          "postId": "knu-education-edu1623200393:434",
-          "title": "[미래교육센터] 2026 예비교원을 위한 AI 융합교육 워크숍 with Google 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-education-edu1623200393:433",
-          "title": "[한국IB교육학회] 2026년 추계학술대회 개최 및 사전등록 안내(~11/29)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/education/sub.htm?nav_code=edu1623200393"
     },
     {
@@ -763,43 +555,7 @@
       "id": "notice-bbfcc8756400",
       "name": "사회복지학부 · 학부 공지사항",
       "saved": 115,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knusw-knu1623026178:9046",
-          "title": "2026학년도 2학기 Welcome 사회복지 Day (타 학과(부) 학생 대상 전공설명회)"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knusw-knu1623026178:9047",
-          "title": "[글로컬대학사업 연구중점학과 - 사회복지학부] 학부 연구 참여 인턴십(옵저버) 장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2027-01-07",
-          "kind": "new",
-          "postId": "knu-knusw-knu1623026178:9041",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knusw-knu1623026178:9040",
-          "title": "2026학년도 겨울방학 근로장학생(교내) 선발 안내(사회복지학부 사무실)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knusw-knu1623026178:9042",
-          "title": "2027학년도 1학기 1차 국가근로장학금 학생 신청 기간 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knusw/sub.htm?nav_code=knu1623026178"
     },
     {
@@ -808,15 +564,7 @@
       "id": "notice-1268b7a10e0b",
       "name": "사회학과 · 학부 공지사항",
       "saved": 75,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2027-01-07",
-          "kind": "new",
-          "postId": "knu-socio-soc1622181477:4023",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/socio/sub.htm?nav_code=soc1622181477"
     },
     {
@@ -824,8 +572,16 @@
       "collected": true,
       "id": "notice-8b73f625639c",
       "name": "산림생태보호학과 · 공지사항",
-      "saved": 30,
-      "today": [],
+      "saved": 40,
+      "today": [
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-fore-for1622704960:526",
+          "title": "2027년 1학기 농림축산식품부(청년창업농장학금)장학생 선발공고"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/fore/sub.htm?nav_code=for1622704960"
     },
     {
@@ -852,36 +608,7 @@
       "id": "notice-b5e6a10e952e",
       "name": "생물학과 · 공지사항",
       "saved": 109,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2521",
-          "title": "각종 추천서 직인요청 절차 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2518",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2519",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bio-bio1616117151:2520",
-          "title": "2026학년도 동계방학 학과사무실 교내 근로장학생 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/bio/sub.htm?nav_code=bio1616117151"
     },
     {
@@ -953,29 +680,7 @@
       "id": "notice-472ae4378387",
       "name": "수학과 · 공지사항",
       "saved": 2867,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-11-30",
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3494",
-          "title": "[학부-교직] 2026 예비교원을 위한 AI융합교육 워크숍 with Google 운영 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3493",
-          "title": "[공통] 2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-math-mat1623029308:3492",
-          "title": "[학부] 2026학년도 동계방학 교내 근로장학생 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/math/sub.htm?nav_code=mat1623029308"
     },
     {
@@ -992,56 +697,21 @@
       "collected": true,
       "id": "notice-f310e00db70c",
       "name": "스마트모빌리티공학과 · 공지사항",
-      "saved": 80,
+      "saved": 82,
       "today": [
         {
-          "date": "2026-11-26",
-          "deadline": "2026-11-30",
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:491",
-          "title": "[앵커사업] 2026학년도 동계 글로벌 역량강화 프로그램 중복지원자 지원 철회 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:489",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-mobility-mob1692863999:488",
-          "title": "2027학년도 대학 수시모집 논술(AAT)고사 시행에 따른 건물 출입통제 알림"
+          "postId": "knu-mobility-mob1692863999:492",
+          "title": "[대학원공지]2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
         },
         {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-mobility-mob1692863999:490",
-          "title": "AI미래모빌리티 융합전공 관련 설명회"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:484",
-          "title": "「2026학년도 제4회 KNU 융합전공 설명회」참가 협조 요청"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:485",
-          "title": "2026학년도 동계방학 근로장학생 신청"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-mobility-mob1692863999:487",
-          "title": "경북대학교 글로벌교육센터 2026학년도 겨울방학 공인어학 특강 수강생 모집"
+          "postId": "knu-mobility-mob1692863999:493",
+          "title": "융합전공(AI미래모빌리티 융합전공) 관련 추가 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/mobility/sub.htm?nav_code=mob1692863999"
@@ -1051,8 +721,16 @@
       "collected": true,
       "id": "notice-cc19e513d407",
       "name": "스마트생물산업기계공학과 · 공지사항",
-      "saved": 51,
-      "today": [],
+      "saved": 52,
+      "today": [
+        {
+          "date": "2026-11-27",
+          "deadline": null,
+          "kind": "new",
+          "postId": "knu-bime-bim1622180687:1441",
+          "title": "2026학년도 동계방학 교내 근로장학생 선발"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/bime/sub.htm?nav_code=bim1622180687"
     },
     {
@@ -1061,22 +739,7 @@
       "id": "notice-b5c34881a6cc",
       "name": "스마트플랜트공학과 · 공지사항",
       "saved": 37,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-smartplant-sma1653282097:1437",
-          "title": "군입대 휴학원 수기 접수 일정 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-smartplant-sma1653282097:1438",
-          "title": "2026학년도 동계방학 중 교내 근로장학생 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/smartplant/sub.htm?nav_code=sma1653282097"
     },
     {
@@ -1094,22 +757,7 @@
       "id": "notice-e0dc5a51576c",
       "name": "식물의학과 · 공지사항",
       "saved": 35,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-plantmed-pla1677024917:114",
-          "title": "2026년 동계방학중 교내근로 모집 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-plantmed-pla1677024917:115",
-          "title": "27-1학기 농식품부 청년창업농장학금 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/plantmed/sub.htm?nav_code=pla1677024917"
     },
     {
@@ -1127,15 +775,7 @@
       "id": "notice-5489a94f38cd",
       "name": "식품공학부 · 공지사항",
       "saved": 36,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-foodbio-foo1623134098:762",
-          "title": "2026학년도 2학기 식품공학부 전공배정 신청 안내(12월 9일.수. 18시까지)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098"
     },
     {
@@ -1153,15 +793,7 @@
       "id": "notice-57321798a19a",
       "name": "식품소재공학전공 · 공지사항",
       "saved": 37,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-foodbm-foo1623888041:592",
-          "title": "식품소재공학전공 2026학년도 동계방학 교내 근로장학생 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/foodbm/sub.htm?nav_code=foo1623888041"
     },
     {
@@ -1188,15 +820,7 @@
       "id": "notice-2c006faa8fdd",
       "name": "식품응용공학전공 · 공지사항",
       "saved": 36,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-foodbio-foo1623134098:762",
-          "title": "2026학년도 2학기 식품공학부 전공배정 신청 안내(12월 9일.수. 18시까지)"
-        }
-      ],
+      "today": [],
       "url": "https://foodbio.knu.ac.kr/HOME/foodbio/sub.htm?nav_code=foo1623134098"
     },
     {
@@ -1205,22 +829,7 @@
       "id": "notice-6b16f01d1a75",
       "name": "식품자원경제학과 · 공지사항",
       "saved": 74,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-11-30",
-          "kind": "new",
-          "postId": "knu-knuagec-knu1623134126:3272",
-          "title": "[글로컬대학사업 연구중점학과] 대학원생 및 학·석사연계과정생 생활장학금 지원계획"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuagec-knu1623134126:3271",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuagec/sub.htm?nav_code=knu1623134126"
     },
     {
@@ -1247,22 +856,7 @@
       "id": "notice-97fffffebd44",
       "name": "아동학부 · 학부 공지사항",
       "saved": 61,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-knuchild-knu1623370362:1440",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuchild-knu1623370362:1439",
-          "title": "2026학년도 동계방학 교내 근로장학생 학생 신청 알림"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuchild/sub.htm?nav_code=knu1623370362"
     },
     {
@@ -1280,29 +874,7 @@
       "id": "notice-06dffccf1c28",
       "name": "에너지공학부 · 학부 공지사항",
       "saved": 69,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-04",
-          "kind": "new",
-          "postId": "knu-soee-soe1622609908:1885",
-          "title": "[기타-한국원자력협력재단] 2027년 해외 원자력 시설견학 프로그램 참가자 모집 공고(~12/4 13시)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-soee-soe1622609908:1884",
-          "title": "[장학] 2026학년도 동계방학중 교내 근로장학생 선발 안내(학부사무실 근무) (~12/1)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-soee-soe1622609908:1886",
-          "title": "[학사] 2026-2학기 군입대 휴학 수기 접수 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/soee/sub.htm?nav_code=soe1622609908"
     },
     {
@@ -1311,15 +883,7 @@
       "id": "notice-70d703a20086",
       "name": "에너지화학공학과 · 학과공지",
       "saved": 46,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2027-01-07",
-          "kind": "new",
-          "postId": "knu-ece-ece1704877202:728",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/ece/sub.htm?nav_code=ece1704877202"
     },
     {
@@ -1368,16 +932,9 @@
         {
           "date": "2026-11-25",
           "deadline": "2026-12-01",
-          "kind": "new",
+          "kind": "deadline",
           "postId": "knu-horti-hor1622609861:1695",
           "title": "2026학년도 동계방학 교내 근로장학생 신청 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-horti-hor1622609861:1696",
-          "title": "2027년 1학기 청년창업농장학금 신청 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/horti/sub.htm?nav_code=hor1622609861"
@@ -1388,36 +945,7 @@
       "id": "notice-ef883ff42361",
       "name": "위치정보시스템학과 · 공지사항",
       "saved": 78,
-      "today": [
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2162",
-          "title": "2027학년도 1학기 1차 국가근로장학금 학생 신청 기간 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2163",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2164",
-          "title": "2026학년도 겨울계절수업·디딤돌수업 수강변경 안내(폐강과목 공고)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-lbis-lbi1661932979:2161",
-          "title": "2026학년도 동계방학 중 교내 근로장학생 신청 및 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/lbis/sub.htm?nav_code=lbi1661932979"
     },
     {
@@ -1426,22 +954,7 @@
       "id": "notice-a1540deb2a6f",
       "name": "윤리교육과 · 공지사항",
       "saved": 42,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-ethedu-eth1622460163:2569",
-          "title": "「2026년도 연구노트 경진대회」접수기간 연장 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-ethedu-eth1622460163:2568",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/ethedu/sub.htm?nav_code=eth1622460163"
     },
     {
@@ -1468,22 +981,7 @@
       "id": "notice-7dfeec322405",
       "name": "응용화학공학부 · 공지사항",
       "saved": 91,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuce-knu1762850029:421",
-          "title": "[2026학년도 2학기 겨울방학 학부 사무실 근로장학생 선발 안내(신청: 11/26~12/6 18시)]"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-knuce-knu1762850029:420",
-          "title": "2026학년도 겨울방학 공인어학 특강 수강생 모집(경북대학교 글로벌교육센터)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/knuce/sub.htm?nav_code=knu1762850029"
     },
     {
@@ -1500,28 +998,21 @@
       "collected": true,
       "id": "notice-e1ec1bf0eb87",
       "name": "의생명융합공학과 · 공지사항",
-      "saved": 170,
+      "saved": 172,
       "today": [
         {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
+          "date": "2026-11-27",
+          "deadline": "2027-01-05",
           "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:901",
-          "title": "[학적] 2026학년도 2학기 군입대 휴학원 수기접수 안내"
+          "postId": "knu-bcst2-bcs1611061294:903",
+          "title": "[대학원] 2026학년도 2학기 학위논문(완성논문) 표절예방 검증 프로그램 결과 제출 안내"
         },
         {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:899",
-          "title": "[안내] 건물 출입통제 알림[2026.11.28.(토)]"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-bcst2-bcs1611061294:900",
-          "title": "[장학] 2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
+          "postId": "knu-bcst2-bcs1611061294:902",
+          "title": "[대학원] 2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/bcst2/sub.htm?nav_code=bcs1611061294"
@@ -1531,35 +1022,14 @@
       "collected": true,
       "id": "notice-a363da417a07",
       "name": "의학과 · 공지",
-      "saved": 110,
+      "saved": 111,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-med-notice001:25990",
-          "title": "[대학원] 2026년도 연구노트 경진대회 접수기간 연장 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-med-notice001:25989",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내 및 홍보 협조 요청"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-med-notice001:25988",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-med-notice001:25986",
-          "title": "2026년 국립대학육성사업 동계 영어집중과정(KELP) 안내"
+          "postId": "knu-med-notice001:25991",
+          "title": "(대학원) 2026 KNU NEXT BK21 성과포럼 개최 안내"
         }
       ],
       "url": "http://med.knu.ac.kr/pages/sub.htm?nav_code=knu1670583748"
@@ -1569,49 +1039,14 @@
       "collected": true,
       "id": "notice-b34ee1a00417",
       "name": "인공지능시스템학과 · 공지사항",
-      "saved": 168,
+      "saved": 169,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29537",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29538",
-          "title": "[인공지능혁신융합대학사업단] 2026 겨울 계절학기 서울과학기술대학교 학점교류 신청(~12/2 13시 까지)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29536",
-          "title": "2026-2학기 산학협력프로젝트 경진대회 및 기업설명회(취업박람회) 안내(참석자 조사)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29532",
-          "title": "[융합전공] 2027학년도 융합전공 이수 참여학생 모집 공고(ICT-ABB 융합전공)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29533",
-          "title": "[융합전공] [대구앵커사업] AI로봇 융합전공 참여 학생 모집 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29535",
-          "title": "[융합전공] 자율시스템 융합전공 이수자 선발 안내"
+          "postId": "knu-computer-sub6_1_a:29539",
+          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.11.27. 기준)"
         }
       ],
       "url": "https://aicollege.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
@@ -1649,22 +1084,7 @@
       "id": "notice-3c7bfc3da404",
       "name": "일어일문학과 · 공지사항",
       "saved": 82,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-japan-jap1695016568:467",
-          "title": "2026학년도 동계방학 교내 근로 장학생 신청(11.26-12.1.18시까지)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-japan-jap1695016568:468",
-          "title": "2026 일본 히로시마 동계 연수 합격자 발표!"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/japan/sub.htm?nav_code=jap1695016568"
     },
     {
@@ -1691,15 +1111,7 @@
       "id": "notice-68d5f9aa762f",
       "name": "자동차공학과 · 공지사항",
       "saved": 43,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-automobile-aut1623370299:934",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내(11/25~12/31)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/automobile/sub.htm?nav_code=aut1623370299"
     },
     {
@@ -1721,7 +1133,7 @@
         {
           "date": "2026-11-24",
           "deadline": "2026-12-01",
-          "kind": "new",
+          "kind": "deadline",
           "postId": "knu-sofi-sof1741566884:578",
           "title": "★2026학년도 동계방학 교내 근로장학생 신청 및 선발 일정 안내★"
         }
@@ -1734,15 +1146,7 @@
       "id": "notice-d1802616c625",
       "name": "자율전공학부 · 공지사항",
       "saved": 95,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-udm-udm1623371432:1664",
-          "title": "[근로] 2026학년도 동계방학 교내 근로장학생 선발 안내(자율전공학부 행정실)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/udm/sub.htm?nav_code=udm1623371432"
     },
     {
@@ -1751,36 +1155,7 @@
       "id": "notice-1cbb3d90d081",
       "name": "전기공학과 · 공지사항",
       "saved": 119,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7519",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내[26.11.25~12.31]"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7517",
-          "title": "전국 지역인재 7급 수습직원 선발시험 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7518",
-          "title": "[근로] 2026학년도 동계방학 중 교내 근로장학생 신청 및 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-electric-ele1622787198:7520",
-          "title": "2027학년도1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/electric/sub.htm?nav_code=ele1622787198"
     },
     {
@@ -1788,77 +1163,28 @@
       "collected": true,
       "id": "notice-df44dd8507c1",
       "name": "전자공학부 · 공지사항",
-      "saved": 321,
+      "saved": 324,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-28",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-see-notice:105903",
-          "title": "[인공지능혁신융합대학사업단] 2026 겨울 계절학기 서울과학기술대학교 학점교류 신청(~12/2 13시)"
+          "postId": "knu-see-notice:105906",
+          "title": "[김대현 교수] 2026년 1학기 지도교수 상담 안내"
         },
         {
-          "date": "2026-11-25",
-          "deadline": "2026-11-27",
-          "kind": "new",
-          "postId": "knu-see-notice:105901",
-          "title": "[글로컬대학사업] 지능신호처리 융합전공 G-KNU 글로컬 장학금 신청 안내"
-        },
-        {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-see-notice:105897",
-          "title": "[공성호 교수] 2026년 2학기 지도교수 상담 일정 12/1(화) 12/8(화)"
+          "postId": "knu-see-notice:105904",
+          "title": "[김민영 교수] 2026학년도 2학기 지도교수 상담 공지-12월 7일(월)"
         },
         {
-          "date": "2026-11-25",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-see-notice:105898",
-          "title": "[항공드론혁신융합대학사업단] 자율시스템 융합전공 선발안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105889",
-          "title": "6G VISION FEST 2026 행사 및 일반관람 사전등록 안내(12.8.화-12.11.금)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105891",
-          "title": "[최준림 교수] 지도교수 상담 12/3(수), 12/7(월) 18:00"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105894",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105895",
-          "title": "[대구앵커사업] 첨단반도체융합전공 이수에 따른 전자공학부 졸업요건 추가 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-see-notice:105896",
-          "title": "[장병철 교수] 학부 연구생 모집 (어레이 측정 관련)"
-        },
-        {
-          "date": "2026-11-06",
-          "deadline": "2026-11-27",
-          "kind": "deadline",
-          "postId": "knu-see-notice:105816",
-          "title": "[김학린 교수] 2026년도 2학기, 상담 신청 공지 [대면 or 비대면 상담 기간 ; ~ 11/30]"
+          "postId": "knu-see-notice:105905",
+          "title": "[이경운 교수] 운영체제 연구실 27학년도 학부연구생 모집"
         }
       ],
       "url": "https://see.knu.ac.kr/content/board/notice.html"
@@ -1905,43 +1231,7 @@
       "id": "notice-b8ebd17a5dca",
       "name": "정치외교학과 · 학부 공지사항",
       "saved": 46,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1083",
-          "title": "2026학년도 AI정치융합전공 명사 초청 특강 신청 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1079",
-          "title": "2026학년도 동계방학중 학과사무실 교내 근로장학생 신청 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1080",
-          "title": "2026학년도 2학기 이봉기 원장(전. 주독한국문화원 원장) 초청 특강 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-politics-pol1614071864:1081",
-          "title": "[경력사다리 1단계] (라오스) KOICA UXO Regional Conference 대학(원)생 참가자 모집"
-        },
-        {
-          "date": "2026-06-26",
-          "deadline": "2026-11-30",
-          "kind": "deadline",
-          "postId": "knu-politics-pol1614071864:1023",
-          "title": "2026년 이영환장학기금 지원사업 \"국내 학술대회 발표자 장학금\" 신청 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/politics/sub.htm?nav_code=pol1614071864"
     },
     {
@@ -1959,85 +1249,7 @@
       "id": "notice-6b04da14aae1",
       "name": "중어중문학과 · 공지사항",
       "saved": 109,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13693",
-          "title": "제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이 _ 숏폼 공모전) 개최 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13694",
-          "title": "2026년 재학생 취업의식조사 안내 협조 요청"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13695",
-          "title": "2026학년도 동계방학 대구캠퍼스 생활관생 모집 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13696",
-          "title": "2026년 동계 및 2027년 1학기 현장실습교육과정 운영 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13697",
-          "title": "2027학년도 1학기 융합전공 이수 대상자 선발 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13698",
-          "title": "2026학년도 2학기 외국인 학위과정생 졸업환송식 개최 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13699",
-          "title": "전국 지역인재 7급 수습직원 선발시험 관련 PSAT 시험계획 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13700",
-          "title": "경북대학교 생성형 AI 서비스 「KNUAI(크누아이)」 개통 및 이용 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13701",
-          "title": "「2027학년도 국사편찬위원회 사료연수과정 신입생 모집」안내 협조"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13702",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chinese-notice:13703",
-          "title": "조선일보 주최 ’필전 2026 - 조선 백일장’ 대회 안내"
-        }
-      ],
+      "today": [],
       "url": "https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice"
     },
     {
@@ -2064,15 +1276,7 @@
       "id": "notice-278455937509",
       "name": "지리교육과 · 공지사항",
       "saved": 44,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-geoedu-geo1623029261:1440",
-          "title": "2026학년도 동계방학 교내 근로장학생 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/geoedu/sub.htm?nav_code=geo1623029261"
     },
     {
@@ -2081,15 +1285,7 @@
       "id": "notice-2eb7684c7df1",
       "name": "지리학과 · 학부 공지사항",
       "saved": 45,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-geog-geo1614082611:2886",
-          "title": "[장학] 2026학년도 동계방학 학과사무실 교내 근로장학생 신청"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/geog/sub.htm?nav_code=geo1614082611"
     },
     {
@@ -2098,15 +1294,7 @@
       "id": "notice-1f235111f7dc",
       "name": "지질학전공 · 공지사항",
       "saved": 40,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-geology-geo1621814864:1628",
-          "title": "2026학년도 동계방학 교내 근로장학생 학생 신청 및 선발 방법 알림 [지질학전공 사무실]"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/geology/sub.htm?nav_code=geo1621814864"
     },
     {
@@ -2142,22 +1330,7 @@
       "id": "notice-afca571a7ef1",
       "name": "첨단기술융합대학 자율학부1 · 공지사항",
       "saved": 49,
-      "today": [
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-atcad-atc1753746498:142",
-          "title": "2026학년도 2학기 군입대 휴학원 수기 접수 및 학과선택신청서 제출 안내(수기접수 기간: 2026. 11. 25.(수) ~ 2026. 12. 31.(목))"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-atcad-atc1753746498:141",
-          "title": "2026학년도 동계방학 교내 근로장학생 인원 배정 현황 확인 및 신청방법 안내(2026. 11. 26.(목) 09:00 ~ 12. 1.(화) 18:00)"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/atcad/sub.htm?nav_code=atc1753746498"
     },
     {
@@ -2192,42 +1365,21 @@
       "collected": true,
       "id": "notice-7414782e7dbb",
       "name": "치의학과 · 공지사항",
-      "saved": 152,
+      "saved": 154,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-dent-k1news:4587",
-          "title": "경북대학교 치과대학, 제28회 전국 학생학술경연대회 대상 수상"
+          "postId": "knu-dent-k1news:4589",
+          "title": "[대학원혁신] 2026 KNU NEXT BK21 성과포럼 개최 및 전시장 운영 안내"
         },
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-dent-k1news:4588",
-          "title": "2026학년도 KNU Global Excellence Lab 지원사업 추가 모집 안내(연장)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-dent-k1news:4586",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4585",
-          "title": "2026년 대한민국 R&D 매니지먼트 컨퍼런스 개최 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-dent-k1news:4584",
-          "title": "2026년 국립대학육성사업 동계 영어집중프로그램(KEEP) 홍보 협조 요청"
+          "postId": "knu-dent-k1news:4590",
+          "title": "2027년 1월 대학원생 마음건강증진캠프 수요조사"
         }
       ],
       "url": "https://dent.knu.ac.kr/sub/board.html?bid=k1news"
@@ -2237,49 +1389,14 @@
       "collected": true,
       "id": "notice-fefffa32e24c",
       "name": "컴퓨터학부 · 공지사항",
-      "saved": 168,
+      "saved": 169,
       "today": [
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29537",
-          "title": "2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29538",
-          "title": "[인공지능혁신융합대학사업단] 2026 겨울 계절학기 서울과학기술대학교 학점교류 신청(~12/2 13시 까지)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29536",
-          "title": "2026-2학기 산학협력프로젝트 경진대회 및 기업설명회(취업박람회) 안내(참석자 조사)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29532",
-          "title": "[융합전공] 2027학년도 융합전공 이수 참여학생 모집 공고(ICT-ABB 융합전공)"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29533",
-          "title": "[융합전공] [대구앵커사업] AI로봇 융합전공 참여 학생 모집 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-computer-sub6_1_a:29535",
-          "title": "[융합전공] 자율시스템 융합전공 이수자 선발 안내"
+          "postId": "knu-computer-sub6_1_a:29539",
+          "title": "2026년 하반기 안전교육 미이수자 확인 및 안전교육 이수 방법 안내 (2026.11.27. 기준)"
         }
       ],
       "url": "https://computer.knu.ac.kr/bbs/board.php?bo_table=sub6_1_a&lang=kor"
@@ -2290,85 +1407,7 @@
       "id": "notice-ccc3a94a1fa5",
       "name": "토목공학과 · 공지사항",
       "saved": 151,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3208",
-          "title": "[글로벌교육센터]★2026학년도 동계(1월) 학석사연계과정 재학생 대상 필리핀 어학연수생 모집★"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": "2027-01-05",
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3207",
-          "title": "2027학년도 1학기 한국농어촌희망재단 청년창업농장학생 신청 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3204",
-          "title": "[교수학습센터]제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이/숏폼 공모전) 안내"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3205",
-          "title": "[IT교육센터]2027학년도 새내기 AI·SW 예비대학 참가 안내[학점 인정 과정]"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3206",
-          "title": "글로컬대학 2027학년도 AI-Enabled 신입생 예비대학 참가 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2027-01-07",
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3200",
-          "title": "2027학년도 1학기 국가장학금 1차 신청 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3199",
-          "title": "2026학년도 제4회 KNU 융합전공 설명회 개최 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3201",
-          "title": "[글로벌교육센터][토익]2026학년도 겨울방학 공인어학 특강 수강생 모집"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3202",
-          "title": "2027학년도 1학기 1차 국가근로장학금 학생 신청 기간 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-civil-civ1614066197:3203",
-          "title": "2026학년도 겨울계절수업·디딤돌수업 수강변경 안내(폐강과목 공고)"
-        },
-        {
-          "date": "2026-11-12",
-          "deadline": "2026-11-27",
-          "kind": "deadline",
-          "postId": "knu-civil-civ1614066197:3185",
-          "title": "[글로벌교육센터][토익]1:1 전화·화상 외국어 프로그램 모집"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/civil/sub.htm?nav_code=civ1614066197"
     },
     {
@@ -2395,43 +1434,7 @@
       "id": "notice-3d2a3e87207a",
       "name": "한문학과 · 학부 공지사항",
       "saved": 150,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7491",
-          "title": "동절기 인문대학 건물 내 비화재보(경보음) 방지 및 퇴실 시 전원 차단 협조 요청"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7488",
-          "title": "2026.2학기 군입대 휴학원 수기접수 안내(~12/31)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7486",
-          "title": "2026학년도 동계방학 한문학과 교내근로장학생 신청 안내(~12/1)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7489",
-          "title": "[장학]2027.1학기 농어촌희망재단 청년창업농장학생 선발 안내(~27/1/5)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-hanmun-han1624361542:7490",
-          "title": "2026년 국립대학육성사업 동계 영어집중프로그램(KELP) 개설 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/hanmun/sub.htm?nav_code=han1624361542"
     },
     {
@@ -2439,21 +1442,14 @@
       "collected": true,
       "id": "notice-d13e4abb0470",
       "name": "해양학전공 · 공지사항",
-      "saved": 58,
+      "saved": 59,
       "today": [
         {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-ocean-oce1623632597:1600",
-          "title": "[공통] 2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-ocean-oce1623632597:1598",
-          "title": "[학부] 2026학년도 동계방학 교내 근로장학생 신청 안내"
+          "postId": "knu-ocean-oce1623632597:1601",
+          "title": "[대학원] 2026학년도 2학기 대학원 학위논문 심사 합격자 원문파일 제출 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/ocean/sub.htm?nav_code=oce1623632597"
@@ -2463,35 +1459,14 @@
       "collected": true,
       "id": "notice-4a41e1328a3e",
       "name": "행정학부 · 공지사항",
-      "saved": 121,
+      "saved": 122,
       "today": [
         {
-          "date": "2026-11-26",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-puad-pua1623029519:4109",
-          "title": "[학적] 2026학년도 2학기 군입대 휴학원 수기접수 안내(11/25(수)~12/31(목))"
-        },
-        {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "deadline": null,
           "kind": "new",
-          "postId": "knu-puad-pua1623029519:4110",
-          "title": "[장학] 2026 동계방학 교내 근로장학생 모집공고(~12.1.(화) 오후 6시)"
-        },
-        {
-          "date": "2026-11-25",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-puad-pua1623029519:4108",
-          "title": "[특강] 12/3(목) 2026년도 5급 공채 행정학부 합격자 특강 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-puad-pua1623029519:4107",
-          "title": "[학사] 2026년 국립대학육성사업 동계 영어집중프로그램(KELP) 홍보"
+          "postId": "knu-puad-pua1623029519:4111",
+          "title": "[장학] 2027학년도 1학기 농어촌희망재단 청년창업농장학생 선발 안내"
         }
       ],
       "url": "https://home.knu.ac.kr/HOME/puad/sub.htm?nav_code=pua1623029519"
@@ -2511,43 +1486,7 @@
       "id": "notice-ac0144f93d45",
       "name": "화학과 · 공지사항",
       "saved": 182,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7202",
-          "title": "[글로벌교육센터] 2026학년도 겨울방학 공인어학 특강 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7203",
-          "title": "「2026학년도 KNU Global Excellence Lab 지원사업」추가 모집 안내(연장)"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7204",
-          "title": "2026년 대구앵커사업 청년연구자 대상 문화체험의 날 행사 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": "2026-12-31",
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7197",
-          "title": "2026학년도 2학기 군입대 휴학원 수기접수 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-chem-che1622521080:7198",
-          "title": "2026 예비교원을 위한 AI융합교육 워크숍 with Google 운영 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/chem/sub.htm?nav_code=che1622521080"
     },
     {
@@ -2564,8 +1503,16 @@
       "collected": true,
       "id": "notice-101538fb6a8e",
       "name": "환경공학과 · 학부 공지사항",
-      "saved": 43,
-      "today": [],
+      "saved": 44,
+      "today": [
+        {
+          "date": "2026-11-27",
+          "deadline": "2026-12-01",
+          "kind": "new",
+          "postId": "knu-env-env1624500229:1140",
+          "title": "[안내] 대구공공시설관리공단 현장실습 모집(3명)"
+        }
+      ],
       "url": "https://home.knu.ac.kr/HOME/env/sub.htm?nav_code=env1624500229"
     },
     {
@@ -2592,15 +1539,7 @@
       "id": "notice-aibootcamp",
       "name": "AI부트캠프 · 알림",
       "saved": 12,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": "2026-12-14",
-          "kind": "new",
-          "postId": "knu-aibootcamp-notices:2026-11-26-mini-texcorps-recruitment",
-          "title": "2026 KNU 미니 텍스코어(Mini TeX-Corps) 참가자를 모집합니다"
-        }
-      ],
+      "today": [],
       "url": "https://aibootcamp.knu.ac.kr/notices/"
     },
     {
@@ -2609,36 +1548,7 @@
       "id": "notice-423ad5624dbc",
       "name": "국제처 · 공지사항(국제화 프로그램)",
       "saved": 61,
-      "today": [
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-global-glo1729572883:19207",
-          "title": "[정토사회문화회관] 12월 12일(토) 무료 영어 즉문즉설(법륜스님) 안내"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-global-glo1729572883:19208",
-          "title": "2027학년도 1학기 국제처 현장실습생 모집(~12.16)"
-        },
-        {
-          "date": "2026-11-26",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-global-glo1729572883:19210",
-          "title": "2026년 대구앵커사업 청년연구자 대상 문화체험의 날 행사 안내"
-        },
-        {
-          "date": "2026-11-24",
-          "deadline": null,
-          "kind": "new",
-          "postId": "knu-global-glo1729572883:19204",
-          "title": "2027년 중국정부초청 장학생 어학연수과정 대상자 선발 안내"
-        }
-      ],
+      "today": [],
       "url": "https://home.knu.ac.kr/HOME/global/sub.htm?nav_code=glo1729572883"
     },
     {
@@ -2775,27 +1685,12 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 0,
-          "hours": "11:15~13:30",
-          "label": "중식",
-          "menu": [
-            "백미밥",
-            "꽃게탕",
-            "돈육김치찜★",
-            "샐러드파스타",
-            "고구마맛탕",
-            "깍두기"
-          ],
-          "price": 6000
-        }
-      ],
-      "hours": "11:15~13:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-46",
       "menuFrom": "2026-11-23",
       "name": "GP감꽃 식당",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=46"
     },
     {
@@ -3002,45 +1897,12 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 1,
-          "hours": "11:30~13:30",
-          "label": "중식",
-          "menu": [
-            "정식",
-            "흑미밥/쌀밥",
-            "육개장",
-            "간장치킨",
-            "베이컨감자채볶음★",
-            "파송송무우생채",
-            "직접담근김치",
-            "온국수"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": "17:00~19:00",
-          "label": "석식",
-          "menu": [
-            "정식",
-            "기장밥/쌀밥",
-            "콩나물국",
-            "돈육스테이크소스볶음★",
-            "단호박튀김&초간장",
-            "브로컬리숙회&초고추장",
-            "직접담근김치",
-            "도시락김"
-          ],
-          "price": 6000
-        }
-      ],
-      "hours": "11:30~13:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-85",
       "menuFrom": "2026-11-23",
       "name": "공학관 교직원 식당",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=85"
     },
     {
@@ -4217,239 +3079,12 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "육회비빔밥"
-          ],
-          "price": 6500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "통다리살오븐구이&매콤볶음밥"
-          ],
-          "price": 6500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "산더미오리주물럭(2인)"
-          ],
-          "price": 12000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "등심돈가스&제육볶음★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "참치덮밥"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "오므라이스★"
-          ],
-          "price": 4500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "특돼지국밥★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "순두부찌개정식★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "대패삼겹즉석떡볶이(2인)★"
-          ],
-          "price": 12000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "양푼이돈육양념찜★"
-          ],
-          "price": 5500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "꼬마부대찌개★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "뚝배기알밥"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "치즈뚝배기알밥"
-          ],
-          "price": 5500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "양푼이비빔밥&된장찌개"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "뚝배기치즈김치볶음밥"
-          ],
-          "price": 5500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "떡라면"
-          ],
-          "price": 3000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "떡라면&밥"
-          ],
-          "price": 3500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "만두라면★"
-          ],
-          "price": 3500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "만두라면&밥★"
-          ],
-          "price": 4000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "최루탄라면"
-          ],
-          "price": 3500
-        },
-        {
-          "head": 1,
-          "hours": "10:00~14:30",
-          "label": "중식",
-          "menu": [
-            "최루탄라면&밥★"
-          ],
-          "price": 4000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "석식",
-          "menu": [
-            "등심돈가스&스프★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "석식",
-          "menu": [
-            "특돼지국밥★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "석식",
-          "menu": [
-            "양푼이비빔밥&된장찌개"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 2,
-          "hours": null,
-          "label": "석식",
-          "menu": [
-            "뚝배기치즈김치볶음밥",
-            "17:00~1900"
-          ],
-          "price": 5500
-        }
-      ],
-      "hours": "10:00~14:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-86",
       "menuFrom": "2026-11-23",
       "name": "공학관 학생 식당",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=86"
     },
     {
@@ -4569,28 +3204,12 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 0,
-          "hours": "11:15~13:30",
-          "label": "중식",
-          "menu": [
-            "마늘볶음밥",
-            "피쉬볼어묵탕",
-            "칠리크랩",
-            "알떡함박스테이크★",
-            "&데미그라스소스",
-            "양념청경채찜",
-            "포기김치"
-          ],
-          "price": 6000
-        }
-      ],
-      "hours": "11:15~13:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-bokji",
       "menuFrom": "2026-11-23",
       "name": "복지관 교직원 식당",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=36"
     },
     {
@@ -5226,131 +3845,12 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 2,
-          "hours": "11:00~13:30",
-          "label": "중식",
-          "menu": [
-            "김치함박스테이크★",
-            "핫도그★",
-            "흰밥",
-            "어묵무국",
-            "배추김치"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 2,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "대파갈비살덮밥",
-            "캐플주스"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "제육치즈돌솥★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "순살돈가스★"
-          ],
-          "price": 4500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "치즈돈가스★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "고구마돈가스★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "왕돈가스★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "왕치즈돈가스★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": "13:00~17:00",
-          "label": "중식",
-          "menu": [
-            "라면"
-          ],
-          "price": 2800
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "우동"
-          ],
-          "price": 4500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "우동밥"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 0,
-          "hours": "17:00~19:00",
-          "label": "석식",
-          "menu": [
-            "흰밥",
-            "만둣국★",
-            "훈제오리볶음우동",
-            "감자스팸볶음★",
-            "마카로니과일샐러드",
-            "포기김치"
-          ],
-          "price": 6000
-        }
-      ],
-      "hours": "11:00~13:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-35",
       "menuFrom": "2026-11-23",
       "name": "정보센터 식당",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=35"
     },
     {
@@ -5953,174 +4453,50 @@
           "status": "empty"
         }
       ],
-      "groups": [
-        {
-          "head": 1,
-          "hours": null,
-          "label": "조식",
-          "menu": [
-            "천원의 아침밥",
-            "콩나물국",
-            "참치베이컨볶음밥★",
-            "와플&메이플시럽",
-            "요구르트",
-            "배추김치"
-          ],
-          "price": 1000
-        },
-        {
-          "head": 2,
-          "hours": "11:00~13:30",
-          "label": "중식",
-          "menu": [
-            "불고기파스타",
-            "&마늘빵",
-            "흰밥",
-            "떡국",
-            "배추김치"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "오삼비빔밥★"
-          ],
-          "price": 5500
-        },
-        {
-          "head": 2,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "더진국",
-            "수육국밥★"
-          ],
-          "price": 6500
-        },
-        {
-          "head": 2,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "더진국",
-            "순대수육국밥★"
-          ],
-          "price": 7000
-        },
-        {
-          "head": 1,
-          "hours": "11:00~15:30",
-          "label": "중식",
-          "menu": [
-            "순살돈가스★"
-          ],
-          "price": 4500
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "치즈돈가스★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "고구마돈가스★"
-          ],
-          "price": 5000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "왕돈가스★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": null,
-          "label": "중식",
-          "menu": [
-            "치즈왕돈가스★"
-          ],
-          "price": 6000
-        },
-        {
-          "head": 1,
-          "hours": "9:00~11:00,13:00~15:30",
-          "label": "중식",
-          "menu": [
-            "라면"
-          ],
-          "price": 2800
-        }
-      ],
-      "hours": "11:00~13:30",
+      "groups": [],
+      "hours": null,
       "id": "meal-37",
       "menuFrom": "2026-11-23",
       "name": "카페테리아 첨성",
-      "status": "ok",
+      "status": "empty",
       "url": "https://coop.knu.ac.kr/sub03/sub01_01.html?shop_sqno=37"
     }
   ],
-  "checkedAt": "02:38",
+  "checkedAt": "01:59",
   "collection": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "failedBoards": [
-      {
-        "name": "고고인류학과 · 학부공지",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDMyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
-        ],
-        "source_board_id": "knu-aran-ara1623718660"
-      },
-      {
-        "name": "사범대학 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEzJnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
-        ],
-        "source_board_id": "knu-education-edu1623200393"
-      },
       {
         "name": "사회학과 · 학부 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected))"
+          "요청 실패: https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected))"
         ],
         "source_board_id": "knu-socio-soc1622181477"
       },
       {
-        "name": "수학과 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Njkmc3RhcnRQYWdlPTIwJmxpc3RObz0yODQyJnRhYmxlPWV4X2Jic19kYXRhX21hdGgmbmF2X2NvZGU9bWF0MTYyMzAyOTMwOCZjb2RlPXVEejJTU2VSbE5ydCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected))"
-        ],
-        "source_board_id": "knu-math-mat1623029308"
-      },
-      {
-        "name": "스마트모빌리티공학과 · 공지사항",
-        "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2NyZzdGFydFBhZ2U9MjAmbGlzdE5vPTQxMyZ0YWJsZT1leF9iYnNfZGF0YV9tb2JpbGl0eSZuYXZfY29kZT1tb2IxNjkyODYzOTk5JmNvZGU9WWdiR1BaTkpZckg1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected))"
-        ],
-        "source_board_id": "knu-mobility-mob1692863999"
-      },
-      {
         "name": "원예과학과 · 공지사항",
         "reasons": [
-          "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected))"
+          "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected))"
         ],
         "source_board_id": "knu-horti-hor1622609861"
+      },
+      {
+        "name": "토목공학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected))",
+          "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(2040 bytes read, 8200 more expected)', IncompleteRead(2040 bytes read, 8200 more expected))"
+        ],
+        "source_board_id": "knu-civil-civ1614066197"
+      },
+      {
+        "name": "중어중문학과 · 공지사항",
+        "reasons": [
+          "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x70965c1da7d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)'))"
+        ],
+        "source_board_id": "knu-chinese-notice"
       }
     ],
-    "lastCollectedAt": "2026-11-27T02:38:05+09:00",
+    "lastCollectedAt": "2026-11-28T01:59:06+09:00",
     "meals": {
       "todayFailed": 0,
       "todayNotCollected": 6,
@@ -6128,9 +4504,9 @@
       "total": 6
     },
     "physicalBoards": 140,
-    "todayFailed": 6,
+    "todayFailed": 4,
     "todayNotCollected": 0,
-    "todaySuccess": 134
+    "todaySuccess": 136
   },
   "departments": [
     {
@@ -7910,32 +6286,32 @@
   ],
   "issues": [
     {
+      "source": "weather",
+      "text": "요청 실패: https://api.open-meteo.com/v1/forecast?latitude=35.87028&longitude=128.59111&daily=weather_code%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_probability_max&timezone=Asia%2FSeoul&start_date=2026-11-28&end_date=2026-11-28: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
+    },
+    {
       "source": "meals",
       "text": "오늘 식단은 로컬에서 아직 수집하지 않았습니다"
     },
     {
-      "source": "notice-a267229666ef",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDMyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/aran/sub.htm?mode=view&mv_data=aWR4PTQ5MDEmc3RhcnRQYWdlPTEwJmxpc3RObz0xNDMyJnRhYmxlPWV4X2Jic19kYXRhX2FyYW4mbmF2X2NvZGU9YXJhMTYyMzcxODY2MCZjb2RlPXpqV3hFazJPcFpLSiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-2ae1ca96e3de",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEzJnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/education/sub.htm?mode=view&mv_data=aWR4PTQyNyZzdGFydFBhZ2U9MCZsaXN0Tm89MjEzJnRhYmxlPWV4X2Jic19kYXRhX2VkdWNhdGlvbiZuYXZfY29kZT1lZHUxNjIzMjAwMzkzJmNvZGU9bzVaUW5sNTdXV0s3JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
-    },
-    {
       "source": "notice-1268b7a10e0b",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(4088 bytes read, 6152 more expected)', IncompleteRead(4088 bytes read, 6152 more expected)) (https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-472ae4378387",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Njkmc3RhcnRQYWdlPTIwJmxpc3RObz0yODQyJnRhYmxlPWV4X2Jic19kYXRhX21hdGgmbmF2X2NvZGU9bWF0MTYyMzAyOTMwOCZjb2RlPXVEejJTU2VSbE5ydCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/math/sub.htm?mode=view&mv_data=aWR4PTM0Njkmc3RhcnRQYWdlPTIwJmxpc3RObz0yODQyJnRhYmxlPWV4X2Jic19kYXRhX21hdGgmbmF2X2NvZGU9bWF0MTYyMzAyOTMwOCZjb2RlPXVEejJTU2VSbE5ydCZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
-    },
-    {
-      "source": "notice-f310e00db70c",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2NyZzdGFydFBhZ2U9MjAmbGlzdE5vPTQxMyZ0YWJsZT1leF9iYnNfZGF0YV9tb2JpbGl0eSZuYXZfY29kZT1tb2IxNjkyODYzOTk5JmNvZGU9WWdiR1BaTkpZckg1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=: ('Connection broken: IncompleteRead(10232 bytes read, 8 more expected)', IncompleteRead(10232 bytes read, 8 more expected)) (https://home.knu.ac.kr/HOME/mobility/sub.htm?mode=view&mv_data=aWR4PTQ2NyZzdGFydFBhZ2U9MjAmbGlzdE5vPTQxMyZ0YWJsZT1leF9iYnNfZGF0YV9tb2JpbGl0eSZuYXZfY29kZT1tb2IxNjkyODYzOTk5JmNvZGU9WWdiR1BaTkpZckg1JnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=)"
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected)) (https://home.knu.ac.kr/HOME/socio/sub.htm?mode=view&mv_data=aWR4PTQwMjImc3RhcnRQYWdlPTAmbGlzdE5vPTE3ODgmdGFibGU9ZXhfYmJzX2RhdGFfc29jaW8mbmF2X2NvZGU9c29jMTYyMjE4MTQ3NyZjb2RlPWNNRzFVVm91UFVlYyZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
     },
     {
       "source": "notice-3834483dc081",
-      "text": "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(8184 bytes read, 2056 more expected)', IncompleteRead(8184 bytes read, 2056 more expected)) (https://home.knu.ac.kr/HOME/horti/sub.htm?mode=view&mv_data=aWR4PTE2OTcmc3RhcnRQYWdlPTAmbGlzdE5vPTEyOTUmdGFibGU9ZXhfYmJzX2RhdGFfaG9ydGkmbmF2X2NvZGU9aG9yMTYyMjYwOTg2MSZjb2RlPTBaVURuRkZCOUdNWiZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+    },
+    {
+      "source": "notice-ccc3a94a1fa5",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(6136 bytes read, 4104 more expected)', IncompleteRead(6136 bytes read, 4104 more expected)) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDYmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTImdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+    },
+    {
+      "source": "notice-ccc3a94a1fa5",
+      "text": "요청 실패: https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9: ('Connection broken: IncompleteRead(2040 bytes read, 8200 more expected)', IncompleteRead(2040 bytes read, 8200 more expected)) (https://home.knu.ac.kr/HOME/civil/sub.htm?mode=view&mv_data=aWR4PTMyMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTI2MTEmdGFibGU9ZXhfYmJzX2RhdGFfY2l2aWwmbmF2X2NvZGU9Y2l2MTYxNDA2NjE5NyZjb2RlPWNpdG1xcktUWWlxZSZzZWFyY2hfaXRlbT0mc2VhcmNoX29yZGVyPSZvcmRlcl9saXN0PSZsaXN0X3NjYWxlPSZ2aWV3X2xldmVsPSZ2aWV3X2NhdGU9JnZpZXdfY2F0ZTI9)"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "요청 실패: https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice: HTTPSConnectionPool(host='chinese.knu.ac.kr', port=443): Max retries exceeded with url: /bbs/board.php?bo_table=notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='chinese.knu.ac.kr', port=443) at 0x70965c1da7d0>, 'Connection to chinese.knu.ac.kr timed out. (connect timeout=10)')) (https://chinese.knu.ac.kr/bbs/board.php?bo_table=notice)"
     },
     {
       "source": "notice-ddb70636c525",
@@ -7943,6 +6319,10 @@
     },
     {
       "source": "notice-7537783c05b0",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-56d213db968e",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -7954,8 +6334,8 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-a267229666ef",
-      "text": "knu-aran-ara1623718660:4927: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-8d0ba20b8a78",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-ab33c8b6f3d1",
@@ -7966,20 +6346,20 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-dc7fc6a93fe8",
+      "source": "notice-ca78d3fd3c51",
+      "text": "knu-koredu-kor1622459695:326: 본문을 온전히 읽지 못했습니다 (image-only)"
+    },
+    {
+      "source": "notice-b7eb69e8405d",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-e3a4a5455384",
-      "text": "knu-cals-cal1623200331:504: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-2fdcd3cab366",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-e3a4a5455384",
-      "text": "knu-cals-cal1623200331:506: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-e3a4a5455384",
-      "text": "knu-cals-cal1623200331:508: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-dc7fc6a93fe8",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-12a353fc2eb8",
@@ -7990,11 +6370,27 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-30f51dd33791",
+      "source": "notice-0ef73fec9014",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d42e73c1be80",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-750dff5618d4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-fe90b8f3beb7",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-956827a355a7",
+      "text": "knu-lis-lis1622460108:1210: 본문을 온전히 읽지 못했습니다 (image-only)"
+    },
+    {
+      "source": "notice-7e56cbeca2ee",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8006,7 +6402,15 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-8b73f625639c",
+      "source": "notice-7502f997e5e7",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-b1133d4c8b3b",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-afb535aeb941",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8019,6 +6423,10 @@
     },
     {
       "source": "notice-fe8857afa2d4",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-0b9f7e3a61e0",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8046,7 +6454,15 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
+      "source": "notice-d5e75aa6b2da",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
       "source": "notice-99ea5018f469",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-7fcf94c45b4e",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8055,6 +6471,14 @@
     },
     {
       "source": "notice-848538cdce05",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-9c2e2dbd2980",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-1abc9573202c",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8070,8 +6494,16 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-b34ee1a00417",
-      "text": "knu-computer-sub6_1_a:29535: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-ad22d5b4a9e9",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-ecd686f730b2",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-5c6cbaba27ab",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-614324804939",
@@ -8086,19 +6518,39 @@
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-df44dd8507c1",
-      "text": "knu-see-notice:105889: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-55ac86f2e763",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-e08af12e34e3",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-b8ebd17a5dca",
-      "text": "knu-politics-pol1614071864:1081: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-450caf336106",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-8b2d3f025a39",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-c4b1c79994bd",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-6b04da14aae1",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-787893a88ff5",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-392eeaadf103",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-d6ef40bd632d",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
@@ -8119,43 +6571,35 @@
     },
     {
       "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4585: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-7414782e7dbb",
-      "text": "knu-dent-k1news:4588: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
-      "source": "notice-fefffa32e24c",
-      "text": "knu-computer-sub6_1_a:29535: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "text": "knu-dent-k1news:4589: 본문을 온전히 읽지 못했습니다 (image-only)"
     },
     {
       "source": "notice-f14e44ae5bb9",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-3d2a3e87207a",
-      "text": "knu-hanmun-han1624361542:7486: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-9dbd1b2695c9",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-b46aed7f6b0f",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-ac0144f93d45",
-      "text": "knu-chem-che1622521080:7198: 본문을 온전히 읽지 못했습니다 (image-only)"
-    },
-    {
       "source": "notice-093d2d29fb09",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-101538fb6a8e",
+      "source": "notice-6fafb52e7377",
       "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
-      "source": "notice-423ad5624dbc",
-      "text": "knu-global-glo1729572883:19208: 본문을 온전히 읽지 못했습니다 (image-only)"
+      "source": "notice-459a4805de72",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
+    },
+    {
+      "source": "notice-5a80fc96a24d",
+      "text": "오늘 확인한 상세 자료가 없습니다. 저장된 과거 자료는 선정하지 않았습니다"
     },
     {
       "source": "notice-93ddd4d44cec",
@@ -8479,10 +6923,10 @@
     "status": "empty"
   },
   "weather": {
-    "max": 19.4,
-    "min": 6.2,
-    "rain": 0,
-    "status": "ok",
-    "summary": "흐림"
+    "max": null,
+    "min": null,
+    "rain": null,
+    "status": "failed",
+    "summary": null
   }
 }
